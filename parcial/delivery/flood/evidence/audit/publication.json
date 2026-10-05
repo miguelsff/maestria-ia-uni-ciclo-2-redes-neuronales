@@ -1,0 +1,20 @@
+{
+  "verified_utc": "2026-10-05T02:47:13.734662+00:00",
+  "repository": "https://github.com/miguelsff/maestria-ia-uni-ciclo-2-redes-neuronales",
+  "branch": "codex/flood-delivery",
+  "branch_url": "https://github.com/miguelsff/maestria-ia-uni-ciclo-2-redes-neuronales/tree/codex/flood-delivery",
+  "verified_scientific_snapshot_commit": "c49564a1062b8235efa06ab56edef65d0f6912ad",
+  "checks": {
+    "remote_ref_matches_local_commit": true,
+    "fresh_clone_completed": true,
+    "manifest_files_verified": 166,
+    "hash_mismatches": 0,
+    "published_compose_resolved": true,
+    "published_cpu_environment_and_imports_passed": true,
+    "full_scientific_training_repeated": false
+  },
+  "doctor_log": "published-doctor.log",
+  "editorial_approval": "pending",
+  "platform_submission": "pending",
+  "note": "This receipt records the first published source snapshot. The following documentation commit adds the receipt and updates status; the branch head is verified separately in the local delivery audit."
+}

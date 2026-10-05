@@ -85,4 +85,4 @@ La plantilla contiene los cinco nombres reales y la afiliación UNI, Unidad de P
 | Ejecución aislada | Compose propio, caché con MD5, firmas y checkpoints. | Preservar salida y volumen; no reutilizarlos con una configuración distinta. |
 | Entregables | Notebook ejecutado, cifras persistidas, autoría completa y PDF renderizado. | Mantener explícita la aprobación editorial pendiente; conservar resultados científicos y borrador anterior. |
 
-El usuario autorizó ejecutar el plan de cierre y publicar el material reproducible. La publicación se prepara en una rama aislada; los datos originales y las corridas permanecen preservados. No ejecutar `docker compose down --volumes`: eliminaría la caché y obliga a verificarla de nuevo.
+El usuario autorizó ejecutar el plan de cierre y publicar el material reproducible. La rama `codex/flood-delivery` está publicada y se verificó con una descarga nueva, hashes, resolución de Compose e importaciones en CPU; los datos originales y las corridas permanecen preservados. No ejecutar `docker compose down --volumes`: eliminaría la caché y obliga a verificarla de nuevo.

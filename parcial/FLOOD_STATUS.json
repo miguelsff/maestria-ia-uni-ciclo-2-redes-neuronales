@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-05T02:34:50.351104+00:00",
-  "phase": "review_pdf_ready_group_approval_pending",
+  "updated_utc": "2026-10-05T02:47:13.734662+00:00",
+  "phase": "published_review_pdf_ready_group_approval_pending",
   "completed_experiments": [
     {
       "experiment": "gold_bce",
@@ -63,7 +63,6 @@
   "remaining": [
     "Actual editorial approval by the student group.",
     "Compile the final PDF after approval.",
-    "Verify GitHub publication.",
     "Submit PDF and GitHub link through the course platform and present on 30 October 2026."
   ],
   "constraints": [
@@ -86,5 +85,23 @@
     "Alexander Vladimir Paco Cornejo"
   ],
   "affiliation": "UNI · Unidad de Posgrado — Facultad de Ingeniería Industrial y de Sistemas",
-  "current_authorization": "The user asked to execute the full question 2 delivery plan, including publication."
+  "current_authorization": "The user asked to execute the full question 2 delivery plan, including publication.",
+  "publication": {
+    "status": "verified",
+    "branch": "codex/flood-delivery",
+    "url": "https://github.com/miguelsff/maestria-ia-uni-ciclo-2-redes-neuronales/tree/codex/flood-delivery",
+    "verified_scientific_snapshot_commit": "c49564a1062b8235efa06ab56edef65d0f6912ad",
+    "fresh_clone_hashes_passed": true,
+    "fresh_clone_compose_and_cpu_environment_passed": true,
+    "receipt": "delivery/flood/evidence/audit/publication.json"
+  },
+  "delivery_verification": {
+    "cpu_tests_passed": 17,
+    "cuda_tests_skipped": 3,
+    "original_gpu_test_receipt_preserved": true,
+    "review_pdf_pages": 9,
+    "review_pdf_references": 7,
+    "review_pdf_sha256": "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38",
+    "group_approval": "pending"
+  }
 }

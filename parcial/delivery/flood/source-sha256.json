@@ -1,5 +1,5 @@
 {
-  "captured_utc": "2026-10-05T02:44:52.124984+00:00",
+  "captured_utc": "2026-10-05T02:47:13.734662+00:00",
   "scope": "Published question 2 review snapshot, excluding this manifest to avoid a circular hash.",
   "files": [
     {
@@ -103,6 +103,16 @@
       "sha256": "5c512be4eea5eaa9f5adc5601a2325571fe66458cb0b5bc0a30dd3154a6145da"
     },
     {
+      "path": "parcial/delivery/flood/evidence/audit/publication.json",
+      "bytes": 1030,
+      "sha256": "434135e927780abb960fe5ee02eca61bf7d5ff2950e89f592de6cce18d0b72a5"
+    },
+    {
+      "path": "parcial/delivery/flood/evidence/audit/published-doctor.log",
+      "bytes": 838,
+      "sha256": "2ca9d16b236a53f3ce41caba86edd73da990838dd1caf053754e078c61f3e5a4"
+    },
+    {
       "path": "parcial/delivery/flood/evidence/audit/qualitative-statistics.json",
       "bytes": 3575,
       "sha256": "8bdbc995ba74c0e4a5bf9da983299c23e498be9a1207e9d062f727b8e39d64ec"
@@ -124,8 +134,8 @@
     },
     {
       "path": "parcial/delivery/flood/evidence/audit/review-verification.json",
-      "bytes": 1142,
-      "sha256": "95c984f23fc23bf58d5db2316006bd82f0ad098e6574c5a21d058f85a4b1c518"
+      "bytes": 1323,
+      "sha256": "128f930b72234c1f1a7cbc4febccb1dca882131eb937b4436cbf447afe9858e4"
     },
     {
       "path": "parcial/delivery/flood/evidence/audit/tests.log",
@@ -544,13 +554,13 @@
     },
     {
       "path": "parcial/FLOOD_RUN.md",
-      "bytes": 9553,
-      "sha256": "5a21b1a17199ea1d28ef636ccd9cd18fb1cb51b6b3896787b97033ffc5278d4a"
+      "bytes": 9734,
+      "sha256": "308587d8f5f9d3c30219743367b416a959ec7ba56c8d69ff51d6f74a1c8a1172"
     },
     {
       "path": "parcial/FLOOD_STATUS.json",
-      "bytes": 3272,
-      "sha256": "3da79c9a9c626538e8ab5f096909f6518de9541460332cec9054aa49b80466ce"
+      "bytes": 4037,
+      "sha256": "3d3cf9963e21921d9a1839baac91bbe404c027a59ef5dbef9091a87ef21bbbfd"
     },
     {
       "path": "parcial/notebooks/02_flood.ipynb",

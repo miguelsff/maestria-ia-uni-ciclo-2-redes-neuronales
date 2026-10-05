@@ -23,5 +23,10 @@
   "complete_reproduction_rerun": false,
   "platform_submission": "pending",
   "class_presentation": "30 October 2026, pending",
-  "publication": "prepared, verification pending"
+  "publication": {
+    "status": "verified",
+    "scientific_snapshot_commit": "c49564a1062b8235efa06ab56edef65d0f6912ad",
+    "receipt": "publication.json",
+    "new_clone_hashes_compose_and_cpu_environment_passed": true
+  }
 }
