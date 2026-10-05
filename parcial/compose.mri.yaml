@@ -1,0 +1,65 @@
+name: neural-exam-mri
+x-runtime: &runtime
+  image: neural-exam-mri:0.1
+  working_dir: /workspace
+  init: true
+  cpus: 8
+  mem_limit: 12g
+  shm_size: 2g
+  environment: &environment
+    KAGGLE_ROOT: /datasets
+    OUTPUT_DIR: /outputs
+    RSNA_METADATA_DIR: /datasets/rsna
+    RSNA_DATA_DIR: /mri-data
+    PYTHONPATH: /workspace/src
+    PYTHONDONTWRITEBYTECODE: "1"
+    OMP_NUM_THREADS: "4"
+    MKL_NUM_THREADS: "4"
+    CUBLAS_WORKSPACE_CONFIG: ":4096:8"
+    TORCH_HOME: /outputs/cache/torch
+    PRETRAINED_WEIGHTS_DIR: /outputs/cache/weights
+    MPLCONFIGDIR: /outputs/cache/matplotlib
+  volumes:
+    - .:/workspace:ro
+    - ${RSNA_HOST_DIR:-E:/Kaggle/rsna-knee-abnormality-detection}:/datasets/rsna:ro
+    - mri_dicom_cache:/mri-data:ro
+    - ${MRI_OUTPUT_DIR:-E:/Kaggle/exam-output-mri/stratified-v2}:/outputs
+    - mri_tensor_cache:/outputs/mri/cache
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            count: 1
+            capabilities: [gpu]
+services:
+  runner:
+    <<: *runtime
+    network_mode: none
+  downloads:
+    image: neural-exam-mri:0.1
+    working_dir: /workspace
+    cpus: 2
+    mem_limit: 2g
+    environment: *environment
+    volumes:
+      - .:/workspace:ro
+      - ${MRI_OUTPUT_DIR:-E:/Kaggle/exam-output-mri/stratified-v2}:/outputs
+    entrypoint: [python, /workspace/scripts/download_mri_assets.py]
+  reports:
+    image: neural-exam-mri-reports:0.1
+    network_mode: none
+    cpus: 1
+    mem_limit: 2g
+    environment:
+      OUTPUT_DIR: /outputs
+    volumes:
+      - .:/workspace:ro
+      - ${MRI_OUTPUT_DIR:-E:/Kaggle/exam-output-mri/stratified-v2}:/outputs
+    entrypoint: [python, /workspace/scripts/compile_reports.py]
+volumes:
+  mri_dicom_cache:
+    external: true
+    name: neural-exam-mri_dicom_cache
+  mri_tensor_cache:
+    name: neural-exam-mri_tensor_cache
