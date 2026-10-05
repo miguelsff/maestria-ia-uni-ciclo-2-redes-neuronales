@@ -12,7 +12,7 @@ El PDF de pregunta 1 tiene nueve páginas, cinco autores y siete referencias. Se
 | Constancia y hashes de esta entrega | `E:/Kaggle/exam-output-mri/submission-2026-10-04/audit/final_delivery.json` |
 | Guion para la exposición | [MRI_DEFENSE.md](MRI_DEFENSE.md) |
 
-Código de entrega: [rama codex/mri-delivery](https://github.com/miguelsff/maestria-ia-uni-ciclo-2-redes-neuronales/tree/codex/mri-delivery). El repositorio es privado; los integrantes deben comprobar que el docente pueda acceder al enlace. El commit verificado se registra en la constancia local.
+Código de entrega: [rama codex/mri-delivery](https://github.com/miguelsff/maestria-ia-uni-ciclo-2-redes-neuronales/tree/codex/mri-delivery), publicada y comprobada desde un clon de GitHub. El código del commit [45efe9d](https://github.com/miguelsff/maestria-ia-uni-ciclo-2-redes-neuronales/tree/45efe9d905f4a5a034334de18be3093fcd7d9146) pasó las 32 pruebas CPU y reprodujo exactamente la selección de los 600 estudios. [MRI_VERIFICATION.json](MRI_VERIFICATION.json) registra esa comprobación. El repositorio es privado; los integrantes deben comprobar que el docente pueda acceder al enlace.
 
 El notebook publicado conserva las celdas y tiene las salidas vacías para no incluir imágenes clínicas en GitHub. El notebook local conserva las ocho celdas ejecutadas, las figuras y cero errores. Las fuentes LaTeX se publican; las figuras se generan localmente desde las salidas científicas. El PDF, los DICOM, los textos clínicos, las predicciones individuales y los pesos permanecen fuera de Git.
 
