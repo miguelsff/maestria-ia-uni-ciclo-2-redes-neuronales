@@ -1,0 +1,134 @@
+[
+  {
+    "score": {
+      "chip_id": "Pakistan_70625",
+      "country": "Pakistan",
+      "tp": "1337",
+      "fp": "28116",
+      "fn": "3330",
+      "tn": "229361",
+      "valid_pixels": "262144",
+      "iou": "0.040783332824939754",
+      "precision": "0.045394357111329914",
+      "recall": "0.286479537175916",
+      "f1": "0.0783704572098476",
+      "omission": "0.713520462824084",
+      "commission": "0.9546056428886701",
+      "reference_iou": "0.04078333282786571"
+    },
+    "statistics": {
+      "chip_id": "Pakistan_70625",
+      "median_db": {
+        "fp": [
+          -17.83954620361328,
+          -25.81661605834961
+        ],
+        "fn": [
+          -13.415215492248535,
+          -22.114822387695312
+        ],
+        "tp": [
+          -18.006994247436523,
+          -26.03366470336914
+        ],
+        "tn": [
+          -9.068511962890625,
+          -17.933412551879883
+        ]
+      },
+      "errors_within_three_pixels_of_water_boundary": 3387,
+      "error_pixels": 31446,
+      "boundary_fraction": 0.10770845258538447,
+      "boundary_definition": "3 iterations of cross-shaped binary dilation XOR erosion; valid pixels only"
+    },
+    "split": "test"
+  },
+  {
+    "score": {
+      "chip_id": "Pakistan_849790",
+      "country": "Pakistan",
+      "tp": "33428",
+      "fp": "793",
+      "fn": "138480",
+      "tn": "84538",
+      "valid_pixels": "257239",
+      "iou": "0.1935599678056294",
+      "precision": "0.9768270944741533",
+      "recall": "0.19445284687158249",
+      "f1": "0.3243405828389018",
+      "omission": "0.8055471531284175",
+      "commission": "0.023172905525846704",
+      "reference_iou": "0.19355996780609636"
+    },
+    "statistics": {
+      "chip_id": "Pakistan_849790",
+      "median_db": {
+        "fp": [
+          -16.079599380493164,
+          -24.80687713623047
+        ],
+        "fn": [
+          -9.087669372558594,
+          -17.896095275878906
+        ],
+        "tp": [
+          -16.305973052978516,
+          -24.797679901123047
+        ],
+        "tn": [
+          -8.198848724365234,
+          -16.250049591064453
+        ]
+      },
+      "errors_within_three_pixels_of_water_boundary": 54134,
+      "error_pixels": 139273,
+      "boundary_fraction": 0.38868983938021007,
+      "boundary_definition": "3 iterations of cross-shaped binary dilation XOR erosion; valid pixels only"
+    },
+    "split": "test"
+  },
+  {
+    "score": {
+      "chip_id": "Bolivia_379434",
+      "country": "Bolivia",
+      "tp": "4262",
+      "fp": "5588",
+      "fn": "6528",
+      "tn": "245766",
+      "valid_pixels": "262144",
+      "iou": "0.2602271339601905",
+      "precision": "0.43269035532994926",
+      "recall": "0.3949953660797034",
+      "f1": "0.412984496124031",
+      "omission": "0.6050046339202966",
+      "commission": "0.5673096446700507",
+      "reference_iou": "0.26022713396470737"
+    },
+    "statistics": {
+      "chip_id": "Bolivia_379434",
+      "median_db": {
+        "fp": [
+          -16.13285255432129,
+          -21.404542922973633
+        ],
+        "fn": [
+          -8.472829818725586,
+          -16.36959457397461
+        ],
+        "tp": [
+          -17.643661499023438,
+          -22.466373443603516
+        ],
+        "tn": [
+          -6.733415603637695,
+          -14.20359992980957
+        ]
+      },
+      "errors_within_three_pixels_of_water_boundary": 9844,
+      "error_pixels": 12116,
+      "boundary_fraction": 0.8124793661274348,
+      "boundary_definition": "3 iterations of cross-shaped binary dilation XOR erosion; valid pixels only"
+    },
+    "split": "bolivia"
+  }
+]

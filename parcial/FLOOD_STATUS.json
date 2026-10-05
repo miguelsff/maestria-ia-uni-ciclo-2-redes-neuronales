@@ -1,0 +1,90 @@
+{
+  "updated_utc": "2026-10-05T02:34:50.351104+00:00",
+  "phase": "review_pdf_ready_group_approval_pending",
+  "completed_experiments": [
+    {
+      "experiment": "gold_bce",
+      "test_iou": "0.39392686726074255",
+      "bolivia_iou": "0.45547708515221536",
+      "geographic_gap": "-0.0615502178914728"
+    },
+    {
+      "experiment": "gold_dice",
+      "test_iou": "0.40998064973334647",
+      "bolivia_iou": "0.44633920652618536",
+      "geographic_gap": "-0.03635855679283889"
+    },
+    {
+      "experiment": "gold_combined",
+      "test_iou": "0.4067509533672143",
+      "bolivia_iou": "0.40572032377224565",
+      "geographic_gap": "0.001030629594968635"
+    },
+    {
+      "experiment": "gold_weak_bce",
+      "test_iou": "0.3250648457377374",
+      "bolivia_iou": "0.2690446807627968",
+      "geographic_gap": "0.05602016497494061"
+    },
+    {
+      "experiment": "gold_weak_dice",
+      "test_iou": "0.34874659046711914",
+      "bolivia_iou": "0.4789838687552829",
+      "geographic_gap": "-0.13023727828816378"
+    },
+    {
+      "experiment": "gold_weak_combined",
+      "test_iou": "0.35934957976106924",
+      "bolivia_iou": "0.4511407865489137",
+      "geographic_gap": "-0.09179120678784447"
+    }
+  ],
+  "total_experiments": 6,
+  "output_root": "E:\\Kaggle\\exam-output-flood",
+  "training_container": null,
+  "compose": "compose.flood.yaml",
+  "frozen_config": "configs/flood.toml",
+  "active_command_session": null,
+  "followup_automation": null,
+  "checks": {
+    "tests_passed": 20,
+    "integrity_files": 9216,
+    "smoke_configurations": 6,
+    "persisted_predictions_audited": 618,
+    "lint": "passed",
+    "format": "passed",
+    "notebook_code_cells_executed": 8,
+    "notebook_errors": 0,
+    "pdf_pages": 9,
+    "pdf_all_pages_visually_inspected": true
+  },
+  "resource_policy": "Wait for the wildlife runner or insufficient WSL memory; stop only owned flood containers and preserve checkpoints.",
+  "important": "Scientific experiments remain preserved. Authorship is complete. The updated nine-page review PDF awaits actual group editorial approval and course submission.",
+  "remaining": [
+    "Actual editorial approval by the student group.",
+    "Compile the final PDF after approval.",
+    "Verify GitHub publication.",
+    "Submit PDF and GitHub link through the course platform and present on 30 October 2026."
+  ],
+  "constraints": [
+    "No original dataset writes",
+    "No MRI or wildlife edits",
+    "No subagents or new chats",
+    "No fabricated results or physical SAR causes"
+  ],
+  "followup_removed": {
+    "id": "finalizar-inundaciones-del-ejercicio-2",
+    "status": "deleted",
+    "confirmed_utc": "2026-10-03T20:45:29.132566+00:00"
+  },
+  "review_output_root": "E:\\Kaggle\\exam-delivery-flood\\review-2026-10-04",
+  "authors": [
+    "Chilón Cruzado Josué",
+    "Concepción Tiza Miguel Ángel",
+    "Neyra Dianderas Enzo Israel",
+    "Tello Guerra Omar Salvador",
+    "Alexander Vladimir Paco Cornejo"
+  ],
+  "affiliation": "UNI · Unidad de Posgrado — Facultad de Ingeniería Industrial y de Sistemas",
+  "current_authorization": "The user asked to execute the full question 2 delivery plan, including publication."
+}

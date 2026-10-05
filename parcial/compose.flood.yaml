@@ -1,0 +1,55 @@
+name: neural-exam-flood
+services:
+  runner:
+    extends:
+      file: compose.yaml
+      service: runner
+    image: neural-exam-flood:0.1
+    environment:
+      SEN1_DATA_DIR: /datasets/Sen1Floods11
+      GDAL_CACHEMAX: "128"
+    volumes:
+      - type: volume
+        source: flood_data_cache
+        target: /datasets/Sen1Floods11
+        read_only: true
+      - type: bind
+        source: ${FLOOD_OUTPUT_DIR:-E:/Kaggle/exam-output-flood}
+        target: /outputs
+  data-cache:
+    image: neural-exam-flood:0.1
+    entrypoint: [python, /workspace/scripts/cache_flood_data.py]
+    command: ["--source", "/source", "--cache", "/cache", "--receipt", "/outputs/audit/data-cache.json"]
+    network_mode: none
+    cpus: 2
+    mem_limit: 2g
+    volumes:
+      - .:/workspace:ro
+      - ${SEN1_HOST_DIR:-E:/Kaggle/Sen1Floods11}:/source:ro
+      - flood_data_cache:/cache
+      - ${FLOOD_OUTPUT_DIR:-E:/Kaggle/exam-output-flood}:/outputs
+  reports:
+    extends:
+      file: compose.yaml
+      service: reports
+    image: neural-exam-flood-reports:0.1
+    volumes:
+      - type: bind
+        source: ${FLOOD_OUTPUT_DIR:-E:/Kaggle/exam-output-flood}
+        target: /outputs
+  style:
+    extends:
+      file: compose.yaml
+      service: downloads
+    image: neural-exam-flood:0.1
+    command: ["--config", "configs/flood.toml", "download", "--dataset", "style"]
+    volumes:
+      - type: bind
+        source: ${KAGGLE_ROOT:-E:/Kaggle}
+        target: /datasets
+        read_only: true
+      - type: bind
+        source: ${FLOOD_OUTPUT_DIR:-E:/Kaggle/exam-output-flood}
+        target: /outputs
+volumes:
+  flood_data_cache:
