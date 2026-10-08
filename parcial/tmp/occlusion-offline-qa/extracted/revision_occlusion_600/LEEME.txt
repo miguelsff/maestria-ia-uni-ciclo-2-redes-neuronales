@@ -1,0 +1,38 @@
+﻿REVISIÓN DE OCLUSIÓN — 600 CASOS, SIN CONEXIÓN
+
+1. Extraiga TODO el ZIP en una carpeta. No abra la página dentro del ZIP.
+2. Abra index.html con Chrome, Edge o Firefox. No necesita instalar programas,
+   iniciar un servidor ni conectarse a Internet.
+3. Ingrese su nombre. Revise el animal del recuadro amarillo y complete el nivel
+   de oclusión y una evidencia breve. Haga clic en la foto para ampliarla.
+4. Use Descargar CSV al terminar CADA sesión. Conserve el archivo descargado
+   y envíelo al responsable. Puede enviar una revisión parcial.
+5. Para continuar en otro equipo o navegador, abra index.html y use Cargar CSV.
+
+Si el responsable distribuyó el trabajo, revise solo sus números de caso.
+El CSV siempre incluye los 600 casos; deje pendientes los que no le asignaron.
+Cada persona trabaja en su propia copia. Los CSV pueden cargarse sucesivamente
+para reunir revisiones. Si hay diferencias en un mismo caso, la página no
+sobrescribe los datos: conserve ambos CSV y envíelos al responsable.
+
+CRITERIOS
+Baja: más del 75 % del animal visible.
+Media: entre el 25 % y el 75 % visible, incluidos ambos límites.
+Alta: menos del 25 % visible.
+Ambigua: no se puede estimar o el borde de la imagen corta al animal.
+El tamaño pequeño, la oscuridad y el desenfoque no implican oclusión por sí solos.
+
+GUARDADO
+El navegador intenta respaldar el avance localmente. Ese respaldo depende del
+navegador y de la carpeta; puede perderse en modo privado o al borrar sus datos.
+Descargar CSV es el respaldo portátil. La página no modifica automáticamente
+el CSV incluido ni envía información. Al cerrar con cambios sin descargar,
+el navegador puede mostrar un recordatorio.
+
+CONTENIDO
+600 recuadros, 596 fotos originales, sin modificar su calidad.
+La copia inicial conserva el avance existente al empaquetar:
+0 casos completos, 600 pendientes.
+Conserve index.html junto a la carpeta images. Mantenga las 600 filas y las
+13 columnas del CSV descargado; así se conservan las identidades de la muestra.
+protocol.json y manifest_package.json documentan la muestra y los archivos.

@@ -1,0 +1,510 @@
+{
+  "verified_at_utc": "2026-10-06T00:33:27.905229+00:00",
+  "frozen_sources": {
+    "count": 44,
+    "changed": []
+  },
+  "checkpoint_sha256": "b2a47c3b0b22d927c5fa976e6fecf82465e22bc509fae1747fb8a20ff634c85f",
+  "completed_epochs": 39,
+  "interval_groups": [
+    {
+      "split": "cis_test",
+      "group": "global",
+      "replicates": 200,
+      "intervals": {
+        "map50": {
+          "lower": 0.6778651232729754,
+          "upper": 0.751108574184408,
+          "defined_replicates": 200
+        },
+        "map50_95": {
+          "lower": 0.4287868308123333,
+          "upper": 0.47854256699002323,
+          "defined_replicates": 200
+        }
+      }
+    },
+    {
+      "split": "trans_test",
+      "group": "global",
+      "replicates": 200,
+      "intervals": {
+        "map50": {
+          "lower": 0.4113553424073453,
+          "upper": 0.4811198618631211,
+          "defined_replicates": 200
+        },
+        "map50_95": {
+          "lower": 0.2537857738933228,
+          "upper": 0.3022630787556298,
+          "defined_replicates": 200
+        }
+      }
+    },
+    {
+      "split": "cis_test",
+      "group": "small_lt_1pct",
+      "replicates": 200,
+      "intervals": {
+        "map50": {
+          "lower": 0.5073766603438399,
+          "upper": 0.6665413575658733,
+          "defined_replicates": 200
+        },
+        "map50_95": {
+          "lower": 0.24524446138743514,
+          "upper": 0.337734231202439,
+          "defined_replicates": 200
+        }
+      }
+    },
+    {
+      "split": "cis_test",
+      "group": "medium_1_to_5pct",
+      "replicates": 200,
+      "intervals": {
+        "map50": {
+          "lower": 0.7274957910693662,
+          "upper": 0.8283361302807265,
+          "defined_replicates": 200
+        },
+        "map50_95": {
+          "lower": 0.4516030806399864,
+          "upper": 0.5232167036770122,
+          "defined_replicates": 200
+        }
+      }
+    },
+    {
+      "split": "cis_test",
+      "group": "large_gt_5pct",
+      "replicates": 200,
+      "intervals": {
+        "map50": {
+          "lower": 0.735007210405528,
+          "upper": 0.7887578767621457,
+          "defined_replicates": 200
+        },
+        "map50_95": {
+          "lower": 0.5311679671705593,
+          "upper": 0.5720437344738567,
+          "defined_replicates": 200
+        }
+      }
+    },
+    {
+      "split": "trans_test",
+      "group": "small_lt_1pct",
+      "replicates": 200,
+      "intervals": {
+        "map50": {
+          "lower": 0.2904035775610812,
+          "upper": 0.3719593567928111,
+          "defined_replicates": 200
+        },
+        "map50_95": {
+          "lower": 0.14295846278377516,
+          "upper": 0.19419049822447532,
+          "defined_replicates": 200
+        }
+      }
+    },
+    {
+      "split": "trans_test",
+      "group": "medium_1_to_5pct",
+      "replicates": 200,
+      "intervals": {
+        "map50": {
+          "lower": 0.5097291891604745,
+          "upper": 0.5546104230572882,
+          "defined_replicates": 200
+        },
+        "map50_95": {
+          "lower": 0.30846260442302137,
+          "upper": 0.3439562488801834,
+          "defined_replicates": 200
+        }
+      }
+    },
+    {
+      "split": "trans_test",
+      "group": "large_gt_5pct",
+      "replicates": 200,
+      "intervals": {
+        "map50": {
+          "lower": 0.36916915739837064,
+          "upper": 0.4872451712585234,
+          "defined_replicates": 200
+        },
+        "map50_95": {
+          "lower": 0.25718200294166993,
+          "upper": 0.359741145132837,
+          "defined_replicates": 200
+        }
+      }
+    }
+  ],
+  "cam": {
+    "cases": 12,
+    "by_split": {
+      "cis_test": 6,
+      "trans_test": 6
+    },
+    "flat_maps": [
+      {
+        "split": "cis_test",
+        "image_id": "5858c152-23d2-11e8-a6a3-ec086b02610b",
+        "figure": "/outputs/wildlife/cam_cases/cis_test_3.png"
+      },
+      {
+        "split": "trans_test",
+        "image_id": "5858bf75-23d2-11e8-a6a3-ec086b02610b",
+        "figure": "/outputs/wildlife/cam_cases/trans_test_3.png"
+      },
+      {
+        "split": "trans_test",
+        "image_id": "5858bf70-23d2-11e8-a6a3-ec086b02610b",
+        "figure": "/outputs/wildlife/cam_cases/trans_test_5.png"
+      }
+    ],
+    "interpretation": "Flat maps are not spatial explanations; retain the frozen method and disclose this limitation."
+  },
+  "notebook": {
+    "code_cells": 12,
+    "executed_cells": 12,
+    "errors": 0,
+    "path": "E:\\Kaggle\\exam-output-wildlife-v6\\notebooks\\03_wildlife.ipynb",
+    "sha256": "b009c7e35ed2b5e55c191afcff9b3770e1e018ccb4f65189f78e917ba90bef5d",
+    "narrative_notes_updated": true,
+    "executed_code_and_outputs_changed": false
+  },
+  "human_labels": {
+    "reviewed": 90,
+    "csv_sha256": "092d3a78332d1da487a20b2b13e37a52d149e13ea51a9975775d81274031bff0",
+    "reviewers": {
+      "Miguel": 90
+    }
+  },
+  "human_occlusion": {
+    "status": "manual_review_pending",
+    "coverage": {
+      "total_objects": 17620,
+      "reviewed_objects": 0,
+      "ambiguous_objects": 0,
+      "unreviewed_objects": 17620,
+      "require_full": true
+    },
+    "rows": 17620,
+    "levels": {
+      "": 17620
+    }
+  },
+  "monitoring": {
+    "camera_id": "7",
+    "photos": 1853,
+    "photos_with_fauna": 1420,
+    "predicted_empty_rate": 0.2336751214247167,
+    "days": 211,
+    "categories": [
+      "bird",
+      "bobcat",
+      "cat",
+      "coyote",
+      "deer",
+      "dog",
+      "opossum",
+      "rabbit",
+      "raccoon",
+      "skunk",
+      "squirrel"
+    ],
+    "sequence_frames": 3,
+    "metadata": {
+      "confidence": 0.25,
+      "interpretation": "counts are detections and photographs, never unique individual animals",
+      "camera_id": "7",
+      "sequence_id": "6f06c47d-5567-11e8-b8ef-dca9047ef277",
+      "cohort": "all official trans_test frames of one predetermined camera; includes frames excluded from box evaluation",
+      "timezone": "capture timezone unspecified; no conversion",
+      "complete_sequence_frames": [
+        "597515c6-23d2-11e8-a6a3-ec086b02610b",
+        "5968c329-23d2-11e8-a6a3-ec086b02610b",
+        "59ef8e67-23d2-11e8-a6a3-ec086b02610b"
+      ],
+      "sequence_frames": [
+        {
+          "image_id": "597515c6-23d2-11e8-a6a3-ec086b02610b",
+          "camera_id": "7",
+          "sequence_id": "6f06c47d-5567-11e8-b8ef-dca9047ef277",
+          "timestamp": "2011-05-08 11:39:22",
+          "frame_number": 1,
+          "detections": 0,
+          "species": ""
+        },
+        {
+          "image_id": "5968c329-23d2-11e8-a6a3-ec086b02610b",
+          "camera_id": "7",
+          "sequence_id": "6f06c47d-5567-11e8-b8ef-dca9047ef277",
+          "timestamp": "2011-05-08 11:39:23",
+          "frame_number": 2,
+          "detections": 0,
+          "species": ""
+        },
+        {
+          "image_id": "59ef8e67-23d2-11e8-a6a3-ec086b02610b",
+          "camera_id": "7",
+          "sequence_id": "6f06c47d-5567-11e8-b8ef-dca9047ef277",
+          "timestamp": "2011-05-08 11:39:24",
+          "frame_number": 3,
+          "detections": 1,
+          "species": "opossum"
+        }
+      ]
+    }
+  },
+  "test_metrics": {
+    "cis_test": {
+      "map50": 0.6877518839162803,
+      "map50_95": 0.435752672103409,
+      "per_species": [
+        {
+          "species": "opossum",
+          "support": 4008,
+          "map50": 0.8843609484080919,
+          "map50_95": 0.493220501104781
+        },
+        {
+          "species": "raccoon",
+          "support": 980,
+          "map50": 0.8970396791703579,
+          "map50_95": 0.5917153352873374
+        },
+        {
+          "species": "squirrel",
+          "support": 510,
+          "map50": 0.703706617104536,
+          "map50_95": 0.369596407079218
+        },
+        {
+          "species": "bobcat",
+          "support": 772,
+          "map50": 0.8560962868465514,
+          "map50_95": 0.608422455101136
+        },
+        {
+          "species": "skunk",
+          "support": 161,
+          "map50": 0.9355153040113274,
+          "map50_95": 0.6174860310345534
+        },
+        {
+          "species": "dog",
+          "support": 723,
+          "map50": 0.6931818798795797,
+          "map50_95": 0.4858432926040766
+        },
+        {
+          "species": "coyote",
+          "support": 1180,
+          "map50": 0.9035265516251607,
+          "map50_95": 0.6900567701071884
+        },
+        {
+          "species": "rabbit",
+          "support": 1556,
+          "map50": 0.8873538574460118,
+          "map50_95": 0.5534405985376128
+        },
+        {
+          "species": "bird",
+          "support": 752,
+          "map50": 0.6435267649427237,
+          "map50_95": 0.3333794464398897
+        },
+        {
+          "species": "cat",
+          "support": 1528,
+          "map50": 0.8748511231751778,
+          "map50_95": 0.5865768872455236
+        },
+        {
+          "species": "badger",
+          "support": 4,
+          "map50": 0.011192423590185107,
+          "map50_95": 0.005596211795092553
+        },
+        {
+          "species": "deer",
+          "support": 139,
+          "map50": 0.5146209716665093,
+          "map50_95": 0.3382922687158724
+        },
+        {
+          "species": "fox",
+          "support": 2,
+          "map50": 0.0,
+          "map50_95": 0.0
+        },
+        {
+          "species": "rodent",
+          "support": 146,
+          "map50": 0.8235539669617126,
+          "map50_95": 0.426911204395445
+        }
+      ]
+    },
+    "trans_test": {
+      "map50": 0.4230570686004039,
+      "map50_95": 0.2624855373660651,
+      "per_species": [
+        {
+          "species": "opossum",
+          "support": 4659,
+          "map50": 0.8825585731596207,
+          "map50_95": 0.45904695140867735
+        },
+        {
+          "species": "raccoon",
+          "support": 4769,
+          "map50": 0.754917831527495,
+          "map50_95": 0.4959010419095479
+        },
+        {
+          "species": "squirrel",
+          "support": 777,
+          "map50": 0.36441476071296613,
+          "map50_95": 0.19570249386025151
+        },
+        {
+          "species": "bobcat",
+          "support": 1974,
+          "map50": 0.6267635781643314,
+          "map50_95": 0.4176034633902268
+        },
+        {
+          "species": "skunk",
+          "support": 273,
+          "map50": 0.4401987832296809,
+          "map50_95": 0.2840293164892302
+        },
+        {
+          "species": "dog",
+          "support": 958,
+          "map50": 0.7376875756108516,
+          "map50_95": 0.49943041891321405
+        },
+        {
+          "species": "coyote",
+          "support": 1901,
+          "map50": 0.6745666562655565,
+          "map50_95": 0.4787767820443515
+        },
+        {
+          "species": "rabbit",
+          "support": 722,
+          "map50": 0.5912068699556239,
+          "map50_95": 0.29944584800473634
+        },
+        {
+          "species": "bird",
+          "support": 179,
+          "map50": 0.06873559837783978,
+          "map50_95": 0.03825174390590876
+        },
+        {
+          "species": "cat",
+          "support": 1366,
+          "map50": 0.28292656802133664,
+          "map50_95": 0.18423627085098787
+        },
+        {
+          "species": "badger",
+          "support": 15,
+          "map50": 0.07363861386138612,
+          "map50_95": 0.05829207920792078
+        },
+        {
+          "species": "deer",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "fox",
+          "support": 1,
+          "map50": 0.0,
+          "map50_95": 0.0
+        },
+        {
+          "species": "rodent",
+          "support": 26,
+          "map50": 0.002126482918562127,
+          "map50_95": 0.0015955757737935957
+        }
+      ]
+    }
+  },
+  "relative_sizes": {
+    "cis_test": {
+      "small_lt_1pct": {
+        "map50": 0.5630957059639756,
+        "map50_95": 0.27916961817035757,
+        "eligible_objects": 1149
+      },
+      "medium_1_to_5pct": {
+        "map50": 0.7516262633270588,
+        "map50_95": 0.46833776101094143,
+        "eligible_objects": 8925
+      },
+      "large_gt_5pct": {
+        "map50": 0.7583292621906439,
+        "map50_95": 0.5480013140174573,
+        "eligible_objects": 2387
+      }
+    },
+    "trans_test": {
+      "small_lt_1pct": {
+        "map50": 0.3215961487136827,
+        "map50_95": 0.161861539837518,
+        "eligible_objects": 1922
+      },
+      "medium_1_to_5pct": {
+        "map50": 0.5272453969980325,
+        "map50_95": 0.32204403731122533,
+        "eligible_objects": 12169
+      },
+      "large_gt_5pct": {
+        "map50": 0.4024230762300426,
+        "map50_95": 0.28695639697595887,
+        "eligible_objects": 3529
+      }
+    }
+  },
+  "pdf": {
+    "pages": 10,
+    "sha256": "0633f690a2806724f8fd9d8d1356fcc82a8c74e2c784083b0282256cecc87c44",
+    "path": "E:\\Kaggle\\exam-output-wildlife-v6\\reports\\wildlife_draft.pdf",
+    "visual_review": "automated_review_completed",
+    "rendered_pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "human_editorial_approval": "pending"
+  },
+  "editorial_sources": {
+    "main.tex": "fd6e9ec69a66180b422a2aa3fd5ccebaa68e662a60986c31606a6363dd34dd81",
+    "discussion.tex": "af53fa0ba6a5addf101e256f6139ca6927aaf60aae4d200cab39f355dccb9db0",
+    "results_tables.tex": "fe420d4a2888786b0ad3da73683b93f7dcd467dea318205c8404338d0b8ead8f",
+    "activity_tables.tex": "df50f5b4e5ee0a149b61a6a2d623a1bc167f54c26ec03f415d072892ff2184c1",
+    "report_figures.tex": "9c9ae3e54e0e5138b5fac068d55a687db36dba5529fc49571779fa26ac49e40a"
+  },
+  "automation_notification": "completion_notice_prepared_followup_paused"
+}

@@ -1,0 +1,138 @@
+\begin{table}[H]
+\centering\small
+\caption{Inventario efectivo después de depurar anotaciones y secuencias. Train oficial no contiene imágenes empty. V2 añade 1.000 fondos de ocho cámaras oficiales adicionales de entrenamiento.}
+\begin{tabular}{lrrrr}
+\toprule
+Partición & Fotos & Fondos & Cámaras & Secuencias \\
+\midrule
+train & 12399 & 1000 & 18 & 5733 \\
+val & 2543 & 995 & 10 & 980 \\
+cis\_test & 13073 & 1180 & 10 & 5378 \\
+trans\_val & 1592 & 61 & 1 & 589 \\
+trans\_test & 18647 & 1778 & 9 & 7438 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{Evaluación COCO global con el mismo checkpoint, 101 puntos de recall y máximo 300 detecciones por imagen.}
+\begin{tabular}{lrrr}
+\toprule
+Partición & Clases con soporte & mAP50 & mAP50:95 \\
+\midrule
+cis\_test & 14 & 0.6878 & 0.4358 \\
+trans\_test & 13 & 0.4231 & 0.2625 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{Rendimiento por especie: cis\_test. ND indica ausencia de referencia.}
+\begin{tabular}{lrrr}
+\toprule
+Especie & Cajas & AP50 & AP50:95 \\
+\midrule
+opossum & 4008 & 0.8844 & 0.4932 \\
+raccoon & 980 & 0.8970 & 0.5917 \\
+squirrel & 510 & 0.7037 & 0.3696 \\
+bobcat & 772 & 0.8561 & 0.6084 \\
+skunk & 161 & 0.9355 & 0.6175 \\
+dog & 723 & 0.6932 & 0.4858 \\
+coyote & 1180 & 0.9035 & 0.6901 \\
+rabbit & 1556 & 0.8874 & 0.5534 \\
+bird & 752 & 0.6435 & 0.3334 \\
+cat & 1528 & 0.8749 & 0.5866 \\
+badger & 4 & 0.0112 & 0.0056 \\
+deer & 139 & 0.5146 & 0.3383 \\
+fox & 2 & 0.0000 & 0.0000 \\
+rodent & 146 & 0.8236 & 0.4269 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{Rendimiento por especie: trans\_test. ND indica ausencia de referencia.}
+\begin{tabular}{lrrr}
+\toprule
+Especie & Cajas & AP50 & AP50:95 \\
+\midrule
+opossum & 4659 & 0.8826 & 0.4590 \\
+raccoon & 4769 & 0.7549 & 0.4959 \\
+squirrel & 777 & 0.3644 & 0.1957 \\
+bobcat & 1974 & 0.6268 & 0.4176 \\
+skunk & 273 & 0.4402 & 0.2840 \\
+dog & 958 & 0.7377 & 0.4994 \\
+coyote & 1901 & 0.6746 & 0.4788 \\
+rabbit & 722 & 0.5912 & 0.2994 \\
+bird & 179 & 0.0687 & 0.0383 \\
+cat & 1366 & 0.2829 & 0.1842 \\
+badger & 15 & 0.0736 & 0.0583 \\
+deer & 0 & ND & ND \\
+fox & 1 & 0.0000 & 0.0000 \\
+rodent & 26 & 0.0021 & 0.0016 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{Comparación con el mismo conjunto de clases con soporte en ambos tests: opossum, raccoon, squirrel, bobcat, skunk, dog, coyote, rabbit, bird, cat, badger, fox, rodent.}
+\begin{tabular}{lrr}
+\toprule
+Partición & mAP50 & mAP50:95 \\
+\midrule
+cis\_test & 0.7011 & 0.4432 \\
+trans\_test & 0.4231 & 0.2625 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{Intervalos percentiles de mAP50:95 mediante remuestreo de secuencias completas, modelo fijo. No cuantifican variación entre semillas ni entre nuevas regiones.}
+\begin{tabular}{lrrr}
+\toprule
+Grupo & IC95 inferior & IC95 superior & Réplicas \\
+\midrule
+cis\_test: Global & 0.4288 & 0.4785 & 200 \\
+trans\_test: Global & 0.2538 & 0.3023 & 200 \\
+cis\_test: small\_lt\_1pct & 0.2452 & 0.3377 & 200 \\
+cis\_test: medium\_1\_to\_5pct & 0.4516 & 0.5232 & 200 \\
+cis\_test: large\_gt\_5pct & 0.5312 & 0.5720 & 200 \\
+trans\_test: small\_lt\_1pct & 0.1430 & 0.1942 & 200 \\
+trans\_test: medium\_1\_to\_5pct & 0.3085 & 0.3440 & 200 \\
+trans\_test: large\_gt\_5pct & 0.2572 & 0.3597 & 200 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{Robustez por área relativa en cis\_test: menor de 1 \%, 1--5 \%, mayor de 5 \%.}
+\begin{tabular}{lrrr}
+\toprule
+Tamaño relativo & Cajas & AP50 & AP50:95 \\
+\midrule
+Pequeño & 1149 & 0.5631 & 0.2792 \\
+Mediano & 8925 & 0.7516 & 0.4683 \\
+Grande & 2387 & 0.7583 & 0.5480 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{Robustez por área relativa en trans\_test: menor de 1 \%, 1--5 \%, mayor de 5 \%.}
+\begin{tabular}{lrrr}
+\toprule
+Tamaño relativo & Cajas & AP50 & AP50:95 \\
+\midrule
+Pequeño & 1922 & 0.3216 & 0.1619 \\
+Mediano & 12169 & 0.5272 & 0.3220 \\
+Grande & 3529 & 0.4024 & 0.2870 \\
+\bottomrule
+\end{tabular}
+\end{table}

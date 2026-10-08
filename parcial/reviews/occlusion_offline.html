@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' file: data:; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>Revisión de oclusión · sin conexión</title>
+<style>
+:root{font:16px system-ui;color:#192c36;background:#eef3f5}*{box-sizing:border-box}body{margin:0}header{background:white;padding:20px 28px;border-bottom:1px solid #cfdbdf}h1{font-size:24px;margin:0 0 8px}p{line-height:1.5;margin:8px 0}.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap}input,select,textarea,button{font:inherit;padding:9px 11px;border:1px solid #aabec7;border-radius:7px;background:white;color:inherit}button{cursor:pointer}button.primary{background:#226b5e;border-color:#226b5e;color:white}button:disabled{opacity:.45;cursor:default}input{width:230px}.status{font-size:14px;color:#42626f}.warn{color:#9b3415}.criteria{font-size:14px;max-width:1100px}.progress{height:6px;background:#dae5e9;margin:12px 0 8px;border-radius:5px;overflow:hidden}.progress span{display:block;height:100%;background:#277366;width:0}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(390px,1fr));gap:20px;padding:24px}article{background:white;border:1px solid #cad9df;border-radius:10px;overflow:hidden}article.complete{border-color:#45927f}.photo{display:block;position:relative;overflow:hidden;cursor:zoom-in;background:#dce5e8;border:0;padding:0;width:100%}.photo img{display:block;width:100%;height:auto}.box{position:absolute;border:3px solid #ffd23d;box-shadow:0 0 0 1px #1116;pointer-events:none}.details{padding:14px}.caption{font-weight:650;margin:0 0 12px}.details label{display:block;font-size:14px;margin-top:10px}article select,article textarea{display:block;width:100%;margin-top:5px}textarea{height:70px;resize:vertical}.badge{font-size:13px;color:#49726a;margin-top:8px}footer{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;padding:0 20px 30px}dialog{padding:0;border:0;border-radius:10px;max-width:96vw;width:min(1600px,96vw);max-height:95vh}dialog::backdrop{background:#14262fe0}.close{position:sticky;top:0;z-index:2;display:block;margin:8px 8px 8px auto}.zoom{width:100%}.zoom .photo{cursor:default}.empty{padding:25px}#error{max-width:1050px}.notice{font-size:14px;color:#496570}.offline{display:inline-block;font-size:13px;color:#226b5e;background:#e4f3ec;padding:4px 9px;border-radius:5px;vertical-align:middle}details.help{font-size:14px;margin-top:12px}details.help summary{cursor:pointer}.image-error{font-size:14px;color:#9b3415;padding:12px}@media(max-width:480px){main{grid-template-columns:1fr;padding:12px;gap:12px}header{padding:16px}h1{font-size:20px}input{width:100%}.toolbar{gap:8px}.criteria{font-size:13px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Revisión de oclusión · 600 casos <span class="offline">Sin conexión</span></h1>
+  <p class="criteria">Evalúe únicamente el animal del recuadro amarillo. <strong>Baja:</strong> más del 75 % visible. <strong>Media:</strong> entre 25 % y 75 %. <strong>Alta:</strong> menos del 25 %. <strong>Ambigua:</strong> no se puede estimar o el borde de la foto corta al animal. Un animal pequeño o una foto oscura no implican oclusión por sí solos.</p>
+  <div class="toolbar">
+    <label>Evaluador <input id="reviewer" placeholder="Ingrese su nombre" autocomplete="name"></label>
+    <select id="filter" aria-label="Casos a mostrar"><option value="all">Todos los casos</option><option value="pending">Pendientes</option><option value="complete">Revisados</option></select>
+    <button class="primary" id="download">Descargar CSV</button>
+    <button id="import">Cargar CSV</button><input type="file" id="csv-file" accept=".csv,text/csv" hidden>
+    <span class="status" id="save-status" role="status"></span>
+  </div>
+  <div class="progress"><span id="bar"></span></div>
+  <div class="toolbar"><strong id="counts"></strong><span class="status" id="levels"></span></div>
+  <p class="notice">Complete un nivel y una evidencia breve por caso. Haga clic en la foto para ampliarla. <strong>Descargue el CSV antes de cerrar y envíelo al responsable.</strong> Cada copia trabaja por separado.</p>
+  <details class="help"><summary>Cómo guardar y retomar la revisión</summary><p>Los cambios se respaldan en este navegador cuando permite guardar archivos locales. El archivo CSV es su respaldo portátil: use <strong>Descargar CSV</strong> al terminar cada sesión. Para continuar en otra carpeta, equipo o navegador, abra esta galería y use <strong>Cargar CSV</strong>. También puede incorporar CSV de otros evaluadores; si un mismo caso tiene revisiones distintas, se informa el conflicto y se conservan los datos actuales.</p><p>La galería incluye 600 animales señalados en 596 fotos. Si participa en un reparto, revise únicamente los números de caso que le asignó el responsable. Puede enviar un CSV con casos pendientes; conserve sus 600 filas y columnas originales.</p></details>
+  <p id="error" class="warn" role="alert" hidden></p>
+</header>
+<main id="cards"></main>
+<footer><button id="previous">Anterior</button><span id="page"></span><button id="next">Siguiente</button><button id="pending">Primer pendiente</button></footer>
+<dialog id="zoom"><button class="close" id="close">Cerrar ampliación</button><div class="zoom" id="zoom-photo"></div></dialog>
+<noscript><p class="empty">Active JavaScript en su navegador para revisar y descargar los casos.</p></noscript>
+<script id="sample-data" type="application/json">__SAMPLE_DATA__</script>
+<script>
+__REVIEW_CORE__
+</script>
+<script>
+(() => {
+  'use strict';
+  const payload = JSON.parse(document.getElementById('sample-data').textContent);
+  const baseline = payload.rows;
+  const key = 'occlusion-offline-v1-' + payload.protocol_sha256 + '-' + payload.snapshot_sha256 + '-' + location.pathname;
+  const pageSize = 24, el = id => document.getElementById(id), complete = ReviewData.complete;
+  let rows = baseline.map(row => ({...row})), page = 0, view = [], exportPending = false, storageOK = true, recoveryBlocked = false;
+  const problem = message => { el('error').textContent = message; el('error').hidden = !message; };
+  function persist() {
+    if (recoveryBlocked) { el('save-status').textContent = 'Respaldo anterior conservado · cargue su CSV para continuar'; return; }
+    try {
+      localStorage.setItem(key, JSON.stringify({rows: rows.map(row => Object.fromEntries(ReviewData.fields.map(field => [field, row[field]]))), reviewer: el('reviewer').value}));
+      storageOK = true;
+      el('save-status').textContent = 'Respaldado en este navegador · descargue el CSV';
+    } catch {
+      storageOK = false;
+      el('save-status').textContent = 'Respaldo del navegador no disponible · descargue el CSV';
+    }
+  }
+  function summary() {
+    const n = rows.filter(complete).length;
+    el('counts').textContent = `${n} / ${rows.length} revisados · ${rows.length - n} pendientes`;
+    el('bar').style.width = (n / rows.length * 100) + '%';
+    el('levels').textContent = [['low', 'Baja'], ['medium', 'Media'], ['high', 'Alta'], ['ambiguous', 'Ambigua']]
+      .map(([value, label]) => `${label}: ${rows.filter(row => complete(row) && row.level === value).length}`).join(' · ');
+    document.querySelectorAll('article[data-id]').forEach(card => {
+      const row = rows.find(row => row.annotation_id === card.dataset.id);
+      card.classList.toggle('complete', complete(row));
+      card.querySelector('.badge').textContent = (complete(row) ? 'Revisión completa' : 'Falta nivel, evidencia o nombre') + (row.reviewer ? ` · ${row.reviewer}` : '');
+    });
+  }
+  function photo(row, enlarged = false) {
+    const frame = document.createElement(enlarged ? 'div' : 'button');
+    frame.className = 'photo';
+    if (!enlarged) frame.setAttribute('aria-label', `Ampliar foto del caso ${rows.indexOf(row) + 1}`);
+    const image = document.createElement('img');
+    image.src = row.gallery;
+    image.alt = `${row.species}: animal a evaluar señalado con un recuadro`;
+    image.loading = enlarged ? 'eager' : 'lazy';
+    image.onerror = () => {
+      const message = document.createElement('p'); message.className = 'image-error';
+      message.textContent = 'Foto no encontrada. Extraiga todo el ZIP y mantenga la carpeta images junto a index.html.';
+      frame.replaceChildren(message);
+    };
+    frame.append(image);
+    const box = document.createElement('span'), [cx, cy, width, height] = row.normalized_box;
+    box.className = 'box';
+    Object.assign(box.style, {left: (cx - width / 2) * 100 + '%', top: (cy - height / 2) * 100 + '%', width: width * 100 + '%', height: height * 100 + '%'});
+    frame.append(box);
+    if (!enlarged) frame.onclick = () => { el('zoom-photo').replaceChildren(photo(row, true)); el('zoom').showModal(); };
+    return frame;
+  }
+  function changed(row, field, value) {
+    const name = el('reviewer').value.trim();
+    if (!name) { problem('Ingrese su nombre de evaluador para registrar cambios.'); return; }
+    row[field] = value; row.reviewer = name; exportPending = true;
+    problem(''); persist(); summary();
+  }
+  function refreshView() {
+    const filter = el('filter').value;
+    view = rows.filter(row => filter === 'all' || (filter === 'complete' ? complete(row) : !complete(row)));
+  }
+  function render() {
+    const pages = Math.max(1, Math.ceil(view.length / pageSize));
+    page = Math.max(0, Math.min(page, pages - 1));
+    el('cards').replaceChildren();
+    el('page').textContent = `Página ${page + 1} de ${pages}`;
+    el('previous').disabled = page === 0; el('next').disabled = page === pages - 1;
+    for (const row of view.slice(page * pageSize, (page + 1) * pageSize)) {
+      const number = rows.indexOf(row) + 1, card = document.createElement('article');
+      card.dataset.id = row.annotation_id; card.append(photo(row));
+      const details = document.createElement('div'); details.className = 'details';
+      const caption = document.createElement('p'); caption.className = 'caption';
+      caption.textContent = `${number}. ${row.species} · Cámara ${row.camera_id} · ${{small: 'pequeño', medium: 'mediano', large: 'grande'}[row.size]}`;
+      details.append(caption);
+      const levelLabel = document.createElement('label'); levelLabel.textContent = 'Nivel de oclusión';
+      const select = document.createElement('select'); select.setAttribute('aria-label', `Nivel de oclusión del caso ${number}`);
+      for (const [value, label] of [['', 'Sin revisar'], ['low', 'Baja (>75 % visible)'], ['medium', 'Media (25–75 % visible)'], ['high', 'Alta (<25 % visible)'], ['ambiguous', 'Ambigua o truncada']]) {
+        const option = document.createElement('option'); option.value = value; option.textContent = label; select.append(option);
+      }
+      select.value = row.level; select.disabled = !el('reviewer').value.trim() || recoveryBlocked;
+      select.onchange = () => changed(row, 'level', select.value);
+      levelLabel.append(select); details.append(levelLabel);
+      const evidenceLabel = document.createElement('label'); evidenceLabel.textContent = 'Evidencia visual breve';
+      const note = document.createElement('textarea'); note.setAttribute('aria-label', `Evidencia visual del caso ${number}`);
+      note.placeholder = 'Ej.: una rama tapa la mitad del cuerpo; animal completo y visible…';
+      note.value = row.visual_evidence; note.disabled = select.disabled;
+      note.oninput = () => changed(row, 'visual_evidence', note.value);
+      evidenceLabel.append(note); details.append(evidenceLabel);
+      const badge = document.createElement('div'); badge.className = 'badge'; details.append(badge);
+      card.append(details); el('cards').append(card);
+    }
+    if (!view.length) { const text = document.createElement('p'); text.className = 'empty'; text.textContent = 'No hay casos en este filtro.'; el('cards').append(text); }
+    summary();
+  }
+  el('reviewer').oninput = () => { persist(); document.querySelectorAll('article select,article textarea').forEach(control => control.disabled = !el('reviewer').value.trim() || recoveryBlocked); };
+  el('filter').onchange = () => { page = 0; refreshView(); render(); };
+  // Keep the current filter snapshot while paging, so completing a card cannot skip the next cases.
+  el('previous').onclick = () => { page--; render(); }; el('next').onclick = () => { page++; render(); };
+  el('pending').onclick = () => { el('filter').value = 'all'; refreshView(); const index = rows.findIndex(row => !complete(row)); if (index >= 0) page = Math.floor(index / pageSize); render(); };
+  el('close').onclick = () => el('zoom').close();
+  el('download').onclick = () => {
+    const blob = new Blob([ReviewData.csv(rows)], {type: 'text/csv;charset=utf-8'}), link = document.createElement('a');
+    const name = el('reviewer').value.trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-zA-Z0-9_-]+/g, '_').slice(0, 50) || 'revision';
+    link.download = `occlusion_review_${name}_${new Date().toISOString().replace(/[:.]/g, '-')}.csv`;
+    link.href = URL.createObjectURL(blob); document.body.append(link); link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(link.href), 30000);
+    exportPending = false;
+    el('save-status').textContent = 'CSV descargado · conserve el archivo y envíelo al responsable';
+  };
+  el('import').onclick = () => el('csv-file').click();
+  el('csv-file').onchange = async () => {
+    const file = el('csv-file').files[0]; if (!file) return;
+    try {
+      if (file.size > 10000000) throw Error('El archivo es demasiado grande para esta revisión.');
+      const result = ReviewData.merge(rows, ReviewData.parseCsv(await file.text()), baseline);
+      rows = result.rows; recoveryBlocked = false; exportPending = true; problem(''); persist(); refreshView(); render();
+      el('save-status').textContent = `${result.changed} ${result.changed === 1 ? 'caso incorporado' : 'casos incorporados'} · descargue el CSV combinado` + (!storageOK ? ' · respaldo del navegador no disponible' : '');
+    } catch (error) { problem(error.message); }
+    finally { el('csv-file').value = ''; }
+  };
+  window.addEventListener('beforeunload', event => {
+    if (exportPending) { persist(); event.preventDefault(); event.returnValue = ''; }
+  });
+  let savedText = null;
+  try { savedText = localStorage.getItem(key); } catch { storageOK = false; }
+  try {
+    const saved = JSON.parse(savedText || 'null');
+    if (saved) {
+      ReviewData.validate(saved.rows, baseline);
+      const byId = new Map(saved.rows.map(row => [row.annotation_id, row]));
+      rows.forEach(row => { const savedRow = byId.get(row.annotation_id); for (const field of ReviewData.humanFields) row[field] = savedRow[field]; });
+      el('reviewer').value = typeof saved.reviewer === 'string' ? saved.reviewer : '';
+      exportPending = rows.some((row, index) => ReviewData.humanFields.some(field => row[field] !== baseline[index][field]));
+    }
+  } catch { recoveryBlocked = true; problem('El respaldo anterior no es válido y se conservó sin sobrescribir. Use Cargar CSV para retomar su archivo.'); }
+  persist(); refreshView(); render();
+})();
+</script>
+</body>
+</html>

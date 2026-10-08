@@ -1,0 +1,86 @@
+name: neural-exam-local
+x-runtime: &runtime
+  build:
+    context: .
+    target: runtime
+  image: neural-exam-local:0.1
+  working_dir: /workspace
+  init: true
+  cpus: 8
+  mem_limit: 12g
+  shm_size: 2g
+  environment: &environment
+    KAGGLE_ROOT: /datasets
+    OUTPUT_DIR: /outputs
+    RSNA_METADATA_DIR: /workspace/data
+    PYTHONPATH: /workspace/src
+    PYTHONDONTWRITEBYTECODE: "1"
+    OMP_NUM_THREADS: "4"
+    MKL_NUM_THREADS: "4"
+    CUBLAS_WORKSPACE_CONFIG: ":4096:8"
+    TORCH_HOME: /outputs/cache/torch
+    YOLO_CONFIG_DIR: /outputs/cache/ultralytics
+    MPLCONFIGDIR: /outputs/cache/matplotlib
+    YOLO_AUTOINSTALL: "false"
+    YOLO_OFFLINE: "true"
+    PRETRAINED_WEIGHTS_DIR: /outputs/cache/weights
+  volumes:
+    - type: bind
+      source: .
+      target: /workspace
+      read_only: true
+    - type: bind
+      source: ${KAGGLE_ROOT:-E:/Kaggle}
+      target: /datasets
+      read_only: true
+      bind:
+        create_host_path: false
+    - type: bind
+      source: ${OUTPUT_HOST_DIR:-E:/Kaggle/exam-output}
+      target: /outputs
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            count: 1
+            capabilities: [gpu]
+
+services:
+  runner:
+    <<: *runtime
+    network_mode: none
+  notebooks:
+    <<: *runtime
+    profiles: [notebooks]
+    entrypoint: [python, /workspace/scripts/start_notebooks.py]
+    command: ["--IdentityProvider.token=${JUPYTER_TOKEN:-replace-with-your-local-token}"]
+    ports:
+      - "127.0.0.1:${JUPYTER_PORT:-8890}:8888"
+  downloads:
+    profiles: [downloads]
+    build:
+      context: .
+      target: runtime
+    image: neural-exam-local:0.1
+    working_dir: /workspace
+    init: true
+    cpus: 2
+    mem_limit: 2g
+    environment: *environment
+    volumes:
+      - .:/workspace:ro
+      - ${KAGGLE_ROOT:-E:/Kaggle}:/datasets
+      - ${OUTPUT_HOST_DIR:-E:/Kaggle/exam-output}:/outputs
+  reports:
+    profiles: [reports]
+    build:
+      context: .
+      target: reports
+    cpus: 1
+    mem_limit: 2g
+    environment:
+      OUTPUT_DIR: /outputs
+    volumes:
+      - .:/workspace:ro
+      - ${OUTPUT_HOST_DIR:-E:/Kaggle/exam-output}:/outputs

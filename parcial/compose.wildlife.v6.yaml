@@ -1,0 +1,8 @@
+name: neural-exam-wildlife-v6
+services:
+  runner:
+    environment:
+      NEURAL_EXAM_CONFIG: /workspace/configs/wildlife_v6.toml
+  notebooks:
+    environment:
+      NEURAL_EXAM_CONFIG: /workspace/configs/wildlife_v6.toml

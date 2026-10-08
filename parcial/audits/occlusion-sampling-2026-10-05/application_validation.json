@@ -1,0 +1,65 @@
+{
+  "scope": "Authorized separate 600-case human occlusion review; no training or inference",
+  "output": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600",
+  "gallery": "http://127.0.0.1:8902/occlusion_review.html",
+  "protocol_sha256": "8704d6e664b2f1cc2264ee5b663b5245c02be89523075ee6a63bc5a154714244",
+  "initial_csv_sha256": "67dda5f8bb83d47a3e60d9f40bae0e3d555af295787125d7bc5eb4fb8bdeb626",
+  "current_csv_sha256": "67dda5f8bb83d47a3e60d9f40bae0e3d555af295787125d7bc5eb4fb8bdeb626",
+  "sample_objects": 600,
+  "sample_photos": 596,
+  "sample_sequences": 552,
+  "strata_covered": 209,
+  "accepted_quotas_match": true,
+  "population_weight_sum": 17620.0,
+  "sizes": {
+    "medium": 317,
+    "large": 150,
+    "small": 133
+  },
+  "original_photos_copied_without_reencoding": true,
+  "all_596_photos_decoded_during_validation": true,
+  "frozen_sources_verified": 44,
+  "parent_artifacts_unchanged": [
+    "wildlife/manifest.json",
+    "wildlife/occlusion_review.csv",
+    "wildlife/label_review.csv",
+    "wildlife/yolov8s/weights/best.pt",
+    "wildlife/yolov8s/training_complete.json",
+    "wildlife/trans_test/predictions.json",
+    "wildlife/trans_test/metrics.json",
+    "wildlife/robustness.json",
+    "wildlife/uncertainty.json",
+    "receipts/source-freeze.json",
+    "notebooks/03_wildlife.ipynb",
+    "reports/wildlife_draft.pdf"
+  ],
+  "original_90_label_reviews_preserved": true,
+  "review_status": {
+    "status": "human_review_pending",
+    "total": 600,
+    "complete": 0,
+    "pending": 600,
+    "counts": {},
+    "missing_support": {
+      "low": 30,
+      "medium": 30,
+      "high": 30
+    }
+  },
+  "focused_tests": {
+    "passed": 7,
+    "seconds": 1.2,
+    "data": "synthetic temporary fixtures only"
+  },
+  "code_style": "scoped Ruff check passed",
+  "real_cpu_evaluation_connection": "CheckOnly passed; human review pending; no metrics computed",
+  "browser_validation": "Visible first page and yellow target boxes; 0/600 complete; no reviewer or human levels entered by agent",
+  "generation_source_sha256": {
+    "scripts/wildlife_occlusion_sample.py": "c2ee77b0635182e63e805093e49d7a83c7fb6b8a8695867ffff0afadd1b193d1",
+    "scripts/evaluate_occlusion_sample.py": "c7bc7f80d6ba17580f8bbc2c79530c0976cc2f18d46c6478e86277a6f0d39c52",
+    "scripts/evaluate_occlusion_sample.ps1": "397e24a7e12f58a31cc180f9726e2dfb11efe0479206e5317e6298e1d3b9d0c3",
+    "reviews/occlusion_sample.html": "702bc2bf6e9130d60745b8aa6a538cf68194384e660b10d031fe218956f45d73",
+    "tests/test_occlusion_sample.py": "d32590ee1c9e8e84f2da4ba5ec1056a3f6a8b5204cc72c92b6895fde645a5c34"
+  },
+  "rollback_boundary": "Only the separate sample directory, port 8902 server and new sample workflow files; preserve human evidence before removing it."
+}

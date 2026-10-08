@@ -1,0 +1,15 @@
+name: neural-exam-wildlife-v4
+services:
+  runner:
+    environment:
+      NEURAL_EXAM_CONFIG: /workspace/configs/wildlife_v4.toml
+  notebooks:
+    network_mode: bridge
+    environment:
+      NEURAL_EXAM_CONFIG: /workspace/configs/wildlife_v4.toml
+  review:
+    network_mode: bridge
+  downloads:
+    network_mode: bridge
+  backgrounds:
+    network_mode: bridge

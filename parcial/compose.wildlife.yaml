@@ -1,0 +1,100 @@
+name: neural-exam-wildlife
+x-environment: &environment
+  KAGGLE_ROOT: /datasets
+  CCT_DATA_DIR: /datasets/cct-annotations
+  CCT_IMAGES_DIR: /datasets/cct-images
+  CCT_ANNOTATIONS_DIR: /datasets/cct-annotations
+  OUTPUT_DIR: /outputs
+  PYTHONPATH: /workspace/src
+  PYTHONDONTWRITEBYTECODE: "1"
+  OMP_NUM_THREADS: "4"
+  MKL_NUM_THREADS: "4"
+  CUBLAS_WORKSPACE_CONFIG: ":4096:8"
+  TORCH_HOME: /outputs/cache/torch
+  YOLO_CONFIG_DIR: /outputs/cache/ultralytics
+  MPLCONFIGDIR: /outputs/cache/matplotlib
+  YOLO_AUTOINSTALL: "false"
+  YOLO_OFFLINE: "true"
+  PRETRAINED_WEIGHTS_DIR: /outputs/cache/weights
+  NOTEBOOK_TASK: wildlife
+x-runtime: &runtime
+  build:
+    context: .
+    target: runtime
+  image: neural-exam-wildlife:0.2
+  working_dir: /workspace
+  init: true
+  cpus: 8
+  mem_limit: 12g
+  shm_size: 2g
+  environment: *environment
+  volumes:
+    - type: bind
+      source: .
+      target: /workspace
+      read_only: true
+    - type: bind
+      source: ${CCT_IMAGES_HOST_DIR:-E:/Kaggle/eccv_18_all_images_sm/eccv_18_all_images_sm}
+      target: /datasets/cct-images
+      read_only: true
+      bind:
+        create_host_path: false
+    - type: bind
+      source: ${CCT_ANNOTATIONS_HOST_DIR:-E:/Kaggle/CCT20}
+      target: /datasets/cct-annotations
+      read_only: true
+      bind:
+        create_host_path: false
+    - type: bind
+      source: ${OUTPUT_HOST_DIR:-E:/Kaggle/exam-output-wildlife}
+      target: /outputs
+      bind:
+        create_host_path: false
+    - wildlife_dataset:/outputs/wildlife/dataset
+    - wildlife_smoke_dataset:/outputs/smoke/wildlife/dataset
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            count: 1
+            capabilities: [gpu]
+services:
+  runner:
+    <<: *runtime
+    network_mode: none
+  notebooks:
+    <<: *runtime
+    profiles: [notebooks]
+    entrypoint: [python, /workspace/scripts/start_notebooks.py]
+    command: ["--IdentityProvider.token=${JUPYTER_TOKEN:?Set JUPYTER_TOKEN before opening notebooks}"]
+    ports:
+      - "127.0.0.1:${JUPYTER_PORT:-8890}:8888"
+  downloads:
+    profiles: [downloads]
+    image: neural-exam-wildlife:0.2
+    working_dir: /workspace
+    entrypoint: [python, -m, neural_exam]
+    cpus: 2
+    mem_limit: 2g
+    environment: *environment
+    volumes:
+      - .:/workspace:ro
+      - ${CCT_ANNOTATIONS_HOST_DIR:-E:/Kaggle/CCT20}:/datasets/cct-annotations
+      - ${OUTPUT_HOST_DIR:-E:/Kaggle/exam-output-wildlife}:/outputs
+  reports:
+    profiles: [reports]
+    build:
+      context: .
+      target: reports
+    network_mode: none
+    cpus: 1
+    mem_limit: 2g
+    environment:
+      OUTPUT_DIR: /outputs
+    volumes:
+      - .:/workspace:ro
+      - ${OUTPUT_HOST_DIR:-E:/Kaggle/exam-output-wildlife}:/outputs
+volumes:
+  wildlife_dataset:
+  wildlife_smoke_dataset:

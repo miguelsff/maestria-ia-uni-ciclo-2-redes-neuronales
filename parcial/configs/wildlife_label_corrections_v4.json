@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "parent_manifest_identity": "514b104b731a21462e57567a6b515068ddd7ea30c7f47c2c0eed83a5ef067a3a",
+  "patches": [
+    {
+      "image_id": "596bdb10-23d2-11e8-a6a3-ec086b02610b",
+      "split": "train",
+      "source_sha256": "3370cf30ed60a0d8b00da5b30bd420ba43181b09d47f8ef6d4832c601f67d6a0",
+      "original_boxes": [
+        {
+          "class_id": 8,
+          "box": [
+            0.320625,
+            0.6370013386880856,
+            0.10999999999999999,
+            0.1173761713520749
+          ],
+          "annotation_id": "43553"
+        }
+      ],
+      "proposal_kind": "agent_proposal_requires_human_review",
+      "reason": "El revisor humano señaló una tercera ave parcialmente oculta entre las rocas. Se propone una caja para la parte visible y se conservan las dos cajas de v3.",
+      "proposal_author": "Codex (asistencia automatizada; no aprobación humana)",
+      "replacement_boxes": [
+        {
+          "category": "bird",
+          "annotation_id": "43553",
+          "box": [
+            0.33203125,
+            0.6325301204819277,
+            0.10546875,
+            0.13520749665327977
+          ]
+        },
+        {
+          "category": "bird",
+          "annotation_id": "correction-v3-596bdb10-bird-2",
+          "box": [
+            0.93017578125,
+            0.6191432396251674,
+            0.0673828125,
+            0.09504685408299866
+          ]
+        },
+        {
+          "category": "bird",
+          "annotation_id": "correction-v4-596bdb10-bird-3",
+          "box": [
+            0.681640625,
+            0.5609103078982597,
+            0.017578125,
+            0.024096385542168676
+          ]
+        }
+      ]
+    }
+  ]
+}

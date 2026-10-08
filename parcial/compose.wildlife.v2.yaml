@@ -1,0 +1,52 @@
+name: neural-exam-wildlife-v2
+services:
+  backgrounds:
+    profiles: [downloads]
+    image: neural-exam-wildlife:0.2
+    entrypoint: [python, /workspace/scripts/prepare_wildlife_backgrounds.py]
+    command: [--output, /backgrounds, --annotations, /datasets/cct-annotations, --cameras, "8", --per-camera, "125", --seed, "42", --workers, "8"]
+    cpus: 4
+    mem_limit: 2g
+    environment:
+      PYTHONPATH: /workspace/src
+      PYTHONDONTWRITEBYTECODE: "1"
+    volumes:
+      - .:/workspace:ro
+      - ${CCT_ANNOTATIONS_HOST_DIR:?Set CCT_ANNOTATIONS_HOST_DIR}:/datasets/cct-annotations:ro
+      - ${CCT_BACKGROUND_HOST_DIR:?Set CCT_BACKGROUND_HOST_DIR}:/backgrounds
+  runner:
+    environment:
+      NEURAL_EXAM_CONFIG: /workspace/configs/wildlife.toml
+    volumes:
+      - type: bind
+        source: ${CCT_BACKGROUND_HOST_DIR:?Set CCT_BACKGROUND_HOST_DIR}
+        target: /datasets/cct-backgrounds
+        read_only: true
+        bind:
+          create_host_path: false
+  notebooks:
+    environment:
+      NEURAL_EXAM_CONFIG: /workspace/configs/wildlife.toml
+    volumes:
+      - type: bind
+        source: ${CCT_BACKGROUND_HOST_DIR:?Set CCT_BACKGROUND_HOST_DIR}
+        target: /datasets/cct-backgrounds
+        read_only: true
+        bind:
+          create_host_path: false
+  review:
+    image: neural-exam-wildlife:0.2
+    entrypoint: [python, -m, http.server, "8888", --bind, "0.0.0.0"]
+    working_dir: /outputs/wildlife
+    read_only: true
+    cpus: 1
+    mem_limit: 512m
+    environment:
+      PYTHONDONTWRITEBYTECODE: "1"
+    ports:
+      - "127.0.0.1:${REVIEW_PORT:-8894}:8888"
+    volumes:
+      - ${OUTPUT_HOST_DIR:?Set OUTPUT_HOST_DIR}:/outputs:ro
+      - ${CCT_IMAGES_HOST_DIR:?Set CCT_IMAGES_HOST_DIR}:/datasets/cct-images:ro
+      - ${CCT_BACKGROUND_HOST_DIR:?Set CCT_BACKGROUND_HOST_DIR}:/datasets/cct-backgrounds:ro
+      - wildlife_dataset:/outputs/wildlife/dataset:ro
