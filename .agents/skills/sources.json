@@ -1,0 +1,78 @@
+{
+  "scope": "project",
+  "installed_on": "2026-10-02",
+  "skills": [
+    {
+      "name": "jupyter-notebook",
+      "repository": "openai/skills",
+      "path": "skills/.curated/jupyter-notebook",
+      "revision": "49f948faa9258a0c61caceaf225e179651397431"
+    },
+    {
+      "name": "pdf",
+      "repository": "openai/skills",
+      "path": "skills/.curated/pdf",
+      "revision": "49f948faa9258a0c61caceaf225e179651397431"
+    },
+    {
+      "name": "pytorch-patterns",
+      "repository": "affaan-m/ecc",
+      "path": "skills/pytorch-patterns",
+      "revision": "ef648e01899ba3e8dc6371642deaaf64b4477775"
+    },
+    {
+      "name": "data-visualization",
+      "repository": "anthropics/knowledge-work-plugins",
+      "path": "data/skills/data-visualization",
+      "revision": "8444efcd48f7012f09797778a36a33e73d0861f4"
+    },
+    {
+      "name": "sympy",
+      "repository": "k-dense-ai/scientific-agent-skills",
+      "path": "skills/sympy",
+      "revision": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298"
+    },
+    {
+      "name": "scikit-learn",
+      "repository": "k-dense-ai/scientific-agent-skills",
+      "path": "skills/scikit-learn",
+      "revision": "154988403bb5a18e9d3c0ce4e6d5e2e4b184a298"
+    },
+    {
+      "name": "yolo-models",
+      "repository": "ultralytics/skills",
+      "path": "skills/yolo-models",
+      "revision": "ed10b9bdea6191818aa7445b7886a05011840d01"
+    },
+    {
+      "name": "yolo-datasets",
+      "repository": "ultralytics/skills",
+      "path": "skills/yolo-datasets",
+      "revision": "ed10b9bdea6191818aa7445b7886a05011840d01"
+    },
+    {
+      "name": "yolo-training",
+      "repository": "ultralytics/skills",
+      "path": "skills/yolo-training",
+      "revision": "ed10b9bdea6191818aa7445b7886a05011840d01"
+    },
+    {
+      "name": "yolo-inference",
+      "repository": "ultralytics/skills",
+      "path": "skills/yolo-inference",
+      "revision": "ed10b9bdea6191818aa7445b7886a05011840d01"
+    },
+    {
+      "name": "yolo-export",
+      "repository": "ultralytics/skills",
+      "path": "skills/yolo-export",
+      "revision": "ed10b9bdea6191818aa7445b7886a05011840d01"
+    },
+    {
+      "name": "roboflow-universe",
+      "repository": "roboflow/computer-vision-skills",
+      "path": "skills/roboflow-universe",
+      "revision": "76ae1ac18c1d8a92516c4ab41699d794117b4802"
+    }
+  ]
+}
