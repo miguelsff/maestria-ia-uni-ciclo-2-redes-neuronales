@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "complete_matrix": true,
+  "geotiffs_verified": 618,
+  "results": [
+    {
+      "experiment": "gold_bce",
+      "split": "test",
+      "geotiffs_verified": 88,
+      "mean_chip_iou": 0.39392686726074255,
+      "best_epoch": 47,
+      "best_checkpoint_sha256": "d4e9f69a1bfdc13e641c2cb38cb2fc02d4bcac04bc7e771c569ca48b113ef02f"
+    },
+    {
+      "experiment": "gold_bce",
+      "split": "bolivia",
+      "geotiffs_verified": 15,
+      "mean_chip_iou": 0.45547708515221536,
+      "best_epoch": 47,
+      "best_checkpoint_sha256": "d4e9f69a1bfdc13e641c2cb38cb2fc02d4bcac04bc7e771c569ca48b113ef02f"
+    },
+    {
+      "experiment": "gold_dice",
+      "split": "test",
+      "geotiffs_verified": 88,
+      "mean_chip_iou": 0.40998064973334647,
+      "best_epoch": 31,
+      "best_checkpoint_sha256": "d331888ec2c1149dd937f2f41f2cabafd78456a7e2e500da9e1ad19817685f50"
+    },
+    {
+      "experiment": "gold_dice",
+      "split": "bolivia",
+      "geotiffs_verified": 15,
+      "mean_chip_iou": 0.44633920652618536,
+      "best_epoch": 31,
+      "best_checkpoint_sha256": "d331888ec2c1149dd937f2f41f2cabafd78456a7e2e500da9e1ad19817685f50"
+    },
+    {
+      "experiment": "gold_combined",
+      "split": "test",
+      "geotiffs_verified": 88,
+      "mean_chip_iou": 0.4067509533672143,
+      "best_epoch": 49,
+      "best_checkpoint_sha256": "80bee04f73d6b619c094aaa067067a2c7d639c77911498a6569a9b7b128dd56f"
+    },
+    {
+      "experiment": "gold_combined",
+      "split": "bolivia",
+      "geotiffs_verified": 15,
+      "mean_chip_iou": 0.40572032377224565,
+      "best_epoch": 49,
+      "best_checkpoint_sha256": "80bee04f73d6b619c094aaa067067a2c7d639c77911498a6569a9b7b128dd56f"
+    },
+    {
+      "experiment": "gold_weak_bce",
+      "split": "test",
+      "geotiffs_verified": 88,
+      "mean_chip_iou": 0.3250648457377374,
+      "best_epoch": 28,
+      "best_checkpoint_sha256": "70cbf9a0cc1b2f4923e691a33e4c4f06c98a24605047787d422b3555912cd1c0"
+    },
+    {
+      "experiment": "gold_weak_bce",
+      "split": "bolivia",
+      "geotiffs_verified": 15,
+      "mean_chip_iou": 0.2690446807627968,
+      "best_epoch": 28,
+      "best_checkpoint_sha256": "70cbf9a0cc1b2f4923e691a33e4c4f06c98a24605047787d422b3555912cd1c0"
+    },
+    {
+      "experiment": "gold_weak_dice",
+      "split": "test",
+      "geotiffs_verified": 88,
+      "mean_chip_iou": 0.34874659046711914,
+      "best_epoch": 1,
+      "best_checkpoint_sha256": "95c2b03eca5bb521d6485b463a713b3f7445c60f95cd0b319695f114d4af711d"
+    },
+    {
+      "experiment": "gold_weak_dice",
+      "split": "bolivia",
+      "geotiffs_verified": 15,
+      "mean_chip_iou": 0.4789838687552829,
+      "best_epoch": 1,
+      "best_checkpoint_sha256": "95c2b03eca5bb521d6485b463a713b3f7445c60f95cd0b319695f114d4af711d"
+    },
+    {
+      "experiment": "gold_weak_combined",
+      "split": "test",
+      "geotiffs_verified": 88,
+      "mean_chip_iou": 0.35934957976106924,
+      "best_epoch": 12,
+      "best_checkpoint_sha256": "7d40fc6b5cebdbb5b7b0e76f4e1f321743cdc7add2131cf0ee887977c8c96773"
+    },
+    {
+      "experiment": "gold_weak_combined",
+      "split": "bolivia",
+      "geotiffs_verified": 15,
+      "mean_chip_iou": 0.4511407865489137,
+      "best_epoch": 12,
+      "best_checkpoint_sha256": "7d40fc6b5cebdbb5b7b0e76f4e1f321743cdc7add2131cf0ee887977c8c96773"
+    }
+  ]
+}

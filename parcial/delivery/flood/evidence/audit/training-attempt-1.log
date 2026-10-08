@@ -1,0 +1,268 @@
+Flood rasters validated: 500/4606
+Flood rasters validated: 1000/4606
+Flood rasters validated: 1500/4606
+Flood rasters validated: 2000/4606
+Flood rasters validated: 2500/4606
+Flood rasters validated: 3000/4606
+Flood rasters validated: 3500/4606
+Flood rasters validated: 4000/4606
+Flood rasters validated: 4500/4606
+gold_bce: epoch 1, validation loss 0.28927
+gold_bce: epoch 2, validation loss 0.24752
+gold_bce: epoch 3, validation loss 0.23438
+gold_bce: epoch 4, validation loss 0.20755
+gold_bce: epoch 5, validation loss 0.19642
+gold_bce: epoch 6, validation loss 0.17190
+gold_bce: epoch 7, validation loss 0.18521
+gold_bce: epoch 8, validation loss 0.25772
+gold_bce: epoch 9, validation loss 0.16470
+gold_bce: epoch 10, validation loss 0.16402
+gold_bce: epoch 11, validation loss 0.15872
+gold_bce: epoch 12, validation loss 0.19317
+gold_bce: epoch 13, validation loss 0.17627
+gold_bce: epoch 14, validation loss 0.15719
+gold_bce: epoch 15, validation loss 0.14478
+gold_bce: epoch 16, validation loss 0.17801
+gold_bce: epoch 17, validation loss 0.24697
+gold_bce: epoch 18, validation loss 0.14678
+gold_bce: epoch 19, validation loss 0.14838
+gold_bce: epoch 20, validation loss 0.16821
+gold_bce: epoch 21, validation loss 0.14101
+gold_bce: epoch 22, validation loss 0.14972
+gold_bce: epoch 23, validation loss 0.15931
+gold_bce: epoch 24, validation loss 0.21228
+gold_bce: epoch 25, validation loss 0.14005
+gold_bce: epoch 26, validation loss 0.13905
+gold_bce: epoch 27, validation loss 0.14692
+gold_bce: epoch 28, validation loss 0.15582
+gold_bce: epoch 29, validation loss 0.14201
+gold_bce: epoch 30, validation loss 0.14917
+gold_bce: epoch 31, validation loss 0.13595
+gold_bce: epoch 32, validation loss 0.14519
+gold_bce: epoch 33, validation loss 0.13317
+gold_bce: epoch 34, validation loss 0.15394
+gold_bce: epoch 35, validation loss 0.13835
+gold_bce: epoch 36, validation loss 0.13410
+gold_bce: epoch 37, validation loss 0.14725
+gold_bce: epoch 38, validation loss 0.12906
+gold_bce: epoch 39, validation loss 0.14636
+gold_bce: epoch 40, validation loss 0.13081
+gold_bce: epoch 41, validation loss 0.13411
+gold_bce: epoch 42, validation loss 0.14189
+gold_bce: epoch 43, validation loss 0.12977
+gold_bce: epoch 44, validation loss 0.13369
+gold_bce: epoch 45, validation loss 0.13086
+gold_bce: epoch 46, validation loss 0.12343
+gold_bce: epoch 47, validation loss 0.12115
+gold_bce: epoch 48, validation loss 0.13160
+gold_bce: epoch 49, validation loss 0.12643
+gold_bce: epoch 50, validation loss 0.15922
+gold_dice: epoch 1, validation loss 0.73893
+gold_dice: epoch 2, validation loss 0.71682
+gold_dice: epoch 3, validation loss 0.69615
+gold_dice: epoch 4, validation loss 0.66404
+gold_dice: epoch 5, validation loss 0.63901
+gold_dice: epoch 6, validation loss 0.60918
+gold_dice: epoch 7, validation loss 0.61689
+gold_dice: epoch 8, validation loss 0.61376
+gold_dice: epoch 9, validation loss 0.55225
+gold_dice: epoch 10, validation loss 0.54728
+gold_dice: epoch 11, validation loss 0.53405
+gold_dice: epoch 12, validation loss 0.52409
+gold_dice: epoch 13, validation loss 0.51449
+gold_dice: epoch 14, validation loss 0.51627
+gold_dice: epoch 15, validation loss 0.51535
+gold_dice: epoch 16, validation loss 0.52719
+gold_dice: epoch 17, validation loss 0.52363
+gold_dice: epoch 18, validation loss 0.50838
+gold_dice: epoch 19, validation loss 0.50225
+gold_dice: epoch 20, validation loss 0.50356
+gold_dice: epoch 21, validation loss 0.50595
+gold_dice: epoch 22, validation loss 0.48325
+gold_dice: epoch 23, validation loss 0.48071
+gold_dice: epoch 24, validation loss 0.50006
+gold_dice: epoch 25, validation loss 0.49436
+gold_dice: epoch 26, validation loss 0.49492
+gold_dice: epoch 27, validation loss 0.49190
+gold_dice: epoch 28, validation loss 0.50421
+gold_dice: epoch 29, validation loss 0.51268
+gold_dice: epoch 30, validation loss 0.48182
+gold_dice: epoch 31, validation loss 0.47705
+gold_dice: epoch 32, validation loss 0.48263
+gold_dice: epoch 33, validation loss 0.51263
+gold_dice: epoch 34, validation loss 0.48511
+gold_dice: epoch 35, validation loss 0.48038
+gold_dice: epoch 36, validation loss 0.48156
+gold_dice: epoch 37, validation loss 0.50409
+gold_dice: epoch 38, validation loss 0.47991
+gold_dice: epoch 39, validation loss 0.48594
+gold_dice: epoch 40, validation loss 0.48903
+gold_dice: epoch 41, validation loss 0.47778
+gold_combined: epoch 1, validation loss 1.05895
+gold_combined: epoch 2, validation loss 0.99918
+gold_combined: epoch 3, validation loss 0.99864
+gold_combined: epoch 4, validation loss 0.90930
+gold_combined: epoch 5, validation loss 0.88251
+gold_combined: epoch 6, validation loss 0.87535
+gold_combined: epoch 7, validation loss 0.85548
+gold_combined: epoch 8, validation loss 0.93673
+gold_combined: epoch 9, validation loss 0.95903
+gold_combined: epoch 10, validation loss 0.80464
+gold_combined: epoch 11, validation loss 0.81173
+gold_combined: epoch 12, validation loss 0.79081
+gold_combined: epoch 13, validation loss 0.77630
+gold_combined: epoch 14, validation loss 0.76023
+gold_combined: epoch 15, validation loss 0.78652
+gold_combined: epoch 16, validation loss 0.75345
+gold_combined: epoch 17, validation loss 0.98390
+gold_combined: epoch 18, validation loss 0.75150
+gold_combined: epoch 19, validation loss 0.76865
+gold_combined: epoch 20, validation loss 0.72506
+gold_combined: epoch 21, validation loss 0.73811
+gold_combined: epoch 22, validation loss 0.70840
+gold_combined: epoch 23, validation loss 0.74943
+gold_combined: epoch 24, validation loss 0.75420
+gold_combined: epoch 25, validation loss 0.70949
+gold_combined: epoch 26, validation loss 0.73339
+gold_combined: epoch 27, validation loss 0.67615
+gold_combined: epoch 28, validation loss 0.70886
+gold_combined: epoch 29, validation loss 0.73628
+gold_combined: epoch 30, validation loss 0.68251
+gold_combined: epoch 31, validation loss 0.67403
+gold_combined: epoch 32, validation loss 0.88666
+gold_combined: epoch 33, validation loss 0.66631
+gold_combined: epoch 34, validation loss 0.72419
+gold_combined: epoch 35, validation loss 0.72702
+gold_combined: epoch 36, validation loss 0.66702
+gold_combined: epoch 37, validation loss 0.68716
+gold_combined: epoch 38, validation loss 0.67922
+gold_combined: epoch 39, validation loss 0.70259
+gold_combined: epoch 40, validation loss 0.67771
+gold_combined: epoch 41, validation loss 0.67467
+gold_combined: epoch 42, validation loss 0.68128
+gold_combined: epoch 43, validation loss 0.66156
+gold_combined: epoch 44, validation loss 0.68719
+gold_combined: epoch 45, validation loss 0.66426
+gold_combined: epoch 46, validation loss 0.66608
+gold_combined: epoch 47, validation loss 0.73385
+gold_combined: epoch 48, validation loss 0.68431
+gold_combined: epoch 49, validation loss 0.64773
+gold_combined: epoch 50, validation loss 0.66339
+gold_weak_bce: epoch 1, validation loss 0.22834
+gold_weak_bce: epoch 2, validation loss 0.20122
+gold_weak_bce: epoch 3, validation loss 0.18994
+gold_weak_bce: epoch 4, validation loss 0.20266
+gold_weak_bce: epoch 5, validation loss 0.20234
+gold_weak_bce: epoch 6, validation loss 0.22284
+gold_weak_bce: epoch 7, validation loss 0.20372
+gold_weak_bce: epoch 8, validation loss 0.16869
+gold_weak_bce: epoch 9, validation loss 0.16416
+gold_weak_bce: epoch 10, validation loss 0.18121
+gold_weak_bce: epoch 11, validation loss 0.17136
+gold_weak_bce: epoch 12, validation loss 0.16488
+gold_weak_bce: epoch 13, validation loss 0.16498
+gold_weak_bce: epoch 14, validation loss 0.16630
+gold_weak_bce: epoch 15, validation loss 0.15514
+gold_weak_bce: epoch 16, validation loss 0.16095
+gold_weak_bce: epoch 17, validation loss 0.16970
+gold_weak_bce: epoch 18, validation loss 0.14881
+gold_weak_bce: epoch 19, validation loss 0.15565
+gold_weak_bce: epoch 20, validation loss 0.15726
+gold_weak_bce: epoch 21, validation loss 0.15543
+gold_weak_bce: epoch 22, validation loss 0.16379
+gold_weak_bce: epoch 23, validation loss 0.15158
+gold_weak_bce: epoch 24, validation loss 0.17531
+gold_weak_bce: epoch 25, validation loss 0.15595
+gold_weak_bce: epoch 26, validation loss 0.15325
+gold_weak_bce: epoch 27, validation loss 0.15545
+gold_weak_bce: epoch 28, validation loss 0.14556
+gold_weak_bce: epoch 29, validation loss 0.14945
+gold_weak_bce: epoch 30, validation loss 0.15512
+gold_weak_bce: epoch 31, validation loss 0.16151
+gold_weak_bce: epoch 32, validation loss 0.15495
+gold_weak_bce: epoch 33, validation loss 0.15641
+gold_weak_bce: epoch 34, validation loss 0.15222
+gold_weak_bce: epoch 35, validation loss 0.15938
+gold_weak_bce: epoch 36, validation loss 0.16389
+gold_weak_bce: epoch 37, validation loss 0.18336
+gold_weak_bce: epoch 38, validation loss 0.16000
+gold_weak_dice: epoch 1, validation loss 0.57193
+gold_weak_dice: epoch 2, validation loss 0.60283
+gold_weak_dice: epoch 3, validation loss 0.59576
+gold_weak_dice: epoch 4, validation loss 0.60320
+gold_weak_dice: epoch 5, validation loss 0.59770
+gold_weak_dice: epoch 6, validation loss 0.61208
+gold_weak_dice: epoch 7, validation loss 0.59861
+gold_weak_dice: epoch 8, validation loss 0.60715
+gold_weak_dice: epoch 9, validation loss 0.58672
+gold_weak_dice: epoch 10, validation loss 0.58807
+gold_weak_dice: epoch 11, validation loss 0.59340
+gold_weak_combined: epoch 1, validation loss 0.88503
+gold_weak_combined: epoch 2, validation loss 0.84853
+gold_weak_combined: epoch 3, validation loss 0.84303
+gold_weak_combined: epoch 4, validation loss 0.85309
+gold_weak_combined: epoch 5, validation loss 0.81375
+gold_weak_combined: epoch 6, validation loss 0.84543
+gold_weak_combined: epoch 7, validation loss 0.85610
+gold_weak_combined: epoch 8, validation loss 0.80977
+gold_weak_combined: epoch 9, validation loss 0.78089
+gold_weak_combined: epoch 10, validation loss 0.80993
+gold_weak_combined: epoch 11, validation loss 0.79279
+gold_weak_combined: epoch 12, validation loss 0.77185
+gold_weak_combined: epoch 13, validation loss 0.81527
+gold_weak_combined: epoch 14, validation loss 0.79267
+gold_weak_combined: epoch 15, validation loss 0.77505
+gold_weak_combined: epoch 16, validation loss 0.83786
+gold_weak_combined: epoch 17, validation loss 0.77750
+gold_weak_combined: epoch 18, validation loss 0.78848
+gold_weak_combined: epoch 19, validation loss 0.82453
+gold_weak_combined: epoch 20, validation loss 0.80372
+gold_weak_combined: epoch 21, validation loss 0.80347
+gold_weak_combined: epoch 22, validation loss 0.81570
+{
+  "scientific_run": true,
+  "tasks": [
+    {
+      "task": "flood",
+      "experiments": [
+        {
+          "experiment": "gold_bce",
+          "test_iou": 0.39392686726074255,
+          "bolivia_iou": 0.45547708515221536,
+          "geographic_gap": -0.0615502178914728
+        },
+        {
+          "experiment": "gold_dice",
+          "test_iou": 0.40998064973334647,
+          "bolivia_iou": 0.44633920652618536,
+          "geographic_gap": -0.03635855679283889
+        },
+        {
+          "experiment": "gold_combined",
+          "test_iou": 0.4067509533672143,
+          "bolivia_iou": 0.40572032377224565,
+          "geographic_gap": 0.001030629594968635
+        },
+        {
+          "experiment": "gold_weak_bce",
+          "test_iou": 0.3250648457377374,
+          "bolivia_iou": 0.2690446807627968,
+          "geographic_gap": 0.05602016497494061
+        },
+        {
+          "experiment": "gold_weak_dice",
+          "test_iou": 0.34874659046711914,
+          "bolivia_iou": 0.4789838687552829,
+          "geographic_gap": -0.13023727828816378
+        },
+        {
+          "experiment": "gold_weak_combined",
+          "test_iou": 0.35934957976106924,
+          "bolivia_iou": 0.4511407865489137,
+          "geographic_gap": -0.09179120678784447
+        }
+      ],
+      "scientific_run": true
+    }
+  ]
+}

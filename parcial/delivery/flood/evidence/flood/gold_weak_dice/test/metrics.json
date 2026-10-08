@@ -1,0 +1,23 @@
+{
+  "pooled_pixels": {
+    "tp": 1909144,
+    "fp": 719742,
+    "fn": 605864,
+    "tn": 17209209,
+    "valid_pixels": 20443959,
+    "iou": 0.5901983151711879,
+    "precision": 0.7262178732740788,
+    "recall": 0.759100567473344,
+    "f1": 0.7422952339220054,
+    "omission": 0.24089943252665597,
+    "commission": 0.27378212672592117
+  },
+  "mean_chip_iou": 0.34874659046711914,
+  "defined_iou_chips": 87,
+  "empty_union_chips": 1,
+  "reference_mean_chip_iou": 0.3561471975048869,
+  "reference_policy": "Official Train.ipynb epsilon=1e-7; empty union receives one",
+  "chips": 88,
+  "threshold": 0.5,
+  "empty_union_policy": "undefined chip IoU excluded; counts still contribute to pooled metrics"
+}

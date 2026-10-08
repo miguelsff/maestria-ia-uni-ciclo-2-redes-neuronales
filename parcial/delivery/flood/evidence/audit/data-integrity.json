@@ -1,0 +1,21 @@
+{
+  "completed_utc": "2026-10-03T18:42:50.984509+00:00",
+  "source": "gs://sen1floods11/v1.1",
+  "download_manifest_sha256": "059f22c2de000885da9c1f4550a2b888d8fd60f4cc1dea4a4a72a225f4dae32e",
+  "selected_files": 9216,
+  "verified_bytes": 7709124682,
+  "counts": {
+    "flood_handlabeled": 4,
+    "S1Hand": 446,
+    "LabelHand": 446,
+    "S1Weak": 4160,
+    "S1OtsuLabelWeak": 4160
+  },
+  "remote_weak_chips": 4384,
+  "excluded_weak_chips": {
+    "bolivia": 224,
+    "gold_overlap": 0
+  },
+  "failures": [],
+  "raster_validation": "Performed separately by neural_exam.flood.data.prepare"
+}

@@ -1,0 +1,32 @@
+{
+  "verified_utc": "2026-10-05T02:40:10.597403+00:00",
+  "scope": "Question 2 editorial delivery and publication preparation",
+  "pdf": {
+    "path": "E:\\Kaggle\\exam-delivery-flood\\review-2026-10-04\\reports\\flood_draft.pdf",
+    "sha256": "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38",
+    "pages": 9,
+    "references": 7,
+    "five_user_provided_authors": true,
+    "all_pages_visually_inspected": true,
+    "overfull_boxes": false,
+    "undefined_references": false,
+    "missing_characters": false,
+    "group_editorial_approval": "pending"
+  },
+  "scientific_results": "Preserved; no full experiments or scientific inference repeated. Original PDF, notebook, result receipt and selected checkpoints retain recorded hashes.",
+  "checkout_tests": {
+    "passed": 17,
+    "skipped": 3,
+    "skip_reason": "CUDA AMP cases require a GPU; checkout verification used CPU.",
+    "log": "checkout-tests.log"
+  },
+  "complete_reproduction_rerun": false,
+  "platform_submission": "pending",
+  "class_presentation": "30 October 2026, pending",
+  "publication": {
+    "status": "verified",
+    "scientific_snapshot_commit": "c49564a1062b8235efa06ab56edef65d0f6912ad",
+    "receipt": "publication.json",
+    "new_clone_hashes_compose_and_cpu_environment_passed": true
+  }
+}

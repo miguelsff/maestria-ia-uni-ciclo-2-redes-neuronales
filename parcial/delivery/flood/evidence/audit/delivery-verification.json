@@ -1,0 +1,137 @@
+{
+  "status": "local_deliverables_verified_draft",
+  "verified_utc": "2026-10-03T20:43:46.360963+00:00",
+  "data_integrity_files": 9216,
+  "tests_passed": 20,
+  "scientific_experiments": 6,
+  "prediction_audit": {
+    "geotiffs": 618,
+    "receipt": "audit/flood-results.json",
+    "sha256": "9c942ed9637d6cce98991b97577ac1e8af7f3613f476ee31dfc7efd12c60b8df"
+  },
+  "notebook": {
+    "code_cells": 8,
+    "executed_cells": 8,
+    "errors": 0,
+    "flags": {
+      "RUN_PREPARE": false,
+      "RUN_TRAINING": false,
+      "RESUME": false,
+      "GENERATE_REPORT_ASSETS": false
+    },
+    "sha256": "af449a14783ca7a546565f7abf00f007ad42a125dd7d6e5bd9c04cf22ba0a5b0",
+    "project_copy_matches": true
+  },
+  "pdf": {
+    "pages": 9,
+    "sha256": "00c86d3b767cb5ed35f03325cf92d9e906cea3b59e637ab77f044eb2825eeeb0",
+    "render_dpi": 120,
+    "all_pages_visually_inspected": true,
+    "page_images": [
+      {
+        "page": 1,
+        "sha256": "8bf04cb09764b5c6a3368d53df86d11fcf7bfae2f4aff9f23b6c356b48abe71b"
+      },
+      {
+        "page": 2,
+        "sha256": "0200dd5a877e285e50d7a88b0118b349774cc7cb9f018e59ed80f9c4a796f234"
+      },
+      {
+        "page": 3,
+        "sha256": "60cd27e0d40a809b5caae9b6abdce7f976ffde52c4219f57282be5c711eb1963"
+      },
+      {
+        "page": 4,
+        "sha256": "567b5046f12d02614c02338c52b6966e454336a109991c635b4650dd004e38ed"
+      },
+      {
+        "page": 5,
+        "sha256": "0efb1d3dc9ba7d7295df6a0f4df86affd9d97c2abec6ac270db5c67042dc8c32"
+      },
+      {
+        "page": 6,
+        "sha256": "d02b1a1c11eb9550f8657cc4439cb55d19fbb17667c9f32feaeba5f087f89f97"
+      },
+      {
+        "page": 7,
+        "sha256": "eb9657f3e1b15feda6c974dda87fd633b3c9195270b297248adfca8c02a910c2"
+      },
+      {
+        "page": 8,
+        "sha256": "422ec71f9d212a3b208b727f8a7b486e82bcea6873854b1c743a24a57d51fe3a"
+      },
+      {
+        "page": 9,
+        "sha256": "9617fab40ebf05854d9163b1c9e232bb14321642c57328ea289cd069608c317a"
+      }
+    ],
+    "layout_repairs": [
+      "Separated quantitative and qualitative figures to preserve section order.",
+      "Wrapped ablation labels to avoid overlap.",
+      "Removed accented text from math roman font."
+    ],
+    "missing_characters": false,
+    "undefined_references": false,
+    "overfull_boxes": false
+  },
+  "qualitative": {
+    "cases": 3,
+    "observed_patterns": 3,
+    "generalization_hypotheses": 2,
+    "physical_causes_confirmed": false,
+    "editorial_approval": "pending"
+  },
+  "resources": {
+    "sample_count": 235,
+    "sampled_peak_container_ram_gib": 7.129,
+    "sampled_peak_driver_gpu_mib": 5944,
+    "training_wall_minutes_sum": 62.680813247117236,
+    "note": "Sampled usage does not guarantee instantaneous peaks; driver GPU usage includes all processes. CUDA allocator peaks are per-run execution.json."
+  },
+  "experiments": [
+    {
+      "experiment": "gold_bce",
+      "test_iou": "0.39392686726074255",
+      "bolivia_iou": "0.45547708515221536",
+      "geographic_gap": "-0.0615502178914728"
+    },
+    {
+      "experiment": "gold_dice",
+      "test_iou": "0.40998064973334647",
+      "bolivia_iou": "0.44633920652618536",
+      "geographic_gap": "-0.03635855679283889"
+    },
+    {
+      "experiment": "gold_combined",
+      "test_iou": "0.4067509533672143",
+      "bolivia_iou": "0.40572032377224565",
+      "geographic_gap": "0.001030629594968635"
+    },
+    {
+      "experiment": "gold_weak_bce",
+      "test_iou": "0.3250648457377374",
+      "bolivia_iou": "0.2690446807627968",
+      "geographic_gap": "0.05602016497494061"
+    },
+    {
+      "experiment": "gold_weak_dice",
+      "test_iou": "0.34874659046711914",
+      "bolivia_iou": "0.4789838687552829",
+      "geographic_gap": "-0.13023727828816378"
+    },
+    {
+      "experiment": "gold_weak_combined",
+      "test_iou": "0.35934957976106924",
+      "bolivia_iou": "0.4511407865489137",
+      "geographic_gap": "-0.09179120678784447"
+    }
+  ],
+  "pending": [
+    "Five real author names and email addresses.",
+    "Editorial review by the student group."
+  ],
+  "original_data_access": "read_only_mounts",
+  "commits_created": false,
+  "published": false,
+  "followup_automation": "deleted after local verification"
+}
