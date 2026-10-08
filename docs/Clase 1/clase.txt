@@ -1,0 +1,3 @@
+https://introtodeeplearning.com/
+
+https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1214/materials/CS224N_PyTorch_Tutorial.html
