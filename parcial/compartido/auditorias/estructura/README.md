@@ -11,13 +11,13 @@ El inventario y el mapa están completos. **No se ha trasladado ni eliminado nin
 | Base remota | `0dc2fd20f424941919c38ff213894541e60ab200` |
 | Auditoría incorporada | `8bb5a39` mediante cherry-pick; SHA local `7bd7bece23638cb990ab7397b08796b11bf8a4cc` |
 | Archivos tracked de la base / inventariados | 913 / 932; el commit de auditoría añade 19 rutas |
-| Plan actual | 21 conservar, 315 trasladar, 596 copias JPEG retirables en D2 |
+| Plan actual | 1 conservar, 335 trasladar, 596 copias JPEG retirables en D2 |
 | Duplicados exactos | 7 grupos; se conservan sus funciones y contextos |
 | Versiones locales respaldadas | 64 verificadas contra el manifiesto; 44 rutas ausentes aquí, 13 versiones iguales y 7 con bytes distintos |
 | Fuentes congeladas | 44 originales verificados; 42 copias físicas difieren por CRLF y las otras 2 ya coinciden |
 | Secretos ignorados | 6 rutas `.env.wildlife*`; no se leyó ni publicó su contenido |
-| Configuración solicitada | Modelo y esfuerzo según creación, sin valores expuestos en la delegación; velocidad estándar heredada (`default`) |
-| Configuración efectiva | No verificable con la evidencia disponible; no se atribuye un valor |
+| Configuración solicitada | `gpt-6.1-sol`, esfuerzo `high`; velocidad estándar heredada (`default`) |
+| Configuración efectiva | El chat principal verificó `gpt-6.1-sol` / `high` desde `turn_context` y velocidad global `default`; comunicó esa evidencia en seguimiento de D1 |
 
 [inventario.json](inventario.json) registra cada hash físico, grupo duplicado, excepción semántica, copia congelada y versión respaldada. [mapa.csv](mapa.csv) contiene origen, destino, SHA-256, tamaño, operación y motivo de cada archivo. [migration_plan.json](migration_plan.json) es el plan ejecutable, con `stage=D1` y aplicación deshabilitada. [evidencia_d1.json](evidencia_d1.json) resume el alcance; [verificaciones_d1.json](verificaciones_d1.json) conserva resultados reales.
 
@@ -36,9 +36,12 @@ Esta carpeta de auditoría se conserva en su destino aprobado y se excluye de la
 | `delivery/flood/` | `archivo/entregas_anteriores/flood/` |
 | Documentos de preparación/revisión y material único de `tmp/` | `archivo/documentos_historicos/` |
 | Auxiliares únicos de QA de `tmp/` | `compartido/scripts/qa_historico/` |
-| Dockerfile, Compose, dependencias, ejemplos de entorno y README general | Raíz de `parcial/`; adaptadores fuera de las 44 fuentes congeladas |
+| Dockerfile, Compose, dependencias, ejemplos de entorno y `.dockerignore` | `parcial/compartido/`; contexto compartido con fuentes congeladas intactas |
+| README general | Raíz de `parcial/`; índice del examen |
 
 En D2 cada pregunta debe conservar además `README.md` y `entregable/` con informe principal ODT/PDF, notebook final, `LEEME.md` y `verificacion.json` provenientes de A+B+C. Fauna añade anexo ODT/PDF, `04_occlusion_582.ipynb` y `metricas_occlusion.csv`. No se fabrica ninguno de estos productos en D1. `archivo/manifiesto.json` y `archivo/referencias_originales/` se completarán al integrar las versiones finales y su procedencia.
+
+La ubicación del Dockerfile, Compose y dependencias en `compartido/` corrige el supuesto inicial del diseño D1. Con ese contexto, `COPY src`, `COPY configs`, `PYTHONPATH=/workspace/src` y `PROJECT_ROOT` mantienen su relación original con el motor. Los overlays/adaptadores nuevos suministrarán notebooks y fuentes editoriales desde las carpetas de cada pregunta, coordinados con Reproducción. No se necesita cambiar las fuentes congeladas para resolver el traslado del motor.
 
 `configs/default.toml` y `configs/flood.toml` tienen los mismos bytes, pero el primero es el fallback de `load_settings()` y el segundo una entrada explícita de Flood. Ambas rutas se mantienen. Tampoco se deduplican logs que documentan ejecuciones distintas ni figuras citadas por varios nombres.
 

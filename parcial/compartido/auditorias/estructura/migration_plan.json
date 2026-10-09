@@ -4,83 +4,83 @@
   "operations": [
     {
       "source": "parcial/.dockerignore",
-      "destination": "parcial/.dockerignore",
+      "destination": "parcial/compartido/.dockerignore",
       "sha256": "708b45a90e4924ef7905c4ea4df969554c317e938861aa58d8f9dfbeb39a72ae",
       "size": 104,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
       "source": "parcial/.env.example",
-      "destination": "parcial/.env.example",
+      "destination": "parcial/compartido/.env.example",
       "sha256": "0aa497d2fbfaa833413ba5a1a7d59ad9dac4f17891353576e73a7bf8c99ddcfe",
       "size": 126,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
       "source": "parcial/.env.wildlife-v2.example",
-      "destination": "parcial/.env.wildlife-v2.example",
+      "destination": "parcial/compartido/.env.wildlife-v2.example",
       "sha256": "c0488f826d480a8a8e8327b4b0d1cf2088933846e7d412bf1517ab1a2b717284",
       "size": 333,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
       "source": "parcial/.env.wildlife-v3.example",
-      "destination": "parcial/.env.wildlife-v3.example",
+      "destination": "parcial/compartido/.env.wildlife-v3.example",
       "sha256": "964e082889f3404c2f0405c506bcb5427c7f703ae47197de210f3b82daf0a405",
       "size": 383,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
       "source": "parcial/.env.wildlife-v4.example",
-      "destination": "parcial/.env.wildlife-v4.example",
+      "destination": "parcial/compartido/.env.wildlife-v4.example",
       "sha256": "a4daee091319c895b009e358f9b42ac450e9d44ac7f86ae0873917030aa965b7",
       "size": 383,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
       "source": "parcial/.env.wildlife-v5.example",
-      "destination": "parcial/.env.wildlife-v5.example",
+      "destination": "parcial/compartido/.env.wildlife-v5.example",
       "sha256": "5cbc0c166c652fa9c9174ba73f434adee11f96fd40ecc021461d58205cb9fa34",
       "size": 383,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
       "source": "parcial/.env.wildlife-v6.example",
-      "destination": "parcial/.env.wildlife-v6.example",
+      "destination": "parcial/compartido/.env.wildlife-v6.example",
       "sha256": "c1892bf74b8cbe97ecbc9e29a1877a48546f0893b2c3f3ede1729b310dabf9e7",
       "size": 383,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
       "source": "parcial/.env.wildlife.example",
-      "destination": "parcial/.env.wildlife.example",
+      "destination": "parcial/compartido/.env.wildlife.example",
       "sha256": "616256cb67b418489c1410da6af29a3286e601ecb241e40f8c90b52c7ebb9f8b",
       "size": 234,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
       "source": "parcial/Dockerfile",
-      "destination": "parcial/Dockerfile",
+      "destination": "parcial/compartido/Dockerfile",
       "sha256": "b77a01f5c6c77e4bed29e1b312ebd93946b867ff43ab6b1132341e29ded2583a",
       "size": 1220,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": true
     },
     {
@@ -197,7 +197,7 @@
       "sha256": "671e410265ef6f43f6ffbf925fc781a42976112e95bbb7a4eaa4151aeef8befc",
       "size": 20551,
       "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "reason": "Índice general del examen; conserva enlaces hacia preguntas y motor compartido.",
       "frozen": false
     },
     {
@@ -508,83 +508,83 @@
     },
     {
       "source": "parcial/compose.flood.yaml",
-      "destination": "parcial/compose.flood.yaml",
+      "destination": "parcial/compartido/compose.flood.yaml",
       "sha256": "8cc72e84c0348cf89d354fdb6f1cc20fad05494fd6566f165778358cbf468fc4",
       "size": 1668,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
       "source": "parcial/compose.mri.yaml",
-      "destination": "parcial/compose.mri.yaml",
+      "destination": "parcial/compartido/compose.mri.yaml",
       "sha256": "91bd19935b5e48599d2db060ba4c8e39242da571141491ca546ee1e026f1818b",
       "size": 1900,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
       "source": "parcial/compose.wildlife.v2.yaml",
-      "destination": "parcial/compose.wildlife.v2.yaml",
+      "destination": "parcial/compartido/compose.wildlife.v2.yaml",
       "sha256": "abac41eaaa823838c9b8d2c4ec2b5e2e6ee14950640741020f90739056f7b122",
       "size": 1939,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": true
     },
     {
       "source": "parcial/compose.wildlife.v3.yaml",
-      "destination": "parcial/compose.wildlife.v3.yaml",
+      "destination": "parcial/compartido/compose.wildlife.v3.yaml",
       "sha256": "36b989c4cd07edf0963a64908d578a589db70744226e0583b3e90ce816f65a00",
       "size": 229,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": true
     },
     {
       "source": "parcial/compose.wildlife.v4.yaml",
-      "destination": "parcial/compose.wildlife.v4.yaml",
+      "destination": "parcial/compartido/compose.wildlife.v4.yaml",
       "sha256": "fb619869e50937f0f0d3b302b2d300c211cea1eafe85e6af81a2cf1a43217475",
       "size": 374,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": true
     },
     {
       "source": "parcial/compose.wildlife.v5.yaml",
-      "destination": "parcial/compose.wildlife.v5.yaml",
+      "destination": "parcial/compartido/compose.wildlife.v5.yaml",
       "sha256": "25f4a7c4ecc422fc22a5ee0059009fe7776dc9ebda000f301add693583f3b0b3",
       "size": 229,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": true
     },
     {
       "source": "parcial/compose.wildlife.v6.yaml",
-      "destination": "parcial/compose.wildlife.v6.yaml",
+      "destination": "parcial/compartido/compose.wildlife.v6.yaml",
       "sha256": "eedbd8dcdd8b861a5c7d1e680f1f24501bc3acc060e3330e58c6ccf6db413dc3",
       "size": 229,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": true
     },
     {
       "source": "parcial/compose.wildlife.yaml",
-      "destination": "parcial/compose.wildlife.yaml",
+      "destination": "parcial/compartido/compose.wildlife.yaml",
       "sha256": "e709fbae588ebcee4a980f37162576ed9e0435c743077e927287f9a1435c191a",
       "size": 2888,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": true
     },
     {
       "source": "parcial/compose.yaml",
-      "destination": "parcial/compose.yaml",
+      "destination": "parcial/compartido/compose.yaml",
       "sha256": "5cba64c2eb4a9b501473ecdb04d65be1e6960d0a6bcaa0b519376034f8eee942",
       "size": 2218,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
@@ -1660,11 +1660,11 @@
     },
     {
       "source": "parcial/pyproject.toml",
-      "destination": "parcial/pyproject.toml",
+      "destination": "parcial/compartido/pyproject.toml",
       "sha256": "3817627397b31b94ac9c7e81c16ec47ecff6ee0499060374216d3d687bee0132",
       "size": 750,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": false
     },
     {
@@ -1804,11 +1804,11 @@
     },
     {
       "source": "parcial/requirements.txt",
-      "destination": "parcial/requirements.txt",
+      "destination": "parcial/compartido/requirements.txt",
       "sha256": "dfe8993b244f3eae794dc6a5ca81f0ce0b48bb11751bb0359fc1d8cd392d0684",
       "size": 385,
-      "action": "keep",
-      "reason": "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas.",
+      "action": "move",
+      "reason": "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas.",
       "frozen": true
     },
     {

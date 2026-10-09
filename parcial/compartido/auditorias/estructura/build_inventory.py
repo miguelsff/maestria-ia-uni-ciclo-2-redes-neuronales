@@ -66,8 +66,10 @@ def destination(path: str) -> tuple[str, str, str]:
             return "parcial/compartido/scripts/qa_historico/" + "/".join(parts[1:]), "move", "Código auxiliar único; adaptar rutas por separado antes de reutilizarlo."
         return "parcial/archivo/documentos_historicos/tmp/" + "/".join(parts[1:]), "move", "Conservar instantáneas, reseñas, notebook anotado, logs y vistas únicas; no borrar por estar en tmp."
     if "/" not in relative:
-        if relative.startswith((".env", "compose")) or relative in {"Dockerfile", ".dockerignore", "requirements.txt", "pyproject.toml", "README.md"}:
-            return path, "keep", "Entrada compartida en raíz de parcial; adaptar invocación sin editar fuentes congeladas."
+        if relative == "README.md":
+            return path, "keep", "Índice general del examen; conserva enlaces hacia preguntas y motor compartido."
+        if relative.startswith((".env", "compose")) or relative in {"Dockerfile", ".dockerignore", "requirements.txt", "pyproject.toml"}:
+            return "parcial/compartido/" + relative, "move", "Entrada del motor común: contexto compartido conserva src/configs y rutas congeladas."
         task = next((name for name in QUESTIONS if name.upper() in relative.upper()), None)
         if task:
             if relative == f"{task.upper()}_STATUS.json":
@@ -142,10 +144,13 @@ def main() -> None:
                "exact_duplicate_groups": len(duplicates), "preserved_versions": len(preserved_rows),
                "frozen_files": len(freeze), "frozen_originals_match": all(row["original_sha256"] == row["expected_sha256"] for row in frozen_rows),
                "frozen_worktree_mismatches": sum(not row["physical_match"] for row in frozen_rows),
-               "requested_configuration": {"model": "Según creación; valor no incluido en la delegación disponible.",
-                                           "effort": "Según creación; valor no incluido en la delegación disponible.",
+               "requested_configuration": {"model": "Según creación: gpt-6.1-sol.",
+                                           "effort": "Según creación: high.",
                                            "speed": "Estándar heredada (default); herramienta sin ajuste individual."},
-               "effective_configuration_verified": False, "ignored_secret_paths": secrets,
+               "effective_configuration": {"model": "gpt-6.1-sol", "effort": "high", "speed": "default"},
+               "effective_configuration_verified": True,
+               "configuration_evidence": "Chat principal verificó turn_context y velocidad global; comunicado en seguimiento de D1, no inferido por este script.",
+               "ignored_secret_paths": secrets,
                "scope_exclusions": ["parcial/compartido/auditorias/estructura/: auditoría D1 conservada in situ; evita hashes autorreferenciales al regenerar."],
                "secrets_content_read_or_published": False, "files_moved_or_deleted": 0}
     write_json("inventario.json", {"summary": summary, "files": rows, "exact_duplicates": duplicates,

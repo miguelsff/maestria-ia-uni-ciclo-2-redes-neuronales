@@ -8,7 +8,7 @@
         "parcial\\compartido\\auditorias\\estructura\\build_inventory.py"
       ],
       "exit_code": 0,
-      "stdout": "{\"stage\": \"D1\", \"worktree\": \"C:\\\\Users\\\\USER\\\\.codex\\\\worktrees\\\\b9e3\\\\maestria-ia-uni-ciclo-2-redes-neuronales\", \"branch\": \"codex/examen-estructura-d1\", \"base_main\": \"0dc2fd20f424941919c38ff213894541e60ab200\", \"audit_commit_original\": \"8bb5a39\", \"audit_commit_local\": \"7bd7bece23638cb990ab7397b08796b11bf8a4cc\", \"inventory_source_commit\": \"7bd7bece23638cb990ab7397b08796b11bf8a4cc\", \"tracked_before_audit\": 913, \"tracked_inventoried\": 932, \"operations\": {\"keep\": 21, \"move\": 315, \"retire_copy\": 596}, \"jpeg_unique\": 596, \"sample_cases\": 600, \"exact_duplicate_groups\": 7, \"preserved_versions\": 64, \"frozen_files\": 44, \"frozen_originals_match\": true, \"frozen_worktree_mismatches\": 42, \"requested_configuration\": {\"model\": \"Según creación; valor no incluido en la delegación disponible.\", \"effort\": \"Según creación; valor no incluido en la delegación disponible.\", \"speed\": \"Estándar heredada (default); herramienta sin ajuste individual.\"}, \"effective_configuration_verified\": false, \"ignored_secret_paths\": [\"parcial/.env.wildlife\", \"parcial/.env.wildlife-v2\", \"parcial/.env.wildlife-v3\", \"parcial/.env.wildlife-v4\", \"parcial/.env.wildlife-v5\", \"parcial/.env.wildlife-v6\"], \"scope_exclusions\": [\"parcial/compartido/auditorias/estructura/: auditoría D1 conservada in situ; evita hashes autorreferenciales al regenerar.\"], \"secrets_content_read_or_published\": false, \"files_moved_or_deleted\": 0}\n",
+      "stdout": "{\"stage\": \"D1\", \"worktree\": \"C:\\\\Users\\\\USER\\\\.codex\\\\worktrees\\\\b9e3\\\\maestria-ia-uni-ciclo-2-redes-neuronales\", \"branch\": \"codex/examen-estructura-d1\", \"base_main\": \"0dc2fd20f424941919c38ff213894541e60ab200\", \"audit_commit_original\": \"8bb5a39\", \"audit_commit_local\": \"7bd7bece23638cb990ab7397b08796b11bf8a4cc\", \"inventory_source_commit\": \"7d5094af9b2e944c80ed79c673105ae7595d75ba\", \"tracked_before_audit\": 913, \"tracked_inventoried\": 932, \"operations\": {\"move\": 335, \"keep\": 1, \"retire_copy\": 596}, \"jpeg_unique\": 596, \"sample_cases\": 600, \"exact_duplicate_groups\": 7, \"preserved_versions\": 64, \"frozen_files\": 44, \"frozen_originals_match\": true, \"frozen_worktree_mismatches\": 42, \"requested_configuration\": {\"model\": \"Según creación: gpt-6.1-sol.\", \"effort\": \"Según creación: high.\", \"speed\": \"Estándar heredada (default); herramienta sin ajuste individual.\"}, \"effective_configuration\": {\"model\": \"gpt-6.1-sol\", \"effort\": \"high\", \"speed\": \"default\"}, \"effective_configuration_verified\": true, \"configuration_evidence\": \"Chat principal verificó turn_context y velocidad global; comunicado en seguimiento de D1, no inferido por este script.\", \"ignored_secret_paths\": [\"parcial/.env.wildlife\", \"parcial/.env.wildlife-v2\", \"parcial/.env.wildlife-v3\", \"parcial/.env.wildlife-v4\", \"parcial/.env.wildlife-v5\", \"parcial/.env.wildlife-v6\"], \"scope_exclusions\": [\"parcial/compartido/auditorias/estructura/: auditoría D1 conservada in situ; evita hashes autorreferenciales al regenerar.\"], \"secrets_content_read_or_published\": false, \"files_moved_or_deleted\": 0}\n",
       "stderr": ""
     },
     {
@@ -19,7 +19,7 @@
         "parcial\\compartido\\auditorias\\estructura\\migrate_structure.py"
       ],
       "exit_code": 0,
-      "stdout": "{\"status\": \"passed\", \"files\": 932, \"operations\": {\"keep\": 21, \"move\": 315, \"retire_copy\": 596}, \"mutations\": 0}\n",
+      "stdout": "{\"status\": \"passed\", \"files\": 932, \"operations\": {\"keep\": 1, \"move\": 335, \"retire_copy\": 596}, \"mutations\": 0}\n",
       "stderr": ""
     },
     {
@@ -42,5 +42,11 @@
     }
   ],
   "training_or_inference_executed": false,
-  "migration_applied": false
+  "migration_applied": false,
+  "contract_correction_checks": {
+    "engine_entries_in_compartido": 20,
+    "config_project_root": "parcial/compartido",
+    "d1_application_disabled": true,
+    "source_files_moved_or_deleted": 0
+  }
 }
