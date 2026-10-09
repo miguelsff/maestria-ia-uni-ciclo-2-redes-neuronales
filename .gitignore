@@ -26,3 +26,7 @@ parcial/reports/neurips_2026.sty
 *.tif
 *.tiff
 *.part
+/tmp/
+parcial/compartido/data/
+parcial/compartido/outputs/
+parcial/compartido/reports/build/
