@@ -1,0 +1,206 @@
+{
+  "pregunta": 2,
+  "rows": [
+    {
+      "pregunta": 2,
+      "entregable": 1,
+      "subrequisito": "U-Net personalizada implementada en PyTorch",
+      "evidencia": "compartido/src/neural_exam/flood/model.py; flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 1,
+      "subrequisito": "Entrada SAR con las dos bandas VV/VH",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; dataset, configuración y carga GeoTIFF de dos canales",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 2,
+      "subrequisito": "Etiquetas doradas frente a doradas más débiles",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; seis corridas gold_* y gold_weak_*; entrenamiento gold=251, weak=4150",
+      "estado": "cumple",
+      "limitacion": "Se respetan las particiones oficiales; no se usan todos los dorados para entrenar.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 2,
+      "subrequisito": "Comparación de pérdidas o arquitectura",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; BCE, Dice y combinada cruzadas con las dos fuentes de supervisión",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 2,
+      "subrequisito": "Configuración y finalización de las seis corridas",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; execution.json, history.csv, complete.json, best.pt y predicciones guardadas",
+      "estado": "cumple",
+      "limitacion": "Una semilla; los presupuestos efectivos difieren por la cantidad de etiquetas débiles.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 3,
+      "subrequisito": "IoU, F1, precisión y recall en distribución",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; 88 chips test; baseline mean-chip IoU=0.393926867, F1 global=0.798229203",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 3,
+      "subrequisito": "Definición y agregación de IoU",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; IoU por chip con unión no vacía; global=0.664210850 para baseline",
+      "estado": "cumple",
+      "limitacion": "Media por chip, IoU global y convención oficial con epsilon en chips vacíos son cantidades distintas.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 3,
+      "subrequisito": "Tratamiento de píxeles sin datos",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; 618 GeoTIFF, nodata=-1, máscaras válidas y georreferenciación comprobados",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 3,
+      "subrequisito": "Matriz de confusión y comentario",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; baseline TP1884956 FP322880 FN630052 TN17606071; figura y discusión",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 4,
+      "subrequisito": "Bolivia excluida del entrenamiento y selección",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; cuatro particiones oficiales; Bolivia=15, train251/val86/test88 sin intersecciones",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 4,
+      "subrequisito": "Evaluación externa y brecha frente a ID",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; seis variantes test/Bolivia; baseline mean-chip Bolivia=0.455477085",
+      "estado": "cumple",
+      "limitacion": "La brecha es firmada: algunos modelos mejoran en Bolivia. No se fuerza una caída inexistente.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 4,
+      "subrequisito": "Al menos dos hipótesis explicativas",
+      "evidencia": "pregunta_2_inundaciones/entregable/informe_inundaciones.pdf: distribución de agua/cobertura y condiciones SAR",
+      "estado": "cumple",
+      "limitacion": "Hipótesis plausibles; no causas demostradas experimentalmente.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 5,
+      "subrequisito": "Tres tipos de fallo con ejemplos visuales concretos",
+      "evidencia": "flood-qualitative.json; Pakistan_70625, Pakistan_849790, Bolivia_379434; figuras del informe",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 5,
+      "subrequisito": "Explicaciones sustentadas por observaciones",
+      "evidencia": "flood-qualitative.json: backscatter, FP/FN y errores de borde recalculados; 81.25% cerca del borde en tercer caso",
+      "estado": "cumple",
+      "limitacion": "Sombra y doble rebote son interpretaciones posibles; sin información adicional no se certifica mecanismo físico.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 6,
+      "subrequisito": "Bono de fusión Sentinel-2 frente a SAR",
+      "evidencia": "No hay corrida SAR+óptico en los seis experimentos preservados.",
+      "estado": "falta",
+      "limitacion": "Bono opcional; no bloquea los cinco entregables obligatorios.",
+      "pendiente": "Ninguno obligatorio; no se añade entrenamiento nuevo.",
+      "obligatorio": false
+    },
+    {
+      "pregunta": 2,
+      "entregable": "común",
+      "subrequisito": "Informe NeurIPS de6–10 páginas",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": "común",
+      "subrequisito": "Cinco autores y al menos cinco referencias",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": "común",
+      "subrequisito": "Motivación, antecedentes, metodología, experimentos, resultados y discusión",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": "común",
+      "subrequisito": "ODT editable y PDF exportado desde él",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": "común",
+      "subrequisito": "Notebook final ejecutado sin errores",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    }
+  ],
+  "mandatory_deliverables": 5
+}

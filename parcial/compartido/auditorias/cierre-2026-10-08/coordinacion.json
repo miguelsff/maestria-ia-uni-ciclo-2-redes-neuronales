@@ -1,0 +1,84 @@
+{
+  "date_peru": "2026-10-08",
+  "base_commit": "0dc2fd20f424941919c38ff213894541e60ab200",
+  "seed_commit": "8bb5a3917756eaa0e8cb63537c919f3e1c54f6ab",
+  "preservation_manifest": "E:/Kaggle/exam-closure-2026-10-08/preserved-before.json",
+  "coordinator": {
+    "threadId": "01a11e25-9c53-77c1-bb59-ba19c2290137",
+    "worktree": "C:/Users/USER/.codex/worktrees/examen-integracion/maestria-ia-uni-ciclo-2-redes-neuronales",
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "speed": "default"
+  },
+  "jobs": [
+    {
+      "key": "fauna",
+      "threadId": "01a11e62-8f39-76c0-bd5c-18d7d86ec9b9",
+      "title": "Fauna: cierre científico",
+      "worktree": "C:/Users/USER/.codex/worktrees/34ab/maestria-ia-uni-ciclo-2-redes-neuronales",
+      "model_requested": "gpt-6-astra",
+      "effort_requested": "xhigh",
+      "speed": "default inherited; no per-chat creation parameter"
+    },
+    {
+      "key": "odt",
+      "threadId": "01a11e62-8f39-76c0-bd5c-18f4b6c1262a",
+      "title": "Documentos editables",
+      "worktree": "C:/Users/USER/.codex/worktrees/3512/maestria-ia-uni-ciclo-2-redes-neuronales",
+      "model_requested": "gpt-6.1-sol",
+      "effort_requested": "high",
+      "speed": "default inherited; no per-chat creation parameter"
+    },
+    {
+      "key": "reproduccion",
+      "threadId": "01a11e62-8f6e-79e3-8ca0-eb21c3f366c2",
+      "title": "Reproducción y publicación",
+      "worktree": "C:/Users/USER/.codex/worktrees/959d/maestria-ia-uni-ciclo-2-redes-neuronales",
+      "model_requested": "gpt-6.1-sol",
+      "effort_requested": "high",
+      "speed": "default inherited; no per-chat creation parameter"
+    },
+    {
+      "key": "estructura",
+      "threadId": "01a11e62-8ff5-78e3-9f94-7f63889789a8",
+      "title": "Limpieza y estructura",
+      "worktree": "C:/Users/USER/.codex/worktrees/b9e3/maestria-ia-uni-ciclo-2-redes-neuronales",
+      "model_requested": "gpt-6.1-sol",
+      "effort_requested": "high",
+      "speed": "default inherited; no per-chat creation parameter"
+    }
+  ],
+  "dependencies": {
+    "A": [
+      "0"
+    ],
+    "B1": [
+      "0"
+    ],
+    "C1": [
+      "0"
+    ],
+    "D1": [
+      "0"
+    ],
+    "B2": [
+      "A verified"
+    ],
+    "E": [
+      "A",
+      "B1",
+      "B2",
+      "C1"
+    ],
+    "D2": [
+      "E",
+      "D1"
+    ],
+    "F": [
+      "D2"
+    ],
+    "G": [
+      "F passed"
+    ]
+  }
+}

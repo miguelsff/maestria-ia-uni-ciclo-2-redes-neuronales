@@ -1,0 +1,697 @@
+{
+  "data_identity": "829ac4994e61ca1c0cad870d622bb91b3e99742fe88380c6a25d06da45a31350",
+  "split_counts": {
+    "gold": 58,
+    "val": 108,
+    "train": 434
+  },
+  "original_labels": [
+    "ACL",
+    "MCL",
+    "Medial Meniscus",
+    "Lateral Meniscus",
+    "Medial OA",
+    "Lateral OA",
+    "PF OA",
+    "Effusion",
+    "Synovitis",
+    "Baker's",
+    "Contusion",
+    "Fracture"
+  ],
+  "labels_reextracted": 600,
+  "cached_studies_verified": 600,
+  "expert_predictions_verified": 464,
+  "agreement": [
+    {
+      "label": "ACL",
+      "minimum_confidence": 0.0,
+      "observed": 50,
+      "agreement": 0.84,
+      "estimated_disagreement": 0.16000000000000003
+    },
+    {
+      "label": "ACL",
+      "minimum_confidence": 0.8,
+      "observed": 28,
+      "agreement": 0.9285714285714286,
+      "estimated_disagreement": 0.0714285714285714
+    },
+    {
+      "label": "MCL",
+      "minimum_confidence": 0.0,
+      "observed": 53,
+      "agreement": 0.9245283018867925,
+      "estimated_disagreement": 0.07547169811320753
+    },
+    {
+      "label": "MCL",
+      "minimum_confidence": 0.8,
+      "observed": 21,
+      "agreement": 0.8571428571428571,
+      "estimated_disagreement": 0.1428571428571429
+    },
+    {
+      "label": "Medial Meniscus",
+      "minimum_confidence": 0.0,
+      "observed": 54,
+      "agreement": 0.6296296296296297,
+      "estimated_disagreement": 0.37037037037037035
+    },
+    {
+      "label": "Medial Meniscus",
+      "minimum_confidence": 0.8,
+      "observed": 21,
+      "agreement": 0.8095238095238095,
+      "estimated_disagreement": 0.19047619047619047
+    },
+    {
+      "label": "Lateral Meniscus",
+      "minimum_confidence": 0.0,
+      "observed": 52,
+      "agreement": 0.7115384615384616,
+      "estimated_disagreement": 0.28846153846153844
+    },
+    {
+      "label": "Lateral Meniscus",
+      "minimum_confidence": 0.8,
+      "observed": 16,
+      "agreement": 0.875,
+      "estimated_disagreement": 0.125
+    },
+    {
+      "label": "Medial OA",
+      "minimum_confidence": 0.0,
+      "observed": 54,
+      "agreement": 0.7592592592592593,
+      "estimated_disagreement": 0.2407407407407407
+    },
+    {
+      "label": "Medial OA",
+      "minimum_confidence": 0.8,
+      "observed": 5,
+      "agreement": 0.8,
+      "estimated_disagreement": 0.19999999999999996
+    },
+    {
+      "label": "Lateral OA",
+      "minimum_confidence": 0.0,
+      "observed": 54,
+      "agreement": 0.7962962962962963,
+      "estimated_disagreement": 0.20370370370370372
+    },
+    {
+      "label": "Lateral OA",
+      "minimum_confidence": 0.8,
+      "observed": 1,
+      "agreement": 1.0,
+      "estimated_disagreement": 0.0
+    },
+    {
+      "label": "PF OA",
+      "minimum_confidence": 0.0,
+      "observed": 54,
+      "agreement": 0.6666666666666666,
+      "estimated_disagreement": 0.33333333333333337
+    },
+    {
+      "label": "PF OA",
+      "minimum_confidence": 0.8,
+      "observed": 16,
+      "agreement": 0.8125,
+      "estimated_disagreement": 0.1875
+    },
+    {
+      "label": "Effusion",
+      "minimum_confidence": 0.0,
+      "observed": 53,
+      "agreement": 0.6037735849056604,
+      "estimated_disagreement": 0.39622641509433965
+    },
+    {
+      "label": "Effusion",
+      "minimum_confidence": 0.8,
+      "observed": 45,
+      "agreement": 0.6888888888888889,
+      "estimated_disagreement": 0.3111111111111111
+    },
+    {
+      "label": "Synovitis",
+      "minimum_confidence": 0.0,
+      "observed": 54,
+      "agreement": 0.6851851851851852,
+      "estimated_disagreement": 0.31481481481481477
+    },
+    {
+      "label": "Synovitis",
+      "minimum_confidence": 0.8,
+      "observed": 15,
+      "agreement": 0.7333333333333333,
+      "estimated_disagreement": 0.2666666666666667
+    },
+    {
+      "label": "Baker's",
+      "minimum_confidence": 0.0,
+      "observed": 54,
+      "agreement": 0.8148148148148148,
+      "estimated_disagreement": 0.18518518518518523
+    },
+    {
+      "label": "Baker's",
+      "minimum_confidence": 0.8,
+      "observed": 19,
+      "agreement": 0.6842105263157895,
+      "estimated_disagreement": 0.3157894736842105
+    },
+    {
+      "label": "Contusion",
+      "minimum_confidence": 0.0,
+      "observed": 51,
+      "agreement": 0.7058823529411765,
+      "estimated_disagreement": 0.2941176470588235
+    },
+    {
+      "label": "Contusion",
+      "minimum_confidence": 0.8,
+      "observed": 15,
+      "agreement": 0.5333333333333333,
+      "estimated_disagreement": 0.4666666666666667
+    },
+    {
+      "label": "Fracture",
+      "minimum_confidence": 0.0,
+      "observed": 49,
+      "agreement": 0.8571428571428571,
+      "estimated_disagreement": 0.1428571428571429
+    },
+    {
+      "label": "Fracture",
+      "minimum_confidence": 0.8,
+      "observed": 18,
+      "agreement": 0.8333333333333334,
+      "estimated_disagreement": 0.16666666666666663
+    }
+  ],
+  "prevalence": [
+    {
+      "split": "train",
+      "label": "ACL",
+      "positive": "143",
+      "observed": "416"
+    },
+    {
+      "split": "train",
+      "label": "MCL",
+      "positive": "102",
+      "observed": "426"
+    },
+    {
+      "split": "train",
+      "label": "Medial Meniscus",
+      "positive": "158",
+      "observed": "428"
+    },
+    {
+      "split": "train",
+      "label": "Lateral Meniscus",
+      "positive": "127",
+      "observed": "431"
+    },
+    {
+      "split": "train",
+      "label": "Medial OA",
+      "positive": "35",
+      "observed": "434"
+    },
+    {
+      "split": "train",
+      "label": "Lateral OA",
+      "positive": "10",
+      "observed": "434"
+    },
+    {
+      "split": "train",
+      "label": "PF OA",
+      "positive": "45",
+      "observed": "426"
+    },
+    {
+      "split": "train",
+      "label": "Effusion",
+      "positive": "282",
+      "observed": "431"
+    },
+    {
+      "split": "train",
+      "label": "Synovitis",
+      "positive": "140",
+      "observed": "433"
+    },
+    {
+      "split": "train",
+      "label": "Baker's",
+      "positive": "145",
+      "observed": "429"
+    },
+    {
+      "split": "train",
+      "label": "Contusion",
+      "positive": "129",
+      "observed": "429"
+    },
+    {
+      "split": "train",
+      "label": "Fracture",
+      "positive": "124",
+      "observed": "423"
+    },
+    {
+      "split": "val",
+      "label": "ACL",
+      "positive": "42",
+      "observed": "100"
+    },
+    {
+      "split": "val",
+      "label": "MCL",
+      "positive": "39",
+      "observed": "105"
+    },
+    {
+      "split": "val",
+      "label": "Medial Meniscus",
+      "positive": "47",
+      "observed": "107"
+    },
+    {
+      "split": "val",
+      "label": "Lateral Meniscus",
+      "positive": "41",
+      "observed": "107"
+    },
+    {
+      "split": "val",
+      "label": "Medial OA",
+      "positive": "12",
+      "observed": "108"
+    },
+    {
+      "split": "val",
+      "label": "Lateral OA",
+      "positive": "4",
+      "observed": "108"
+    },
+    {
+      "split": "val",
+      "label": "PF OA",
+      "positive": "18",
+      "observed": "106"
+    },
+    {
+      "split": "val",
+      "label": "Effusion",
+      "positive": "77",
+      "observed": "107"
+    },
+    {
+      "split": "val",
+      "label": "Synovitis",
+      "positive": "41",
+      "observed": "108"
+    },
+    {
+      "split": "val",
+      "label": "Baker's",
+      "positive": "43",
+      "observed": "106"
+    },
+    {
+      "split": "val",
+      "label": "Contusion",
+      "positive": "39",
+      "observed": "108"
+    },
+    {
+      "split": "val",
+      "label": "Fracture",
+      "positive": "42",
+      "observed": "107"
+    },
+    {
+      "split": "gold",
+      "label": "ACL",
+      "positive": "24",
+      "observed": "58"
+    },
+    {
+      "split": "gold",
+      "label": "MCL",
+      "positive": "9",
+      "observed": "58"
+    },
+    {
+      "split": "gold",
+      "label": "Medial Meniscus",
+      "positive": "26",
+      "observed": "58"
+    },
+    {
+      "split": "gold",
+      "label": "Lateral Meniscus",
+      "positive": "23",
+      "observed": "58"
+    },
+    {
+      "split": "gold",
+      "label": "Medial OA",
+      "positive": "15",
+      "observed": "58"
+    },
+    {
+      "split": "gold",
+      "label": "Lateral OA",
+      "positive": "11",
+      "observed": "58"
+    },
+    {
+      "split": "gold",
+      "label": "PF OA",
+      "positive": "21",
+      "observed": "58"
+    },
+    {
+      "split": "gold",
+      "label": "Effusion",
+      "positive": "35",
+      "observed": "58"
+    },
+    {
+      "split": "gold",
+      "label": "Synovitis",
+      "positive": "27",
+      "observed": "58"
+    },
+    {
+      "split": "gold",
+      "label": "Baker's",
+      "positive": "12",
+      "observed": "58"
+    },
+    {
+      "split": "gold",
+      "label": "Contusion",
+      "positive": "19",
+      "observed": "58"
+    },
+    {
+      "split": "gold",
+      "label": "Fracture",
+      "positive": "18",
+      "observed": "58"
+    }
+  ],
+  "experiments": [
+    {
+      "experiment": "scratch_bce_weighted",
+      "epochs": 48,
+      "best_epoch": 38,
+      "macro_auc": 0.5776426221116003,
+      "macro_f1": 0.3609752021233111,
+      "source_matches": {
+        "mri/data.py": true,
+        "mri/labels.py": true,
+        "mri/model.py": true,
+        "mri/loss.py": true,
+        "mri/pipeline.py": true,
+        "common/training.py": false,
+        "common/metrics.py": true,
+        "common/cam.py": true
+      },
+      "cams": [
+        {
+          "label": "ACL",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Medial Meniscus",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Effusion",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ],
+      "historical_run_status": "running"
+    },
+    {
+      "experiment": "scratch_bce_high_confidence",
+      "epochs": 23,
+      "best_epoch": 13,
+      "macro_auc": 0.5129699221043769,
+      "macro_f1": 0.4535273199325187,
+      "source_matches": {
+        "mri/data.py": true,
+        "mri/labels.py": true,
+        "mri/model.py": true,
+        "mri/loss.py": true,
+        "mri/pipeline.py": true,
+        "common/training.py": false,
+        "common/metrics.py": true,
+        "common/cam.py": true
+      },
+      "cams": [
+        {
+          "label": "ACL",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Medial Meniscus",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Effusion",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ],
+      "historical_run_status": "running"
+    },
+    {
+      "experiment": "scratch_focal_weighted",
+      "epochs": 29,
+      "best_epoch": 19,
+      "macro_auc": 0.5723243037924164,
+      "macro_f1": 0.4960776237200304,
+      "source_matches": {
+        "mri/data.py": true,
+        "mri/labels.py": true,
+        "mri/model.py": true,
+        "mri/loss.py": true,
+        "mri/pipeline.py": true,
+        "common/training.py": false,
+        "common/metrics.py": true,
+        "common/cam.py": true
+      },
+      "cams": [
+        {
+          "label": "ACL",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Medial Meniscus",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Effusion",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ],
+      "historical_run_status": "running"
+    },
+    {
+      "experiment": "scratch_focal_high_confidence",
+      "epochs": 23,
+      "best_epoch": 13,
+      "macro_auc": 0.5204093208581674,
+      "macro_f1": 0.4253469262855946,
+      "source_matches": {
+        "mri/data.py": true,
+        "mri/labels.py": true,
+        "mri/model.py": true,
+        "mri/loss.py": true,
+        "mri/pipeline.py": true,
+        "common/training.py": false,
+        "common/metrics.py": true,
+        "common/cam.py": true
+      },
+      "cams": [
+        {
+          "label": "ACL",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Medial Meniscus",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Effusion",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ],
+      "historical_run_status": "running"
+    },
+    {
+      "experiment": "resnet50_bce_weighted",
+      "epochs": 12,
+      "best_epoch": 2,
+      "macro_auc": 0.6189079849836069,
+      "macro_f1": 0.36144856613196436,
+      "source_matches": {
+        "mri/data.py": true,
+        "mri/labels.py": true,
+        "mri/model.py": true,
+        "mri/loss.py": true,
+        "mri/pipeline.py": true,
+        "common/training.py": false,
+        "common/metrics.py": true,
+        "common/cam.py": true
+      },
+      "cams": [
+        {
+          "label": "ACL",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Medial Meniscus",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Effusion",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ],
+      "historical_run_status": "running"
+    },
+    {
+      "experiment": "resnet50_bce_high_confidence",
+      "epochs": 11,
+      "best_epoch": 1,
+      "macro_auc": 0.6020221327964251,
+      "macro_f1": 0.45129746613561356,
+      "source_matches": {
+        "mri/data.py": true,
+        "mri/labels.py": true,
+        "mri/model.py": true,
+        "mri/loss.py": true,
+        "mri/pipeline.py": true,
+        "common/training.py": false,
+        "common/metrics.py": true,
+        "common/cam.py": true
+      },
+      "cams": [
+        {
+          "label": "ACL",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Medial Meniscus",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Effusion",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ],
+      "historical_run_status": "running"
+    },
+    {
+      "experiment": "resnet50_focal_weighted",
+      "epochs": 12,
+      "best_epoch": 2,
+      "macro_auc": 0.6198675938299529,
+      "macro_f1": 0.5055771047722428,
+      "source_matches": {
+        "mri/data.py": true,
+        "mri/labels.py": true,
+        "mri/model.py": true,
+        "mri/loss.py": true,
+        "mri/pipeline.py": true,
+        "common/training.py": false,
+        "common/metrics.py": true,
+        "common/cam.py": true
+      },
+      "cams": [
+        {
+          "label": "ACL",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Medial Meniscus",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Effusion",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ],
+      "historical_run_status": "running"
+    },
+    {
+      "experiment": "resnet50_focal_high_confidence",
+      "epochs": 12,
+      "best_epoch": 2,
+      "macro_auc": 0.5877369699207197,
+      "macro_f1": 0.4863370780598379,
+      "source_matches": {
+        "mri/data.py": true,
+        "mri/labels.py": true,
+        "mri/model.py": true,
+        "mri/loss.py": true,
+        "mri/pipeline.py": true,
+        "common/training.py": false,
+        "common/metrics.py": true,
+        "common/cam.py": true
+      },
+      "cams": [
+        {
+          "label": "ACL",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Medial Meniscus",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "label": "Effusion",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ],
+      "historical_run_status": "running"
+    }
+  ],
+  "audited_at_utc": "2026-10-09T02:01:47.794401+00:00",
+  "status": "passed"
+}

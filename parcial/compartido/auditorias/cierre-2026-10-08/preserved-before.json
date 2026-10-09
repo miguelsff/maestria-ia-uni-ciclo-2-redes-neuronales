@@ -1,0 +1,389 @@
+{
+  "base_commit": "0dc2fd20f424941919c38ff213894541e60ab200",
+  "files": [
+    {
+      "path": "parcial/WILDLIFE_STATUS.json",
+      "status": " M",
+      "sha256": "851e7b061713ea55b36f6131de3c3eef96dfe9f39bca43e8cf8177faec185af0",
+      "size": 23336
+    },
+    {
+      "path": "parcial/WILDLIFE_OCCLUSION_ACCEPTED.md",
+      "status": "??",
+      "sha256": "09439fd05eb73fcba9cc27438cf8bd9f7d6bbd43808f67083fdd2de3b7735478",
+      "size": 3245
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/closure.json",
+      "status": "??",
+      "sha256": "dac0c110c0e1f9f837a60e981a29828ca4a186dcc859e7708a239040a16dde76",
+      "size": 6096
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/exam-extracted.txt",
+      "status": "??",
+      "sha256": "edd5788fc77bf1b59b483bc26a8f237a40287b3480914c1949ac9f40c709eb92",
+      "size": 19138
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/flood-extracted.txt",
+      "status": "??",
+      "sha256": "bbd05b3a8fde4f1b69298afd04053579b3e5e63f58e5f2a1d9f3317bfa167c19",
+      "size": 22733
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/flood-notebook-extracted.txt",
+      "status": "??",
+      "sha256": "4b5dc577a98e8f3ee5651c048ba1437b46639837d595be10f831e6a1f93f6613",
+      "size": 24571
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/flood-qualitative.json",
+      "status": "??",
+      "sha256": "cadff792a8de130d1607357d6c0a7e7c9dc04d5f1c8654b88620f79bba36947f",
+      "size": 1542
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/flood-scientific.json",
+      "status": "??",
+      "sha256": "0823d7c0ada50b4061a3c80ecb7f4f64e683da650d247d702c1c7f570bd66a93",
+      "size": 8055
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/materials.json",
+      "status": "??",
+      "sha256": "b0e931a1dc2d78dbee72d17f3aed8610a7b841dc09f19d8f3fb3248026b97cd5",
+      "size": 13038
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/mri-extracted.txt",
+      "status": "??",
+      "sha256": "fbb7c04d10c202dc5c8508af8b51eba206484e6339d0faf29643783429a0ca10",
+      "size": 22452
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/mri-notebook-extracted.txt",
+      "status": "??",
+      "sha256": "77edeee20ec5dd0af806a2d8073e249fde679ed69f83e148fae8387fbc4b6f71",
+      "size": 41963
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/mri-scientific.json",
+      "status": "??",
+      "sha256": "5fab58d1b15b343e53a5fa613465d6d9fd5dbe2fae44e9fac2c062d594b92afc",
+      "size": 15777
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/mri-source-provenance.json",
+      "status": "??",
+      "sha256": "72928f4eef147864cc1a2ee5ba16faa68aff4a4344b4934b48f0369e5ddc2eee",
+      "size": 3282
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/occlusion-scientific.json",
+      "status": "??",
+      "sha256": "f0ebdf2e7da055154b293ebb76bb0201a9718102512a4170517bd4d6bd0f4848",
+      "size": 7990
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/preservation-before.json",
+      "status": "??",
+      "sha256": "bf07c9d9bb4ccaec5f1de56c1943b1a3561c97c7226265d1ede79c32a0af834e",
+      "size": 2779
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/structure.json",
+      "status": "??",
+      "sha256": "5054ebe2d031ea4cbdc01a40065727780c2f4f02994b40340fb8ce07a79ca602",
+      "size": 1005
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/tests-output.txt",
+      "status": "??",
+      "sha256": "293e2cf842227b6095bd0361a2818805b3643359f27f9aecfd300a26774d7824",
+      "size": 2495
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/wildlife-extracted.txt",
+      "status": "??",
+      "sha256": "7f8c322e48596060b2afa57c4021ff4a6eef72f1911e4072b4db5effbca81ff5",
+      "size": 20474
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/wildlife-notebook-extracted.txt",
+      "status": "??",
+      "sha256": "94f150fd3f04acf84a97ed15c4a007daefea63a53a1af5eb8b859d6dcdd908a1",
+      "size": 62187
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/wildlife-scientific.json",
+      "status": "??",
+      "sha256": "5edca86a9d6d624f90d736dcbca27659660f834b7d0df9bc58cf13289d727e2c",
+      "size": 6393
+    },
+    {
+      "path": "parcial/scripts/accept_occlusion_review.py",
+      "status": "??",
+      "sha256": "6315bb1f19500256eb0d5c2456fc05772a45bf27a238e8e3689f87f78eae021f",
+      "size": 6169
+    },
+    {
+      "path": "parcial/scripts/build_occlusion_accepted_delivery.py",
+      "status": "??",
+      "sha256": "bfa8a1f8c513c23160ad6bb282f78c0d470e8c9e01abc4286a3f1c25f3285777",
+      "size": 26347
+    },
+    {
+      "path": "parcial/scripts/evaluate_occlusion_accepted.py",
+      "status": "??",
+      "sha256": "f1d6f19426cd0a7cd4d81a0e7291a30f62e7daf83dfdb6ec27c05b38bd6b9296",
+      "size": 7730
+    },
+    {
+      "path": "parcial/scripts/occlusion_accepted_review.py",
+      "status": "??",
+      "sha256": "6fc0c4c280b8ffaf862ed5a5f165466ee01070821a6637a3d426a52869b67e9c",
+      "size": 5118
+    },
+    {
+      "path": "parcial/tests/test_occlusion_accepted.py",
+      "status": "??",
+      "sha256": "c17720c5666a72cdd0695f3a2eecd39f8b7270cba905d7b6f6b7fd9e854cff46",
+      "size": 5419
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/close_audit.py",
+      "status": "??",
+      "sha256": "d91505f096b66ed8b6ad90cc4679e425e55f48a821559229a3f30cbf5b581c88",
+      "size": 4890
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/inspect_materials.py",
+      "status": "??",
+      "sha256": "ab6fceb23773d0c68b56d980475979cfd272355adc08ac3d814ca9ca29ff61e0",
+      "size": 6346
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-1.png",
+      "status": "??",
+      "sha256": "f470582b4de199f99a241f82aee2a045351585e6e35630bc47ba6bb7d9c98814",
+      "size": 175224
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-2.png",
+      "status": "??",
+      "sha256": "8308655218b23e4a59cd5363a8217e2ecf2815e99def4cf6c35ccef246b8b258",
+      "size": 211203
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-3.png",
+      "status": "??",
+      "sha256": "6e082ae926d79ec67dfc9a145951b555784f7378e1d1190b69695ee32f97c117",
+      "size": 204871
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-4.png",
+      "status": "??",
+      "sha256": "3b7e4bfc275e80f379974ca4a3a31db46108507d567ae157dd6874b6f3bcb26e",
+      "size": 157876
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-5.png",
+      "status": "??",
+      "sha256": "8e741f034055093d6dcb2cde6b173a9cbbb26dc4a3a27924f346bfe3a3236649",
+      "size": 108286
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-6.png",
+      "status": "??",
+      "sha256": "2f0a4fe02866eac23023fd7f8b0ead9a9fb55dafe33e79a1854208d992fad8b4",
+      "size": 177270
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-7.png",
+      "status": "??",
+      "sha256": "d04296966c9fc8fa8c057c743ddb009d095c59c538a1b3a0e2762e8c30dd6cd4",
+      "size": 323663
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-8.png",
+      "status": "??",
+      "sha256": "8ef04fc3217bcc847707bc0a8318eaa7392561da1d2e515dccfd1cef747bcb07",
+      "size": 280820
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-9.png",
+      "status": "??",
+      "sha256": "962b50bf28bbdbb19b8e4e77f8648408e8a92a50885f27081f197e9944b839b1",
+      "size": 196247
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-1.png",
+      "status": "??",
+      "sha256": "ec8c65d892e8d861c820208ba73d2ca568672ba4a23d73c478e86a473ae3d399",
+      "size": 182163
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-2.png",
+      "status": "??",
+      "sha256": "f2ff1dc6766efdeada81ca7a54c5b6eb12dc31e9ffacd922b5fd2ca5fe5cfd05",
+      "size": 247216
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-3.png",
+      "status": "??",
+      "sha256": "571504b11ad6c499848630759dcd091e22bf636c2675b14d97b0bc67906be3ad",
+      "size": 149068
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-4.png",
+      "status": "??",
+      "sha256": "c28fe5eb89b40cfdfcb93dd38e6d560d5ada7e6743375a530ce4f8057298c12b",
+      "size": 95078
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-5.png",
+      "status": "??",
+      "sha256": "a970e86668d69c57500d9dd8aceb76dddd68edb1838ea60765823fe0980fc6e9",
+      "size": 289671
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-6.png",
+      "status": "??",
+      "sha256": "c52aa9941dad5280a772a7a8b07e4762c088edbabf299396087b46944fc0a989",
+      "size": 197310
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-7.png",
+      "status": "??",
+      "sha256": "b05cbabd5ce3ffa2c2528ccde22ae1b921339b94af0c6a68d48e99c5927a1faf",
+      "size": 161839
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-8.png",
+      "status": "??",
+      "sha256": "0cb97d59ef82aa872fecd0958572a8ce324ced3b0cb44cbf12f80813738c4bf6",
+      "size": 199083
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-9.png",
+      "status": "??",
+      "sha256": "ce4c247ee722e070b7fe8c52fa6253b16fbf35cbdf02df084164755fcc89297d",
+      "size": 86477
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-01.png",
+      "status": "??",
+      "sha256": "c6d9e93a23af67edb65a3980cdc63b2c70a1e12ce43dcf54a9fd4ed54c48733c",
+      "size": 176266
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-02.png",
+      "status": "??",
+      "sha256": "606c0fea40b8547ccba13200bfdfabbeb9bba6e128837597720ec9c718e51027",
+      "size": 214516
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-03.png",
+      "status": "??",
+      "sha256": "5adf66a0d5c51f7b154166d3825810fa6aead0e0f9085be5b01ce3d99d7f3910",
+      "size": 106198
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-04.png",
+      "status": "??",
+      "sha256": "adf3da93681174516647d50a75d3d8f3b0051dbed2d9b1a94b2c00c57cba83f2",
+      "size": 93599
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-05.png",
+      "status": "??",
+      "sha256": "b646bcb02cdea97e24c9b0d4776ecca6b0dea3ef7764f0542d7d9aa75439c714",
+      "size": 48641
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-06.png",
+      "status": "??",
+      "sha256": "ac9cc4df672d662d5a18604fb977f042d49cc3e4cca0255dc3a869c81cd5a214",
+      "size": 224608
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-07.png",
+      "status": "??",
+      "sha256": "3f6f58795a5e07efff4c2b0fcbfc44472b115dc875d15eb9e89f14725c96981e",
+      "size": 236091
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-08.png",
+      "status": "??",
+      "sha256": "476cadfe196d692216ea0689bad68439a84d0db8dc0cd24ed6db89134f4b596d",
+      "size": 140155
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-09.png",
+      "status": "??",
+      "sha256": "ea416c757e7f9747b7da46cd89bbf076b38b7ce8737235271bb6071ff3c8f4ad",
+      "size": 262476
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-10.png",
+      "status": "??",
+      "sha256": "0427f5bd346a3f87bd2c1830737d7b0a880c838e5f3dea72ef1c16395b4f5a93",
+      "size": 101234
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/verify_scientific.py",
+      "status": "??",
+      "sha256": "f385121aee2ece6bad114bb84747255704d276d184f734cf63065025af2e077c",
+      "size": 22293
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/verify_structure.py",
+      "status": "??",
+      "sha256": "0ab7c8b0ac9049687fee93a5f66cde330aa674ed5fc731a1d5ce2d03d0c021ee",
+      "size": 7856
+    },
+    {
+      "path": "parcial/tmp/occlusion-accepted-delivery/notebook_template.ipynb",
+      "status": "??",
+      "sha256": "4b9f1d67abed43a2d3bb2347b92793240370a506318687a66fc6d433ad58387d",
+      "size": 2721
+    },
+    {
+      "path": "parcial/tmp/occlusion-import-2026-10-08/audit.json",
+      "status": "??",
+      "sha256": "ad341562be840ef0a5676af248358dfc18b2c002f5b984646bb48884f7a24bbf",
+      "size": 17106
+    },
+    {
+      "path": "parcial/tmp/occlusion-import-2026-10-08/audit.py",
+      "status": "??",
+      "sha256": "e573439b558b511bce4b856aa28eb2ebefc14aeb5e737de4faf22563c7a9d5ae",
+      "size": 4712
+    },
+    {
+      "path": "parcial/tmp/occlusion-import-2026-10-08/consolidate.py",
+      "status": "??",
+      "sha256": "1a9542e18d98e61c72d6965c932fced23031bcff1860477073c0fa2fdc2a8e64",
+      "size": 7536
+    },
+    {
+      "path": "parcial/tmp/occlusion-import-2026-10-08/record_status.py",
+      "status": "??",
+      "sha256": "11932bafad01c9afbaa22771c80d0658680589de515696795f76c6324f17b76c",
+      "size": 1889
+    },
+    {
+      "path": "parcial/tmp/pdfs/occlusion-582-20261008/page-1.png",
+      "status": "??",
+      "sha256": "2d28999750bf4efff035e393701612b1b8ba385ffdac00f98f60419ab4b3aaf5",
+      "size": 139811
+    },
+    {
+      "path": "parcial/tmp/pdfs/occlusion-582-20261008/page-2.png",
+      "status": "??",
+      "sha256": "e66846b893b7092123c528f6a933a0caaf16c7e1a0a274626acb52a8f8629064",
+      "size": 179365
+    }
+  ]
+}

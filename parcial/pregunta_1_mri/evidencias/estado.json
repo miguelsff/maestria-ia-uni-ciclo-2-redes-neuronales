@@ -1,0 +1,256 @@
+{
+  "pregunta": 1,
+  "rows": [
+    {
+      "pregunta": 1,
+      "entregable": 1,
+      "subrequisito": "Doce etiquetas coincidentes con el esquema original",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; E:/Kaggle/exam-output-mri/stratified-v2/mri/manifest.json; src/neural_exam/mri/labels.py: LABELS",
+      "estado": "cumple",
+      "limitacion": "El examen presenta nombres provisionales; se cotejaron las doce columnas originales.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 1,
+      "subrequisito": "Extracción multilingüe, negación, incertidumbre y abstención",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; 600 reportes reextraídos; lexicón de 13 idiomas en labels.py",
+      "estado": "cumple",
+      "limitacion": "Las reglas no garantizan igual calidad entre idiomas.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 1,
+      "subrequisito": "Comparación contra etiquetas expertas",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; E:/Kaggle/exam-output-mri/stratified-v2/mri/label_agreement.json: 58 estudios, 24 filas por etiqueta/confianza",
+      "estado": "cumple",
+      "limitacion": "La abstención cambia el soporte observado, que se informa.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 1,
+      "subrequisito": "Acuerdo y ruido estimado recalculados",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; agreement y estimated_disagreement coinciden a tolerancia 1e-12",
+      "estado": "cumple",
+      "limitacion": "Desacuerdo observado no equivale a tasa causal de errores del radiólogo.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 2,
+      "subrequisito": "CNN propia entrenada desde cero",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; E:/Kaggle/exam-output-mri/stratified-v2/mri/scratch_bce_weighted/history.csv, complete.json y best.pt: 48 épocas",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 2,
+      "subrequisito": "Backbone ImageNet con ajuste y doce salidas independientes",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; src/neural_exam/mri/model.py; resnet50_bce_weighted: 12 épocas",
+      "estado": "cumple",
+      "limitacion": "Los presupuestos y parada temprana difieren entre arquitecturas.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 2,
+      "subrequisito": "Configuración, historiales y checkpoints de ambas arquitecturas",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; ocho variantes con execution.json, history.csv, complete.json y best.pt",
+      "estado": "cumple",
+      "limitacion": "run.json histórico conserva running; los recibos de finalización y checkpoints demuestran cierre.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 2,
+      "subrequisito": "Separación de estudios y selección del modelo",
+      "evidencia": "structure.json; E:/Kaggle/exam-output-mri/stratified-v2/mri/manifest.json: 434 entrenamiento, 108 validación débil, 58 expertos",
+      "estado": "cumple",
+      "limitacion": "Separación comprobada por estudio; no existe identificador global fiable para demostrar separación por paciente.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 3,
+      "subrequisito": "AUC macro oficial sobre las doce etiquetas",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; 464 predicciones expertas en ocho variantes; incluye Synovitis; AUC baseline 0.618907985",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 3,
+      "subrequisito": "AUC por etiqueta",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; metrics.json y predicciones guardadas cotejados para las doce etiquetas",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 3,
+      "subrequisito": "Precisión, recall y F1",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; métricas macro y por etiqueta recalculadas a tolerancia 1e-12",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 3,
+      "subrequisito": "Conjunto experto, umbral elegido y justificación",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; gold=58, umbral 0.5 declarado y justificado en informe",
+      "estado": "cumple",
+      "limitacion": "Los 58 expertos fueron reutilizados tras particiones anteriores; no constituyen prueba externa intacta.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 4,
+      "subrequisito": "Al menos dos factores de ablación",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; diseño 2 arquitecturas × BCE/focal × confianza ponderada/filtrada: ocho corridas",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 4,
+      "subrequisito": "Comparaciones identificables y conclusiones sustentadas",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; tabla por variante; máximo AUC 0.619867594 en resnet50_focal_weighted",
+      "estado": "cumple",
+      "limitacion": "Una semilla y presupuestos diferentes limitan atribuciones causales.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 5,
+      "subrequisito": "Grad-CAM para al menos tres hallazgos distintos",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; mapas ACL, Medial Meniscus y Effusion; arrays no constantes normalizados [0,1]",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 5,
+      "subrequisito": "Plausibilidad anatómica discutida",
+      "evidencia": "pregunta_1_mri/fuentes_informe/discussion.tex; informe_mri.pdf y mapas revisados",
+      "estado": "cumple",
+      "limitacion": "Mapas difusos o periféricos se describen como limitación; no validación de localización clínica.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 6,
+      "subrequisito": "Prevalencia de las doce etiquetas",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; 36 filas de prevalencia por etiqueta y partición con positivos y denominadores observados",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 6,
+      "subrequisito": "Mitigación implementada y evaluada",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; pérdidas BCE/focal implementadas y comparación cuantitativa en ocho corridas",
+      "estado": "cumple",
+      "limitacion": "La prevalencia débil está afectada por ruido y abstenciones.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 7,
+      "subrequisito": "Discusión de diferencias geográficas y lingüísticas",
+      "evidencia": "pregunta_1_mri/entregable/informe_mri.pdf; discussion.tex: cobertura, lexicón, negación e idiomas",
+      "estado": "cumple",
+      "limitacion": "No se presentan métricas fiables de equidad por centro/idioma por falta de soporte.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 7,
+      "subrequisito": "Implicancias clínicas y validación local",
+      "evidencia": "informe_mri.pdf: discusión de sesgo y riesgo de despliegue, aproximadamente media página",
+      "estado": "cumple",
+      "limitacion": "No se afirma aptitud para uso clínico.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": "común",
+      "subrequisito": "Informe NeurIPS de6–10 páginas",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": "común",
+      "subrequisito": "Cinco autores y al menos cinco referencias",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": "común",
+      "subrequisito": "Motivación, antecedentes, metodología, experimentos, resultados y discusión",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": "común",
+      "subrequisito": "ODT editable y PDF exportado desde él",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": "común",
+      "subrequisito": "Notebook final ejecutado sin errores",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    }
+  ],
+  "mandatory_deliverables": 7
+}

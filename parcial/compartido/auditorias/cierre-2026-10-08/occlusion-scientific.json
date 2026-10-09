@@ -1,0 +1,301 @@
+{
+  "accepted": {
+    "low": 340,
+    "ambiguous": 125,
+    "medium": 69,
+    "high": 48
+  },
+  "results": {
+    "low": {
+      "metrics": {
+        "map50": 0.15819062118054675,
+        "map50_95": 0.08752327797568138,
+        "eligible_objects": 340,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 59,
+            "map50": 0.7329986325384872,
+            "map50_95": 0.3104287452013545
+          },
+          {
+            "species": "raccoon",
+            "support": 66,
+            "map50": 0.43550317813516737,
+            "map50_95": 0.24591049147621016
+          },
+          {
+            "species": "squirrel",
+            "support": 19,
+            "map50": 0.050919017841209495,
+            "map50_95": 0.03176150826877604
+          },
+          {
+            "species": "bobcat",
+            "support": 42,
+            "map50": 0.1972489901922969,
+            "map50_95": 0.14953832029855552
+          },
+          {
+            "species": "skunk",
+            "support": 15,
+            "map50": 0.04373679546484704,
+            "map50_95": 0.03360753531187617
+          },
+          {
+            "species": "dog",
+            "support": 27,
+            "map50": 0.27718886170145046,
+            "map50_95": 0.16331058137238458
+          },
+          {
+            "species": "coyote",
+            "support": 31,
+            "map50": 0.08077339047044405,
+            "map50_95": 0.05994284851052478
+          },
+          {
+            "species": "rabbit",
+            "support": 24,
+            "map50": 0.11400104990649083,
+            "map50_95": 0.06816687191990814
+          },
+          {
+            "species": "bird",
+            "support": 21,
+            "map50": 0.0756481576324815,
+            "map50_95": 0.03842966360671747
+          },
+          {
+            "species": "cat",
+            "support": 24,
+            "map50": 0.03188885897419695,
+            "map50_95": 0.025033056649469445
+          },
+          {
+            "species": "badger",
+            "support": 5,
+            "map50": 0.007348302397807347,
+            "map50_95": 0.004787019242464787
+          },
+          {
+            "species": "deer",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "fox",
+            "support": 1,
+            "map50": 0.0,
+            "map50_95": 0.0
+          },
+          {
+            "species": "rodent",
+            "support": 6,
+            "map50": 0.0092228400922284,
+            "map50_95": 0.006885971825616475
+          }
+        ]
+      },
+      "saved_evaluation_complete": true
+    },
+    "medium": {
+      "metrics": {
+        "map50": 0.058165880795783755,
+        "map50_95": 0.02714170588666339,
+        "eligible_objects": 69,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 20,
+            "map50": 0.32457561548597647,
+            "map50_95": 0.12040633164811641
+          },
+          {
+            "species": "raccoon",
+            "support": 10,
+            "map50": 0.21326336606158708,
+            "map50_95": 0.12755339804357807
+          },
+          {
+            "species": "squirrel",
+            "support": 7,
+            "map50": 0.004334851507678928,
+            "map50_95": 0.0015240053312896508
+          },
+          {
+            "species": "bobcat",
+            "support": 3,
+            "map50": 0.007940849795285936,
+            "map50_95": 0.0055391318095567394
+          },
+          {
+            "species": "skunk",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "dog",
+            "support": 4,
+            "map50": 0.018620897622757197,
+            "map50_95": 0.007815494460474482
+          },
+          {
+            "species": "coyote",
+            "support": 9,
+            "map50": 0.0046085820814561205,
+            "map50_95": 0.003174637218532013
+          },
+          {
+            "species": "rabbit",
+            "support": 2,
+            "map50": 0.0032624476817162125,
+            "map50_95": 0.001943112804515231
+          },
+          {
+            "species": "bird",
+            "support": 3,
+            "map50": 0.003069044768554525,
+            "map50_95": 0.0022991023741798953
+          },
+          {
+            "species": "cat",
+            "support": 10,
+            "map50": 0.0019831529528250517,
+            "map50_95": 0.0011618451763914742
+          },
+          {
+            "species": "badger",
+            "support": 1,
+            "map50": 0.0,
+            "map50_95": 0.0
+          },
+          {
+            "species": "deer",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "fox",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "rodent",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          }
+        ]
+      },
+      "saved_evaluation_complete": true
+    },
+    "high": {
+      "metrics": {
+        "map50": 0.05629620961357233,
+        "map50_95": 0.02437605943963364,
+        "eligible_objects": 48,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 8,
+            "map50": 0.4354292572114355,
+            "map50_95": 0.1551401680474485
+          },
+          {
+            "species": "raccoon",
+            "support": 7,
+            "map50": 0.04297764626043913,
+            "map50_95": 0.025764702518397027
+          },
+          {
+            "species": "squirrel",
+            "support": 3,
+            "map50": 0.0021723388848660387,
+            "map50_95": 0.0003454495519671682
+          },
+          {
+            "species": "bobcat",
+            "support": 5,
+            "map50": 0.024125795026651926,
+            "map50_95": 0.01899364779487866
+          },
+          {
+            "species": "skunk",
+            "support": 5,
+            "map50": 0.0219720602197206,
+            "map50_95": 0.015424143349898025
+          },
+          {
+            "species": "dog",
+            "support": 3,
+            "map50": 0.08490523338048088,
+            "map50_95": 0.04749387435759702
+          },
+          {
+            "species": "coyote",
+            "support": 5,
+            "map50": 0.002474462955577147,
+            "map50_95": 0.0018739893934689345
+          },
+          {
+            "species": "rabbit",
+            "support": 3,
+            "map50": 0.00517897943640518,
+            "map50_95": 0.0030916937847630917
+          },
+          {
+            "species": "bird",
+            "support": 1,
+            "map50": 0.0,
+            "map50_95": 0.0
+          },
+          {
+            "species": "cat",
+            "support": 6,
+            "map50": 2.2532373719299644e-05,
+            "map50_95": 8.98503755157666e-06
+          },
+          {
+            "species": "badger",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "deer",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "fox",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "rodent",
+            "support": 2,
+            "map50": 0.0,
+            "map50_95": 0.0
+          }
+        ]
+      },
+      "saved_evaluation_complete": true
+    }
+  },
+  "evaluation_includes_all_trans_frames": 18647,
+  "fixed_checkpoint_sha256": "b2a47c3b0b22d927c5fa976e6fecf82465e22bc509fae1747fb8a20ff634c85f",
+  "aggregate_completed": true,
+  "bootstrap_recomputed": false,
+  "audited_at_utc": "2026-10-09T02:00:21.497741+00:00",
+  "status": "passed"
+}

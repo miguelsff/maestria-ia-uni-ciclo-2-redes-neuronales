@@ -1,0 +1,828 @@
+{
+  "review_date_peru": "2026-10-08",
+  "updated_at_utc": "2026-10-09T02:05:40.676977+00:00",
+  "mandatory_deliverables": 18,
+  "rows": [
+    {
+      "pregunta": 1,
+      "entregable": 1,
+      "subrequisito": "Doce etiquetas coincidentes con el esquema original",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; E:/Kaggle/exam-output-mri/stratified-v2/mri/manifest.json; src/neural_exam/mri/labels.py: LABELS",
+      "estado": "cumple",
+      "limitacion": "El examen presenta nombres provisionales; se cotejaron las doce columnas originales.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 1,
+      "subrequisito": "Extracción multilingüe, negación, incertidumbre y abstención",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; 600 reportes reextraídos; lexicón de 13 idiomas en labels.py",
+      "estado": "cumple",
+      "limitacion": "Las reglas no garantizan igual calidad entre idiomas.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 1,
+      "subrequisito": "Comparación contra etiquetas expertas",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; E:/Kaggle/exam-output-mri/stratified-v2/mri/label_agreement.json: 58 estudios, 24 filas por etiqueta/confianza",
+      "estado": "cumple",
+      "limitacion": "La abstención cambia el soporte observado, que se informa.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 1,
+      "subrequisito": "Acuerdo y ruido estimado recalculados",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; agreement y estimated_disagreement coinciden a tolerancia 1e-12",
+      "estado": "cumple",
+      "limitacion": "Desacuerdo observado no equivale a tasa causal de errores del radiólogo.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 2,
+      "subrequisito": "CNN propia entrenada desde cero",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; E:/Kaggle/exam-output-mri/stratified-v2/mri/scratch_bce_weighted/history.csv, complete.json y best.pt: 48 épocas",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 2,
+      "subrequisito": "Backbone ImageNet con ajuste y doce salidas independientes",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; src/neural_exam/mri/model.py; resnet50_bce_weighted: 12 épocas",
+      "estado": "cumple",
+      "limitacion": "Los presupuestos y parada temprana difieren entre arquitecturas.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 2,
+      "subrequisito": "Configuración, historiales y checkpoints de ambas arquitecturas",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; ocho variantes con execution.json, history.csv, complete.json y best.pt",
+      "estado": "cumple",
+      "limitacion": "run.json histórico conserva running; los recibos de finalización y checkpoints demuestran cierre.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 2,
+      "subrequisito": "Separación de estudios y selección del modelo",
+      "evidencia": "structure.json; E:/Kaggle/exam-output-mri/stratified-v2/mri/manifest.json: 434 entrenamiento, 108 validación débil, 58 expertos",
+      "estado": "cumple",
+      "limitacion": "Separación comprobada por estudio; no existe identificador global fiable para demostrar separación por paciente.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 3,
+      "subrequisito": "AUC macro oficial sobre las doce etiquetas",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; 464 predicciones expertas en ocho variantes; incluye Synovitis; AUC baseline 0.618907985",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 3,
+      "subrequisito": "AUC por etiqueta",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; metrics.json y predicciones guardadas cotejados para las doce etiquetas",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 3,
+      "subrequisito": "Precisión, recall y F1",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; métricas macro y por etiqueta recalculadas a tolerancia 1e-12",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 3,
+      "subrequisito": "Conjunto experto, umbral elegido y justificación",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; gold=58, umbral 0.5 declarado y justificado en informe",
+      "estado": "cumple",
+      "limitacion": "Los 58 expertos fueron reutilizados tras particiones anteriores; no constituyen prueba externa intacta.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 4,
+      "subrequisito": "Al menos dos factores de ablación",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; diseño 2 arquitecturas × BCE/focal × confianza ponderada/filtrada: ocho corridas",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 4,
+      "subrequisito": "Comparaciones identificables y conclusiones sustentadas",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; tabla por variante; máximo AUC 0.619867594 en resnet50_focal_weighted",
+      "estado": "cumple",
+      "limitacion": "Una semilla y presupuestos diferentes limitan atribuciones causales.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 5,
+      "subrequisito": "Grad-CAM para al menos tres hallazgos distintos",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; mapas ACL, Medial Meniscus y Effusion; arrays no constantes normalizados [0,1]",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 5,
+      "subrequisito": "Plausibilidad anatómica discutida",
+      "evidencia": "pregunta_1_mri/fuentes_informe/discussion.tex; informe_mri.pdf y mapas revisados",
+      "estado": "cumple",
+      "limitacion": "Mapas difusos o periféricos se describen como limitación; no validación de localización clínica.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 6,
+      "subrequisito": "Prevalencia de las doce etiquetas",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; 36 filas de prevalencia por etiqueta y partición con positivos y denominadores observados",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 6,
+      "subrequisito": "Mitigación implementada y evaluada",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; pérdidas BCE/focal implementadas y comparación cuantitativa en ocho corridas",
+      "estado": "cumple",
+      "limitacion": "La prevalencia débil está afectada por ruido y abstenciones.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 7,
+      "subrequisito": "Discusión de diferencias geográficas y lingüísticas",
+      "evidencia": "pregunta_1_mri/entregable/informe_mri.pdf; discussion.tex: cobertura, lexicón, negación e idiomas",
+      "estado": "cumple",
+      "limitacion": "No se presentan métricas fiables de equidad por centro/idioma por falta de soporte.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": 7,
+      "subrequisito": "Implicancias clínicas y validación local",
+      "evidencia": "informe_mri.pdf: discusión de sesgo y riesgo de despliegue, aproximadamente media página",
+      "estado": "cumple",
+      "limitacion": "No se afirma aptitud para uso clínico.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 1,
+      "subrequisito": "U-Net personalizada implementada en PyTorch",
+      "evidencia": "compartido/src/neural_exam/flood/model.py; flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 1,
+      "subrequisito": "Entrada SAR con las dos bandas VV/VH",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; dataset, configuración y carga GeoTIFF de dos canales",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 2,
+      "subrequisito": "Etiquetas doradas frente a doradas más débiles",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; seis corridas gold_* y gold_weak_*; entrenamiento gold=251, weak=4150",
+      "estado": "cumple",
+      "limitacion": "Se respetan las particiones oficiales; no se usan todos los dorados para entrenar.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 2,
+      "subrequisito": "Comparación de pérdidas o arquitectura",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; BCE, Dice y combinada cruzadas con las dos fuentes de supervisión",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 2,
+      "subrequisito": "Configuración y finalización de las seis corridas",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; execution.json, history.csv, complete.json, best.pt y predicciones guardadas",
+      "estado": "cumple",
+      "limitacion": "Una semilla; los presupuestos efectivos difieren por la cantidad de etiquetas débiles.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 3,
+      "subrequisito": "IoU, F1, precisión y recall en distribución",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; 88 chips test; baseline mean-chip IoU=0.393926867, F1 global=0.798229203",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 3,
+      "subrequisito": "Definición y agregación de IoU",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; IoU por chip con unión no vacía; global=0.664210850 para baseline",
+      "estado": "cumple",
+      "limitacion": "Media por chip, IoU global y convención oficial con epsilon en chips vacíos son cantidades distintas.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 3,
+      "subrequisito": "Tratamiento de píxeles sin datos",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; 618 GeoTIFF, nodata=-1, máscaras válidas y georreferenciación comprobados",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 3,
+      "subrequisito": "Matriz de confusión y comentario",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; baseline TP1884956 FP322880 FN630052 TN17606071; figura y discusión",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 4,
+      "subrequisito": "Bolivia excluida del entrenamiento y selección",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; cuatro particiones oficiales; Bolivia=15, train251/val86/test88 sin intersecciones",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 4,
+      "subrequisito": "Evaluación externa y brecha frente a ID",
+      "evidencia": "flood-scientific.json; pregunta_2_inundaciones/entregable/informe_inundaciones.pdf; seis variantes test/Bolivia; baseline mean-chip Bolivia=0.455477085",
+      "estado": "cumple",
+      "limitacion": "La brecha es firmada: algunos modelos mejoran en Bolivia. No se fuerza una caída inexistente.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 4,
+      "subrequisito": "Al menos dos hipótesis explicativas",
+      "evidencia": "pregunta_2_inundaciones/entregable/informe_inundaciones.pdf: distribución de agua/cobertura y condiciones SAR",
+      "estado": "cumple",
+      "limitacion": "Hipótesis plausibles; no causas demostradas experimentalmente.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 5,
+      "subrequisito": "Tres tipos de fallo con ejemplos visuales concretos",
+      "evidencia": "flood-qualitative.json; Pakistan_70625, Pakistan_849790, Bolivia_379434; figuras del informe",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 5,
+      "subrequisito": "Explicaciones sustentadas por observaciones",
+      "evidencia": "flood-qualitative.json: backscatter, FP/FN y errores de borde recalculados; 81.25% cerca del borde en tercer caso",
+      "estado": "cumple",
+      "limitacion": "Sombra y doble rebote son interpretaciones posibles; sin información adicional no se certifica mecanismo físico.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": 6,
+      "subrequisito": "Bono de fusión Sentinel-2 frente a SAR",
+      "evidencia": "No hay corrida SAR+óptico en los seis experimentos preservados.",
+      "estado": "falta",
+      "limitacion": "Bono opcional; no bloquea los cinco entregables obligatorios.",
+      "pendiente": "Ninguno obligatorio; no se añade entrenamiento nuevo.",
+      "obligatorio": false
+    },
+    {
+      "pregunta": 3,
+      "entregable": 1,
+      "subrequisito": "Entrenamiento YOLO ajustado terminado y modelo seleccionado",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; training_complete.json:39 épocas; mejor época29 por cis_val; checkpoint b2a47c3b0b22d927…",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 1,
+      "subrequisito": "Resolución y estrategia de aumentos documentadas",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; YOLOv8s, imgsz640, AdamW, batch16; args.yaml y configuración V6",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 1,
+      "subrequisito": "Fotografías vacías tratadas explícitamente como fondo",
+      "evidencia": "structure.json; cohorte de1000 vacías verificadas en metadata/split oficial de entrenamiento",
+      "estado": "cumple",
+      "limitacion": "Proceden de ocho cámaras de la colección completa, adicionales al benchmark; la distinción está declarada.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 2,
+      "subrequisito": "mAP@0.5 y mAP@0.5:0.95 recalculados",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; cis_test=0.687751884/0.435752672; trans_test=0.423057069/0.262485537",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 2,
+      "subrequisito": "Desglose y soporte por especie",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; 14 especies benchmark, soporte12461 objetos conocidos/17620 nuevos",
+      "estado": "cumple",
+      "limitacion": "Categorías sin positivos elegibles tienen AP no definido; no se sustituyen por cero.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 2,
+      "subrequisito": "Discusión del desbalance y colección frente a benchmark",
+      "evidencia": "informe_fauna.pdf: clases raras, fox/badger y 14 especies del benchmark frente a colección completa",
+      "estado": "cumple",
+      "limitacion": "Los resultados del benchmark no cubren todas las categorías de la colección completa.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 3,
+      "subrequisito": "Particiones contrastadas con anotaciones oficiales",
+      "evidencia": "structure.json: cinco particiones ECCV y45305 cajas cotejadas; tres correcciones bird con revisión humana",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 3,
+      "subrequisito": "Separación de cámaras, secuencias e imágenes",
+      "evidencia": "structure.json: imágenes disjuntas, secuencias train/holdouts disjuntas y cámaras nuevas ausentes de train",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 3,
+      "subrequisito": "Brecha conocidos/nuevos cuantificada",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; diferencia mAP50:95=0.173267135; diferencia mAP50=0.264694815",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 3,
+      "subrequisito": "Evidencia visual y discusión del aprendizaje del fondo",
+      "evidencia": "informe_fauna.pdf:12 Grad-CAM y ejemplos de cámaras conocidas/nuevas",
+      "estado": "cumple",
+      "limitacion": "Tres mapas planos y atención periférica declarados; Grad-CAM no demuestra causalmente memorización del fondo.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 4,
+      "subrequisito": "Grupos de tamaño, soportes y desempeño",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; grupos <1%,1–5%,>5%; trans1922/12169/3529; AP50:95=0.161862/0.322044/0.286956",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 4,
+      "subrequisito": "Trazabilidad de la revisión humana aceptada",
+      "evidencia": "structure.json; E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600/review_acceptance.json y CSV aceptado:600 originales,582 aceptados,18 excluidos",
+      "estado": "cumple",
+      "limitacion": "398 casos sin nota, permitidos; caso121 conserva medium de Miguel; no se fabricaron explicaciones humanas.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 4,
+      "subrequisito": "Grupos de oclusión y soportes",
+      "evidencia": "occlusion-scientific.json; E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600/accepted_evaluation/6b2983c33abccbc1/results.json; low340,medium69,high48,ambiguous125; últimos125 fuera de comparación de niveles",
+      "estado": "cumple",
+      "limitacion": "Submuestra independiente aceptada, sin garantía de representatividad completa tras18 exclusiones.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 4,
+      "subrequisito": "Métricas, intervalos y diferencias de oclusión",
+      "evidencia": "occlusion-scientific.json; E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600/accepted_evaluation/6b2983c33abccbc1/results.json; AP50:95 low0.087523278,medium0.027141706,high0.024376059;200 bootstrap por secuencia/nivel",
+      "estado": "cumple",
+      "limitacion": "Todos los18647 frames, incluidos vacíos; otras cajas se ignoran según protocolo. AP de submuestra no comparable directamente con mAP global V6.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 4,
+      "subrequisito": "Resultados incorporados al informe y notebook finales",
+      "evidencia": "pregunta_3_fauna/entregable/informe_fauna.pdf,03_wildlife.ipynb,anexo_occlusion.pdf y04_occlusion_582.ipynb",
+      "estado": "no verificado",
+      "limitacion": "El anexo no reemplaza la discusión requerida dentro de las6–10 páginas.",
+      "pendiente": "Verificación final del documento integrado.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 5,
+      "subrequisito": "Cámara de demostración ausente del entrenamiento",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; camera7 pertenece a cámaras trans y no al entrenamiento",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 5,
+      "subrequisito": "Conteos por especie y periodo",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; activity.json:1853 frames,211 días observados,319 filas especie/día,1565 detecciones",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 5,
+      "subrequisito": "Especies observadas y fotografías sin detección",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf;11 especies detectadas,1420 fotos con detección,433/1853 sin detección=23.3675%",
+      "estado": "cumple",
+      "limitacion": "Sin detección no garantiza vacío real; conteos son detecciones, no abundancia ni individuos únicos.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 6,
+      "subrequisito": "Falsos negativos y falsos positivos en conservación",
+      "evidencia": "informe_fauna.pdf: discusión aproximadamente media página sobre costos y revisión especializada",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 6,
+      "subrequisito": "Riesgo de despliegue sin validación local",
+      "evidencia": "informe_fauna.pdf: caída en cámaras nuevas, validación local y restricciones de uso",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": "común",
+      "subrequisito": "Informe NeurIPS de6–10 páginas",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": "común",
+      "subrequisito": "Cinco autores y al menos cinco referencias",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": "común",
+      "subrequisito": "Motivación, antecedentes, metodología, experimentos, resultados y discusión",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": "común",
+      "subrequisito": "ODT editable y PDF exportado desde él",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 1,
+      "entregable": "común",
+      "subrequisito": "Notebook final ejecutado sin errores",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": "común",
+      "subrequisito": "Informe NeurIPS de6–10 páginas",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": "común",
+      "subrequisito": "Cinco autores y al menos cinco referencias",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": "común",
+      "subrequisito": "Motivación, antecedentes, metodología, experimentos, resultados y discusión",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": "común",
+      "subrequisito": "ODT editable y PDF exportado desde él",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 2,
+      "entregable": "común",
+      "subrequisito": "Notebook final ejecutado sin errores",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": "común",
+      "subrequisito": "Informe NeurIPS de6–10 páginas",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": "común",
+      "subrequisito": "Cinco autores y al menos cinco referencias",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": "común",
+      "subrequisito": "Motivación, antecedentes, metodología, experimentos, resultados y discusión",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": "común",
+      "subrequisito": "ODT editable y PDF exportado desde él",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": "común",
+      "subrequisito": "Notebook final ejecutado sin errores",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Cifras y hashes consistentes entre originales y entregas",
+      "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Código publicado y accesible con credenciales del propietario",
+      "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Entorno y comando completo documentados",
+      "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Pruebas de empaquetado y ejecución desde copia limpia",
+      "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Migración sin pérdida de contenido único y con manifiesto",
+      "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Preservación de cambios anteriores y secretos",
+      "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Componentes propios frente al uso específico de YOLO existente",
+      "evidencia": "CNN/heads MRI y U-Net propios; YOLOv8s existente y módulo de monitoreo propio declarados en fauna",
+      "estado": "parcial",
+      "limitacion": "Tensión entre instrucción general y entregable específico de YOLO ajustado; no consta aceptación docente.",
+      "pendiente": "Obtener interpretación docente si se necesita resolver el criterio académico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Reproducción científica completa desde entrenamiento",
+      "evidencia": "No hay constancia comprobada en los archivos revisados.",
+      "estado": "no verificado",
+      "limitacion": "Se comprobaron predicciones y empaquetado, no nuevos entrenamientos.",
+      "pendiente": "Solo si se solicita, ejecutar todas las corridas originales con datos y GPU.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Acceso del docente al repositorio privado",
+      "evidencia": "No hay constancia comprobada en los archivos revisados.",
+      "estado": "no verificado",
+      "limitacion": "El acceso del propietario no demuestra acceso del docente.",
+      "pendiente": "Conservar constancia de acceso docente.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Aceptación de reglas Kaggle por los cinco integrantes",
+      "evidencia": "No hay constancia comprobada en los archivos revisados.",
+      "estado": "no verificado",
+      "limitacion": "No existe constancia individual completa.",
+      "pendiente": "Conservar aceptación y condiciones aplicables al uso académico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Envío por la plataforma del curso",
+      "evidencia": "No hay constancia comprobada en los archivos revisados.",
+      "estado": "no verificado",
+      "limitacion": "No existe recibo de envío.",
+      "pendiente": "Conservar recibo al entregar.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": "transversal",
+      "entregable": "común",
+      "subrequisito": "Presentación del30 de octubre de2026",
+      "evidencia": "No hay constancia comprobada en los archivos revisados.",
+      "estado": "no verificado",
+      "limitacion": "Fecha futura al cierre técnico del8 de octubre.",
+      "pendiente": "Conservar constancia tras la presentación.",
+      "obligatorio": true
+    }
+  ],
+  "scope": "Recálculo de predicciones guardadas y verificación de entrega; no reproducción científica desde entrenamiento."
+}

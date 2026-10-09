@@ -1,0 +1,256 @@
+{
+  "pregunta": 3,
+  "rows": [
+    {
+      "pregunta": 3,
+      "entregable": 1,
+      "subrequisito": "Entrenamiento YOLO ajustado terminado y modelo seleccionado",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; training_complete.json:39 épocas; mejor época29 por cis_val; checkpoint b2a47c3b0b22d927…",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 1,
+      "subrequisito": "Resolución y estrategia de aumentos documentadas",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; YOLOv8s, imgsz640, AdamW, batch16; args.yaml y configuración V6",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 1,
+      "subrequisito": "Fotografías vacías tratadas explícitamente como fondo",
+      "evidencia": "structure.json; cohorte de1000 vacías verificadas en metadata/split oficial de entrenamiento",
+      "estado": "cumple",
+      "limitacion": "Proceden de ocho cámaras de la colección completa, adicionales al benchmark; la distinción está declarada.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 2,
+      "subrequisito": "mAP@0.5 y mAP@0.5:0.95 recalculados",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; cis_test=0.687751884/0.435752672; trans_test=0.423057069/0.262485537",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 2,
+      "subrequisito": "Desglose y soporte por especie",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; 14 especies benchmark, soporte12461 objetos conocidos/17620 nuevos",
+      "estado": "cumple",
+      "limitacion": "Categorías sin positivos elegibles tienen AP no definido; no se sustituyen por cero.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 2,
+      "subrequisito": "Discusión del desbalance y colección frente a benchmark",
+      "evidencia": "informe_fauna.pdf: clases raras, fox/badger y 14 especies del benchmark frente a colección completa",
+      "estado": "cumple",
+      "limitacion": "Los resultados del benchmark no cubren todas las categorías de la colección completa.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 3,
+      "subrequisito": "Particiones contrastadas con anotaciones oficiales",
+      "evidencia": "structure.json: cinco particiones ECCV y45305 cajas cotejadas; tres correcciones bird con revisión humana",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 3,
+      "subrequisito": "Separación de cámaras, secuencias e imágenes",
+      "evidencia": "structure.json: imágenes disjuntas, secuencias train/holdouts disjuntas y cámaras nuevas ausentes de train",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 3,
+      "subrequisito": "Brecha conocidos/nuevos cuantificada",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; diferencia mAP50:95=0.173267135; diferencia mAP50=0.264694815",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 3,
+      "subrequisito": "Evidencia visual y discusión del aprendizaje del fondo",
+      "evidencia": "informe_fauna.pdf:12 Grad-CAM y ejemplos de cámaras conocidas/nuevas",
+      "estado": "cumple",
+      "limitacion": "Tres mapas planos y atención periférica declarados; Grad-CAM no demuestra causalmente memorización del fondo.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 4,
+      "subrequisito": "Grupos de tamaño, soportes y desempeño",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; grupos <1%,1–5%,>5%; trans1922/12169/3529; AP50:95=0.161862/0.322044/0.286956",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 4,
+      "subrequisito": "Trazabilidad de la revisión humana aceptada",
+      "evidencia": "structure.json; E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600/review_acceptance.json y CSV aceptado:600 originales,582 aceptados,18 excluidos",
+      "estado": "cumple",
+      "limitacion": "398 casos sin nota, permitidos; caso121 conserva medium de Miguel; no se fabricaron explicaciones humanas.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 4,
+      "subrequisito": "Grupos de oclusión y soportes",
+      "evidencia": "occlusion-scientific.json; E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600/accepted_evaluation/6b2983c33abccbc1/results.json; low340,medium69,high48,ambiguous125; últimos125 fuera de comparación de niveles",
+      "estado": "cumple",
+      "limitacion": "Submuestra independiente aceptada, sin garantía de representatividad completa tras18 exclusiones.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 4,
+      "subrequisito": "Métricas, intervalos y diferencias de oclusión",
+      "evidencia": "occlusion-scientific.json; E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600/accepted_evaluation/6b2983c33abccbc1/results.json; AP50:95 low0.087523278,medium0.027141706,high0.024376059;200 bootstrap por secuencia/nivel",
+      "estado": "cumple",
+      "limitacion": "Todos los18647 frames, incluidos vacíos; otras cajas se ignoran según protocolo. AP de submuestra no comparable directamente con mAP global V6.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 4,
+      "subrequisito": "Resultados incorporados al informe y notebook finales",
+      "evidencia": "pregunta_3_fauna/entregable/informe_fauna.pdf,03_wildlife.ipynb,anexo_occlusion.pdf y04_occlusion_582.ipynb",
+      "estado": "no verificado",
+      "limitacion": "El anexo no reemplaza la discusión requerida dentro de las6–10 páginas.",
+      "pendiente": "Verificación final del documento integrado.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 5,
+      "subrequisito": "Cámara de demostración ausente del entrenamiento",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; camera7 pertenece a cámaras trans y no al entrenamiento",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 5,
+      "subrequisito": "Conteos por especie y periodo",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf; activity.json:1853 frames,211 días observados,319 filas especie/día,1565 detecciones",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 5,
+      "subrequisito": "Especies observadas y fotografías sin detección",
+      "evidencia": "wildlife-scientific.json; pregunta_3_fauna/entregable/informe_fauna.pdf;11 especies detectadas,1420 fotos con detección,433/1853 sin detección=23.3675%",
+      "estado": "cumple",
+      "limitacion": "Sin detección no garantiza vacío real; conteos son detecciones, no abundancia ni individuos únicos.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 6,
+      "subrequisito": "Falsos negativos y falsos positivos en conservación",
+      "evidencia": "informe_fauna.pdf: discusión aproximadamente media página sobre costos y revisión especializada",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": 6,
+      "subrequisito": "Riesgo de despliegue sin validación local",
+      "evidencia": "informe_fauna.pdf: caída en cámaras nuevas, validación local y restricciones de uso",
+      "estado": "cumple",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Ninguno técnico.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": "común",
+      "subrequisito": "Informe NeurIPS de6–10 páginas",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": "común",
+      "subrequisito": "Cinco autores y al menos cinco referencias",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": "común",
+      "subrequisito": "Motivación, antecedentes, metodología, experimentos, resultados y discusión",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": "común",
+      "subrequisito": "ODT editable y PDF exportado desde él",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    },
+    {
+      "pregunta": 3,
+      "entregable": "común",
+      "subrequisito": "Notebook final ejecutado sin errores",
+      "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
+      "estado": "no verificado",
+      "limitacion": "Ninguna adicional.",
+      "pendiente": "Completar comprobación final.",
+      "obligatorio": true
+    }
+  ],
+  "mandatory_deliverables": 6
+}
