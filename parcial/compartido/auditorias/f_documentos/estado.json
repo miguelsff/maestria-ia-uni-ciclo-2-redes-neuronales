@@ -1,0 +1,61 @@
+{
+  "phase": "F",
+  "status": "passed",
+  "base_sha": "6b9db09ad76bfd698775515cabdbbdd9987a9cde",
+  "clone_root": "C:\\Users\\USER\\.codex\\clean-clones\\examen-f-documental",
+  "branch": "codex/examen-f-documental-clean",
+  "renderer_image_id": "sha256:94b5aaf5c97134beb4a5602355ef97760a148992ac9ec774e6c835638224bd5a",
+  "environment": {
+    "renderer_packages.tsv": {
+      "sha256": "2809b0b076544f3ef44325f4f484aac452a20e27c0d379f125065aa07fd5f5b7",
+      "matches_B_and_both_F_exports": true
+    },
+    "renderer_fonts.txt": {
+      "sha256": "13db6594b5a93889347bd46c73fa6c3f60089f95e84b4257051d2b087ae2b244",
+      "matches_B_and_both_F_exports": true
+    }
+  },
+  "controls_sha256": {
+    "parcial/compartido/scripts/export_exam_documents.ps1": "fbf20dbb2544f5ac859a8b0f0fa0f7c7e61230652508df7dcfe0eb3baaecc21d",
+    "parcial/compartido/scripts/verify_native_document_editability.py": "01bd8e7816963275ac9c6bba91750954a867bfefe845da67adff2eb984aa37a1",
+    "parcial/compartido/scripts/verify_document_exports.py": "287cf896ab52d81a7e7fb80df4485cac554670f10484452242851503bb4319ad"
+  },
+  "results": {
+    "exported_original_documents": 8,
+    "pixel_text_dimension_equal_pages": 67,
+    "edited_copies": 8,
+    "paragraph_edits": 8,
+    "table_cell_edits": 8,
+    "equation_edits": 4,
+    "native_paragraphs": 574,
+    "native_tables": 57,
+    "native_equations": 15,
+    "preserved_odt": 8,
+    "preserved_pdf": 18,
+    "preserved_pdf_inventory_pages": 153,
+    "main_report_pages": {
+      "mri": 9,
+      "inundaciones": 9,
+      "fauna": 10
+    },
+    "main_report_authors_verified": 5,
+    "main_report_references_verified": true,
+    "all_26_document_hashes_preserved": true
+  },
+  "scope": "Document exports and editing of temporary copies only. No scientific execution or publication.",
+  "temporary_outputs": "tmp/F; intentionally excluded from the commit.",
+  "binary_export_note": "All eight temporary baseline PDF hashes differ from approved PDFs. CreationDate changes; page pixels, text and dimensions are identical. Approved PDFs are retained.",
+  "negative_control": {
+    "fixture": "One-page temporary copy of MRI with a red square in the margin.",
+    "text_equal": true,
+    "dimensions_equal": true,
+    "pixels_equal": false,
+    "difference_bbox": [
+      8,
+      8,
+      18,
+      18
+    ],
+    "visual_difference_detected": true
+  }
+}

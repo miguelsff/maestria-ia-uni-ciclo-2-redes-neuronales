@@ -1,0 +1,83 @@
+{
+  "format_version": 1,
+  "renderer_image": "exam-document-renderer:b1",
+  "renderer_image_id": "sha256:94b5aaf5c97134beb4a5602355ef97760a148992ac9ec774e6c835638224bd5a",
+  "libreoffice_version": "LibreOffice 25.2.3.2 520(Build:2)",
+  "source_of_pdf": "Maestro ODT leído por LibreOffice Writer; sin TEX ni DOCX intermedio.",
+  "input_directory": "C:\\Users\\USER\\.codex\\clean-clones\\examen-f-documental\\tmp\\F\\edited-copies",
+  "output_directory": "C:\\Users\\USER\\.codex\\clean-clones\\examen-f-documental\\tmp\\F\\exported-edited",
+  "documents": [
+    {
+      "odt": "anexo_occlusion.odt",
+      "odt_sha256_before": "456b7ea52c1e627125fd629002182b2c84c52ff31c359c7eccdab6cce953ce02",
+      "odt_sha256_after": "456b7ea52c1e627125fd629002182b2c84c52ff31c359c7eccdab6cce953ce02",
+      "odt_preserved": true,
+      "pdf": "anexo_occlusion.pdf",
+      "pdf_sha256": "c144e02dce6590933c5349c8e9d16c7a54d6d3df10844caf31223ae28c1501d9",
+      "bytes_pdf": 117966
+    },
+    {
+      "odt": "ejemplo.odt",
+      "odt_sha256_before": "b0f8f671c581639a43d9c691173d79aa440df1dd6dce136c58237840a9ab60a3",
+      "odt_sha256_after": "b0f8f671c581639a43d9c691173d79aa440df1dd6dce136c58237840a9ab60a3",
+      "odt_preserved": true,
+      "pdf": "ejemplo.pdf",
+      "pdf_sha256": "ea4e56dbabd10a2052c2298c1171d0b307c3dffbf9ed777d4a68c38ec2234550",
+      "bytes_pdf": 1036707
+    },
+    {
+      "odt": "examen-parcial.odt",
+      "odt_sha256_before": "ce887efc31356c19bdbb0abb35f5d6c6c8928b5677606f93b28ce3db7c3d79b7",
+      "odt_sha256_after": "ce887efc31356c19bdbb0abb35f5d6c6c8928b5677606f93b28ce3db7c3d79b7",
+      "odt_preserved": true,
+      "pdf": "examen-parcial.pdf",
+      "pdf_sha256": "87134faaa465d2a90cc37cd73ab206a17ff7f239556c56e247b4e273034ea0b0",
+      "bytes_pdf": 142263
+    },
+    {
+      "odt": "fauna_borrador_inicial.odt",
+      "odt_sha256_before": "29b2920ab93ef73bd8ab5a92e005a7af27648b481dd759af1e02e861d4bf5272",
+      "odt_sha256_after": "29b2920ab93ef73bd8ab5a92e005a7af27648b481dd759af1e02e861d4bf5272",
+      "odt_preserved": true,
+      "pdf": "fauna_borrador_inicial.pdf",
+      "pdf_sha256": "8f8b8cfb936aae54ac005021ed87a367d96f9b5cb3aae1bbd21026e0d5c7de84",
+      "bytes_pdf": 1009880
+    },
+    {
+      "odt": "informe_fauna.odt",
+      "odt_sha256_before": "f3c58e6f4397d72fc7da6bbd4ffd3a5b6ea5bcf2ad1c395e685870f978bc4b52",
+      "odt_sha256_after": "f3c58e6f4397d72fc7da6bbd4ffd3a5b6ea5bcf2ad1c395e685870f978bc4b52",
+      "odt_preserved": true,
+      "pdf": "informe_fauna.pdf",
+      "pdf_sha256": "83f1b35ab6119d7f43d3f9c10b88a3c5035cf7b64a144fb4d85a7af284402002",
+      "bytes_pdf": 1029125
+    },
+    {
+      "odt": "informe_inundaciones.odt",
+      "odt_sha256_before": "1515dacb55d6ae5a420a906b938b90cf85334fa54ce84d299f300f7b44eb33d5",
+      "odt_sha256_after": "1515dacb55d6ae5a420a906b938b90cf85334fa54ce84d299f300f7b44eb33d5",
+      "odt_preserved": true,
+      "pdf": "informe_inundaciones.pdf",
+      "pdf_sha256": "763d3efd30a2d8838c2099085db1376ba11ad93fdc3a627b4c045896b0c35351",
+      "bytes_pdf": 1401476
+    },
+    {
+      "odt": "informe_mri.odt",
+      "odt_sha256_before": "c75c5da377678e46f5b4847f4e87e17df285f1182e7aed6e9abce936d40eb53e",
+      "odt_sha256_after": "c75c5da377678e46f5b4847f4e87e17df285f1182e7aed6e9abce936d40eb53e",
+      "odt_preserved": true,
+      "pdf": "informe_mri.pdf",
+      "pdf_sha256": "e4310456964be145f62880a84e828432ec39278e45fa27ebe58fcebbaaca9aa7",
+      "bytes_pdf": 893259
+    },
+    {
+      "odt": "inundaciones_borrador_cientifico.odt",
+      "odt_sha256_before": "639d7e3536dbd88e25a1c795198448cc9cabadbc57c5ed989e2a0dcfe7691de1",
+      "odt_sha256_after": "639d7e3536dbd88e25a1c795198448cc9cabadbc57c5ed989e2a0dcfe7691de1",
+      "odt_preserved": true,
+      "pdf": "inundaciones_borrador_cientifico.pdf",
+      "pdf_sha256": "55f05cb8b9474b25a6bcef7182f4436df28548e8c387c0441173b1a842403774",
+      "bytes_pdf": 1401082
+    }
+  ]
+}

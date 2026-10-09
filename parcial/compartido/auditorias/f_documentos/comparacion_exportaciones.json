@@ -1,0 +1,1513 @@
+{
+  "phase": "F",
+  "base_sha": "6b9db09ad76bfd698775515cabdbbdd9987a9cde",
+  "renderer_image_id": "sha256:94b5aaf5c97134beb4a5602355ef97760a148992ac9ec774e6c835638224bd5a",
+  "rendering": "Poppler pdftoppm PNG, 120 dpi, exact RGB equality",
+  "script_sha256": "287cf896ab52d81a7e7fb80df4485cac554670f10484452242851503bb4319ad",
+  "status": "passed",
+  "totals": {
+    "paragraphs": 574,
+    "tables": 57,
+    "equations": 15,
+    "final_pages": 67,
+    "preserved_odt": 8,
+    "preserved_pdf": 18
+  },
+  "preserved_documents": [
+    {
+      "path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.odt",
+      "sha256": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "bytes": 3646147,
+      "matches_git_base": true,
+      "unchanged_after_exports": true
+    },
+    {
+      "path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.pdf",
+      "sha256": "e6b55856e3e17d2efc5abff5a5ab201322ad45c219c577aedf5ac56ff1c412e7",
+      "bytes": 1009767,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 10
+    },
+    {
+      "path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/original.pdf",
+      "sha256": "c0e4aee90f16ccd37f4358434895b1cb414ba73f52c06be65ad72d153863c446",
+      "bytes": 2990483,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 10
+    },
+    {
+      "path": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.odt",
+      "sha256": "7d2c3812dad734de605733e18ff440482f60f1d17e99660f4be3db65f22e1b89",
+      "bytes": 3965997,
+      "matches_git_base": true,
+      "unchanged_after_exports": true
+    },
+    {
+      "path": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.pdf",
+      "sha256": "d2d24481b64171a8cf84ceba750200743f60a101f132987e9fda99896d0b4249",
+      "bytes": 1401129,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 9
+    },
+    {
+      "path": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/original.pdf",
+      "sha256": "00c86d3b767cb5ed35f03325cf92d9e906cea3b59e637ab77f044eb2825eeeb0",
+      "bytes": 4007475,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 9
+    },
+    {
+      "path": "parcial/archivo/documentos_historicos/tmp/pdfs/wildlife_v6_review/initial_draft.pdf",
+      "sha256": "c0e4aee90f16ccd37f4358434895b1cb414ba73f52c06be65ad72d153863c446",
+      "bytes": 2990483,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 10
+    },
+    {
+      "path": "parcial/archivo/entregas_anteriores/flood/flood_review.pdf",
+      "sha256": "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38",
+      "bytes": 4008199,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 9
+    },
+    {
+      "path": "parcial/archivo/referencias_originales/ejemplo.pdf",
+      "sha256": "8532c8745ea326ec7b750c5aedc074523a605e346279521618e95ccc7be2edbd",
+      "bytes": 4508703,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 11
+    },
+    {
+      "path": "parcial/archivo/referencias_originales/examen-parcial.pdf",
+      "sha256": "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee",
+      "bytes": 207091,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 7
+    },
+    {
+      "path": "parcial/compartido/referencias/ejemplo.odt",
+      "sha256": "a4cafbcdf13ead013e71dd6c1cdf72f05a9d4d71298f1937eb6553f75da02f38",
+      "bytes": 4348627,
+      "matches_git_base": true,
+      "unchanged_after_exports": true
+    },
+    {
+      "path": "parcial/compartido/referencias/ejemplo.pdf",
+      "sha256": "f7605a39a1b315e2a6506ddfc823e6039bb63750cdb5edf09b5ca5e082795784",
+      "bytes": 1035917,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 11
+    },
+    {
+      "path": "parcial/compartido/referencias/examen-parcial.odt",
+      "sha256": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "bytes": 49638,
+      "matches_git_base": true,
+      "unchanged_after_exports": true
+    },
+    {
+      "path": "parcial/compartido/referencias/examen-parcial.pdf",
+      "sha256": "62c38a21a71bf61fc80ebdf48382869ff578834f756d4096e194bafe873f17a1",
+      "bytes": 142514,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 7
+    },
+    {
+      "path": "parcial/pregunta_1_mri/entregable/informe_mri.odt",
+      "sha256": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+      "bytes": 1627909,
+      "matches_git_base": true,
+      "unchanged_after_exports": true
+    },
+    {
+      "path": "parcial/pregunta_1_mri/entregable/informe_mri.pdf",
+      "sha256": "37f4628a2fd70fe1c9f09ff659761df3f3162b7f7c892fee51fb9f17669b4648",
+      "bytes": 894532,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 9
+    },
+    {
+      "path": "parcial/pregunta_1_mri/fuentes_informe/original.pdf",
+      "sha256": "836ad37efa1155d0678e3494f93d23b282e7a3308e9571dd2cae8841a8ed4c1f",
+      "bytes": 1670966,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 9
+    },
+    {
+      "path": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.odt",
+      "sha256": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+      "bytes": 3963513,
+      "matches_git_base": true,
+      "unchanged_after_exports": true
+    },
+    {
+      "path": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+      "sha256": "47ca54c719e13f5bfbf61d6ae95dcdc7e31e32e43aee7f355994af450d864f1b",
+      "bytes": 1401502,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 9
+    },
+    {
+      "path": "parcial/pregunta_2_inundaciones/fuentes_informe/original.pdf",
+      "sha256": "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38",
+      "bytes": 4008199,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 9
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.odt",
+      "sha256": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "bytes": 41904,
+      "matches_git_base": true,
+      "unchanged_after_exports": true
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.pdf",
+      "sha256": "45cd5d02b7c15c97859eddd30a8ec50180e4303e7aaaf93cbf87fe2e7e3a8e99",
+      "bytes": 117762,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 2
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/informe_fauna.odt",
+      "sha256": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "bytes": 3647579,
+      "matches_git_base": true,
+      "unchanged_after_exports": true
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/informe_fauna.pdf",
+      "sha256": "a429deec1996bdae030a01fce6550b0dfc6005a2043d9939a6908a4ff79b4018",
+      "bytes": 1028847,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 10
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/evidencias/anexo_occlusion_provisional.pdf",
+      "sha256": "39f42dba272264327200585267136867aa500478b7c3eedd9206428feef48cde",
+      "bytes": 68056,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 2
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/evidencias/informe_fauna_provisional.pdf",
+      "sha256": "8ce4c2d889c40b0dbfe913f70062568c109cf7bf98600c1b93a8270c670a11a8",
+      "bytes": 2990241,
+      "matches_git_base": true,
+      "unchanged_after_exports": true,
+      "pages": 10
+    }
+  ],
+  "documents": [
+    {
+      "id": "mri",
+      "master": "parcial/pregunta_1_mri/entregable/informe_mri.odt",
+      "approved_pdf": "parcial/pregunta_1_mri/entregable/informe_mri.pdf",
+      "master_sha256": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+      "approved_pdf_sha256": "37f4628a2fd70fe1c9f09ff659761df3f3162b7f7c892fee51fb9f17669b4648",
+      "exported_pdf_sha256": "7845fb0b236a7bc82df3f12de4c965f9c06e7506395a45b0ea5403aed6ef9081",
+      "binary_pdf_equal": false,
+      "native_objects": {
+        "paragraphs": 67,
+        "tables": 6,
+        "equations": 1
+      },
+      "authors_on_first_page": {
+        "Chilón Cruzado Josué": true,
+        "Concepción Tiza Miguel Ángel": true,
+        "Neyra Dianderas Enzo Israel": true,
+        "Tello Guerra Omar Salvador": true,
+        "Alexander Vladimir Paco Cornejo": true
+      },
+      "references_on_last_page": true,
+      "edited_markers_visible_in_published_export": {
+        "paragraph": true,
+        "table_cell": true,
+        "equation": true
+      },
+      "pdf_metadata": {
+        "approved": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009031131Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "exported": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009034850Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "1650cbcb4e470c567d7d11f92aa005ad4586ecd287e668e4d9583bf80f42f7fe",
+          "exported_rgb_sha256": "1650cbcb4e470c567d7d11f92aa005ad4586ecd287e668e4d9583bf80f42f7fe"
+        },
+        {
+          "page": 2,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "543f15cffafe47814b5826131533521d89e068907aee247795136f1714483500",
+          "exported_rgb_sha256": "543f15cffafe47814b5826131533521d89e068907aee247795136f1714483500"
+        },
+        {
+          "page": 3,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "5d6c2c032a065d854128f5c8881be5505c20a037665a1db5d2a8bd27c9cf9ee1",
+          "exported_rgb_sha256": "5d6c2c032a065d854128f5c8881be5505c20a037665a1db5d2a8bd27c9cf9ee1"
+        },
+        {
+          "page": 4,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "29807b3276ade6b6bf6555e0fdf40f5157d35d5201d48f2ad27a1c9756e9be9a",
+          "exported_rgb_sha256": "29807b3276ade6b6bf6555e0fdf40f5157d35d5201d48f2ad27a1c9756e9be9a"
+        },
+        {
+          "page": 5,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "672c2bda2a7710f52e6812eb7a1b97038b7417c01337112c66c583568cf6779f",
+          "exported_rgb_sha256": "672c2bda2a7710f52e6812eb7a1b97038b7417c01337112c66c583568cf6779f"
+        },
+        {
+          "page": 6,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "5692f68511ade028fc770d5c87b55870609e0a8c476b27e0485c96186d6f2413",
+          "exported_rgb_sha256": "5692f68511ade028fc770d5c87b55870609e0a8c476b27e0485c96186d6f2413"
+        },
+        {
+          "page": 7,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "013f1229df9f23c1b4411cfe09da0abd99b289a05bf0b058829e859562ebdef4",
+          "exported_rgb_sha256": "013f1229df9f23c1b4411cfe09da0abd99b289a05bf0b058829e859562ebdef4"
+        },
+        {
+          "page": 8,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "c79b4242de33cb3b1e9b85ffe0f1d6f0ae0af90e047843a91eb62a1b14be7d97",
+          "exported_rgb_sha256": "c79b4242de33cb3b1e9b85ffe0f1d6f0ae0af90e047843a91eb62a1b14be7d97"
+        },
+        {
+          "page": 9,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "f4a423d2ce633bc039a12369cd5eee1bd10a7afa26f81c1f88baf73d8cc9f6a3",
+          "exported_rgb_sha256": "f4a423d2ce633bc039a12369cd5eee1bd10a7afa26f81c1f88baf73d8cc9f6a3"
+        }
+      ]
+    },
+    {
+      "id": "inundaciones",
+      "master": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.odt",
+      "approved_pdf": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+      "master_sha256": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+      "approved_pdf_sha256": "47ca54c719e13f5bfbf61d6ae95dcdc7e31e32e43aee7f355994af450d864f1b",
+      "exported_pdf_sha256": "1d3d9d8aca8f76748a4d9fb3ed1f8cef41cbe0a4847a12446599d9dac60ab0b3",
+      "binary_pdf_equal": false,
+      "native_objects": {
+        "paragraphs": 77,
+        "tables": 6,
+        "equations": 3
+      },
+      "authors_on_first_page": {
+        "Chilón Cruzado Josué": true,
+        "Concepción Tiza Miguel Ángel": true,
+        "Neyra Dianderas Enzo Israel": true,
+        "Tello Guerra Omar Salvador": true,
+        "Alexander Vladimir Paco Cornejo": true
+      },
+      "references_on_last_page": true,
+      "edited_markers_visible_in_published_export": {
+        "paragraph": true,
+        "table_cell": true,
+        "equation": true
+      },
+      "pdf_metadata": {
+        "approved": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009031133Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "exported": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009034851Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "7daa205374a786f5a97bd2c18b8840dbb3c8c6034f5f7e53a05dd715aa3bfbb6",
+          "exported_rgb_sha256": "7daa205374a786f5a97bd2c18b8840dbb3c8c6034f5f7e53a05dd715aa3bfbb6"
+        },
+        {
+          "page": 2,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "1acee639ac15411bb731acfe54618d1843a5ea4f3457d2c39f9a0dce01700d61",
+          "exported_rgb_sha256": "1acee639ac15411bb731acfe54618d1843a5ea4f3457d2c39f9a0dce01700d61"
+        },
+        {
+          "page": 3,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "6d40cccd8dcff8e9ff4b4a6464a485aea72e10b3f425018e8a104b24df009667",
+          "exported_rgb_sha256": "6d40cccd8dcff8e9ff4b4a6464a485aea72e10b3f425018e8a104b24df009667"
+        },
+        {
+          "page": 4,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "d10259add4d85e0a79e302c7051095beadf58872bb9ae0a9b5b1a8ed7422f332",
+          "exported_rgb_sha256": "d10259add4d85e0a79e302c7051095beadf58872bb9ae0a9b5b1a8ed7422f332"
+        },
+        {
+          "page": 5,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "97ba79957bc55e7429ce0af4a00992d1b528e8a7016f86465b6ab6c3da32fd66",
+          "exported_rgb_sha256": "97ba79957bc55e7429ce0af4a00992d1b528e8a7016f86465b6ab6c3da32fd66"
+        },
+        {
+          "page": 6,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "737c6e9186c8ec28343b0468a3c94cfb9cba44feac0aff380b430af69b2d01ea",
+          "exported_rgb_sha256": "737c6e9186c8ec28343b0468a3c94cfb9cba44feac0aff380b430af69b2d01ea"
+        },
+        {
+          "page": 7,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "eb28ae4d09fdbf17715379d07a19f31b25cc9861d68a92d79aec11d6cfa07908",
+          "exported_rgb_sha256": "eb28ae4d09fdbf17715379d07a19f31b25cc9861d68a92d79aec11d6cfa07908"
+        },
+        {
+          "page": 8,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "c0363e482c9735534f1856fc47bd06c95b99ee629a5449c7fa56e041b3d7e92c",
+          "exported_rgb_sha256": "c0363e482c9735534f1856fc47bd06c95b99ee629a5449c7fa56e041b3d7e92c"
+        },
+        {
+          "page": 9,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "75860460825c6667b92c3c58eab57c45d60de5098abaee183a7eab2a7aeb6adc",
+          "exported_rgb_sha256": "75860460825c6667b92c3c58eab57c45d60de5098abaee183a7eab2a7aeb6adc"
+        }
+      ]
+    },
+    {
+      "id": "examen",
+      "master": "parcial/compartido/referencias/examen-parcial.odt",
+      "approved_pdf": "parcial/compartido/referencias/examen-parcial.pdf",
+      "master_sha256": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "approved_pdf_sha256": "62c38a21a71bf61fc80ebdf48382869ff578834f756d4096e194bafe873f17a1",
+      "exported_pdf_sha256": "0cec4b01222452b9a072a2a5efffd8c1b3c0db590150166d19ce65f87dd4f50c",
+      "binary_pdf_equal": false,
+      "native_objects": {
+        "paragraphs": 68,
+        "tables": 3,
+        "equations": 0
+      },
+      "authors_on_first_page": null,
+      "references_on_last_page": null,
+      "edited_markers_visible_in_published_export": {
+        "paragraph": true,
+        "table_cell": true
+      },
+      "pdf_metadata": {
+        "approved": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009031127Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "exported": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009034848Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "7e2af9e608ea1308f66e3a7a6282d582aed83af4e58b2634d640bc021bc09147",
+          "exported_rgb_sha256": "7e2af9e608ea1308f66e3a7a6282d582aed83af4e58b2634d640bc021bc09147"
+        },
+        {
+          "page": 2,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "9d3405c27a0eeca5eb9b714ea79dc56244fa8acf9f6a29c2ea433931e1cdda2e",
+          "exported_rgb_sha256": "9d3405c27a0eeca5eb9b714ea79dc56244fa8acf9f6a29c2ea433931e1cdda2e"
+        },
+        {
+          "page": 3,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "d79c4f4b8b7d45761b5fc6b883790daffeb84e8ac4ce15c21c3c7a9e818449f5",
+          "exported_rgb_sha256": "d79c4f4b8b7d45761b5fc6b883790daffeb84e8ac4ce15c21c3c7a9e818449f5"
+        },
+        {
+          "page": 4,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "6e2f2e0876ee28c03c8a60a9e358bc79ac4b39b9a7c8e422fb87afd861ac2026",
+          "exported_rgb_sha256": "6e2f2e0876ee28c03c8a60a9e358bc79ac4b39b9a7c8e422fb87afd861ac2026"
+        },
+        {
+          "page": 5,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "8b073cb642444bc85fdedebe672ccf4ec147c38cf57df3767f63eb5e05d75c6b",
+          "exported_rgb_sha256": "8b073cb642444bc85fdedebe672ccf4ec147c38cf57df3767f63eb5e05d75c6b"
+        },
+        {
+          "page": 6,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "0d3dd3dff5dd65698c5e9e9e9cea09b13b02a4b0ed8ea177532eef739e0dc785",
+          "exported_rgb_sha256": "0d3dd3dff5dd65698c5e9e9e9cea09b13b02a4b0ed8ea177532eef739e0dc785"
+        },
+        {
+          "page": 7,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "cc162c00b73c740db1ffc0c56a2bbf1a8a62afd3619713481517adef64fb989b",
+          "exported_rgb_sha256": "cc162c00b73c740db1ffc0c56a2bbf1a8a62afd3619713481517adef64fb989b"
+        }
+      ]
+    },
+    {
+      "id": "ejemplo",
+      "master": "parcial/compartido/referencias/ejemplo.odt",
+      "approved_pdf": "parcial/compartido/referencias/ejemplo.pdf",
+      "master_sha256": "a4cafbcdf13ead013e71dd6c1cdf72f05a9d4d71298f1937eb6553f75da02f38",
+      "approved_pdf_sha256": "f7605a39a1b315e2a6506ddfc823e6039bb63750cdb5edf09b5ca5e082795784",
+      "exported_pdf_sha256": "95ef70d50afa454f50eeddab412485dac17fcafa50c88a53f0841e324d8dbf65",
+      "binary_pdf_equal": false,
+      "native_objects": {
+        "paragraphs": 123,
+        "tables": 8,
+        "equations": 8
+      },
+      "authors_on_first_page": null,
+      "references_on_last_page": null,
+      "edited_markers_visible_in_published_export": {
+        "paragraph": true,
+        "table_cell": true,
+        "equation": true
+      },
+      "pdf_metadata": {
+        "approved": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009031125Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "exported": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009034847Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "b7df049ea279c99032bc355179573b8b62b236d5e29d1e8666598e0ac1a8c11f",
+          "exported_rgb_sha256": "b7df049ea279c99032bc355179573b8b62b236d5e29d1e8666598e0ac1a8c11f"
+        },
+        {
+          "page": 2,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "4317e0827e0adf85b0aa4529dc60eb6c35d301193967ea553491a7731027b4b0",
+          "exported_rgb_sha256": "4317e0827e0adf85b0aa4529dc60eb6c35d301193967ea553491a7731027b4b0"
+        },
+        {
+          "page": 3,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "2ad716ff559148a9339b87aceb4237edfaa0c5cde5f5d82381b547af25953db3",
+          "exported_rgb_sha256": "2ad716ff559148a9339b87aceb4237edfaa0c5cde5f5d82381b547af25953db3"
+        },
+        {
+          "page": 4,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "ef111c76a4196f63fbd48264c4c8088534299b161606c60273855a20a98783fb",
+          "exported_rgb_sha256": "ef111c76a4196f63fbd48264c4c8088534299b161606c60273855a20a98783fb"
+        },
+        {
+          "page": 5,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "abc0c3a2f1f4ff7dd0e3f251f8f89ed26221a45e7060526d9dcf444a44ab0fa8",
+          "exported_rgb_sha256": "abc0c3a2f1f4ff7dd0e3f251f8f89ed26221a45e7060526d9dcf444a44ab0fa8"
+        },
+        {
+          "page": 6,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "0e76915abbbbc84a699bfaef0ae88dd417403d151a2ce4f9d51fb7eb200146ab",
+          "exported_rgb_sha256": "0e76915abbbbc84a699bfaef0ae88dd417403d151a2ce4f9d51fb7eb200146ab"
+        },
+        {
+          "page": 7,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "75ff2112c649db8aeeca45ba11e878538126797db4a7ccf017b30fd7951708b6",
+          "exported_rgb_sha256": "75ff2112c649db8aeeca45ba11e878538126797db4a7ccf017b30fd7951708b6"
+        },
+        {
+          "page": 8,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "e924e5251bd6b014062a79b42d50fe497938989f9d9973976445c117b40d5840",
+          "exported_rgb_sha256": "e924e5251bd6b014062a79b42d50fe497938989f9d9973976445c117b40d5840"
+        },
+        {
+          "page": 9,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "46dbc0a4bf500a216bd253d5ad121ecfba1be6ae992101b7a456469760b110e6",
+          "exported_rgb_sha256": "46dbc0a4bf500a216bd253d5ad121ecfba1be6ae992101b7a456469760b110e6"
+        },
+        {
+          "page": 10,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "561ab937e7897693a02a02108a6bc89ba778d934aa4e57a45fd345c69c0712b4",
+          "exported_rgb_sha256": "561ab937e7897693a02a02108a6bc89ba778d934aa4e57a45fd345c69c0712b4"
+        },
+        {
+          "page": 11,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "549bef893357e7efe5f3db0d83f8393bab0a6bfc8eed4aa1d83b42b67cd0f176",
+          "exported_rgb_sha256": "549bef893357e7efe5f3db0d83f8393bab0a6bfc8eed4aa1d83b42b67cd0f176"
+        }
+      ]
+    },
+    {
+      "id": "fauna_borrador_historico",
+      "master": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.odt",
+      "approved_pdf": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.pdf",
+      "master_sha256": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "approved_pdf_sha256": "e6b55856e3e17d2efc5abff5a5ab201322ad45c219c577aedf5ac56ff1c412e7",
+      "exported_pdf_sha256": "85efd8cba2297b949ede3d0c703e9fd6e3cbea0c7a164730e7adb97c4c74cef9",
+      "binary_pdf_equal": false,
+      "native_objects": {
+        "paragraphs": 69,
+        "tables": 13,
+        "equations": 0
+      },
+      "authors_on_first_page": null,
+      "references_on_last_page": null,
+      "edited_markers_visible_in_published_export": {
+        "paragraph": true,
+        "table_cell": true
+      },
+      "pdf_metadata": {
+        "approved": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009031128Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "exported": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009034843Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "6cf22f21076fad9f8cc7b5cc62825903766b9c8a3a75405e03bb2de3625e6bdf",
+          "exported_rgb_sha256": "6cf22f21076fad9f8cc7b5cc62825903766b9c8a3a75405e03bb2de3625e6bdf"
+        },
+        {
+          "page": 2,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "77e816bb45a4e3d696b2dd21ce5ea206fd402b5667539d2dfc7b8ea1d7621414",
+          "exported_rgb_sha256": "77e816bb45a4e3d696b2dd21ce5ea206fd402b5667539d2dfc7b8ea1d7621414"
+        },
+        {
+          "page": 3,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "6f791840f47a5046a7e5270a87c1e99fbc74da7a6ed474e1713fbd1d47188282",
+          "exported_rgb_sha256": "6f791840f47a5046a7e5270a87c1e99fbc74da7a6ed474e1713fbd1d47188282"
+        },
+        {
+          "page": 4,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "18edeace15fb063acf6dbe42eaa5bb20da0f90224360bb0070324a187cd4bb7f",
+          "exported_rgb_sha256": "18edeace15fb063acf6dbe42eaa5bb20da0f90224360bb0070324a187cd4bb7f"
+        },
+        {
+          "page": 5,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "b847b20ef0f0d955cbd251884be7dc689d3c5db95bba54165afa210ba823af40",
+          "exported_rgb_sha256": "b847b20ef0f0d955cbd251884be7dc689d3c5db95bba54165afa210ba823af40"
+        },
+        {
+          "page": 6,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "d32f76245526e93301e7e076aa8dd8dc508cdec5df9a84ffa0d2f0bad6de2547",
+          "exported_rgb_sha256": "d32f76245526e93301e7e076aa8dd8dc508cdec5df9a84ffa0d2f0bad6de2547"
+        },
+        {
+          "page": 7,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "83646be8bcc152e89b042f171abb0c80af1b73d719da037334f9642c8a061d66",
+          "exported_rgb_sha256": "83646be8bcc152e89b042f171abb0c80af1b73d719da037334f9642c8a061d66"
+        },
+        {
+          "page": 8,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "1267c403f4fb69f392d1cf78c704bb5f2166636f19c166e21728172fb2a03b69",
+          "exported_rgb_sha256": "1267c403f4fb69f392d1cf78c704bb5f2166636f19c166e21728172fb2a03b69"
+        },
+        {
+          "page": 9,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "79e74057c7000347b046e4ae4dc65eb5d5d49dcda0a85aee9eb8e5faa77318f0",
+          "exported_rgb_sha256": "79e74057c7000347b046e4ae4dc65eb5d5d49dcda0a85aee9eb8e5faa77318f0"
+        },
+        {
+          "page": 10,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "8e0a2265f96cb08e47c760adda9ea3acdc27041c716751aa36b7dee91c79343e",
+          "exported_rgb_sha256": "8e0a2265f96cb08e47c760adda9ea3acdc27041c716751aa36b7dee91c79343e"
+        }
+      ]
+    },
+    {
+      "id": "inundaciones_borrador_historico",
+      "master": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.odt",
+      "approved_pdf": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.pdf",
+      "master_sha256": "7d2c3812dad734de605733e18ff440482f60f1d17e99660f4be3db65f22e1b89",
+      "approved_pdf_sha256": "d2d24481b64171a8cf84ceba750200743f60a101f132987e9fda99896d0b4249",
+      "exported_pdf_sha256": "2f565eb8644e7b3494204dc298fa9edd08c3a542c15999994bb83f90e3d5c8f8",
+      "binary_pdf_equal": false,
+      "native_objects": {
+        "paragraphs": 77,
+        "tables": 6,
+        "equations": 3
+      },
+      "authors_on_first_page": null,
+      "references_on_last_page": null,
+      "edited_markers_visible_in_published_export": {
+        "paragraph": true,
+        "table_cell": true,
+        "equation": true
+      },
+      "pdf_metadata": {
+        "approved": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009031130Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "exported": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009034845Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "6c246eaa101b01a83d25b340e4cbde3892257651247bb1148b60ff117745ea11",
+          "exported_rgb_sha256": "6c246eaa101b01a83d25b340e4cbde3892257651247bb1148b60ff117745ea11"
+        },
+        {
+          "page": 2,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "24a240841aff58a28b3c2655ab789b54711e7ae9f3c9ce1c7d0b32042b729d8e",
+          "exported_rgb_sha256": "24a240841aff58a28b3c2655ab789b54711e7ae9f3c9ce1c7d0b32042b729d8e"
+        },
+        {
+          "page": 3,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "2b22f4bc2954991a7f77d57778cf9007019b23ab017d045866c65964be5a1226",
+          "exported_rgb_sha256": "2b22f4bc2954991a7f77d57778cf9007019b23ab017d045866c65964be5a1226"
+        },
+        {
+          "page": 4,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "d10259add4d85e0a79e302c7051095beadf58872bb9ae0a9b5b1a8ed7422f332",
+          "exported_rgb_sha256": "d10259add4d85e0a79e302c7051095beadf58872bb9ae0a9b5b1a8ed7422f332"
+        },
+        {
+          "page": 5,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "97ba79957bc55e7429ce0af4a00992d1b528e8a7016f86465b6ab6c3da32fd66",
+          "exported_rgb_sha256": "97ba79957bc55e7429ce0af4a00992d1b528e8a7016f86465b6ab6c3da32fd66"
+        },
+        {
+          "page": 6,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "737c6e9186c8ec28343b0468a3c94cfb9cba44feac0aff380b430af69b2d01ea",
+          "exported_rgb_sha256": "737c6e9186c8ec28343b0468a3c94cfb9cba44feac0aff380b430af69b2d01ea"
+        },
+        {
+          "page": 7,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "eb28ae4d09fdbf17715379d07a19f31b25cc9861d68a92d79aec11d6cfa07908",
+          "exported_rgb_sha256": "eb28ae4d09fdbf17715379d07a19f31b25cc9861d68a92d79aec11d6cfa07908"
+        },
+        {
+          "page": 8,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "c0363e482c9735534f1856fc47bd06c95b99ee629a5449c7fa56e041b3d7e92c",
+          "exported_rgb_sha256": "c0363e482c9735534f1856fc47bd06c95b99ee629a5449c7fa56e041b3d7e92c"
+        },
+        {
+          "page": 9,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "f9d84f9918826b6786e6168881a2548bd61d956cc4b831f03d5898ecdd0f9f95",
+          "exported_rgb_sha256": "f9d84f9918826b6786e6168881a2548bd61d956cc4b831f03d5898ecdd0f9f95"
+        }
+      ]
+    },
+    {
+      "id": "fauna",
+      "master": "parcial/pregunta_3_fauna/entregable/informe_fauna.odt",
+      "approved_pdf": "parcial/pregunta_3_fauna/entregable/informe_fauna.pdf",
+      "master_sha256": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "approved_pdf_sha256": "a429deec1996bdae030a01fce6550b0dfc6005a2043d9939a6908a4ff79b4018",
+      "exported_pdf_sha256": "89e52c885b8b8fadceed6e9a04b50487d39768bb9ee317ab25afb7c7ac071638",
+      "binary_pdf_equal": false,
+      "native_objects": {
+        "paragraphs": 72,
+        "tables": 12,
+        "equations": 0
+      },
+      "authors_on_first_page": {
+        "Chilón Cruzado Josué": true,
+        "Concepción Tiza Miguel Ángel": true,
+        "Neyra Dianderas Enzo Israel": true,
+        "Tello Guerra Omar Salvador": true,
+        "Alexander Vladimir Paco Cornejo": true
+      },
+      "references_on_last_page": true,
+      "edited_markers_visible_in_published_export": {
+        "paragraph": true,
+        "table_cell": true
+      },
+      "pdf_metadata": {
+        "approved": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009031136Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "exported": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009034854Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "d7da07d4cf3d81066c779d7461c5c535573c8cb30b3d40cce45f865c3dfe0f64",
+          "exported_rgb_sha256": "d7da07d4cf3d81066c779d7461c5c535573c8cb30b3d40cce45f865c3dfe0f64"
+        },
+        {
+          "page": 2,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "71c23a543ea094f23489f3bd4f0914120c4292c2c70b26440e6eb5575a97a6f2",
+          "exported_rgb_sha256": "71c23a543ea094f23489f3bd4f0914120c4292c2c70b26440e6eb5575a97a6f2"
+        },
+        {
+          "page": 3,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "03bed604230fc54a243c1f2bb1b03675ef6853eb1622bcc4656a83a0b099d53e",
+          "exported_rgb_sha256": "03bed604230fc54a243c1f2bb1b03675ef6853eb1622bcc4656a83a0b099d53e"
+        },
+        {
+          "page": 4,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "db2afccb00d97ee67ae56c5b798cdcb86aad1c2e0d0a658d3e47e8fb3dbd8966",
+          "exported_rgb_sha256": "db2afccb00d97ee67ae56c5b798cdcb86aad1c2e0d0a658d3e47e8fb3dbd8966"
+        },
+        {
+          "page": 5,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "545ea1e3e734b5a4518e001ab8e9c97ee17e55bdb70cb02e3b365c39c316f4b3",
+          "exported_rgb_sha256": "545ea1e3e734b5a4518e001ab8e9c97ee17e55bdb70cb02e3b365c39c316f4b3"
+        },
+        {
+          "page": 6,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "9f2fb3fc083e0576f504ffc7629117f3f8b572c683763e07b2a5cc624b4b79d2",
+          "exported_rgb_sha256": "9f2fb3fc083e0576f504ffc7629117f3f8b572c683763e07b2a5cc624b4b79d2"
+        },
+        {
+          "page": 7,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "7251392ae73e55e9abe6e3f083161c047e774901161cde3d61c4c67a407cb141",
+          "exported_rgb_sha256": "7251392ae73e55e9abe6e3f083161c047e774901161cde3d61c4c67a407cb141"
+        },
+        {
+          "page": 8,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "60b3672bffa16f33b9a89817ec6c35bb423e3fc4b236090d4295dab4a5598f83",
+          "exported_rgb_sha256": "60b3672bffa16f33b9a89817ec6c35bb423e3fc4b236090d4295dab4a5598f83"
+        },
+        {
+          "page": 9,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "8b7b4855451a24414879f39534b57a0f26180619f0da735c40a24838decea7f3",
+          "exported_rgb_sha256": "8b7b4855451a24414879f39534b57a0f26180619f0da735c40a24838decea7f3"
+        },
+        {
+          "page": 10,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "2cc1ddba6fb2da4a1e410133c5962a26f0531647f9c1709e366f0cb6a9caf4a2",
+          "exported_rgb_sha256": "2cc1ddba6fb2da4a1e410133c5962a26f0531647f9c1709e366f0cb6a9caf4a2"
+        }
+      ]
+    },
+    {
+      "id": "anexo_occlusion",
+      "master": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.odt",
+      "approved_pdf": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.pdf",
+      "master_sha256": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "approved_pdf_sha256": "45cd5d02b7c15c97859eddd30a8ec50180e4303e7aaaf93cbf87fe2e7e3a8e99",
+      "exported_pdf_sha256": "dfbdcf2c3ee2c0c2cda9096305ba5fb6a6f288d6d66d9e0b8a1e0ab01abb25fd",
+      "binary_pdf_equal": false,
+      "native_objects": {
+        "paragraphs": 21,
+        "tables": 3,
+        "equations": 0
+      },
+      "authors_on_first_page": null,
+      "references_on_last_page": null,
+      "edited_markers_visible_in_published_export": {
+        "paragraph": true,
+        "table_cell": true
+      },
+      "pdf_metadata": {
+        "approved": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009031134Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "exported": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Writer",
+          "producer": "LibreOffice 25.2.3.2 (X86_64) / LibreOffice Community",
+          "creationDate": "D:20261009034853Z'",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        }
+      },
+      "pages": [
+        {
+          "page": 1,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "af20876a6648cb4c51e75d7a6ca1ffc8935c121743b8c75cdcf6465d939bb622",
+          "exported_rgb_sha256": "af20876a6648cb4c51e75d7a6ca1ffc8935c121743b8c75cdcf6465d939bb622"
+        },
+        {
+          "page": 2,
+          "dimensions_equal": true,
+          "text_equal": true,
+          "pixels_equal": true,
+          "difference_bbox": null,
+          "pixel_size": [
+            1020,
+            1320
+          ],
+          "approved_rgb_sha256": "e861270a7c82c8416934212f692f3ca955f6a3aee97570f017e1fec3280ef1c7",
+          "exported_rgb_sha256": "e861270a7c82c8416934212f692f3ca955f6a3aee97570f017e1fec3280ef1c7"
+        }
+      ]
+    }
+  ]
+}

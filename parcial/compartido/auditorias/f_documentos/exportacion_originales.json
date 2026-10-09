@@ -1,0 +1,83 @@
+{
+  "format_version": 1,
+  "renderer_image": "exam-document-renderer:b1",
+  "renderer_image_id": "sha256:94b5aaf5c97134beb4a5602355ef97760a148992ac9ec774e6c835638224bd5a",
+  "libreoffice_version": "LibreOffice 25.2.3.2 520(Build:2)",
+  "source_of_pdf": "Maestro ODT leído por LibreOffice Writer; sin TEX ni DOCX intermedio.",
+  "input_directory": "C:\\Users\\USER\\.codex\\clean-clones\\examen-f-documental\\parcial",
+  "output_directory": "C:\\Users\\USER\\.codex\\clean-clones\\examen-f-documental\\tmp\\F\\exported-baseline",
+  "documents": [
+    {
+      "odt": "archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.odt",
+      "odt_sha256_before": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "odt_sha256_after": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "odt_preserved": true,
+      "pdf": "archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.pdf",
+      "pdf_sha256": "85efd8cba2297b949ede3d0c703e9fd6e3cbea0c7a164730e7adb97c4c74cef9",
+      "bytes_pdf": 1009767
+    },
+    {
+      "odt": "archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.odt",
+      "odt_sha256_before": "7d2c3812dad734de605733e18ff440482f60f1d17e99660f4be3db65f22e1b89",
+      "odt_sha256_after": "7d2c3812dad734de605733e18ff440482f60f1d17e99660f4be3db65f22e1b89",
+      "odt_preserved": true,
+      "pdf": "archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.pdf",
+      "pdf_sha256": "2f565eb8644e7b3494204dc298fa9edd08c3a542c15999994bb83f90e3d5c8f8",
+      "bytes_pdf": 1401129
+    },
+    {
+      "odt": "compartido/referencias/ejemplo.odt",
+      "odt_sha256_before": "a4cafbcdf13ead013e71dd6c1cdf72f05a9d4d71298f1937eb6553f75da02f38",
+      "odt_sha256_after": "a4cafbcdf13ead013e71dd6c1cdf72f05a9d4d71298f1937eb6553f75da02f38",
+      "odt_preserved": true,
+      "pdf": "compartido/referencias/ejemplo.pdf",
+      "pdf_sha256": "95ef70d50afa454f50eeddab412485dac17fcafa50c88a53f0841e324d8dbf65",
+      "bytes_pdf": 1035917
+    },
+    {
+      "odt": "compartido/referencias/examen-parcial.odt",
+      "odt_sha256_before": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "odt_sha256_after": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "odt_preserved": true,
+      "pdf": "compartido/referencias/examen-parcial.pdf",
+      "pdf_sha256": "0cec4b01222452b9a072a2a5efffd8c1b3c0db590150166d19ce65f87dd4f50c",
+      "bytes_pdf": 142514
+    },
+    {
+      "odt": "pregunta_1_mri/entregable/informe_mri.odt",
+      "odt_sha256_before": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+      "odt_sha256_after": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+      "odt_preserved": true,
+      "pdf": "pregunta_1_mri/entregable/informe_mri.pdf",
+      "pdf_sha256": "7845fb0b236a7bc82df3f12de4c965f9c06e7506395a45b0ea5403aed6ef9081",
+      "bytes_pdf": 894532
+    },
+    {
+      "odt": "pregunta_2_inundaciones/entregable/informe_inundaciones.odt",
+      "odt_sha256_before": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+      "odt_sha256_after": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+      "odt_preserved": true,
+      "pdf": "pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+      "pdf_sha256": "1d3d9d8aca8f76748a4d9fb3ed1f8cef41cbe0a4847a12446599d9dac60ab0b3",
+      "bytes_pdf": 1401502
+    },
+    {
+      "odt": "pregunta_3_fauna/entregable/anexo_occlusion.odt",
+      "odt_sha256_before": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "odt_sha256_after": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "odt_preserved": true,
+      "pdf": "pregunta_3_fauna/entregable/anexo_occlusion.pdf",
+      "pdf_sha256": "dfbdcf2c3ee2c0c2cda9096305ba5fb6a6f288d6d66d9e0b8a1e0ab01abb25fd",
+      "bytes_pdf": 117762
+    },
+    {
+      "odt": "pregunta_3_fauna/entregable/informe_fauna.odt",
+      "odt_sha256_before": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "odt_sha256_after": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "odt_preserved": true,
+      "pdf": "pregunta_3_fauna/entregable/informe_fauna.pdf",
+      "pdf_sha256": "89e52c885b8b8fadceed6e9a04b50487d39768bb9ee317ab25afb7c7ac071638",
+      "bytes_pdf": 1028847
+    }
+  ]
+}
