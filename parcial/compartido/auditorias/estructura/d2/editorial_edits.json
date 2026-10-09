@@ -1,0 +1,303 @@
+[
+  {
+    "path": "parcial/pregunta_1_mri/entregable/LEEME.md",
+    "before_sha256": null,
+    "after_sha256": "6efca139094c05e36f26b5584d8f2fc712e4bf0ff8c9056e08f2ccf385228728",
+    "original_copy": null,
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_1_mri/README.md",
+    "before_sha256": null,
+    "after_sha256": "d4deab21cfa4d1b0241f6ad3b4b2d215133ac71586e9bb39ea8038b4e7a33778",
+    "original_copy": null,
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_1_mri/entregable/verificacion.json",
+    "before_sha256": null,
+    "after_sha256": "21d03a7dbc6fe1017d9d7f9dd90e20cc7d37771e8f31c225866d7f4fcdcb941c",
+    "original_copy": null,
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_2_inundaciones/entregable/LEEME.md",
+    "before_sha256": null,
+    "after_sha256": "e2825bf9df76b371f5c8f1faea553934192fa3d133a84b01ab834196a1fabed6",
+    "original_copy": null,
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_2_inundaciones/README.md",
+    "before_sha256": null,
+    "after_sha256": "48bce0d7df8049cec88f2a0110357281e745546c77fa8eefc85f51e0a7afcf14",
+    "original_copy": null,
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_2_inundaciones/entregable/verificacion.json",
+    "before_sha256": null,
+    "after_sha256": "489e9992739546a30d64cc80252f14892b8c615b13e995a9aca1d06440dbb3f2",
+    "original_copy": null,
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/entregable/LEEME.md",
+    "before_sha256": "18c25c2c94a7024301bb852848899ee9527a652c5ab907b0cd5456accef8edcf",
+    "after_sha256": "b1977fefdd56b78711972dfada86ea11d622bdaf5c95289d5cc210b99fc875fc",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/entregable/LEEME.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/README.md",
+    "before_sha256": "5f9da76bec1be4943aff4a78d0dd0566f773e016b487c6adbccfebdb45347640",
+    "after_sha256": "2995dd7b0620f33eed387ff96cb703978e5ed25aa4a097050b5c9329f864ef02",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/entregable/verificacion.json",
+    "before_sha256": "3556175401d5d0e3468a27a2e73b54650d71ace6be74f1f123dc009087f5f525",
+    "after_sha256": "e2e7b525da07a0230a0d17c59c0f761f31aaecef54e65974066c163a984cdeba",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/entregable/verificacion.json",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/README.md",
+    "before_sha256": "671e410265ef6f43f6ffbf925fc781a42976112e95bbb7a4eaa4151aeef8befc",
+    "after_sha256": "6408b69b12a5337b9175c8c6b8edee01fca53e31e7678271e42011632a4eb10d",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "README.md",
+    "before_sha256": "00492ae4c8d90aaf621d39ba9fd0542198a0965068ac3c91bd9b923ae6a829aa",
+    "after_sha256": "0415f1ddf5c40357f2aecbf74a14e278d9e6e569b9e42794d7f461f825c40da0",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_1_mri/docs/MRI_DELIVERY.md",
+    "before_sha256": "77b88260ecde0e0fb9c23fd1518804735e66d4be979ea30080a538ab2e98e4a0",
+    "after_sha256": "e69f7bf4b6ac20f8efeeec2bf2db364daf9568123cdca09446dabe931adfade8",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_1_mri/docs/MRI_DELIVERY.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/archivo/documentos_historicos/PREPARATION_STATUS.md",
+    "before_sha256": "5fc60ec44372aa7a1e41c49e653870b9f7ef9f581176768986b671d89f9f0838",
+    "after_sha256": "cf7f41f09186156049d07bde6285252a6b2fe1cebd045161ab350a0620cf3b94",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/archivo/documentos_historicos/PREPARATION_STATUS.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/docs/WILDLIFE_OCCLUSION_SAMPLE.md",
+    "before_sha256": "f5a334a18f435bf9e75964b8c83df7e849a357a0920d0c9b093e4f53ef553d5d",
+    "after_sha256": "3053dbe3a090b649ce6e6658263d94c5d5db088b0a7f8616b89af1374d69cecf",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/docs/WILDLIFE_OCCLUSION_SAMPLE.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/docs/WILDLIFE_V2_RUN.md",
+    "before_sha256": "3d2c48b538d14bf37996791a65ff20dd69f74a0b9de6c203e30cc73b73f95e8e",
+    "after_sha256": "e09f5211b1662b6ec4936cd1cf2b6ae401f8cacdebabef8101a6d67c3b0b991c",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/docs/WILDLIFE_V2_RUN.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/docs/WILDLIFE_V3_RUN.md",
+    "before_sha256": "1aab343282f87ae660f2829eb26cd3fc738e30ec4fb803aa63779d6459577046",
+    "after_sha256": "7578af3b45cbad6a0320ff357a391bbaf72d74dd06662b3ddd77d384264d6551",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/docs/WILDLIFE_V3_RUN.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/docs/WILDLIFE_V4_RUN.md",
+    "before_sha256": "077b25c5ba7971df562a18532735063542217c6c959dac2a08c308ebcf9e96a2",
+    "after_sha256": "cba1ddfb29c9a56960066fb55372166bdf87c654a664e936070b30a321bdec37",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/docs/WILDLIFE_V4_RUN.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/compartido/auditorias/revision-2026-10-04/01_mri.md",
+    "before_sha256": "b8773b48ae6c3d7bb72af1f803da82e863af66103aca5b0e16998741459bb9db",
+    "after_sha256": "49d92a59bbffd32fe9125c5569f648502503ef1618ef0f1fca9a7084e70fa20f",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/compartido/auditorias/revision-2026-10-04/01_mri.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/archivo/entregas_anteriores/flood/README.md",
+    "before_sha256": "92ab1bcfb7cfdf32ce3f925e1b62dbb0d3f769ab0ad5e6770e8d3ec2b758ef6f",
+    "after_sha256": "e98e926dd3c47b7d9bdbdb55c3a797d2c0e01426051b6f4e08387bd041980dff",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/archivo/entregas_anteriores/flood/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/compartido/auditorias/documentos_b1/inicializacion.json",
+    "before_sha256": "79c807a6533e666a1159be847e97ac794e5efca7ef018bcf9e721edce4d4a688",
+    "after_sha256": "c89ebf281a25961408825b24ec4efacbfe272d209616433c8ec6a5d215dc36e9",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/compartido/auditorias/documentos_b1/inicializacion.json",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_1_mri/entregable/LEEME.md",
+    "before_sha256": "6efca139094c05e36f26b5584d8f2fc712e4bf0ff8c9056e08f2ccf385228728",
+    "after_sha256": "6efca139094c05e36f26b5584d8f2fc712e4bf0ff8c9056e08f2ccf385228728",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_1_mri/entregable/LEEME.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_1_mri/README.md",
+    "before_sha256": "d4deab21cfa4d1b0241f6ad3b4b2d215133ac71586e9bb39ea8038b4e7a33778",
+    "after_sha256": "d4deab21cfa4d1b0241f6ad3b4b2d215133ac71586e9bb39ea8038b4e7a33778",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_1_mri/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_1_mri/entregable/verificacion.json",
+    "before_sha256": "21d03a7dbc6fe1017d9d7f9dd90e20cc7d37771e8f31c225866d7f4fcdcb941c",
+    "after_sha256": "c9bb7ab789b6f33f9dfe4942afa570fe2c9c105bcaaeb545747d024ae476e902",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_1_mri/entregable/verificacion.json",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_2_inundaciones/entregable/LEEME.md",
+    "before_sha256": "e2825bf9df76b371f5c8f1faea553934192fa3d133a84b01ab834196a1fabed6",
+    "after_sha256": "e2825bf9df76b371f5c8f1faea553934192fa3d133a84b01ab834196a1fabed6",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_2_inundaciones/entregable/LEEME.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_2_inundaciones/README.md",
+    "before_sha256": "48bce0d7df8049cec88f2a0110357281e745546c77fa8eefc85f51e0a7afcf14",
+    "after_sha256": "48bce0d7df8049cec88f2a0110357281e745546c77fa8eefc85f51e0a7afcf14",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_2_inundaciones/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_2_inundaciones/entregable/verificacion.json",
+    "before_sha256": "489e9992739546a30d64cc80252f14892b8c615b13e995a9aca1d06440dbb3f2",
+    "after_sha256": "643ff1550c8adecb2e50eeeb798952af9bbd05a76b182a862eedbdcf90a7b4c1",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_2_inundaciones/entregable/verificacion.json",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/entregable/LEEME.md",
+    "before_sha256": "b1977fefdd56b78711972dfada86ea11d622bdaf5c95289d5cc210b99fc875fc",
+    "after_sha256": "b1977fefdd56b78711972dfada86ea11d622bdaf5c95289d5cc210b99fc875fc",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/entregable/LEEME.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/README.md",
+    "before_sha256": "2995dd7b0620f33eed387ff96cb703978e5ed25aa4a097050b5c9329f864ef02",
+    "after_sha256": "2995dd7b0620f33eed387ff96cb703978e5ed25aa4a097050b5c9329f864ef02",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/entregable/verificacion.json",
+    "before_sha256": "e2e7b525da07a0230a0d17c59c0f761f31aaecef54e65974066c163a984cdeba",
+    "after_sha256": "e2e7b525da07a0230a0d17c59c0f761f31aaecef54e65974066c163a984cdeba",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/entregable/verificacion.json",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/README.md",
+    "before_sha256": "6408b69b12a5337b9175c8c6b8edee01fca53e31e7678271e42011632a4eb10d",
+    "after_sha256": "6408b69b12a5337b9175c8c6b8edee01fca53e31e7678271e42011632a4eb10d",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "README.md",
+    "before_sha256": "0415f1ddf5c40357f2aecbf74a14e278d9e6e569b9e42794d7f461f825c40da0",
+    "after_sha256": "0415f1ddf5c40357f2aecbf74a14e278d9e6e569b9e42794d7f461f825c40da0",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/compartido/auditorias/documentos_b1/inicializacion.json",
+    "before_sha256": "c89ebf281a25961408825b24ec4efacbfe272d209616433c8ec6a5d215dc36e9",
+    "after_sha256": "c89ebf281a25961408825b24ec4efacbfe272d209616433c8ec6a5d215dc36e9",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/compartido/auditorias/documentos_b1/inicializacion.json",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_1_mri/entregable/LEEME.md",
+    "before_sha256": "6efca139094c05e36f26b5584d8f2fc712e4bf0ff8c9056e08f2ccf385228728",
+    "after_sha256": "6efca139094c05e36f26b5584d8f2fc712e4bf0ff8c9056e08f2ccf385228728",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_1_mri/entregable/LEEME.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_1_mri/README.md",
+    "before_sha256": "d4deab21cfa4d1b0241f6ad3b4b2d215133ac71586e9bb39ea8038b4e7a33778",
+    "after_sha256": "d4deab21cfa4d1b0241f6ad3b4b2d215133ac71586e9bb39ea8038b4e7a33778",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_1_mri/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_1_mri/entregable/verificacion.json",
+    "before_sha256": "c9bb7ab789b6f33f9dfe4942afa570fe2c9c105bcaaeb545747d024ae476e902",
+    "after_sha256": "c9bb7ab789b6f33f9dfe4942afa570fe2c9c105bcaaeb545747d024ae476e902",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_1_mri/entregable/verificacion.json",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_2_inundaciones/entregable/LEEME.md",
+    "before_sha256": "e2825bf9df76b371f5c8f1faea553934192fa3d133a84b01ab834196a1fabed6",
+    "after_sha256": "e2825bf9df76b371f5c8f1faea553934192fa3d133a84b01ab834196a1fabed6",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_2_inundaciones/entregable/LEEME.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_2_inundaciones/README.md",
+    "before_sha256": "48bce0d7df8049cec88f2a0110357281e745546c77fa8eefc85f51e0a7afcf14",
+    "after_sha256": "48bce0d7df8049cec88f2a0110357281e745546c77fa8eefc85f51e0a7afcf14",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_2_inundaciones/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_2_inundaciones/entregable/verificacion.json",
+    "before_sha256": "643ff1550c8adecb2e50eeeb798952af9bbd05a76b182a862eedbdcf90a7b4c1",
+    "after_sha256": "643ff1550c8adecb2e50eeeb798952af9bbd05a76b182a862eedbdcf90a7b4c1",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_2_inundaciones/entregable/verificacion.json",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/entregable/LEEME.md",
+    "before_sha256": "b1977fefdd56b78711972dfada86ea11d622bdaf5c95289d5cc210b99fc875fc",
+    "after_sha256": "b1977fefdd56b78711972dfada86ea11d622bdaf5c95289d5cc210b99fc875fc",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/entregable/LEEME.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/README.md",
+    "before_sha256": "2995dd7b0620f33eed387ff96cb703978e5ed25aa4a097050b5c9329f864ef02",
+    "after_sha256": "2995dd7b0620f33eed387ff96cb703978e5ed25aa4a097050b5c9329f864ef02",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/pregunta_3_fauna/entregable/verificacion.json",
+    "before_sha256": "e2e7b525da07a0230a0d17c59c0f761f31aaecef54e65974066c163a984cdeba",
+    "after_sha256": "e2e7b525da07a0230a0d17c59c0f761f31aaecef54e65974066c163a984cdeba",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/pregunta_3_fauna/entregable/verificacion.json",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "parcial/README.md",
+    "before_sha256": "6408b69b12a5337b9175c8c6b8edee01fca53e31e7678271e42011632a4eb10d",
+    "after_sha256": "6408b69b12a5337b9175c8c6b8edee01fca53e31e7678271e42011632a4eb10d",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  },
+  {
+    "path": "README.md",
+    "before_sha256": "0415f1ddf5c40357f2aecbf74a14e278d9e6e569b9e42794d7f461f825c40da0",
+    "after_sha256": "0415f1ddf5c40357f2aecbf74a14e278d9e6e569b9e42794d7f461f825c40da0",
+    "original_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/README.md",
+    "reason": "Índice o ruta editorial actualizada; no cambia resultados científicos."
+  }
+]

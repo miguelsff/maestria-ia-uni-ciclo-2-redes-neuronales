@@ -1,0 +1,262 @@
+=== PAGE 1 ===
+Examen Parcial de Redes Neuronales y
+Aprendizaje Profundo
+Ph.D. Aldo Camargo
+Instrucciones Generales
+Este es un proyecto de grupo.Cada grupo debe estar conformado por 5 estudiantes.
+Cada pregunta requiere un informe escrito (6–10 páginas) y un repositorio de código reproduci-
+ble entregado a través de GitHub. Los informes deben incluir: motivación, trabajos relacionados
+(mínimo 5 referencias), metodología, experimentos, resultados y una discusión crítica de las
+limitaciones. Se pueden utilizar pesos preentrenados del backbone donde se indique, pero los
+componentes principales de la arquitectura deben ser implementados por el estudiante. El pla-
+gio de cualquier tipo — incluyendo el de cuadernos públicos — resultará en la reprobación
+automática del curso.
+Duración del proyecto:aproximadamente 5 semanas a partir de la fecha de asignación de
+este examen (ver fecha límite al final del documento).
+Pregunta 1 — Clasificación Multietiqueta de Anomalías de Rodilla en Reso-
+nancia Magnética (CNN + Aprendizaje Débilmente Supervisado)
+Enunciado del Problema
+Laresonanciamagnética(MRI)derodillaeselestudiodereferenciaparaevaluarlesionesdeligamen-
+tos, meniscos, cartílago y otras estructuras articulares, pero su interpretación depende de radiólogos
+especializados y está sujeta a variabilidad inter-observador. Los estudiantes deben desarrollar un
+modelo declasificación multietiqueta(multi-label) basado en redes neuronales convolucionales,
+capaz de predecir simultáneamente la presencia dedoce hallazgos clínicamente relevantesa
+partir de series de imágenes de MRI de rodilla.
+A diferencia de las Preguntas 2 y 3, este problema tiene una dificultad adicional que lo hace espe-
+cialmente interesante desde el punto de vista de aprendizaje profundo aplicado:solo una fracción
+muy pequeña del conjunto de datos cuenta con etiquetas “doradas” verificadas por un
+experto. La gran mayoría de los estudios solo cuentan con elreporte radiológico en texto libre
+(en uno de aproximadamente doce idiomas distintos) que acompaña al estudio, y no con una eti-
+queta estructurada. Esto convierte al problema en un caso realista deaprendizaje con etiquetas
+débiles/ruidosas (weak supervision), donde parte del trabajo del grupo consiste en construir su
+propio pipeline de extracción de etiquetas a partir del texto clínico, antes incluso de poder entrenar
+el clasificador de imágenes.
+El proyecto no se limita a entrenar un clasificador multietiqueta: los estudiantes deben explorar al
+menosdos arquitecturas diferentes(por ejemplo, una CNN 2D/2.5D entrenada desde cero sobre
+cortes de la serie de MRI, y un modelo preentrenado en ImageNet con fine-tuning, como ResNet-50
+o EfficientNet, adaptado a doce salidas sigmoides), comparar su rendimiento de forma rigurosa,
+e interpretar las decisiones del modelo mediante Grad-CAM sobre casos representativos de cada
+hallazgo.
+1
+
+=== PAGE 2 ===
+Redes Neuronales y Aprendizaje Profundo – Examen Parcial UNI FIIS – 2026-II
+Conjunto de Datos
+RSNA Knee Abnormality Detection— competencia pública de Kaggle, organizada por
+la Radiological Society of North America (RSNA), disponible en:
+https://www.kaggle.com/competitions/rsna-knee-abnormality-detection
+Características del conjunto (verificadas a partir de la página de la competencia y
+material de difusión de RSNA):
+Estudios de MRI de rodilla en formato DICOM, organizados jerárquicamente enstudies
+→series→instances. Tamaño total reportado: aproximadamente 569.76 GB / 819,640
+archivos DICOM.
+Cada estudio está emparejado con sureporte radiológico original en texto libre, en
+aproximadamente doce idiomas distintos, proveniente de 16 centros en cinco continentes —
+es el primer conjunto de datos de un reto de RSNA que empareja cada estudio de imagen
+con su reporte clínico original.
+Doce hallazgos objetivo (a confirmar con el esquema exacto de la pestaña “Data” de
+la competencia antes de fijar la rúbrica de evaluación): lesión de ligamento cruzado ante-
+rior (LCA), lesión de ligamento colateral medial, daño de menisco medial, daño de menisco
+lateral, osteoartrosis del compartimento medial, osteoartrosis del compartimento lateral, os-
+teoartrosis patelofemoral, derrame articular (effusion), sinovitis, quiste de Baker, contusión
+ósea y fractura.
+Solo del orden de58 estudios cuentan con etiquetas doradasanotadas por radiólogos;
+el resto de las etiquetas de entrenamiento deben derivarse del texto de los reportes.
+Métrica oficial de la competencia:AUC-ROC macro-promediado, con las doce etiquetas
+ponderadas por igual.
+Nota importante para los estudiantes.La competencia sigue activa (cierre de envíos: 22
+de octubre de 2026) y su formato es de tipoCode Competition sobre Kaggle Notebooks.Este
+examennorequiereenviarunasoluciónalleaderboarddeKaggle ;elconjuntodedatos
+se usa únicamente como fuente de datos reales para el proyecto del curso. Cada estudiante debe
+crear una cuenta gratuita en Kaggle y aceptar las reglas de la competencia para poder descargar
+los datos.Antes de iniciar, el grupo debe revisar la pestaña “Rules” de la competencia para
+confirmar las condiciones de uso de los datos fuera del contexto de la competencia.
+Reducción de Escala Recomendada
+Dado el tamaño del conjunto completo (más de 800,000 archivos DICOM) y el plazo de 4 semanas,
+no se espera que los grupos procesen el conjunto de datos completo. Se recomienda
+explícitamente:
+Restringir el trabajo a uno o dos planos/secuencias de MRI (por ejemplo, sagital DP/T2 con
+supresión de grasa), en vez de usar todas las series disponibles por estudio.
+Trabajar con cortes 2D (o un pequeño volumen 2.5D de cortes contiguos) en lugar del volumen
+3D completo.
+Construir un subconjunto estratificado de estudios (sugerido: entre 300 y 600 estudios) en lugar
+de los 819,640 archivos totales, asegurando representación de casos positivos para cada uno de
+2
+
+=== PAGE 3 ===
+Redes Neuronales y Aprendizaje Profundo – Examen Parcial UNI FIIS – 2026-II
+los doce hallazgos.
+Reservar los∼58 estudios con etiqueta dorada como conjunto de validación limpio, y usar una
+muestra de estudios con etiquetas derivadas del texto como conjunto de entrenamiento (posible-
+mente ruidoso).
+Entregables Requeridos
+1. Pipeline de extracción de etiquetas débiles.Diseñar e implementar un método (basado
+en reglas/palabras clave multilingües, o enembeddingsmultilingües con clasificación de texto de
+bajo costo) que extraiga las doce etiquetas objetivo a partir de los reportes en texto libre. Validar
+este pipeline comparando sus etiquetas contra los estudios con etiqueta dorada, y reportar una
+tasa de acuerdo/ruido estimada.
+2. Implementación y entrenamiento de al menos dos arquitecturas de clasificación multietiqueta:
+una CNN diseñada desde cero (2D o 2.5D) y una basada en transfer learning con backbone
+preentrenado en ImageNet, adaptado con doce salidas sigmoides independientes.
+3. Evaluación con la métrica oficial de la competencia (AUC-ROC macro-promediado sobre las
+doce etiquetas) y desglose por etiqueta, usando el conjunto de validación de etiqueta dorada.
+Incluir además precisión, recall y F1 a un umbral elegido y justificado.
+4. Estudio de ablación sobre al menos dos factores: elección de secuencia/plano de MRI, función de
+pérdida (BCE estándar vs. pérdida focal, dado el desbalance esperado en hallazgos raros como
+fractura o quiste de Baker), estrategia de manejo de etiquetas ruidosas (por ejemplo, ponderar
+por confianza vs. entrenar solo con estudios de alta confianza), o profundidad del backbone.
+5. Análisis de interpretabilidad mediante Grad-CAM: mostrar mapas de activación para al menos
+tres hallazgos distintos y discutir si las regiones resaltadas son anatómicamente plausibles (por
+ejemplo, si el mapa para “daño de menisco” efectivamente resalta la región meniscal).
+6. Análisis del desbalance de clases: cuantificar la prevalencia de cada uno de los doce hallazgos
+en la muestra usada, e implementar y evaluar al menos una estrategia de mitigación para los
+hallazgos más raros.
+7. Discusión breve (media página) sobre el riesgo de sesgo geográfico/lingüístico: dado que los datos
+provienen de 16 centros en cinco continentes con reportes en distintos idiomas, comentar cómo
+la calidad de la extracción de etiquetas podría variar entre idiomas y qué implicancias tendría
+esto en un despliegue clínico real.
+Pregunta 2 — Mapeo de Inundaciones a partir de Radar Satelital Sentinel-1
+(U-Net)
+Enunciado del Problema
+Durante un evento de inundación, saberdónde está el agua en las horas siguientes al desastre es
+crítico para la respuesta de emergencia — y las nubes que suelen acompañar a las tormentas hacen
+inútiles a los satélites ópticos justo cuando más se los necesita. El radar de apertura sintética (SAR),
+3
+
+=== PAGE 4 ===
+Redes Neuronales y Aprendizaje Profundo – Examen Parcial UNI FIIS – 2026-II
+como el del satélite Sentinel-1, atraviesa las nubes y puede adquirir imágenes de noche, lo que lo
+convierte en la herramienta de facto para el mapeo rápido de inundaciones (un problema relevante
+también para el Perú, donde eventos como El Niño costero generan inundaciones repentinas que
+deben mapearse con imágenes disponibles de inmediato). Los estudiantes deben implementar una
+U-Net (o una variante mejorada como Attention U-Net o U-Net++) para segmentar, píxel a píxel,
+la extensión del agua de inundación a partir de imágenes SAR de Sentinel-1.
+El reto no es solo arquitectónico: al igual que en la Pregunta 1,no todas las etiquetas del
+conjunto de datos son igualmente confiables. El dataset distingue explícitamente entre un
+pequeño subconjunto de chips etiquetados a mano por expertos y un subconjunto mucho más
+grande con etiquetas generadas automáticamente mediante algoritmos clásicos de umbralización —
+ruidosas,peroabundantes.Losestudiantesdebendecidir,yjustificarempíricamente,cómocombinar
+ambas fuentes de supervisión. Además, el propio dataset reserva un país completo como conjunto
+de prueba geográficamente independiente, lo que permite — igual que en las demás preguntas de
+este examen — evaluar qué tan bien generaliza el modelo a una región nunca vista durante el
+entrenamiento.
+Conjunto de Datos
+Sen1Floods11 — dataset georreferenciado desarrollado por Cloud to Street y la NASA para
+entrenar y evaluar algoritmos de detección de inundaciones sobre Sentinel-1. Disponible en:
+https://github.com/cloudtostreet/Sen1Floods11
+Características verificadas:
+Cubre 11 eventos de inundaciónen distintos países, continentes y biomas. Cada evento
+incluye imágenes Sentinel-1 SAR (bandas VV y VH, en dB) y su contraparte óptica Sentinel-
+2 (13 bandas espectrales), enchips de 512×512 px a 10 m de resolución (formato GeoTIFF).
+446 chips con etiqueta “dorada”: máscaras binarias (agua / no agua / sin datos)
+anotadas a mano por expertos.
+4,385 chips con etiqueta débilderivada de Sentinel-1 y otros 4,385 derivados de Sentinel-
+2, generados mediante algoritmos clásicos de umbralización (no por un humano) — una
+fuente de entrenamiento mucho mayor, pero ruidosa.
+Los autores del dataset reservan todos los chips con etiqueta dorada de Bolivia
+como conjunto de prueba geográficamente independiente, específicamente para medir la
+generalización a un evento de inundación no visto durante el entrenamiento.
+Métrica de referencia usada por los autores:IoU (Intersection over Union)promedio
+sobre los chips, junto con tasas de omisión y comisión.
+Entregables Requeridos
+1. Implementación personalizada de U-Net en PyTorch (sin copiar código de bibliotecas de seg-
+mentación existentes), que reciba como entrada al menos las dos bandas SAR (VV, VH).
+2. Estudio de ablación que compare al menos dos decisiones: (a) entrenar solo con los 446 chips
+de etiqueta dorada vs. añadir los chips de etiqueta débil al entrenamiento, y (b) función de
+4
+
+=== PAGE 5 ===
+Redes Neuronales y Aprendizaje Profundo – Examen Parcial UNI FIIS – 2026-II
+pérdida (BCE vs. Dice vs. combinada) u otra decisión arquitectónica (profundidad, diseño de
+las conexiones de salto).
+3. Evaluación en distribución (chips dorados de eventos vistos durante entrenamiento): IoU, F1,
+precisión y recall de la clase “agua”, más matriz de confusión comentada.
+4. Experimento de generalización geográfica: entrenar excluyendo Bolivia, evaluar únicamente so-
+bre los chips dorados de Bolivia (siguiendo la partición oficial del dataset). Reportar la brecha
+de rendimiento frente al punto 3 y proponer al menos dos hipótesis sobre su causa (tipo de
+cobertura del suelo, ángulo de incidencia del radar, urbanización vs. vegetación inundada, etc.).
+5. Análisis cualitativo de fallos característicos del SAR: identificar y explicar al menos tres tipos
+de error (p. ej. sombra de radar, doble rebote en zonas urbanas inundadas, confusión entre suelo
+húmedo y agua abierta) con ejemplos visuales concretos.
+6. Comparación opcional (bono): añadir las bandas ópticas de Sentinel-2 como canales adicionales
+de entrada en los chips donde estén libres de nubes, y cuantificar si la fusión SAR+óptico mejora
+el IoU frente al modelo solo-SAR.
+Pregunta 3 — Monitoreo de Fauna Silvestre con Cámaras Trampa (YOLO)
+Enunciado del Problema
+Las cámaras trampa (activadas por movimiento, sin operador humano) son hoy la herramienta más
+usada para monitorear biodiversidad en áreas protegidas — incluyendo programas de conservación
+en la Amazonía y los Andes peruanos — pero generan más imágenes de las que un equipo humano
+puede revisar manualmente. Los estudiantes deben entrenar y evaluar un modelo YOLO (se re-
+comienda YOLOv8 o YOLOv9) para detectar y clasificar la especie de los animales presentes en
+fotografías de cámaras trampa.
+La tarea tiene varias dificultades que van más allá de la detección de objetos estándar: undesba-
+lance de clases extremo(la gran mayoría de las fotografías activadas por el sensor de movimiento
+no contienen ningún animal, y entre las que sí, algunas especies son mucho más raras que otras),
+oclusión por vegetación, animalespequeños o lejanosrespecto al sensor, y un problema de
+generalización geográfica particularmente severo: los modelos de reconocimiento de fauna en
+cámaras trampa tienden a memorizar el fondo característico de cada cámara (una roca, un tronco,
+un patrón de iluminación) en lugar de aprender rasgos reales del animal, por lo que su desempeño
+cae fuertemente al desplegarse en una cámara o locación nueva.
+Además del detector, los estudiantes deben implementar unmódulo de posprocesamiento de
+monitoreo ecológico: un sistema basado en reglas que agregue las detecciones por fotograma en un
+reporte de actividad por cámara y por especie (conteo de detecciones, especies distintas observadas,
+tasa de fotografías vacías vs. con fauna), tal como lo usaría un equipo de manejo de fauna silvestre.
+5
+
+=== PAGE 6 ===
+Redes Neuronales y Aprendizaje Profundo – Examen Parcial UNI FIIS – 2026-II
+Conjunto de Datos
+Caltech Camera Traps (CCT-20)— disponible a través de LILA BC (Labeled Information
+Library of Alexandria: Biology and Conservation), el repositorio abierto de referencia para
+datasets de cámaras trampa:https://lila.science/datasets/caltech-camera-traps
+Características verificadas:
+243,100 imágenes capturadas en140 ubicaciones de cámaradistintas en el suroeste de
+Estados Unidos.
+21 categorías de animales (más la clase “vacío”), con aproximadamente 66,000 anotaciones
+de bounding box disponibles para las imágenes con animal presente.
+Aproximadamente el70 % de las imágenes están vacías(activaciones falsas del sensor
+de movimiento: viento, vegetación, cambios de luz).
+El dataset incluye una partición oficial (eccv_train / eccv_val) diseñada específicamente
+para distinguir entre generalizacióndentro de las mismas ubicaciones de cámara y generali-
+zaciónaubicacionesdecámaranuncavistas—usarestaparticiónoficialparaelexperimento
+del punto 3 de los entregables.
+Nota. LILA BC agrega decenas de datasets de cámaras trampa de todo el mundo (incluyendo
+Sudamérica). Un grupo que lo desee puede, como extensión opcional, incorporar un segundo
+dataset de otra región geográfica del catálogo de LILA BC (https://lila.science/datasets)
+para un experimento de generalización entre-datasets adicional al de entre-ubicaciones.
+Entregables Requeridos
+1. Modelo YOLO ajustado con decisiones de entrenamiento completamente documentadas (resolu-
+ción de entrada, estrategia de aumento de datos, manejo explícito de las imágenes vacías como
+clase de fondo).
+2. Evaluación cuantitativa: mAP@0.5 y mAP@0.5:0.95 sobre el conjunto de prueba, con desglose
+por especie, señalando explícitamente el efecto del desbalance entre especies comunes y especies
+con pocos ejemplos de entrenamiento.
+3. Experimentodegeneralizaciónentreubicacionesdecámara:usandolaparticiónoficial eccv_train
+/ eccv_val, comparar el desempeño en ubicaciones vistas durante el entrenamiento frente a ubi-
+caciones completamente nuevas. Reportar la brecha y discutir evidencia de que el modelo esté
+aprendiendo el fondo de la escena en vez de rasgos del animal (por ejemplo, mediante Grad-CAM
+sobre el backbone de detección).
+4. Análisis de robustez ante oclusión y tamaño del objeto: particionar el conjunto de prueba por
+nivel estimado de oclusión (bajo/medio/alto) y por tamaño relativo del bounding box, y reportar
+la caída de desempeño entre grupos.
+5. Implementación del módulo de monitoreo ecológico con demostración: a partir de una secuencia
+de fotogramas de una cámara no vista en entrenamiento, generar un reporte tabular de actividad
+por especie y por periodo de tiempo.
+6. Discusión breve (media página) sobre el uso responsable de IA en conservación: el costo relativo
+deunfalsonegativo(unaespecieamenazadanodetectadayexcluidadelasdecisionesdemanejo)
+6
+
+=== PAGE 7 ===
+Redes Neuronales y Aprendizaje Profundo – Examen Parcial UNI FIIS – 2026-II
+frente a un falso positivo (tiempo de un especialista desperdiciado revisando una detección
+incorrecta),yelriesgodedesplegarunmodeloentrenadoenunaregiónenunalocacióngeográfica
+distinta sin validación local.
+Fecha Límite y Formato de Entrega
+Informe (PDF, formato NeurIPS) + enlace al repositorio de GitHub entregados a través de la
+plataforma del curso. Las entregas tardías serán penalizadas con un 10 % por día. El código
+debe ejecutarse de extremo a extremo con un único comando documentado en el README,
+sobre una especificación de entorno proporcionada (requirements.txt o environment.yml).
+Grupos de5 estudiantes.
+Fecha de entrega y presentación: 30 de octubre del 2026, en clase(aproximadamente
+5 semanas a partir de la asignación del examen).
+7

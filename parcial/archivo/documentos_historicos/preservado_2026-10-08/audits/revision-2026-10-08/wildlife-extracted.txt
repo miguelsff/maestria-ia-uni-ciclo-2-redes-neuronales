@@ -1,0 +1,328 @@
+=== PAGE 1 ===
+Detección de fauna con YOLOv8s y monitoreo de
+actividad en cámaras conocidas y nuevas
+Chilón Cruzado Josué
+Concepción Tiza Miguel Ángel
+Neyra Dianderas Enzo Israel
+Tello Guerra Omar Salvador
+Alexander Vladimir Paco Cornejo
+Universidad Nacional de Ingeniería (UNI)
+Unidad de Posgrado
+Facultad de Ingeniería Industrial y de Sistemas
+Lima, Perú
+Abstract
+Se ajustó YOLOv8s de Ultralytics sobre CCT20 con catorce categorías animales y
+1 000 fotografías vacías adicionales de entrenamiento. Las noventa imágenes de
+la muestra de etiquetas cuentan con revisión humana. El entrenamiento terminó
+en 39 épocas y seleccionó el checkpoint de la época 29 mediante validación. La
+mAP50:95 fue 0.4358 en cámaras conocidas y 0.2625 en cámaras nuevas, con una
+brecha de 0.1733. Se calcularon ocho grupos de intervalos con 200 remuestreos de
+secuencias cada uno y se generaron doce casos Grad-CAM, tres sin señal espacial
+positiva. Un módulo propio resumió 1 853 fotografías de una cámara nueva. El
+análisis por oclusión permanece pendiente de anotación humana; no se atribuyen
+resultados a niveles que todavía no fueron revisados.
+1. Motivación y trabajos relacionados
+Las cámaras trampa producen fotografías con fondos relativamente persistentes. Recognition in
+Terra Incognita [1] estudia la generalización a ubicaciones nuevas. El objetivo es localizar animales
+y resumir actividad, conservando la distinción entre detecciones, fotografías e individuos. YOLO
+plantea la predicción conjunta de cajas y clases [ 4]; se utiliza el detector YOLOv8s existente de
+Ultralytics [6], sin atribuir su arquitectura específica al artículo original de YOLO. La evaluación usa
+AP de COCO [2], la optimización usa AdamW [3] y la inspección exploratoria utiliza Grad-CAM [5].
+2. Benchmark, depuración y revisión humana
+Se usan las imágenes reducidas y las cinco particiones oficiales de CCT20 ECCV: train, cis_val,
+cis_test, trans_val y trans_test. Las 57 864 imágenes originales del benchmark no equivalen a toda la
+colección de Caltech. Las categorías empty y car no son clases animales. Una imagen explícitamente
+vacía genera etiquetas vacías; se excluyen vehículos sin animales y fotografías con alguna anotación
+animal sin caja completa, evitando convertir objetos sin localización en negativos.
+El train ECCV no contiene fotos empty. Se añadieron 1 000 negativos del train oficial de la colección
+completa: ocho cámaras externas a las veinte del benchmark, 125 secuencias por cámara y un
+fotograma por secuencia. La selección usó metadatos y semilla 42, excluyó todos los identificadores y
+secuencias ECCV y conservó hashes y comprobaciones del proveedor. No se reasignaron fotografías
+Preprint.
+
+=== PAGE 2 ===
+reservadas. Estos negativos tienen resolución original, distinta de las fotos positivas reducidas; ambos
+grupos se redimensionan a 640 durante la inferencia.
+Las cajas se normalizan con las dimensiones originales de metadatos. Se verifican límites, unidades e
+independencia de fotografías y secuencias frente a entrenamiento; las secuencias compartidas con
+cis_val se eliminan de validación y las cámaras trans son disjuntas de train. El conjunto elegible
+contiene 48 254 imágenes. La tabla de inventario informa fotos, fondos, cámaras y secuencias por
+partición.
+Miguel aprobó las noventa fotografías de la muestra visual. La corrección de una tercera ave conserva
+las otras dos cajas y coincide con el recuadro humano (681, 333, 707, 381) en la referencia de
+960 × 700 píxeles. Las notas individuales de fotos correctas son opcionales. Las decisiones, hashes y
+migración se conservan sin modificar los holdouts ni los fotogramas de monitoreo.
+Los originales permanecen en solo lectura. Para 1 000 JPEG de los negativos añadidos, V6 elimina
+únicamente espacios posteriores a un marcador final existente en una copia de trabajo. No recomprime
+y comprueba igualdad exacta de los píxeles decodificados. El comprobador instalado de Ultralytics
+aceptó las 48 254 imágenes sin descartar cajas.
+3. Detector y entrenamiento
+El detector principal y sus pesos preentrenados proceden de Ultralytics. La preparación, evaluación,
+Grad-CAM y agregación ecológica son módulos propios. El ajuste conserva catorce clases, resolución
+640, batch 16, semilla 42, AdamW con tasa inicial 3 × 10−4, weight decay 10−4, máximo 50 épocas
+y paciencia 10. Mosaic tiene probabilidad 1, el giro horizontal 0.5 y el vertical 0; se conservan los
+argumentos efectivos registrados por Ultralytics. La parada temprana se produjo en la época 39 y el
+mejor checkpoint fue el de la 29. La selección utiliza cis_val depurado y no optimiza sobre los tests.
+Se conserva el desbalance observado: cinco cajas de fox y nueve de badger en train, frente a 2 514
+de opossum. cis_val carece de deer y fox; trans_test carece de deer. Una categoría sin referencia
+mantiene AP indefinida. Mosaic y una media global no sustituyen la evaluación por categoría ni
+justifican afirmar buen desempeño en fauna rara.
+4. Protocolo de evaluación
+Se calcula mAP50 y mAP50:95 en cámaras conocidas y nuevas, con AP y soporte por categoría.
+La inferencia para AP conserva confianza ≥ 0,001, NMS IoU 0.7 y máximo 300 detecciones por
+imagen. La brecha es mAPcis − mAPtrans; también se compara el mismo conjunto de trece clases
+con soporte en ambos tests. El tamaño relativo usa área de caja sobre área de imagen: pequeño< 1 %,
+mediano 1–5 % y grande > 5 %. Un sistema virtual de 1000 × 1000 preserva IoU y permite evaluar
+estas áreas relativas sin confundirlas con tamaños COCO absolutos.
+Los intervalos percentiles del 95 % usan 200 remuestreos de secuencias completas por grupo, semilla
+42 y el checkpoint fijo. Son condicionales a las cámaras observadas; no miden variación entre
+entrenamientos ni incertidumbre de nuevas regiones. Las anotaciones no proporcionan niveles fiables
+de oclusión. La galería preparada contiene 17 620 objetos elegibles de trans_test; actualmente ninguno
+tiene un nivel humano registrado. El protocolo implementado requiere revisión completa y al menos
+30 objetos por nivel low, medium y high; los casos inciertos se marcan ambiguous. Es una decisión
+de este protocolo, no una exigencia atribuida al docente. Los objetos de otros niveles o ambiguos se
+ignoran como crowd al evaluar un grupo. Los resultados de oclusión se mantienen pendientes hasta
+satisfacer esa cobertura.
+2
+
+=== PAGE 3 ===
+5. Resultados e interpretabilidad
+Tabla 1: Inventario efectivo después de depurar anotaciones y secuencias. Train oficial no contiene
+imágenes empty. V2 añade 1.000 fondos de ocho cámaras oficiales adicionales de entrenamiento.
+Partición Fotos Fondos Cámaras Secuencias
+train 12399 1000 18 5733
+val 2543 995 10 980
+cis_test 13073 1180 10 5378
+trans_val 1592 61 1 589
+trans_test 18647 1778 9 7438
+Tabla 2: Evaluación COCO global con el mismo checkpoint, 101 puntos de recall y máximo 300
+detecciones por imagen.
+Partición Clases con soporte mAP50 mAP50:95
+cis_test 14 0.6878 0.4358
+trans_test 13 0.4231 0.2625
+Tabla 3: Rendimiento por especie: cis_test. ND indica ausencia de referencia.
+Especie Cajas AP50 AP50:95
+opossum 4008 0.8844 0.4932
+raccoon 980 0.8970 0.5917
+squirrel 510 0.7037 0.3696
+bobcat 772 0.8561 0.6084
+skunk 161 0.9355 0.6175
+dog 723 0.6932 0.4858
+coyote 1180 0.9035 0.6901
+rabbit 1556 0.8874 0.5534
+bird 752 0.6435 0.3334
+cat 1528 0.8749 0.5866
+badger 4 0.0112 0.0056
+deer 139 0.5146 0.3383
+fox 2 0.0000 0.0000
+rodent 146 0.8236 0.4269
+Tabla 4: Rendimiento por especie: trans_test. ND indica ausencia de referencia.
+Especie Cajas AP50 AP50:95
+opossum 4659 0.8826 0.4590
+raccoon 4769 0.7549 0.4959
+squirrel 777 0.3644 0.1957
+bobcat 1974 0.6268 0.4176
+skunk 273 0.4402 0.2840
+dog 958 0.7377 0.4994
+coyote 1901 0.6746 0.4788
+rabbit 722 0.5912 0.2994
+bird 179 0.0687 0.0383
+cat 1366 0.2829 0.1842
+badger 15 0.0736 0.0583
+deer 0 ND ND
+fox 1 0.0000 0.0000
+rodent 26 0.0021 0.0016
+3
+
+=== PAGE 4 ===
+Tabla 5: Comparación con el mismo conjunto de clases con soporte en ambos tests: opossum, raccoon,
+squirrel, bobcat, skunk, dog, coyote, rabbit, bird, cat, badger, fox, rodent.
+Partición mAP50 mAP50:95
+cis_test 0.7011 0.4432
+trans_test 0.4231 0.2625
+Tabla 6: Intervalos percentiles de mAP50:95 mediante remuestreo de secuencias completas, modelo
+fijo. No cuantifican variación entre semillas ni entre nuevas regiones.
+Grupo IC95 inferior IC95 superior Réplicas
+cis_test: Global 0.4288 0.4785 200
+trans_test: Global 0.2538 0.3023 200
+cis_test: small_lt_1pct 0.2452 0.3377 200
+cis_test: medium_1_to_5pct 0.4516 0.5232 200
+cis_test: large_gt_5pct 0.5312 0.5720 200
+trans_test: small_lt_1pct 0.1430 0.1942 200
+trans_test: medium_1_to_5pct 0.3085 0.3440 200
+trans_test: large_gt_5pct 0.2572 0.3597 200
+Tabla 7: Robustez por área relativa en cis_test: menor de 1 %, 1–5 %, mayor de 5 %.
+Tamaño relativo Cajas AP50 AP50:95
+Pequeño 1149 0.5631 0.2792
+Mediano 8925 0.7516 0.4683
+Grande 2387 0.7583 0.5480
+Tabla 8: Robustez por área relativa en trans_test: menor de 1 %, 1–5 %, mayor de 5 %.
+Tamaño relativo Cajas AP50 AP50:95
+Pequeño 1922 0.3216 0.1619
+Mediano 12169 0.5272 0.3220
+Grande 3529 0.4024 0.2870
+La brecha global de mAP50:95 es de 17.33 puntos porcentuales. Con las mismas trece categorías, la
+mAP pasa de 0.4432 a 0.2625: la diferencia no desaparece al igualar la cobertura taxonómica. Las
+tablas conservan las clases sin soporte como ND.
+4
+
+=== PAGE 5 ===
+Figura 1: Distribución de cajas de entrenamiento y evolución de pérdidas y mAP en cis_val. El mejor
+checkpoint corresponde a la época 29; las curvas no utilizan los tests.
+5
+
+=== PAGE 6 ===
+Figura 2: Seis casos en cámaras conocidas. Se conserva el mapa plano de cis_test_3 como limitación
+del método; no se interpreta como evidencia de ausencia de atención. Los rótulos day/night son
+aproximaciones de metadatos.
+6
+
+=== PAGE 7 ===
+Figura 3: Seis casos en cámaras nuevas. trans_test_3 y trans_test_5 tienen mapas planos. Las zonas
+resaltadas en fondos y bordes no demuestran causalidad ni memorización.
+Grad-CAM fija una propuesta y el score diferenciable de una clase antes de NMS, con una capa
+del backbone y el letterbox declarados. Hay seis casos por test que cubren aciertos a IoU ≥ 0,5,
+omisiones o clase incorrecta y falsos positivos en fondos. La selección prioriza categorías raras y
+frecuentes mediante reglas deterministas. Tres mapas tienen rango [0, 0] y no ofrecen una explicación
+espacial. Los rótulos day/night proceden de la hora en metadatos; varias fotos rotuladas day son
+oscuras y de apariencia infrarroja. No se infiere iluminación real de ese rótulo ni se presenta una
+comparación cuantitativa por iluminación.
+6. Demostración de monitoreo
+La cámara trans 7 aporta todos sus 1 853 fotogramas oficiales, incluidos los excluidos de la evaluación
+de cajas. Con confianza ≥ 0,25, 1 420 fotografías contienen detecciones y la tasa predicha de fotos
+vacías es 23.37 %. Se resumen 211 fechas con fotografías y once categorías detectadas. Se conserva
+la zona horaria sin especificar de los metadatos; no se inventan fechas ni tiempo de exposición. La
+ráfaga de demostración tiene tres fotogramas consecutivos del 8 de mayo de 2011: los dos primeros
+no tienen detecciones y el tercero registra opossum.
+7
+
+=== PAGE 8 ===
+Tabla 9: Actividad predicha de la cámara 7: primeros diez días de la cohorte completa de esa cámara.
+Día Fotos Con fauna Especies Vacías
+2011-05-07 1 0 0 1.0000
+2011-05-08 9 2 1 0.7778
+2011-05-10 3 1 1 0.6667
+2011-05-20 3 3 1 0.0000
+2011-05-25 2 1 1 0.5000
+2011-06-03 3 1 2 0.6667
+2011-06-05 3 3 1 0.0000
+2011-06-17 2 1 1 0.5000
+2011-06-19 6 3 2 0.5000
+2011-06-20 15 14 2 0.0667
+Tabla 10: Resumen de todos los días de la cámara de demostración. Las detecciones no representan
+individuos únicos.
+Especie Detecciones Fotos con especie
+bird 92 91
+bobcat 49 49
+cat 45 43
+coyote 477 449
+deer 1 1
+dog 33 32
+opossum 649 643
+rabbit 81 80
+raccoon 90 85
+skunk 10 10
+squirrel 38 34
+Tabla 11: Secuencia completa con fecha de captura válida. Identificadores completos disponibles en
+activity_sequence.csv.
+Fotograma Captura Detecciones Especies
+1 2011-05-08 11:39:22 0 ND
+2 2011-05-08 11:39:23 0 ND
+3 2011-05-08 11:39:24 1 opossum
+Una foto con varias cajas de la misma categoría se cuenta una vez en fotos con categoría. bird y
+rodent agrupan taxones, por lo que el conteo de categorías no mide diversidad biológica completa.
+Las detecciones no representan individuos únicos y la tasa predicha de vacíos no equivale a una
+revisión humana de ausencia.
+7. Discusión y uso responsable
+La mAP50:95 disminuye de 0.4358 en cámaras conocidas a 0.2625 en cámaras nuevas. Los inter-
+valos del 95 % son [0,4288, 0,4785] y [0,2538, 0,3023], respectivamente. La comparación con trece
+categorías comunes conserva una brecha de 18.08 puntos porcentuales. Es consistente con dificultad
+de transferencia entre cámaras, pero los intervalos no son una prueba causal del efecto del fondo ni
+estiman variación entre semillas o nuevas regiones. El modelo fue seleccionado en validación; los
+resultados de prueba se conservan como evaluación de ese ajuste.
+Los objetos pequeños tienen mAP50:95 de 0.2792 en cis_test y 0.1619 en trans_test. En cámaras
+nuevas, los medianos alcanzan 0.3220 y los grandes 0.2870; el rendimiento no crece monótonamente
+con el área. La composición de categorías y escenas difiere entre estratos, por lo que el tamaño no se
+aísla como una causa mediante estas tablas. bird pasa de AP50:95 0.3334 a 0.0383 y rodent de 0.4269
+a 0.0016, con 179 y 26 cajas de prueba trans, respectivamente. Estas caídas necesitan evaluación
+8
+
+=== PAGE 9 ===
+específica. Fox obtiene AP cero con solo dos referencias cis y una trans, después de cinco cajas de
+entrenamiento; badger tiene nueve cajas de entrenamiento. Esos soportes impiden considerar la media
+global como evidencia de detección fiable de categorías raras.
+Los doce casos Grad-CAM incluyen nueve mapas con variación espacial y tres planos. En algunos
+aciertos se resaltan partes del animal; los falsos positivos también resaltan vegetación, suelo o bordes
+de la entrada. Estas observaciones son exploratorias. Los mapas planos de opossum no permiten
+localizar contribuciones positivas para la propuesta y capa fijadas. No se reemplazaron los casos ni se
+modificó la técnica congelada para obtener visualizaciones favorables. Los rótulos de horario no son
+mediciones de iluminación, especialmente cuando una fotografía oscura se rotula day. La galería no
+estima la frecuencia de estos patrones ni demuestra dependencia causal del fondo. Para comprobarla
+harían falta intervenciones controladas sobre las imágenes.
+La oclusión queda sin resultado: los 17 620 objetos elegibles no tienen niveles humanos registrados.
+No se deduce oclusión a partir del área, la confianza o el mapa. Los análisis globales y por tamaño
+están completos, pero no sustituyen esa revisión. La demostración de la cámara 7 muestra una
+agregación reproducible de fotografías; sus 1 420 fotos con detecciones y once categorías no son un
+censo de individuos.
+La ampliación v2 incorpora solo negativos en ocho cámaras adicionales; no agrega animales de
+esas cámaras. El fondo puede entonces ayudar a distinguir la procedencia de los negativos. La
+resolución original de esa cohorte también difiere de las imágenes ECCV reducidas. El resultado
+se describe como entrenamiento ampliado y no como reproducción estricta del train ECCV . Una
+comparación futura necesitaría otra ejecución controlada, conservando los mismos tests y sin ajustar
+a sus resultados. Un falso negativo de una especie amenazada puede invisibilizar su presencia en
+decisiones de manejo, mientras que un falso positivo consume tiempo de revisión y puede crear
+registros de distribución incorrectos. El umbral 0.25 de la demostración no se considera óptimo para
+todas las especies ni para una decisión de conservación.
+Debe mantenerse revisión profesional de observaciones sensibles, documentar esfuerzo de muestreo
+y validar en cámaras y hábitats del destino. Una tasa baja de detecciones también puede reflejar fallos
+del sensor o cambio de iluminación. Los conteos de imágenes no estiman población ni individuos. La
+separación entre cámaras ayuda a evaluar generalización, pero el entrenamiento en Estados Unidos
+no justifica despliegue en Amazonía o Andes sin validación local.
+La decisión de revisar una fotografía debe considerar el costo de omitir una observación, el costo
+de una identificación incorrecta y la capacidad del equipo de campo para verificarla. Un umbral
+global puede facilitar una demostración operativa, pero no sustituye un protocolo por especie. Para
+registros sensibles conviene conservar la fotografía original, la caja, la confianza y la decisión del
+experto, evitando que una etiqueta automática se convierta sin revisión en un registro confirmado. El
+procesamiento debe poder repetirse si cambian el modelo o el criterio de revisión.
+La concentración de ejemplos en especies frecuentes puede ocultar un rendimiento insuficiente en
+especies raras aun cuando la mAP global resulte favorable. Los soportes reales, las categorías sin
+referencia y las exclusiones deben acompañar cada comparación; una AP indefinida no es evidencia
+de ausencia biológica. La revisión de casos nocturnos, objetos pequeños y cuerpos parcialmente
+visibles ayuda a priorizar nuevas muestras, pero una galería exploratoria no mide por sí sola la
+frecuencia de esos errores. Para una aplicación de conservación se necesitarían muestreo temporal
+representativo, control del esfuerzo por cámara y evaluación en el hábitat de destino. Cualquier
+decisión de manejo conserva responsabilidad humana y debe admitir corrección cuando aparezcan
+evidencias adicionales.
+8. Reproducibilidad y pendientes
+Se conservaron 44 fuentes experimentales congeladas, manifiestos, exclusiones, argumentos efecti-
+vos, pesos, predicciones y métricas. Las dependencias están fijadas y se verificaron CUDA, NMS,
+gradientes y AMP en RTX 5090. La prueba pequeña de reanudación comprueba época, optimizador
+y paciencia; no afirma equivalencia bit a bit. El entrenamiento científico y esa prueba tienen salidas
+independientes.
+Un límite de memoria interrumpió el cálculo inicial de intervalos después del entrenamiento. La
+recuperación ejecutó cada grupo en un proceso nuevo con la función original, conservando semilla,
+9
+
+=== PAGE 10 ===
+réplicas, datos y modelo. No repitió el entrenamiento; las pruebas verificaron igualdad exacta de resul-
+tados en casos de referencia. Los ocho grupos quedaron guardados. El notebook ejecutó sus doce cel-
+das de código sin errores y la demostración y los doce casos Grad-CAM están disponibles. El código
+está en https://github.com/miguelsff/maestria-ia-uni-ciclo-2-redes-neuronales .
+Este documento conserva carácter de borrador: faltan niveles humanos de oclusión y aprobación
+editorial del equipo. No se registra aprobación del docente.
+Referencias
+[1] Sara Beery, Grant Van Horn, and Pietro Perona. Recognition in terra incognita. In ECCV, 2018.
+https://arxiv.org/abs/1807.04975 .
+[2] Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva Ramanan, Piotr
+Dollár, and C. Lawrence Zitnick. Microsoft coco: Common objects in context. In ECCV, 2014.
+https://arxiv.org/abs/1405.0312 .
+[3] Ilya Loshchilov and Frank Hutter. Decoupled weight decay regularization. In ICLR, 2019.
+https://arxiv.org/abs/1711.05101 .
+[4] Joseph Redmon, Santosh Divvala, Ross Girshick, and Ali Farhadi. You only look once: Unified,
+real-time object detection. In CVPR, 2016. https://arxiv.org/abs/1506.02640 .
+[5] Ramprasaath R. Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam, Devi
+Parikh, and Dhruv Batra. Grad-cam: Visual explanations from deep networks via gradient-based
+localization. In ICCV, 2017. https://arxiv.org/abs/1610.02391 .
+[6] Ultralytics. Ultralytics yolov8: Model documentation. https://docs.ultralytics.com/
+models/yolov8/ , 2026.
+10

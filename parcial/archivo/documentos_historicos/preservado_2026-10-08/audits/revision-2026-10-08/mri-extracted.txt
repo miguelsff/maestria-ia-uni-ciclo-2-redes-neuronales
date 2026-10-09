@@ -1,0 +1,322 @@
+=== PAGE 1 ===
+Clasificación multietiqueta de anomalías de rodilla con
+CNN 2.5D y supervisión débil multilingüe
+Chilón Cruzado Josué
+Concepción Tiza Miguel Ángel
+Neyra Dianderas Enzo Israel
+Tello Guerra Omar Salvador
+Alexander Vladimir Paco Cornejo
+Universidad Nacional de Ingeniería (UNI)
+Unidad de Posgrado
+Facultad de Ingeniería Industrial y de Sistemas
+Lima, Perú
+Abstract
+Se ejecutó una comparación factorial de ocho variantes de clasificación de doce
+hallazgos con CNN propia y ResNet-50, BCE/focal y dos tratamientos del ruido
+textual. Los 600 estudios incluyen 58 expertos reservados para evaluación. El AUC
+macro oficial quedó definido para las doce etiquetas. El baseline previamente fijado
+obtuvo AUC macro de doce etiquetas 0.578 sobre 12 etiquetas y F1 macro 0.361.
+Se auditaron predicciones y checkpoints y se generaron explicaciones para tres
+hallazgos. La muestra pequeña, el ruido lingüístico y una única semilla limitan las
+conclusiones.
+1. Motivación y trabajos relacionados
+Las imágenes y los reportes de RSNA constituyen fuentes complementarias de supervisión [5]. Una
+etiqueta ausente en el reporte no implica que un radiólogo haya descartado el hallazgo. El objetivo es
+evaluar cuánto afecta esta diferencia a la clasificación, manteniendo independiente la selección del
+modelo respecto de los estudios expertos.
+ResNet introduce conexiones residuales para facilitar la optimización de redes profundas [1]. Se utiliza
+su implementación oficial como backbone preentrenado y se implementa una cabeza multietiqueta
+propia. Focal loss reduce la contribución de ejemplos fáciles [3]; aquí se adapta a doce salidas binarias,
+con pesos por frecuencia calculados únicamente en entrenamiento. La supervisión débil requiere
+distinguir entre reglas, abstenciones y etiquetas verificadas [6]; este trabajo no implementa el modelo
+generativo de Snorkel. Grad-CAM proporciona una visualización de la sensibilidad espacial [7], sin
+establecer que las regiones activadas tengan significado clínico causal.
+2. Datos y separación experimental
+Se validaron 4407 estudios y 24371 descriptores. La muestra efectiva tiene 434 estudios de entrena-
+miento, 108 de validación débil y 58 expertos. Se comprobaron hashes, identificadores y decodifica-
+ción de 22954 DICOM. La caché coincide byte a byte con sus originales. Planos: {’Sagittal’: 600}.
+Grupos de escritura de la muestra: {’Latin/mixed’: 532, ’Greek’: 65, ’Cyrillic’: 3}.
+El esquema observado en los CSV contiene 4 407 estudios y 58 estudios con doce etiquetas binarias
+completas. Se seleccionan hasta 600 estudios: todos los expertos y una muestra de reportes compati-
+bles con el léxico. La selección usa una puntuación de rareza multietiqueta y semilla 42; no garantiza
+Preprint.
+
+=== PAGE 2 ===
+positivos para etiquetas sin evidencia textual. Las particiones se realizan por StudyInstanceUID;
+ningún corte de un estudio se distribuye entre entrenamiento, validación y evaluación.
+Los estudios no expertos se dividen en entrenamiento y validación débil, aproximadamente 80/20.
+La versión final asigna cuotas de positivos por etiqueta a validación, conservando evidencia positiva
+en entrenamiento. Una primera ejecución utilizó una asignación por rareza que dejó Lateral OA
+sin positivos débiles en entrenamiento (0 frente a 14 en validación). Se conservó esa ejecución,
+se corrigió la partición usando exclusivamente etiquetas débiles y se repitió toda la matriz. Los
+mismos 58 expertos se evaluaron en ambas ejecuciones; la cohorte final no constituye una nueva
+prueba externa nunca consultada. Las cuotas no se ajustaron por resultados expertos. Los expertos se
+utilizan exclusivamente para evaluación y para medir el acuerdo de las reglas fijadas previamente.
+No se cambia el léxico, el umbral ni los hiperparámetros tras observar esa evaluación. Los CSV
+no proporcionan un identificador de paciente transversal. La auditoría de los PatientID disponibles
+en DICOM no detectó intersecciones entre particiones, pero su carácter anonimizado no permite
+garantizar independencia de personas reales entre estudios.
+Se prefiere una serie sagital sensible a líquido con supresión grasa. Cualquier alternativa queda
+registrada. Los DICOM se ordenan por geometría y se verifican orientación, identificadores y
+discontinuidades. La alternativa basada en InstanceNumber genera una advertencia. Se aplica la
+transformación de modalidad, corrección MONOCHROME1 y escalado por percentiles 0.5/99.5 del
+volumen. Se toman ocho grupos de tres cortes contiguos, redimensionados a 224 × 224. Los tres
+cortes actúan como canales de entrada; no representan color RGB real.
+3. Extracción y tratamiento de ruido
+El léxico cubre términos en inglés, español, francés, alemán, neerlandés, portugués, italiano, turco,
+griego, búlgaro, croata, chino y tailandés. Es una cobertura de vocabulario, no una demostración de
+competencia lingüística equivalente. Las cláusulas, entidades vecinas y ventanas locales limitan el
+alcance de las negaciones. Incertidumbre o afirmaciones contradictorias producen abstención. Una
+afirmación explícita recibe peso 0.9; una etiqueta no mencionada en un reporte compatible recibe 0.2;
+un reporte sin entidades reconocidas queda completamente enmascarado. Estos valores son pesos
+heurísticos, no probabilidades calibradas.
+La tasa de desacuerdo se calcula por etiqueta entre predicciones textuales comparables y etiquetas
+expertas, junto con su cobertura. Se presenta por separado para todas las reglas y para confianza
+≥ 0,8. El grupo de escritura del texto sirve para auditar cobertura y no se interpreta como idioma o
+centro de origen.
+4. Arquitecturas y pérdidas
+La CNN propia tiene cuatro bloques Conv–GroupNorm–ReLU–MaxPool con 32, 64, 128 y 256 cana-
+les. Tras el pooling global se aplica dropout 0.2 y una capa lineal de doce logits. La implementación
+contiene 391 980 parámetros entrenables. La alternativa usa ResNet-50 con pesos ImageNet locales y
+ajusta todo el backbone. Su encoder y cabeza suman 23 532 620 parámetros entrenables; se usan los
+pesos oficiales ImageNet V2 de torchvision, verificados mediante su SHA-256. En ambos casos se
+promedian los logits de los ocho grupos y se aplica sigmoid por etiqueta.
+Con mij como peso de supervisión y yij como etiqueta observada:
+LBCE =
+P
+ij mij[−yij log pij − (1 − yij) log(1 − pij)]
+m´ ax(1, P
+ij mij) . (1)
+Para focal loss se multiplica cada término por αt,j(1 − pt,ij)2. Los pesos positivos se calculan como
+1 − prevalenciaj y se limitan al intervalo [0,1, 0,9]. En la variante filtrada, la prevalencia se calcula
+después de excluir las etiquetas de confianza inferior a 0.8. La alternativa de alta confianza conserva
+únicamente etiquetas con confianza ≥ 0,8; el filtro se aplica por etiqueta. Se excluiría un estudio
+totalmente sin supervisión; en esta ejecución se conservan los 434 estudios de entrenamiento y los
+108 de validación. Para sinovitis, el filtro deja 140 etiquetas observadas en entrenamiento, todas
+positivas: no aporta negativos explícitos para ese hallazgo y no equivale a supervisión limpia.
+2
+
+=== PAGE 3 ===
+5. Protocolo experimental
+La matriz factorial comprende dos arquitecturas, dos pérdidas y dos estrategias de ruido: ocho ex-
+perimentos. Todos usan semilla 42, AdamW [4], tasa 3 × 10−4, weight decay 10−4, batch 4, hasta
+50 épocas y parada temprana con paciencia 10 sobre pérdida de validación débil. Los checkpoints
+incluyen optimizador, AMP, generadores y estados aleatorios. La repetibilidad numérica entre hard-
+ware y versiones deberá verificarse; una semilla no la garantiza. La pérdida de cada época promedia
+por estudio las pérdidas normalizadas de sus minibatches; la validación mantiene orden fijo. No se
+aplican aumentos de imagen en esta comparación base.
+El umbral de clasificación 0.5 se fija antes de evaluar como baseline simétrico. Se reportan precisión,
+recall, F1 y AUC por etiqueta. El AUC macro oficial se informa solamente si las doce etiquetas
+tienen ambas clases; un promedio parcial se identifica explícitamente y no sustituye la métrica oficial.
+Precisión, recall y F1 usan la convención zero_division=0; un cero por ausencia de predicciones
+positivas se interpreta junto con el soporte, no como evidencia de rendimiento estable. El análisis de
+prevalencia documenta las etiquetas poco frecuentes y la comparación focal/BCE mide una estrategia
+de mitigación. La pequeña evaluación experta limita especialmente las estimaciones de hallazgos
+raros.
+6. Resultados e interpretabilidad
+Tabla 1: Ocho variantes con el mismo conjunto experto. ND no se sustituye por el promedio parcial.
+Variante Épocas Mejor AUC 12 AUC parcial F1 macro
+CNN/bce/pond. 48 38 0.5776 0.5776 0.3610
+CNN/bce/filtro 23 13 0.5130 0.5130 0.4535
+CNN/focal/pond. 29 19 0.5723 0.5723 0.4961
+CNN/focal/filtro 23 13 0.5204 0.5204 0.4253
+ResNet/bce/pond. 12 2 0.6189 0.6189 0.3614
+ResNet/bce/filtro 11 1 0.6020 0.6020 0.4513
+ResNet/focal/pond. 12 2 0.6199 0.6199 0.5056
+ResNet/focal/filtro 12 2 0.5877 0.5877 0.4863
+Tabla 2: Baseline CNN/BCE/ponderación fijado previamente. Evaluación de 58 estudios, umbral 0,5.
+Hallazgo Positivos AUC Precisión Recall F1
+ACL 24 0.6777 0.5000 0.7500 0.6000
+MCL 9 0.5646 0.1667 0.5556 0.2564
+Medial Meniscus 26 0.5385 0.4182 0.8846 0.5679
+Lateral Meniscus 23 0.4348 0.2857 0.0870 0.1333
+Medial OA 15 0.6605 1.0000 0.0667 0.1250
+Lateral OA 11 0.7331 0.0000 0.0000 0.0000
+PF OA 21 0.6718 1.0000 0.0476 0.0909
+Effusion 35 0.5478 0.6034 1.0000 0.7527
+Synovitis 27 0.4946 0.4694 0.8519 0.6053
+Baker’s 12 0.5236 0.2432 0.7500 0.3673
+Contusion 19 0.6167 0.3600 0.9474 0.5217
+Fracture 18 0.4681 0.2593 0.3889 0.3111
+3
+
+=== PAGE 4 ===
+Tabla 3: Positivos y porcentaje sobre 434 estudios de entrenamiento, incluidas abstenciones en el
+denominador. La ausencia de mención recibe peso 0,2; no es negación experta. Filtro obs. cuenta
+etiquetas observadas, no estudios.
+Hallazgo Train + ( %) Val + Gold + Filtro obs. Filtro +
+ACL 143 (32.9 %) 42 24 226 143
+MCL 102 (23.5 %) 39 9 189 102
+Medial Meniscus 158 (36.4 %) 47 26 222 158
+Lateral Meniscus 127 (29.3 %) 41 23 233 127
+Medial OA 35 (8.1 %) 12 15 51 35
+Lateral OA 10 (2.3 %) 4 11 36 10
+PF OA 45 (10.4 %) 18 21 123 45
+Effusion 282 (65.0 %) 77 35 318 282
+Synovitis 140 (32.3 %) 41 27 140 140
+Baker’s 145 (33.4 %) 43 12 206 145
+Contusion 129 (29.7 %) 39 19 146 129
+Fracture 124 (28.6 %) 42 18 182 124
+Tabla 4: Comparación diagnóstica de reglas congeladas con los 58 expertos; observados/58 expresa
+cobertura.
+Hallazgo Todas obs. Desacuerdo Filtro obs. Desacuerdo
+ACL 50 0.1600 28 0.0714
+MCL 53 0.0755 21 0.1429
+Medial Meniscus 54 0.3704 21 0.1905
+Lateral Meniscus 52 0.2885 16 0.1250
+Medial OA 54 0.2407 5 0.2000
+Lateral OA 54 0.2037 1 0.0000
+PF OA 54 0.3333 16 0.1875
+Effusion 53 0.3962 45 0.3111
+Synovitis 54 0.3148 15 0.2667
+Baker’s 54 0.1852 19 0.3158
+Contusion 51 0.2941 15 0.4667
+Fracture 49 0.1429 18 0.1667
+Tabla 5: Cobertura del extractor en todos los 4.349 reportes no expertos. Escritura no identifica idioma
+ni centro; Thai tiene solo tres casos.
+Escritura Reportes débiles Compatibles Cobertura
+Latin/mixed 3811 3488 0.9152
+Cyrillic 217 209 0.9631
+Greek 318 239 0.7516
+Thai 3 3 1.0000
+4
+
+=== PAGE 5 ===
+En esta evaluación se dispone de AUC para 12 de los doce hallazgos. El AUC macro de doce
+etiquetas de las variantes varía entre 0.513 y 0.620; F1 macro varía entre 0.361 y 0.506. Estos
+intervalos describen la matriz ejecutada y no son intervalos de confianza. No se elige una variante
+para despliegue por estos resultados de evaluación. Las curvas muestran el criterio aplicado para
+elegir cada checkpoint; no se comparan los valores absolutos de BCE y focal como si fueran la misma
+escala. Comparaciones pareadas por arquitectura y tratamiento del ruido: CNN/bce/pond.: diferencia
+focal menos BCE de AUC -0.005 y de F1 macro +0.135; CNN/bce/filtro: diferencia focal menos
+BCE de AUC +0.007 y de F1 macro -0.028; ResNet/bce/pond.: diferencia focal menos BCE de AUC
++0.001 y de F1 macro +0.144; ResNet/bce/filtro: diferencia focal menos BCE de AUC -0.014 y de
+F1 macro +0.035. Con una semilla y una cohorte experta pequeña, estas diferencias no establecen
+superioridad general. La mitigación del desbalance debe evaluarse por hallazgo y soporte, incluyendo
+posibles pérdidas de precisión al elevar recall. El umbral 0,5 permanece fijo aun cuando una variante
+produce probabilidades mal calibradas. La distribución tras el filtro explica qué etiquetas conservan
+positivos y negativos explícitos; no se interpreta el filtrado como limpieza perfecta. Las figuras 1–3
+presentan la discriminación y las curvas completas.
+Medial OA y Lateral OA tienen respectivamente 35/434 (8.1 %) y 10/434 (2.3 %) positivos débiles
+en entrenamiento. En ResNet con ponderación, cambiar BCE por focal eleva el recall experto de
+Medial OA de 0.133 a 0.867 y F1 de 0.222 a 0.473, mientras la precisión baja de 0.667 a 0.325. Para
+Lateral OA, recall pasa de 0 a 0.182 y F1 de 0 a 0.222, pero AUC disminuye de 0.683 a 0.644. Esta
+mitigación modifica el compromiso al umbral fijo; no mejora uniformemente la discriminación de
+hallazgos raros. Los soportes expertos de 15 y 11 positivos limitan la estabilidad de estas cifras.
+El baseline cualitativo de la figura 4 se fija como CNN propia, BCE y ponderación, evitando
+seleccionarlo por el conjunto experto. Los mapas se calculan respecto del logit de cada hallazgo y
+muestran el grupo de cortes con mayor activación media. En los tres casos mostrados, la probabilidad
+supera 0.5 y la etiqueta experta es positiva; esto no hace que su localización sea correcta. La inspección
+gráfica del caso LCA muestra una respuesta amplia y zonas periféricas, sin un foco que permita
+atribuir inequívocamente la señal al ligamento. En menisco medial, la respuesta cubre de forma difusa
+el tejido visible y no delimita una región meniscal selectiva. En derrame, los focos destacados son
+periféricos e incluyen fondo fuera del tejido; tampoco ofrecen evidencia convincente de localización
+del hallazgo. La heurística de máximo promedio seleccionó grupos extremos: 7 para LCA y 0
+para menisco y derrame, en índices de 0 a 7. Este criterio puede privilegiar extensión del mapa
+y fondo en lugar de una estructura relevante; es una limitación del protocolo de visualización, no
+una localización clínica validada. Los ocho mapas por caso se conservan en archivos NPZ para
+permitir revisar el volumen muestreado completo. Estas observaciones son exploratorias: no hay
+regiones objetivo anotadas, métricas de localización ni revisión radiológica profesional registrada.
+La resolución del último bloque de la CNN es 14 × 14; interpolar a 224 × 224 suaviza el mapa sin
+añadir precisión anatómica. El color se normaliza por grupo de cortes, por lo que su intensidad no
+compara causalmente los tres hallazgos. Una evaluación posterior debería confrontar cada mapa con
+regiones marcadas por un especialista y añadir falsos positivos y falsos negativos, sin cambiar esta
+evaluación final ni seleccionar ejemplos por apariencia.
+7. Discusión, sesgo y limitaciones
+La calidad de supervisión depende de la cobertura del léxico, abreviaturas y alcance de la negación.
+La identificación de una escritura no equivale a determinar el idioma: el grupo latino reúne varias
+lenguas y textos mixtos. Incluso cuando una entidad se reconoce, una construcción coordinada, una
+negación distante, terminología local o un matiz de incertidumbre pueden producir errores. Una
+traducción literal tampoco demuestra equivalencia de criterios clínicos. El desacuerdo de las reglas
+debe leerse junto con la cobertura: una regla selectiva puede aparentar mejor acuerdo al abstenerse en
+los casos difíciles. Los 58 expertos no permiten validar de forma sólida todas las combinaciones de
+idioma, centro y hallazgo; los CSV no identifican de manera fiable los 16 centros ni su geografía.
+La selección por rareza busca cobertura de positivos y modifica la distribución respecto al universo
+de estudios. Las métricas no son estimaciones de prevalencia poblacional, y el filtrado adicional por
+confianza puede concentrar ciertos estilos de reporte. Las imágenes asociadas a textos con menor
+cobertura tienen menos supervisión, de modo que una desigualdad lingüística puede convertirse en
+desigualdad de aprendizaje visual. La ponderación preserva evidencia de baja confianza, pero también
+5
+
+=== PAGE 6 ===
+introduce falsos negativos al tratar la ausencia de mención como un negativo débil. El filtro elimina
+esa evidencia y puede dejar hallazgos con muy pocos negativos explícitos.
+El riesgo de despliegue consiste en aprender correlaciones de adquisición y de anotación. Una norma-
+lización por volumen no elimina diferencias de equipos, secuencias o poblaciones. Son necesarias
+etiquetas expertas adicionales estratificadas por idioma y centro, auditoría de negación por hablantes
+competentes y evaluación externa con revisión profesional. El presente ejercicio no acredita un
+sistema apto para uso clínico. Los mapas de activación ofrecen indicios espaciales y no sustituyen esa
+revisión. Una normalización uniforme no elimina diferencias entre protocolos de adquisición. Usar
+una sola serie y un muestreo 2.5D puede omitir hallazgos visibles en otros planos. La validación débil
+comparte el mecanismo de ruido con entrenamiento y puede favorecer las mismas reglas erróneas. El
+análisis de acuerdo es diagnóstico y no mide sensibilidad clínica en una población independiente.
+Los reportes y las imágenes permanecen en el equipo local; no se publican con el código.
+8. Reproducibilidad y trabajo pendiente
+El código, la configuración congelada y los comandos se documentan en MRI_RUN.md. La versión
+de entrega se identifica en MRI_DELIVERY .md y en la ramacodex/mri-delivery del repositorio
+del curso:
+https://github.com/miguelsff/maestria-ia-uni-ciclo-2-redes-neuronales
+El notebook se ejecuta leyendo los resultados persistidos, con los flags de entrenamiento desactivados.
+La caché local de Docker contiene copias de las series elegidas verificadas por SHA-256; los originales
+se mantienen montados en solo lectura. Las métricas se recalculan a partir de las predicciones
+persistidas; esta auditoría no repite inferencia. Se verifica la selección del checkpoint contra las curvas
+registradas. La prueba de reanudación verifica igualdad exacta de los parámetros con una ejecución
+continua, en un fixture controlado; no demuestra igualdad entre versiones o equipos distintos.
+Tabla 6: Tiempo de entrenamiento y evaluación, y máximo de memoria asignada por PyTorch; no
+equivalen al consumo total del dispositivo.
+Variante Segundos VRAM tensor GiB
+CNN/bce/pond. 115.5191 1.0720
+CNN/bce/filtro 54.7096 1.0738
+CNN/focal/pond. 70.3960 1.0730
+CNN/focal/filtro 56.4852 1.0738
+ResNet/bce/pond. 67.0683 1.7379
+ResNet/bce/filtro 60.8994 1.7352
+ResNet/focal/pond. 68.6879 1.7352
+ResNet/focal/filtro 68.8144 1.7352
+Las guías de habilidades procedimentales orientaron la preparación y la evaluación [2]; no constituyen
+validación experimental. La autoría corresponde a los cinco integrantes del grupo. La revisión técnica
+y visual de esta versión no sustituye la aprobación editorial de sus autores, que queda pendiente. No
+se registra validación clínica ni revisión radiológica profesional.
+9. Conclusiones
+La matriz factorial muestra que arquitectura, pérdida y tratamiento del ruido afectan de forma distinta
+la discriminación y las decisiones al umbral fijo. Focal mejora algunos recalls de hallazgos raros
+a costa de precisión, sin una ventaja uniforme en AUC. El filtrado elimina supervisión incierta
+pero también puede eliminar todos los negativos explícitos de una etiqueta. Los resultados sobre
+58 expertos reutilizados, una sola semilla y mapas sin validación de localización sustentan una
+comparación exploratoria, no una recomendación clínica ni una selección de modelo para despliegue.
+6
+
+=== PAGE 7 ===
+Figura 1: AUC por hallazgo y variante: CNN propia y R50 (ResNet-50); FCL: focal; P: ponderación;
+F: filtro. Las cifras y ND también están disponibles en metrics_all_labels.csv.
+Figura 2: Curvas completas de la CNN propia. La línea vertical marca el checkpoint elegido. Las
+escalas dependen de la pérdida y no deben compararse como una misma magnitud.
+7
+
+=== PAGE 8 ===
+Figura 3: Curvas completas de ResNet-50. La selección utiliza únicamente pérdida de validación
+débil, con paciencia de diez épocas.
+Figura 4: Grad-CAM del baseline para tres positivos expertos, con probabilidades al umbral fijo.
+Casos fijados por orden del manifiesto; no elegidos por apariencia ni por acierto.
+8
+
+=== PAGE 9 ===
+Referencias
+[1] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for image
+recognition. In CVPR, 2016. https://arxiv.org/abs/1512.03385 .
+[2] Timothy Kassis, Vinayak Agarwal, Yuhuan He, Darshil Patel, and Aubrey M. Brueckner.
+Scientific agent skills: A library of procedural knowledge for research agents, 2026. https:
+//arxiv.org/abs/2609.00065 .
+[3] Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, and Piotr Dollár. Focal loss for dense
+object detection. In ICCV, 2017. https://arxiv.org/abs/1708.02002 .
+[4] Ilya Loshchilov and Frank Hutter. Decoupled weight decay regularization. In ICLR, 2019.
+https://arxiv.org/abs/1711.05101 .
+[5] Radiological Society of North America. Rsna knee abnormality detection: Data. https:
+//www.kaggle.com/competitions/rsna-knee-abnormality-detection/data , 2026.
+[6] Alexander Ratner, Stephen H. Bach, Henry Ehrenberg, Jason Fries, Sen Wu, and Christopher Ré.
+Snorkel: Rapid training data creation with weak supervision, 2017. https://arxiv.org/abs/
+1711.10160 .
+[7] Ramprasaath R. Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam, Devi
+Parikh, and Dhruv Batra. Grad-cam: Visual explanations from deep networks via gradient-based
+localization. In ICCV, 2017. https://arxiv.org/abs/1610.02391 .
+9

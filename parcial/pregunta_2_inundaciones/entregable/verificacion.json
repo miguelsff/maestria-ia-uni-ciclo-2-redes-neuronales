@@ -1,0 +1,15 @@
+{
+  "status": "native_documents_and_notebook_preserved",
+  "files_sha256": {
+    "02_flood.ipynb": "af449a14783ca7a546565f7abf00f007ad42a125dd7d6e5bd9c04cf22ba0a5b0",
+    "informe_inundaciones.odt": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+    "informe_inundaciones.pdf": "47ca54c719e13f5bfbf61d6ae95dcdc7e31e32e43aee7f355994af450d864f1b",
+    "LEEME.md": "e2825bf9df76b371f5c8f1faea553934192fa3d133a84b01ab834196a1fabed6"
+  },
+  "migration_D2": {
+    "base_integrated": "76557bc5aecb7995f1af0fed130ac22cd66ece82",
+    "status": "bytes_preserved",
+    "receipt": "../../compartido/auditorias/estructura/d2/verificacion.json",
+    "training_or_inference": false
+  }
+}

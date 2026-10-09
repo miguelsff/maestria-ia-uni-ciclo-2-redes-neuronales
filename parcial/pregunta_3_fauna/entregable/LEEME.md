@@ -1,19 +1,17 @@
-# Entrega de fauna: consulta reproducible
+# Entrega de Fauna
 
-`03_wildlife.ipynb` integra V6 y oclusión: 16 celdas de código ejecutadas sin errores. `04_occlusion_582.ipynb` conserva el complemento original ejecutado de cuatro celdas. `metricas_occlusion.csv` contiene los tres niveles, soportes, métricas e intervalos sin redondeo.
+[Maestro ODT](informe_fauna.odt), [PDF exportado desde el ODT](informe_fauna.pdf) y [notebook ejecutado](03_wildlife.ipynb). Informe principal: 10 páginas según los recibos de B. Los hashes se conservan respecto de la base integrada.
 
-Abrir los notebooks desde esta carpeta, junto con `data/` e `integridad_datos.json`. El primero verifica 33 archivos por SHA-256 antes de mostrar tablas. Requiere Python, pandas e IPython; el ejecutor requiere además nbformat, nbclient e ipykernel. No carga modelos ni prepara datos, entrena o ejecuta inferencia.
+Además: [anexo ODT](anexo_occlusion.odt), [anexo PDF](anexo_occlusion.pdf), [notebook de oclusión](04_occlusion_582.ipynb) y [métricas](metricas_occlusion.csv). El anexo tiene 2 páginas según el recibo de B.
 
-Desde la carpeta superior `pregunta_3_fauna`, el siguiente comando vuelve a ejecutar el notebook en el entorno Docker ya disponible:
+Abrir los notebooks de entrega desde esta carpeta. Conservan las salidas calculadas; no es necesario entrenar ni ejecutar inferencia para consultarlos. Los originales científicos y archivos grandes permanecen en E:/Kaggle.
+
+La constancia local está en [verificacion.json](verificacion.json). La matriz por subrequisito está en [../evidencias/matriz_revision.md](../evidencias/matriz_revision.md).
+
+Para comprobar el cierre desde la raíz del repositorio:
 
 ```powershell
-docker run --rm --network none --cap-drop ALL --security-opt no-new-privileges --mount "type=bind,source=$PWD,target=/work" --mount "type=bind,source=$PWD/entregable/data,target=/work/entregable/data,readonly" --workdir /work/entregable --entrypoint python neural-exam-wildlife:0.2 /work/notebooks/execute_saved_delivery.py
+python parcial/compartido/scripts/run_exam.py closure
 ```
 
-La ejecución actualiza el notebook y su constancia; su hash puede cambiar por metadatos de ejecución. Los hashes de los resultados de entrada permanecen fijos. `notebooks/prepare_saved_delivery.py` reconstruye el paquete desde los originales locales: es una herramienta de preparación, no un requisito para consultar lo entregado.
-
-La revisión aceptó 340 casos bajos, 69 medios, 48 altos y 125 ambiguos; excluyó 18 sin nivel. El caso 121 conserva medium según Miguel, sin nota inventada. Las 398 notas faltantes permanecen vacías. Los tres niveles tienen 200 réplicas bootstrap por secuencia.
-
-La AP usa todos los fotogramas de trans_test y regiones crowd ignoradas para cajas ajenas al nivel. No es directamente comparable con la AP global V6, no mide un efecto causal aislado ni acredita representatividad de la muestra. Los intervalos son condicionales al modelo y las secuencias observadas.
-
-**Documentos:** la etapa A deja las fuentes y el PDF provisional de revisión en `../fuentes_informe/` y `../evidencias/`. La etapa B2 debe incorporar `informe_fauna.odt/.pdf` y `anexo_occlusion.odt/.pdf`, con los PDF exportados desde sus ODT. Esta carpeta aún no constituye el cierre documental final ni una constancia de envío al curso.
+El comando usa copias privadas y montajes originales de solo lectura; no repite experimentos. La reproducción desde entrenamiento sigue sin verificarse. Consulta [el procedimiento compartido](../../compartido/REPRODUCIBILIDAD_CIERRE.md). Los borradores anteriores siguen en el archivo y en evidencias con su contexto. Este paquete no acredita el envío a la plataforma del curso.

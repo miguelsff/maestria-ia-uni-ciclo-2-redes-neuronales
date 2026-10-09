@@ -109,3 +109,9 @@ parcial/tmp/occlusion-accepted-delivery/notebook_template.ipynb -text
 parcial/pregunta_1_mri/fuentes_informe/** -text
 parcial/pregunta_2_inundaciones/fuentes_informe/** -text
 parcial/archivo/documentos_historicos/**/latex_original/** -text
+parcial/archivo/entregas_anteriores/** -text
+parcial/archivo/documentos_historicos/preservado_2026-10-08/** -text
+parcial/archivo/documentos_historicos/editorial_pre_d2/** -text
+parcial/pregunta_*/fuentes_informe/latex_previo_d1/** -text
+parcial/pregunta_*/evidencias/verificacion_pre_d2.json -text
+parcial/compartido/plantillas/informes/** -text

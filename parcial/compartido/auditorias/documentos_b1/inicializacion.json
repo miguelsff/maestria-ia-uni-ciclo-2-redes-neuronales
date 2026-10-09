@@ -126,16 +126,19 @@
     {
       "id": "examen",
       "source": "parcial/archivo/referencias_originales/examen-parcial.pdf",
-      "output": "parcial/examen-parcial.odt",
+      "output": "parcial/compartido/referencias/examen-parcial.odt",
       "equations": [],
       "original_path": "C:\\Users\\USER\\.codex\\worktrees\\3512\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\examen-parcial.pdf",
       "original_sha256": "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee",
-      "pages": 7
+      "pages": 7,
+      "historical_paths_before_D2": {
+        "output": "parcial/examen-parcial.odt"
+      }
     },
     {
       "id": "ejemplo",
       "source": "parcial/archivo/referencias_originales/ejemplo.pdf",
-      "output": "parcial/ejemplo.odt",
+      "output": "parcial/compartido/referencias/ejemplo.odt",
       "equations": [
         {
           "page": 4,
@@ -244,6 +247,9 @@
             "dy": 14
           }
         ]
+      },
+      "historical_paths_before_D2": {
+        "output": "parcial/ejemplo.odt"
       }
     },
     {
@@ -323,5 +329,10 @@
       "pages": 2
     }
   ],
-  "receipt": "tmp/inicializacion_documentos.json"
+  "receipt": "tmp/inicializacion_documentos.json",
+  "migration_D2": {
+    "base": "76557bc5aecb7995f1af0fed130ac22cd66ece82",
+    "original_metadata_copy": "parcial/archivo/documentos_historicos/editorial_pre_d2/parcial/compartido/auditorias/documentos_b1/inicializacion.json",
+    "masters_modified": false
+  }
 }

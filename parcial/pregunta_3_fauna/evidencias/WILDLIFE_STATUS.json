@@ -1,0 +1,568 @@
+{
+  "version": "v6",
+  "output": "E:/Kaggle/exam-output-wildlife-v6",
+  "preserved_parent_output": "E:/Kaggle/exam-output-wildlife-v5",
+  "manifest_identity": "7a2698cefc83dd3f3959e3cb3264bd7504cf295465fbaf179dcb1e5308d4ce82",
+  "scientific_training_started": true,
+  "human_label_review": {
+    "status": "reviewed",
+    "images": 90,
+    "counts": {
+      "reviewed": 90
+    },
+    "notes_optional": true,
+    "missing_notes_are_blocking": false,
+    "authentic_approvals_preserved": 90,
+    "gallery": "http://127.0.0.1:8901/label_review.html",
+    "csv": "E:\\Kaggle\\exam-output-wildlife-v6\\wildlife\\label_review.csv",
+    "modified_photo": "Third bird box matches the human red rectangle and is approved by Miguel in the CSV",
+    "approved_images": 90,
+    "completion_receipt": "E:\\Kaggle\\exam-output-wildlife-v5\\receipts\\human-label-review-completion.json"
+  },
+  "architecture_requirement": {
+    "status": "reviewed",
+    "receipt": "/outputs/receipts/architecture-review.json",
+    "decision": {
+      "recorded_at_utc": "2026-10-05T20:30:09.0194777Z",
+      "reviewed": true,
+      "decision": "pretrained_detector_permitted",
+      "reviewer": "User (direct instruction in this conversation)",
+      "evidence": "The user explicitly directed this project to use existing YOLO rather than implement a separate YOLO. Question 3 requests an adjusted YOLO model. This records the user-directed project scope and does not represent confirmation from the teacher.",
+      "source": "direct_user_instruction",
+      "user_statement": "lo que debemos es usar el YOLO, no crear nuestro propio YOLO",
+      "permission_authority": "project user",
+      "teacher_confirmation_provided": false,
+      "model": "Ultralytics YOLOv8s",
+      "workflow": "Fine-tune the existing detector on the prepared 14-class CCT20 dataset; retain original data preparation, evaluation and ecological postprocessing.",
+      "own_detector_components_claimed": false
+    }
+  },
+  "human_occlusion_review": {
+    "status": "pending",
+    "eligible_trans_test_objects": 17620,
+    "gallery": "http://127.0.0.1:8901/occlusion_review.html",
+    "scope": "Frozen full V6 review; active occlusion evaluation uses the separately accepted 582-case cohort. No further full-population review is required for this accepted analysis."
+  },
+  "technical_validation": {
+    "red_reference": {
+      "verified_at_utc": "2026-10-05T12:56:22.257908-05:00",
+      "manifest_identity": "b8a8a0fccba36e5bdbc214fa9f9987d3b413282e6a2c662ccbe41a30f9f92d5a",
+      "parent_manifest_identity": "0c266747ea417f2347d616a2a75487b17f2763f2f7e1ce8824cf7f5e00846bc3",
+      "image_id": "596bdb10-23d2-11e8-a6a3-ec086b02610b",
+      "user_reference_sha256": "063e0844f10f69582fa8aae89ec49c6a3a53e3e0a033e54850f1ed70f7b501d5",
+      "user_reference_bounds_xyxy": [
+        681,
+        333,
+        707,
+        381
+      ],
+      "materialized_label_bounds_xyxy": [
+        681.0000048,
+        332.9999995,
+        707.0000016,
+        381.0000005
+      ],
+      "gallery_outline_bounds_xyxy": [
+        681,
+        333,
+        707,
+        381
+      ],
+      "normalized_box": [
+        0.7229166666666667,
+        0.51,
+        0.027083333333333334,
+        0.06857142857142857
+      ],
+      "replaced_wrong_box": true,
+      "first_two_boxes_unchanged": true,
+      "holdouts_and_monitoring_unchanged": true,
+      "bird_boxes_in_modified_photo": 3,
+      "authentic_approvals_preserved": 89,
+      "individual_notes_modified": false,
+      "label_review": {
+        "status": "human_review_pending",
+        "images": 90,
+        "counts": {
+          "reviewed": 89,
+          "pending": 1
+        },
+        "missing_visual_evidence": 90,
+        "evidence_required": false
+      },
+      "parent_inputs_verified": 9,
+      "frozen_sources_verified": 40,
+      "model_loaded": false,
+      "scientific_training_started": false,
+      "approval_inferred_from_reference": false
+    },
+    "parent_files_unchanged": 9,
+    "http": [
+      {
+        "path": "label_review.html",
+        "status": 200,
+        "bytes": 27183
+      },
+      {
+        "path": "label_gallery/58218fd0a4ff2999.png",
+        "status": 200,
+        "bytes": 1317952
+      }
+    ],
+    "notebook_code_cells_executed": 12,
+    "notebook_errors": 0,
+    "focused_tests": {
+      "passed": 52,
+      "duration_seconds": 5.22,
+      "scoped_lint": "passed",
+      "scientific_metrics_generated": false
+    },
+    "scientific_gate": {
+      "status": "reviewed",
+      "labels": {
+        "status": "reviewed",
+        "images": 90,
+        "counts": {
+          "reviewed": 90
+        },
+        "missing_visual_evidence": 90,
+        "evidence_required": false
+      },
+      "architecture": {
+        "status": "reviewed",
+        "receipt": "/outputs/receipts/architecture-review.json",
+        "decision": {
+          "recorded_at_utc": "2026-10-05T20:30:09.0194777Z",
+          "reviewed": true,
+          "decision": "pretrained_detector_permitted",
+          "reviewer": "User (direct instruction in this conversation)",
+          "evidence": "The user explicitly directed this project to use existing YOLO rather than implement a separate YOLO. Question 3 requests an adjusted YOLO model. This records the user-directed project scope and does not represent confirmation from the teacher.",
+          "source": "direct_user_instruction",
+          "user_statement": "lo que debemos es usar el YOLO, no crear nuestro propio YOLO",
+          "permission_authority": "project user",
+          "teacher_confirmation_provided": false,
+          "model": "Ultralytics YOLOv8s",
+          "workflow": "Fine-tune the existing detector on the prepared 14-class CCT20 dataset; retain original data preparation, evaluation and ecological postprocessing.",
+          "own_detector_components_claimed": false
+        }
+      },
+      "model_loaded": false
+    },
+    "pdf_available": false,
+    "human_label_review_completion": {
+      "recorded_at_utc": "2026-10-05T20:18:24.332122Z",
+      "user_statement": "listo ya esta",
+      "source": "actual_human_review_csv",
+      "manifest_identity": "b8a8a0fccba36e5bdbc214fa9f9987d3b413282e6a2c662ccbe41a30f9f92d5a",
+      "csv_sha256": "6575055088727b483c1f36197d9b83a294194043087571bff64c19149b8fc447",
+      "images": 90,
+      "approved_images": 90,
+      "authentic_previous_approvals_unchanged": 89,
+      "corrected_photo": {
+        "image_id": "596bdb10-23d2-11e8-a6a3-ec086b02610b",
+        "split": "train",
+        "gallery": "/outputs/wildlife/label_gallery/58218fd0a4ff2999.png",
+        "status": "reviewed",
+        "visual_evidence": "",
+        "reviewer": "Miguel"
+      },
+      "individual_notes_required": false,
+      "csv_modified_by_agent": false,
+      "review_status": {
+        "status": "reviewed",
+        "images": 90,
+        "counts": {
+          "reviewed": 90
+        },
+        "missing_visual_evidence": 90,
+        "evidence_required": false
+      },
+      "architecture_status": {
+        "status": "human_review_pending",
+        "reason": "No documented architecture decision",
+        "receipt": "/outputs/receipts/architecture-review.json"
+      },
+      "model_loaded": false,
+      "scientific_training_started": false
+    },
+    "v6_lossless_preparation": {
+      "verified_at_utc": "2026-10-05T16:04:24.581954-05:00",
+      "manifest_identity": "7a2698cefc83dd3f3959e3cb3264bd7504cf295465fbaf179dcb1e5308d4ce82",
+      "parent_manifest_identity": "b8a8a0fccba36e5bdbc214fa9f9987d3b413282e6a2c662ccbe41a30f9f92d5a",
+      "all_record_metadata_and_labels_unchanged": true,
+      "monitoring_unchanged": true,
+      "human_approvals_preserved": 90,
+      "human_csv_modified_by_agent": false,
+      "parent_csv_sha256": "6575055088727b483c1f36197d9b83a294194043087571bff64c19149b8fc447",
+      "current_csv_sha256": "092d3a78332d1da487a20b2b13e37a52d149e13ea51a9975775d81274031bff0",
+      "jpeg_compatibility": {
+        "method": "remove whitespace after an existing JPEG end marker; no re-encoding",
+        "eligible_sources_checked": 48254,
+        "canonical_copies": 1000,
+        "source_photographs_modified": false,
+        "all_copied_pixels_verified_identical": true,
+        "copy_registry_identity": "44ad4bb3c4016cfff3949675bc48e9b7ac6bb54db7e3097ec086b35eaf31d7f5"
+      },
+      "all_copies_are_added_training_backgrounds": true,
+      "corrected_bird_red_bounds_xyxy": [
+        681.0,
+        333.0,
+        707.0,
+        381.0
+      ],
+      "scientific_training_started": false
+    },
+    "yolo_loader": {
+      "status": "passed",
+      "manifest_identity": "7a2698cefc83dd3f3959e3cb3264bd7504cf295465fbaf179dcb1e5308d4ce82",
+      "ultralytics_version": "8.4.21",
+      "verifier": "ultralytics.data.utils.verify_image_label",
+      "splits": {
+        "train": {
+          "expected_images": 12399,
+          "accepted_images": 12399,
+          "backgrounds": 1000,
+          "boxes": 11913
+        },
+        "val": {
+          "expected_images": 2543,
+          "accepted_images": 2543,
+          "backgrounds": 995,
+          "boxes": 1644
+        },
+        "cis_test": {
+          "expected_images": 13073,
+          "accepted_images": 13073,
+          "backgrounds": 1180,
+          "boxes": 12461
+        },
+        "trans_val": {
+          "expected_images": 1592,
+          "accepted_images": 1592,
+          "backgrounds": 61,
+          "boxes": 1670
+        },
+        "trans_test": {
+          "expected_images": 18647,
+          "accepted_images": 18647,
+          "backgrounds": 1778,
+          "boxes": 17620
+        }
+      },
+      "problem_count": 0,
+      "problems": []
+    },
+    "frozen_sources_verified": 44,
+    "amp": {
+      "status": "passed",
+      "auxiliary": "yolo26n.pt",
+      "detector": "yolov8s.pt",
+      "finite": true,
+      "fp32_amp_close": true,
+      "messages": [
+        "\u001b[34m\u001b[1mAMP: \u001b[0mrunning Automatic Mixed Precision (AMP) checks...",
+        "\u001b[34m\u001b[1mAMP: \u001b[0mchecks passed ✅"
+      ]
+    },
+    "actual_training_progress": {
+      "verified_at_utc": "2026-10-05T16:13:46.595242-05:00",
+      "status": "training_in_progress",
+      "completed_epochs": 2,
+      "last_checkpoint_sha256": "01ee9bb7bd468ff1231d8fe01bd4e9e6e35438415a2c5c117129c7cc54a2c188",
+      "resume_checkpoint_matches": true,
+      "frozen_sources_verified": 44,
+      "held_out_test_evaluation_started": false,
+      "training_complete": false
+    }
+  },
+  "verification_receipt": "E:\\Kaggle\\exam-output-wildlife-v5\\receipts\\red-reference-verification.json",
+  "execution": {
+    "started_at_utc": "2026-10-05T20:32:06Z",
+    "protocol": "YOLOv8s pretrained; 14 classes; up to 50 epochs; patience 10",
+    "wrapper_log": "E:/Kaggle/exam-output-wildlife-v6/receipts/scientific-run.log",
+    "labels_approved": 90,
+    "teacher_approval_claimed": false,
+    "v5_attempt": {
+      "reason": "Ultralytics attempted JPEG end-marker repair on read-only original links",
+      "completed_epochs": 0,
+      "checkpoint_created": false,
+      "scientific_metrics_generated": false,
+      "original_photographs_modified": false
+    },
+    "configured_max_epochs": 50,
+    "first_epoch_in_progress": false,
+    "held_out_test_evaluation_started": true,
+    "completed_test_metrics": [
+      "cis_test",
+      "trans_test"
+    ],
+    "observed_epoch": 39,
+    "training_complete": true,
+    "active_test_split": "cis_test",
+    "completed_epochs": 39,
+    "wrapper_session_active": false,
+    "recovery": {
+      "started_at_utc": "2026-10-05T22:49:47Z",
+      "checkpoint_sha256": "b2a47c3b0b22d927c5fa976e6fecf82465e22bc509fae1747fb8a20ff634c85f",
+      "validation": "3 tests passed; scoped Ruff passed; PowerShell parser passed; 44 frozen files unchanged",
+      "incident": {
+        "kernel_timestamp_utc": "2026-10-05T22:24:05Z",
+        "reason": "Linux kernel memory cgroup OOM killed the original Python evaluation process",
+        "original_container_id": "665d0057994acecf8387b91d22046403f861469cab1671a36650b716da1ca5f0",
+        "memory_limit_gib": 12,
+        "evidence": "wsl.exe --distribution docker-desktop -- dmesg -T",
+        "original_wrapper_exit_code": 1,
+        "original_log": "E:/Kaggle/exam-output-wildlife-v6/receipts/scientific-run.log"
+      },
+      "wrapper_session_id": 3190,
+      "container": "neural-exam-wildlife-v6-recovery-20261005-224947",
+      "log": "E:/Kaggle/exam-output-wildlife-v6/receipts/recovery-evaluation-20261005-224947.log",
+      "planned_replicates_per_group": 200,
+      "training_repeated": false,
+      "frozen_sources_changed": false,
+      "last_verified_at_utc": "2026-10-05T19:33:27.905229-05:00",
+      "current_group": null,
+      "completed_groups": 8,
+      "planned_groups": 8,
+      "observed_replicates_in_current_group": null,
+      "completed_group_names": [
+        "cis_test--global",
+        "trans_test--global",
+        "cis_test--small_lt_1pct",
+        "cis_test--medium_1_to_5pct",
+        "cis_test--large_gt_5pct",
+        "trans_test--small_lt_1pct",
+        "trans_test--medium_1_to_5pct",
+        "trans_test--large_gt_5pct"
+      ],
+      "memory_observation": "673.6 MiB of 12 GiB; final trans large-object interval group started",
+      "running": false,
+      "wrapper_exit_code": 0,
+      "finished_at_utc": "2026-10-06T00:19:28.361217353Z",
+      "oom_killed": false
+    },
+    "stage": "automatic_deliverables_complete"
+  },
+  "completion_followup": {
+    "automation_id": "finalizaci-n-de-fauna-yolov8s",
+    "kind": "heartbeat",
+    "last_checked_at_utc": "2026-10-09T01:26:00.418478+00:00",
+    "last_observation": "Accepted 582-case occlusion evaluation completed with three groups of 200 sequence replicates. Four notebook cells executed without errors; two-page PDF annex rendered and visually inspected. Eighteen exclusions and 398 missing notes preserved, case 121 uses Miguel. Original V6 artifacts and 44 sources unchanged. Only editorial review and report integration remain.",
+    "status": "PAUSED",
+    "paused_at_utc": "2026-10-09T01:26:00.418478+00:00",
+    "completion_notice_prepared_at_utc": "2026-10-09T01:26:00.418478+00:00",
+    "completion_notice_scope": "One notice links the accepted 582 CSV, reviewed two-page PDF annex and executed notebook. No more occlusion notes requested; editorial review remains pending."
+  },
+  "overall_status": "automatic_and_accepted_occlusion_complete_editorial_pending",
+  "recorded_at_utc": "2026-10-09T01:26:00.418478+00:00",
+  "automatic_delivery": {
+    "verified_at_utc": "2026-10-05T19:33:27.905229-05:00",
+    "training_epochs": 39,
+    "selected_epoch": 29,
+    "interval_groups": 8,
+    "replicates_per_group": 200,
+    "cam_cases": 12,
+    "cam_flat_maps": 3,
+    "monitoring_camera": "7",
+    "monitoring_photos": 1853,
+    "executed_notebook_code_cells": 12,
+    "notebook_errors": 0,
+    "pdf_pages": 10,
+    "pdf": "E:\\Kaggle\\exam-output-wildlife-v6\\reports\\wildlife_draft.pdf",
+    "notebook": "E:\\Kaggle\\exam-output-wildlife-v6\\notebooks\\03_wildlife.ipynb",
+    "cam_registry": "E:\\Kaggle\\exam-output-wildlife-v6\\wildlife\\cam_cases.json",
+    "activity": "E:\\Kaggle\\exam-output-wildlife-v6\\wildlife\\activity.json",
+    "validation_receipt": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\tmp\\pdfs\\wildlife_v6_review\\completion_validation.json",
+    "human_editorial_review": "pending",
+    "human_occlusion_review": "pending",
+    "human_occlusion_reviewed_objects": 0,
+    "human_occlusion_total_objects": 17620,
+    "frozen_source_changes": 0,
+    "training_repeated": false,
+    "human_label_csv_changes": false,
+    "teacher_approval_claimed": false,
+    "human_occlusion_scope": "Historical frozen full-cohort status; current accepted sample completed separately."
+  },
+  "active_occlusion_protocol": "wildlife-v6-occlusion-stratified-600",
+  "human_occlusion_sample_review": {
+    "status": "accepted_with_documented_exclusions_and_note_waiver",
+    "protocol": "separate probability sample, not the frozen full V6 review",
+    "sampled_objects": 600,
+    "reviewed_objects": 582,
+    "pending_objects": 0,
+    "photos": 596,
+    "sequences": 552,
+    "cameras": 9,
+    "species": 13,
+    "strata": 209,
+    "gallery": "http://127.0.0.1:8902/occlusion_review.html",
+    "csv": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\occlusion_review_sample_600.csv",
+    "protocol_receipt": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\protocol.json",
+    "output": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600",
+    "support_required_per_level": 30,
+    "support_deficits": {
+      "low": 0,
+      "medium": 0,
+      "high": 0
+    },
+    "evaluation_ready": true,
+    "evaluation_run": true,
+    "new_training_required": false,
+    "original_full_v6_review_unchanged": true,
+    "guide": "parcial/WILDLIFE_OCCLUSION_SAMPLE.md",
+    "received_reviews_at_import": {
+      "recorded_at_utc": "2026-10-09T00:06:01.106938+00:00",
+      "status": "human_completion_and_conflict_resolution_required",
+      "files": 5,
+      "cases_with_level_in_received_files": 582,
+      "complete_cases_in_received_files": 185,
+      "complete_cases_without_conflict": 184,
+      "cases_missing_level": [
+        253,
+        302,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        439
+      ],
+      "conflicting_cases": [
+        121
+      ],
+      "cases_missing_written_evidence": 397,
+      "draft_csv": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\outputs\\occlusion-consolidation-2026-10-08\\occlusion_review_consolidated_DRAFT.csv",
+      "receipt": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\outputs\\occlusion-consolidation-2026-10-08\\consolidation_receipt.json",
+      "canonical_csv_unchanged": true,
+      "human_or_teacher_approval_inferred": false
+    },
+    "accepted_objects": 582,
+    "excluded_objects": 18,
+    "counts": {
+      "low": 340,
+      "ambiguous": 125,
+      "medium": 69,
+      "high": 48
+    },
+    "notes_optional": true,
+    "accepted_cases_without_notes": 398,
+    "notes_fabricated": false,
+    "case_121_resolution": {
+      "source": "Miguel",
+      "level": "medium",
+      "visual_evidence": ""
+    },
+    "evaluation_status": "evaluation_complete_with_documented_review_deviations",
+    "evaluation_log": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\accepted_evaluation_run_20261008.log",
+    "accepted_csv": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\occlusion_review_accepted_582.csv",
+    "acceptance_receipt": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\review_acceptance.json",
+    "accepted_status_receipt": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\accepted_review_status.json",
+    "population_proportion_ci_reused": false,
+    "reviewed_at_utc": "2026-10-09T00:21:24.504895+00:00",
+    "accepted_guide": "parcial/WILDLIFE_OCCLUSION_ACCEPTED.md",
+    "received_reviews": {
+      "status": "resolved_by_explicit_user_instruction",
+      "files": 5,
+      "accepted_cases": 582,
+      "excluded_cases": 18,
+      "teacher_approval_inferred": false
+    },
+    "evaluation_progress": {
+      "checked_at_utc": "2026-10-09T01:26:00.418478+00:00",
+      "completed_levels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "current_level": null,
+      "completed_replicates_in_low": 200,
+      "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+      "frozen_artifacts_and_sources_verified": true,
+      "original_five_csv_hashes_verified": true,
+      "delivery_status": "complete_visual_reviewed_editorial_pending",
+      "completed_replicates_in_medium": 200,
+      "observed_replicates_in_high": 200,
+      "completed_replicates_in_high": 200
+    },
+    "evaluation_completed_at_utc": "2026-10-09T01:23:13.976444+00:00",
+    "evaluation_results": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\accepted_evaluation\\6b2983c33abccbc1\\results.json",
+    "delivery_status": "complete_visual_reviewed_editorial_pending",
+    "accepted_cases_with_notes": 184,
+    "delivery": {
+      "pdf": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\accepted_delivery\\occlusion_582.pdf",
+      "notebook": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\accepted_delivery\\04_occlusion_582.ipynb",
+      "metrics_csv": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\accepted_delivery\\occlusion_metrics_582.csv",
+      "manifest": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\accepted_delivery\\delivery_manifest.json",
+      "validation": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\accepted_completion_validation.json",
+      "pdf_pages": 2,
+      "notebook_executed_code_cells": 4,
+      "notebook_errors": 0,
+      "visual_reviewed": true,
+      "human_editorial_review": "pending"
+    },
+    "detection_metrics": {
+      "low": {
+        "eligible_objects": 340,
+        "map50": 0.15819062118054675,
+        "map50_95": 0.08752327797568138,
+        "conditional_sequence_intervals": {
+          "map50": {
+            "lower": 0.14565428655662227,
+            "upper": 0.211744335363571,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.0808636471402086,
+            "upper": 0.1216599227165115,
+            "defined_replicates": 200
+          }
+        }
+      },
+      "medium": {
+        "eligible_objects": 69,
+        "map50": 0.058165880795783755,
+        "map50_95": 0.02714170588666339,
+        "conditional_sequence_intervals": {
+          "map50": {
+            "lower": 0.03889813048601192,
+            "upper": 0.10349211723479335,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.018447584844161185,
+            "upper": 0.05233252640313138,
+            "defined_replicates": 200
+          }
+        }
+      },
+      "high": {
+        "eligible_objects": 48,
+        "map50": 0.05629620961357233,
+        "map50_95": 0.02437605943963364,
+        "conditional_sequence_intervals": {
+          "map50": {
+            "lower": 0.03294393702216552,
+            "upper": 0.11638270646000795,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.015975287167537103,
+            "upper": 0.05670022235119286,
+            "defined_replicates": 200
+          }
+        }
+      }
+    }
+  },
+  "active_occlusion_acceptance": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\review_acceptance.json"
+}

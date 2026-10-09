@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "protected_verified": 61,
+  "frozen_verified": 44,
+  "restorations": [],
+  "scientific_changes": 0,
+  "first_attempt": "43 archivos restaurados desde blobs firmados; update-index --refresh devolvió 1 por caché de stat. El reintento verifica los 61 blobs del índice sin cambios semánticos."
+}

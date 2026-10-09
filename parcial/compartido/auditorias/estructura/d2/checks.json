@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "question": "pregunta_1_mri",
+      "active_markdown_links": "passed"
+    },
+    {
+      "question": "pregunta_2_inundaciones",
+      "active_markdown_links": "passed"
+    },
+    {
+      "question": "pregunta_3_fauna",
+      "active_markdown_links": "passed"
+    }
+  ],
+  "root_readme_links": "passed",
+  "new_python_syntax": "passed",
+  "native_document_metadata_paths": 8,
+  "frozen_original_E_files_verified": 44,
+  "safety_tests": {
+    "command": [
+      "C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "parcial/compartido/auditorias/estructura",
+      "-p",
+      "test_migration_safety.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_d1_apply_is_refused_before_writing_recovery (test_migration_safety.MigrationSafetyTests.test_d1_apply_is_refused_before_writing_recovery) ... ok\ntest_dry_run_preserves_bytes_and_creates_no_destination (test_migration_safety.MigrationSafetyTests.test_dry_run_preserves_bytes_and_creates_no_destination) ... ok\ntest_rejects_destination_collision_without_overwrite (test_migration_safety.MigrationSafetyTests.test_rejects_destination_collision_without_overwrite) ... ok\ntest_rejects_stale_source_hash (test_migration_safety.MigrationSafetyTests.test_rejects_stale_source_hash) ... ok\ntest_rejects_traversal_and_absolute_targets (test_migration_safety.MigrationSafetyTests.test_rejects_traversal_and_absolute_targets) ... ok\ntest_rejects_wrong_worktree (test_migration_safety.MigrationSafetyTests.test_rejects_wrong_worktree) ... ok\ntest_requires_original_bytes_before_retiring_a_copy (test_migration_safety.MigrationSafetyTests.test_requires_original_bytes_before_retiring_a_copy) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.018s\n\nOK\n"
+  },
+  "scientific_rechecks": "No repetidos: verificación independiente del padre comunicada como aprobada; receipt externo parent-d2-native-check.json.",
+  "new_training_inference_bootstrap": false,
+  "staged_index": {
+    "protected_hashes_verified": 91,
+    "private_runtime_or_env_staged": false,
+    "whitespace_check_exit_code": 2,
+    "whitespace_output": [
+      "parcial/archivo/documentos_historicos/editorial_pre_d2/README.md:1: trailing whitespace.",
+      "+# Redes Neuronales y Aprendizaje Profundo — UNI",
+      "parcial/archivo/documentos_historicos/editorial_pre_d2/README.md:2: trailing whitespace.",
+      "+",
+      "parcial/archivo/documentos_historicos/editorial_pre_d2/README.md:3: trailing whitespace.",
+      "+Repositorio de materiales y proyectos del segundo ciclo de la Maestría en Inteligencia Artificial de la Universidad Nacional de Ingeniería.",
+      "parcial/archivo/documentos_historicos/editorial_pre_d2/README.md:4: trailing whitespace.",
+      "+",
+      "parcial/archivo/documentos_historicos/editorial_pre_d2/README.md:5: trailing whitespace.",
+      "+El examen parcial reúne tres aplicaciones de visión por computadora: clasificación multietiqueta de MRI de rodilla, segmentación de agua con radar Sentinel-1 y detección de fauna con cámaras trampa. La implementación se organiza como un paquete Python compartido, con ejecución local y experimentos secuenciales.",
+      "parcial/archivo/documentos_historicos/editorial_pre_d2/README.md:6: trailing whitespace.",
+      "+"
+    ],
+    "whitespace_total_lines": 21306,
+    "historical_whitespace_exception": "Archivos históricos y fuentes congeladas preservados byte por byte; no se normalizan CRLF ni espacios originales.",
+    "authored_whitespace_exit_code": 0,
+    "authored_whitespace_configuration": "blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol",
+    "global_cr_at_eol_check": {
+      "command": [
+        "git",
+        "-c",
+        "core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 2,
+      "output_lines": 576,
+      "sample": [
+        "parcial/archivo/documentos_historicos/preservado_2026-10-08/audits/revision-2026-10-08/flood-notebook-extracted.txt:308: trailing whitespace.",
+        "+0             gold_bce     test       0.393927                 0.407701   ",
+        "parcial/archivo/documentos_historicos/preservado_2026-10-08/audits/revision-2026-10-08/flood-notebook-extracted.txt:309: trailing whitespace.",
+        "+1             gold_bce  bolivia       0.455477                 0.455477   ",
+        "parcial/archivo/documentos_historicos/preservado_2026-10-08/audits/revision-2026-10-08/flood-notebook-extracted.txt:310: trailing whitespace.",
+        "+2            gold_dice     test       0.409981                 0.409981   ",
+        "parcial/archivo/documentos_historicos/preservado_2026-10-08/audits/revision-2026-10-08/flood-notebook-extracted.txt:311: trailing whitespace.",
+        "+3            gold_dice  bolivia       0.446339                 0.446339   ",
+        "parcial/archivo/documentos_historicos/preservado_2026-10-08/audits/revision-2026-10-08/flood-notebook-extracted.txt:312: trailing whitespace.",
+        "+4        gold_combined     test       0.406751                 0.406751   ",
+        "parcial/archivo/documentos_historicos/preservado_2026-10-08/audits/revision-2026-10-08/flood-notebook-extracted.txt:313: trailing whitespace.",
+        "+5        gold_combined  bolivia       0.405720                 0.405720   "
+      ]
+    }
+  }
+}

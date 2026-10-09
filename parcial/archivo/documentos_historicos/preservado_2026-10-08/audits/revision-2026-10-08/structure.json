@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "audited_at_utc": "2026-10-09T01:10:13.885446+00:00",
+  "cct_original_split_images": {
+    "train": 13553,
+    "val": 3484,
+    "cis_test": 15827,
+    "trans_val": 1725,
+    "trans_test": 23275
+  },
+  "official_boxes_verified": 45305,
+  "original_category_count": 16,
+  "animal_categories": 14,
+  "prepared_images": 48254,
+  "all_images_disjoint": true,
+  "training_sequences_disjoint_from_holdouts": true,
+  "new_cameras_disjoint": true,
+  "background_images": 1000,
+  "background_metadata_hashes": {
+    "full_metadata.json": true,
+    "CaltechCameraTrapsSplits_v0.json": true
+  },
+  "added_backgrounds_official_empty": true,
+  "added_backgrounds_official_training_cameras": true,
+  "human_label_reviews": 90,
+  "accepted_occlusion": {
+    "low": 340,
+    "ambiguous": 125,
+    "medium": 69,
+    "high": 48
+  },
+  "ambiguous_cases": 125,
+  "excluded_cases": 18,
+  "accepted_cases_without_notes": 398,
+  "mri_historical_files_unchanged": 131
+}

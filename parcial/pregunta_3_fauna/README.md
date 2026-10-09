@@ -1,10 +1,12 @@
-# Fauna: resultados V6 y oclusión aceptada
+# Pregunta: Fauna
 
-La etapa A integra la oclusión de 582 casos aceptados en el informe de fauna y en un notebook ejecutado de consulta. Conserva las métricas y los originales V6. El informe provisional tiene diez páginas; los ODT y PDF finales corresponden a la etapa B2 de Documentos.
+La entrega contiene el maestro ODT editable, su PDF exportado y notebooks con resultados conservados.
 
-- [Entrega de notebooks y métricas](entregable/LEEME.md).
-- [Fuentes editables del informe y anexo](fuentes_informe/).
-- [Evidencia y comprobaciones de la etapa A](docs/etapa_a.md).
-- [Estado estructurado](evidencias/estado.json).
+- [Entrega y verificación](entregable/LEEME.md).
+- [Fuentes editoriales](fuentes_informe/).
+- [Documentación histórica y técnica](docs/).
+- [Notebooks fuente](notebooks/).
+- [Estado y matriz por subrequisito](evidencias/estado.json).
+- [Reproducción compartida](../compartido/REPRODUCIBILIDAD_CIERRE.md).
 
-Los datos científicos grandes, pesos y predicciones permanecen en `E:/Kaggle`. Las copias pequeñas de resultados permiten consultar los notebooks sin acceso a esa unidad. No se necesitan nuevas revisiones humanas para usar la cohorte aceptada.
+La migración no modificó los documentos ni los notebooks finales. Las fuentes anteriores se conservan separadas en `fuentes_informe/latex_previo_d1/`; no sustituyen el maestro ODT.

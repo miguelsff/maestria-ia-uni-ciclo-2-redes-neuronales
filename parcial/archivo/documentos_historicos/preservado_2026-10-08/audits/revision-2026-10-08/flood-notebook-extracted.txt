@@ -1,0 +1,898 @@
+# Pregunta 2: segmentación de agua Sentinel-1
+
+U-Net propia VV/VH, seis ablaciones y evaluación geográfica en Bolivia. Este notebook importa el paquete y consulta resultados persistidos; no duplica el entrenamiento.
+
+
+## Configuración y decisiones previas
+
+Semilla 42, hasta 50 épocas y paciencia 10. Los resultados científicos y smoke usan directorios diferentes. Para ejecución completa se recomienda el comando del README.
+
+
+from pathlib import Path
+import os
+import pandas as pd
+from IPython.display import display, Image
+from neural_exam.config import PROJECT_ROOT, load_settings
+from neural_exam.cli import doctor
+from neural_exam.common.io import read_json
+from neural_exam.common.locking import execution_lock
+from neural_exam.flood.data import prepare
+from neural_exam.flood.pipeline import run
+from neural_exam.flood.reporting import prepare_report_assets
+
+RUN_PREPARE = False
+RUN_TRAINING = False
+RESUME = False
+GENERATE_REPORT_ASSETS = False
+settings = load_settings(PROJECT_ROOT / 'configs/flood.toml')
+task = 'flood'
+output = settings.output_root / task
+
+
+## Diagnóstico sin operaciones GPU
+
+La comprobación CUDA se realizará por separado mediante doctor --gpu-check. Esta celda consulta versiones y rutas.
+
+
+diagnostics = doctor(settings, gpu_check=False)
+display({
+    'dependencies': {k: v for k, v in diagnostics['dependencies'].items() if k in ('torch', 'torchvision', 'rasterio', 'scikit-learn')},
+    'flood_root': diagnostics['locations']['flood_root'],
+    'output_root': diagnostics['locations']['output_root'],
+    'cuda_check': 'Recorded separately in audit/doctor.log',
+})
+
+
+
+
+{'dependencies': {'torch': '2.10.0+cu128',
+  'torchvision': '0.25.0+cu128',
+  'rasterio': '1.4.3',
+  'scikit-learn': '1.9.1'},
+ 'flood_root': '/datasets/Sen1Floods11',
+ 'output_root': '/outputs',
+ 'cuda_check': 'Recorded separately in audit/doctor.log'}
+
+
+
+## Integridad y preparación
+
+Bolivia se excluye de entrenamiento y estadísticas. Los píxeles sin datos no entran en pérdidas ni métricas.
+
+Activar RUN_PREPARE únicamente después de completar las descargas y extracción. Preparar lee datos y escribe derivados locales.
+
+
+manifest = None
+if RUN_PREPARE:
+    with execution_lock(settings.output_root):
+        manifest = prepare(settings)
+elif (output / 'manifest.json').is_file():
+    manifest = read_json(output / 'manifest.json')
+else:
+    print('Preparación pendiente: no hay manifiesto de datos.')
+
+
+## Inventario de particiones
+
+Los conteos provienen del manifiesto real; no se usan números simulados.
+
+
+if manifest:
+    inventory = []
+    for split, records in manifest['records'].items():
+        valid = sum(record['valid_pixels'] for record in records)
+        water = sum(record['water_pixels'] for record in records)
+        inventory.append({'partition': split, 'chips': len(records), 'valid_pixels': valid, 'water_fraction': water / valid})
+    display(pd.DataFrame(inventory))
+    display({'band_order': manifest['band_order'], 'mean': manifest['mean'], 'std': manifest['std'],
+             'normalization_source': manifest['normalization_source'], 'excluded': manifest['excluded'],
+             'alignment_atol': manifest['alignment_absolute_tolerance']})
+
+
+
+
+  partition  chips  valid_pixels  water_fraction
+0     train    251      57017597        0.095526
+1       val     86      20274154        0.110052
+2      test     88      20443959        0.123020
+3   bolivia     15       2824434        0.159997
+4      weak   4150    1069346608        0.168311
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>partition</th>
+      <th>chips</th>
+      <th>valid_pixels</th>
+      <th>water_fraction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>train</td>
+      <td>251</td>
+      <td>57017597</td>
+      <td>0.095526</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>val</td>
+      <td>86</td>
+      <td>20274154</td>
+      <td>0.110052</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>test</td>
+      <td>88</td>
+      <td>20443959</td>
+      <td>0.123020</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>bolivia</td>
+      <td>15</td>
+      <td>2824434</td>
+      <td>0.159997</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>weak</td>
+      <td>4150</td>
+      <td>1069346608</td>
+      <td>0.168311</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+{'band_order': ['VV', 'VH'],
+ 'mean': [-10.455064161886204, -17.325308892562283],
+ 'std': [4.06613688848822, 4.791758381768977],
+ 'normalization_source': 'gold training chips only',
+ 'excluded': {'bolivia': 0, 'gold_overlap': 0, 'weak_limit': 0},
+ 'alignment_atol': 1e-12}
+
+
+
+## Experimentos
+
+Esta celda importa la implementación del paquete. No duplica arquitectura, entrenamiento o evaluación. No ejecutar simultáneamente con otros entrenamientos.
+
+
+if RUN_TRAINING:
+    with execution_lock(settings.output_root):
+        experiment_summary = run(settings, resume=RESUME, quick=False, manifest=manifest)
+    display(experiment_summary)
+else:
+    print('Entrenamiento automático desactivado; se consultan los resultados persistidos.')
+
+
+Entrenamiento automático desactivado; se consultan los resultados persistidos.
+
+
+
+
+
+
+## Evaluación y revisión
+
+Revisar IoU promedio por chip y métricas globales; documentar tres tipos de fallo SAR con evidencia.
+
+No elegir hiperparámetros por rendimiento de prueba. Una métrica ND debe conservarse como indefinida.
+
+
+experiments_path = output / 'experiments.csv'
+if experiments_path.is_file():
+    experiments = pd.read_csv(experiments_path)
+    assert len(experiments) == 6, 'The scientific ablation matrix is incomplete.'
+    display(experiments)
+    details = []
+    for experiment in experiments['experiment']:
+        for split in ('test', 'bolivia'):
+            scores = read_json(output / experiment / split / 'metrics.json')
+            details.append({'experiment': experiment, 'split': split, 'mean_chip_iou': scores['mean_chip_iou'],
+                            'reference_mean_chip_iou': scores['reference_mean_chip_iou'],
+                            'defined_iou_chips': scores['defined_iou_chips'], 'empty_union_chips': scores['empty_union_chips'],
+                            **scores['pooled_pixels']})
+    display(pd.DataFrame(details))
+    resources_path = settings.output_root / 'reports/flood/resources.csv'
+    if resources_path.is_file():
+        display(pd.read_csv(resources_path))
+else:
+    print('No completed scientific experiments are available yet.')
+
+
+
+
+           experiment  test_iou  bolivia_iou  geographic_gap
+0            gold_bce  0.393927     0.455477       -0.061550
+1           gold_dice  0.409981     0.446339       -0.036359
+2       gold_combined  0.406751     0.405720        0.001031
+3       gold_weak_bce  0.325065     0.269045        0.056020
+4      gold_weak_dice  0.348747     0.478984       -0.130237
+5  gold_weak_combined  0.359350     0.451141       -0.091791
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>experiment</th>
+      <th>test_iou</th>
+      <th>bolivia_iou</th>
+      <th>geographic_gap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>gold_bce</td>
+      <td>0.393927</td>
+      <td>0.455477</td>
+      <td>-0.061550</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>gold_dice</td>
+      <td>0.409981</td>
+      <td>0.446339</td>
+      <td>-0.036359</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>gold_combined</td>
+      <td>0.406751</td>
+      <td>0.405720</td>
+      <td>0.001031</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>gold_weak_bce</td>
+      <td>0.325065</td>
+      <td>0.269045</td>
+      <td>0.056020</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>gold_weak_dice</td>
+      <td>0.348747</td>
+      <td>0.478984</td>
+      <td>-0.130237</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>gold_weak_combined</td>
+      <td>0.359350</td>
+      <td>0.451141</td>
+      <td>-0.091791</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+            experiment    split  mean_chip_iou  reference_mean_chip_iou  \
+0             gold_bce     test       0.393927                 0.407701   
+1             gold_bce  bolivia       0.455477                 0.455477   
+2            gold_dice     test       0.409981                 0.409981   
+3            gold_dice  bolivia       0.446339                 0.446339   
+4        gold_combined     test       0.406751                 0.406751   
+5        gold_combined  bolivia       0.405720                 0.405720   
+6        gold_weak_bce     test       0.325065                 0.355744   
+7        gold_weak_bce  bolivia       0.269045                 0.269045   
+8       gold_weak_dice     test       0.348747                 0.356147   
+9       gold_weak_dice  bolivia       0.478984                 0.478984   
+10  gold_weak_combined     test       0.359350                 0.373910   
+11  gold_weak_combined  bolivia       0.451141                 0.451141   
+
+    defined_iou_chips  empty_union_chips       tp      fp      fn        tn  \
+0                  86                  2  1884956  322880  630052  17606071   
+1                  15                  0   345325   57471  106576   2315062   
+2                  88                  0  1988870  557753  526138  17371198   
+3                  15                  0   339238   79376  112663   2293157   
+4                  88                  0  1932436  408227  582572  17520724   
+5                  15                  0   297944   57925  153957   2314608   
+6                  84                  4  1819054  467583  695954  17461368   
+7                  15                  0   226886   20124  225015   2352409   
+8                  87                  1  1909144  719742  605864  17209209   
+9                  15                  0   380844   78304   71057   2294229   
+10                 86                  2  1936029  657684  578979  17271267   
+11                 15                  0   345582   45947  106319   2326586   
+
+    valid_pixels       iou  precision    recall        f1  omission  \
+0       20443959  0.664211   0.853757  0.749483  0.798229  0.250517   
+1        2824434  0.677943   0.857320  0.764161  0.808064  0.235839   
+2       20443959  0.647258   0.780983  0.790801  0.785861  0.209199   
+3        2824434  0.638533   0.810384  0.750691  0.779396  0.249309   
+4       20443959  0.661061   0.825593  0.768362  0.795950  0.231638   
+5        2824434  0.584403   0.837229  0.659313  0.737695  0.340687   
+6       20443959  0.609891   0.795515  0.723280  0.757680  0.276720   
+7        2824434  0.480665   0.918530  0.502070  0.649256  0.497930   
+8       20443959  0.590198   0.726218  0.759101  0.742295  0.240899   
+9        2824434  0.718296   0.829458  0.842760  0.836056  0.157240   
+10      20443959  0.610216   0.746431  0.769790  0.757931  0.230210   
+11       2824434  0.694152   0.882647  0.764729  0.819468  0.235271   
+
+    commission  
+0     0.146243  
+1     0.142680  
+2     0.219017  
+3     0.189616  
+4     0.174407  
+5     0.162771  
+6     0.204485  
+7     0.081470  
+8     0.273782  
+9     0.170542  
+10    0.253569  
+11    0.117353  
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>experiment</th>
+      <th>split</th>
+      <th>mean_chip_iou</th>
+      <th>reference_mean_chip_iou</th>
+      <th>defined_iou_chips</th>
+      <th>empty_union_chips</th>
+      <th>tp</th>
+      <th>fp</th>
+      <th>fn</th>
+      <th>tn</th>
+      <th>valid_pixels</th>
+      <th>iou</th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1</th>
+      <th>omission</th>
+      <th>commission</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>gold_bce</td>
+      <td>test</td>
+      <td>0.393927</td>
+      <td>0.407701</td>
+      <td>86</td>
+      <td>2</td>
+      <td>1884956</td>
+      <td>322880</td>
+      <td>630052</td>
+      <td>17606071</td>
+      <td>20443959</td>
+      <td>0.664211</td>
+      <td>0.853757</td>
+      <td>0.749483</td>
+      <td>0.798229</td>
+      <td>0.250517</td>
+      <td>0.146243</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>gold_bce</td>
+      <td>bolivia</td>
+      <td>0.455477</td>
+      <td>0.455477</td>
+      <td>15</td>
+      <td>0</td>
+      <td>345325</td>
+      <td>57471</td>
+      <td>106576</td>
+      <td>2315062</td>
+      <td>2824434</td>
+      <td>0.677943</td>
+      <td>0.857320</td>
+      <td>0.764161</td>
+      <td>0.808064</td>
+      <td>0.235839</td>
+      <td>0.142680</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>gold_dice</td>
+      <td>test</td>
+      <td>0.409981</td>
+      <td>0.409981</td>
+      <td>88</td>
+      <td>0</td>
+      <td>1988870</td>
+      <td>557753</td>
+      <td>526138</td>
+      <td>17371198</td>
+      <td>20443959</td>
+      <td>0.647258</td>
+      <td>0.780983</td>
+      <td>0.790801</td>
+      <td>0.785861</td>
+      <td>0.209199</td>
+      <td>0.219017</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>gold_dice</td>
+      <td>bolivia</td>
+      <td>0.446339</td>
+      <td>0.446339</td>
+      <td>15</td>
+      <td>0</td>
+      <td>339238</td>
+      <td>79376</td>
+      <td>112663</td>
+      <td>2293157</td>
+      <td>2824434</td>
+      <td>0.638533</td>
+      <td>0.810384</td>
+      <td>0.750691</td>
+      <td>0.779396</td>
+      <td>0.249309</td>
+      <td>0.189616</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>gold_combined</td>
+      <td>test</td>
+      <td>0.406751</td>
+      <td>0.406751</td>
+      <td>88</td>
+      <td>0</td>
+      <td>1932436</td>
+      <td>408227</td>
+      <td>582572</td>
+      <td>17520724</td>
+      <td>20443959</td>
+      <td>0.661061</td>
+      <td>0.825593</td>
+      <td>0.768362</td>
+      <td>0.795950</td>
+      <td>0.231638</td>
+      <td>0.174407</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>gold_combined</td>
+      <td>bolivia</td>
+      <td>0.405720</td>
+      <td>0.405720</td>
+      <td>15</td>
+      <td>0</td>
+      <td>297944</td>
+      <td>57925</td>
+      <td>153957</td>
+      <td>2314608</td>
+      <td>2824434</td>
+      <td>0.584403</td>
+      <td>0.837229</td>
+      <td>0.659313</td>
+      <td>0.737695</td>
+      <td>0.340687</td>
+      <td>0.162771</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>gold_weak_bce</td>
+      <td>test</td>
+      <td>0.325065</td>
+      <td>0.355744</td>
+      <td>84</td>
+      <td>4</td>
+      <td>1819054</td>
+      <td>467583</td>
+      <td>695954</td>
+      <td>17461368</td>
+      <td>20443959</td>
+      <td>0.609891</td>
+      <td>0.795515</td>
+      <td>0.723280</td>
+      <td>0.757680</td>
+      <td>0.276720</td>
+      <td>0.204485</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>gold_weak_bce</td>
+      <td>bolivia</td>
+      <td>0.269045</td>
+      <td>0.269045</td>
+      <td>15</td>
+      <td>0</td>
+      <td>226886</td>
+      <td>20124</td>
+      <td>225015</td>
+      <td>2352409</td>
+      <td>2824434</td>
+      <td>0.480665</td>
+      <td>0.918530</td>
+      <td>0.502070</td>
+      <td>0.649256</td>
+      <td>0.497930</td>
+      <td>0.081470</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>gold_weak_dice</td>
+      <td>test</td>
+      <td>0.348747</td>
+      <td>0.356147</td>
+      <td>87</td>
+      <td>1</td>
+      <td>1909144</td>
+      <td>719742</td>
+      <td>605864</td>
+      <td>17209209</td>
+      <td>20443959</td>
+      <td>0.590198</td>
+      <td>0.726218</td>
+      <td>0.759101</td>
+      <td>0.742295</td>
+      <td>0.240899</td>
+      <td>0.273782</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>gold_weak_dice</td>
+      <td>bolivia</td>
+      <td>0.478984</td>
+      <td>0.478984</td>
+      <td>15</td>
+      <td>0</td>
+      <td>380844</td>
+      <td>78304</td>
+      <td>71057</td>
+      <td>2294229</td>
+      <td>2824434</td>
+      <td>0.718296</td>
+      <td>0.829458</td>
+      <td>0.842760</td>
+      <td>0.836056</td>
+      <td>0.157240</td>
+      <td>0.170542</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>gold_weak_combined</td>
+      <td>test</td>
+      <td>0.359350</td>
+      <td>0.373910</td>
+      <td>86</td>
+      <td>2</td>
+      <td>1936029</td>
+      <td>657684</td>
+      <td>578979</td>
+      <td>17271267</td>
+      <td>20443959</td>
+      <td>0.610216</td>
+      <td>0.746431</td>
+      <td>0.769790</td>
+      <td>0.757931</td>
+      <td>0.230210</td>
+      <td>0.253569</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>gold_weak_combined</td>
+      <td>bolivia</td>
+      <td>0.451141</td>
+      <td>0.451141</td>
+      <td>15</td>
+      <td>0</td>
+      <td>345582</td>
+      <td>45947</td>
+      <td>106319</td>
+      <td>2326586</td>
+      <td>2824434</td>
+      <td>0.694152</td>
+      <td>0.882647</td>
+      <td>0.764729</td>
+      <td>0.819468</td>
+      <td>0.235271</td>
+      <td>0.117353</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+           experiment  epochs  best_epoch  steps    minutes  vram_gib
+0            gold_bce      50          47     63   3.268697  3.145677
+1           gold_dice      41          31     63   2.690289  3.145677
+2       gold_combined      50          49     63   3.301166  3.145677
+3       gold_weak_bce      38          28   1101  28.560032  3.146653
+4      gold_weak_dice      11           1   1101   8.262285  3.145677
+5  gold_weak_combined      22          12   1101  16.598343  3.146653
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>experiment</th>
+      <th>epochs</th>
+      <th>best_epoch</th>
+      <th>steps</th>
+      <th>minutes</th>
+      <th>vram_gib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>gold_bce</td>
+      <td>50</td>
+      <td>47</td>
+      <td>63</td>
+      <td>3.268697</td>
+      <td>3.145677</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>gold_dice</td>
+      <td>41</td>
+      <td>31</td>
+      <td>63</td>
+      <td>2.690289</td>
+      <td>3.145677</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>gold_combined</td>
+      <td>50</td>
+      <td>49</td>
+      <td>63</td>
+      <td>3.301166</td>
+      <td>3.145677</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>gold_weak_bce</td>
+      <td>38</td>
+      <td>28</td>
+      <td>1101</td>
+      <td>28.560032</td>
+      <td>3.146653</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>gold_weak_dice</td>
+      <td>11</td>
+      <td>1</td>
+      <td>1101</td>
+      <td>8.262285</td>
+      <td>3.145677</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>gold_weak_combined</td>
+      <td>22</td>
+      <td>12</td>
+      <td>1101</td>
+      <td>16.598343</td>
+      <td>3.146653</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+report_root = settings.output_root / 'reports/flood'
+for name in ('validation_curves.png', 'ablation.png', 'confusion_baseline.png'):
+    path = report_root / name
+    if path.is_file():
+        display(Image(filename=str(path), width=900))
+for split in ('test', 'bolivia'):
+    review = output / 'gold_bce' / split / 'qualitative_review.csv'
+    if review.is_file():
+        frame = pd.read_csv(review).fillna('')
+        display(frame[frame['visual_evidence'] != ''])
+
+for path in sorted((report_root / 'figures').glob('flood_*.png'))[3:6]:
+    display(Image(filename=str(path), width=900))
+
+
+
+
+<IPython.core.display.Image object>
+
+
+
+
+
+<IPython.core.display.Image object>
+
+
+
+
+
+<IPython.core.display.Image object>
+
+
+
+
+
+           chip_id                                         hypothesis  \
+6   Pakistan_70625  Superficies de baja retrodispersión pueden con...   
+7  Pakistan_849790  Agua con respuesta SAR distinta del agua abier...   
+
+                                     visual_evidence  
+6  Se predicen manchas extensas en zonas oscuras ...  
+7  La referencia cubre gran parte del chip pero l...  
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>chip_id</th>
+      <th>hypothesis</th>
+      <th>visual_evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6</th>
+      <td>Pakistan_70625</td>
+      <td>Superficies de baja retrodispersión pueden con...</td>
+      <td>Se predicen manchas extensas en zonas oscuras ...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Pakistan_849790</td>
+      <td>Agua con respuesta SAR distinta del agua abier...</td>
+      <td>La referencia cubre gran parte del chip pero l...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+          chip_id                                         hypothesis  \
+4  Bolivia_379434  Resolución efectiva y contexto pueden degradar...   
+
+                                     visual_evidence  
+4  En el cauce sinuoso derecho aparecen bandas ce...  
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>chip_id</th>
+      <th>hypothesis</th>
+      <th>visual_evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>4</th>
+      <td>Bolivia_379434</td>
+      <td>Resolución efectiva y contexto pueden degradar...</td>
+      <td>En el cauce sinuoso derecho aparecen bandas ce...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<IPython.core.display.Image object>
+
+
+
+
+
+<IPython.core.display.Image object>
+
+
+
+
+
+<IPython.core.display.Image object>
+
+
+
+## Fuentes del informe
+
+Las tablas y figuras se exportan desde ejecuciones reales. Completar la discusión y la revisión humana antes de compilar el informe final.
+
+
+if GENERATE_REPORT_ASSETS:
+    display(prepare_report_assets(settings))
+
+
+## Interpretación y límites
+
+IoU promedio por chip y IoU agrupada por píxeles responden a agregaciones distintas. La versión de referencia oficial usa epsilon y asigna uno a la unión vacía; aquí se registra también el promedio sobre chips definidos, junto con su soporte.
+
+La selección de checkpoints usa únicamente validación manual. Bolivia no interviene en ajuste, umbral ni parada temprana. Las seis configuraciones usan una semilla; agregar débiles modifica el volumen y número de pasos de entrenamiento, además de la procedencia de etiquetas.
+
+Las observaciones de fallos deben asociarse con ejemplos reales. Sombra, doble rebote o cambios de cobertura son hipótesis físicas que dos bandas SAR no demuestran por sí solas. La discusión final se conserva en el informe de flood.

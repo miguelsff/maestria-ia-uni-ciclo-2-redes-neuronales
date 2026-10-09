@@ -1,0 +1,270 @@
+{
+  "data_identity": "ddb1032fd9235ebef5bbc23d4c83a9fe34578a64c16da24e85754fbb5a72ee0d",
+  "split_counts": {
+    "train": 251,
+    "val": 86,
+    "test": 88,
+    "bolivia": 15,
+    "weak": 4150
+  },
+  "official_splits_verified": 4,
+  "all_partitions_disjoint": true,
+  "bolivia_excluded_from_training": true,
+  "geotiffs_verified": 618,
+  "results": [
+    {
+      "experiment": "gold_bce",
+      "split": "test",
+      "chips": 88,
+      "best_epoch": 47,
+      "mean_chip_iou": 0.39392686726074255,
+      "metrics": {
+        "tp": 1884956,
+        "fp": 322880,
+        "fn": 630052,
+        "tn": 17606071,
+        "valid_pixels": 20443959,
+        "iou": 0.6642108497586938,
+        "precision": 0.8537572537090617,
+        "recall": 0.7494831030358552,
+        "f1": 0.7982292025737034,
+        "omission": 0.25051689696414486,
+        "commission": 0.14624274629093828
+      },
+      "checkpoint_sha256": "d4e9f69a1bfdc13e641c2cb38cb2fc02d4bcac04bc7e771c569ca48b113ef02f"
+    },
+    {
+      "experiment": "gold_bce",
+      "split": "bolivia",
+      "chips": 15,
+      "best_epoch": 47,
+      "mean_chip_iou": 0.45547708515221536,
+      "metrics": {
+        "tp": 345325,
+        "fp": 57471,
+        "fn": 106576,
+        "tn": 2315062,
+        "valid_pixels": 2824434,
+        "iou": 0.6779426430977753,
+        "precision": 0.8573198343578388,
+        "recall": 0.7641607343201277,
+        "f1": 0.8080641443692911,
+        "omission": 0.23583926567987237,
+        "commission": 0.1426801656421613
+      },
+      "checkpoint_sha256": "d4e9f69a1bfdc13e641c2cb38cb2fc02d4bcac04bc7e771c569ca48b113ef02f"
+    },
+    {
+      "experiment": "gold_dice",
+      "split": "test",
+      "chips": 88,
+      "best_epoch": 31,
+      "mean_chip_iou": 0.40998064973334647,
+      "metrics": {
+        "tp": 1988870,
+        "fp": 557753,
+        "fn": 526138,
+        "tn": 17371198,
+        "valid_pixels": 20443959,
+        "iou": 0.6472582800940262,
+        "precision": 0.780983286493525,
+        "recall": 0.7908006654451993,
+        "f1": 0.7858613162437167,
+        "omission": 0.2091993345548006,
+        "commission": 0.21901671350647506
+      },
+      "checkpoint_sha256": "d331888ec2c1149dd937f2f41f2cabafd78456a7e2e500da9e1ad19817685f50"
+    },
+    {
+      "experiment": "gold_dice",
+      "split": "bolivia",
+      "chips": 15,
+      "best_epoch": 31,
+      "mean_chip_iou": 0.44633920652618536,
+      "metrics": {
+        "tp": 339238,
+        "fp": 79376,
+        "fn": 112663,
+        "tn": 2293157,
+        "valid_pixels": 2824434,
+        "iou": 0.63853319454823,
+        "precision": 0.8103837903175718,
+        "recall": 0.7506909699248286,
+        "f1": 0.7793961046047455,
+        "omission": 0.24930903007517133,
+        "commission": 0.1896162096824282
+      },
+      "checkpoint_sha256": "d331888ec2c1149dd937f2f41f2cabafd78456a7e2e500da9e1ad19817685f50"
+    },
+    {
+      "experiment": "gold_combined",
+      "split": "test",
+      "chips": 88,
+      "best_epoch": 49,
+      "mean_chip_iou": 0.4067509533672143,
+      "metrics": {
+        "tp": 1932436,
+        "fp": 408227,
+        "fn": 582572,
+        "tn": 17520724,
+        "valid_pixels": 20443959,
+        "iou": 0.6610607768448311,
+        "precision": 0.8255934322882021,
+        "recall": 0.7683617706186223,
+        "f1": 0.7959501374784247,
+        "omission": 0.2316382293813777,
+        "commission": 0.17440656771179788
+      },
+      "checkpoint_sha256": "80bee04f73d6b619c094aaa067067a2c7d639c77911498a6569a9b7b128dd56f"
+    },
+    {
+      "experiment": "gold_combined",
+      "split": "bolivia",
+      "chips": 15,
+      "best_epoch": 49,
+      "mean_chip_iou": 0.40572032377224565,
+      "metrics": {
+        "tp": 297944,
+        "fp": 57925,
+        "fn": 153957,
+        "tn": 2314608,
+        "valid_pixels": 2824434,
+        "iou": 0.5844033062260457,
+        "precision": 0.8372294299306767,
+        "recall": 0.6593125485449247,
+        "f1": 0.7376951359916808,
+        "omission": 0.34068745145507534,
+        "commission": 0.16277057006932327
+      },
+      "checkpoint_sha256": "80bee04f73d6b619c094aaa067067a2c7d639c77911498a6569a9b7b128dd56f"
+    },
+    {
+      "experiment": "gold_weak_bce",
+      "split": "test",
+      "chips": 88,
+      "best_epoch": 28,
+      "mean_chip_iou": 0.3250648457377374,
+      "metrics": {
+        "tp": 1819054,
+        "fp": 467583,
+        "fn": 695954,
+        "tn": 17461368,
+        "valid_pixels": 20443959,
+        "iou": 0.6098905280677103,
+        "precision": 0.7955149855442731,
+        "recall": 0.7232796078581062,
+        "f1": 0.7576795035867916,
+        "omission": 0.27672039214189376,
+        "commission": 0.2044850144557269
+      },
+      "checkpoint_sha256": "70cbf9a0cc1b2f4923e691a33e4c4f06c98a24605047787d422b3555912cd1c0"
+    },
+    {
+      "experiment": "gold_weak_bce",
+      "split": "bolivia",
+      "chips": 15,
+      "best_epoch": 28,
+      "mean_chip_iou": 0.2690446807627968,
+      "metrics": {
+        "tp": 226886,
+        "fp": 20124,
+        "fn": 225015,
+        "tn": 2352409,
+        "valid_pixels": 2824434,
+        "iou": 0.4806652190032308,
+        "precision": 0.9185296141856605,
+        "recall": 0.5020701436819126,
+        "f1": 0.6492557707633733,
+        "omission": 0.4979298563180874,
+        "commission": 0.0814703858143395
+      },
+      "checkpoint_sha256": "70cbf9a0cc1b2f4923e691a33e4c4f06c98a24605047787d422b3555912cd1c0"
+    },
+    {
+      "experiment": "gold_weak_dice",
+      "split": "test",
+      "chips": 88,
+      "best_epoch": 1,
+      "mean_chip_iou": 0.34874659046711914,
+      "metrics": {
+        "tp": 1909144,
+        "fp": 719742,
+        "fn": 605864,
+        "tn": 17209209,
+        "valid_pixels": 20443959,
+        "iou": 0.5901983151711879,
+        "precision": 0.7262178732740788,
+        "recall": 0.759100567473344,
+        "f1": 0.7422952339220054,
+        "omission": 0.24089943252665597,
+        "commission": 0.27378212672592117
+      },
+      "checkpoint_sha256": "95c2b03eca5bb521d6485b463a713b3f7445c60f95cd0b319695f114d4af711d"
+    },
+    {
+      "experiment": "gold_weak_dice",
+      "split": "bolivia",
+      "chips": 15,
+      "best_epoch": 1,
+      "mean_chip_iou": 0.4789838687552829,
+      "metrics": {
+        "tp": 380844,
+        "fp": 78304,
+        "fn": 71057,
+        "tn": 2294229,
+        "valid_pixels": 2824434,
+        "iou": 0.7182957535292953,
+        "precision": 0.8294580396734822,
+        "recall": 0.8427598080110467,
+        "f1": 0.8360560189408034,
+        "omission": 0.15724019198895334,
+        "commission": 0.1705419603265178
+      },
+      "checkpoint_sha256": "95c2b03eca5bb521d6485b463a713b3f7445c60f95cd0b319695f114d4af711d"
+    },
+    {
+      "experiment": "gold_weak_combined",
+      "split": "test",
+      "chips": 88,
+      "best_epoch": 12,
+      "mean_chip_iou": 0.35934957976106924,
+      "metrics": {
+        "tp": 1936029,
+        "fp": 657684,
+        "fn": 578979,
+        "tn": 17271267,
+        "valid_pixels": 20443959,
+        "iou": 0.6102164975358465,
+        "precision": 0.7464314671669533,
+        "recall": 0.7697903943049088,
+        "f1": 0.757930996818969,
+        "omission": 0.23020960569509122,
+        "commission": 0.2535685328330467
+      },
+      "checkpoint_sha256": "7d40fc6b5cebdbb5b7b0e76f4e1f321743cdc7add2131cf0ee887977c8c96773"
+    },
+    {
+      "experiment": "gold_weak_combined",
+      "split": "bolivia",
+      "chips": 15,
+      "best_epoch": 12,
+      "mean_chip_iou": 0.4511407865489137,
+      "metrics": {
+        "tp": 345582,
+        "fp": 45947,
+        "fn": 106319,
+        "tn": 2326586,
+        "valid_pixels": 2824434,
+        "iou": 0.6941516286095354,
+        "precision": 0.8826472623994647,
+        "recall": 0.7647294429532132,
+        "f1": 0.8194681242071067,
+        "omission": 0.2352705570467868,
+        "commission": 0.11735273760053534
+      },
+      "checkpoint_sha256": "7d40fc6b5cebdbb5b7b0e76f4e1f321743cdc7add2131cf0ee887977c8c96773"
+    }
+  ],
+  "audited_at_utc": "2026-10-09T01:01:11.141947+00:00",
+  "status": "passed"
+}

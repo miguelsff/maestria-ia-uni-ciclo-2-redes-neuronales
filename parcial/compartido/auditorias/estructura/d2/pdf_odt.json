@@ -1,0 +1,298 @@
+{
+  "status": "passed",
+  "masters": {
+    "mri": {
+      "master_odt_path": "parcial/pregunta_1_mri/entregable/informe_mri.odt",
+      "master_odt_sha256": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+      "exported_pdf_path": "parcial/pregunta_1_mri/entregable/informe_mri.pdf",
+      "exported_pdf_sha256": "37f4628a2fd70fe1c9f09ff659761df3f3162b7f7c892fee51fb9f17669b4648",
+      "pages_in_B_receipt": 9
+    },
+    "inundaciones": {
+      "master_odt_path": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.odt",
+      "master_odt_sha256": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+      "exported_pdf_path": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+      "exported_pdf_sha256": "47ca54c719e13f5bfbf61d6ae95dcdc7e31e32e43aee7f355994af450d864f1b",
+      "pages_in_B_receipt": 9
+    },
+    "examen": {
+      "master_odt_path": "parcial/compartido/referencias/examen-parcial.odt",
+      "master_odt_sha256": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "exported_pdf_path": "parcial/compartido/referencias/examen-parcial.pdf",
+      "exported_pdf_sha256": "62c38a21a71bf61fc80ebdf48382869ff578834f756d4096e194bafe873f17a1",
+      "pages_in_B_receipt": 7
+    },
+    "ejemplo": {
+      "master_odt_path": "parcial/compartido/referencias/ejemplo.odt",
+      "master_odt_sha256": "a4cafbcdf13ead013e71dd6c1cdf72f05a9d4d71298f1937eb6553f75da02f38",
+      "exported_pdf_path": "parcial/compartido/referencias/ejemplo.pdf",
+      "exported_pdf_sha256": "f7605a39a1b315e2a6506ddfc823e6039bb63750cdb5edf09b5ca5e082795784",
+      "pages_in_B_receipt": 11
+    },
+    "fauna_borrador_historico": {
+      "master_odt_path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.odt",
+      "master_odt_sha256": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "exported_pdf_path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.pdf",
+      "exported_pdf_sha256": "e6b55856e3e17d2efc5abff5a5ab201322ad45c219c577aedf5ac56ff1c412e7",
+      "pages_in_B_receipt": 10
+    },
+    "inundaciones_borrador_historico": {
+      "master_odt_path": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.odt",
+      "master_odt_sha256": "7d2c3812dad734de605733e18ff440482f60f1d17e99660f4be3db65f22e1b89",
+      "exported_pdf_path": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.pdf",
+      "exported_pdf_sha256": "d2d24481b64171a8cf84ceba750200743f60a101f132987e9fda99896d0b4249",
+      "pages_in_B_receipt": 9
+    },
+    "fauna": {
+      "master_odt_path": "parcial/pregunta_3_fauna/entregable/informe_fauna.odt",
+      "master_odt_sha256": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "exported_pdf_path": "parcial/pregunta_3_fauna/entregable/informe_fauna.pdf",
+      "exported_pdf_sha256": "a429deec1996bdae030a01fce6550b0dfc6005a2043d9939a6908a4ff79b4018",
+      "pages_in_B_receipt": 10
+    },
+    "anexo_occlusion": {
+      "master_odt_path": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.odt",
+      "master_odt_sha256": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "exported_pdf_path": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.pdf",
+      "exported_pdf_sha256": "45cd5d02b7c15c97859eddd30a8ec50180e4303e7aaaf93cbf87fe2e7e3a8e99",
+      "pages_in_B_receipt": 2
+    }
+  },
+  "pdfs": [
+    {
+      "pdf_path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.pdf",
+      "pdf_sha256": "e6b55856e3e17d2efc5abff5a5ab201322ad45c219c577aedf5ac56ff1c412e7",
+      "master_id": "fauna_borrador_historico",
+      "relationship": "exported_from_native_odt",
+      "master_odt_path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.odt",
+      "master_odt_sha256": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "exported_pdf_path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.pdf",
+      "exported_pdf_sha256": "e6b55856e3e17d2efc5abff5a5ab201322ad45c219c577aedf5ac56ff1c412e7",
+      "pages_in_B_receipt": 10,
+      "different_source_and_export_hashes": false,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/original.pdf",
+      "pdf_sha256": "c0e4aee90f16ccd37f4358434895b1cb414ba73f52c06be65ad72d153863c446",
+      "master_id": "fauna_borrador_historico",
+      "relationship": "preserved_pdf_source_of_native_odt",
+      "master_odt_path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.odt",
+      "master_odt_sha256": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "exported_pdf_path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.pdf",
+      "exported_pdf_sha256": "e6b55856e3e17d2efc5abff5a5ab201322ad45c219c577aedf5ac56ff1c412e7",
+      "pages_in_B_receipt": 10,
+      "different_source_and_export_hashes": true,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.pdf",
+      "pdf_sha256": "d2d24481b64171a8cf84ceba750200743f60a101f132987e9fda99896d0b4249",
+      "master_id": "inundaciones_borrador_historico",
+      "relationship": "exported_from_native_odt",
+      "master_odt_path": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.odt",
+      "master_odt_sha256": "7d2c3812dad734de605733e18ff440482f60f1d17e99660f4be3db65f22e1b89",
+      "exported_pdf_path": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.pdf",
+      "exported_pdf_sha256": "d2d24481b64171a8cf84ceba750200743f60a101f132987e9fda99896d0b4249",
+      "pages_in_B_receipt": 9,
+      "different_source_and_export_hashes": false,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/original.pdf",
+      "pdf_sha256": "00c86d3b767cb5ed35f03325cf92d9e906cea3b59e637ab77f044eb2825eeeb0",
+      "master_id": "inundaciones_borrador_historico",
+      "relationship": "preserved_pdf_source_of_native_odt",
+      "master_odt_path": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.odt",
+      "master_odt_sha256": "7d2c3812dad734de605733e18ff440482f60f1d17e99660f4be3db65f22e1b89",
+      "exported_pdf_path": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.pdf",
+      "exported_pdf_sha256": "d2d24481b64171a8cf84ceba750200743f60a101f132987e9fda99896d0b4249",
+      "pages_in_B_receipt": 9,
+      "different_source_and_export_hashes": true,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/archivo/documentos_historicos/tmp/pdfs/wildlife_v6_review/initial_draft.pdf",
+      "pdf_sha256": "c0e4aee90f16ccd37f4358434895b1cb414ba73f52c06be65ad72d153863c446",
+      "master_id": "fauna_borrador_historico",
+      "relationship": "preserved_pdf_source_of_native_odt",
+      "master_odt_path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.odt",
+      "master_odt_sha256": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "exported_pdf_path": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.pdf",
+      "exported_pdf_sha256": "e6b55856e3e17d2efc5abff5a5ab201322ad45c219c577aedf5ac56ff1c412e7",
+      "pages_in_B_receipt": 10,
+      "different_source_and_export_hashes": true,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/archivo/entregas_anteriores/flood/flood_review.pdf",
+      "pdf_sha256": "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38",
+      "master_id": "inundaciones",
+      "relationship": "preserved_pdf_source_of_native_odt",
+      "master_odt_path": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.odt",
+      "master_odt_sha256": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+      "exported_pdf_path": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+      "exported_pdf_sha256": "47ca54c719e13f5bfbf61d6ae95dcdc7e31e32e43aee7f355994af450d864f1b",
+      "pages_in_B_receipt": 9,
+      "different_source_and_export_hashes": true,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/archivo/referencias_originales/ejemplo.pdf",
+      "pdf_sha256": "8532c8745ea326ec7b750c5aedc074523a605e346279521618e95ccc7be2edbd",
+      "master_id": "ejemplo",
+      "relationship": "preserved_pdf_source_of_native_odt",
+      "master_odt_path": "parcial/compartido/referencias/ejemplo.odt",
+      "master_odt_sha256": "a4cafbcdf13ead013e71dd6c1cdf72f05a9d4d71298f1937eb6553f75da02f38",
+      "exported_pdf_path": "parcial/compartido/referencias/ejemplo.pdf",
+      "exported_pdf_sha256": "f7605a39a1b315e2a6506ddfc823e6039bb63750cdb5edf09b5ca5e082795784",
+      "pages_in_B_receipt": 11,
+      "different_source_and_export_hashes": true,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/archivo/referencias_originales/examen-parcial.pdf",
+      "pdf_sha256": "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee",
+      "master_id": "examen",
+      "relationship": "preserved_pdf_source_of_native_odt",
+      "master_odt_path": "parcial/compartido/referencias/examen-parcial.odt",
+      "master_odt_sha256": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "exported_pdf_path": "parcial/compartido/referencias/examen-parcial.pdf",
+      "exported_pdf_sha256": "62c38a21a71bf61fc80ebdf48382869ff578834f756d4096e194bafe873f17a1",
+      "pages_in_B_receipt": 7,
+      "different_source_and_export_hashes": true,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/compartido/referencias/ejemplo.pdf",
+      "pdf_sha256": "f7605a39a1b315e2a6506ddfc823e6039bb63750cdb5edf09b5ca5e082795784",
+      "master_id": "ejemplo",
+      "relationship": "exported_from_native_odt",
+      "master_odt_path": "parcial/compartido/referencias/ejemplo.odt",
+      "master_odt_sha256": "a4cafbcdf13ead013e71dd6c1cdf72f05a9d4d71298f1937eb6553f75da02f38",
+      "exported_pdf_path": "parcial/compartido/referencias/ejemplo.pdf",
+      "exported_pdf_sha256": "f7605a39a1b315e2a6506ddfc823e6039bb63750cdb5edf09b5ca5e082795784",
+      "pages_in_B_receipt": 11,
+      "different_source_and_export_hashes": false,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/compartido/referencias/examen-parcial.pdf",
+      "pdf_sha256": "62c38a21a71bf61fc80ebdf48382869ff578834f756d4096e194bafe873f17a1",
+      "master_id": "examen",
+      "relationship": "exported_from_native_odt",
+      "master_odt_path": "parcial/compartido/referencias/examen-parcial.odt",
+      "master_odt_sha256": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "exported_pdf_path": "parcial/compartido/referencias/examen-parcial.pdf",
+      "exported_pdf_sha256": "62c38a21a71bf61fc80ebdf48382869ff578834f756d4096e194bafe873f17a1",
+      "pages_in_B_receipt": 7,
+      "different_source_and_export_hashes": false,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/pregunta_1_mri/entregable/informe_mri.pdf",
+      "pdf_sha256": "37f4628a2fd70fe1c9f09ff659761df3f3162b7f7c892fee51fb9f17669b4648",
+      "master_id": "mri",
+      "relationship": "exported_from_native_odt",
+      "master_odt_path": "parcial/pregunta_1_mri/entregable/informe_mri.odt",
+      "master_odt_sha256": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+      "exported_pdf_path": "parcial/pregunta_1_mri/entregable/informe_mri.pdf",
+      "exported_pdf_sha256": "37f4628a2fd70fe1c9f09ff659761df3f3162b7f7c892fee51fb9f17669b4648",
+      "pages_in_B_receipt": 9,
+      "different_source_and_export_hashes": false,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/pregunta_1_mri/fuentes_informe/original.pdf",
+      "pdf_sha256": "836ad37efa1155d0678e3494f93d23b282e7a3308e9571dd2cae8841a8ed4c1f",
+      "master_id": "mri",
+      "relationship": "preserved_pdf_source_of_native_odt",
+      "master_odt_path": "parcial/pregunta_1_mri/entregable/informe_mri.odt",
+      "master_odt_sha256": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+      "exported_pdf_path": "parcial/pregunta_1_mri/entregable/informe_mri.pdf",
+      "exported_pdf_sha256": "37f4628a2fd70fe1c9f09ff659761df3f3162b7f7c892fee51fb9f17669b4648",
+      "pages_in_B_receipt": 9,
+      "different_source_and_export_hashes": true,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+      "pdf_sha256": "47ca54c719e13f5bfbf61d6ae95dcdc7e31e32e43aee7f355994af450d864f1b",
+      "master_id": "inundaciones",
+      "relationship": "exported_from_native_odt",
+      "master_odt_path": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.odt",
+      "master_odt_sha256": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+      "exported_pdf_path": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+      "exported_pdf_sha256": "47ca54c719e13f5bfbf61d6ae95dcdc7e31e32e43aee7f355994af450d864f1b",
+      "pages_in_B_receipt": 9,
+      "different_source_and_export_hashes": false,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/pregunta_2_inundaciones/fuentes_informe/original.pdf",
+      "pdf_sha256": "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38",
+      "master_id": "inundaciones",
+      "relationship": "preserved_pdf_source_of_native_odt",
+      "master_odt_path": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.odt",
+      "master_odt_sha256": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+      "exported_pdf_path": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+      "exported_pdf_sha256": "47ca54c719e13f5bfbf61d6ae95dcdc7e31e32e43aee7f355994af450d864f1b",
+      "pages_in_B_receipt": 9,
+      "different_source_and_export_hashes": true,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.pdf",
+      "pdf_sha256": "45cd5d02b7c15c97859eddd30a8ec50180e4303e7aaaf93cbf87fe2e7e3a8e99",
+      "master_id": "anexo_occlusion",
+      "relationship": "exported_from_native_odt",
+      "master_odt_path": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.odt",
+      "master_odt_sha256": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "exported_pdf_path": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.pdf",
+      "exported_pdf_sha256": "45cd5d02b7c15c97859eddd30a8ec50180e4303e7aaaf93cbf87fe2e7e3a8e99",
+      "pages_in_B_receipt": 2,
+      "different_source_and_export_hashes": false,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/pregunta_3_fauna/entregable/informe_fauna.pdf",
+      "pdf_sha256": "a429deec1996bdae030a01fce6550b0dfc6005a2043d9939a6908a4ff79b4018",
+      "master_id": "fauna",
+      "relationship": "exported_from_native_odt",
+      "master_odt_path": "parcial/pregunta_3_fauna/entregable/informe_fauna.odt",
+      "master_odt_sha256": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "exported_pdf_path": "parcial/pregunta_3_fauna/entregable/informe_fauna.pdf",
+      "exported_pdf_sha256": "a429deec1996bdae030a01fce6550b0dfc6005a2043d9939a6908a4ff79b4018",
+      "pages_in_B_receipt": 10,
+      "different_source_and_export_hashes": false,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/pregunta_3_fauna/evidencias/anexo_occlusion_provisional.pdf",
+      "pdf_sha256": "39f42dba272264327200585267136867aa500478b7c3eedd9206428feef48cde",
+      "master_id": "anexo_occlusion",
+      "relationship": "preserved_pdf_source_of_native_odt",
+      "master_odt_path": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.odt",
+      "master_odt_sha256": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "exported_pdf_path": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.pdf",
+      "exported_pdf_sha256": "45cd5d02b7c15c97859eddd30a8ec50180e4303e7aaaf93cbf87fe2e7e3a8e99",
+      "pages_in_B_receipt": 2,
+      "different_source_and_export_hashes": true,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    },
+    {
+      "pdf_path": "parcial/pregunta_3_fauna/evidencias/informe_fauna_provisional.pdf",
+      "pdf_sha256": "8ce4c2d889c40b0dbfe913f70062568c109cf7bf98600c1b93a8270c670a11a8",
+      "master_id": "fauna",
+      "relationship": "preserved_pdf_source_of_native_odt",
+      "master_odt_path": "parcial/pregunta_3_fauna/entregable/informe_fauna.odt",
+      "master_odt_sha256": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "exported_pdf_path": "parcial/pregunta_3_fauna/entregable/informe_fauna.pdf",
+      "exported_pdf_sha256": "a429deec1996bdae030a01fce6550b0dfc6005a2043d9939a6908a4ff79b4018",
+      "pages_in_B_receipt": 10,
+      "different_source_and_export_hashes": true,
+      "reason": "Fuente previa y exportación nativa mantienen hashes distintos; asociación acreditada por recibos B."
+    }
+  ],
+  "unassociated_pdfs": []
+}

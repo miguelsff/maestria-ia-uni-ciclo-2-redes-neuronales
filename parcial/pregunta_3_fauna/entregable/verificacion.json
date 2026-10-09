@@ -43,7 +43,7 @@
     "data/v6/wildlife/yolov8s/args.yaml": "50d18f03b0a679bd4134b424399b0981276f98bd9b010b2a86a01464fdff0b56",
     "data/v6/wildlife/yolov8s/results.csv": "f1b60800900f84a6c07e5db411ccaa00162b7111b7ab901e55595a1035eed4f9",
     "integridad_datos.json": "ce4578bde13054803dc3f9524e20bd7c3d2049b76a34220da212e19117c44440",
-    "LEEME.md": "18c25c2c94a7024301bb852848899ee9527a652c5ab907b0cd5456accef8edcf",
+    "LEEME.md": "b1977fefdd56b78711972dfada86ea11d622bdaf5c95289d5cc210b99fc875fc",
     "metricas_occlusion.csv": "b67d872ff27548c95df9639e88259102433508b50c0f4fb33c3750228707447a",
     "informe_fauna.odt": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
     "informe_fauna.pdf": "a429deec1996bdae030a01fce6550b0dfc6005a2043d9939a6908a4ff79b4018",
@@ -61,6 +61,12 @@
     "content_and_visual_review_passed": true,
     "source_commit_A": "1d623e792dc0057f007b6c3ec97df5268860ec30",
     "audit_directory": "parcial/compartido/auditorias/documentos_b1",
+    "training_or_inference": false
+  },
+  "migration_D2": {
+    "base_integrated": "76557bc5aecb7995f1af0fed130ac22cd66ece82",
+    "status": "bytes_preserved",
+    "receipt": "../../compartido/auditorias/estructura/d2/verificacion.json",
     "training_or_inference": false
   }
 }
