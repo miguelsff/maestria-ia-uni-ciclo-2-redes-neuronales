@@ -1,0 +1,95 @@
+{
+  "paragraph_bbox": [
+    113.97799682617188,
+    259.5972754764557,
+    539.209228515625,
+    370.4258887577057
+  ],
+  "source_baselines": [
+    268.4639892578125,
+    279.37298583984375,
+    290.2820129394531,
+    335.114013671875,
+    346.4209899902344,
+    357.3299865722656
+  ],
+  "source_gaps": [
+    10.909,
+    10.909,
+    44.832,
+    11.307,
+    10.909
+  ],
+  "writer_fixed_line_height": 10.909027099609375,
+  "approximate_repacked_baselines": [
+    268.4639892578125,
+    279.3730163574219,
+    290.28204345703125,
+    301.1910705566406,
+    312.10009765625,
+    323.0091247558594
+  ],
+  "partial_tables": [
+    {
+      "bbox": [
+        108.0,
+        238.01300048828125,
+        537.0,
+        260.62799072265625
+      ],
+      "rows": [
+        [
+          "Experimento",
+          "Función de Pérdida",
+          "Dice",
+          "Sensibilidad",
+          "Especificidad",
+          "AUC"
+        ],
+        [
+          "",
+          "",
+          "Estudio de Ablación (DRIVE test)",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "bbox": [
+        108.0,
+        293.7539978027344,
+        537.0,
+        327.27801513671875
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "Generalización (Modelo Baseline)",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Baseline",
+          "Dice sola (DRIVE train)",
+          "0.5630",
+          "0.6103",
+          "0.9508",
+          "0.9104"
+        ],
+        [
+          "Baseline",
+          "Dice sola (CHASE inferencia)",
+          "0.2215",
+          "0.4699",
+          "0.7965",
+          "0.7452"
+        ]
+      ]
+    }
+  ],
+  "interpretation": "Automatic table detection splits one six-column table into partial tables. Remaining source lines with a large vertical gap are packed into one paragraph using a median fixed line height; the later native table occupies the repacked lines positions. Visual inspection confirms lower CLAHE rows are missing in the exported PDF but present in ODT XML."
+}

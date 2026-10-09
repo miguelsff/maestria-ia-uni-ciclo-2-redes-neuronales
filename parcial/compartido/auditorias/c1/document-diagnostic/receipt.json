@@ -1,0 +1,286 @@
+{
+  "audit_at_utc": "2026-10-09T02:50:32.350624+00:00",
+  "date_peru": "2026-10-08",
+  "status": "diagnostic_complete_not_document_approval",
+  "source_worktree": "C:/Users/USER/.codex/worktrees/3512/maestria-ia-uni-ciclo-2-redes-neuronales",
+  "own_worktree": "C:/Users/USER/.codex/worktrees/959d/maestria-ia-uni-ciclo-2-redes-neuronales",
+  "snapshot_directory": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\document-diagnostic",
+  "documents": 8,
+  "source_worktree_write_operations": 0,
+  "writer_or_exporter_invoked": false,
+  "image": "exam-document-renderer:b1",
+  "pymupdf": "1.26.7",
+  "mupdf": "1.26.12",
+  "glyph_conclusion": {
+    "source_lines_with_control_glyphs": 10,
+    "preserved_by_extract_document_payload": 10,
+    "present_in_previous_odt_xml": 0,
+    "present_in_corrected_odt_xml": 10,
+    "current_annex_missing_normalized_token_instances_xml": 0,
+    "current_annex_missing_normalized_token_instances_pdf": 0,
+    "old_hashes_itself_preserved": true,
+    "old_signature_label_lost": true
+  },
+  "additional_finding": {
+    "document": "ejemplo",
+    "page": 9,
+    "table": 8,
+    "source_table_split_into_partial_native_tables": 2,
+    "remaining_paragraph_source_baseline_gap": 44.832,
+    "paragraph_fixed_line_height": 10.909,
+    "repacked_baselines": [
+      301.191,
+      312.1,
+      323.009
+    ],
+    "intersected_later_table_vertical_bounds": [
+      293.754,
+      327.278
+    ],
+    "missing_exported_table_values": [
+      "0.2107",
+      "0.9972",
+      "0.3412",
+      "0.7102",
+      "0.1799",
+      "0.9848",
+      "0.3420",
+      "0.7031"
+    ],
+    "values_present_in_odt_xml": true,
+    "visual_inspection_confirmed": true,
+    "scope": "audited snapshot; B is working concurrently"
+  },
+  "tests": "4 unittest tests passed; ruff passed",
+  "source_drift_after_capture": [
+    {
+      "id": "mri",
+      "kind": "source",
+      "snapshot_sha256": "836ad37efa1155d0678e3494f93d23b282e7a3308e9571dd2cae8841a8ed4c1f",
+      "live_sha256": "836ad37efa1155d0678e3494f93d23b282e7a3308e9571dd2cae8841a8ed4c1f",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "mri",
+      "kind": "odt",
+      "snapshot_sha256": "4307f67793b5f9759cf56bcb047c1ad2a8e83d76fb273919a7fc7ef07c33fd6b",
+      "live_sha256": "b62cd25051f56fc977316e62e3480f36405ed908f2742ebd93d6d2c9f3465417",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "mri",
+      "kind": "pdf",
+      "snapshot_sha256": "a438e75fae00fce0cf88de1cda167aeaf64a947ded3fd5a006147d304c5d17bf",
+      "live_sha256": "babe3108cdd2b1f5ebc50f6d7313aef1473c901b71dc7c063fb9c3e593f2a99b",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "inundaciones",
+      "kind": "source",
+      "snapshot_sha256": "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38",
+      "live_sha256": "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "inundaciones",
+      "kind": "odt",
+      "snapshot_sha256": "5631e8208c974781eb7f3c3970499b730177c533a3e7fbe1ffa7815a254a0d72",
+      "live_sha256": "fa7028cab4df81f2587bc2aec9c33ded74728c69290ec57599d3ee3c8982a340",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "inundaciones",
+      "kind": "pdf",
+      "snapshot_sha256": "4ece98873f5d50f9a96ebb9a164be134f6bc92082a5f976371acc61e3cd4c4f6",
+      "live_sha256": "ffb513e8ae427d663d2b98aaf02cfccd035f5360b7a5e2f271e792b491426999",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "examen",
+      "kind": "source",
+      "snapshot_sha256": "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee",
+      "live_sha256": "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "examen",
+      "kind": "odt",
+      "snapshot_sha256": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "live_sha256": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "examen",
+      "kind": "pdf",
+      "snapshot_sha256": "c66c69db3344f986edef2b8b4616488bc006cd19d1969925e6e99ed89f1696d7",
+      "live_sha256": "6ee71169436872f1586f1b37c736fd926c28bd5b412475d0de4adb65d9261f5e",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "ejemplo",
+      "kind": "source",
+      "snapshot_sha256": "8532c8745ea326ec7b750c5aedc074523a605e346279521618e95ccc7be2edbd",
+      "live_sha256": "8532c8745ea326ec7b750c5aedc074523a605e346279521618e95ccc7be2edbd",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "ejemplo",
+      "kind": "odt",
+      "snapshot_sha256": "bac3e0d82038fdeee17441cc45ce9e46e466a59eaeba1aa2fcb4bee834fba4d7",
+      "live_sha256": "2cbeb1acf276300c35f926863f4891ca91130386540a474ad726470ba6318ac1",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "ejemplo",
+      "kind": "pdf",
+      "snapshot_sha256": "02174110ce9662a605f5ce119b5d0e5634ea3ff9c0573456fe19fabf8b744369",
+      "live_sha256": "aba450a722f020d6f5df300815095cd1915e585918d4c84b2de4e350be7b5c05",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "fauna_borrador_historico",
+      "kind": "source",
+      "snapshot_sha256": "c0e4aee90f16ccd37f4358434895b1cb414ba73f52c06be65ad72d153863c446",
+      "live_sha256": "c0e4aee90f16ccd37f4358434895b1cb414ba73f52c06be65ad72d153863c446",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "fauna_borrador_historico",
+      "kind": "odt",
+      "snapshot_sha256": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "live_sha256": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "fauna_borrador_historico",
+      "kind": "pdf",
+      "snapshot_sha256": "efdc1f492d99050db364f024c67565b68cb9d1de50714516a3068f074ead0944",
+      "live_sha256": "b16771559486a3f3e45273417bb3ef8884e4b2a25245fb413d27309cf87e15c8",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "inundaciones_borrador_historico",
+      "kind": "source",
+      "snapshot_sha256": "00c86d3b767cb5ed35f03325cf92d9e906cea3b59e637ab77f044eb2825eeeb0",
+      "live_sha256": "00c86d3b767cb5ed35f03325cf92d9e906cea3b59e637ab77f044eb2825eeeb0",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "inundaciones_borrador_historico",
+      "kind": "odt",
+      "snapshot_sha256": "ba3921430c436b7987386b1e5b2315c14c893d7e3eb05ff7158b50e0d6f0822b",
+      "live_sha256": "e89503adfbae97ef1d6fb128c1accc4c46a2ef41f464787952d4b8d03a37147b",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "inundaciones_borrador_historico",
+      "kind": "pdf",
+      "snapshot_sha256": "cadc4433ee2b606a8e5dcb8542fa0c2ec4c1750bf2edb8fc3b869f79f652eeed",
+      "live_sha256": "cdc0801caadb831983b112de5a4770f046b494d0b057eb925f333b22de473c5f",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "fauna",
+      "kind": "source",
+      "snapshot_sha256": "8ce4c2d889c40b0dbfe913f70062568c109cf7bf98600c1b93a8270c670a11a8",
+      "live_sha256": "8ce4c2d889c40b0dbfe913f70062568c109cf7bf98600c1b93a8270c670a11a8",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "fauna",
+      "kind": "odt",
+      "snapshot_sha256": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "live_sha256": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "fauna",
+      "kind": "pdf",
+      "snapshot_sha256": "d7d8588bb4fd4e47383de181b41561001facee7bf551d5ff5a2c1da88a16acff",
+      "live_sha256": "b676f097b71715130ec6059c29f7b912c3184ad1a3d723f327cc8b8d7ec2df99",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "anexo_occlusion",
+      "kind": "source",
+      "snapshot_sha256": "39f42dba272264327200585267136867aa500478b7c3eedd9206428feef48cde",
+      "live_sha256": "39f42dba272264327200585267136867aa500478b7c3eedd9206428feef48cde",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "anexo_occlusion",
+      "kind": "odt",
+      "snapshot_sha256": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "live_sha256": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "same_as_snapshot": true
+    },
+    {
+      "id": "anexo_occlusion",
+      "kind": "pdf",
+      "snapshot_sha256": "ff05c121a2e5c679ccdd26125f138181589e7b1d8f00d82c6cdfd7529962a6e4",
+      "live_sha256": "2a407a54b259f3f2aebf2b3eff5975d7b32bdff17c893768b393bb3dc8c3b967",
+      "same_as_snapshot": false
+    },
+    {
+      "id": "anexo_previous",
+      "kind": "odt",
+      "snapshot_sha256": "3838d7bf600b796bcf1031ac9b526e1d770f23fa3953ed10f7963012a4463299",
+      "live_sha256": "3838d7bf600b796bcf1031ac9b526e1d770f23fa3953ed10f7963012a4463299",
+      "same_as_snapshot": true
+    }
+  ],
+  "limitations": [
+    "Coverage is diagnostic; formula serialization, cell order and line breaks need interpretation.",
+    "The control mapping U+001C->fi and U+0015->hyphen is validated for the inspected source; not a universal PDF repair.",
+    "No end-to-end reproduction or final document approval is claimed."
+  ],
+  "rollback_boundary": "Remove new audit_document_content.py, its isolated tests and diagnostic receipts; scientific sources and B documents remain untouched.",
+  "c2_authorized": false,
+  "later_state_verified": {
+    "checked_at_utc": "2026-10-09T02:53:19.736051+00:00",
+    "documents": {
+      "ejemplo": {
+        "source": "C:\\Users\\USER\\.codex\\worktrees\\3512\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\ejemplo.pdf",
+        "sha256": "aba450a722f020d6f5df300815095cd1915e585918d4c84b2de4e350be7b5c05",
+        "pages": 11,
+        "checks": {
+          "table8_metrics_present_on_page9": {
+            "0.2107": 2,
+            "0.9972": 2,
+            "0.3412": 2,
+            "0.7102": 1,
+            "0.1799": 1,
+            "0.9848": 2,
+            "0.3420": 2,
+            "0.7031": 1
+          },
+          "sha_matches_coordinator": true,
+          "coordinator_visual_review": "all headers/groups and rows, including both CLAHE rows, visible"
+        }
+      },
+      "anexo": {
+        "source": "C:\\Users\\USER\\.codex\\worktrees\\3512\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\pregunta_3_fauna\\entregable\\anexo_occlusion.pdf",
+        "sha256": "2a407a54b259f3f2aebf2b3eff5975d7b32bdff17c893768b393bb3dc8c3b967",
+        "pages": 2,
+        "checks": {
+          "sha_prefix_matches_coordinator": false,
+          "markers": {
+            "398": true,
+            "6.04": true,
+            "6.31": true,
+            "0.28": true,
+            "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9": true,
+            "b5ede4e0f8d46aef5b579f64c3b7f7c476b4aeb93eafaeffaafcdd4e0da124f9": true
+          },
+          "coordinator_visual_review": "Coordinator approved an earlier ff05c121-prefix PDF; this observed 2a407a54-prefix PDF has a different SHA, so that approval is not transferred."
+        }
+      }
+    },
+    "historical_table8_finding_resolved_in_latest_example": true,
+    "remaining_geometry_reported_by_coordinator": [
+      "ejemplo pages 4/5 formulas",
+      "flood page 3 formulas"
+    ],
+    "remaining_geometry_independently_retriaged_in_this_task": false
+  }
+}

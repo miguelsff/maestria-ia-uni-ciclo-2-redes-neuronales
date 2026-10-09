@@ -1,0 +1,1195 @@
+{
+  "mri": {
+    "hashes": {
+      "source": "836ad37efa1155d0678e3494f93d23b282e7a3308e9571dd2cae8841a8ed4c1f",
+      "odt": "4307f67793b5f9759cf56bcb047c1ad2a8e83d76fb273919a7fc7ef07c33fd6b",
+      "pdf": "a438e75fae00fce0cf88de1cda167aeaf64a947ded3fd5a006147d304c5d17bf"
+    },
+    "structure": {
+      "paragraphs": 404,
+      "embedded_xml_objects": 1
+    },
+    "source_to_odt": {
+      "source_tokens": 3332,
+      "missing_token_instances": 8,
+      "missing_tokens": {
+        "mij": 2,
+        "yij": 2,
+        "lbce": 1,
+        "pij": 2,
+        "ax": 1
+      },
+      "order_independent_token_coverage": 0.9975990396158463,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_to_pdf": {
+      "source_tokens": 3332,
+      "missing_token_instances": 4,
+      "missing_tokens": {
+        "p": 2,
+        "m": 1,
+        "ax": 1
+      },
+      "order_independent_token_coverage": 0.9987995198079231,
+      "whitespace_insensitive_character_multiset_loss": {
+        "p": 2
+      }
+    },
+    "odt_to_pdf": {
+      "source_tokens": 3364,
+      "missing_token_instances": 42,
+      "missing_tokens": {
+        "y": 4,
+        "bce": 2,
+        "1": 3,
+        "ij": 14,
+        "p": 4,
+        "m": 4,
+        "l": 2,
+        "log": 2,
+        "max": 1,
+        "func": 1,
+        "sum": 2,
+        "left": 1,
+        "right": 1,
+        "over": 1
+      },
+      "order_independent_token_coverage": 0.9875148632580262,
+      "whitespace_insensitive_character_multiset_loss": {
+        "c": 2,
+        "l": 4,
+        "a": 1,
+        "s": 2,
+        "i": 9,
+        "f": 2,
+        "n": 1,
+        "m": 5,
+        "u": 3,
+        "t": 2,
+        "e": 3,
+        "o": 3,
+        "r": 2,
+        "y": 2,
+        "p": 2,
+        "v": 1,
+        "b": 1,
+        "g": 3,
+        "h": 1,
+        "j": 8,
+        "x": 1,
+        "1": 3
+      }
+    },
+    "source_extractor_difference": {
+      "source_tokens": 3332,
+      "missing_token_instances": 2,
+      "missing_tokens": {
+        "rama": 1,
+        "codex": 1
+      },
+      "order_independent_token_coverage": 0.9993997599039616,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "exported_extractor_difference": {
+      "source_tokens": 3329,
+      "missing_token_instances": 2,
+      "missing_tokens": {
+        "yij": 1,
+        "log": 1
+      },
+      "order_independent_token_coverage": 0.9993992189846801,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_control_lines": [],
+    "line_candidates": [],
+    "limitations": "Token/line differences require inspection: formula objects, cell order, line wrapping and font encodings can change extraction. Character multisets are an additional loss indicator, not proof of semantic preservation. Known control maps apply to the inspected Computer Modern sources."
+  },
+  "inundaciones": {
+    "hashes": {
+      "source": "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38",
+      "odt": "5631e8208c974781eb7f3c3970499b730177c533a3e7fbe1ffa7815a254a0d72",
+      "pdf": "4ece98873f5d50f9a96ebb9a164be134f6bc92082a5f976371acc61e3cd4c4f6"
+    },
+    "structure": {
+      "paragraphs": 350,
+      "embedded_xml_objects": 2
+    },
+    "source_to_odt": {
+      "source_tokens": 3462,
+      "missing_token_instances": 15,
+      "missing_tokens": {
+        "vk": 5,
+        "pi": 3,
+        "lbce": 1,
+        "x": 1,
+        "yi": 3,
+        "ldice": 1,
+        "piyi": 1
+      },
+      "order_independent_token_coverage": 0.9956672443674177,
+      "whitespace_insensitive_character_multiset_loss": {
+        "x": 1
+      }
+    },
+    "source_to_pdf": {
+      "source_tokens": 3462,
+      "missing_token_instances": 10,
+      "missing_tokens": {
+        "vk": 5,
+        "x": 1,
+        "p": 3,
+        "piyi": 1
+      },
+      "order_independent_token_coverage": 0.9971114962449451,
+      "whitespace_insensitive_character_multiset_loss": {
+        "p": 3,
+        "x": 1
+      }
+    },
+    "odt_to_pdf": {
+      "source_tokens": 3541,
+      "missing_token_instances": 87,
+      "missing_tokens": {
+        "in": 4,
+        "abs": 1,
+        "6": 1,
+        "v": 5,
+        "2": 1,
+        "1": 4,
+        "y": 8,
+        "bce": 2,
+        "dice": 2,
+        "epsilon": 3,
+        "10": 1,
+        "k": 7,
+        "p": 8,
+        "l": 4,
+        "i": 20,
+        "log": 2,
+        "func": 2,
+        "over": 2,
+        "sum": 4,
+        "from": 4,
+        "left": 1,
+        "right": 1
+      },
+      "order_independent_token_coverage": 0.9754306693024569,
+      "whitespace_insensitive_character_multiset_loss": {
+        "y": 4,
+        "u": 6,
+        "i": 21,
+        "n": 9,
+        "a": 1,
+        "d": 1,
+        "k": 7,
+        "m": 8,
+        "g": 3,
+        "h": 1,
+        "e": 8,
+        "r": 7,
+        "o": 11,
+        "p": 7,
+        "l": 8,
+        "t": 2,
+        "c": 4,
+        "v": 7,
+        "2": 1,
+        "0": 1,
+        "1": 5,
+        "s": 8,
+        "b": 2,
+        "6": 1,
+        "f": 7
+      }
+    },
+    "source_extractor_difference": {
+      "source_tokens": 3462,
+      "missing_token_instances": 25,
+      "missing_tokens": {
+        "de": 1,
+        "a": 1,
+        "512": 1,
+        "10": 1,
+        "usa": 1,
+        "ε": 1,
+        "0,3": 1,
+        "tpk": 4,
+        "fpk": 2,
+        "fnk": 2,
+        "tp": 4,
+        "fp": 1,
+        "fn": 1,
+        "parcial": 1,
+        "in": 1,
+        "cvpr": 1,
+        "forest": 1
+      },
+      "order_independent_token_coverage": 0.9927787406123628,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "exported_extractor_difference": {
+      "source_tokens": 3464,
+      "missing_token_instances": 12,
+      "missing_tokens": {
+        "v": 4,
+        "k": 5,
+        "p": 1,
+        "yi": 1,
+        "log": 1
+      },
+      "order_independent_token_coverage": 0.9965357967667436,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_control_lines": [],
+    "line_candidates": [
+      {
+        "page": 3,
+        "bbox": [
+          284.7209777832031,
+          115.28279876708984,
+          420.4545593261719,
+          126.8695068359375
+        ],
+        "text": "[yi log pi + (1 −yi) log(1 −pi)] .",
+        "controls": [],
+        "fonts": [
+          "CMMI10",
+          "CMMI7",
+          "CMR10",
+          "CMSY10"
+        ],
+        "present_in_odt_xml": false,
+        "present_in_exported_pdf": false,
+        "classification": "xml_or_order_candidate"
+      }
+    ],
+    "limitations": "Token/line differences require inspection: formula objects, cell order, line wrapping and font encodings can change extraction. Character multisets are an additional loss indicator, not proof of semantic preservation. Known control maps apply to the inspected Computer Modern sources."
+  },
+  "examen": {
+    "hashes": {
+      "source": "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee",
+      "odt": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "pdf": "c66c69db3344f986edef2b8b4616488bc006cd19d1969925e6e99ed89f1696d7"
+    },
+    "structure": {
+      "paragraphs": 142,
+      "embedded_xml_objects": 0
+    },
+    "source_to_odt": {
+      "source_tokens": 2799,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_to_pdf": {
+      "source_tokens": 2799,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "odt_to_pdf": {
+      "source_tokens": 2799,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_extractor_difference": {
+      "source_tokens": 2799,
+      "missing_token_instances": 147,
+      "missing_tokens": {
+        "examen": 1,
+        "de": 17,
+        "y": 3,
+        "aprendizaje": 1,
+        "es": 1,
+        "un": 4,
+        "5": 1,
+        "estudiantes": 1,
+        "requiere": 1,
+        "a": 2,
+        "los": 1,
+        "deben": 1,
+        "una": 4,
+        "las": 1,
+        "pero": 1,
+        "la": 2,
+        "el": 6,
+        "tipo": 1,
+        "en": 7,
+        "al": 1,
+        "clasificación": 1,
+        "rodilla": 1,
+        "resonancia": 1,
+        "magnética": 1,
+        "estudio": 1,
+        "referencia": 1,
+        "para": 2,
+        "evaluar": 1,
+        "lesiones": 1,
+        "ligamentos": 1,
+        "su": 1,
+        "modelo": 1,
+        "doce": 1,
+        "relevantes": 1,
+        "conjunto": 1,
+        "datos": 1,
+        "doradas": 1,
+        "reporte": 2,
+        "no": 2,
+        "menos": 1,
+        "dos": 1,
+        "decisiones": 1,
+        "kaggle": 1,
+        "studies": 1,
+        "58": 1,
+        "anotadas": 1,
+        "oficial": 2,
+        "code": 1,
+        "enviar": 1,
+        "solución": 1,
+        "leaderboard": 1,
+        "usar": 1,
+        "entre": 1,
+        "multilingües": 1,
+        "embeddings": 1,
+        "usando": 1,
+        "desbalance": 1,
+        "manejo": 1,
+        "región": 1,
+        "riesgo": 1,
+        "cómo": 1,
+        "inundación": 1,
+        "saber": 1,
+        "dónde": 1,
+        "chips": 1,
+        "abundantes": 1,
+        "decidir": 1,
+        "justificar": 1,
+        "empíricamente": 1,
+        "combinar": 1,
+        "nunca": 1,
+        "débil": 1,
+        "derivada": 1,
+        "generalización": 3,
+        "experimento": 2,
+        "geográfica": 1,
+        "partición": 2,
+        "especie": 1,
+        "animales": 1,
+        "pequeños": 1,
+        "lejanos": 1,
+        "respecto": 1,
+        "cámara": 3,
+        "locación": 1,
+        "módulo": 1,
+        "distintas": 1,
+        "140": 1,
+        "ubicaciones": 2,
+        "70": 1,
+        "dentro": 1,
+        "vistas": 1,
+        "esta": 1,
+        "falso": 1,
+        "negativo": 1,
+        "amenazada": 1,
+        "detectada": 1,
+        "excluida": 1,
+        "desplegar": 1,
+        "entrenado": 1
+      },
+      "order_independent_token_coverage": 0.947481243301179,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "exported_extractor_difference": {
+      "source_tokens": 2799,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_control_lines": [],
+    "line_candidates": [],
+    "limitations": "Token/line differences require inspection: formula objects, cell order, line wrapping and font encodings can change extraction. Character multisets are an additional loss indicator, not proof of semantic preservation. Known control maps apply to the inspected Computer Modern sources."
+  },
+  "ejemplo": {
+    "hashes": {
+      "source": "8532c8745ea326ec7b750c5aedc074523a605e346279521618e95ccc7be2edbd",
+      "odt": "bac3e0d82038fdeee17441cc45ce9e46e466a59eaeba1aa2fcb4bee834fba4d7",
+      "pdf": "02174110ce9662a605f5ce119b5d0e5634ea3ff9c0573456fe19fabf8b744369"
+    },
+    "structure": {
+      "paragraphs": 338,
+      "embedded_xml_objects": 4
+    },
+    "source_to_odt": {
+      "source_tokens": 3527,
+      "missing_token_instances": 22,
+      "missing_tokens": {
+        "lbce": 1,
+        "x": 2,
+        "yi": 5,
+        "pi": 5,
+        "ldice": 2,
+        "pn": 3,
+        "piyi": 1,
+        "ltotal": 1,
+        "lw": 2
+      },
+      "order_independent_token_coverage": 0.9937624043096116,
+      "whitespace_insensitive_character_multiset_loss": {
+        "x": 2
+      }
+    },
+    "source_to_pdf": {
+      "source_tokens": 3527,
+      "missing_token_instances": 51,
+      "missing_tokens": {
+        "de": 1,
+        "p": 6,
+        "en": 2,
+        "drive": 1,
+        "dominio": 1,
+        "chase": 1,
+        "adaptación": 1,
+        "clahe": 3,
+        "bce": 4,
+        "x": 2,
+        "dice": 2,
+        "pn": 3,
+        "piyi": 1,
+        "lw": 2,
+        "peso": 2,
+        "30": 2,
+        "baseline": 1,
+        "test": 1,
+        "2t": 1,
+        "f": 5,
+        "t": 1,
+        "0.2107": 1,
+        "0.9972": 1,
+        "0.3412": 1,
+        "0.1799": 1,
+        "0.9848": 1,
+        "0.3420": 1,
+        "0.7102": 1,
+        "0.7031": 1
+      },
+      "order_independent_token_coverage": 0.9855401190813723,
+      "whitespace_insensitive_character_multiset_loss": {
+        "s": 5,
+        "e": 17,
+        "m": 1,
+        "n": 8,
+        "t": 5,
+        "a": 8,
+        "c": 9,
+        "i": 6,
+        "ó": 1,
+        "d": 6,
+        "v": 1,
+        "o": 4,
+        "r": 1,
+        "p": 12,
+        "b": 2,
+        "l": 3,
+        "h": 4,
+        "f": 5,
+        "x": 2,
+        "1": 5,
+        "2": 6,
+        "0": 14,
+        "4": 3,
+        "8": 2,
+        "9": 5,
+        "7": 5,
+        "3": 5
+      }
+    },
+    "odt_to_pdf": {
+      "source_tokens": 3642,
+      "missing_token_instances": 180,
+      "missing_tokens": {
+        "de": 1,
+        "i": 29,
+        "p": 18,
+        "en": 2,
+        "y": 12,
+        "drive": 1,
+        "dominio": 1,
+        "chase": 1,
+        "adaptación": 1,
+        "clahe": 3,
+        "1": 12,
+        "2": 1,
+        "bce": 4,
+        "dice": 6,
+        "peso": 2,
+        "30": 3,
+        "10": 1,
+        "baseline": 1,
+        "test": 1,
+        "2t": 1,
+        "f": 5,
+        "n": 10,
+        "t": 1,
+        "6": 1,
+        "0.2107": 1,
+        "0.9972": 1,
+        "0.3412": 1,
+        "0.1799": 1,
+        "0.9848": 1,
+        "0.3420": 1,
+        "0.7102": 1,
+        "0.7031": 1,
+        "l": 12,
+        "to": 5,
+        "log": 4,
+        "func": 6,
+        "over": 3,
+        "sum": 5,
+        "from": 5,
+        "left": 2,
+        "right": 2,
+        "epsilon": 3,
+        "total": 2,
+        "wbce": 4,
+        "cdot": 1
+      },
+      "order_independent_token_coverage": 0.9505766062602965,
+      "whitespace_insensitive_character_multiset_loss": {
+        "s": 13,
+        "e": 30,
+        "g": 6,
+        "m": 11,
+        "n": 24,
+        "t": 17,
+        "a": 9,
+        "c": 21,
+        "i": 30,
+        "ó": 1,
+        "d": 9,
+        "v": 4,
+        "o": 26,
+        "r": 11,
+        "p": 18,
+        "b": 5,
+        "u": 11,
+        "l": 19,
+        "h": 6,
+        "y": 6,
+        "f": 18,
+        "1": 18,
+        "2": 7,
+        "0": 16,
+        "4": 3,
+        "8": 2,
+        "9": 5,
+        "7": 5,
+        "3": 6,
+        "6": 1,
+        "w": 2
+      }
+    },
+    "source_extractor_difference": {
+      "source_tokens": 3527,
+      "missing_token_instances": 41,
+      "missing_tokens": {
+        "de": 2,
+        "para": 1,
+        "el": 2,
+        "con": 2,
+        "1": 1,
+        "fundus": 1,
+        "central": 2,
+        "enfoque": 1,
+        "ridge": 1,
+        "0": 1,
+        "64": 1,
+        "128": 1,
+        "256": 1,
+        "512": 1,
+        "n": 2,
+        "x": 2,
+        "yi": 3,
+        "pi": 2,
+        "ldice": 1,
+        "lw": 2,
+        "donde": 1,
+        "peso": 1,
+        "wpos": 1,
+        "30": 1,
+        "weight": 1,
+        "decay": 1,
+        "stopping": 1,
+        "prec": 1,
+        "0.6103": 1,
+        "0.9508": 1,
+        "0.9104": 1
+      },
+      "order_independent_token_coverage": 0.9883753898497306,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "exported_extractor_difference": {
+      "source_tokens": 3482,
+      "missing_token_instances": 6,
+      "missing_tokens": {
+        "b": 1,
+        "sensibilidad": 1,
+        "especificidad": 1,
+        "precisión": 1,
+        "área": 1,
+        "li": 1
+      },
+      "order_independent_token_coverage": 0.9982768523836876,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_control_lines": [],
+    "line_candidates": [
+      {
+        "page": 4,
+        "bbox": [
+          271.2019958496094,
+          360.57781982421875,
+          425.7549743652344,
+          372.1645202636719
+        ],
+        "text": "[30 · yi log(pi) + (1 −yi) log(1 −pi)]",
+        "controls": [],
+        "fonts": [
+          "CMMI10",
+          "CMMI7",
+          "CMR10",
+          "CMSY10"
+        ],
+        "present_in_odt_xml": false,
+        "present_in_exported_pdf": false,
+        "classification": "xml_or_order_candidate"
+      },
+      {
+        "page": 9,
+        "bbox": [
+          250.36500549316406,
+          249.509521484375,
+          394.8227233886719,
+          259.47210693359375
+        ],
+        "text": "Estudio de Ablación (DRIVE test)",
+        "controls": [],
+        "fonts": [
+          "NimbusRomNo9L-Medi"
+        ],
+        "present_in_odt_xml": true,
+        "present_in_exported_pdf": false,
+        "classification": "render_or_pdf_extraction_candidate"
+      },
+      {
+        "page": 9,
+        "bbox": [
+          250.92300415039062,
+          293.9435119628906,
+          394.264892578125,
+          303.9060974121094
+        ],
+        "text": "Generalización (Modelo Baseline)",
+        "controls": [],
+        "fonts": [
+          "NimbusRomNo9L-Medi"
+        ],
+        "present_in_odt_xml": true,
+        "present_in_exported_pdf": false,
+        "classification": "render_or_pdf_extraction_candidate"
+      },
+      {
+        "page": 9,
+        "bbox": [
+          249.94700622558594,
+          327.467529296875,
+          395.2415771484375,
+          337.43011474609375
+        ],
+        "text": "Adaptación de Dominio (CLAHE)",
+        "controls": [],
+        "fonts": [
+          "NimbusRomNo9L-Medi"
+        ],
+        "present_in_odt_xml": true,
+        "present_in_exported_pdf": false,
+        "classification": "render_or_pdf_extraction_candidate"
+      }
+    ],
+    "limitations": "Token/line differences require inspection: formula objects, cell order, line wrapping and font encodings can change extraction. Character multisets are an additional loss indicator, not proof of semantic preservation. Known control maps apply to the inspected Computer Modern sources."
+  },
+  "fauna_borrador_historico": {
+    "hashes": {
+      "source": "c0e4aee90f16ccd37f4358434895b1cb414ba73f52c06be65ad72d153863c446",
+      "odt": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "pdf": "efdc1f492d99050db364f024c67565b68cb9d1de50714516a3068f074ead0944"
+    },
+    "structure": {
+      "paragraphs": 462,
+      "embedded_xml_objects": 0
+    },
+    "source_to_odt": {
+      "source_tokens": 3367,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_to_pdf": {
+      "source_tokens": 3367,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "odt_to_pdf": {
+      "source_tokens": 3367,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_extractor_difference": {
+      "source_tokens": 3367,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "exported_extractor_difference": {
+      "source_tokens": 3367,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_control_lines": [],
+    "line_candidates": [],
+    "limitations": "Token/line differences require inspection: formula objects, cell order, line wrapping and font encodings can change extraction. Character multisets are an additional loss indicator, not proof of semantic preservation. Known control maps apply to the inspected Computer Modern sources."
+  },
+  "inundaciones_borrador_historico": {
+    "hashes": {
+      "source": "00c86d3b767cb5ed35f03325cf92d9e906cea3b59e637ab77f044eb2825eeeb0",
+      "odt": "ba3921430c436b7987386b1e5b2315c14c893d7e3eb05ff7158b50e0d6f0822b",
+      "pdf": "cadc4433ee2b606a8e5dcb8542fa0c2ec4c1750bf2edb8fc3b869f79f652eeed"
+    },
+    "structure": {
+      "paragraphs": 350,
+      "embedded_xml_objects": 2
+    },
+    "source_to_odt": {
+      "source_tokens": 3413,
+      "missing_token_instances": 15,
+      "missing_tokens": {
+        "vk": 5,
+        "pi": 3,
+        "lbce": 1,
+        "x": 1,
+        "yi": 3,
+        "ldice": 1,
+        "piyi": 1
+      },
+      "order_independent_token_coverage": 0.995605039554644,
+      "whitespace_insensitive_character_multiset_loss": {
+        "x": 1
+      }
+    },
+    "source_to_pdf": {
+      "source_tokens": 3413,
+      "missing_token_instances": 10,
+      "missing_tokens": {
+        "vk": 5,
+        "x": 1,
+        "p": 3,
+        "piyi": 1
+      },
+      "order_independent_token_coverage": 0.9970700263697627,
+      "whitespace_insensitive_character_multiset_loss": {
+        "p": 3,
+        "x": 1
+      }
+    },
+    "odt_to_pdf": {
+      "source_tokens": 3492,
+      "missing_token_instances": 87,
+      "missing_tokens": {
+        "in": 4,
+        "abs": 1,
+        "6": 1,
+        "v": 5,
+        "2": 1,
+        "1": 4,
+        "y": 8,
+        "bce": 2,
+        "dice": 2,
+        "epsilon": 3,
+        "10": 1,
+        "k": 7,
+        "p": 8,
+        "l": 4,
+        "i": 20,
+        "log": 2,
+        "func": 2,
+        "over": 2,
+        "sum": 4,
+        "from": 4,
+        "left": 1,
+        "right": 1
+      },
+      "order_independent_token_coverage": 0.9750859106529209,
+      "whitespace_insensitive_character_multiset_loss": {
+        "y": 4,
+        "u": 6,
+        "i": 21,
+        "n": 9,
+        "a": 1,
+        "d": 1,
+        "k": 7,
+        "m": 8,
+        "g": 3,
+        "h": 1,
+        "e": 8,
+        "r": 7,
+        "o": 11,
+        "p": 7,
+        "l": 8,
+        "t": 2,
+        "c": 4,
+        "v": 7,
+        "2": 1,
+        "0": 1,
+        "1": 5,
+        "s": 8,
+        "b": 2,
+        "6": 1,
+        "f": 7
+      }
+    },
+    "source_extractor_difference": {
+      "source_tokens": 3413,
+      "missing_token_instances": 25,
+      "missing_tokens": {
+        "de": 1,
+        "a": 1,
+        "512": 1,
+        "10": 1,
+        "usa": 1,
+        "ε": 1,
+        "0,3": 1,
+        "tpk": 4,
+        "fpk": 2,
+        "fnk": 2,
+        "tp": 4,
+        "fp": 1,
+        "fn": 1,
+        "parcial": 1,
+        "in": 1,
+        "cvpr": 1,
+        "forest": 1
+      },
+      "order_independent_token_coverage": 0.9926750659244067,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "exported_extractor_difference": {
+      "source_tokens": 3415,
+      "missing_token_instances": 12,
+      "missing_tokens": {
+        "v": 4,
+        "k": 5,
+        "yi": 1,
+        "log": 1,
+        "p": 1
+      },
+      "order_independent_token_coverage": 0.9964860907759883,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_control_lines": [],
+    "line_candidates": [
+      {
+        "page": 2,
+        "bbox": [
+          284.7209777832031,
+          652.9537963867188,
+          420.4545593261719,
+          664.54052734375
+        ],
+        "text": "[yi log pi + (1 −yi) log(1 −pi)] .",
+        "controls": [],
+        "fonts": [
+          "CMMI10",
+          "CMMI7",
+          "CMR10",
+          "CMSY10"
+        ],
+        "present_in_odt_xml": false,
+        "present_in_exported_pdf": false,
+        "classification": "xml_or_order_candidate"
+      }
+    ],
+    "limitations": "Token/line differences require inspection: formula objects, cell order, line wrapping and font encodings can change extraction. Character multisets are an additional loss indicator, not proof of semantic preservation. Known control maps apply to the inspected Computer Modern sources."
+  },
+  "fauna": {
+    "hashes": {
+      "source": "8ce4c2d889c40b0dbfe913f70062568c109cf7bf98600c1b93a8270c670a11a8",
+      "odt": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "pdf": "d7d8588bb4fd4e47383de181b41561001facee7bf551d5ff5a2c1da88a16acff"
+    },
+    "structure": {
+      "paragraphs": 456,
+      "embedded_xml_objects": 0
+    },
+    "source_to_odt": {
+      "source_tokens": 3358,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_to_pdf": {
+      "source_tokens": 3358,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "odt_to_pdf": {
+      "source_tokens": 3358,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_extractor_difference": {
+      "source_tokens": 3358,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "exported_extractor_difference": {
+      "source_tokens": 3358,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_control_lines": [],
+    "line_candidates": [],
+    "limitations": "Token/line differences require inspection: formula objects, cell order, line wrapping and font encodings can change extraction. Character multisets are an additional loss indicator, not proof of semantic preservation. Known control maps apply to the inspected Computer Modern sources."
+  },
+  "anexo_occlusion": {
+    "hashes": {
+      "source": "39f42dba272264327200585267136867aa500478b7c3eedd9206428feef48cde",
+      "odt": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "pdf": "ff05c121a2e5c679ccdd26125f138181589e7b1d8f00d82c6cdfd7529962a6e4"
+    },
+    "structure": {
+      "paragraphs": 214,
+      "embedded_xml_objects": 0
+    },
+    "source_to_odt": {
+      "source_tokens": 845,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_to_pdf": {
+      "source_tokens": 845,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "odt_to_pdf": {
+      "source_tokens": 845,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_extractor_difference": {
+      "source_tokens": 845,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "exported_extractor_difference": {
+      "source_tokens": 845,
+      "missing_token_instances": 0,
+      "missing_tokens": {},
+      "order_independent_token_coverage": 1.0,
+      "whitespace_insensitive_character_multiset_loss": {}
+    },
+    "source_control_lines": [
+      {
+        "page": 1,
+        "bbox": [
+          146.84400939941406,
+          120.1856918334961,
+          464.8045654296875,
+          132.14088439941406
+        ],
+        "text": "Equipo de la Pregunta 3 \u0015 Universidad Nacional de Ingeniería",
+        "controls": [
+          "U+0015"
+        ],
+        "fonts": [
+          "F35"
+        ]
+      },
+      {
+        "page": 1,
+        "bbox": [
+          56.69300842285156,
+          245.8423614501953,
+          554.7333984375,
+          255.80496215820312
+        ],
+        "text": "aceptaron como opcionales: 398 permanecen ausentes. No se inventan justi\u001ccaciones ni niveles; los retornos humanos",
+        "controls": [
+          "U+001C"
+        ],
+        "fonts": [
+          "F33"
+        ]
+      },
+      {
+        "page": 1,
+        "bbox": [
+          56.69300842285156,
+          257.7973937988281,
+          479.57568359375,
+          267.7599792480469
+        ],
+        "text": "y la discrepancia original se preservan. Los casos excluidos son 253, 302, 385\u0015393, 409\u0015414 y 439.",
+        "controls": [
+          "U+0015"
+        ],
+        "fonts": [
+          "F33"
+        ]
+      },
+      {
+        "page": 1,
+        "bbox": [
+          71.63700866699219,
+          269.7533874511719,
+          554.7634887695312,
+          279.7159729003906
+        ],
+        "text": "Baja corresponde a más de 75 % del cuerpo visible; media, 25\u001575 %; alta, menos de 25 %. La visibilidad incierta",
+        "controls": [
+          "U+0015"
+        ],
+        "fonts": [
+          "F33"
+        ]
+      },
+      {
+        "page": 1,
+        "bbox": [
+          56.69300079345703,
+          534.4952392578125,
+          554.7732543945312,
+          544.4578857421875
+        ],
+        "text": "secuencias por nivel, semilla 42 y checkpoint \u001cjo. Las 200 réplicas de ambas métricas quedaron de\u001cnidas en cada",
+        "controls": [
+          "U+001C"
+        ],
+        "fonts": [
+          "F33"
+        ]
+      },
+      {
+        "page": 1,
+        "bbox": [
+          71.63700103759766,
+          619.1442260742188,
+          554.7435913085938,
+          629.1068725585938
+        ],
+        "text": "La mAP50:95 baja 6.04 puntos porcentuales de baja a media y 6.31 de baja a alta. Media y alta di\u001ceren 0.28",
+        "controls": [
+          "U+001C"
+        ],
+        "fonts": [
+          "F33"
+        ]
+      },
+      {
+        "page": 1,
+        "bbox": [
+          56.69300079345703,
+          714.7852172851562,
+          554.7135620117188,
+          724.7478637695312
+        ],
+        "text": "reutilizan los intervalos poblacionales de proporciones ni la garantía de plani\u001ccación de 600 casos; no se a\u001crma",
+        "controls": [
+          "U+001C"
+        ],
+        "fonts": [
+          "F33"
+        ]
+      },
+      {
+        "page": 2,
+        "bbox": [
+          71.63700103759766,
+          80.94129943847656,
+          554.7733764648438,
+          90.90390014648438
+        ],
+        "text": "Las tablas siguientes conservan AP y soporte de los resultados aceptados. ND signi\u001cca ausencia de referencia",
+        "controls": [
+          "U+001C"
+        ],
+        "fonts": [
+          "F33"
+        ]
+      },
+      {
+        "page": 2,
+        "bbox": [
+          71.63700103759766,
+          570.268310546875,
+          213.46461486816406,
+          580.23095703125
+        ],
+        "text": "La \u001crma del análisis aceptado es",
+        "controls": [
+          "U+001C"
+        ],
+        "fonts": [
+          "F33"
+        ]
+      },
+      {
+        "page": 2,
+        "bbox": [
+          56.69300079345703,
+          647.977294921875,
+          554.857666015625,
+          657.9683227539062
+        ],
+        "text": "integridad_datos.json permite veri\u001ccar las copias byte a byte. Los originales V6 permanecen intactos. Este anexo",
+        "controls": [
+          "U+001C"
+        ],
+        "fonts": [
+          "F33",
+          "F51"
+        ]
+      }
+    ],
+    "line_candidates": [],
+    "limitations": "Token/line differences require inspection: formula objects, cell order, line wrapping and font encodings can change extraction. Character multisets are an additional loss indicator, not proof of semantic preservation. Known control maps apply to the inspected Computer Modern sources."
+  }
+}

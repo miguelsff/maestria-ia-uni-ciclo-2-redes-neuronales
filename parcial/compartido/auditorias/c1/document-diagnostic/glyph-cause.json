@@ -1,0 +1,65 @@
+{
+  "control_lines_preserved_in_initializer_payload": 10,
+  "lines": [
+    {
+      "raw": "Equipo de la Pregunta 3 \u0015 Universidad Nacional de Ingeniería",
+      "normalized": "equipo de la pregunta 3 - universidad nacional de ingeniería",
+      "present_in_previous_odt": false,
+      "present_in_current_odt": true
+    },
+    {
+      "raw": "aceptaron como opcionales: 398 permanecen ausentes. No se inventan justi\u001ccaciones ni niveles; los retornos humanos",
+      "normalized": "aceptaron como opcionales: 398 permanecen ausentes. no se inventan justificaciones ni niveles; los retornos humanos",
+      "present_in_previous_odt": false,
+      "present_in_current_odt": true
+    },
+    {
+      "raw": "y la discrepancia original se preservan. Los casos excluidos son 253, 302, 385\u0015393, 409\u0015414 y 439.",
+      "normalized": "y la discrepancia original se preservan. los casos excluidos son 253, 302, 385-393, 409-414 y 439.",
+      "present_in_previous_odt": false,
+      "present_in_current_odt": true
+    },
+    {
+      "raw": "Baja corresponde a más de 75 % del cuerpo visible; media, 25\u001575 %; alta, menos de 25 %. La visibilidad incierta",
+      "normalized": "baja corresponde a más de 75 % del cuerpo visible; media, 25-75 %; alta, menos de 25 %. la visibilidad incierta",
+      "present_in_previous_odt": false,
+      "present_in_current_odt": true
+    },
+    {
+      "raw": "secuencias por nivel, semilla 42 y checkpoint \u001cjo. Las 200 réplicas de ambas métricas quedaron de\u001cnidas en cada",
+      "normalized": "secuencias por nivel, semilla 42 y checkpoint fijo. las 200 réplicas de ambas métricas quedaron definidas en cada",
+      "present_in_previous_odt": false,
+      "present_in_current_odt": true
+    },
+    {
+      "raw": "La mAP50:95 baja 6.04 puntos porcentuales de baja a media y 6.31 de baja a alta. Media y alta di\u001ceren 0.28",
+      "normalized": "la map50:95 baja 6.04 puntos porcentuales de baja a media y 6.31 de baja a alta. media y alta difieren 0.28",
+      "present_in_previous_odt": false,
+      "present_in_current_odt": true
+    },
+    {
+      "raw": "reutilizan los intervalos poblacionales de proporciones ni la garantía de plani\u001ccación de 600 casos; no se a\u001crma",
+      "normalized": "reutilizan los intervalos poblacionales de proporciones ni la garantía de planificación de 600 casos; no se afirma",
+      "present_in_previous_odt": false,
+      "present_in_current_odt": true
+    },
+    {
+      "raw": "Las tablas siguientes conservan AP y soporte de los resultados aceptados. ND signi\u001cca ausencia de referencia",
+      "normalized": "las tablas siguientes conservan ap y soporte de los resultados aceptados. nd significa ausencia de referencia",
+      "present_in_previous_odt": false,
+      "present_in_current_odt": true
+    },
+    {
+      "raw": "La \u001crma del análisis aceptado es",
+      "normalized": "la firma del análisis aceptado es",
+      "present_in_previous_odt": false,
+      "present_in_current_odt": true
+    },
+    {
+      "raw": "integridad_datos.json permite veri\u001ccar las copias byte a byte. Los originales V6 permanecen intactos. Este anexo",
+      "normalized": "integridad_datos.json permite verificar las copias byte a byte. los originales v6 permanecen intactos. este anexo",
+      "present_in_previous_odt": false,
+      "present_in_current_odt": true
+    }
+  ]
+}
