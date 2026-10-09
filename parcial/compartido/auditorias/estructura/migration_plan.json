@@ -1615,20 +1615,20 @@
     },
     {
       "source": "parcial/ejemplo.pdf",
-      "destination": "parcial/compartido/referencias/ejemplo.pdf",
+      "destination": "parcial/archivo/referencias_originales/ejemplo.pdf",
       "sha256": "8532c8745ea326ec7b750c5aedc074523a605e346279521618e95ccc7be2edbd",
       "size": 4508703,
       "action": "move",
-      "reason": "Referencia del examen; conservar origen y bytes.",
+      "reason": "PDF original inalterado; referencia compartida será exportada del ODT nativo de B.",
       "frozen": false
     },
     {
       "source": "parcial/examen-parcial.pdf",
-      "destination": "parcial/compartido/referencias/examen-parcial.pdf",
+      "destination": "parcial/archivo/referencias_originales/examen-parcial.pdf",
       "sha256": "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee",
       "size": 207091,
       "action": "move",
-      "reason": "Referencia del examen; conservar origen y bytes.",
+      "reason": "PDF original inalterado; referencia compartida será exportada del ODT nativo de B.",
       "frozen": false
     },
     {

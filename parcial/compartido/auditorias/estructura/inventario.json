@@ -6,7 +6,7 @@
     "base_main": "0dc2fd20f424941919c38ff213894541e60ab200",
     "audit_commit_original": "8bb5a39",
     "audit_commit_local": "7bd7bece23638cb990ab7397b08796b11bf8a4cc",
-    "inventory_source_commit": "7d5094af9b2e944c80ed79c673105ae7595d75ba",
+    "inventory_source_commit": "e8de8740df232bd994a7d328a0dc6e3fecefc035",
     "tracked_before_audit": 913,
     "tracked_inventoried": 932,
     "operations": {
@@ -1661,20 +1661,20 @@
     },
     {
       "source": "parcial/ejemplo.pdf",
-      "destination": "parcial/compartido/referencias/ejemplo.pdf",
+      "destination": "parcial/archivo/referencias_originales/ejemplo.pdf",
       "sha256": "8532c8745ea326ec7b750c5aedc074523a605e346279521618e95ccc7be2edbd",
       "size": 4508703,
       "action": "move",
-      "reason": "Referencia del examen; conservar origen y bytes.",
+      "reason": "PDF original inalterado; referencia compartida será exportada del ODT nativo de B.",
       "frozen": false
     },
     {
       "source": "parcial/examen-parcial.pdf",
-      "destination": "parcial/compartido/referencias/examen-parcial.pdf",
+      "destination": "parcial/archivo/referencias_originales/examen-parcial.pdf",
       "sha256": "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee",
       "size": 207091,
       "action": "move",
-      "reason": "Referencia del examen; conservar origen y bytes.",
+      "reason": "PDF original inalterado; referencia compartida será exportada del ODT nativo de B.",
       "frozen": false
     },
     {

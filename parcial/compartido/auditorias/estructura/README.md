@@ -32,7 +32,8 @@ Esta carpeta de auditoría se conserva en su destino aprobado y se excluye de la
 | `WILDLIFE_*.md`, estado, notebook y `reports/wildlife/` | `pregunta_3_fauna/{docs,evidencias,notebooks,fuentes_informe}/` |
 | `src/`, `scripts/`, `configs/`, `tests/`, `audits/` | `compartido/{src,scripts,configs,tests,auditorias}/` |
 | `reviews/`, preámbulo y bibliografía comunes | `compartido/plantillas/{reviews,informes}/` |
-| `examen-parcial.pdf`, `ejemplo.pdf` y sus ODT cuando se integren | `compartido/referencias/` |
+| `examen-parcial.pdf`, `ejemplo.pdf` originales | `archivo/referencias_originales/`, sin cambiar bytes |
+| ODT del examen/ejemplo y PDF exportados desde esos ODT | `compartido/referencias/`, al integrar B |
 | `delivery/flood/` | `archivo/entregas_anteriores/flood/` |
 | Documentos de preparación/revisión y material único de `tmp/` | `archivo/documentos_historicos/` |
 | Auxiliares únicos de QA de `tmp/` | `compartido/scripts/qa_historico/` |
@@ -40,6 +41,8 @@ Esta carpeta de auditoría se conserva en su destino aprobado y se excluye de la
 | README general | Raíz de `parcial/`; índice del examen |
 
 En D2 cada pregunta debe conservar además `README.md` y `entregable/` con informe principal ODT/PDF, notebook final, `LEEME.md` y `verificacion.json` provenientes de A+B+C. Fauna añade anexo ODT/PDF, `04_occlusion_582.ipynb` y `metricas_occlusion.csv`. No se fabrica ninguno de estos productos en D1. `archivo/manifiesto.json` y `archivo/referencias_originales/` se completarán al integrar las versiones finales y su procedencia.
+
+[D2_PREPARACION.md](D2_PREPARACION.md) establece la asociación de todos los PDF conservados con sus maestros ODT y la creación de una rama nueva desde el SHA integrado. El registro [pdf_odt_preparacion.json](pdf_odt_preparacion.json) identifica los cuatro PDF de este worktree y los dos provisionales observados en `00a334d`; los maestros y sus hashes se resolverán cuando B esté integrado. Este registro no habilita la migración.
 
 La ubicación del Dockerfile, Compose y dependencias en `compartido/` corrige el supuesto inicial del diseño D1. Con ese contexto, `COPY src`, `COPY configs`, `PYTHONPATH=/workspace/src` y `PROJECT_ROOT` mantienen su relación original con el motor. Los overlays/adaptadores nuevos suministrarán notebooks y fuentes editoriales desde las carpetas de cada pregunta, coordinados con Reproducción. No se necesita cambiar las fuentes congeladas para resolver el traslado del motor.
 

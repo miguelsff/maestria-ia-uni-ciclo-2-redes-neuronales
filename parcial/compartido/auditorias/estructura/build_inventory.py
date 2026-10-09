@@ -57,7 +57,9 @@ def destination(path: str) -> tuple[str, str, str]:
         return "parcial/compartido/plantillas/informes/" + "/".join(parts[1:]), "move", "Preambulo y bibliografía comunes."
     if group == "delivery":
         return "parcial/archivo/entregas_anteriores/" + "/".join(parts[1:]), "move", "Entrega histórica única; no confundir PDF previo con PDF final exportado desde ODT."
-    if relative in {"examen-parcial.pdf", "examen-parcial.odt", "ejemplo.pdf", "ejemplo.odt"}:
+    if relative in {"examen-parcial.pdf", "ejemplo.pdf"}:
+        return "parcial/archivo/referencias_originales/" + relative, "move", "PDF original inalterado; referencia compartida será exportada del ODT nativo de B."
+    if relative in {"examen-parcial.odt", "ejemplo.odt"}:
         return "parcial/compartido/referencias/" + relative, "move", "Referencia del examen; conservar origen y bytes."
     if group == "tmp":
         if "/images/" in relative and relative.endswith(".jpg"):
