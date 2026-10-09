@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "key": "fauna",
+      "branch": "codex/examen-fauna-cerrado",
+      "status": "clean",
+      "unique_protected_files": 88,
+      "verified_commit": "c3f9a0db6ea20a345fd69605e8a2be6d154bcad6"
+    },
+    {
+      "key": "odt",
+      "branch": "codex/examen-odt-cerrado",
+      "status": "clean",
+      "unique_protected_files": 88,
+      "verified_commit": "c3f9a0db6ea20a345fd69605e8a2be6d154bcad6"
+    },
+    {
+      "key": "reproduccion",
+      "branch": "codex/examen-reproduccion-cerrado",
+      "status": "clean",
+      "unique_protected_files": 88,
+      "verified_commit": "c3f9a0db6ea20a345fd69605e8a2be6d154bcad6"
+    },
+    {
+      "key": "estructura",
+      "branch": "codex/examen-estructura-cerrado",
+      "status": "clean",
+      "unique_protected_files": 88,
+      "verified_commit": "c3f9a0db6ea20a345fd69605e8a2be6d154bcad6"
+    }
+  ],
+  "old_branches_and_ignored_work_temporaries_preserved": true
+}

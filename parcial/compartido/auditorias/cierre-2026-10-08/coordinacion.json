@@ -25,7 +25,10 @@
       "configuration_verified": true,
       "source_work_commits": [
         "1d623e792dc0057f007b6c3ec97df5268860ec30"
-      ]
+      ],
+      "closed_checkout_branch": "codex/examen-fauna-cerrado",
+      "closed_checkout_verified_commit": "c3f9a0db6ea20a345fd69605e8a2be6d154bcad6",
+      "original_work_branch_preserved": true
     },
     {
       "key": "odt",
@@ -42,7 +45,10 @@
       "source_work_commits": [
         "292fa412cd1304e02523b7f9787cdbc3acf1be43",
         "d0e5fb4f77c4f2ec77112652f4b69cfb94279dd0"
-      ]
+      ],
+      "closed_checkout_branch": "codex/examen-odt-cerrado",
+      "closed_checkout_verified_commit": "c3f9a0db6ea20a345fd69605e8a2be6d154bcad6",
+      "original_work_branch_preserved": true
     },
     {
       "key": "reproduccion",
@@ -63,7 +69,10 @@
         "11d0366d1c4ddad7511b4f7ed50a940477d5b8ba",
         "d16959ce236cda4f43d25b67a4d70eacba85ff64",
         "6a455e6a7f3e05836f4b652a2a133a89e0c3e9bb"
-      ]
+      ],
+      "closed_checkout_branch": "codex/examen-reproduccion-cerrado",
+      "closed_checkout_verified_commit": "c3f9a0db6ea20a345fd69605e8a2be6d154bcad6",
+      "original_work_branch_preserved": true
     },
     {
       "key": "estructura",
@@ -79,7 +88,10 @@
       "configuration_verified": true,
       "source_work_commits": [
         "f176167b1546aa6404790094dfec8242ff59d84b"
-      ]
+      ],
+      "closed_checkout_branch": "codex/examen-estructura-cerrado",
+      "closed_checkout_verified_commit": "c3f9a0db6ea20a345fd69605e8a2be6d154bcad6",
+      "original_work_branch_preserved": true
     }
   ],
   "dependencies": {
@@ -117,6 +129,7 @@
   },
   "stage": "G_complete",
   "effective_configuration_evidence": "Read-only local turn_context verified model and effort; service_tier default inherited; API exposes no individual speed parameter.",
-  "technical_closure": "Verified and applied to primary main; published code/doc commit8f36d7b; final metadata followup pending push.",
-  "publication_receipt": "publication.json"
+  "technical_closure": "All four chats verified and integrated; primary main and remote match; no required technical work remains.",
+  "publication_receipt": "publication.json",
+  "metadata_publication_verified_commit": "c3f9a0db6ea20a345fd69605e8a2be6d154bcad6"
 }
