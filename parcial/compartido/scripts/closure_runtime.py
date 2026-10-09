@@ -67,6 +67,9 @@ def workspace_inputs(exam: Path) -> dict[str, Path]:
             _register(mapping, source, source.name)
     for name in ROOT_FILES:
         mapping[name] = source_path(exam, name)
+    for root in (exam, exam / "compartido"):
+        for source in root.glob(".env*.example"):
+            _register(mapping, source, source.name)
     for source in _files(exam / "notebooks"):
         _register(mapping, source, f"notebooks/{source.relative_to(exam / 'notebooks').as_posix()}")
     # A migrated per-question notebook supersedes the corresponding legacy copy.
@@ -78,10 +81,15 @@ def workspace_inputs(exam: Path) -> dict[str, Path]:
     for question, task in QUESTION_TASKS.items():
         for source in _files(exam / question / "fuentes_informe"):
             mapping[f"reports/{task}/{source.relative_to(exam / question / 'fuentes_informe').as_posix()}"] = source
-    # LaTeX common resources keep their historical /workspace/reports paths.
-    for source in _files(exam / "compartido/plantillas"):
-        if source.name != "notebook_template.ipynb":
-            mapping[f"reports/{source.relative_to(exam / 'compartido/plantillas').as_posix()}"] = source
+    templates = exam / "compartido/plantillas"
+    # Migrated groups lose their organizational prefix in the scientific runtime.
+    for group, target in (("informes", "reports"), ("reviews", "reviews")):
+        for source in _files(templates / group):
+            mapping[f"{target}/{source.relative_to(templates / group).as_posix()}"] = source
+    # Retain compatibility with earlier flat common-report resources.
+    for source in templates.glob("*"):
+        if source.is_file() and source.name != "notebook_template.ipynb":
+            mapping[f"reports/{source.name}"] = source
     for root in (exam / "compartido", exam):
         template = root / "tmp/occlusion-accepted-delivery/notebook_template.ipynb"
         if template.is_file():

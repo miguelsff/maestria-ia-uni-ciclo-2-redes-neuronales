@@ -1,0 +1,177 @@
+{
+  "stage": "C1 correction before C2",
+  "status": "passed",
+  "base": "0698c432050dfcd6a3d1857d871e9183f30c98b9",
+  "worktree": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales",
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "source": "same verified turn_context recorded in evidence.json",
+    "speed": "standard inherited (default)",
+    "individual_speed_parameter_available": false
+  },
+  "changed_behavior": "plantillas/informes -> reports; plantillas/reviews -> reviews; automatic runtime/environment preparation and dispatch",
+  "focused_test_command": "docker run --rm --network none --entrypoint python --mount type=bind,source=C:/Users/USER/.codex/worktrees/959d/maestria-ia-uni-ciclo-2-redes-neuronales/parcial,target=/workspace,readonly -w /workspace -e PYTHONPATH=/workspace/src -e PYTHONDONTWRITEBYTECODE=1 neural-exam-wildlife:0.2 -m pytest -q -p no:cacheprovider compartido/tests/test_closure_runtime.py tests/test_occlusion_accepted.py tests/test_occlusion_sample.py",
+  "focused_test_result": "20 passed in 1.70s",
+  "lint_result": "All checks passed!",
+  "harness_command": "python -X utf8 parcial/compartido/scripts/run_exam.py closure --tests",
+  "harness_result": {
+    "exit_code": 0,
+    "tests": "20 passed in 1.73s",
+    "command_receipt": {
+      "task": "closure",
+      "workspace": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-x5gfgd9s\\workspace",
+      "derived": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-x5gfgd9s\\derived",
+      "commands": [
+        [
+          "docker",
+          "compose",
+          "-f",
+          "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-x5gfgd9s\\workspace\\compose.closure.yaml",
+          "config",
+          "--quiet"
+        ],
+        [
+          "docker",
+          "compose",
+          "-f",
+          "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-x5gfgd9s\\workspace\\compose.closure.yaml",
+          "run",
+          "--rm",
+          "verify"
+        ]
+      ],
+      "frozen_sources_verified": 44,
+      "scientific_runner_executed": false,
+      "fresh_training_reproduction_verified": false,
+      "commands_executed": [
+        {
+          "command": [
+            "docker",
+            "compose",
+            "-f",
+            "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-x5gfgd9s\\workspace\\compose.closure.yaml",
+            "config",
+            "--quiet"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "docker",
+            "compose",
+            "-f",
+            "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-x5gfgd9s\\workspace\\compose.closure.yaml",
+            "run",
+            "--rm",
+            "verify"
+          ],
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "docker",
+            "compose",
+            "-f",
+            "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-x5gfgd9s\\workspace\\compose.closure.yaml",
+            "run",
+            "--rm",
+            "tests"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    "verification": {
+      "status": "passed",
+      "frozen_sources_verified": 44,
+      "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+      "review_status": {
+        "status": "accepted_with_documented_exclusions_and_note_waiver",
+        "original_sample": 600,
+        "accepted": 582,
+        "excluded": 18,
+        "counts": {
+          "low": 340,
+          "ambiguous": 125,
+          "medium": 69,
+          "high": 48
+        },
+        "accepted_cases_without_notes": 398,
+        "minimum_support": 30,
+        "missing_support": {
+          "low": 0,
+          "medium": 0,
+          "high": 0
+        }
+      },
+      "results_sha256": "b5ede4e0f8d46aef5b579f64c3b7f7c476b4aeb93eafaeffaafcdd4e0da124f9",
+      "portable": {
+        "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+        "executed_code_cells": 4,
+        "notebook_errors": 0
+      },
+      "replicates_per_level": {
+        "low": 200,
+        "medium": 200,
+        "high": 200
+      },
+      "runtime_versions_checked": true,
+      "bootstrap_recomputed": false,
+      "trained_or_ran_inference": false,
+      "full_fresh_scientific_reproduction": "not_verified"
+    }
+  },
+  "scientific_plan_only": [
+    {
+      "task": "mri",
+      "command": [
+        "C:\\Users\\USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+        "-NoProfile",
+        "-File",
+        "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\mri-86ak7t6p\\workspace\\scripts\\run_mri.ps1"
+      ],
+      "runner_sha256": "e6b78f9dfef6838245943acf54d0000fafebed703c96f1dc871e245b6324a997",
+      "runner_executed": false,
+      "workspace": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\mri-86ak7t6p\\workspace",
+      "fresh_training_reproduction_verified": false
+    },
+    {
+      "task": "flood",
+      "command": [
+        "C:\\Users\\USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+        "-NoProfile",
+        "-File",
+        "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\flood-xr_ogsof\\workspace\\scripts\\run_flood.ps1"
+      ],
+      "runner_sha256": "4d7cfa9b9219526e50400a3a94facc2dfcbbd157b1e147d7de680eacf86d6ef0",
+      "runner_executed": false,
+      "workspace": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\flood-xr_ogsof\\workspace",
+      "fresh_training_reproduction_verified": false
+    },
+    {
+      "task": "wildlife",
+      "command": [
+        "C:\\Users\\USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+        "-NoProfile",
+        "-File",
+        "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\wildlife-7j8fsdyr\\workspace\\scripts\\run_wildlife.ps1",
+        "-Variant",
+        "v6",
+        "-EnvironmentFile",
+        "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\wildlife-7j8fsdyr\\workspace\\.env.wildlife-v6"
+      ],
+      "runner_sha256": "daf9d954fc533fa310dea9cdd2f84cc62fa4213b69fd03e06f71a86b5847ca19",
+      "runner_executed": false,
+      "workspace": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\wildlife-7j8fsdyr\\workspace",
+      "fresh_training_reproduction_verified": false
+    }
+  ],
+  "frozen_sources_after_correction": 44,
+  "new_training_or_inference": false,
+  "scientific_bootstrap_recomputed": false,
+  "fresh_training_reproduction_verified": false,
+  "published_or_merged": false,
+  "rollback_boundary": "Revert template mapping, new run_exam.py dispatcher, accompanying tests/docs and correction evidence only; preserve accepted scientific sources and original delivered notebooks.",
+  "pending": "C2 still requires authorized D2 migration SHA and verification of the real migrated tree."
+}

@@ -6,23 +6,15 @@ Los originales científicos permanecen en `E:/Kaggle`. Los adaptadores de esta e
 
 Desde la raíz del repositorio, con Python 3.12 y Docker Desktop:
 
-```powershell
-$examPython = 'C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
-& $examPython -X utf8 parcial/compartido/scripts/closure_runtime.py `
-  --exam-root parcial --destination parcial/.runtime/cierre `
-  --freeze-receipt E:/Kaggle/exam-output-wildlife-v6/receipts/source-freeze.json
-New-Item -ItemType Directory -Force parcial/.runtime/derivados/cache/ipython | Out-Null
-Copy-Item parcial/compartido/.env.closure.example parcial/compartido/.env.closure
-```
-
-Editar las dos rutas de `.env.closure`: `RUNTIME_HOST_DIR` debe apuntar a `parcial/.runtime/cierre` de este worktree, y `CLOSURE_OUTPUT_HOST_DIR` a su `parcial/.runtime/derivados`. Las rutas deben ser absolutas. La imagen local comprobada fue `neural-exam-wildlife:0.2`; su identidad exacta y las versiones verificadas constan en `auditorias/c1/evidence.json`.
+Un comando prepara una copia nueva, configura los montajes absolutos, comprueba el Compose y verifica el cierre:
 
 ```powershell
-docker compose --env-file parcial/compartido/.env.closure -f parcial/compartido/compose.closure.yaml config --quiet
-docker compose --env-file parcial/compartido/.env.closure -f parcial/compartido/compose.closure.yaml run --rm verify
-docker compose --env-file parcial/compartido/.env.closure -f parcial/compartido/compose.closure.yaml run --rm tests
-docker compose --env-file parcial/compartido/.env.closure -f parcial/compartido/compose.closure.yaml run --rm notebook-occlusion
+& 'C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' -X utf8 parcial/compartido/scripts/run_exam.py closure
 ```
+
+No requiere editar un archivo de entorno. Cada ejecución usa un directorio nuevo en `parcial/.runtime/closure-*/`, escribe `derived/verification.json` y registra los comandos y códigos reales en `derived/command_receipt.json`. Para ejecutar también las pruebas, añadir `--tests` al mismo comando. `--parent`, `--occlusion` e `--image` permiten indicar otras ubicaciones compatibles sin cambiar archivos; sus valores predeterminados apuntan a los originales preservados y a la imagen local comprobada `neural-exam-wildlife:0.2`. Su identidad y versiones constan en `auditorias/c1/evidence.json`.
+
+El archivo `.env.closure.example` y las invocaciones directas de Compose siguen disponibles para uso manual avanzado. El comando recomendado configura el entorno automáticamente y no lee secretos de ejemplos.
 
 `verify` comprueba las 44 fuentes, los archivos del padre, las decisiones humanas, la firma y los resultados completos. `tests` utiliza casos sintéticos, incluido un bootstrap de tres fotogramas; no recalcula la muestra científica. `notebook-occlusion` vuelve a ejecutar cuatro celdas sobre las tablas ya calculadas y escribe una copia derivada, conservando el notebook de entrega.
 
@@ -50,7 +42,8 @@ El adaptador admite el árbol anterior y el nuevo árbol por pregunta. Copia arc
 | `pregunta_1_mri/fuentes_informe/` | `/workspace/reports/mri/` |
 | `pregunta_2_inundaciones/fuentes_informe/` | `/workspace/reports/flood/` |
 | `pregunta_3_fauna/fuentes_informe/` | `/workspace/reports/wildlife/` |
-| Recursos comunes en `compartido/plantillas/` | `/workspace/reports/` |
+| Recursos comunes en `compartido/plantillas/informes/` | `/workspace/reports/`, sin el prefijo `informes/` |
+| HTML/JS de `compartido/plantillas/reviews/` | `/workspace/reviews/`, sin el prefijo `plantillas/` |
 | `compartido/plantillas/notebook_template.ipynb` | `/workspace/tmp/occlusion-accepted-delivery/notebook_template.ipynb` |
 | `pregunta_*/entregable/` | `/workspace/deliveries/pregunta_*/` |
 
@@ -73,3 +66,29 @@ La plantilla heredada continúa en su ruta anterior durante C1 porque el constru
 Los notebooks MRI/inundaciones mantienen `RUN_PREPARE=False`, `RUN_TRAINING=False` y `GENERATE_REPORT_ASSETS=False`. Su reejecución de lectura requiere configurar `OUTPUT_DIR` hacia una copia/montaje de los resultados, mantener sus rutas internas y conservar las figuras. Las auditorías contienen evidencia histórica; mostrarla de nuevo no equivale a repetir el experimento. Los datos, cachés y checkpoints voluminosos no se copian al repositorio.
 
 El constructor aceptado conserva su exportación histórica a PDF. La entrega editorial final exige ODT principal y PDF exportado desde ese ODT, y corresponde a las etapas de documentos; este procedimiento no genera informes ni sustituye esa exportación.
+
+## Un comando científico completo por pregunta
+
+Los tres comandos siguientes conservan los runners históricos byte por byte dentro de una nueva copia del runtime, cargan los ejemplos públicos de entorno y redirigen todas las variables de salida a un directorio **nuevo** indicado explícitamente. Sus etapas originales incluyen preparación, comprobaciones del entorno, entrenamiento, evaluación, notebook y artefactos históricos. Requieren Windows, PowerShell, Docker Desktop/WSL, GPU NVIDIA, datos y metadatos Kaggle disponibles, pesos iniciales y revisiones auténticas. Las descargas requieren red. Las rutas de datos predeterminadas siguen siendo las de los Compose originales; pueden sobreescribirse con las variables documentadas por esos Compose.
+
+MRI:
+
+```powershell
+& 'C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' -X utf8 parcial/compartido/scripts/run_exam.py mri --scientific-output E:/Kaggle/reproduccion-mri-nueva --execute-science
+```
+
+Inundaciones:
+
+```powershell
+& 'C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' -X utf8 parcial/compartido/scripts/run_exam.py flood --scientific-output E:/Kaggle/reproduccion-flood-nueva --execute-science
+```
+
+Fauna V6:
+
+```powershell
+& 'C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' -X utf8 parcial/compartido/scripts/run_exam.py wildlife --scientific-output E:/Kaggle/reproduccion-wildlife-nueva --execute-science
+```
+
+El launcher invoca respectivamente `scripts/run_mri.ps1`, `run_flood.ps1` y `run_wildlife.ps1 -Variant v6`, desde el runtime. Fauna toma el padre V5 indicado por su ejemplo de entorno y conserva las puertas científicas del runner original. No inventa revisiones ni cambia decisiones aceptadas. Los runners originales administran cachés/volúmenes Docker y pueden descargar insumos; esta ruta científica tiene efectos adicionales y no comparte la garantía de solo lectura del modo `closure`. Las salidas voluminosas de estos ejemplos permanecen en E:.
+
+Estos comandos científicos **no se ejecutaron en C1**. Se verificaron únicamente los planes y la preservación de los runners. La reproducción desde entrenamiento sigue **no verificada**. Sin `--execute-science`, o añadiendo `--plan-only`, el launcher prepara y registra el plan sin ejecutar el runner. El directorio científico debe no existir: se rechaza una salida ya existente para impedir reutilizar los originales. El token local de Jupyter se genera en el entorno privado del runtime; no aparece en los recibos ni en Git. La salida editorial final ODT/PDF sigue siendo un proceso separado de los artefactos históricos de los runners.

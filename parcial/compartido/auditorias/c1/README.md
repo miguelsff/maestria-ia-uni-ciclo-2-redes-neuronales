@@ -19,3 +19,7 @@ Los notebooks MRI e inundaciones se copiaron con todas sus salidas: ocho celdas 
 La extracción del índice valida las reglas de conversión y los bytes comprometidos. No es una clonación remota ni demuestra reproducción científica completa. C2 deberá incorporar el SHA de la migración, preparar una nueva copia limpia, comprobar las rutas definitivas y repetir los controles pertinentes. Los informes y ODT pertenecen a las etapas de documentos.
 
 La reversión de la unidad de adaptadores elimina `closure_runtime.py`, `verify_closure.py`, sus pruebas, el Compose, el ejemplo de entorno y esta documentación/evidencia; deja intactos los scripts aceptados, los entregables incorporados y los originales en E:. Las carpetas privadas `.runtime` están ignoradas y no forman parte de los commits.
+
+## Corrección previa a C2
+
+`correction-evidence.json` registra la corrección de `plantillas/informes/` y `plantillas/reviews/`, el nuevo launcher `run_exam.py`, el comando único de cierre y los tres planes científicos. La prueba del árbol migrado comprueba que los includes comunes y HTML/JS quedan en sus rutas históricas, sin los prefijos de organización. Pasaron 20 pruebas; el comando único preparó el runtime y verificó hashes, firma y entorno. Los tres runners se copiaron byte por byte y sus planes no ejecutaron ciencia. Los registros reales están en `correction-command-output.txt` y `correction-tests-output.txt`. La reproducción desde entrenamiento continúa no verificada y C2 sigue dependiendo del SHA de D2.
