@@ -1,0 +1,90 @@
+{
+  "stage": "A",
+  "status": "A_and_B2_complete_ready_for_coordinator_integration",
+  "worktree": "C:\\Users\\USER\\.codex\\worktrees\\34ab\\maestria-ia-uni-ciclo-2-redes-neuronales",
+  "branch": "codex/fauna-cierre-occlusion",
+  "base_commit": "0dc2fd20f424941919c38ff213894541e60ab200",
+  "common_commit_original": "8bb5a3917756eaa0e8cb63537c919f3e1c54f6ab",
+  "common_commit_local": "4591a0fba6c768545cb9f101ea9f5593ea4bc13b",
+  "configuration": {
+    "thread_id": "01a11e62-8f39-76c0-bd5c-18d7d86ec9b9",
+    "model_requested_at_creation": "gpt-6-astra",
+    "effort_requested_at_creation": "xhigh",
+    "speed": "standard inherited (default); no individual creation parameter",
+    "evidence": "Plan autorizado y argumentos de creación registrados en el chat principal 01a11e25-9c53-77c1-bb59-ba19c2290137",
+    "effective_runtime_configuration_independently_verified": false
+  },
+  "validation": {
+    "status": "passed",
+    "data_files_verified": 33,
+    "counts": {
+      "low": 340,
+      "ambiguous": 125,
+      "medium": 69,
+      "high": 48
+    },
+    "excluded": 18,
+    "missing_notes": 398,
+    "completed_levels": 3,
+    "replicates_per_level": 200,
+    "notebooks": {
+      "03_wildlife.ipynb": {
+        "executed_cells": 16,
+        "errors": 0
+      },
+      "04_occlusion_582.ipynb": {
+        "executed_cells": 4,
+        "errors": 0
+      }
+    },
+    "provisional_pdf_pages": {
+      "informe_fauna_provisional.pdf": 10,
+      "anexo_occlusion_provisional.pdf": 2
+    },
+    "original_files_verified": 91,
+    "scope": "Consistencia e integridad de resultados guardados; no recalcula AP ni bootstrap."
+  },
+  "frozen_sources": {
+    "count": 44,
+    "original_byte_hash_matches": 44,
+    "worktree_byte_hash_matches": 2,
+    "worktree_newline_only_differences": 42,
+    "changed_during_stage": 0
+  },
+  "notebook_execution": {
+    "notebook": "entregable/03_wildlife.ipynb",
+    "sha256": "6ad07b91935cd3fa7ebe21629bd56e1ea5f717772ad4295997838c988f40ea26",
+    "executed_code_cells": 16,
+    "errors": 0,
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "execution": "Kernel limpio; contenedor sin red ni GPU; solo consulta de resultados guardados.",
+    "training_or_inference": false
+  },
+  "visual_review": "revision_visual.json",
+  "scientific_comparisons": "comparaciones.json",
+  "pending": [
+    {
+      "owner": "Chat principal",
+      "task": "Verificar e integrar el commit y coordinar migración, reproducción y publicación."
+    }
+  ],
+  "additional_human_review_required_for_accepted_cohort": false,
+  "training_or_inference_performed": false,
+  "publication_or_merge_performed": false,
+  "rollback": "Restituir reports/wildlife/main.tex y discussion.tex; retirar occlusion_tables.tex y pregunta_3_fauna/. No modificar originales o fuentes experimentales.",
+  "git_staging": {
+    "scope_files": 75,
+    "delivery_files_physical_hashes_verified_in_index": 38,
+    "newline_policy": "Conservar bytes de copias verificadas; cr-at-eol para diagnóstico de whitespace. Plantilla NeurIPS original conserva un espacio final heredado."
+  },
+  "documents_B2": {
+    "status": "complete_verified",
+    "main": "entregable/informe_fauna.odt",
+    "annex": "entregable/anexo_occlusion.odt",
+    "main_pages": 10,
+    "annex_pages": 2,
+    "audit": "parcial/compartido/auditorias/documentos_b1/estado.json",
+    "master_editability_and_export_verified": true
+  }
+}

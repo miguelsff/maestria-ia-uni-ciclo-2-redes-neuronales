@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\centering\small
+\caption{Tiempo de entrenamiento y evaluación, y máximo de memoria asignada por PyTorch; no equivalen al consumo total del dispositivo.}
+\begin{tabular}{lrr}
+\toprule
+Variante & Segundos & VRAM tensor GiB \\
+\midrule
+CNN/bce/pond. & 115.5191 & 1.0720 \\
+CNN/bce/filtro & 54.7096 & 1.0738 \\
+CNN/focal/pond. & 70.3960 & 1.0730 \\
+CNN/focal/filtro & 56.4852 & 1.0738 \\
+ResNet/bce/pond. & 67.0683 & 1.7379 \\
+ResNet/bce/filtro & 60.8994 & 1.7352 \\
+ResNet/focal/pond. & 68.6879 & 1.7352 \\
+ResNet/focal/filtro & 68.8144 & 1.7352 \\
+\bottomrule
+\end{tabular}
+\end{table}

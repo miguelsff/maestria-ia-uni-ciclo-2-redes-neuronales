@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "documents": 8,
+  "pages_inspected": 67,
+  "contact_sheets_inspected": 21,
+  "rendering_receipt": "renderizado.json",
+  "checks": [
+    "Paginación completa y folios",
+    "Párrafos y encabezados sin solapamiento",
+    "Todas las filas y columnas visibles",
+    "Objetos matemáticos sin duplicación ni errores",
+    "Figuras y leyendas completas",
+    "Contexto completo de los cuatro párrafos editoriales"
+  ],
+  "expanded_page_checks": {
+    "mri": [
+      2,
+      3,
+      6
+    ],
+    "inundaciones": [
+      3,
+      9
+    ],
+    "ejemplo": [
+      4,
+      5,
+      9
+    ],
+    "inundaciones_borrador_historico": [
+      2,
+      3
+    ],
+    "fauna": [
+      3,
+      4
+    ],
+    "anexo_occlusion": [
+      1,
+      2
+    ]
+  },
+  "pdfs": [
+    {
+      "id": "mri",
+      "sha256": "37f4628a2fd70fe1c9f09ff659761df3f3162b7f7c892fee51fb9f17669b4648",
+      "pages": 9,
+      "status": "passed"
+    },
+    {
+      "id": "inundaciones",
+      "sha256": "47ca54c719e13f5bfbf61d6ae95dcdc7e31e32e43aee7f355994af450d864f1b",
+      "pages": 9,
+      "status": "passed"
+    },
+    {
+      "id": "examen",
+      "sha256": "62c38a21a71bf61fc80ebdf48382869ff578834f756d4096e194bafe873f17a1",
+      "pages": 7,
+      "status": "passed"
+    },
+    {
+      "id": "ejemplo",
+      "sha256": "f7605a39a1b315e2a6506ddfc823e6039bb63750cdb5edf09b5ca5e082795784",
+      "pages": 11,
+      "status": "passed"
+    },
+    {
+      "id": "fauna_borrador_historico",
+      "sha256": "e6b55856e3e17d2efc5abff5a5ab201322ad45c219c577aedf5ac56ff1c412e7",
+      "pages": 10,
+      "status": "passed"
+    },
+    {
+      "id": "inundaciones_borrador_historico",
+      "sha256": "d2d24481b64171a8cf84ceba750200743f60a101f132987e9fda99896d0b4249",
+      "pages": 9,
+      "status": "passed"
+    },
+    {
+      "id": "fauna",
+      "sha256": "a429deec1996bdae030a01fce6550b0dfc6005a2043d9939a6908a4ff79b4018",
+      "pages": 10,
+      "status": "passed"
+    },
+    {
+      "id": "anexo_occlusion",
+      "sha256": "45cd5d02b7c15c97859eddd30a8ec50180e4303e7aaaf93cbf87fe2e7e3a8e99",
+      "pages": 2,
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+\begin{thebibliography}{1}
+
+\bibitem{resnet}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em CVPR}, 2016.
+\newblock \url{https://arxiv.org/abs/1512.03385}.
+
+\bibitem{skills}
+Timothy Kassis, Vinayak Agarwal, Yuhuan He, Darshil Patel, and Aubrey~M.
+  Brueckner.
+\newblock Scientific agent skills: A library of procedural knowledge for
+  research agents, 2026.
+\newblock \url{https://arxiv.org/abs/2609.00065}.
+
+\bibitem{focal}
+Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, and Piotr Doll{\'a}r.
+\newblock Focal loss for dense object detection.
+\newblock In {\em ICCV}, 2017.
+\newblock \url{https://arxiv.org/abs/1708.02002}.
+
+\bibitem{adamw}
+Ilya Loshchilov and Frank Hutter.
+\newblock Decoupled weight decay regularization.
+\newblock In {\em ICLR}, 2019.
+\newblock \url{https://arxiv.org/abs/1711.05101}.
+
+\bibitem{rsna}
+{Radiological Society of North America}.
+\newblock Rsna knee abnormality detection: Data.
+\newblock
+  \url{https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/data},
+  2026.
+
+\bibitem{snorkel}
+Alexander Ratner, Stephen~H. Bach, Henry Ehrenberg, Jason Fries, Sen Wu, and
+  Christopher R{\'e}.
+\newblock Snorkel: Rapid training data creation with weak supervision, 2017.
+\newblock \url{https://arxiv.org/abs/1711.10160}.
+
+\bibitem{gradcam}
+Ramprasaath~R. Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam,
+  Devi Parikh, and Dhruv Batra.
+\newblock Grad-cam: Visual explanations from deep networks via gradient-based
+  localization.
+\newblock In {\em ICCV}, 2017.
+\newblock \url{https://arxiv.org/abs/1610.02391}.
+
+\end{thebibliography}

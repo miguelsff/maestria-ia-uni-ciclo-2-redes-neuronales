@@ -1,2 +1,5 @@
 # Preserve the exact bytes of the archived scientific delivery evidence.
 parcial/delivery/flood/** -text
+parcial/pregunta_1_mri/fuentes_informe/** -text
+parcial/pregunta_2_inundaciones/fuentes_informe/** -text
+parcial/archivo/documentos_historicos/**/latex_original/** -text

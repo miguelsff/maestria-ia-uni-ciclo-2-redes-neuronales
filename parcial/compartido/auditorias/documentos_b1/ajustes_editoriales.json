@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mri",
+    "odt": "parcial/pregunta_1_mri/entregable/informe_mri.odt",
+    "odt_sha256_before": "b62cd25051f56fc977316e62e3480f36405ed908f2742ebd93d6d2c9f3465417",
+    "odt_sha256_after": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+    "paragraphs_updated": [
+      45,
+      49
+    ],
+    "source_pdf_unchanged": true,
+    "verified_runtime_reference": "codex/examen-c1-runtime@75d2db1",
+    "verified_repository_base": "main@0dc2fd2",
+    "entire_replacement_visible_on_its_page": true
+  },
+  {
+    "id": "inundaciones",
+    "odt": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.odt",
+    "odt_sha256_before": "7603735f2777464cbd75ed92df853c0a982deb449a77699a728769ee81c88e1e",
+    "odt_sha256_after": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+    "paragraphs_updated": [
+      67,
+      68
+    ],
+    "source_pdf_unchanged": true,
+    "verified_runtime_reference": "codex/examen-c1-runtime@75d2db1",
+    "verified_repository_base": "main@0dc2fd2",
+    "odt_sha256_after_initial_application": "f5917914e547a30458f4ba65fcbbad2ae23f0c1244add8b721e7565ef04cb8ce",
+    "layout_refinement": "Paragraph67 se redujo a seis líneas conservando la sustitución registrada.",
+    "entire_replacement_visible_on_its_page": true
+  }
+]

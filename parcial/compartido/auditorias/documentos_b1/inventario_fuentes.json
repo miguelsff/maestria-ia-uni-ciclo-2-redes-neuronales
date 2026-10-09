@@ -1,0 +1,396 @@
+{
+  "pdfs_before": [
+    {
+      "path": "parcial/ejemplo.pdf",
+      "sha256": "8532c8745ea326ec7b750c5aedc074523a605e346279521618e95ccc7be2edbd",
+      "pages": 11
+    },
+    {
+      "path": "parcial/examen-parcial.pdf",
+      "sha256": "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee",
+      "pages": 7
+    },
+    {
+      "path": "parcial/delivery/flood/flood_review.pdf",
+      "sha256": "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38",
+      "pages": 9
+    },
+    {
+      "path": "parcial/tmp/pdfs/wildlife_v6_review/initial_draft.pdf",
+      "sha256": "c0e4aee90f16ccd37f4358434895b1cb414ba73f52c06be65ad72d153863c446",
+      "pages": 10
+    }
+  ],
+  "sha256_groups": {
+    "8532c8745ea326ec7b750c5aedc074523a605e346279521618e95ccc7be2edbd": [
+      "parcial/ejemplo.pdf"
+    ],
+    "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee": [
+      "parcial/examen-parcial.pdf"
+    ],
+    "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38": [
+      "parcial/delivery/flood/flood_review.pdf"
+    ],
+    "c0e4aee90f16ccd37f4358434895b1cb414ba73f52c06be65ad72d153863c446": [
+      "parcial/tmp/pdfs/wildlife_v6_review/initial_draft.pdf"
+    ]
+  },
+  "documents": [
+    {
+      "id": "mri",
+      "source": "parcial/pregunta_1_mri/fuentes_informe/original.pdf",
+      "output": "parcial/pregunta_1_mri/entregable/informe_mri.odt",
+      "equations": [
+        {
+          "page": 2,
+          "bbox": [
+            189,
+            607,
+            486,
+            642
+          ],
+          "latex": "\n\\mathcal{L}_{BCE}=\n\\frac{\\sum_{ij}m_{ij}[-y_{ij}\\log p_{ij}-(1-y_{ij})\\log(1-p_{ij})]}\n{\\max(1,\\sum_{ij}m_{ij})}.\n",
+          "starmath": "func L_{BCE} = {sum_{ij} m_{ij} left[ - y_{ij} log p_{ij} - (1-y_{ij}) log (1-p_{ij}) right]} over {max (1, sum_{ij} m_{ij})}"
+        }
+      ],
+      "original_path": "E:\\Kaggle\\exam-output-mri\\stratified-v2\\reports\\mri.pdf",
+      "original_sha256": "836ad37efa1155d0678e3494f93d23b282e7a3308e9571dd2cae8841a8ed4c1f",
+      "pages": 9,
+      "layout_adjustments": {
+        "paragraph_shifts": [
+          {
+            "page": 2,
+            "y_min": 638,
+            "y_max": 730,
+            "dy": 12
+          }
+        ]
+      },
+      "editorial_updates": [
+        {
+          "paragraph": 45,
+          "source_text": "El código, la configuración congelada y los comandos se documentan en MRI_RUN.md. La versión de entrega se identifica en MRI_DELIVERY.md y en la rama codex/mri-delivery del repositorio del curso:",
+          "replacement": "El cierre se verifica con el comando compartido del examen:\npython parcial/compartido/scripts/run_exam.py closure --tests.\nLa configuración científica original se conserva en el archivo.\nLa base verificada es main@0dc2fd2; el repositorio del curso es:",
+          "scope": "Rutas migradas, base verificada y estado documental; sin cambiar resultados científicos."
+        },
+        {
+          "paragraph": 49,
+          "source_text": "Las guías de habilidades procedimentales orientaron la preparación y la evaluación [2]; no constituyen validación experimental. La autoría corresponde a los cinco integrantes del grupo. La revisión técnica y visual de esta versión no sustituye la aprobación editorial de sus autores, que queda pendiente. No se registra validación clínica ni revisión radiológica profesional.",
+          "replacement": "Las guías de habilidades procedimentales orientaron la preparación y la evaluación [2]; no constituyen\nvalidación experimental. La autoría corresponde a los cinco integrantes del grupo.\nLa revisión técnica, visual y de edición queda registrada en los recibos de cierre.\nNo se registra validación clínica ni revisión radiológica profesional.",
+          "scope": "Rutas migradas, base verificada y estado documental; sin cambiar resultados científicos."
+        }
+      ]
+    },
+    {
+      "id": "inundaciones",
+      "source": "parcial/pregunta_2_inundaciones/fuentes_informe/original.pdf",
+      "output": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.odt",
+      "equations": [
+        {
+          "page": 3,
+          "bbox": [
+            188,
+            105.64247131347656,
+            486,
+            137.64247131347656
+          ],
+          "latex": "\n\\mathcal{L}_{BCE,k}=-\\frac{1}{|V_k|}\\sum_{i\\in V_k}\n\\left[y_i\\log p_i+(1-y_i)\\log(1-p_i)\\right].\n",
+          "starmath": "func L_{BCE,k} = - {1} over {abs {V_k}} sum from {i in V_k} left[ y_i log p_i + (1-y_i) log (1-p_i) right]"
+        },
+        {
+          "page": 3,
+          "bbox": [
+            188,
+            150.53749084472656,
+            486,
+            184.53749084472656
+          ],
+          "latex": "\n\\mathcal{L}_{Dice,k}=1-\\frac{2\\sum_{i\\in V_k}p_i y_i+\\epsilon}\n{\\sum_{i\\in V_k}p_i+\\sum_{i\\in V_k}y_i+\\epsilon},\\qquad\\epsilon=10^{-6}.\n",
+          "starmath": "func L_{Dice,k} = 1 - {2 sum_{i in V_k} p_i y_i + %epsilon} over {sum_{i in V_k} p_i + sum_{i in V_k} y_i + %epsilon}, ~ %epsilon = 10^{-6}",
+          "vertical_shift": 10
+        },
+        {
+          "page": 3,
+          "bbox": [
+            179.9,
+            190,
+            245,
+            206
+          ],
+          "latex": "K^{-1}\\sum_k w_k\\mathcal L_k",
+          "starmath": "K^{-1} sum_k w_k func L_k",
+          "font_size": 8,
+          "vertical_shift": 12,
+          "inline": true
+        }
+      ],
+      "original_path": "E:\\Kaggle\\exam-delivery-flood\\review-2026-10-04\\reports\\flood_draft.pdf",
+      "original_sha256": "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38",
+      "pages": 9,
+      "layout_adjustments": {
+        "paragraph_shifts": [
+          {
+            "page": 3,
+            "y_min": 134.64247131347656,
+            "y_max": 150.53749084472656,
+            "dy": 8
+          },
+          {
+            "page": 3,
+            "y_min": 174.53749084472656,
+            "y_max": 730,
+            "dy": 12
+          }
+        ]
+      },
+      "merge_overlapping_paragraphs": true,
+      "editorial_updates": [
+        {
+          "paragraph": 67,
+          "source_text": "La reproducción local usa parcial/scripts/run_flood.ps1, con Docker Desktop, WSL2 y GPU compatible con CUDA 12.8. El script construye el entorno, verifica la caché, ejecuta controles, prueba corta, seis experimentos, notebook e informe. La opción -Resume recupera el checkpoint de la última época terminada y rechaza cambios de firma de datos o configuración. Si aparece el entrenamiento del ejercicio 3, preserva el estado de inundaciones, espera y retoma. No detiene procesos ajenos. Las salidas quedan en E:/Kaggle/exam-output-flood; datos y resultados no se incluyen en Git.",
+          "replacement": "La reproducción científica usa run_exam.py flood, con una ruta nueva\n--scientific-output y --execute-science. Requiere Docker Desktop, WSL2 y\nuna GPU compatible con CUDA 12.8. El adaptador recupera el runner original\nen una carpeta privada; conserva -Resume y sus controles de firma.\nLas salidas usan la nueva ruta y los originales permanecen preservados.\nEl cierre verifica resultados guardados sin entrenamiento ni inferencia.",
+          "scope": "Rutas migradas, base verificada y estado documental; sin cambiar resultados científicos."
+        },
+        {
+          "paragraph": 68,
+          "source_text": "El entorno usa Python 3.12, PyTorch 2.10.0, CUDA 12.8 y Rasterio 1.4.3. Los manifiestos, con- figuración congelada, hashes de fuente, historial, checkpoints, conteos por chip y metadatos de ejecución permiten rastrear cada cifra. Las pruebas cortas se guardan en otra carpeta y quedan excluidas del informe científico. El repositorio configurado es https://github.com/miguelsff/ maestria-ia-uni-ciclo-2-redes-neuronales; la versión de revisión de la pregunta 2 se iden- tifica mediante la rama codex/flood-delivery. La autoría utiliza los cinco nombres y la afiliación proporcionados por el grupo. La aprobación editorial del grupo y la entrega por la plataforma del curso deben confirmarse antes de presentar esta versión como final.",
+          "replacement": "El entorno registrado usa Python 3.12, PyTorch 2.10.0, CUDA 12.8 y Rasterio 1.4.3.\nLos manifiestos, la configuración congelada, hashes, historial, checkpoints y\nconteos por chip permiten rastrear cada cifra. Las pruebas cortas se excluyen\ndel informe científico. La base verificada es main@0dc2fd2 del repositorio\nhttps://github.com/miguelsff/maestria-ia-uni-ciclo-2-redes-neuronales.\nLa autoría conserva los cinco nombres y la afiliación del grupo. La edición\ny exportación final quedan registradas en los recibos de cierre. La entrega\npor la plataforma y su recepción externa no constan en esta verificación.",
+          "scope": "Rutas migradas, base verificada y estado documental; sin cambiar resultados científicos."
+        }
+      ]
+    },
+    {
+      "id": "examen",
+      "source": "parcial/archivo/referencias_originales/examen-parcial.pdf",
+      "output": "parcial/examen-parcial.odt",
+      "equations": [],
+      "original_path": "C:\\Users\\USER\\.codex\\worktrees\\3512\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\examen-parcial.pdf",
+      "original_sha256": "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee",
+      "pages": 7
+    },
+    {
+      "id": "ejemplo",
+      "source": "parcial/archivo/referencias_originales/ejemplo.pdf",
+      "output": "parcial/ejemplo.odt",
+      "equations": [
+        {
+          "page": 4,
+          "bbox": [
+            198,
+            165,
+            486,
+            198
+          ],
+          "latex": "\\mathcal L_{BCE}=-\\frac1N\\sum_{i=1}^N[y_i\\log(p_i)+(1-y_i)\\log(1-p_i)]",
+          "starmath": "func L_{BCE} = - {1} over N sum from {i=1} to N left[ y_i log (p_i) + (1-y_i) log (1-p_i) right]"
+        },
+        {
+          "page": 4,
+          "bbox": [
+            202,
+            234,
+            486,
+            272
+          ],
+          "latex": "\\mathcal L_{Dice}=1-\\frac{2\\sum_{i=1}^N p_i y_i+\\epsilon}{\\sum_{i=1}^N p_i+\\sum_{i=1}^N y_i+\\epsilon},\\quad\\epsilon=10^{-6}",
+          "starmath": "func L_{Dice} = 1 - {2 sum_{i=1}^{N} p_i y_i + %epsilon} over {sum_{i=1}^{N} p_i + sum_{i=1}^{N} y_i + %epsilon}, ~ %epsilon = 10^{-6}"
+        },
+        {
+          "page": 4,
+          "bbox": [
+            250,
+            304,
+            486,
+            320
+          ],
+          "latex": "\\mathcal L_{total}=\\mathcal L_{WBCE}+\\mathcal L_{Dice}",
+          "starmath": "func L_{total} = func L_{WBCE} + func L_{Dice}",
+          "vertical_shift": 14
+        },
+        {
+          "page": 4,
+          "bbox": [
+            185,
+            349,
+            486,
+            382
+          ],
+          "latex": "\\mathcal L_{WBCE}=-\\frac1N\\sum_{i=1}^N[30\\cdot y_i\\log(p_i)+(1-y_i)\\log(1-p_i)]",
+          "starmath": "func L_{WBCE} = - {1} over N sum from {i=1} to N left[ 30 cdot y_i log (p_i) + (1-y_i) log (1-p_i) right]",
+          "vertical_shift": 14
+        },
+        {
+          "page": 5,
+          "bbox": [
+            192,
+            128,
+            290,
+            144
+          ],
+          "latex": "\\mathrm{DSC}=\\frac{2TP}{2TP+FP+FN}",
+          "starmath": "DSC = {2 TP} over {2 TP + FP + FN}",
+          "inline": false
+        },
+        {
+          "page": 5,
+          "bbox": [
+            198,
+            150,
+            275,
+            166
+          ],
+          "latex": "\\mathrm{Sens}=\\frac{TP}{TP+FN}",
+          "starmath": "Sens = TP over {TP + FN}",
+          "inline": false
+        },
+        {
+          "page": 5,
+          "bbox": [
+            202,
+            171,
+            275,
+            188
+          ],
+          "latex": "\\mathrm{Esp}=\\frac{TN}{TN+FP}",
+          "starmath": "Esp = TN over {TN + FP}",
+          "inline": false
+        },
+        {
+          "page": 5,
+          "bbox": [
+            186,
+            193,
+            261,
+            210
+          ],
+          "latex": "\\mathrm{Prec}=\\frac{TP}{TP+FP}",
+          "starmath": "\"Prec\" = TP over {TP + FP}",
+          "inline": false
+        }
+      ],
+      "original_path": "C:\\Users\\USER\\.codex\\worktrees\\3512\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\ejemplo.pdf",
+      "original_sha256": "8532c8745ea326ec7b750c5aedc074523a605e346279521618e95ccc7be2edbd",
+      "pages": 11,
+      "layout_adjustments": {
+        "paragraph_shifts": [
+          {
+            "page": 4,
+            "y_min": 274,
+            "y_max": 730,
+            "dy": 14
+          }
+        ]
+      }
+    },
+    {
+      "id": "fauna_borrador_historico",
+      "source": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/original.pdf",
+      "output": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.odt",
+      "equations": [],
+      "original_path": "C:\\Users\\USER\\.codex\\worktrees\\3512\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\tmp\\pdfs\\wildlife_v6_review\\initial_draft.pdf",
+      "original_sha256": "c0e4aee90f16ccd37f4358434895b1cb414ba73f52c06be65ad72d153863c446",
+      "pages": 10
+    },
+    {
+      "id": "inundaciones_borrador_historico",
+      "source": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/original.pdf",
+      "output": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.odt",
+      "equations": [
+        {
+          "page": 2,
+          "bbox": [
+            188,
+            643.3134765625,
+            486,
+            675.3134765625
+          ],
+          "latex": "\n\\mathcal{L}_{BCE,k}=-\\frac{1}{|V_k|}\\sum_{i\\in V_k}\n\\left[y_i\\log p_i+(1-y_i)\\log(1-p_i)\\right].\n",
+          "starmath": "func L_{BCE,k} = - {1} over {abs {V_k}} sum from {i in V_k} left[ y_i log p_i + (1-y_i) log (1-p_i) right]"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            188,
+            696.5454711914062,
+            486,
+            730.5454711914062
+          ],
+          "latex": "\n\\mathcal{L}_{Dice,k}=1-\\frac{2\\sum_{i\\in V_k}p_i y_i+\\epsilon}\n{\\sum_{i\\in V_k}p_i+\\sum_{i\\in V_k}y_i+\\epsilon},\\qquad\\epsilon=10^{-6}.\n",
+          "starmath": "func L_{Dice,k} = 1 - {2 sum_{i in V_k} p_i y_i + %epsilon} over {sum_{i in V_k} p_i + sum_{i in V_k} y_i + %epsilon}, ~ %epsilon = 10^{-6}",
+          "vertical_shift": 0
+        },
+        {
+          "page": 3,
+          "bbox": [
+            179.9,
+            83,
+            245,
+            99
+          ],
+          "latex": "K^{-1}\\sum_k w_k\\mathcal L_k",
+          "starmath": "K^{-1} sum_k w_k func L_k",
+          "font_size": 8,
+          "vertical_shift": 0,
+          "inline": true
+        }
+      ],
+      "original_path": "E:\\Kaggle\\exam-output-flood\\reports\\flood_draft.pdf",
+      "original_sha256": "00c86d3b767cb5ed35f03325cf92d9e906cea3b59e637ab77f044eb2825eeeb0",
+      "pages": 9,
+      "layout_adjustments": {
+        "paragraph_shifts": []
+      },
+      "merge_overlapping_paragraphs": true
+    },
+    {
+      "id": "fauna",
+      "source": "parcial/pregunta_3_fauna/evidencias/informe_fauna_provisional.pdf",
+      "output": "parcial/pregunta_3_fauna/entregable/informe_fauna.odt",
+      "equations": [],
+      "verified_source_commit": "1d623e792dc0057f007b6c3ec97df5268860ec30",
+      "pages": 10,
+      "original_sha256": "8ce4c2d889c40b0dbfe913f70062568c109cf7bf98600c1b93a8270c670a11a8"
+    },
+    {
+      "id": "anexo_occlusion",
+      "source": "parcial/pregunta_3_fauna/evidencias/anexo_occlusion_provisional.pdf",
+      "output": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.odt",
+      "equations": [],
+      "verified_source_commit": "1d623e792dc0057f007b6c3ec97df5268860ec30",
+      "pages": 2,
+      "original_sha256": "39f42dba272264327200585267136867aa500478b7c3eedd9206428feef48cde"
+    }
+  ],
+  "sha256_source_groups": {
+    "836ad37efa1155d0678e3494f93d23b282e7a3308e9571dd2cae8841a8ed4c1f": [
+      "parcial/pregunta_1_mri/fuentes_informe/original.pdf"
+    ],
+    "7f97c93e3f248ceb12fc700ed42332894e09b83e517afed248a208fbf8fb7e38": [
+      "parcial/pregunta_2_inundaciones/fuentes_informe/original.pdf",
+      "parcial/delivery/flood/flood_review.pdf"
+    ],
+    "68c4f86b0b73c7867d01872dc0e59089e366d86a7e1fe70dec94bdfba10dcaee": [
+      "parcial/archivo/referencias_originales/examen-parcial.pdf",
+      "parcial/examen-parcial.pdf"
+    ],
+    "8532c8745ea326ec7b750c5aedc074523a605e346279521618e95ccc7be2edbd": [
+      "parcial/archivo/referencias_originales/ejemplo.pdf",
+      "parcial/ejemplo.pdf"
+    ],
+    "c0e4aee90f16ccd37f4358434895b1cb414ba73f52c06be65ad72d153863c446": [
+      "parcial/archivo/documentos_historicos/fauna_borrador_inicial/original.pdf",
+      "parcial/tmp/pdfs/wildlife_v6_review/initial_draft.pdf"
+    ],
+    "00c86d3b767cb5ed35f03325cf92d9e906cea3b59e637ab77f044eb2825eeeb0": [
+      "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/original.pdf"
+    ],
+    "8ce4c2d889c40b0dbfe913f70062568c109cf7bf98600c1b93a8270c670a11a8": [
+      "parcial/pregunta_3_fauna/evidencias/informe_fauna_provisional.pdf"
+    ],
+    "39f42dba272264327200585267136867aa500478b7c3eedd9206428feef48cde": [
+      "parcial/pregunta_3_fauna/evidencias/anexo_occlusion_provisional.pdf"
+    ]
+  },
+  "unique_pdf_sources_converted": 8,
+  "groups_scope": "Fuentes preservadas y alias registrados antes de convertir. Las rutas derivadas actuales pueden contener PDF exportados distintos."
+}

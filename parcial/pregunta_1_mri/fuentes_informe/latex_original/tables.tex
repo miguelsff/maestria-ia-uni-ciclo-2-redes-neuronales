@@ -1,0 +1,98 @@
+\begin{table}[ht]
+\centering\small
+\caption{Ocho variantes con el mismo conjunto experto. ND no se sustituye por el promedio parcial.}
+\begin{tabular}{lrrrrr}
+\toprule
+Variante & Épocas & Mejor & AUC 12 & AUC parcial & F1 macro \\
+\midrule
+CNN/bce/pond. & 48 & 38 & 0.5776 & 0.5776 & 0.3610 \\
+CNN/bce/filtro & 23 & 13 & 0.5130 & 0.5130 & 0.4535 \\
+CNN/focal/pond. & 29 & 19 & 0.5723 & 0.5723 & 0.4961 \\
+CNN/focal/filtro & 23 & 13 & 0.5204 & 0.5204 & 0.4253 \\
+ResNet/bce/pond. & 12 & 2 & 0.6189 & 0.6189 & 0.3614 \\
+ResNet/bce/filtro & 11 & 1 & 0.6020 & 0.6020 & 0.4513 \\
+ResNet/focal/pond. & 12 & 2 & 0.6199 & 0.6199 & 0.5056 \\
+ResNet/focal/filtro & 12 & 2 & 0.5877 & 0.5877 & 0.4863 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering\small
+\caption{Baseline CNN/BCE/ponderación fijado previamente. Evaluación de 58 estudios, umbral 0,5.}
+\begin{tabular}{lrrrrr}
+\toprule
+Hallazgo & Positivos & AUC & Precisión & Recall & F1 \\
+\midrule
+ACL & 24 & 0.6777 & 0.5000 & 0.7500 & 0.6000 \\
+MCL & 9 & 0.5646 & 0.1667 & 0.5556 & 0.2564 \\
+Medial Meniscus & 26 & 0.5385 & 0.4182 & 0.8846 & 0.5679 \\
+Lateral Meniscus & 23 & 0.4348 & 0.2857 & 0.0870 & 0.1333 \\
+Medial OA & 15 & 0.6605 & 1.0000 & 0.0667 & 0.1250 \\
+Lateral OA & 11 & 0.7331 & 0.0000 & 0.0000 & 0.0000 \\
+PF OA & 21 & 0.6718 & 1.0000 & 0.0476 & 0.0909 \\
+Effusion & 35 & 0.5478 & 0.6034 & 1.0000 & 0.7527 \\
+Synovitis & 27 & 0.4946 & 0.4694 & 0.8519 & 0.6053 \\
+Baker's & 12 & 0.5236 & 0.2432 & 0.7500 & 0.3673 \\
+Contusion & 19 & 0.6167 & 0.3600 & 0.9474 & 0.5217 \\
+Fracture & 18 & 0.4681 & 0.2593 & 0.3889 & 0.3111 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering\small
+\caption{Conteos positivos y supervisión efectiva. La ausencia de mención recibe peso 0,2; no es negación experta.}
+\begin{tabular}{lrrrrr}
+\toprule
+Hallazgo & Train + & Val + & Gold + & Filtro obs. & Filtro + \\
+\midrule
+ACL & 143 & 42 & 24 & 226 & 143 \\
+MCL & 102 & 39 & 9 & 189 & 102 \\
+Medial Meniscus & 158 & 47 & 26 & 222 & 158 \\
+Lateral Meniscus & 127 & 41 & 23 & 233 & 127 \\
+Medial OA & 35 & 12 & 15 & 51 & 35 \\
+Lateral OA & 10 & 4 & 11 & 36 & 10 \\
+PF OA & 45 & 18 & 21 & 123 & 45 \\
+Effusion & 282 & 77 & 35 & 318 & 282 \\
+Synovitis & 140 & 41 & 27 & 140 & 140 \\
+Baker's & 145 & 43 & 12 & 206 & 145 \\
+Contusion & 129 & 39 & 19 & 146 & 129 \\
+Fracture & 124 & 42 & 18 & 182 & 124 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering\small
+\caption{Comparación diagnóstica de reglas congeladas con los 58 expertos; observados/58 expresa cobertura.}
+\begin{tabular}{lrrrr}
+\toprule
+Hallazgo & Todas obs. & Desacuerdo & Filtro obs. & Desacuerdo \\
+\midrule
+ACL & 50 & 0.1600 & 28 & 0.0714 \\
+MCL & 53 & 0.0755 & 21 & 0.1429 \\
+Medial Meniscus & 54 & 0.3704 & 21 & 0.1905 \\
+Lateral Meniscus & 52 & 0.2885 & 16 & 0.1250 \\
+Medial OA & 54 & 0.2407 & 5 & 0.2000 \\
+Lateral OA & 54 & 0.2037 & 1 & 0.0000 \\
+PF OA & 54 & 0.3333 & 16 & 0.1875 \\
+Effusion & 53 & 0.3962 & 45 & 0.3111 \\
+Synovitis & 54 & 0.3148 & 15 & 0.2667 \\
+Baker's & 54 & 0.1852 & 19 & 0.3158 \\
+Contusion & 51 & 0.2941 & 15 & 0.4667 \\
+Fracture & 49 & 0.1429 & 18 & 0.1667 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[ht]
+\centering\small
+\caption{Cobertura del extractor en todos los 4.349 reportes no expertos. Escritura no identifica idioma ni centro; Thai tiene solo tres casos.}
+\begin{tabular}{lrrr}
+\toprule
+Escritura & Reportes débiles & Compatibles & Cobertura \\
+\midrule
+Latin/mixed & 3811 & 3488 & 0.9152 \\
+Cyrillic & 217 & 209 & 0.9631 \\
+Greek & 318 & 239 & 0.7516 \\
+Thai & 3 & 3 & 1.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}

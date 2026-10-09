@@ -1,0 +1,83 @@
+{
+  "format_version": 1,
+  "renderer_image": "exam-document-renderer:b1",
+  "renderer_image_id": "sha256:94b5aaf5c97134beb4a5602355ef97760a148992ac9ec774e6c835638224bd5a",
+  "libreoffice_version": "LibreOffice 25.2.3.2 520(Build:2)",
+  "source_of_pdf": "Maestro ODT leído por LibreOffice Writer; sin TEX ni DOCX intermedio.",
+  "input_directory": "C:\\Users\\USER\\.codex\\worktrees\\3512\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial",
+  "output_directory": "C:\\Users\\USER\\.codex\\worktrees\\3512\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial",
+  "documents": [
+    {
+      "odt": "ejemplo.odt",
+      "odt_sha256_before": "a4cafbcdf13ead013e71dd6c1cdf72f05a9d4d71298f1937eb6553f75da02f38",
+      "odt_sha256_after": "a4cafbcdf13ead013e71dd6c1cdf72f05a9d4d71298f1937eb6553f75da02f38",
+      "odt_preserved": true,
+      "pdf": "ejemplo.pdf",
+      "pdf_sha256": "f7605a39a1b315e2a6506ddfc823e6039bb63750cdb5edf09b5ca5e082795784",
+      "bytes_pdf": 1035917
+    },
+    {
+      "odt": "examen-parcial.odt",
+      "odt_sha256_before": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "odt_sha256_after": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+      "odt_preserved": true,
+      "pdf": "examen-parcial.pdf",
+      "pdf_sha256": "62c38a21a71bf61fc80ebdf48382869ff578834f756d4096e194bafe873f17a1",
+      "bytes_pdf": 142514
+    },
+    {
+      "odt": "archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.odt",
+      "odt_sha256_before": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "odt_sha256_after": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+      "odt_preserved": true,
+      "pdf": "archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.pdf",
+      "pdf_sha256": "e6b55856e3e17d2efc5abff5a5ab201322ad45c219c577aedf5ac56ff1c412e7",
+      "bytes_pdf": 1009767
+    },
+    {
+      "odt": "archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.odt",
+      "odt_sha256_before": "7d2c3812dad734de605733e18ff440482f60f1d17e99660f4be3db65f22e1b89",
+      "odt_sha256_after": "7d2c3812dad734de605733e18ff440482f60f1d17e99660f4be3db65f22e1b89",
+      "odt_preserved": true,
+      "pdf": "archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.pdf",
+      "pdf_sha256": "d2d24481b64171a8cf84ceba750200743f60a101f132987e9fda99896d0b4249",
+      "bytes_pdf": 1401129
+    },
+    {
+      "odt": "pregunta_1_mri/entregable/informe_mri.odt",
+      "odt_sha256_before": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+      "odt_sha256_after": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+      "odt_preserved": true,
+      "pdf": "pregunta_1_mri/entregable/informe_mri.pdf",
+      "pdf_sha256": "37f4628a2fd70fe1c9f09ff659761df3f3162b7f7c892fee51fb9f17669b4648",
+      "bytes_pdf": 894532
+    },
+    {
+      "odt": "pregunta_2_inundaciones/entregable/informe_inundaciones.odt",
+      "odt_sha256_before": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+      "odt_sha256_after": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+      "odt_preserved": true,
+      "pdf": "pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+      "pdf_sha256": "47ca54c719e13f5bfbf61d6ae95dcdc7e31e32e43aee7f355994af450d864f1b",
+      "bytes_pdf": 1401502
+    },
+    {
+      "odt": "pregunta_3_fauna/entregable/anexo_occlusion.odt",
+      "odt_sha256_before": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "odt_sha256_after": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+      "odt_preserved": true,
+      "pdf": "pregunta_3_fauna/entregable/anexo_occlusion.pdf",
+      "pdf_sha256": "45cd5d02b7c15c97859eddd30a8ec50180e4303e7aaaf93cbf87fe2e7e3a8e99",
+      "bytes_pdf": 117762
+    },
+    {
+      "odt": "pregunta_3_fauna/entregable/informe_fauna.odt",
+      "odt_sha256_before": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "odt_sha256_after": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+      "odt_preserved": true,
+      "pdf": "pregunta_3_fauna/entregable/informe_fauna.pdf",
+      "pdf_sha256": "a429deec1996bdae030a01fce6550b0dfc6005a2043d9939a6908a4ff79b4018",
+      "bytes_pdf": 1028847
+    }
+  ]
+}

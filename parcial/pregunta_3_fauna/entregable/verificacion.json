@@ -1,5 +1,5 @@
 {
-  "status": "scientific_notebooks_and_metrics_verified_documents_pending_B2",
+  "status": "scientific_notebooks_metrics_and_native_documents_verified",
   "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
   "notebook_cells": {
     "03_wildlife.ipynb": 16,
@@ -44,14 +44,23 @@
     "data/v6/wildlife/yolov8s/results.csv": "f1b60800900f84a6c07e5db411ccaa00162b7111b7ab901e55595a1035eed4f9",
     "integridad_datos.json": "ce4578bde13054803dc3f9524e20bd7c3d2049b76a34220da212e19117c44440",
     "LEEME.md": "18c25c2c94a7024301bb852848899ee9527a652c5ab907b0cd5456accef8edcf",
-    "metricas_occlusion.csv": "b67d872ff27548c95df9639e88259102433508b50c0f4fb33c3750228707447a"
+    "metricas_occlusion.csv": "b67d872ff27548c95df9639e88259102433508b50c0f4fb33c3750228707447a",
+    "informe_fauna.odt": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+    "informe_fauna.pdf": "a429deec1996bdae030a01fce6550b0dfc6005a2043d9939a6908a4ff79b4018",
+    "anexo_occlusion.odt": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+    "anexo_occlusion.pdf": "45cd5d02b7c15c97859eddd30a8ec50180e4303e7aaaf93cbf87fe2e7e3a8e99"
   },
-  "final_documents_pending": [
-    "informe_fauna.odt",
-    "informe_fauna.pdf",
-    "anexo_occlusion.odt",
-    "anexo_occlusion.pdf"
-  ],
+  "final_documents_pending": [],
   "provisional_main_pages": 10,
-  "provisional_annex_pages": 2
+  "provisional_annex_pages": 2,
+  "native_documents_B2": {
+    "main_pages": 10,
+    "annex_pages": 2,
+    "real_edit_and_export_verified": true,
+    "masters_preserved_during_export": true,
+    "content_and_visual_review_passed": true,
+    "source_commit_A": "1d623e792dc0057f007b6c3ec97df5268860ec30",
+    "audit_directory": "parcial/compartido/auditorias/documentos_b1",
+    "training_or_inference": false
+  }
 }

@@ -1,0 +1,69 @@
+{
+  "stage": "B1+B2",
+  "status": "complete_verified_ready_for_integration",
+  "worktree": "C:\\Users\\USER\\.codex\\worktrees\\3512\\maestria-ia-uni-ciclo-2-redes-neuronales",
+  "branch": "codex/examen-documentos-b1",
+  "base_commit": "0dc2fd20f424941919c38ff213894541e60ab200",
+  "common_commit_original": "8bb5a3917756eaa0e8cb63537c919f3e1c54f6ab",
+  "common_commit_local": "b61afeb",
+  "source_A_commit_original": "1d623e792dc0057f007b6c3ec97df5268860ec30",
+  "source_A_commit_local": "6a7bb11f7090504134360d56cc296d959b3c6baf",
+  "configuration": {
+    "model_requested_at_creation": null,
+    "effort_requested_at_creation": null,
+    "speed": "standard inherited (default); no individual parameter exposed",
+    "evidence": "Los argumentos de creación del chat B no se exponen a este agente. El coordinador conserva ese registro.",
+    "effective_runtime_configuration_independently_verified": false
+  },
+  "validation": {
+    "status": "passed",
+    "documents": 8,
+    "complete_pages": 67,
+    "native_paragraphs": 574,
+    "native_tables": 57,
+    "native_mathml_objects": 15,
+    "source_to_native_text_complete": true,
+    "no_unrecorded_paragraph_or_cell_changes": true,
+    "word_token_coverage_complete": true,
+    "formulas_match_manifest": true,
+    "editorial_page_context_complete": true,
+    "all_pages_rendered_and_inspected": true,
+    "all_masters_editable_in_real_Writer": true,
+    "all_edited_markers_visible_in_export": true,
+    "export_preserved_all_master_bytes": true,
+    "initializer_refuses_existing_masters": true,
+    "ruff": "All checks passed! (seven new Python scripts only)",
+    "source_preservation": "44 originales científicos y 77 archivos LaTeX conservan sus hashes; 8 fuentes PDF únicas."
+  },
+  "renderer": {
+    "image": "exam-document-renderer:b1",
+    "image_id": "sha256:94b5aaf5c97134beb4a5602355ef97760a148992ac9ec774e6c835638224bd5a",
+    "libreoffice_version": "LibreOffice 25.2.3.2 520(Build:2)",
+    "network_during_export": "none",
+    "fonts_receipt": "renderer_fonts.txt",
+    "packages_receipt": "renderer_packages.tsv"
+  },
+  "training_or_inference_performed": false,
+  "original_checkout_modified": false,
+  "scientific_data_or_originals_on_E_modified": false,
+  "publication_or_merge_performed": false,
+  "pending": [
+    {
+      "owner": "Chat coordinador",
+      "task": "Integrar este commit B1/B2 y completar C/D2 y la revisión de publicación."
+    },
+    {
+      "owner": "Chat coordinador",
+      "task": "Completar modelo/esfuerzo solicitados con el registro de creación; no confundirlos con configuración efectiva verificada."
+    }
+  ],
+  "rollback": "Retirar los pares ODT/PDF derivados y el renderer documental; restaurar los PDF de referencia de archivo/referencias_originales. Conservar los datos, notebooks y resultados de A y las fuentes experimentales congeladas.",
+  "git_staging": {
+    "scope_files": 146,
+    "protected_files_physical_hashes_verified_in_index": 122,
+    "frozen_scientific_sources_staged": 0,
+    "temporary_files_staged": 0,
+    "whitespace_check": "passed for authored scripts, documentation and state; archived original LaTeX bytes preserved",
+    "PowerShell_verified": "7.6.5"
+  }
+}

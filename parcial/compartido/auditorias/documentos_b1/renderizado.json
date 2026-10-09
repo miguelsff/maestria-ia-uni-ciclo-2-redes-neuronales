@@ -1,0 +1,267 @@
+[
+  {
+    "id": "mri",
+    "pdf": "parcial/pregunta_1_mri/entregable/informe_mri.pdf",
+    "pdf_sha256": "37f4628a2fd70fe1c9f09ff659761df3f3162b7f7c892fee51fb9f17669b4648",
+    "rendered_pages": 9,
+    "renderer": "Poppler pdftoppm 120 dpi",
+    "sheets": [
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/mri-01.png",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "sha256": "06b9f3e7a5c4638e60e487dcbdcea1b213e2a721c42c9f4052bc54d30a492696"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/mri-02.png",
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "sha256": "de5ca8f90bb6c4954e408373b007ad517754fa09ea5aa83bc4f2a3f2d05428c2"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/mri-03.png",
+        "pages": [
+          9
+        ],
+        "sha256": "9ff39528651ba0ef8db92bc23f09d5a9133093338d51b64f3d80f867372b75b2"
+      }
+    ]
+  },
+  {
+    "id": "inundaciones",
+    "pdf": "parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.pdf",
+    "pdf_sha256": "47ca54c719e13f5bfbf61d6ae95dcdc7e31e32e43aee7f355994af450d864f1b",
+    "rendered_pages": 9,
+    "renderer": "Poppler pdftoppm 120 dpi",
+    "sheets": [
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/inundaciones-01.png",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "sha256": "f076347f636acbf7ea4b8a30f8f55b9468b82609e03bb70066f55dc1727ce418"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/inundaciones-02.png",
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "sha256": "19c892ac12f05a0275ca9b005c4f155b0d64ba0b5432d6f03ec4932d2acdcedf"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/inundaciones-03.png",
+        "pages": [
+          9
+        ],
+        "sha256": "6781ca36a44e2bc754436407066d7d0f57b2d7a26f09aaf32d649d3e3fcc9466"
+      }
+    ]
+  },
+  {
+    "id": "examen",
+    "pdf": "parcial/examen-parcial.pdf",
+    "pdf_sha256": "62c38a21a71bf61fc80ebdf48382869ff578834f756d4096e194bafe873f17a1",
+    "rendered_pages": 7,
+    "renderer": "Poppler pdftoppm 120 dpi",
+    "sheets": [
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/examen-01.png",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "sha256": "9cb2a0f100d745e8cb5ac2548971048be090df56e5b2d9e84a0a33e8892ae0aa"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/examen-02.png",
+        "pages": [
+          5,
+          6,
+          7
+        ],
+        "sha256": "4699d65cde13e44088e50b687e32059d1851cef7a01b8327cc54fce149250502"
+      }
+    ]
+  },
+  {
+    "id": "ejemplo",
+    "pdf": "parcial/ejemplo.pdf",
+    "pdf_sha256": "f7605a39a1b315e2a6506ddfc823e6039bb63750cdb5edf09b5ca5e082795784",
+    "rendered_pages": 11,
+    "renderer": "Poppler pdftoppm 120 dpi",
+    "sheets": [
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/ejemplo-01.png",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "sha256": "892e0117e3f487bd5a0fa379db9f2beaa6b186b097e2eeea70b1c9b34e2df08e"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/ejemplo-02.png",
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "sha256": "a87f130bdd818cfd9b0955759d0606ae79cff4027910549d3cdf52c027d1b1a1"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/ejemplo-03.png",
+        "pages": [
+          9,
+          10,
+          11
+        ],
+        "sha256": "6e6730b8bfa3652137664b22036a07a3a40954012392327590e6bef515f21656"
+      }
+    ]
+  },
+  {
+    "id": "fauna_borrador_historico",
+    "pdf": "parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.pdf",
+    "pdf_sha256": "e6b55856e3e17d2efc5abff5a5ab201322ad45c219c577aedf5ac56ff1c412e7",
+    "rendered_pages": 10,
+    "renderer": "Poppler pdftoppm 120 dpi",
+    "sheets": [
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/fauna_borrador_historico-01.png",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "sha256": "0c4e39d52d9d619a0bf3b969ae68b6d214a89b4d78a677b8b7f771d0aeb7d69c"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/fauna_borrador_historico-02.png",
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "sha256": "6dfc2fc5cb46031b0a31826eacd063b5acfc4c97704f664bd3b780cb618f085d"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/fauna_borrador_historico-03.png",
+        "pages": [
+          9,
+          10
+        ],
+        "sha256": "d4a78f25d0cbf89d262e0b7f26f171da6ed7ebfbd217b31b7fc9db9dffd02736"
+      }
+    ]
+  },
+  {
+    "id": "inundaciones_borrador_historico",
+    "pdf": "parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.pdf",
+    "pdf_sha256": "d2d24481b64171a8cf84ceba750200743f60a101f132987e9fda99896d0b4249",
+    "rendered_pages": 9,
+    "renderer": "Poppler pdftoppm 120 dpi",
+    "sheets": [
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/inundaciones_borrador_historico-01.png",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "sha256": "399daf4a836fac64809e9653924a85a21cf20b46fe0679216ebab4ce4430ddfa"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/inundaciones_borrador_historico-02.png",
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "sha256": "7e24bbac3c478f8e381d04e47fa92bbbc784523b34ef13e2e4dccdbc66b6d672"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/inundaciones_borrador_historico-03.png",
+        "pages": [
+          9
+        ],
+        "sha256": "fce962d36c5851afa946ebfaa1a0eb6b790a5f9d6497cd0ba4839638c96b38de"
+      }
+    ]
+  },
+  {
+    "id": "fauna",
+    "pdf": "parcial/pregunta_3_fauna/entregable/informe_fauna.pdf",
+    "pdf_sha256": "a429deec1996bdae030a01fce6550b0dfc6005a2043d9939a6908a4ff79b4018",
+    "rendered_pages": 10,
+    "renderer": "Poppler pdftoppm 120 dpi",
+    "sheets": [
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/fauna-01.png",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "sha256": "7dfa09de6f99bf3fc856bb2ff48cb54be6c814cfe422b53e39b6be35adeebf11"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/fauna-02.png",
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "sha256": "b4e38611f3839b1c7557a622fe1d859e76214f0e1ce8af200561082c4fc0fb68"
+      },
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/fauna-03.png",
+        "pages": [
+          9,
+          10
+        ],
+        "sha256": "b291ff6d00ba6c108fed696e20bfdd498aef2c59d1cd4a34a21d97ad05796ad7"
+      }
+    ]
+  },
+  {
+    "id": "anexo_occlusion",
+    "pdf": "parcial/pregunta_3_fauna/entregable/anexo_occlusion.pdf",
+    "pdf_sha256": "45cd5d02b7c15c97859eddd30a8ec50180e4303e7aaaf93cbf87fe2e7e3a8e99",
+    "rendered_pages": 2,
+    "renderer": "Poppler pdftoppm 120 dpi",
+    "sheets": [
+      {
+        "path": "parcial/compartido/auditorias/documentos_b1/visual/anexo_occlusion-01.png",
+        "pages": [
+          1,
+          2
+        ],
+        "sha256": "c23f1a0b97b7a42306829e85c953055f786e5f456efd9c087ccc445476c69236"
+      }
+    ]
+  }
+]

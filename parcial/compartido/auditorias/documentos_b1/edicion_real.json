@@ -1,0 +1,166 @@
+[
+  {
+    "id": "mri",
+    "master": "/work/parcial/pregunta_1_mri/entregable/informe_mri.odt",
+    "paragraph_edited": true,
+    "writer_text_frames": 73,
+    "writer_tables": 6,
+    "writer_equations": 1,
+    "table_cell_edited": true,
+    "equation_edited": true,
+    "master_sha256_before": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+    "master_sha256_after": "f3e79ebc5beb4f8d0f796b3b252af8b56f29325e07e146279c3f7a298eae998d",
+    "master_unchanged": true,
+    "copy_odt": "/work/tmp/document-editability-final/informe_mri.odt",
+    "copy_pdf": "/work/tmp/document-editability-final/informe_mri.pdf",
+    "pdf_created": true,
+    "edited_markers_visible_in_export": {
+      "paragraph": true,
+      "table_cell": true,
+      "equation": true
+    }
+  },
+  {
+    "id": "inundaciones",
+    "master": "/work/parcial/pregunta_2_inundaciones/entregable/informe_inundaciones.odt",
+    "paragraph_edited": true,
+    "writer_text_frames": 83,
+    "writer_tables": 6,
+    "writer_equations": 3,
+    "table_cell_edited": true,
+    "equation_edited": true,
+    "master_sha256_before": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+    "master_sha256_after": "1726f54e74bca3defcee3e8f70fc4bb5bd6a8292df191cc33dda56d23ff89b2b",
+    "master_unchanged": true,
+    "copy_odt": "/work/tmp/document-editability-final/informe_inundaciones.odt",
+    "copy_pdf": "/work/tmp/document-editability-final/informe_inundaciones.pdf",
+    "pdf_created": true,
+    "edited_markers_visible_in_export": {
+      "paragraph": true,
+      "table_cell": true,
+      "equation": true
+    }
+  },
+  {
+    "id": "examen",
+    "master": "/work/parcial/examen-parcial.odt",
+    "paragraph_edited": true,
+    "writer_text_frames": 71,
+    "writer_tables": 3,
+    "writer_equations": 0,
+    "table_cell_edited": true,
+    "equation_edited": "No aplica: no contiene ecuaciones desplegadas",
+    "master_sha256_before": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+    "master_sha256_after": "3365908a12e1f73141c103e22351bd2ebfd7ea1fbd22db274d4534da6c4d9ab3",
+    "master_unchanged": true,
+    "copy_odt": "/work/tmp/document-editability-final/examen-parcial.odt",
+    "copy_pdf": "/work/tmp/document-editability-final/examen-parcial.pdf",
+    "pdf_created": true,
+    "edited_markers_visible_in_export": {
+      "paragraph": true,
+      "table_cell": true
+    }
+  },
+  {
+    "id": "ejemplo",
+    "master": "/work/parcial/ejemplo.odt",
+    "paragraph_edited": true,
+    "writer_text_frames": 131,
+    "writer_tables": 8,
+    "writer_equations": 8,
+    "table_cell_edited": true,
+    "equation_edited": true,
+    "master_sha256_before": "a4cafbcdf13ead013e71dd6c1cdf72f05a9d4d71298f1937eb6553f75da02f38",
+    "master_sha256_after": "a4cafbcdf13ead013e71dd6c1cdf72f05a9d4d71298f1937eb6553f75da02f38",
+    "master_unchanged": true,
+    "copy_odt": "/work/tmp/document-editability-final/ejemplo.odt",
+    "copy_pdf": "/work/tmp/document-editability-final/ejemplo.pdf",
+    "pdf_created": true,
+    "edited_markers_visible_in_export": {
+      "paragraph": true,
+      "table_cell": true,
+      "equation": true
+    }
+  },
+  {
+    "id": "fauna_borrador_historico",
+    "master": "/work/parcial/archivo/documentos_historicos/fauna_borrador_inicial/fauna_borrador_inicial.odt",
+    "paragraph_edited": true,
+    "writer_text_frames": 82,
+    "writer_tables": 13,
+    "writer_equations": 0,
+    "table_cell_edited": true,
+    "equation_edited": "No aplica: no contiene ecuaciones desplegadas",
+    "master_sha256_before": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+    "master_sha256_after": "3986f9e74686730806c772f42d5d85cc826b04a002f3f4ec963721b5262050e3",
+    "master_unchanged": true,
+    "copy_odt": "/work/tmp/document-editability-final/fauna_borrador_inicial.odt",
+    "copy_pdf": "/work/tmp/document-editability-final/fauna_borrador_inicial.pdf",
+    "pdf_created": true,
+    "edited_markers_visible_in_export": {
+      "paragraph": true,
+      "table_cell": true
+    }
+  },
+  {
+    "id": "inundaciones_borrador_historico",
+    "master": "/work/parcial/archivo/documentos_historicos/inundaciones_borrador_cientifico/inundaciones_borrador_cientifico.odt",
+    "paragraph_edited": true,
+    "writer_text_frames": 83,
+    "writer_tables": 6,
+    "writer_equations": 3,
+    "table_cell_edited": true,
+    "equation_edited": true,
+    "master_sha256_before": "7d2c3812dad734de605733e18ff440482f60f1d17e99660f4be3db65f22e1b89",
+    "master_sha256_after": "7d2c3812dad734de605733e18ff440482f60f1d17e99660f4be3db65f22e1b89",
+    "master_unchanged": true,
+    "copy_odt": "/work/tmp/document-editability-final/inundaciones_borrador_cientifico.odt",
+    "copy_pdf": "/work/tmp/document-editability-final/inundaciones_borrador_cientifico.pdf",
+    "pdf_created": true,
+    "edited_markers_visible_in_export": {
+      "paragraph": true,
+      "table_cell": true,
+      "equation": true
+    }
+  },
+  {
+    "id": "fauna",
+    "master": "/work/parcial/pregunta_3_fauna/entregable/informe_fauna.odt",
+    "paragraph_edited": true,
+    "writer_text_frames": 84,
+    "writer_tables": 12,
+    "writer_equations": 0,
+    "table_cell_edited": true,
+    "equation_edited": "No aplica: no contiene ecuaciones desplegadas",
+    "master_sha256_before": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+    "master_sha256_after": "09da4c0d23fe3a37c70d86695ba166a9124c97671e9fc4f197a59e2b405fc08b",
+    "master_unchanged": true,
+    "copy_odt": "/work/tmp/document-editability-final/informe_fauna.odt",
+    "copy_pdf": "/work/tmp/document-editability-final/informe_fauna.pdf",
+    "pdf_created": true,
+    "edited_markers_visible_in_export": {
+      "paragraph": true,
+      "table_cell": true
+    }
+  },
+  {
+    "id": "anexo_occlusion",
+    "master": "/work/parcial/pregunta_3_fauna/entregable/anexo_occlusion.odt",
+    "paragraph_edited": true,
+    "writer_text_frames": 24,
+    "writer_tables": 3,
+    "writer_equations": 0,
+    "table_cell_edited": true,
+    "equation_edited": "No aplica: no contiene ecuaciones desplegadas",
+    "master_sha256_before": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+    "master_sha256_after": "e22e71925c9079ae948acd080e735dabb7d91de79cfda472f32ed5ca4fb8fce8",
+    "master_unchanged": true,
+    "copy_odt": "/work/tmp/document-editability-final/anexo_occlusion.odt",
+    "copy_pdf": "/work/tmp/document-editability-final/anexo_occlusion.pdf",
+    "pdf_created": true,
+    "edited_markers_visible_in_export": {
+      "paragraph": true,
+      "table_cell": true
+    }
+  }
+]

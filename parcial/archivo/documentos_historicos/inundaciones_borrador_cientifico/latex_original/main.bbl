@@ -1,0 +1,48 @@
+\begin{thebibliography}{1}
+
+\bibitem{sen1}
+Derrick Bonafilia, Beth Tellman, Tyler Anderson, and Erica Issenberg.
+\newblock Sen1floods11: A georeferenced dataset to train and test deep learning
+  flood algorithms for sentinel-1.
+\newblock In {\em CVPR Workshops}, 2020.
+\newblock \url{https://github.com/cloudtostreet/Sen1Floods11}.
+
+\bibitem{sarhandbook}
+Africa~Ixmuca Flores-Anderson, Kelsey~E. Herndon, Rajesh~Bahadur Thapa, and
+  Emil Cherrington.
+\newblock {\em The SAR Handbook: Comprehensive Methodologies for Forest
+  Monitoring and Biomass Estimation}.
+\newblock NASA SERVIR, 2019.
+\newblock \url{https://ntrs.nasa.gov/citations/20190002563}.
+
+\bibitem{adamw}
+Ilya Loshchilov and Frank Hutter.
+\newblock Decoupled weight decay regularization.
+\newblock In {\em ICLR}, 2019.
+\newblock \url{https://arxiv.org/abs/1711.05101}.
+
+\bibitem{vnet}
+Fausto Milletari, Nassir Navab, and Seyed-Ahmad Ahmadi.
+\newblock V-net: Fully convolutional neural networks for volumetric medical
+  image segmentation, 2016.
+\newblock \url{https://arxiv.org/abs/1606.04797}.
+
+\bibitem{snorkel}
+Alexander Ratner, Stephen~H. Bach, Henry Ehrenberg, Jason Fries, Sen Wu, and
+  Christopher R{\'e}.
+\newblock Snorkel: Rapid training data creation with weak supervision, 2017.
+\newblock \url{https://arxiv.org/abs/1711.10160}.
+
+\bibitem{unet}
+Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
+\newblock U-net: Convolutional networks for biomedical image segmentation.
+\newblock In {\em MICCAI}, 2015.
+\newblock \url{https://arxiv.org/abs/1505.04597}.
+
+\bibitem{groupnorm}
+Yuxin Wu and Kaiming He.
+\newblock Group normalization.
+\newblock In {\em ECCV}, 2018.
+\newblock \url{https://arxiv.org/abs/1803.08494}.
+
+\end{thebibliography}
