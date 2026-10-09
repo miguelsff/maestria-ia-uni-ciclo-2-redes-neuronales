@@ -1,0 +1,8 @@
+{
+  "tested_commit": "75d2db173391637de632824c72c036bb235d209a",
+  "status": "passed",
+  "tests": 20,
+  "duration_seconds": 1.74,
+  "command": "docker run --rm --network none --entrypoint python --mount type=bind,source=<C1 worktree>/parcial,target=/workspace,readonly -w /workspace -e PYTHONPATH=/workspace/src -e PYTHONDONTWRITEBYTECODE=1 neural-exam-wildlife:0.2 -m pytest -q -p no:cacheprovider compartido/tests/test_closure_runtime.py tests/test_occlusion_accepted.py tests/test_occlusion_sample.py",
+  "scope": "Independent coordinator execution; no scientific training, inference or full cohort bootstrap."
+}
