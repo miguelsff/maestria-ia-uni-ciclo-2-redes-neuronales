@@ -1,0 +1,28 @@
+{
+  "zip_sha256": "825e5f71e9db72692bf475e1f8de6bb9498d574496c900b2d907151929d7509d",
+  "cases": 600,
+  "images": 596,
+  "geometry_and_ids_preserved": true,
+  "all_archived_file_hashes_verified": true,
+  "all_original_photos_byte_exact": true,
+  "zip_crc_valid": true,
+  "frozen_parent_and_44_sources_preserved": true,
+  "snapshot_sha256": "16e4c97c3459a968cc36c744b22efae4d422679d08dbcc3381694e91e77e2624",
+  "live_csv_matches_snapshot": true,
+  "unit_tests_python": "4 passed",
+  "unit_tests_javascript": "passed",
+  "ruff": "passed",
+  "browser_qa": {
+    "tested_on_temporary_static_loopback_preview": true,
+    "original_images_and_24_overlays_rendered": true,
+    "zoom_opened_and_closed": true,
+    "review_fields_and_completion_counter_updated": true,
+    "real_csv_download_verified": true,
+    "downloaded_csv_rows": 600,
+    "quoted_multiline_accented_note_preserved": true,
+    "csv_restored_in_separate_clean_copy": true,
+    "synthetic_test_reviews_in_delivered_zip": false,
+    "file_url_visual_test": "not performed; automation browser URL policy permits only HTTP/HTTPS",
+    "temporary_preview_closed": true
+  }
+}

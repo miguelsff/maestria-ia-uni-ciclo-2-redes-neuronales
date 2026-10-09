@@ -1,0 +1,417 @@
+﻿case,assigned_reviewer,annotation_id,level,reviewer,pending_reason,missing_fields
+1,Miguel,30627,low,Miguel Angel,missing_visual_evidence,visual_evidence
+2,Miguel,9476,low,Miguel,missing_visual_evidence,visual_evidence
+3,Miguel,31598,low,Miguel,missing_visual_evidence,visual_evidence
+4,Miguel,19651,low,Miguel,missing_visual_evidence,visual_evidence
+5,Miguel,6546,low,Miguel,missing_visual_evidence,visual_evidence
+6,Miguel,16513,low,Miguel,missing_visual_evidence,visual_evidence
+7,Miguel,10337,low,Miguel,missing_visual_evidence,visual_evidence
+8,Miguel,40403,low,Miguel,missing_visual_evidence,visual_evidence
+9,Miguel,12220,low,Miguel,missing_visual_evidence,visual_evidence
+10,Miguel,34251,low,Miguel,missing_visual_evidence,visual_evidence
+11,Miguel,22683,low,Miguel,missing_visual_evidence,visual_evidence
+15,Miguel,22284,low,Miguel,missing_visual_evidence,visual_evidence
+16,Miguel,40797,low,Miguel,missing_visual_evidence,visual_evidence
+17,Miguel,18869,low,Miguel,missing_visual_evidence,visual_evidence
+18,Miguel,38103,medium,Miguel,missing_visual_evidence,visual_evidence
+19,Miguel,7595,low,Miguel,missing_visual_evidence,visual_evidence
+20,Miguel,29859,low,Miguel,missing_visual_evidence,visual_evidence
+21,Miguel,44856,low,Miguel,missing_visual_evidence,visual_evidence
+22,Miguel,20028,low,Miguel,missing_visual_evidence,visual_evidence
+23,Miguel,30828,low,Miguel,missing_visual_evidence,visual_evidence
+24,Miguel,39208,low,Miguel,missing_visual_evidence,visual_evidence
+25,Miguel,22495,low,Miguel,missing_visual_evidence,visual_evidence
+26,Miguel,15972,low,Miguel,missing_visual_evidence,visual_evidence
+27,Miguel,44219,low,Miguel,missing_visual_evidence,visual_evidence
+28,Miguel,21070,low,Miguel,missing_visual_evidence,visual_evidence
+29,Miguel,15384,low,Miguel,missing_visual_evidence,visual_evidence
+30,Miguel,11816,low,Miguel,missing_visual_evidence,visual_evidence
+31,Miguel,17675,low,Miguel,missing_visual_evidence,visual_evidence
+32,Miguel,38496,low,Miguel,missing_visual_evidence,visual_evidence
+33,Miguel,17826,low,Miguel,missing_visual_evidence,visual_evidence
+34,Miguel,39383,low,Miguel,missing_visual_evidence,visual_evidence
+35,Miguel,42859,low,Miguel,missing_visual_evidence,visual_evidence
+36,Miguel,38507,low,Miguel,missing_visual_evidence,visual_evidence
+37,Miguel,37544,low,Miguel,missing_visual_evidence,visual_evidence
+38,Miguel,1505,low,Miguel,missing_visual_evidence,visual_evidence
+39,Miguel,30263,low,Miguel,missing_visual_evidence,visual_evidence
+40,Miguel,38375,low,Miguel,missing_visual_evidence,visual_evidence
+41,Miguel,3124,low,Miguel,missing_visual_evidence,visual_evidence
+43,Miguel,39215,medium,Miguel,missing_visual_evidence,visual_evidence
+44,Miguel,25129,low,Miguel,missing_visual_evidence,visual_evidence
+45,Miguel,38069,low,Miguel,missing_visual_evidence,visual_evidence
+46,Miguel,17252,low,Miguel,missing_visual_evidence,visual_evidence
+48,Miguel,10030,low,Miguel,missing_visual_evidence,visual_evidence
+49,Miguel,33307,medium,Miguel,missing_visual_evidence,visual_evidence
+50,Miguel,642c912c-778c-4153-b6ce-254216e2403f,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+51,Miguel,23070,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+52,Miguel,34781,low,Miguel,missing_visual_evidence,visual_evidence
+53,Miguel,39123,low,Miguel,missing_visual_evidence,visual_evidence
+54,Miguel,21528,low,Miguel,missing_visual_evidence,visual_evidence
+55,Miguel,23900,low,Miguel,missing_visual_evidence,visual_evidence
+56,Miguel,13448,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+57,Miguel,3588,low,Miguel,missing_visual_evidence,visual_evidence
+58,Miguel,29874,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+59,Miguel,31545,low,Miguel,missing_visual_evidence,visual_evidence
+60,Miguel,30387,low,Miguel,missing_visual_evidence,visual_evidence
+61,Miguel,18312,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+62,Miguel,19774,low,Miguel,missing_visual_evidence,visual_evidence
+63,Miguel,12003,low,Miguel,missing_visual_evidence,visual_evidence
+64,Miguel,15604,low,Miguel,missing_visual_evidence,visual_evidence
+65,Miguel,15905,low,Miguel,missing_visual_evidence,visual_evidence
+66,Miguel,13982,low,Miguel,missing_visual_evidence,visual_evidence
+67,Miguel,22576,low,Miguel,missing_visual_evidence,visual_evidence
+68,Miguel,37219,low,Miguel,missing_visual_evidence,visual_evidence
+69,Miguel,12656,low,Miguel,missing_visual_evidence,visual_evidence
+70,Miguel,20332,low,Miguel,missing_visual_evidence,visual_evidence
+71,Miguel,20884,low,Miguel,missing_visual_evidence,visual_evidence
+72,Miguel,29544,low,Miguel,missing_visual_evidence,visual_evidence
+73,Miguel,14177,low,Miguel,missing_visual_evidence,visual_evidence
+74,Miguel,19315,medium,Miguel,missing_visual_evidence,visual_evidence
+75,Miguel,30940,low,Miguel,missing_visual_evidence,visual_evidence
+76,Miguel,22326,low,Miguel,missing_visual_evidence,visual_evidence
+77,Miguel,42001,low,Miguel,missing_visual_evidence,visual_evidence
+78,Miguel,6051,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+79,Miguel,36827,low,Miguel,missing_visual_evidence,visual_evidence
+80,Miguel,2068,low,Miguel,missing_visual_evidence,visual_evidence
+81,Miguel,13354,low,Miguel,missing_visual_evidence,visual_evidence
+82,Miguel,8750,low,Miguel,missing_visual_evidence,visual_evidence
+83,Miguel,51,low,Miguel,missing_visual_evidence,visual_evidence
+84,Miguel,6050,low,Miguel,missing_visual_evidence,visual_evidence
+85,Miguel,27618,low,Miguel,missing_visual_evidence,visual_evidence
+86,Miguel,43317,low,Miguel,missing_visual_evidence,visual_evidence
+87,Miguel,39547,low,Miguel,missing_visual_evidence,visual_evidence
+88,Miguel,2040,low,Miguel,missing_visual_evidence,visual_evidence
+89,Miguel,38045,low,Miguel,missing_visual_evidence,visual_evidence
+90,Miguel,17815,low,Miguel,missing_visual_evidence,visual_evidence
+91,Miguel,41862,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+92,Miguel,10081,low,Miguel,missing_visual_evidence,visual_evidence
+93,Miguel,44884,low,Miguel,missing_visual_evidence,visual_evidence
+94,Miguel,15341,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+95,Miguel,36804,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+96,Miguel,12815,low,Miguel,missing_visual_evidence,visual_evidence
+97,Miguel,9461,low,Miguel,missing_visual_evidence,visual_evidence
+98,Miguel,30286,low,Miguel,missing_visual_evidence,visual_evidence
+99,Miguel,40569,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+100,Miguel,40138,low,Miguel,missing_visual_evidence,visual_evidence
+101,Miguel,41484,low,Miguel,missing_visual_evidence,visual_evidence
+102,Miguel,44710,low,Miguel,missing_visual_evidence,visual_evidence
+103,Miguel,35860,low,Miguel,missing_visual_evidence,visual_evidence
+104,Miguel,4697,low,Miguel,missing_visual_evidence,visual_evidence
+105,Miguel,43206,low,Miguel,missing_visual_evidence,visual_evidence
+107,Miguel,26495,low,Miguel,missing_visual_evidence,visual_evidence
+108,Miguel,5974,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+109,Miguel,86fc0a69-36f6-483e-b1e6-b0ca83d05350,low,Miguel,missing_visual_evidence,visual_evidence
+110,Miguel,31108,low,Miguel,missing_visual_evidence,visual_evidence
+111,Miguel,6102,ambiguous,Miguel,missing_visual_evidence,visual_evidence
+112,Miguel,26918,low,Miguel,missing_visual_evidence,visual_evidence
+113,Miguel,33457,low,Miguel,missing_visual_evidence,visual_evidence
+114,Miguel,35119,low,Miguel,missing_visual_evidence,visual_evidence
+115,Miguel,17177,low,Miguel,missing_visual_evidence,visual_evidence
+116,Miguel,35559,low,Miguel,missing_visual_evidence,visual_evidence
+117,Miguel,14204,low,Miguel,missing_visual_evidence,visual_evidence
+118,Miguel,9312,low,Miguel,missing_visual_evidence,visual_evidence
+119,Miguel,12091,low,Miguel,missing_visual_evidence,visual_evidence
+120,Miguel,2ac3582e-88d4-473a-ac47-6c1e41bb3e6b,low,Miguel,missing_visual_evidence,visual_evidence
+121,Omar,23098,,,conflicting_human_reviews,"level, visual_evidence, reviewer"
+241,Enzo Neyra,117,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+242,Enzo Neyra,31071,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+243,Enzo Neyra,8441,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+244,Enzo Neyra,16963,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+245,Enzo Neyra,35384,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+247,Enzo Neyra,36673,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+249,Enzo Neyra,20852,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+250,Enzo Neyra,38390,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+251,Enzo Neyra,45144,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+253,Enzo Neyra,22453,,,missing_level,"level, visual_evidence, reviewer"
+254,Enzo Neyra,24471,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+255,Enzo Neyra,42041,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+258,Enzo Neyra,6683,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+259,Enzo Neyra,33274,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+260,Enzo Neyra,18307,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+261,Enzo Neyra,14798,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+263,Enzo Neyra,44803,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+265,Enzo Neyra,21260,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+266,Enzo Neyra,6719,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+267,Enzo Neyra,44683,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+269,Enzo Neyra,33038,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+271,Enzo Neyra,1661,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+272,Enzo Neyra,5234,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+274,Enzo Neyra,37296,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+275,Enzo Neyra,19116,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+276,Enzo Neyra,11493,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+278,Enzo Neyra,28216,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+279,Enzo Neyra,3881,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+280,Enzo Neyra,38347,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+281,Enzo Neyra,40490,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+282,Enzo Neyra,36176,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+283,Enzo Neyra,35366,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+284,Enzo Neyra,10315,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+285,Enzo Neyra,40786,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+286,Enzo Neyra,18118,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+287,Enzo Neyra,13461,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+289,Enzo Neyra,33801,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+292,Enzo Neyra,29089,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+293,Enzo Neyra,16549,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+294,Enzo Neyra,31299,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+295,Enzo Neyra,2341,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+297,Enzo Neyra,4523,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+298,Enzo Neyra,1541,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+302,Enzo Neyra,14744,,,missing_level,"level, visual_evidence, reviewer"
+303,Enzo Neyra,28522,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+304,Enzo Neyra,10094,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+306,Enzo Neyra,13265,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+307,Enzo Neyra,13248,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+310,Enzo Neyra,38186,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+311,Enzo Neyra,40760,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+312,Enzo Neyra,39907,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+313,Enzo Neyra,20164,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+314,Enzo Neyra,32433,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+315,Enzo Neyra,42650,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+316,Enzo Neyra,24553,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+317,Enzo Neyra,29007,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+318,Enzo Neyra,38133,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+320,Enzo Neyra,28455,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+322,Enzo Neyra,2983,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+323,Enzo Neyra,37077,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+324,Enzo Neyra,22470,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+325,Enzo Neyra,23122,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+328,Enzo Neyra,12493,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+330,Enzo Neyra,023670e5-6620-43e6-8ce3-e7025e847cc1,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+331,Enzo Neyra,40088,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+332,Enzo Neyra,42219,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+333,Enzo Neyra,2492,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+334,Enzo Neyra,18714,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+335,Enzo Neyra,24658,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+336,Enzo Neyra,30592,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+337,Enzo Neyra,32914,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+338,Enzo Neyra,15907,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+341,Enzo Neyra,24321,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+342,Enzo Neyra,19645,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+343,Enzo Neyra,23126,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+344,Enzo Neyra,12491,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+346,Enzo Neyra,a4daf2d4-7873-43b3-84e8-8414c43fd3d3,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+347,Enzo Neyra,20599,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+348,Enzo Neyra,7382,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+349,Enzo Neyra,41273,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+350,Enzo Neyra,18328,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+352,Enzo Neyra,5931,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+354,Enzo Neyra,627,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+355,Enzo Neyra,26250,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+356,Enzo Neyra,30145,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+357,Enzo Neyra,33048,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+358,Enzo Neyra,35782,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+360,Enzo Neyra,44485,low,Enzo Neyra,missing_visual_evidence,visual_evidence
+379,Josue,32165,ambiguous,Josue,missing_visual_evidence,visual_evidence
+385,Josue,32020,,,missing_level,"level, visual_evidence, reviewer"
+386,Josue,40540,,,missing_level,"level, visual_evidence, reviewer"
+387,Josue,23951,,,missing_level,"level, visual_evidence, reviewer"
+388,Josue,40434,,,missing_level,"level, visual_evidence, reviewer"
+389,Josue,6892,,,missing_level,"level, visual_evidence, reviewer"
+390,Josue,15557,,,missing_level,"level, visual_evidence, reviewer"
+391,Josue,29334,,,missing_level,"level, visual_evidence, reviewer"
+392,Josue,3336,,,missing_level,"level, visual_evidence, reviewer"
+393,Josue,16386,,,missing_level,"level, visual_evidence, reviewer"
+394,Josue,40906,low,Josue,missing_visual_evidence,visual_evidence
+395,Josue,30209,high,Josue,missing_visual_evidence,visual_evidence
+396,Josue,11640,high,Josue,missing_visual_evidence,visual_evidence
+397,Josue,1894,low,Josue,missing_visual_evidence,visual_evidence
+398,Josue,33665,ambiguous,Josue,missing_visual_evidence,visual_evidence
+399,Josue,33524,high,Josue,missing_visual_evidence,visual_evidence
+400,Josue,20862,low,Josue,missing_visual_evidence,visual_evidence
+401,Josue,42615,medium,Josue,missing_visual_evidence,visual_evidence
+402,Josue,dee9bb68-625a-4395-98c3-da91eb10d132,ambiguous,Josue,missing_visual_evidence,visual_evidence
+403,Josue,26057,low,Josue,missing_visual_evidence,visual_evidence
+404,Josue,31726,medium,Josue,missing_visual_evidence,visual_evidence
+405,Josue,21095,medium,Josue,missing_visual_evidence,visual_evidence
+406,Josue,25522,high,Josue,missing_visual_evidence,visual_evidence
+407,Josue,20768,high,Josue,missing_visual_evidence,visual_evidence
+408,Josue,859,low,Josue,missing_visual_evidence,visual_evidence
+409,Josue,32853,,,missing_level,"level, visual_evidence, reviewer"
+410,Josue,33160,,,missing_level,"level, visual_evidence, reviewer"
+411,Josue,33999,,,missing_level,"level, visual_evidence, reviewer"
+412,Josue,32799,,,missing_level,"level, visual_evidence, reviewer"
+413,Josue,37859,,,missing_level,"level, visual_evidence, reviewer"
+414,Josue,10229,,,missing_level,"level, visual_evidence, reviewer"
+415,Josue,40032,low,Josue,missing_visual_evidence,visual_evidence
+416,Josue,11891,medium,Josue,missing_visual_evidence,visual_evidence
+417,Josue,37954,medium,Josue,missing_visual_evidence,visual_evidence
+418,Josue,20095,medium,Josue,missing_visual_evidence,visual_evidence
+419,Josue,31302,medium,Josue,missing_visual_evidence,visual_evidence
+420,Josue,35781,high,Josue,missing_visual_evidence,visual_evidence
+421,Josue,36549,medium,Josue,missing_visual_evidence,visual_evidence
+422,Josue,15619,high,Josue,missing_visual_evidence,visual_evidence
+423,Josue,40544,medium,Josue,missing_visual_evidence,visual_evidence
+424,Josue,27501,ambiguous,Josue,missing_visual_evidence,visual_evidence
+425,Josue,8130,low,Josue,missing_visual_evidence,visual_evidence
+426,Josue,34857,medium,Josue,missing_visual_evidence,visual_evidence
+427,Josue,0cc13d87-b939-436f-a5e8-b81d4a31d920,ambiguous,Josue,missing_visual_evidence,visual_evidence
+428,Josue,38628,ambiguous,Josue,missing_visual_evidence,visual_evidence
+429,Josue,12156,ambiguous,Josue,missing_visual_evidence,visual_evidence
+430,Josue,5080,high,Josue,missing_visual_evidence,visual_evidence
+431,Josue,257a87c9-a840-4a9c-bb71-1f50f31c1b8d,ambiguous,Josue,missing_visual_evidence,visual_evidence
+432,Josue,29643,ambiguous,Josue,missing_visual_evidence,visual_evidence
+433,Josue,28816,medium,Josue,missing_visual_evidence,visual_evidence
+434,Josue,21675,ambiguous,Josue,missing_visual_evidence,visual_evidence
+435,Josue,8001,medium,Josue,missing_visual_evidence,visual_evidence
+436,Josue,6178,medium,Josue,missing_visual_evidence,visual_evidence
+437,Josue,38470,medium,Josue,missing_visual_evidence,visual_evidence
+438,Josue,33679,low,Josue,missing_visual_evidence,visual_evidence
+439,Josue,6669,,,missing_level,"level, visual_evidence, reviewer"
+440,Josue,7458,low,Josue,missing_visual_evidence,visual_evidence
+441,Josue,42461,medium,Josue,missing_visual_evidence,visual_evidence
+442,Josue,16518,high,Josue,missing_visual_evidence,visual_evidence
+445,Josue,44823,ambiguous,Josue,missing_visual_evidence,visual_evidence
+446,Josue,18273,high,Josue,missing_visual_evidence,visual_evidence
+447,Josue,9816,ambiguous,Josue,missing_visual_evidence,visual_evidence
+448,Josue,101ac3db-a053-4003-8960-0fffb217a219,ambiguous,Josue,missing_visual_evidence,visual_evidence
+449,Josue,9325,ambiguous,Josue,missing_visual_evidence,visual_evidence
+450,Josue,28608,high,Josue,missing_visual_evidence,visual_evidence
+451,Josue,34193,ambiguous,Josue,missing_visual_evidence,visual_evidence
+452,Josue,29273,medium,Josue,missing_visual_evidence,visual_evidence
+453,Josue,17885,low,Josue,missing_visual_evidence,visual_evidence
+454,Josue,25924,high,Josue,missing_visual_evidence,visual_evidence
+455,Josue,31891,high,Josue,missing_visual_evidence,visual_evidence
+456,Josue,7040,ambiguous,Josue,missing_visual_evidence,visual_evidence
+457,Josue,13682,ambiguous,Josue,missing_visual_evidence,visual_evidence
+458,Josue,14920,low,Josue,missing_visual_evidence,visual_evidence
+459,Josue,3039,ambiguous,Josue,missing_visual_evidence,visual_evidence
+460,Josue,22073,high,Josue,missing_visual_evidence,visual_evidence
+461,Josue,14783,low,Josue,missing_visual_evidence,visual_evidence
+464,Josue,7481,ambiguous,Josue,missing_visual_evidence,visual_evidence
+465,Josue,15338,ambiguous,Josue,missing_visual_evidence,visual_evidence
+466,Josue,23408,ambiguous,Josue,missing_visual_evidence,visual_evidence
+467,Josue,41656,ambiguous,Josue,missing_visual_evidence,visual_evidence
+468,Josue,32382,low,Josue,missing_visual_evidence,visual_evidence
+469,Josue,13239,ambiguous,Josue,missing_visual_evidence,visual_evidence
+470,Josue,31693,ambiguous,Josue,missing_visual_evidence,visual_evidence
+471,Josue,24292,high,Josue,missing_visual_evidence,visual_evidence
+472,Josue,8409,high,Josue,missing_visual_evidence,visual_evidence
+473,Josue,7956,high,Josue,missing_visual_evidence,visual_evidence
+474,Josue,35572,medium,Josue,missing_visual_evidence,visual_evidence
+475,Josue,41687,ambiguous,Josue,missing_visual_evidence,visual_evidence
+476,Josue,30017,high,Josue,missing_visual_evidence,visual_evidence
+477,Josue,32109,medium,Josue,missing_visual_evidence,visual_evidence
+478,Josue,11457,high,Josue,missing_visual_evidence,visual_evidence
+479,Josue,28089,low,Josue,missing_visual_evidence,visual_evidence
+480,Josue,9361,medium,Josue,missing_visual_evidence,visual_evidence
+481,Alexander Paco Cornejo,33172,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+482,Alexander Paco Cornejo,40621,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+483,Alexander Paco Cornejo,21687,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+484,Alexander Paco Cornejo,10212,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+485,Alexander Paco Cornejo,4629,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+486,Alexander Paco Cornejo,19837,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+487,Alexander Paco Cornejo,3858,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+488,Alexander Paco Cornejo,22598,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+489,Alexander Paco Cornejo,17886,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+490,Alexander Paco Cornejo,29841,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+491,Alexander Paco Cornejo,38108,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+492,Alexander Paco Cornejo,42412,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+493,Alexander Paco Cornejo,6087,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+494,Alexander Paco Cornejo,10676,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+495,Alexander Paco Cornejo,40366,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+496,Alexander Paco Cornejo,36192,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+497,Alexander Paco Cornejo,42116,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+498,Alexander Paco Cornejo,14300,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+499,Alexander Paco Cornejo,12312,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+500,Alexander Paco Cornejo,22742,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+501,Alexander Paco Cornejo,26406,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+502,Alexander Paco Cornejo,5449,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+503,Alexander Paco Cornejo,27887,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+504,Alexander Paco Cornejo,23305,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+505,Alexander Paco Cornejo,12221,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+506,Alexander Paco Cornejo,29108,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+507,Alexander Paco Cornejo,7444,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+508,Alexander Paco Cornejo,41140,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+509,Alexander Paco Cornejo,7266,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+510,Alexander Paco Cornejo,6443,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+511,Alexander Paco Cornejo,23216,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+512,Alexander Paco Cornejo,10027,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+513,Alexander Paco Cornejo,29079,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+514,Alexander Paco Cornejo,39416,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+515,Alexander Paco Cornejo,34355,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+516,Alexander Paco Cornejo,40639,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+517,Alexander Paco Cornejo,40669,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+518,Alexander Paco Cornejo,12412,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+519,Alexander Paco Cornejo,39396,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+520,Alexander Paco Cornejo,27124,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+521,Alexander Paco Cornejo,1835,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+522,Alexander Paco Cornejo,38254,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+523,Alexander Paco Cornejo,44697,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+524,Alexander Paco Cornejo,38296,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+525,Alexander Paco Cornejo,ec136b51-f97b-486c-ae71-b07536078158,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+526,Alexander Paco Cornejo,31857,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+527,Alexander Paco Cornejo,31013,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+528,Alexander Paco Cornejo,44493,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+529,Alexander Paco Cornejo,15391,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+530,Alexander Paco Cornejo,3354,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+531,Alexander Paco Cornejo,7162,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+532,Alexander Paco Cornejo,487,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+533,Alexander Paco Cornejo,28765,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+534,Alexander Paco Cornejo,28615,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+535,Alexander Paco Cornejo,20027,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+536,Alexander Paco Cornejo,21934,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+537,Alexander Paco Cornejo,5506,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+538,Alexander Paco Cornejo,41217,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+539,Alexander Paco Cornejo,7770,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+540,Alexander Paco Cornejo,19866,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+541,Alexander Paco Cornejo,19023,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+542,Alexander Paco Cornejo,21673,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+543,Alexander Paco Cornejo,41943,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+544,Alexander Paco Cornejo,25273,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+545,Alexander Paco Cornejo,16628cb0-f16a-43f4-b2f1-809604ff746b,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+546,Alexander Paco Cornejo,31278,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+547,Alexander Paco Cornejo,41027,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+548,Alexander Paco Cornejo,4852,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+549,Alexander Paco Cornejo,10491,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+550,Alexander Paco Cornejo,6845,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+551,Alexander Paco Cornejo,25773,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+552,Alexander Paco Cornejo,12383,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+553,Alexander Paco Cornejo,23682,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+554,Alexander Paco Cornejo,26030,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+555,Alexander Paco Cornejo,2342,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+556,Alexander Paco Cornejo,35383,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+557,Alexander Paco Cornejo,17033,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+558,Alexander Paco Cornejo,10280,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+559,Alexander Paco Cornejo,36623,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+560,Alexander Paco Cornejo,15081,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+561,Alexander Paco Cornejo,12052,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+562,Alexander Paco Cornejo,10393,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+563,Alexander Paco Cornejo,41542,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+564,Alexander Paco Cornejo,31407,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+565,Alexander Paco Cornejo,6857,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+566,Alexander Paco Cornejo,21243,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+567,Alexander Paco Cornejo,28269,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+568,Alexander Paco Cornejo,10597,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+569,Alexander Paco Cornejo,4733,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+570,Alexander Paco Cornejo,26935,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+571,Alexander Paco Cornejo,41777,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+572,Alexander Paco Cornejo,1865,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+573,Alexander Paco Cornejo,24699,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+574,Alexander Paco Cornejo,10882,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+575,Alexander Paco Cornejo,17786,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+576,Alexander Paco Cornejo,14390,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+577,Alexander Paco Cornejo,19565,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+578,Alexander Paco Cornejo,21047,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+579,Alexander Paco Cornejo,9313,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+580,Alexander Paco Cornejo,4483,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+581,Alexander Paco Cornejo,33325,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+582,Alexander Paco Cornejo,43380,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+583,Alexander Paco Cornejo,40728,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+584,Alexander Paco Cornejo,21263,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+585,Alexander Paco Cornejo,22948,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+586,Alexander Paco Cornejo,36982,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+587,Alexander Paco Cornejo,27514,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+588,Alexander Paco Cornejo,33171,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+589,Alexander Paco Cornejo,36495,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+590,Alexander Paco Cornejo,26112,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+591,Alexander Paco Cornejo,8108,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+592,Alexander Paco Cornejo,c3d7532f-357b-4566-99d5-a1b2b448a90c,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+593,Alexander Paco Cornejo,25809,medium,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+594,Alexander Paco Cornejo,1126,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+595,Alexander Paco Cornejo,38604,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+596,Alexander Paco Cornejo,11997,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+597,Alexander Paco Cornejo,33917,low,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+598,Alexander Paco Cornejo,31005,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+599,Alexander Paco Cornejo,23614,high,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
+600,Alexander Paco Cornejo,31244,ambiguous,Alexander Paco Cornejo,missing_visual_evidence,visual_evidence
