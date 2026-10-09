@@ -147,3 +147,36 @@ def test_scientific_plan_preserves_runner_bytes_and_redirects_output(tmp_path, t
     assert plan["fresh_training_reproduction_verified"] is False
     with pytest.raises(ValueError, match="fresh output"):
         RUN.prepare_run(exam, parent, tmp_path / "accepted", task, "fixture-image", parent)
+
+
+@pytest.mark.parametrize("task,question", [("mri", "pregunta_1_mri"), ("flood", "pregunta_2_inundaciones")])
+def test_archived_runner_report_is_flattened_without_editorial_sources(tmp_path, task, question):
+    exam, _, receipt = fixture_layout(tmp_path, shared=True)
+    report = exam / question / "fuentes_informe"
+    sources = {"main.tex": b"\\input{preamble}\n", "discussion.tex": b"Original discussion\r\n",
+               "finalized.json": b'{"reviewed": false}\r\n'}
+    for name, content in sources.items():
+        path = report / "latex_previo_d1" / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(content)
+    editorial = report / "latex_original/main.tex"
+    editorial.parent.mkdir(parents=True)
+    editorial.write_bytes(b"Editorial source with different content\n")
+    destination = exam / ".runtime/migrated-reports"
+    RUNTIME.materialize(exam, destination, receipt)
+    for name, content in sources.items():
+        assert (destination / "reports" / task / name).read_bytes() == content
+    assert not (destination / "reports" / task / "latex_previo_d1").exists()
+    assert not (destination / "reports" / task / "latex_original").exists()
+
+
+def test_current_fauna_report_precedes_historical_archive(tmp_path):
+    exam, _, receipt = fixture_layout(tmp_path, shared=True)
+    report = exam / "pregunta_3_fauna/fuentes_informe"
+    historical = report / "latex_previo_d1/main.tex"
+    historical.parent.mkdir(parents=True)
+    historical.write_bytes(b"Historical fauna report\n")
+    (report / "main.tex").write_bytes(b"Final fauna source\r\n")
+    destination = exam / ".runtime/current-fauna"
+    RUNTIME.materialize(exam, destination, receipt)
+    assert (destination / "reports/wildlife/main.tex").read_bytes() == b"Final fauna source\r\n"

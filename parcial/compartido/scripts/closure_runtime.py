@@ -79,8 +79,14 @@ def workspace_inputs(exam: Path) -> dict[str, Path]:
     for source in _files(exam / "reports"):
         mapping[f"reports/{source.relative_to(exam / 'reports').as_posix()}"] = source
     for question, task in QUESTION_TASKS.items():
-        for source in _files(exam / question / "fuentes_informe"):
-            mapping[f"reports/{task}/{source.relative_to(exam / question / 'fuentes_informe').as_posix()}"] = source
+        report = exam / question / "fuentes_informe"
+        historical = report / "latex_previo_d1"
+        # MRI/flood retain their original runner sources below the migration archive.
+        # A current root entry point (including the finalized fauna sources) takes precedence.
+        if not (report / "main.tex").is_file() and (historical / "main.tex").is_file():
+            report = historical
+        for source in _files(report):
+            mapping[f"reports/{task}/{source.relative_to(report).as_posix()}"] = source
     templates = exam / "compartido/plantillas"
     # Migrated groups lose their organizational prefix in the scientific runtime.
     for group, target in (("informes", "reports"), ("reviews", "reviews")):

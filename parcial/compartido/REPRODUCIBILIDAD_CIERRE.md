@@ -23,10 +23,12 @@ Las fuentes, V6 y la muestra original se montan en solo lectura. El único monta
 El contexto derivado contiene el Dockerfile original y sus fuentes, incluso después de la migración:
 
 ```powershell
-docker build --target runtime -t neural-exam-closure:local parcial/.runtime/cierre
+# Usar la ruta derived/command_receipt.json mostrada por el launcher.
+$receipt = Get-Content -Raw -LiteralPath '<ruta real>/derived/command_receipt.json' | ConvertFrom-Json
+docker build --target runtime -t neural-exam-closure:local $receipt.workspace
 ```
 
-Si se construye esa imagen, configurar `CLOSURE_IMAGE=neural-exam-closure:local` y ejecutar `verify` para comprobar sus versiones antes de usarla. La construcción de imagen no ejecuta entrenamiento ni inferencia; el comando se documenta y queda sin ejecutar en C1.
+Si se construye esa imagen, ejecutar el launcher con `--image neural-exam-closure:local` para comprobar sus versiones antes de usarla. La construcción de imagen no ejecuta entrenamiento ni inferencia; el comando se documenta y queda sin ejecutar en C1.
 
 El Compose usa `parcial/compartido` como contexto de construcción por defecto, conforme al contrato final. En la transición C1 puede apuntarse `CLOSURE_BUILD_CONTEXT` a la copia derivada, donde los archivos de construcción ya existen. En C2 se comprobará el contexto compartido real. Los montajes siguen usando el runtime derivado para conservar `/workspace/notebooks` y `/workspace/reports` sin cambiar fuentes congeladas.
 
@@ -39,13 +41,15 @@ El adaptador admite el árbol anterior y el nuevo árbol por pregunta. Copia arc
 | `compartido/src`, `configs`, `scripts`, `tests` | `/workspace/src`, `/workspace/configs`, `/workspace/scripts`, `/workspace/tests` |
 | `compartido/Dockerfile`, `requirements.txt`, `pyproject.toml` o sus ubicaciones anteriores | `/workspace/Dockerfile`, `/workspace/requirements.txt`, `/workspace/pyproject.toml` |
 | `pregunta_*/notebooks/*.ipynb` | `/workspace/notebooks/*.ipynb` |
-| `pregunta_1_mri/fuentes_informe/` | `/workspace/reports/mri/` |
-| `pregunta_2_inundaciones/fuentes_informe/` | `/workspace/reports/flood/` |
+| `pregunta_1_mri/fuentes_informe/latex_previo_d1/` | `/workspace/reports/mri/` |
+| `pregunta_2_inundaciones/fuentes_informe/latex_previo_d1/` | `/workspace/reports/flood/` |
 | `pregunta_3_fauna/fuentes_informe/` | `/workspace/reports/wildlife/` |
 | Recursos comunes en `compartido/plantillas/informes/` | `/workspace/reports/`, sin el prefijo `informes/` |
 | HTML/JS de `compartido/plantillas/reviews/` | `/workspace/reviews/`, sin el prefijo `plantillas/` |
 | `compartido/plantillas/notebook_template.ipynb` | `/workspace/tmp/occlusion-accepted-delivery/notebook_template.ipynb` |
 | `pregunta_*/entregable/` | `/workspace/deliveries/pregunta_*/` |
+
+Cuando no existe `main.tex` en la raíz de `fuentes_informe`, el adaptador reconstruye el directorio científico desde `latex_previo_d1`, eliminando ese prefijo. Si la raíz contiene `main.tex`, prevalece esa fuente, como ocurre con fauna A. `latex_original` conserva las fuentes documentales de B y no reemplaza los recursos del runner histórico. Los ODT y sus PDF exportados permanecen como entrega editorial final.
 
 El manifiesto del runtime registra cada hash copiado. La verificación vuelve a comprobar los bytes congelados en el destino. Las reglas `.gitattributes` protegen tanto las rutas anteriores como las compartidas y los entregables. Dos fuentes V6 están congeladas con CRLF; el resto de las fuentes afectadas por la conversión de Git usa LF. No se debe aplicar un formateador o `git add --renormalize` a los archivos firmados.
 
