@@ -1,0 +1,138 @@
+{
+  "stage": "C1",
+  "status": "completed_initial_stage",
+  "created_at_utc": "2026-10-09T02:11:28.491394+00:00",
+  "review_date_peru": "2026-10-08",
+  "worktree": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales",
+  "branch": "codex/examen-c1-runtime",
+  "thread_id": "01a11e62-8f6e-79e3-8ca0-eb21c3f366c2",
+  "configuration": {
+    "creation_model": "gpt-6.1-sol",
+    "creation_reasoning_effort": "high",
+    "verified_model": "gpt-6.1-sol",
+    "verified_reasoning_effort": "high",
+    "evidence": "Local session turn_context for this exact cwd and thread_id",
+    "source": "C:/Users/USER/.codex/sessions/2026/10/08/rollout-2026-10-08T20-58-58-01a11e62-8f6e-79e3-8ca0-eb21c3f366c2.jsonl",
+    "speed": "standard inherited (default), as specified by coordinator",
+    "effective_speed_independently_verified": false,
+    "individual_speed_parameter_available": false
+  },
+  "source_unit_commit": "1e8815f09f125b759c2b88580bb1ca20f96490e0",
+  "image": {
+    "tag": "neural-exam-wildlife:0.2",
+    "id": "sha256:1c680ce7639c7350c45edeaaa6b7e8844c40389fb4818d2e27c0961b64f28fe7",
+    "python": "3.12.3",
+    "versions": {
+      "torch": "2.10.0+cu128",
+      "torchvision": "0.25.0+cu128",
+      "ultralytics": "8.4.21",
+      "pillow": "11.2.1",
+      "pytest": "8.3.5",
+      "nbformat": "5.11.1",
+      "nbconvert": "7.16.6",
+      "numpy": "2.2.6",
+      "pandas": "2.2.3",
+      "pycocotools": "2.0.11"
+    },
+    "rebuilt_from_clean_context": false
+  },
+  "native_python": {
+    "path": "C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "version": "3.12.14"
+  },
+  "commands": [
+    {
+      "command": "python -X utf8 parcial/compartido/scripts/verify_closure.py --exam-root parcial --parent E:/Kaggle/exam-output-wildlife-v6 --occlusion E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600 --delivery parcial/pregunta_3_fauna/entregable --receipt parcial/compartido/auditorias/c1/verification-native.json",
+      "exit_code": 0,
+      "result": "passed; 44 frozen files; accepted signature matched"
+    },
+    {
+      "command": "python -X utf8 parcial/compartido/scripts/closure_runtime.py --exam-root parcial --destination parcial/.runtime/c1-final --freeze-receipt E:/Kaggle/exam-output-wildlife-v6/receipts/source-freeze.json",
+      "exit_code": 0,
+      "result": "verified; 44 frozen sources, 150 copied files"
+    },
+    {
+      "command": "docker compose --env-file parcial/tmp/c1/closure.env -f parcial/compartido/compose.closure.yaml config --quiet",
+      "exit_code": 0,
+      "result": "valid Compose configuration"
+    },
+    {
+      "command": "docker compose --env-file parcial/tmp/c1/closure.env -f parcial/compartido/compose.closure.yaml run --rm verify",
+      "exit_code": 0,
+      "result": "passed; frozen runtime versions matched"
+    },
+    {
+      "command": "docker compose --env-file parcial/tmp/c1/closure-final.env -f parcial/compartido/compose.closure.yaml run --rm tests",
+      "exit_code": 0,
+      "result": "15 passed in 1.76s"
+    },
+    {
+      "command": "docker run --rm --network none --entrypoint python --mount type=bind,source=C:/Users/USER/.codex/worktrees/959d/maestria-ia-uni-ciclo-2-redes-neuronales/parcial,target=/workspace,readonly -w /workspace neural-exam-wildlife:0.2 -m ruff check --no-cache compartido/scripts compartido/tests",
+      "exit_code": 0,
+      "result": "All checks passed!"
+    },
+    {
+      "command": "docker compose --env-file parcial/tmp/c1/closure-final.env -f parcial/compartido/compose.closure.yaml run --rm notebook-occlusion",
+      "exit_code": 0,
+      "result": "4 executed code cells, 0 errors; 10942 bytes written"
+    },
+    {
+      "command": "git -c core.autocrlf=true checkout-index --all --prefix=<own worktree>/parcial/.runtime/checkout-roundtrip/",
+      "exit_code": 0,
+      "result": "61/61 hashes verified: 44 frozen, 7 imported signed inputs, 10 delivery files"
+    }
+  ],
+  "delivered_notebooks": [
+    {
+      "path": "parcial/pregunta_1_mri/entregable/01_mri.ipynb",
+      "sha256": "d2e5ac274129862e35a5fcd51bf25bf5a26530a6138ce2ebf37859164655598d",
+      "code_cells": 8,
+      "recorded_executed": 8,
+      "errors": 0,
+      "reexecuted_in_c1": false
+    },
+    {
+      "path": "parcial/pregunta_2_inundaciones/entregable/02_flood.ipynb",
+      "sha256": "af449a14783ca7a546565f7abf00f007ad42a125dd7d6e5bd9c04cf22ba0a5b0",
+      "code_cells": 8,
+      "recorded_executed": 8,
+      "errors": 0,
+      "reexecuted_in_c1": false
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/04_occlusion_582.ipynb",
+      "sha256": "1d076a70c7a95ef7667a2356228d7d639a949d0c06c84a59774f4858286a142c",
+      "code_cells": 4,
+      "recorded_executed": 4,
+      "errors": 0,
+      "reexecuted_in_c1": false
+    }
+  ],
+  "replayed_notebook": {
+    "path": "parcial/.runtime/derived/04_occlusion_582_replayed.ipynb",
+    "sha256": "c2d410e0da1c7da63a87fcc9426a21c50e3cb22b8f2877c2cc23747a7f215f92",
+    "code_cells": 4,
+    "errors": 0,
+    "original_deliverable_replaced": false
+  },
+  "scope": {
+    "original_checkout_modified": false,
+    "other_worktrees_modified": false,
+    "originals_on_E_modified": false,
+    "frozen_scientific_content_changed": false,
+    "trained_or_ran_inference": false,
+    "scientific_bootstrap_recomputed": false,
+    "full_fresh_scientific_reproduction": "not_verified",
+    "odt_or_reports_generated": false,
+    "published_or_merged": false
+  },
+  "rollback_boundary": "Remove runtime adapters, tests, closure Compose, environment example and accompanying docs/evidence without reverting the accepted source unit. Private .runtime products are ignored.",
+  "next_stage_required": "C2 after receiving integration/migration SHA",
+  "pending": [
+    "Incorporar SHA de migración autorizado por el coordinador; no anticipar movimientos en C1.",
+    "Verificar el árbol real con Dockerfile/compose/pyproject/requirements/.env examples en parcial/compartido y las fuentes/notebooks de cada pregunta.",
+    "Comprobar plantilla final en compartido/plantillas y recursos comunes de informes.",
+    "Preparar copia limpia final y repetir hashes, firma, pruebas pertinentes y comandos desde esa copia.",
+    "Integración editorial de informes/ODT/PDF y notebook principal 03_wildlife corresponde a otros chats."
+  ]
+}

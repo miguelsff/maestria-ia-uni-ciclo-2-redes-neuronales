@@ -1,0 +1,4 @@
+ Container neural-exam-closure-tests-run-d5cade250a58 Creating
+ Container neural-exam-closure-tests-run-d5cade250a58 Created
+...............                                                          [100%]
+15 passed in 1.76s

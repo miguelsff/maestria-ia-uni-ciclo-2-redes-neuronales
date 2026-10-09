@@ -1,0 +1,64 @@
+name: neural-exam-closure
+x-runtime: &runtime
+  build:
+    context: ${CLOSURE_BUILD_CONTEXT:-.}
+    dockerfile: Dockerfile
+    target: runtime
+  image: ${CLOSURE_IMAGE:-neural-exam-wildlife:0.2}
+  entrypoint: [python]
+  working_dir: /workspace
+  network_mode: none
+  init: true
+  cpus: 4
+  mem_limit: 12g
+  environment:
+    PYTHONPATH: /workspace/src
+    PYTHONDONTWRITEBYTECODE: "1"
+    OMP_NUM_THREADS: "4"
+    MKL_NUM_THREADS: "4"
+    MPLCONFIGDIR: /derived/cache/matplotlib
+    JUPYTER_RUNTIME_DIR: /derived/cache/jupyter
+    IPYTHONDIR: /derived/cache/ipython
+  volumes:
+    - type: bind
+      source: ${RUNTIME_HOST_DIR:?Set RUNTIME_HOST_DIR to the materialized workspace}
+      target: /workspace
+      read_only: true
+      bind:
+        create_host_path: false
+    - type: bind
+      source: ${WILDLIFE_ORIGINAL_HOST_DIR:-E:/Kaggle/exam-output-wildlife-v6}
+      target: /parent
+      read_only: true
+      bind:
+        create_host_path: false
+    - type: bind
+      source: ${OCCLUSION_ORIGINAL_HOST_DIR:-E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600}
+      target: /accepted
+      read_only: true
+      bind:
+        create_host_path: false
+    - type: bind
+      source: ${CLOSURE_OUTPUT_HOST_DIR:?Set CLOSURE_OUTPUT_HOST_DIR to a private worktree output directory}
+      target: /derived
+      bind:
+        create_host_path: false
+services:
+  verify:
+    <<: *runtime
+    command: [/workspace/scripts/verify_closure.py, --exam-root, /workspace,
+              --parent, /parent, --occlusion, /accepted,
+              --delivery, /workspace/deliveries/pregunta_3_fauna,
+              --scientific-runtime, --receipt, /derived/verification.json]
+  tests:
+    <<: *runtime
+    command: [-m, pytest, -q, -p, no:cacheprovider,
+              /workspace/tests/test_occlusion_accepted.py,
+              /workspace/tests/test_occlusion_sample.py,
+              /workspace/tests/test_closure_runtime.py]
+  notebook-occlusion:
+    <<: *runtime
+    command: [-m, nbconvert, --to, notebook, --execute,
+              /workspace/deliveries/pregunta_3_fauna/04_occlusion_582.ipynb,
+              --output, 04_occlusion_582_replayed.ipynb, --output-dir, /derived,
+              --ExecutePreprocessor.timeout=600]

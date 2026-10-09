@@ -1,0 +1,254 @@
+{
+  "status": "passed",
+  "operation": "git -c core.autocrlf=true checkout-index --all --prefix=<own worktree>/parcial/.runtime/checkout-roundtrip/",
+  "frozen": 44,
+  "signed_imports": 7,
+  "delivery_files": 10,
+  "verified_files": 61,
+  "sha256": [
+    {
+      "path": "parcial/Dockerfile",
+      "sha256": "3de6f8cc8979cc19c2d4455a65caacee5a7952234b0bc322cd56e5518aefd849"
+    },
+    {
+      "path": "parcial/compose.wildlife.v2.yaml",
+      "sha256": "c828c532194e8d34094d95662b0bab657458066abdc1d208802b8dff7ec8ca86"
+    },
+    {
+      "path": "parcial/compose.wildlife.v3.yaml",
+      "sha256": "fc057cfa6b882421b202e52578f7dbf96a01e7596907226021652ea4719e8c08"
+    },
+    {
+      "path": "parcial/compose.wildlife.v4.yaml",
+      "sha256": "1176737eb90a28e8b5dc35d64f3d6114e6d6ad36c1b317d679ccf013245ce4c7"
+    },
+    {
+      "path": "parcial/compose.wildlife.v5.yaml",
+      "sha256": "5726380b16b9c70169c5d61f9c35a5db34899256b976aace1d0e18a0fbc3cf2a"
+    },
+    {
+      "path": "parcial/compose.wildlife.v6.yaml",
+      "sha256": "c3ad99cc5e4f5df0716b369f8b53a934d0f91753483cf25efc550685695017b9"
+    },
+    {
+      "path": "parcial/compose.wildlife.yaml",
+      "sha256": "6e293548db007cd266729d6a2683992f7d0ea6c9f386616ae355ccff129054af"
+    },
+    {
+      "path": "parcial/configs/wildlife.toml",
+      "sha256": "3270d02e63636b258a4b83e2d83cb6d3f8111094b646696800808085617b41da"
+    },
+    {
+      "path": "parcial/configs/wildlife_label_corrections_v6.json",
+      "sha256": "50580c22b5f004ff4ae20509f8c22310ee25e0746288540a1ef435de198f2898"
+    },
+    {
+      "path": "parcial/configs/wildlife_v6.toml",
+      "sha256": "542babbeeed3edcb8a5610040b9319f94f2b35d60b63eeecbaff2628a5df2f03"
+    },
+    {
+      "path": "parcial/requirements.txt",
+      "sha256": "e7c3f6a6b0189333a979c35e2516ae07afeb95ae8c5a23e97f06aad6a12953bd"
+    },
+    {
+      "path": "parcial/scripts/audit_wildlife_preflight.py",
+      "sha256": "374c5c82e6b1b002dd8cc2f586cf1cf51aa0d0195b3636ff90c1951a29046b39"
+    },
+    {
+      "path": "parcial/scripts/bootstrap_wildlife_v3.py",
+      "sha256": "ed09cfee059f5513373d9326674c859731475c8083894aed2befe630ff616d7d"
+    },
+    {
+      "path": "parcial/scripts/check_wildlife_gate.py",
+      "sha256": "21d1ee1e4484ec251aee59e6f0d7dcfbac5fed8c523ac93982b76854863de057"
+    },
+    {
+      "path": "parcial/scripts/freeze_wildlife_sources.py",
+      "sha256": "6ab30a89453e29fb48f3e6e29125d5a498f1724b6520cfd1bdfd2e2c7ab47034"
+    },
+    {
+      "path": "parcial/scripts/migrate_wildlife_reviews.py",
+      "sha256": "033749b91c1e06428115219c78db3adb0a78f00118377ba029a1f30d7a3c2b12"
+    },
+    {
+      "path": "parcial/scripts/run_wildlife.ps1",
+      "sha256": "daf9d954fc533fa310dea9cdd2f84cc62fa4213b69fd03e06f71a86b5847ca19"
+    },
+    {
+      "path": "parcial/scripts/verify_wildlife_loader.py",
+      "sha256": "445177ecd66ae2d5c32d32cd37c0e0084d08de30673273cac00156ddeb8998b0"
+    },
+    {
+      "path": "parcial/src/neural_exam/__init__.py",
+      "sha256": "b2265515bed8b56104f9aa568e0def199aa924ef9f0d003d6b049a882b707c14"
+    },
+    {
+      "path": "parcial/src/neural_exam/__main__.py",
+      "sha256": "2d5976d45aed964c4750f618b2e4e28ec750f3edbb014b317147379d262e50a2"
+    },
+    {
+      "path": "parcial/src/neural_exam/cli.py",
+      "sha256": "17a17e61e0eab10ccc6b0933262b83959a3dff22591430d2cc288dbd1b53ea5a"
+    },
+    {
+      "path": "parcial/src/neural_exam/common/__init__.py",
+      "sha256": "6a70b652c116ddef347fb93a6278f52208fa715590157ae5d80559bb617db7a5"
+    },
+    {
+      "path": "parcial/src/neural_exam/common/cam.py",
+      "sha256": "65948efbdedb762cdd503710a40f0a2d0ba527f3ac0b7b072ed1f6a0f4c90f54"
+    },
+    {
+      "path": "parcial/src/neural_exam/common/download.py",
+      "sha256": "8d0fc80051c2be933f30dacf403c9e79fa250ba33e6b13b43d1f6ce4cb8f75c8"
+    },
+    {
+      "path": "parcial/src/neural_exam/common/figures.py",
+      "sha256": "9ef3dcf75b2a52eae44098101f514f7133ec8faf4e093c1b64eab6aaf6ceb8cc"
+    },
+    {
+      "path": "parcial/src/neural_exam/common/io.py",
+      "sha256": "7fc111f69df199c03e11c44b372ffe94c4c33e84264e76369be3ed141b95f42e"
+    },
+    {
+      "path": "parcial/src/neural_exam/common/locking.py",
+      "sha256": "f683df03371ca376724dee85cef0cd72849c152cdabfc538d1b0a1a2fdfbc8ab"
+    },
+    {
+      "path": "parcial/src/neural_exam/common/metrics.py",
+      "sha256": "ce8b4a24b0ef6c301e5d1792e181f7f4a998318603572adb1c56535db3dee0ba"
+    },
+    {
+      "path": "parcial/src/neural_exam/common/training.py",
+      "sha256": "2dd7fa458b2d61a7c0504a8b1402e7dc0e1a06d7cf684d459a1d1c7902986fed"
+    },
+    {
+      "path": "parcial/src/neural_exam/config.py",
+      "sha256": "862027c8bb990e16cf9f84cb977d5f7f174342d325bed29af4749e6368b2cc5b"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/__init__.py",
+      "sha256": "2ff50aec2314636a7df124720bbabcd0760ba379523fab6913e08d901fb93187"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/backgrounds.py",
+      "sha256": "e25f11d0c65c252b51a01a813231bd292c2aeaa57c77a31aecbe55ef77875ba6"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/corrections.py",
+      "sha256": "0e547797b08147101b024ae7daabd0bb05b7a8bce260eb0336a7a5faa8b7fe70"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/data.py",
+      "sha256": "5b1b6c50f39edc7638c1e37bce81d6d7c76d875bebc5438f8ff8cad59090ce6d"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/figures.py",
+      "sha256": "449b2487ca1a32d14655187b75e7adfb132ed41f4842d5b6354a52c8df50ac97"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/jpeg.py",
+      "sha256": "d51ea11e0b7c681d50d781aea408f91f80057631ffa075982f47b56a91f3177f"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/loader.py",
+      "sha256": "100e6028f652170e68cff007123158cac8492e27375138c3b7c27281e282aab6"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/metrics.py",
+      "sha256": "65cbad4c48f5276db80f891e5fa12707fa76ea6fe2a833c222bd5ac6a7affeb9"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/monitoring.py",
+      "sha256": "49266bc986e30587359cba50fa7d5be231dd1750f294e6a6e13092ed910aef84"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/pipeline.py",
+      "sha256": "d6112651d8e83bbc7b161133d8a241837ffb25f01d0b91171d952dc5eb6aba2b"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/resume.py",
+      "sha256": "6fae3523a7fdb8a47cf377f513f6c82118d05890ff1bfc8354675d6c791915f2"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/review.py",
+      "sha256": "2a98b34512291e48dbe325a1e42ffda944e1fe8a24154eef643a0b260eff2b7f"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/runtime.py",
+      "sha256": "5c160c488bf61cc2a192801bbcb78f32eed6f7511818f8861a717f7d987ea3ef"
+    },
+    {
+      "path": "parcial/src/neural_exam/wildlife/uncertainty.py",
+      "sha256": "727ce8063cf3c07e3a199086cfaa9989ad642a4f2df0a80614ace42de8e60ce8"
+    },
+    {
+      "path": "parcial/scripts/accept_occlusion_review.py",
+      "sha256": "6315bb1f19500256eb0d5c2456fc05772a45bf27a238e8e3689f87f78eae021f"
+    },
+    {
+      "path": "parcial/scripts/evaluate_occlusion_accepted.py",
+      "sha256": "f1d6f19426cd0a7cd4d81a0e7291a30f62e7daf83dfdb6ec27c05b38bd6b9296"
+    },
+    {
+      "path": "parcial/scripts/build_occlusion_accepted_delivery.py",
+      "sha256": "bfa8a1f8c513c23160ad6bb282f78c0d470e8c9e01abc4286a3f1c25f3285777"
+    },
+    {
+      "path": "parcial/scripts/occlusion_accepted_review.py",
+      "sha256": "6fc0c4c280b8ffaf862ed5a5f165466ee01070821a6637a3d426a52869b67e9c"
+    },
+    {
+      "path": "parcial/tests/test_occlusion_accepted.py",
+      "sha256": "c17720c5666a72cdd0695f3a2eecd39f8b7270cba905d7b6f6b7fd9e854cff46"
+    },
+    {
+      "path": "parcial/tmp/occlusion-accepted-delivery/notebook_template.ipynb",
+      "sha256": "4b9f1d67abed43a2d3bb2347b92793240370a506318687a66fc6d433ad58387d"
+    },
+    {
+      "path": "parcial/scripts/wildlife_occlusion_sample.py",
+      "sha256": "c2ee77b0635182e63e805093e49d7a83c7fb6b8a8695867ffff0afadd1b193d1"
+    },
+    {
+      "path": "parcial/pregunta_1_mri/entregable/01_mri.ipynb",
+      "sha256": "d2e5ac274129862e35a5fcd51bf25bf5a26530a6138ce2ebf37859164655598d"
+    },
+    {
+      "path": "parcial/pregunta_2_inundaciones/entregable/02_flood.ipynb",
+      "sha256": "af449a14783ca7a546565f7abf00f007ad42a125dd7d6e5bd9c04cf22ba0a5b0"
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/04_occlusion_582.ipynb",
+      "sha256": "1d076a70c7a95ef7667a2356228d7d639a949d0c06c84a59774f4858286a142c"
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/metricas_occlusion.csv",
+      "sha256": "b67d872ff27548c95df9639e88259102433508b50c0f4fb33c3750228707447a"
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/data/integrity.json",
+      "sha256": "684f1836ffaadbe2ff175a83a8617e8737c606f6e034323c93a64e012e03572a"
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/data/occlusion_review_accepted_582.csv",
+      "sha256": "0d579cc5330b1a416c4e228da9f8ad7f7897423d61b218a949a500e35f2a32a7"
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/data/occlusion_review_sample_600.csv",
+      "sha256": "799608b589c9de45289f36dd16f9f3429796feb75520cae5204888ae04ee0a0b"
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/data/protocol.json",
+      "sha256": "8704d6e664b2f1cc2264ee5b663b5245c02be89523075ee6a63bc5a154714244"
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/data/results.json",
+      "sha256": "b5ede4e0f8d46aef5b579f64c3b7f7c476b4aeb93eafaeffaafcdd4e0da124f9"
+    },
+    {
+      "path": "parcial/pregunta_3_fauna/entregable/data/review_acceptance.json",
+      "sha256": "ab65118c2a72ad844718202914f67cc40901cbb56b599ed16d9dc13f0b32f127"
+    }
+  ]
+}

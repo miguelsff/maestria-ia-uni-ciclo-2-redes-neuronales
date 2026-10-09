@@ -1,0 +1,4 @@
+ Container neural-exam-closure-notebook-occlusion-run-3794e6d13464 Creating
+ Container neural-exam-closure-notebook-occlusion-run-3794e6d13464 Created
+[NbConvertApp] Converting notebook /workspace/deliveries/pregunta_3_fauna/04_occlusion_582.ipynb to notebook
+[NbConvertApp] Writing 10942 bytes to /derived/04_occlusion_582_replayed.ipynb

@@ -1,4 +1,7 @@
 .atl/
+parcial/.runtime/
+parcial/tmp/c1/
+parcial/compartido/.env.closure
 .env
 .env.wildlife
 .env.wildlife-v2
