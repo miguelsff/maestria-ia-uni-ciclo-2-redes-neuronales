@@ -1,0 +1,34 @@
+{
+  "etapa": "C1: incorporación de fuentes y entregables existentes",
+  "base_remota": "0dc2fd20f424941919c38ff213894541e60ab200",
+  "base_comun_original": "8bb5a3917756eaa0e8cb63537c919f3e1c54f6ab",
+  "base_comun_cherry_pick": "6601dcf4830e5d81db21639baa61b07edcad6299",
+  "worktree": "C:/Users/USER/.codex/worktrees/959d/maestria-ia-uni-ciclo-2-redes-neuronales",
+  "rama": "codex/examen-c1-runtime",
+  "preservacion": "byte-preservation.json",
+  "fuentes_congeladas": 44,
+  "coincidencias_antes": 2,
+  "coincidencias_despues": 44,
+  "diferencias_antes_solo_fin_de_linea": 42,
+  "contenido_cientifico_modificado": false,
+  "politica_git": "-text para conservar bytes en las rutas anteriores y compartidas. Dos archivos congelados contienen CRLF; su representación Git anterior era LF y se corrige para coincidir con la firma congelada.",
+  "decision_aceptada": {"muestra": 600, "incluidos": 582, "excluidos": 18, "caso_121": "medium según Miguel", "notas_fabricadas": false},
+  "firma_evaluacion": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+  "resultados_sha256": "b5ede4e0f8d46aef5b579f64c3b7f7c476b4aeb93eafaeffaafcdd4e0da124f9",
+  "harness": {
+    "comando": "python -X utf8 parcial/scripts/evaluate_occlusion_accepted.py check --parent E:/Kaggle/exam-output-wildlife-v6 --output E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600",
+    "resultado": "accepted_with_documented_exclusions_and_note_waiver; 582 aceptados, 18 excluidos, soporte suficiente en los tres niveles",
+    "salida": 0
+  },
+  "pruebas": {
+    "comando_en_contenedor": "python -m pytest -q -p no:cacheprovider tests/test_occlusion_accepted.py",
+    "imagen": "neural-exam-wildlife:0.2",
+    "resultado": "3 passed in 0.76s",
+    "salida": 0,
+    "registro": "accepted-tests-output.txt"
+  },
+  "limite_reversion": "La unidad incorpora los cuatro scripts, prueba y plantilla aceptados; fija la preservación de bytes en .gitattributes y dos fuentes con CRLF; copia diez archivos de entregables. Su reversión elimina estas incorporaciones y recupera la representación Git previa, sin alterar los originales en E:/Kaggle ni resultados de experimentos.",
+  "bootstrap_cientifico_recalculado": false,
+  "entrenamiento_o_inferencia_nueva": false,
+  "publicacion": false
+}
