@@ -1,0 +1,130 @@
+{
+  "stage": "C2/F",
+  "status": "passed",
+  "authorized_D2_commit": "6b9db09ad76bfd698775515cabdbbdd9987a9cde",
+  "code_commit_tested_in_clean_clone": "d16959ce236cda4f43d25b67a4d70eacba85ff64",
+  "clean_clone_root": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone",
+  "branch": "codex/examen-c2-verificacion",
+  "clone_branch": "codex/examen-f-acceptance",
+  "clean_clone_command": [
+    "git",
+    "-c",
+    "core.longpaths=true",
+    "-c",
+    "core.autocrlf=true",
+    "clone",
+    "--no-local",
+    "--no-checkout",
+    "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales",
+    "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone"
+  ],
+  "checkout_command": [
+    "git",
+    "-C",
+    "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone",
+    "-c",
+    "core.longpaths=true",
+    "-c",
+    "core.autocrlf=true",
+    "switch",
+    "-c",
+    "codex/examen-f-acceptance",
+    "d16959ce236cda4f43d25b67a4d70eacba85ff64"
+  ],
+  "core.longpaths": "true",
+  "core.autocrlf": "true",
+  "byte_repairs_after_checkout": false,
+  "protected_comparisons": 91,
+  "protected_unique_files": 88,
+  "frozen_sources": 44,
+  "C1_protected_comparisons": 61,
+  "accepted_helpers_test_template": 7,
+  "portable_file_hashes": 42,
+  "tests": {
+    "focused_runtime": 13,
+    "new_report_regression_cases": 3,
+    "closure": 23,
+    "functional": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": [
+        {
+          "test": "test_amp_losses_have_finite_gradients_at_full_chip_size[bce]",
+          "reason": "CUDA runtime required"
+        },
+        {
+          "test": "test_amp_losses_have_finite_gradients_at_full_chip_size[dice]",
+          "reason": "CUDA runtime required"
+        },
+        {
+          "test": "test_amp_losses_have_finite_gradients_at_full_chip_size[combined]",
+          "reason": "CUDA runtime required"
+        }
+      ],
+      "tests": "127",
+      "time": "51.004",
+      "timestamp": "2026-10-09T03:45:09.468167+00:00",
+      "hostname": "a7b66b720988",
+      "passed": 124,
+      "deselected": 1,
+      "warnings": 34,
+      "excluded_training_case": "test_resume_restores_optimizer_rng_and_loader_state",
+      "training_scientific_inference_bootstrap": false
+    },
+    "document_content": 4,
+    "offline_Javascript": "passed",
+    "notebook_schemas_validated": 4
+  },
+  "notebook_executed_code_cells": [
+    8,
+    8,
+    16,
+    4
+  ],
+  "notebook_error_outputs": 0,
+  "notebooks_reexecuted": false,
+  "scientific_plans": 3,
+  "scientific_compose_config_exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "runner_parse_errors": [
+    0,
+    0,
+    0
+  ],
+  "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+  "results_sha256": "b5ede4e0f8d46aef5b579f64c3b7f7c476b4aeb93eafaeffaafcdd4e0da124f9",
+  "preexisting_replicates_per_level": {
+    "low": 200,
+    "medium": 200,
+    "high": 200
+  },
+  "images": [
+    {
+      "name": "neural-exam-wildlife:0.2",
+      "id": "sha256:1c680ce7639c7350c45edeaaa6b7e8844c40389fb4818d2e27c0961b64f28fe7",
+      "built_in_F": false
+    },
+    {
+      "name": "exam-document-renderer:b1",
+      "id": "sha256:94b5aaf5c97134beb4a5602355ef97760a148992ac9ec774e6c835638224bd5a",
+      "built_in_F": false
+    }
+  ],
+  "tracked_clone_status_after_checks": "",
+  "protected_and_external_anchor_hashes_unchanged_after_checks": true,
+  "scientific_training_or_inference_or_bootstrap": false,
+  "original_checkout_modified": false,
+  "publication_or_merge": false,
+  "limitations": [
+    "No fresh scientific training reproduction",
+    "No clean image build from Internet",
+    "Final documentary editing/export and visual fidelity are verified separately by B"
+  ],
+  "preflight_note": "An initial private harness call resolved its working directory one level too high and failed before launching any process; corrected the private harness path, without changing the launcher or clone.",
+  "rollback": "Revert report-root selection and its three regression cases from d16959c, plus C2 documentation and receipts. Scientific sources, accepted helpers, datasets and ODT/PDF masters remain unchanged.",
+  "receipt_whitespace": "Authored Markdown and JSON checks pass. Raw Docker output in closure.log intentionally retains four trailing spaces as recorded; no scientific sources were normalized."
+}

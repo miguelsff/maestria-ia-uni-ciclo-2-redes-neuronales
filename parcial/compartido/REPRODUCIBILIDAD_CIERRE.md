@@ -28,9 +28,9 @@ $receipt = Get-Content -Raw -LiteralPath '<ruta real>/derived/command_receipt.js
 docker build --target runtime -t neural-exam-closure:local $receipt.workspace
 ```
 
-Si se construye esa imagen, ejecutar el launcher con `--image neural-exam-closure:local` para comprobar sus versiones antes de usarla. La construcción de imagen no ejecuta entrenamiento ni inferencia; el comando se documenta y queda sin ejecutar en C1.
+Si se construye esa imagen, ejecutar el launcher con `--image neural-exam-closure:local` para comprobar sus versiones antes de usarla. La construcción de imagen no ejecuta entrenamiento ni inferencia; el comando se documenta y quedó sin ejecutar en C1 y C2/F.
 
-El Compose usa `parcial/compartido` como contexto de construcción por defecto, conforme al contrato final. En la transición C1 puede apuntarse `CLOSURE_BUILD_CONTEXT` a la copia derivada, donde los archivos de construcción ya existen. En C2 se comprobará el contexto compartido real. Los montajes siguen usando el runtime derivado para conservar `/workspace/notebooks` y `/workspace/reports` sin cambiar fuentes congeladas.
+El Compose usa `parcial/compartido` como contexto de construcción por defecto, conforme al contrato final. El launcher configura automáticamente `CLOSURE_BUILD_CONTEXT` con la ruta real del workspace materializado. C2/F comprobó los archivos de construcción compartidos y los tres planes Compose sin construir imágenes. Los montajes usan el runtime derivado para conservar `/workspace/notebooks` y `/workspace/reports` sin cambiar fuentes congeladas.
 
 ## Rutas después de la migración
 
@@ -53,7 +53,15 @@ Cuando no existe `main.tex` en la raíz de `fuentes_informe`, el adaptador recon
 
 El manifiesto del runtime registra cada hash copiado. La verificación vuelve a comprobar los bytes congelados en el destino. Las reglas `.gitattributes` protegen tanto las rutas anteriores como las compartidas y los entregables. Dos fuentes V6 están congeladas con CRLF; el resto de las fuentes afectadas por la conversión de Git usa LF. No se debe aplicar un formateador o `git add --renormalize` a los archivos firmados.
 
-La plantilla heredada continúa en su ruta anterior durante C1 porque el constructor aceptado la usa por defecto. En C2 se comprobará su traslado a `compartido/plantillas/` y el montaje final de los recursos comunes. No editar los cinco helpers firmados para ajustar rutas: utilizar el runtime derivado.
+La plantilla firmada está en `compartido/plantillas/notebook_template.ipynb`; el adaptador la copia a la ruta histórica del constructor dentro del runtime. C2/F comprobó sus bytes y los recursos comunes de informes y revisión HTML/JS. Los cinco helpers firmados conservan sus bytes: sus rutas se resuelven mediante el runtime derivado.
+
+## Comprobación C2/F del árbol migrado
+
+La aceptación se ejecutó en un clon limpio con `core.longpaths=true` y `core.autocrlf=true`, creado desde D2 más la corrección del adaptador. No se repararon bytes después del checkout. Pasaron 91 comprobaciones físico/Git sobre **88 archivos únicos**, las 44 fuentes congeladas y los siete helpers, prueba y plantilla conservados de C1. Los recibos C1 siguen siendo antecedentes; los resultados vigentes están en [auditorias/c2/README.md](auditorias/c2/README.md).
+
+El comando `run_exam.py closure --tests` terminó con código cero y 23 pruebas aprobadas. Los tres planes científicos, sus recursos y configuraciones Compose resolvieron sin ejecutar runners. La suite funcional sintética pasó 124 pruebas, omitió tres dependientes de CUDA y excluyó la prueba `slow` que entrena para comprobar reanudación. Pasaron cuatro pruebas de contenido documental en el renderer y el control JavaScript de revisión offline. Los cuatro notebooks finales validaron su esquema, hashes y procedencia; sus 8/8/16/4 celdas de código tienen ejecución registrada y cero errores, sin reejecución científica.
+
+Esta aceptación conserva firma, resultados y 200 réplicas existentes por nivel. No ejecutó entrenamiento, inferencia sobre datos científicos ni bootstrap científico. La reconstrucción limpia de la imagen y la reproducción completa desde entrenamiento siguen sin verificar. La revisión editorial y la edición/exportación final de los ocho documentos corresponden al control documental paralelo de B.
 
 ## Alcance de reproducción
 
@@ -95,4 +103,4 @@ Fauna V6:
 
 El launcher invoca respectivamente `scripts/run_mri.ps1`, `run_flood.ps1` y `run_wildlife.ps1 -Variant v6`, desde el runtime. Fauna toma el padre V5 indicado por su ejemplo de entorno y conserva las puertas científicas del runner original. No inventa revisiones ni cambia decisiones aceptadas. Los runners originales administran cachés/volúmenes Docker y pueden descargar insumos; esta ruta científica tiene efectos adicionales y no comparte la garantía de solo lectura del modo `closure`. Las salidas voluminosas de estos ejemplos permanecen en E:.
 
-Estos comandos científicos **no se ejecutaron en C1**. Se verificaron únicamente los planes y la preservación de los runners. La reproducción desde entrenamiento sigue **no verificada**. Sin `--execute-science`, o añadiendo `--plan-only`, el launcher prepara y registra el plan sin ejecutar el runner. El directorio científico debe no existir: se rechaza una salida ya existente para impedir reutilizar los originales. El token local de Jupyter se genera en el entorno privado del runtime; no aparece en los recibos ni en Git. La salida editorial final ODT/PDF sigue siendo un proceso separado de los artefactos históricos de los runners.
+Estos comandos científicos **no se ejecutaron en C1 ni C2/F**. Se verificaron únicamente los planes, sus recursos y la preservación de los runners. La reproducción desde entrenamiento sigue **no verificada**. Sin `--execute-science`, o añadiendo `--plan-only`, el launcher prepara y registra el plan sin ejecutar el runner. El directorio científico debe no existir: se rechaza una salida ya existente para impedir reutilizar los originales. El token local de Jupyter se genera en el entorno privado del runtime; no aparece en los recibos ni en Git. La salida editorial final ODT/PDF sigue siendo un proceso separado de los artefactos históricos de los runners.

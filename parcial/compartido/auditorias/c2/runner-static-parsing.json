@@ -1,0 +1,20 @@
+[
+  {
+    "task": "mri",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\mri-qwyd6lny\\workspace\\scripts\\run_mri.ps1",
+    "syntax_errors": 0,
+    "executed": false
+  },
+  {
+    "task": "flood",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\flood-ffkv6qlr\\workspace\\scripts\\run_flood.ps1",
+    "syntax_errors": 0,
+    "executed": false
+  },
+  {
+    "task": "wildlife",
+    "runner": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\wildlife-tygwohrb\\workspace\\scripts\\run_wildlife.ps1",
+    "syntax_errors": 0,
+    "executed": false
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "task": "mri",
+    "workspace": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\mri-qwyd6lny\\workspace",
+    "derived": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\mri-qwyd6lny\\derived",
+    "commands": [
+      [
+        "C:\\Users\\USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+        "-NoProfile",
+        "-File",
+        "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\mri-qwyd6lny\\workspace\\scripts\\run_mri.ps1"
+      ]
+    ],
+    "frozen_sources_verified": 44,
+    "scientific_runner_executed": false,
+    "fresh_training_reproduction_verified": false,
+    "status": "plan_only",
+    "resources_checked": [
+      "scripts/run_mri.ps1",
+      "compose.mri.yaml",
+      "configs/mri.toml",
+      "reports/mri/main.tex",
+      "reports/mri/discussion.tex",
+      "reports/preamble.tex",
+      "reports/references.bib",
+      ".env.example"
+    ],
+    "scientific_output_created": false
+  },
+  {
+    "task": "flood",
+    "workspace": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\flood-ffkv6qlr\\workspace",
+    "derived": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\flood-ffkv6qlr\\derived",
+    "commands": [
+      [
+        "C:\\Users\\USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+        "-NoProfile",
+        "-File",
+        "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\flood-ffkv6qlr\\workspace\\scripts\\run_flood.ps1"
+      ]
+    ],
+    "frozen_sources_verified": 44,
+    "scientific_runner_executed": false,
+    "fresh_training_reproduction_verified": false,
+    "status": "plan_only",
+    "resources_checked": [
+      "scripts/run_flood.ps1",
+      "compose.flood.yaml",
+      "configs/flood.toml",
+      "reports/flood/main.tex",
+      "reports/flood/discussion.tex",
+      "reports/preamble.tex",
+      "reports/references.bib",
+      ".env.example",
+      "reports/flood/flood_references.bib"
+    ],
+    "scientific_output_created": false
+  },
+  {
+    "task": "wildlife",
+    "workspace": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\wildlife-tygwohrb\\workspace",
+    "derived": "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\wildlife-tygwohrb\\derived",
+    "commands": [
+      [
+        "C:\\Users\\USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+        "-NoProfile",
+        "-File",
+        "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\wildlife-tygwohrb\\workspace\\scripts\\run_wildlife.ps1",
+        "-Variant",
+        "v6",
+        "-EnvironmentFile",
+        "C:\\Users\\USER\\.codex\\worktrees\\959d\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\f-clean-clone\\parcial\\.runtime\\wildlife-tygwohrb\\workspace\\.env.wildlife-v6"
+      ]
+    ],
+    "frozen_sources_verified": 44,
+    "scientific_runner_executed": false,
+    "fresh_training_reproduction_verified": false,
+    "status": "plan_only",
+    "resources_checked": [
+      "scripts/run_wildlife.ps1",
+      "compose.wildlife.yaml",
+      "configs/wildlife.toml",
+      "reports/wildlife/main.tex",
+      "reports/wildlife/discussion.tex",
+      "reports/preamble.tex",
+      "reports/references.bib",
+      "compose.wildlife.v6.yaml",
+      "configs/wildlife_v6.toml",
+      ".env.wildlife-v6.example"
+    ],
+    "scientific_output_created": false
+  }
+]
