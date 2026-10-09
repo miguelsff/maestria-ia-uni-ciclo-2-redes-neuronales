@@ -1,0 +1,46 @@
+{
+  "results": [
+    {
+      "command": [
+        "C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "-X",
+        "utf8",
+        "parcial\\compartido\\auditorias\\estructura\\build_inventory.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"stage\": \"D1\", \"worktree\": \"C:\\\\Users\\\\USER\\\\.codex\\\\worktrees\\\\b9e3\\\\maestria-ia-uni-ciclo-2-redes-neuronales\", \"branch\": \"codex/examen-estructura-d1\", \"base_main\": \"0dc2fd20f424941919c38ff213894541e60ab200\", \"audit_commit_original\": \"8bb5a39\", \"audit_commit_local\": \"7bd7bece23638cb990ab7397b08796b11bf8a4cc\", \"inventory_source_commit\": \"7bd7bece23638cb990ab7397b08796b11bf8a4cc\", \"tracked_before_audit\": 913, \"tracked_inventoried\": 932, \"operations\": {\"keep\": 21, \"move\": 315, \"retire_copy\": 596}, \"jpeg_unique\": 596, \"sample_cases\": 600, \"exact_duplicate_groups\": 7, \"preserved_versions\": 64, \"frozen_files\": 44, \"frozen_originals_match\": true, \"frozen_worktree_mismatches\": 42, \"requested_configuration\": {\"model\": \"Según creación; valor no incluido en la delegación disponible.\", \"effort\": \"Según creación; valor no incluido en la delegación disponible.\", \"speed\": \"Estándar heredada (default); herramienta sin ajuste individual.\"}, \"effective_configuration_verified\": false, \"ignored_secret_paths\": [\"parcial/.env.wildlife\", \"parcial/.env.wildlife-v2\", \"parcial/.env.wildlife-v3\", \"parcial/.env.wildlife-v4\", \"parcial/.env.wildlife-v5\", \"parcial/.env.wildlife-v6\"], \"scope_exclusions\": [\"parcial/compartido/auditorias/estructura/: auditoría D1 conservada in situ; evita hashes autorreferenciales al regenerar.\"], \"secrets_content_read_or_published\": false, \"files_moved_or_deleted\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "-X",
+        "utf8",
+        "parcial\\compartido\\auditorias\\estructura\\migrate_structure.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"passed\", \"files\": 932, \"operations\": {\"keep\": 21, \"move\": 315, \"retire_copy\": 596}, \"mutations\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "parcial\\compartido\\auditorias\\estructura",
+        "-p",
+        "test_migration_safety.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_d1_apply_is_refused_before_writing_recovery (test_migration_safety.MigrationSafetyTests.test_d1_apply_is_refused_before_writing_recovery) ... ok\ntest_dry_run_preserves_bytes_and_creates_no_destination (test_migration_safety.MigrationSafetyTests.test_dry_run_preserves_bytes_and_creates_no_destination) ... ok\ntest_rejects_destination_collision_without_overwrite (test_migration_safety.MigrationSafetyTests.test_rejects_destination_collision_without_overwrite) ... ok\ntest_rejects_stale_source_hash (test_migration_safety.MigrationSafetyTests.test_rejects_stale_source_hash) ... ok\ntest_rejects_traversal_and_absolute_targets (test_migration_safety.MigrationSafetyTests.test_rejects_traversal_and_absolute_targets) ... ok\ntest_rejects_wrong_worktree (test_migration_safety.MigrationSafetyTests.test_rejects_wrong_worktree) ... ok\ntest_requires_original_bytes_before_retiring_a_copy (test_migration_safety.MigrationSafetyTests.test_requires_original_bytes_before_retiring_a_copy) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.024s\n\nOK\n"
+    }
+  ],
+  "training_or_inference_executed": false,
+  "migration_applied": false
+}
