@@ -1,0 +1,50 @@
+{
+  "technical_acceptance": "passed_before_publication",
+  "review_date_peru": "2026-10-08",
+  "verified_at_utc": "2026-10-09T03:59:17.873275+00:00",
+  "questions": {
+    "1": {
+      "report_format": true,
+      "authors_references": true,
+      "report_content": true,
+      "odt_edit_export": true,
+      "notebooks": true
+    },
+    "2": {
+      "report_format": true,
+      "authors_references": true,
+      "report_content": true,
+      "odt_edit_export": true,
+      "notebooks": true
+    },
+    "3": {
+      "report_format": true,
+      "authors_references": true,
+      "report_content": true,
+      "odt_edit_export": true,
+      "notebooks": true,
+      "occlusion_integrated": true
+    }
+  },
+  "scientific_integrity": true,
+  "published": false,
+  "commands": true,
+  "clean_checkout": true,
+  "migration": true,
+  "preservation": true,
+  "evidence": {
+    "science": [
+      "mri-scientific.json",
+      "flood-scientific.json",
+      "wildlife-scientific.json",
+      "occlusion-scientific.json",
+      "flood-qualitative.json"
+    ],
+    "C2": "../c2/summary.json",
+    "documents": "../f_documentos/estado.json",
+    "migration": "../estructura/d2/verificacion.json",
+    "parent_documents": "document-review-parent.json",
+    "preservation": "local-preservation-check.json"
+  },
+  "scope": "Saved predictions recalculated; no new scientific training/inference/bootstrap or fresh image build. External academic/submission evidence remains unresolved."
+}

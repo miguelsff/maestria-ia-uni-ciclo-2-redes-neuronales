@@ -156,9 +156,9 @@
       "entregable": "común",
       "subrequisito": "Informe NeurIPS de 6–10 páginas",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -166,9 +166,9 @@
       "entregable": "común",
       "subrequisito": "Cinco autores y al menos cinco referencias",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -176,9 +176,9 @@
       "entregable": "común",
       "subrequisito": "Motivación, antecedentes, metodología, experimentos, resultados y discusión",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -186,9 +186,9 @@
       "entregable": "común",
       "subrequisito": "ODT editable y PDF exportado desde él",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -196,9 +196,9 @@
       "entregable": "común",
       "subrequisito": "Notebook final ejecutado sin errores",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     }
   ],

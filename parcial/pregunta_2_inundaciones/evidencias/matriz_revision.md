@@ -21,8 +21,8 @@ Las rutas de entrega se interpretan desde `parcial/`; los recibos científicos y
 | 2 | 5 | Tres tipos de fallo con ejemplos visuales concretos | flood-qualitative.json; Pakistan_70625, Pakistan_849790, Bolivia_379434; figuras del informe | cumple | Ninguna adicional. | Ninguno técnico. |
 | 2 | 5 | Explicaciones sustentadas por observaciones | flood-qualitative.json: backscatter, FP/FN y errores de borde recalculados; 81.25% cerca del borde en tercer caso | cumple | Sombra y doble rebote son interpretaciones posibles; sin información adicional no se certifica mecanismo físico. | Ninguno técnico. |
 | 2 | 6 | Bono de fusión Sentinel-2 frente a SAR | No hay corrida SAR+óptico en los seis experimentos preservados. | falta | Bono opcional; no bloquea los cinco entregables obligatorios. | Ninguno obligatorio; no se añade entrenamiento nuevo. |
-| 2 | común | Informe NeurIPS de 6–10 páginas | validation-final.json; entregable de la pregunta correspondiente | no verificado | Ninguna adicional. | Completar comprobación final. |
-| 2 | común | Cinco autores y al menos cinco referencias | validation-final.json; entregable de la pregunta correspondiente | no verificado | Ninguna adicional. | Completar comprobación final. |
-| 2 | común | Motivación, antecedentes, metodología, experimentos, resultados y discusión | validation-final.json; entregable de la pregunta correspondiente | no verificado | Ninguna adicional. | Completar comprobación final. |
-| 2 | común | ODT editable y PDF exportado desde él | validation-final.json; entregable de la pregunta correspondiente | no verificado | Ninguna adicional. | Completar comprobación final. |
-| 2 | común | Notebook final ejecutado sin errores | validation-final.json; entregable de la pregunta correspondiente | no verificado | Ninguna adicional. | Completar comprobación final. |
+| 2 | común | Informe NeurIPS de 6–10 páginas | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |
+| 2 | común | Cinco autores y al menos cinco referencias | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |
+| 2 | común | Motivación, antecedentes, metodología, experimentos, resultados y discusión | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |
+| 2 | común | ODT editable y PDF exportado desde él | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |
+| 2 | común | Notebook final ejecutado sin errores | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |

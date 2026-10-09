@@ -1,6 +1,6 @@
 {
   "review_date_peru": "2026-10-08",
-  "updated_at_utc": "2026-10-09T02:56:26.357256+00:00",
+  "updated_at_utc": "2026-10-09T03:59:17.926300+00:00",
   "mandatory_deliverables": 18,
   "rows": [
     {
@@ -498,9 +498,9 @@
       "entregable": 4,
       "subrequisito": "Resultados incorporados al informe y notebook finales",
       "evidencia": "pregunta_3_fauna/entregable/informe_fauna.pdf,03_wildlife.ipynb,anexo_occlusion.pdf y04_occlusion_582.ipynb",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "El anexo no reemplaza la discusión requerida dentro de las 6–10 páginas.",
-      "pendiente": "Verificación final del documento integrado.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -558,9 +558,9 @@
       "entregable": "común",
       "subrequisito": "Informe NeurIPS de 6–10 páginas",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -568,9 +568,9 @@
       "entregable": "común",
       "subrequisito": "Cinco autores y al menos cinco referencias",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -578,9 +578,9 @@
       "entregable": "común",
       "subrequisito": "Motivación, antecedentes, metodología, experimentos, resultados y discusión",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -588,9 +588,9 @@
       "entregable": "común",
       "subrequisito": "ODT editable y PDF exportado desde él",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -598,9 +598,9 @@
       "entregable": "común",
       "subrequisito": "Notebook final ejecutado sin errores",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -608,9 +608,9 @@
       "entregable": "común",
       "subrequisito": "Informe NeurIPS de 6–10 páginas",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -618,9 +618,9 @@
       "entregable": "común",
       "subrequisito": "Cinco autores y al menos cinco referencias",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -628,9 +628,9 @@
       "entregable": "común",
       "subrequisito": "Motivación, antecedentes, metodología, experimentos, resultados y discusión",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -638,9 +638,9 @@
       "entregable": "común",
       "subrequisito": "ODT editable y PDF exportado desde él",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -648,9 +648,9 @@
       "entregable": "común",
       "subrequisito": "Notebook final ejecutado sin errores",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -658,9 +658,9 @@
       "entregable": "común",
       "subrequisito": "Informe NeurIPS de 6–10 páginas",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -668,9 +668,9 @@
       "entregable": "común",
       "subrequisito": "Cinco autores y al menos cinco referencias",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -678,9 +678,9 @@
       "entregable": "común",
       "subrequisito": "Motivación, antecedentes, metodología, experimentos, resultados y discusión",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -688,9 +688,9 @@
       "entregable": "común",
       "subrequisito": "ODT editable y PDF exportado desde él",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -698,9 +698,9 @@
       "entregable": "común",
       "subrequisito": "Notebook final ejecutado sin errores",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -708,9 +708,9 @@
       "entregable": "común",
       "subrequisito": "Cifras y hashes consistentes entre originales y entregas",
       "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -728,9 +728,9 @@
       "entregable": "común",
       "subrequisito": "Entorno y comando completo documentados",
       "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -738,9 +738,9 @@
       "entregable": "común",
       "subrequisito": "Pruebas de empaquetado y ejecución desde copia limpia",
       "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -748,9 +748,9 @@
       "entregable": "común",
       "subrequisito": "Migración sin pérdida de contenido único y con manifiesto",
       "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {
@@ -758,9 +758,9 @@
       "entregable": "común",
       "subrequisito": "Preservación de cambios anteriores y secretos",
       "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {

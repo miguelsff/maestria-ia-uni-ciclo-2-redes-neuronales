@@ -26,8 +26,8 @@ Las rutas de entrega se interpretan desde `parcial/`; los recibos científicos y
 | 1 | 6 | Mitigación implementada y evaluada | mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; pérdidas BCE/focal implementadas y comparación cuantitativa en ocho corridas | cumple | La prevalencia débil está afectada por ruido y abstenciones. | Ninguno técnico. |
 | 1 | 7 | Discusión de diferencias geográficas y lingüísticas | pregunta_1_mri/entregable/informe_mri.pdf; discussion.tex: cobertura, lexicón, negación e idiomas | cumple | No se presentan métricas fiables de equidad por centro/idioma por falta de soporte. | Ninguno técnico. |
 | 1 | 7 | Implicancias clínicas y validación local | informe_mri.pdf: discusión de sesgo y riesgo de despliegue, aproximadamente media página | cumple | No se afirma aptitud para uso clínico. | Ninguno técnico. |
-| 1 | común | Informe NeurIPS de 6–10 páginas | validation-final.json; entregable de la pregunta correspondiente | no verificado | Ninguna adicional. | Completar comprobación final. |
-| 1 | común | Cinco autores y al menos cinco referencias | validation-final.json; entregable de la pregunta correspondiente | no verificado | Ninguna adicional. | Completar comprobación final. |
-| 1 | común | Motivación, antecedentes, metodología, experimentos, resultados y discusión | validation-final.json; entregable de la pregunta correspondiente | no verificado | Ninguna adicional. | Completar comprobación final. |
-| 1 | común | ODT editable y PDF exportado desde él | validation-final.json; entregable de la pregunta correspondiente | no verificado | Ninguna adicional. | Completar comprobación final. |
-| 1 | común | Notebook final ejecutado sin errores | validation-final.json; entregable de la pregunta correspondiente | no verificado | Ninguna adicional. | Completar comprobación final. |
+| 1 | común | Informe NeurIPS de 6–10 páginas | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |
+| 1 | común | Cinco autores y al menos cinco referencias | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |
+| 1 | común | Motivación, antecedentes, metodología, experimentos, resultados y discusión | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |
+| 1 | común | ODT editable y PDF exportado desde él | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |
+| 1 | común | Notebook final ejecutado sin errores | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |

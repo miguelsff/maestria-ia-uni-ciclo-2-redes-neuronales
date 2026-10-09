@@ -18,7 +18,14 @@
       "worktree": "C:/Users/USER/.codex/worktrees/34ab/maestria-ia-uni-ciclo-2-redes-neuronales",
       "model_requested": "gpt-6-astra",
       "effort_requested": "xhigh",
-      "speed": "default inherited; no per-chat creation parameter"
+      "speed": "default inherited; no per-chat creation parameter",
+      "status": "complete_verified_and_integrated",
+      "effective_model": "gpt-6-astra",
+      "effective_effort": "xhigh",
+      "configuration_verified": true,
+      "source_work_commits": [
+        "1d623e792dc0057f007b6c3ec97df5268860ec30"
+      ]
     },
     {
       "key": "odt",
@@ -27,7 +34,15 @@
       "worktree": "C:/Users/USER/.codex/worktrees/3512/maestria-ia-uni-ciclo-2-redes-neuronales",
       "model_requested": "gpt-6.1-sol",
       "effort_requested": "high",
-      "speed": "default inherited; no per-chat creation parameter"
+      "speed": "default inherited; no per-chat creation parameter",
+      "status": "complete_verified_and_integrated",
+      "effective_model": "gpt-6.1-sol",
+      "effective_effort": "high",
+      "configuration_verified": true,
+      "source_work_commits": [
+        "292fa412cd1304e02523b7f9787cdbc3acf1be43",
+        "d0e5fb4f77c4f2ec77112652f4b69cfb94279dd0"
+      ]
     },
     {
       "key": "reproduccion",
@@ -36,7 +51,19 @@
       "worktree": "C:/Users/USER/.codex/worktrees/959d/maestria-ia-uni-ciclo-2-redes-neuronales",
       "model_requested": "gpt-6.1-sol",
       "effort_requested": "high",
-      "speed": "default inherited; no per-chat creation parameter"
+      "speed": "default inherited; no per-chat creation parameter",
+      "status": "complete_verified_and_integrated",
+      "effective_model": "gpt-6.1-sol",
+      "effective_effort": "high",
+      "configuration_verified": true,
+      "source_work_commits": [
+        "1e8815f09f125b759c2b88580bb1ca20f96490e0",
+        "0698c432050dfcd6a3d1857d871e9183f30c98b9",
+        "75d2db173391637de632824c72c036bb235d209a",
+        "11d0366d1c4ddad7511b4f7ed50a940477d5b8ba",
+        "d16959ce236cda4f43d25b67a4d70eacba85ff64",
+        "6a455e6a7f3e05836f4b652a2a133a89e0c3e9bb"
+      ]
     },
     {
       "key": "estructura",
@@ -45,7 +72,14 @@
       "worktree": "C:/Users/USER/.codex/worktrees/b9e3/maestria-ia-uni-ciclo-2-redes-neuronales",
       "model_requested": "gpt-6.1-sol",
       "effort_requested": "high",
-      "speed": "default inherited; no per-chat creation parameter"
+      "speed": "default inherited; no per-chat creation parameter",
+      "status": "complete_verified_and_integrated",
+      "effective_model": "gpt-6.1-sol",
+      "effective_effort": "high",
+      "configuration_verified": true,
+      "source_work_commits": [
+        "f176167b1546aa6404790094dfec8242ff59d84b"
+      ]
     }
   ],
   "dependencies": {
@@ -80,5 +114,7 @@
     "G": [
       "F passed"
     ]
-  }
+  },
+  "stage": "F_passed_G_pending",
+  "effective_configuration_evidence": "Read-only local turn_context verified model and effort; service_tier default inherited; API exposes no individual speed parameter."
 }
