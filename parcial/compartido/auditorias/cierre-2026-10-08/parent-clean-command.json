@@ -1,0 +1,64 @@
+{
+  "task": "closure",
+  "workspace": "E:\\Kaggle\\exam-closure-2026-10-08\\final-parent-clean-clone\\parcial\\.runtime\\closure-7w5pd8o_\\workspace",
+  "derived": "E:\\Kaggle\\exam-closure-2026-10-08\\final-parent-clean-clone\\parcial\\.runtime\\closure-7w5pd8o_\\derived",
+  "commands": [
+    [
+      "docker",
+      "compose",
+      "-f",
+      "E:\\Kaggle\\exam-closure-2026-10-08\\final-parent-clean-clone\\parcial\\.runtime\\closure-7w5pd8o_\\workspace\\compose.closure.yaml",
+      "config",
+      "--quiet"
+    ],
+    [
+      "docker",
+      "compose",
+      "-f",
+      "E:\\Kaggle\\exam-closure-2026-10-08\\final-parent-clean-clone\\parcial\\.runtime\\closure-7w5pd8o_\\workspace\\compose.closure.yaml",
+      "run",
+      "--rm",
+      "verify"
+    ]
+  ],
+  "frozen_sources_verified": 44,
+  "scientific_runner_executed": false,
+  "fresh_training_reproduction_verified": false,
+  "commands_executed": [
+    {
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "E:\\Kaggle\\exam-closure-2026-10-08\\final-parent-clean-clone\\parcial\\.runtime\\closure-7w5pd8o_\\workspace\\compose.closure.yaml",
+        "config",
+        "--quiet"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "E:\\Kaggle\\exam-closure-2026-10-08\\final-parent-clean-clone\\parcial\\.runtime\\closure-7w5pd8o_\\workspace\\compose.closure.yaml",
+        "run",
+        "--rm",
+        "verify"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "E:\\Kaggle\\exam-closure-2026-10-08\\final-parent-clean-clone\\parcial\\.runtime\\closure-7w5pd8o_\\workspace\\compose.closure.yaml",
+        "run",
+        "--rm",
+        "tests"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

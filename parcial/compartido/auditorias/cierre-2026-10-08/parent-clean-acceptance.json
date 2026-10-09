@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "clean_clone_root": "E:\\Kaggle\\exam-closure-2026-10-08\\final-parent-clean-clone",
+  "commit_tested": "765a921dcd5aa5be4725e39419f3b47c2d3b47aa",
+  "unique_protected_hashes": 88,
+  "doc_controls_hashes": 3,
+  "frozen_sources": 44,
+  "closure_tests": 23,
+  "byte_repairs": false,
+  "tree_matches_defined_structure": true,
+  "originals_readonly": true,
+  "science_training_inference_bootstrap": false,
+  "supplemental_changes_after_test": "Only evidence, publication status and generated review matrices; core code/docs masters remain unchanged."
+}
