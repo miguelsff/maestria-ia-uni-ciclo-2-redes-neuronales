@@ -1,0 +1,12 @@
+{
+  "sha256": {
+    "results.json": "b5ede4e0f8d46aef5b579f64c3b7f7c476b4aeb93eafaeffaafcdd4e0da124f9",
+    "review_acceptance.json": "ab65118c2a72ad844718202914f67cc40901cbb56b599ed16d9dc13f0b32f127",
+    "protocol.json": "8704d6e664b2f1cc2264ee5b663b5245c02be89523075ee6a63bc5a154714244",
+    "occlusion_review_sample_600.csv": "799608b589c9de45289f36dd16f9f3429796feb75520cae5204888ae04ee0a0b",
+    "occlusion_review_accepted_582.csv": "0d579cc5330b1a416c4e228da9f8ad7f7897423d61b218a949a500e35f2a32a7"
+  },
+  "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+  "parent_files_and_frozen_sources_verified": true,
+  "source_results_sha256": "b5ede4e0f8d46aef5b579f64c3b7f7c476b4aeb93eafaeffaafcdd4e0da124f9"
+}

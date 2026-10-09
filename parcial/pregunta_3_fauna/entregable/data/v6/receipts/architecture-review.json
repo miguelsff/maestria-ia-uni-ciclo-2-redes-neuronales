@@ -1,0 +1,14 @@
+{
+  "recorded_at_utc": "2026-10-05T20:30:09.0194777Z",
+  "reviewed": true,
+  "decision": "pretrained_detector_permitted",
+  "reviewer": "User (direct instruction in this conversation)",
+  "evidence": "The user explicitly directed this project to use existing YOLO rather than implement a separate YOLO. Question 3 requests an adjusted YOLO model. This records the user-directed project scope and does not represent confirmation from the teacher.",
+  "source": "direct_user_instruction",
+  "user_statement": "lo que debemos es usar el YOLO, no crear nuestro propio YOLO",
+  "permission_authority": "project user",
+  "teacher_confirmation_provided": false,
+  "model": "Ultralytics YOLOv8s",
+  "workflow": "Fine-tune the existing detector on the prepared 14-class CCT20 dataset; retain original data preparation, evaluation and ecological postprocessing.",
+  "own_detector_components_claimed": false
+}

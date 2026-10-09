@@ -1,0 +1,365 @@
+{
+  "identity": "7a2698cefc83dd3f3959e3cb3264bd7504cf295465fbaf179dcb1e5308d4ce82",
+  "bbox_units": "pixels",
+  "integrity": {
+    "referenced_images": 58864,
+    "unreferenced_files": 0,
+    "fully_decoded": true,
+    "cached_by_size_mtime": true
+  },
+  "split_summary": {
+    "train": {
+      "images": 12399,
+      "backgrounds": 1000,
+      "cameras": [
+        "106",
+        "108",
+        "115",
+        "120",
+        "23",
+        "26",
+        "33",
+        "38",
+        "43",
+        "51",
+        "57",
+        "61",
+        "64",
+        "70",
+        "88",
+        "90",
+        "94",
+        "96"
+      ],
+      "sequences": 5733,
+      "class_boxes": {
+        "opossum": 2514,
+        "raccoon": 1024,
+        "squirrel": 1036,
+        "bobcat": 682,
+        "skunk": 214,
+        "dog": 764,
+        "coyote": 1368,
+        "rabbit": 2266,
+        "bird": 556,
+        "cat": 1168,
+        "badger": 9,
+        "deer": 44,
+        "fox": 5,
+        "rodent": 263
+      }
+    },
+    "val": {
+      "images": 2543,
+      "backgrounds": 995,
+      "cameras": [
+        "108",
+        "115",
+        "120",
+        "33",
+        "38",
+        "43",
+        "51",
+        "61",
+        "88",
+        "90"
+      ],
+      "sequences": 980,
+      "class_boxes": {
+        "opossum": 353,
+        "raccoon": 126,
+        "squirrel": 147,
+        "bobcat": 90,
+        "skunk": 20,
+        "dog": 104,
+        "coyote": 197,
+        "rabbit": 331,
+        "bird": 61,
+        "cat": 168,
+        "badger": 1,
+        "deer": 0,
+        "fox": 0,
+        "rodent": 46
+      }
+    },
+    "cis_test": {
+      "images": 13073,
+      "backgrounds": 1180,
+      "cameras": [
+        "108",
+        "115",
+        "120",
+        "33",
+        "38",
+        "43",
+        "51",
+        "61",
+        "88",
+        "90"
+      ],
+      "sequences": 5378,
+      "class_boxes": {
+        "opossum": 4008,
+        "raccoon": 980,
+        "squirrel": 510,
+        "bobcat": 772,
+        "skunk": 161,
+        "dog": 723,
+        "coyote": 1180,
+        "rabbit": 1556,
+        "bird": 752,
+        "cat": 1528,
+        "badger": 4,
+        "deer": 139,
+        "fox": 2,
+        "rodent": 146
+      }
+    },
+    "trans_val": {
+      "images": 1592,
+      "backgrounds": 61,
+      "cameras": [
+        "125"
+      ],
+      "sequences": 589,
+      "class_boxes": {
+        "opossum": 425,
+        "raccoon": 136,
+        "squirrel": 0,
+        "bobcat": 790,
+        "skunk": 49,
+        "dog": 80,
+        "coyote": 45,
+        "rabbit": 70,
+        "bird": 5,
+        "cat": 70,
+        "badger": 0,
+        "deer": 0,
+        "fox": 0,
+        "rodent": 0
+      }
+    },
+    "trans_test": {
+      "images": 18647,
+      "backgrounds": 1778,
+      "cameras": [
+        "0",
+        "100",
+        "105",
+        "130",
+        "28",
+        "40",
+        "46",
+        "7",
+        "78"
+      ],
+      "sequences": 7438,
+      "class_boxes": {
+        "opossum": 4659,
+        "raccoon": 4769,
+        "squirrel": 777,
+        "bobcat": 1974,
+        "skunk": 273,
+        "dog": 958,
+        "coyote": 1901,
+        "rabbit": 722,
+        "bird": 179,
+        "cat": 1366,
+        "badger": 15,
+        "deer": 0,
+        "fox": 1,
+        "rodent": 26
+      }
+    }
+  },
+  "sequence_overlaps": {
+    "train:val": 0,
+    "train:cis_test": 0,
+    "train:trans_val": 0,
+    "train:trans_test": 0,
+    "val:cis_test": 0,
+    "val:trans_val": 0,
+    "val:trans_test": 0,
+    "cis_test:trans_val": 0,
+    "cis_test:trans_test": 0,
+    "trans_val:trans_test": 0
+  },
+  "class_map": [
+    {
+      "source_id": 1,
+      "class_id": 0,
+      "name": "opossum"
+    },
+    {
+      "source_id": 3,
+      "class_id": 1,
+      "name": "raccoon"
+    },
+    {
+      "source_id": 5,
+      "class_id": 2,
+      "name": "squirrel"
+    },
+    {
+      "source_id": 6,
+      "class_id": 3,
+      "name": "bobcat"
+    },
+    {
+      "source_id": 7,
+      "class_id": 4,
+      "name": "skunk"
+    },
+    {
+      "source_id": 8,
+      "class_id": 5,
+      "name": "dog"
+    },
+    {
+      "source_id": 9,
+      "class_id": 6,
+      "name": "coyote"
+    },
+    {
+      "source_id": 10,
+      "class_id": 7,
+      "name": "rabbit"
+    },
+    {
+      "source_id": 11,
+      "class_id": 8,
+      "name": "bird"
+    },
+    {
+      "source_id": 16,
+      "class_id": 9,
+      "name": "cat"
+    },
+    {
+      "source_id": 21,
+      "class_id": 10,
+      "name": "badger"
+    },
+    {
+      "source_id": 34,
+      "class_id": 11,
+      "name": "deer"
+    },
+    {
+      "source_id": 51,
+      "class_id": 12,
+      "name": "fox"
+    },
+    {
+      "source_id": 99,
+      "class_id": 13,
+      "name": "rodent"
+    }
+  ],
+  "train_class_boxes": {
+    "opossum": 2514,
+    "raccoon": 1024,
+    "squirrel": 1036,
+    "bobcat": 682,
+    "skunk": 214,
+    "dog": 764,
+    "coyote": 1368,
+    "rabbit": 2266,
+    "bird": 556,
+    "cat": 1168,
+    "badger": 9,
+    "deer": 44,
+    "fox": 5,
+    "rodent": 263
+  },
+  "jpeg_materialization": {
+    "method": "remove whitespace after an existing JPEG end marker; no re-encoding",
+    "eligible_sources_checked": 48254,
+    "canonical_copies": 1000,
+    "source_photographs_modified": false,
+    "all_copied_pixels_verified_identical": true,
+    "copy_registry_identity": "44ad4bb3c4016cfff3949675bc48e9b7ac6bb54db7e3097ec086b35eaf31d7f5"
+  },
+  "exclusion_counts": [
+    {
+      "split": "cis_test",
+      "reason": "incomplete_animal_boxes",
+      "images": 1951
+    },
+    {
+      "split": "cis_test",
+      "reason": "invalid_bbox",
+      "images": 12
+    },
+    {
+      "split": "cis_test",
+      "reason": "no_animal_box_or_explicit_empty",
+      "images": 791
+    },
+    {
+      "split": "train",
+      "reason": "incomplete_animal_boxes",
+      "images": 1454
+    },
+    {
+      "split": "train",
+      "reason": "invalid_bbox",
+      "images": 32
+    },
+    {
+      "split": "train",
+      "reason": "no_animal_box_or_explicit_empty",
+      "images": 668
+    },
+    {
+      "split": "trans_test",
+      "reason": "incomplete_animal_boxes",
+      "images": 3464
+    },
+    {
+      "split": "trans_test",
+      "reason": "invalid_bbox",
+      "images": 51
+    },
+    {
+      "split": "trans_test",
+      "reason": "no_animal_box_or_explicit_empty",
+      "images": 1113
+    },
+    {
+      "split": "trans_val",
+      "reason": "incomplete_animal_boxes",
+      "images": 131
+    },
+    {
+      "split": "trans_val",
+      "reason": "invalid_bbox",
+      "images": 2
+    },
+    {
+      "split": "val",
+      "reason": "incomplete_animal_boxes",
+      "images": 629
+    },
+    {
+      "split": "val",
+      "reason": "invalid_bbox",
+      "images": 1
+    },
+    {
+      "split": "val",
+      "reason": "no_animal_box_or_explicit_empty",
+      "images": 41
+    },
+    {
+      "split": "val",
+      "reason": "sequence_shared_with_train",
+      "images": 270
+    }
+  ],
+  "derivation": {
+    "source": "E:\\Kaggle\\exam-output-wildlife-v6\\wildlife\\manifest.json",
+    "sha256": "2a8bab1b502fd9d304807c4f3f70ca06bc77fa454a47a5eaae6cb27eae1a6d6b",
+    "method": "Campos originales seleccionados; exclusiones agrupadas por partición y motivo. No contiene records."
+  }
+}

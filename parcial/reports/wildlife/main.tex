@@ -12,8 +12,10 @@ La mAP50:95 fue 0.4358 en cámaras conocidas y 0.2625 en cámaras nuevas, con un
 brecha de 0.1733. Se calcularon ocho grupos de intervalos con 200 remuestreos de
 secuencias cada uno y se generaron doce casos Grad-CAM, tres sin señal espacial
 positiva. Un módulo propio resumió 1\,853 fotografías de una cámara nueva.
-El análisis por oclusión permanece pendiente de anotación humana; no se atribuyen
-resultados a niveles que todavía no fueron revisados.
+Una revisión independiente aceptó 582 de 600 objetos muestreados de cámaras nuevas.
+La mAP50:95 por oclusión baja, media y alta fue 0.0875, 0.0271 y 0.0244,
+respectivamente, con intervalos de 200 remuestreos por nivel y alcance condicionado
+a esa submuestra; no se afirma representatividad poblacional.
 \end{abstract}
 
 \section{Motivación y trabajos relacionados}
@@ -86,19 +88,36 @@ IoU y permite evaluar estas áreas relativas sin confundirlas con tamaños COCO 
 Los intervalos percentiles del 95\,\% usan 200 remuestreos de secuencias completas
 por grupo, semilla 42 y el checkpoint fijo. Son condicionales a las cámaras observadas;
 no miden variación entre entrenamientos ni incertidumbre de nuevas regiones.
-Las anotaciones no proporcionan niveles fiables de oclusión. La galería preparada
-contiene 17\,620 objetos elegibles de trans\_test; actualmente ninguno tiene un nivel
-humano registrado. El protocolo implementado requiere revisión completa y al menos
-30 objetos por nivel low, medium y high; los casos inciertos se marcan ambiguous.
-Es una decisión de este protocolo, no una exigencia atribuida al docente.
-Los objetos de otros niveles o ambiguos se ignoran como crowd al evaluar un grupo.
-Los resultados de oclusión se mantienen pendientes hasta satisfacer esa cobertura.
+La revisión independiente de oclusión muestreó 600 de los 17\,620 objetos elegibles
+de trans\_test. Se aceptaron 582: 340 low, 69 medium, 48 high y 125 ambiguous.
+Baja significa más de 75\,\% del cuerpo visible; media, 25--75\,\%; alta, menos
+de 25\,\%. Visibilidad incierta o truncamiento se conserva como ambiguous.
+Se excluyeron 18 casos sin nivel por decisión expresa del responsable; las notas
+se aceptaron como opcionales y 398 permanecen vacías. El caso 121 conserva medium
+según Miguel, sin agregar nota; la discrepancia inicial se preserva en los retornos originales.
+
+Cada nivel supera el mínimo protocolario de 30 objetos. La AP no ponderada reutiliza
+predicciones y checkpoint V6, sin entrenamiento ni inferencia nuevos. Mantiene los
+18\,647 fotogramas de trans\_test, incluidos 1\,778 vacíos y sus posibles falsos
+positivos. Las cajas no revisadas, excluidas, ambiguas o de otro nivel son regiones
+crowd ignoradas: sus coincidencias de la misma clase pueden ignorarse bajo las reglas
+COCO; las detecciones no absorbidas conservan su posibilidad de ser falsos positivos.
+Reducir los positivos evaluables sin retirar esos fotogramas cambia la tarea de
+evaluación. Estas mAP no son directamente comparables con la mAP global V6 ni con
+una evaluación restringida a fotos revisadas. El anexo independiente conserva el
+detalle por especie, decisiones y trazabilidad.
 
 \section{Resultados e interpretabilidad}
 \input{results_tables}
 La brecha global de mAP50:95 es de 17.33 puntos porcentuales. Con las mismas trece
 categorías, la mAP pasa de 0.4432 a 0.2625: la diferencia no desaparece al igualar
 la cobertura taxonómica. Las tablas conservan las clases sin soporte como ND.
+
+\input{occlusion_tables}
+La mAP50:95 baja 6.04 puntos porcentuales de low a medium y 6.31 de low a high.
+La diferencia medium--high es 0.28 puntos, con intervalos ampliamente superpuestos.
+Los grupos tienen 13, 10 y 11 categorías con soporte, respectivamente; no se aisló
+el efecto causal de la oclusión ni se estimó un intervalo de la diferencia.
 
 \input{report_figures}
 Grad-CAM fija una propuesta y el score diferenciable de una clase antes de NMS,
@@ -127,7 +146,7 @@ la tasa predicha de vacíos no equivale a una revisión humana de ausencia.
 \section{Discusión y uso responsable}
 \input{discussion}
 
-\section{Reproducibilidad y pendientes}
+\section{Reproducibilidad y alcance}
 Se conservaron 44 fuentes experimentales congeladas, manifiestos, exclusiones,
 argumentos efectivos, pesos, predicciones y métricas. Las dependencias están fijadas
  y se verificaron CUDA, NMS, gradientes y AMP en RTX 5090. La prueba pequeña de
@@ -138,11 +157,12 @@ Un límite de memoria interrumpió el cálculo inicial de intervalos después de
 entrenamiento. La recuperación ejecutó cada grupo en un proceso nuevo con la función
 original, conservando semilla, réplicas, datos y modelo. No repitió el entrenamiento;
 las pruebas verificaron igualdad exacta de resultados en casos de referencia.
-Los ocho grupos quedaron guardados. El notebook ejecutó sus doce celdas de código
-sin errores y la demostración y los doce casos Grad-CAM están disponibles.
+Los ocho grupos V6 quedaron guardados. El notebook final consulta esos resultados
+y la oclusión aceptada, verifica hashes y conserva la demostración y los doce casos
+Grad-CAM. El original V6 permanece intacto; el anexo de oclusión es independiente.
 El código está en \url{https://github.com/miguelsff/maestria-ia-uni-ciclo-2-redes-neuronales}.
-Este documento conserva carácter de borrador: faltan niveles humanos de oclusión
- y aprobación editorial del equipo. No se registra aprobación del docente.
+Los resultados de oclusión complementan la evaluación V6 con el alcance muestral
+declarado. No se registra aprobación del docente ni envío a la plataforma.
 
 \bibliographystyle{plain}
 \bibliography{references}

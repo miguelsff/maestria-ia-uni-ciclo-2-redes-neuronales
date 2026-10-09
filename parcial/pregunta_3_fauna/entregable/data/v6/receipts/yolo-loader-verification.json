@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "manifest_identity": "7a2698cefc83dd3f3959e3cb3264bd7504cf295465fbaf179dcb1e5308d4ce82",
+  "ultralytics_version": "8.4.21",
+  "verifier": "ultralytics.data.utils.verify_image_label",
+  "splits": {
+    "train": {
+      "expected_images": 12399,
+      "accepted_images": 12399,
+      "backgrounds": 1000,
+      "boxes": 11913
+    },
+    "val": {
+      "expected_images": 2543,
+      "accepted_images": 2543,
+      "backgrounds": 995,
+      "boxes": 1644
+    },
+    "cis_test": {
+      "expected_images": 13073,
+      "accepted_images": 13073,
+      "backgrounds": 1180,
+      "boxes": 12461
+    },
+    "trans_val": {
+      "expected_images": 1592,
+      "accepted_images": 1592,
+      "backgrounds": 61,
+      "boxes": 1670
+    },
+    "trans_test": {
+      "expected_images": 18647,
+      "accepted_images": 18647,
+      "backgrounds": 1778,
+      "boxes": 17620
+    }
+  },
+  "problem_count": 0,
+  "problems": []
+}

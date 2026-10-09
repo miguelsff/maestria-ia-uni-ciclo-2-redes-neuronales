@@ -26,9 +26,14 @@ mediciones de iluminación, especialmente cuando una fotografía oscura se rotul
 La galería no estima la frecuencia de estos patrones ni demuestra dependencia causal
 del fondo. Para comprobarla harían falta intervenciones controladas sobre las imágenes.
 
-La oclusión queda sin resultado: los 17\,620 objetos elegibles no tienen niveles
-humanos registrados. No se deduce oclusión a partir del área, la confianza o el mapa.
-Los análisis globales y por tamaño están completos, pero no sustituyen esa revisión.
+La submuestra aceptada muestra menor AP en oclusión media y alta que en baja.
+Sus intervalos del 95\,\% remuestrean las 7\,438 secuencias de trans\_test, con
+200 réplicas por nivel, semilla 42 y modelo fijo. No capturan desacuerdo entre
+revisores, notas faltantes, variación del entrenamiento ni cámaras futuras.
+Los 18 casos excluidos son falta de respuesta humana: las proporciones de los
+582 aceptados son descriptivas y no se reutilizan intervalos poblacionales ni
+la garantía de planificación de los 600 originales. La composición de especies,
+el soporte y el tratamiento crowd impiden atribuir toda diferencia a la oclusión.
 La demostración de la cámara 7 muestra una agregación reproducible de fotografías;
 sus 1\,420 fotos con detecciones y once categorías no son un censo de individuos.
 
@@ -47,20 +52,12 @@ fallos del sensor o cambio de iluminación. Los conteos de imágenes no estiman 
 La separación entre cámaras ayuda a evaluar generalización, pero el entrenamiento en Estados Unidos
 no justifica despliegue en Amazonía o Andes sin validación local.
 
-La decisión de revisar una fotografía debe considerar el costo de omitir una observación,
-el costo de una identificación incorrecta y la capacidad del equipo de campo para verificarla.
-Un umbral global puede facilitar una demostración operativa, pero no sustituye un protocolo
-por especie. Para registros sensibles conviene conservar la fotografía original, la caja,
-la confianza y la decisión del experto, evitando que una etiqueta automática se convierta
-sin revisión en un registro confirmado. El procesamiento debe poder repetirse si cambian
-el modelo o el criterio de revisión.
-
-La concentración de ejemplos en especies frecuentes puede ocultar un rendimiento insuficiente
-en especies raras aun cuando la mAP global resulte favorable. Los soportes reales, las categorías
-sin referencia y las exclusiones deben acompañar cada comparación; una AP indefinida no es
-evidencia de ausencia biológica. La revisión de casos nocturnos, objetos pequeños y cuerpos
-parcialmente visibles ayuda a priorizar nuevas muestras, pero una galería exploratoria no mide
-por sí sola la frecuencia de esos errores. Para una aplicación de conservación se necesitarían
-muestreo temporal representativo, control del esfuerzo por cámara y evaluación en el hábitat
-de destino. Cualquier decisión de manejo conserva responsabilidad humana y debe admitir
-corrección cuando aparezcan evidencias adicionales.
+Para registros sensibles se deben conservar fotografía, caja, confianza y decisión
+del especialista. La etiqueta automática no constituye un registro confirmado.
+La revisión debe considerar el costo de omisión, el de identificación incorrecta
+y la capacidad del equipo de campo. Un umbral global no sustituye un protocolo
+por especie ni el control del esfuerzo por cámara. Los soportes, exclusiones y
+categorías sin referencia deben acompañar cada comparación: una AP indefinida no
+demuestra ausencia biológica. La galería orienta nuevas muestras, pero no mide
+frecuencia de errores. Las decisiones de manejo conservan responsabilidad humana
+y deben admitir corrección cuando aparezcan evidencias adicionales.

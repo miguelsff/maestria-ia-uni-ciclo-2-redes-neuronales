@@ -1,0 +1,194 @@
+[
+  {
+    "split": "cis_test",
+    "image_id": "59c99f45-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "43",
+    "case": "false_positive",
+    "capture_period": "day",
+    "training_support": 214,
+    "figure": "/outputs/wildlife/cam_cases/cis_test_0.png",
+    "class": "skunk",
+    "proposal": 7250,
+    "score": 0.4202849268913269,
+    "heatmap_range": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "split": "cis_test",
+    "image_id": "58782b43-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "120",
+    "case": "false_positive",
+    "capture_period": "night",
+    "training_support": 2514,
+    "figure": "/outputs/wildlife/cam_cases/cis_test_1.png",
+    "class": "opossum",
+    "proposal": 7122,
+    "score": 0.4074372351169586,
+    "heatmap_range": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "split": "cis_test",
+    "image_id": "5a296348-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "61",
+    "case": "missed_or_wrong_class",
+    "capture_period": "day",
+    "training_support": 44,
+    "figure": "/outputs/wildlife/cam_cases/cis_test_2.png",
+    "class": "deer",
+    "proposal": 7187,
+    "score": 8.019300003070384e-05,
+    "heatmap_range": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "split": "cis_test",
+    "image_id": "5858c152-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "108",
+    "case": "missed_or_wrong_class",
+    "capture_period": "night",
+    "training_support": 2514,
+    "figure": "/outputs/wildlife/cam_cases/cis_test_3.png",
+    "class": "opossum",
+    "proposal": 3957,
+    "score": 0.0877775326371193,
+    "heatmap_range": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "split": "cis_test",
+    "image_id": "5975160a-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "61",
+    "case": "detected_iou50",
+    "capture_period": "day",
+    "training_support": 44,
+    "figure": "/outputs/wildlife/cam_cases/cis_test_4.png",
+    "class": "deer",
+    "proposal": 8130,
+    "score": 0.1448991298675537,
+    "heatmap_range": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "split": "cis_test",
+    "image_id": "585a6381-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "88",
+    "case": "detected_iou50",
+    "capture_period": "night",
+    "training_support": 2514,
+    "figure": "/outputs/wildlife/cam_cases/cis_test_5.png",
+    "class": "opossum",
+    "proposal": 7301,
+    "score": 0.807454526424408,
+    "heatmap_range": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "split": "trans_test",
+    "image_id": "596d6622-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "46",
+    "case": "false_positive",
+    "capture_period": "day",
+    "training_support": 214,
+    "figure": "/outputs/wildlife/cam_cases/trans_test_0.png",
+    "class": "skunk",
+    "proposal": 7561,
+    "score": 0.6898059844970703,
+    "heatmap_range": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "split": "trans_test",
+    "image_id": "58c97c14-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "78",
+    "case": "false_positive",
+    "capture_period": "night",
+    "training_support": 2514,
+    "figure": "/outputs/wildlife/cam_cases/trans_test_1.png",
+    "class": "opossum",
+    "proposal": 7499,
+    "score": 0.6769507527351379,
+    "heatmap_range": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "split": "trans_test",
+    "image_id": "59b61685-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "28",
+    "case": "missed_or_wrong_class",
+    "capture_period": "day",
+    "training_support": 214,
+    "figure": "/outputs/wildlife/cam_cases/trans_test_2.png",
+    "class": "skunk",
+    "proposal": 7175,
+    "score": 0.09573613852262497,
+    "heatmap_range": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "split": "trans_test",
+    "image_id": "5858bf75-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "78",
+    "case": "missed_or_wrong_class",
+    "capture_period": "night",
+    "training_support": 2514,
+    "figure": "/outputs/wildlife/cam_cases/trans_test_3.png",
+    "class": "opossum",
+    "proposal": 7275,
+    "score": 0.2722229063510895,
+    "heatmap_range": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "split": "trans_test",
+    "image_id": "587eead8-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "130",
+    "case": "detected_iou50",
+    "capture_period": "day",
+    "training_support": 214,
+    "figure": "/outputs/wildlife/cam_cases/trans_test_4.png",
+    "class": "skunk",
+    "proposal": 7496,
+    "score": 0.9113995432853699,
+    "heatmap_range": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "split": "trans_test",
+    "image_id": "5858bf70-23d2-11e8-a6a3-ec086b02610b",
+    "camera_id": "105",
+    "case": "detected_iou50",
+    "capture_period": "night",
+    "training_support": 2514,
+    "figure": "/outputs/wildlife/cam_cases/trans_test_5.png",
+    "class": "opossum",
+    "proposal": 7491,
+    "score": 0.7379517555236816,
+    "heatmap_range": [
+      0.0,
+      0.0
+    ]
+  }
+]

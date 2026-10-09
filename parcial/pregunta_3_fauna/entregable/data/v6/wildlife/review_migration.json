@@ -1,0 +1,7 @@
+{
+  "parent_manifest": "b8a8a0fccba36e5bdbc214fa9f9987d3b413282e6a2c662ccbe41a30f9f92d5a",
+  "current_manifest": "7a2698cefc83dd3f3959e3cb3264bd7504cf295465fbaf179dcb1e5308d4ce82",
+  "parent_csv_sha256": "6575055088727b483c1f36197d9b83a294194043087571bff64c19149b8fc447",
+  "unchanged_rows_carried": 90,
+  "changed_images_requiring_review": []
+}

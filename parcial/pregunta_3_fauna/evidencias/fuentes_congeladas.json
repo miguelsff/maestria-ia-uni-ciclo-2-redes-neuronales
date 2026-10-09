@@ -1,0 +1,312 @@
+{
+  "files": [
+    {
+      "path": "Dockerfile",
+      "expected": "3de6f8cc8979cc19c2d4455a65caacee5a7952234b0bc322cd56e5518aefd849",
+      "original": "3de6f8cc8979cc19c2d4455a65caacee5a7952234b0bc322cd56e5518aefd849",
+      "worktree": "b77a01f5c6c77e4bed29e1b312ebd93946b867ff43ab6b1132341e29ded2583a",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "compose.wildlife.v2.yaml",
+      "expected": "c828c532194e8d34094d95662b0bab657458066abdc1d208802b8dff7ec8ca86",
+      "original": "c828c532194e8d34094d95662b0bab657458066abdc1d208802b8dff7ec8ca86",
+      "worktree": "abac41eaaa823838c9b8d2c4ec2b5e2e6ee14950640741020f90739056f7b122",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "compose.wildlife.v3.yaml",
+      "expected": "fc057cfa6b882421b202e52578f7dbf96a01e7596907226021652ea4719e8c08",
+      "original": "fc057cfa6b882421b202e52578f7dbf96a01e7596907226021652ea4719e8c08",
+      "worktree": "36b989c4cd07edf0963a64908d578a589db70744226e0583b3e90ce816f65a00",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "compose.wildlife.v4.yaml",
+      "expected": "1176737eb90a28e8b5dc35d64f3d6114e6d6ad36c1b317d679ccf013245ce4c7",
+      "original": "1176737eb90a28e8b5dc35d64f3d6114e6d6ad36c1b317d679ccf013245ce4c7",
+      "worktree": "fb619869e50937f0f0d3b302b2d300c211cea1eafe85e6af81a2cf1a43217475",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "compose.wildlife.v5.yaml",
+      "expected": "5726380b16b9c70169c5d61f9c35a5db34899256b976aace1d0e18a0fbc3cf2a",
+      "original": "5726380b16b9c70169c5d61f9c35a5db34899256b976aace1d0e18a0fbc3cf2a",
+      "worktree": "25f4a7c4ecc422fc22a5ee0059009fe7776dc9ebda000f301add693583f3b0b3",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "compose.wildlife.v6.yaml",
+      "expected": "c3ad99cc5e4f5df0716b369f8b53a934d0f91753483cf25efc550685695017b9",
+      "original": "c3ad99cc5e4f5df0716b369f8b53a934d0f91753483cf25efc550685695017b9",
+      "worktree": "eedbd8dcdd8b861a5c7d1e680f1f24501bc3acc060e3330e58c6ccf6db413dc3",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "compose.wildlife.yaml",
+      "expected": "6e293548db007cd266729d6a2683992f7d0ea6c9f386616ae355ccff129054af",
+      "original": "6e293548db007cd266729d6a2683992f7d0ea6c9f386616ae355ccff129054af",
+      "worktree": "e709fbae588ebcee4a980f37162576ed9e0435c743077e927287f9a1435c191a",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "configs/wildlife.toml",
+      "expected": "3270d02e63636b258a4b83e2d83cb6d3f8111094b646696800808085617b41da",
+      "original": "3270d02e63636b258a4b83e2d83cb6d3f8111094b646696800808085617b41da",
+      "worktree": "5f131a4bb09887d390ba3d6c6471f22f391fa8231080408125fb069397cb15b4",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "configs/wildlife_label_corrections_v6.json",
+      "expected": "50580c22b5f004ff4ae20509f8c22310ee25e0746288540a1ef435de198f2898",
+      "original": "50580c22b5f004ff4ae20509f8c22310ee25e0746288540a1ef435de198f2898",
+      "worktree": "50580c22b5f004ff4ae20509f8c22310ee25e0746288540a1ef435de198f2898",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "configs/wildlife_v6.toml",
+      "expected": "542babbeeed3edcb8a5610040b9319f94f2b35d60b63eeecbaff2628a5df2f03",
+      "original": "542babbeeed3edcb8a5610040b9319f94f2b35d60b63eeecbaff2628a5df2f03",
+      "worktree": "542babbeeed3edcb8a5610040b9319f94f2b35d60b63eeecbaff2628a5df2f03",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "requirements.txt",
+      "expected": "e7c3f6a6b0189333a979c35e2516ae07afeb95ae8c5a23e97f06aad6a12953bd",
+      "original": "e7c3f6a6b0189333a979c35e2516ae07afeb95ae8c5a23e97f06aad6a12953bd",
+      "worktree": "dfe8993b244f3eae794dc6a5ca81f0ce0b48bb11751bb0359fc1d8cd392d0684",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "scripts/audit_wildlife_preflight.py",
+      "expected": "374c5c82e6b1b002dd8cc2f586cf1cf51aa0d0195b3636ff90c1951a29046b39",
+      "original": "374c5c82e6b1b002dd8cc2f586cf1cf51aa0d0195b3636ff90c1951a29046b39",
+      "worktree": "4797f6ea75e93ba3ecad8a9762a1565a57d5e3745a607d7fff7e3913900e32f0",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "scripts/bootstrap_wildlife_v3.py",
+      "expected": "ed09cfee059f5513373d9326674c859731475c8083894aed2befe630ff616d7d",
+      "original": "ed09cfee059f5513373d9326674c859731475c8083894aed2befe630ff616d7d",
+      "worktree": "884b24965e233f90377fd66d8b2fd58b532b75e54e636689bac47fe641d4fc8e",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "scripts/check_wildlife_gate.py",
+      "expected": "21d1ee1e4484ec251aee59e6f0d7dcfbac5fed8c523ac93982b76854863de057",
+      "original": "21d1ee1e4484ec251aee59e6f0d7dcfbac5fed8c523ac93982b76854863de057",
+      "worktree": "26a09e47d43c6b6de7a9230e90f4780dbc98c027307828a2b0014ee72391445c",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "scripts/freeze_wildlife_sources.py",
+      "expected": "6ab30a89453e29fb48f3e6e29125d5a498f1724b6520cfd1bdfd2e2c7ab47034",
+      "original": "6ab30a89453e29fb48f3e6e29125d5a498f1724b6520cfd1bdfd2e2c7ab47034",
+      "worktree": "88c5e169bdf8b7d7d7d02d7b98dc3d141807dc5bd095b34a229e701b9e65173a",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "scripts/migrate_wildlife_reviews.py",
+      "expected": "033749b91c1e06428115219c78db3adb0a78f00118377ba029a1f30d7a3c2b12",
+      "original": "033749b91c1e06428115219c78db3adb0a78f00118377ba029a1f30d7a3c2b12",
+      "worktree": "ff8941dbf8f579090b31f06530d611070ead2e0925cfa06e649422df66f1df5d",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "scripts/run_wildlife.ps1",
+      "expected": "daf9d954fc533fa310dea9cdd2f84cc62fa4213b69fd03e06f71a86b5847ca19",
+      "original": "daf9d954fc533fa310dea9cdd2f84cc62fa4213b69fd03e06f71a86b5847ca19",
+      "worktree": "9b07808be5d5547ac79adb35d840b07327043c91bdf714b307d491506856bb2c",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "scripts/verify_wildlife_loader.py",
+      "expected": "445177ecd66ae2d5c32d32cd37c0e0084d08de30673273cac00156ddeb8998b0",
+      "original": "445177ecd66ae2d5c32d32cd37c0e0084d08de30673273cac00156ddeb8998b0",
+      "worktree": "924ebbaf2ce0b577faa33da67900d76e36c7e42fad579fe85e6d6016880d17cf",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/__init__.py",
+      "expected": "b2265515bed8b56104f9aa568e0def199aa924ef9f0d003d6b049a882b707c14",
+      "original": "b2265515bed8b56104f9aa568e0def199aa924ef9f0d003d6b049a882b707c14",
+      "worktree": "453c60e1f163321b675c9192cb2d8687171e765fca48206a28782081c65301ee",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/__main__.py",
+      "expected": "2d5976d45aed964c4750f618b2e4e28ec750f3edbb014b317147379d262e50a2",
+      "original": "2d5976d45aed964c4750f618b2e4e28ec750f3edbb014b317147379d262e50a2",
+      "worktree": "71ff8ace6bafa22e535e5b650216441d15b0b950a914ccfc04f3e4fbd2bdaff7",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/cli.py",
+      "expected": "17a17e61e0eab10ccc6b0933262b83959a3dff22591430d2cc288dbd1b53ea5a",
+      "original": "17a17e61e0eab10ccc6b0933262b83959a3dff22591430d2cc288dbd1b53ea5a",
+      "worktree": "19177df717c04d589a57236441937ad6c4280a524e995991c5fa3b3f8784963d",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/common/__init__.py",
+      "expected": "6a70b652c116ddef347fb93a6278f52208fa715590157ae5d80559bb617db7a5",
+      "original": "6a70b652c116ddef347fb93a6278f52208fa715590157ae5d80559bb617db7a5",
+      "worktree": "af22b96d34cf37dfb2a89f539f0911e646f7c2543c4075abb13cc990db7ccc89",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/common/cam.py",
+      "expected": "65948efbdedb762cdd503710a40f0a2d0ba527f3ac0b7b072ed1f6a0f4c90f54",
+      "original": "65948efbdedb762cdd503710a40f0a2d0ba527f3ac0b7b072ed1f6a0f4c90f54",
+      "worktree": "e02451993c0b1fd3943b49d5dcb2b394394d3a2d022c23db6a96f60959d0519d",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/common/download.py",
+      "expected": "8d0fc80051c2be933f30dacf403c9e79fa250ba33e6b13b43d1f6ce4cb8f75c8",
+      "original": "8d0fc80051c2be933f30dacf403c9e79fa250ba33e6b13b43d1f6ce4cb8f75c8",
+      "worktree": "e50991e7fd0538cb42ea8b201b2e0d98e4704ee39f3b9930fafb10602a6c7c09",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/common/figures.py",
+      "expected": "9ef3dcf75b2a52eae44098101f514f7133ec8faf4e093c1b64eab6aaf6ceb8cc",
+      "original": "9ef3dcf75b2a52eae44098101f514f7133ec8faf4e093c1b64eab6aaf6ceb8cc",
+      "worktree": "3e3bf9ca15d417a63550219da3cf4a218e758d61eb281198bb9eb7e13a0c0251",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/common/io.py",
+      "expected": "7fc111f69df199c03e11c44b372ffe94c4c33e84264e76369be3ed141b95f42e",
+      "original": "7fc111f69df199c03e11c44b372ffe94c4c33e84264e76369be3ed141b95f42e",
+      "worktree": "67e504b10c42a2710ed784f65bb709eb933f3141d845e1073cac24a20777a15c",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/common/locking.py",
+      "expected": "f683df03371ca376724dee85cef0cd72849c152cdabfc538d1b0a1a2fdfbc8ab",
+      "original": "f683df03371ca376724dee85cef0cd72849c152cdabfc538d1b0a1a2fdfbc8ab",
+      "worktree": "35e1500d821352b3fe9c43a4d8407540019d090bf15bdf3541aa1dc1edc1701b",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/common/metrics.py",
+      "expected": "ce8b4a24b0ef6c301e5d1792e181f7f4a998318603572adb1c56535db3dee0ba",
+      "original": "ce8b4a24b0ef6c301e5d1792e181f7f4a998318603572adb1c56535db3dee0ba",
+      "worktree": "457df7329179b8fed0dc08f0a1e90034a2022a6ae8284d5acc3221852f96e519",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/common/training.py",
+      "expected": "2dd7fa458b2d61a7c0504a8b1402e7dc0e1a06d7cf684d459a1d1c7902986fed",
+      "original": "2dd7fa458b2d61a7c0504a8b1402e7dc0e1a06d7cf684d459a1d1c7902986fed",
+      "worktree": "c18d923d22585e7e730775c67e99375c9e6126bd4582276ddd3ca3e20f7cdb34",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/config.py",
+      "expected": "862027c8bb990e16cf9f84cb977d5f7f174342d325bed29af4749e6368b2cc5b",
+      "original": "862027c8bb990e16cf9f84cb977d5f7f174342d325bed29af4749e6368b2cc5b",
+      "worktree": "e6be6d5d320d5442f48cbeee306f92cf99d61289b14c8c73b17d8dfd9a4eb599",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/__init__.py",
+      "expected": "2ff50aec2314636a7df124720bbabcd0760ba379523fab6913e08d901fb93187",
+      "original": "2ff50aec2314636a7df124720bbabcd0760ba379523fab6913e08d901fb93187",
+      "worktree": "7aa7aa9744f4eeef9a3b0096b9cf1c475b5b87d0ebcfe6c71cf2571c758d491f",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/backgrounds.py",
+      "expected": "e25f11d0c65c252b51a01a813231bd292c2aeaa57c77a31aecbe55ef77875ba6",
+      "original": "e25f11d0c65c252b51a01a813231bd292c2aeaa57c77a31aecbe55ef77875ba6",
+      "worktree": "cffac261decc42dff2cee17b4513495bd366ebe1e8b72deef16408438ca59bbf",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/corrections.py",
+      "expected": "0e547797b08147101b024ae7daabd0bb05b7a8bce260eb0336a7a5faa8b7fe70",
+      "original": "0e547797b08147101b024ae7daabd0bb05b7a8bce260eb0336a7a5faa8b7fe70",
+      "worktree": "c237fd81ceb975a77b27cb4fd934b0e74b97b10ee46a372a7930509663aa8c10",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/data.py",
+      "expected": "5b1b6c50f39edc7638c1e37bce81d6d7c76d875bebc5438f8ff8cad59090ce6d",
+      "original": "5b1b6c50f39edc7638c1e37bce81d6d7c76d875bebc5438f8ff8cad59090ce6d",
+      "worktree": "6457f0dd4d5a46d016e23e5deda50577177740db27b1bd1fbfb346ffd2b5588a",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/figures.py",
+      "expected": "449b2487ca1a32d14655187b75e7adfb132ed41f4842d5b6354a52c8df50ac97",
+      "original": "449b2487ca1a32d14655187b75e7adfb132ed41f4842d5b6354a52c8df50ac97",
+      "worktree": "169a389d95e673a5d42aabc178c5232797f161a2a6eafe6794076b15dce5c1e2",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/jpeg.py",
+      "expected": "d51ea11e0b7c681d50d781aea408f91f80057631ffa075982f47b56a91f3177f",
+      "original": "d51ea11e0b7c681d50d781aea408f91f80057631ffa075982f47b56a91f3177f",
+      "worktree": "4bd707bb01ed10611e2a990f25dfb9deb5214d4f480769e030d75914bd6a8f2a",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/loader.py",
+      "expected": "100e6028f652170e68cff007123158cac8492e27375138c3b7c27281e282aab6",
+      "original": "100e6028f652170e68cff007123158cac8492e27375138c3b7c27281e282aab6",
+      "worktree": "eae45223b04a701870a201629a92c9a16ba9cb23631c5384b8a5a7256a0a1d69",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/metrics.py",
+      "expected": "65cbad4c48f5276db80f891e5fa12707fa76ea6fe2a833c222bd5ac6a7affeb9",
+      "original": "65cbad4c48f5276db80f891e5fa12707fa76ea6fe2a833c222bd5ac6a7affeb9",
+      "worktree": "303f4014ec806c36728ab01fd581c46c6acbca8fdb61ff489dd2e5c626cba1b3",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/monitoring.py",
+      "expected": "49266bc986e30587359cba50fa7d5be231dd1750f294e6a6e13092ed910aef84",
+      "original": "49266bc986e30587359cba50fa7d5be231dd1750f294e6a6e13092ed910aef84",
+      "worktree": "a350b2ea31e8d4b048fa168df0058d09d9843133ab9e08409ec1867dac1a17c4",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/pipeline.py",
+      "expected": "d6112651d8e83bbc7b161133d8a241837ffb25f01d0b91171d952dc5eb6aba2b",
+      "original": "d6112651d8e83bbc7b161133d8a241837ffb25f01d0b91171d952dc5eb6aba2b",
+      "worktree": "8895b9ece5e3b23109027d6a1fa739b445fe06cf831bc37c6933e28854e164fd",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/resume.py",
+      "expected": "6fae3523a7fdb8a47cf377f513f6c82118d05890ff1bfc8354675d6c791915f2",
+      "original": "6fae3523a7fdb8a47cf377f513f6c82118d05890ff1bfc8354675d6c791915f2",
+      "worktree": "cde63fea8b21b899ab5614d14e231f4b5587c124ed6d7630b2ff525a48999edb",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/review.py",
+      "expected": "2a98b34512291e48dbe325a1e42ffda944e1fe8a24154eef643a0b260eff2b7f",
+      "original": "2a98b34512291e48dbe325a1e42ffda944e1fe8a24154eef643a0b260eff2b7f",
+      "worktree": "5a34c67a07a6bcd07632c4fa37c1e6235683ea518bb0fd3cdee4b1cc4a708995",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/runtime.py",
+      "expected": "5c160c488bf61cc2a192801bbcb78f32eed6f7511818f8861a717f7d987ea3ef",
+      "original": "5c160c488bf61cc2a192801bbcb78f32eed6f7511818f8861a717f7d987ea3ef",
+      "worktree": "a38b363676f581ea3e895776cfc1919e7b24672d4b62f0d8e538c4a17c0daf48",
+      "same_after_newline_normalization": true
+    },
+    {
+      "path": "src/neural_exam/wildlife/uncertainty.py",
+      "expected": "727ce8063cf3c07e3a199086cfaa9989ad642a4f2df0a80614ace42de8e60ce8",
+      "original": "727ce8063cf3c07e3a199086cfaa9989ad642a4f2df0a80614ace42de8e60ce8",
+      "worktree": "caaefde0a81d81c0a5eb96db07d6fda1dcac74f1a79ecda0a860931132d3b7ba",
+      "same_after_newline_normalization": true
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{booktabs,float,url,hyperref}
+\title{\large Anexo independiente: oclusión en 582 casos aceptados de fauna V6}
+\author{Equipo de la Pregunta 3 -- Universidad Nacional de Ingeniería}
+\date{8 de octubre de 2026}
+\begin{document}
+\maketitle
+
+\section{Cohorte y decisiones preservadas}
+La muestra original contiene 600 objetos de los 17\,620 elegibles de trans\_test.
+La revisión aceptada conserva 582: 340 con oclusión baja, 69 media, 48 alta y
+125 ambiguos. Se excluyeron los 18 sin nivel por decisión expresa del responsable.
+El caso 121 (anotación 23098) mantiene el nivel medium según Miguel y la nota vacía.
+Las notas se aceptaron como opcionales: 398 permanecen ausentes. No se inventan
+justificaciones ni niveles; los retornos humanos y la discrepancia original se preservan.
+Los casos excluidos son 253, 302, 385--393, 409--414 y 439.
+
+Baja corresponde a más de 75\,\% del cuerpo visible; media, 25--75\,\%; alta,
+menos de 25\,\%. La visibilidad incierta o el truncamiento se conserva como ambiguous.
+Cada nivel evaluado supera el mínimo protocolario de 30 objetos. Los ambiguos
+no constituyen un cuarto grupo de AP.
+
+\section{Resultados y método}
+\input{occlusion_tables}
+Se reutilizan el checkpoint y las predicciones congeladas V6, sin entrenamiento
+ni inferencia nuevos. Se mantienen los 18\,647 fotogramas de trans\_test, incluidos
+1\,778 vacíos. Las cajas no revisadas, excluidas, ambiguas o de otro nivel son
+regiones crowd ignoradas según las reglas COCO congeladas. Las coincidencias de
+la misma clase pueden ignorarse; las detecciones no absorbidas conservan la
+posibilidad de ser falsos positivos, también en los fotogramas vacíos.
+No se calculó AP únicamente sobre las fotografías revisadas.
+
+La AP no aplica pesos de muestreo. Los intervalos percentiles del 95\,\% usan
+200 remuestreos de las 7\,438 secuencias por nivel, semilla 42 y checkpoint fijo.
+Las 200 réplicas de ambas métricas quedaron definidas en cada nivel.
+Los intervalos son condicionales a las secuencias y cámaras observadas; no
+incluyen desacuerdo de anotación, notas faltantes, semillas de entrenamiento
+ni rendimiento en cámaras futuras.
+
+\medskip
+\section{Interpretación y alcance descriptivo}
+La mAP50:95 baja 6.04 puntos porcentuales de baja a media y 6.31 de baja a alta.
+Media y alta difieren 0.28 puntos, con intervalos ampliamente superpuestos; no se
+calculó un intervalo de la diferencia. Los grupos tienen 13, 10 y 11 categorías
+con soporte: no se aisló el efecto causal de oclusión. La disminución de positivos
+evaluables junto con la conservación de fotogramas y falsos positivos cambia
+la tarea de evaluación. Esta mAP no es directamente comparable con la mAP global V6.
+
+Las proporciones entre aceptados son 58.42\,\% baja, 11.86\,\% media,
+8.25\,\% alta y 21.48\,\% ambigua. Las razones de pesos originales conservados
+son 59.75\,\%, 13.02\,\%, 7.55\,\% y 19.68\,\%, respectivamente.
+Los excluidos representan 2.38\,\% del peso de diseño original, pero son falta
+de respuesta humana, no una nueva muestra aleatoria. No se reutilizan los
+intervalos poblacionales de proporciones ni la garantía de planificación
+de 600 casos; no se afirma representatividad poblacional posterior a las exclusiones.
+
+\newpage
+\section{Detalle por especie y trazabilidad}
+Las tablas siguientes conservan AP y soporte de los resultados aceptados.
+ND significa ausencia de referencia evaluable, no ausencia biológica ni AP cero.
+El CSV numérico y ambos notebooks acompañan el informe. Los valores sin redondeo
+y los IC están en \texttt{data/results.json}.
+\input{occlusion_species_tables}
+
+La firma del análisis aceptado es
+\begin{quote}\small\nolinkurl{6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9}\end{quote}
+El SHA-256 del JSON de resultados es
+\begin{quote}\small\nolinkurl{b5ede4e0f8d46aef5b579f64c3b7f7c476b4aeb93eafaeffaafcdd4e0da124f9}\end{quote}
+\texttt{integridad\_datos.json} permite verificar las copias byte a byte. Los
+originales V6 permanecen intactos. Este anexo no altera sus resultados globales,
+por tamaño, Grad-CAM ni monitoreo. No se atribuyen aprobación del docente ni
+envío a la plataforma del curso.
+\end{document}

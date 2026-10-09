@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "auxiliary": "yolo26n.pt",
+  "detector": "yolov8s.pt",
+  "finite": true,
+  "fp32_amp_close": true,
+  "messages": [
+    "\u001b[34m\u001b[1mAMP: \u001b[0mrunning Automatic Mixed Precision (AMP) checks...",
+    "\u001b[34m\u001b[1mAMP: \u001b[0mchecks passed ✅"
+  ]
+}

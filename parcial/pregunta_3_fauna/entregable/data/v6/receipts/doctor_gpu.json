@@ -1,0 +1,63 @@
+{
+  "dependencies": {
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0+cu128",
+    "ultralytics": "8.4.21",
+    "pydicom": "3.0.1",
+    "rasterio": "1.4.3",
+    "scikit-learn": "1.9.1"
+  },
+  "locations": {
+    "metadata_root": "/workspace/data",
+    "mri_root": "/datasets",
+    "flood_root": "/datasets/Sen1Floods11",
+    "wildlife_root": "/datasets/cct-annotations",
+    "output_root": "/outputs"
+  },
+  "data_directories_exist": {
+    "metadata_root": true,
+    "mri_root": true,
+    "flood_root": false,
+    "wildlife_root": true
+  },
+  "gpu_check": {
+    "name": "NVIDIA GeForce RTX 5090",
+    "capability": [
+      12,
+      0
+    ],
+    "compiled_architectures": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "gradient_finite": true,
+    "nms_kept": [
+      0
+    ]
+  },
+  "wildlife_roots": {
+    "images": "/datasets/cct-images",
+    "annotations": "/datasets/cct-annotations"
+  },
+  "pretrained_weights_available": {
+    "resnet50-11ad3fa6.pth": false,
+    "yolov8s.pt": true,
+    "yolo26n.pt": true
+  },
+  "amp_check": {
+    "status": "passed",
+    "auxiliary": "yolo26n.pt",
+    "detector": "yolov8s.pt",
+    "finite": true,
+    "fp32_amp_close": true,
+    "messages": [
+      "\u001b[34m\u001b[1mAMP: \u001b[0mrunning Automatic Mixed Precision (AMP) checks...",
+      "\u001b[34m\u001b[1mAMP: \u001b[0mchecks passed ✅"
+    ]
+  }
+}

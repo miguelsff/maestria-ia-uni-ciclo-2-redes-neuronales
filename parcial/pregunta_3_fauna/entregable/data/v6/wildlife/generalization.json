@@ -1,0 +1,33 @@
+{
+  "cis_map50": 0.6877518839162803,
+  "trans_map50": 0.4230570686004039,
+  "cis_map50_95": 0.435752672103409,
+  "trans_map50_95": 0.2624855373660651,
+  "gap": 0.1732671347373439,
+  "gap_map50": 0.2646948153158764,
+  "common_categories": [
+    "opossum",
+    "raccoon",
+    "squirrel",
+    "bobcat",
+    "skunk",
+    "dog",
+    "coyote",
+    "rabbit",
+    "bird",
+    "cat",
+    "badger",
+    "fox",
+    "rodent"
+  ],
+  "common_category_scores": {
+    "cis_test": {
+      "map50": 0.7010696463970321,
+      "map50_95": 0.4432496262101425
+    },
+    "trans_test": {
+      "map50": 0.42305706860040393,
+      "map50_95": 0.2624855373660651
+    }
+  }
+}

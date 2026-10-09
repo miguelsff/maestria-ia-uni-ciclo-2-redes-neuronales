@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "data_files_verified": 33,
+  "counts": {
+    "low": 340,
+    "ambiguous": 125,
+    "medium": 69,
+    "high": 48
+  },
+  "excluded": 18,
+  "missing_notes": 398,
+  "completed_levels": 3,
+  "replicates_per_level": 200,
+  "notebooks": {
+    "03_wildlife.ipynb": {
+      "executed_cells": 16,
+      "errors": 0
+    },
+    "04_occlusion_582.ipynb": {
+      "executed_cells": 4,
+      "errors": 0
+    }
+  },
+  "provisional_pdf_pages": {
+    "informe_fauna_provisional.pdf": 10,
+    "anexo_occlusion_provisional.pdf": 2
+  },
+  "original_files_verified": 91,
+  "scope": "Consistencia e integridad de resultados guardados; no recalcula AP ni bootstrap."
+}

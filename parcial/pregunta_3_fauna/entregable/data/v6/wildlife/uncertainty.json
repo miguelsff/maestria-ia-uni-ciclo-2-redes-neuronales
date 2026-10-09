@@ -1,0 +1,166 @@
+{
+  "signature": "7c62c83a18330b4adc47585bbb56b7ff5f76939ce9420debe0f79fcd865fd4d4",
+  "global": {
+    "cis_test": {
+      "method": "percentile sequence-cluster bootstrap; fixed checkpoint; not between-seed uncertainty",
+      "replicates": 200,
+      "seed": 42,
+      "clusters": 5378,
+      "confidence_level": 0.95,
+      "intervals": {
+        "map50": {
+          "lower": 0.6778651232729754,
+          "upper": 0.751108574184408,
+          "defined_replicates": 200
+        },
+        "map50_95": {
+          "lower": 0.4287868308123333,
+          "upper": 0.47854256699002323,
+          "defined_replicates": 200
+        }
+      }
+    },
+    "trans_test": {
+      "method": "percentile sequence-cluster bootstrap; fixed checkpoint; not between-seed uncertainty",
+      "replicates": 200,
+      "seed": 42,
+      "clusters": 7438,
+      "confidence_level": 0.95,
+      "intervals": {
+        "map50": {
+          "lower": 0.4113553424073453,
+          "upper": 0.4811198618631211,
+          "defined_replicates": 200
+        },
+        "map50_95": {
+          "lower": 0.2537857738933228,
+          "upper": 0.3022630787556298,
+          "defined_replicates": 200
+        }
+      }
+    }
+  },
+  "size": {
+    "cis_test": {
+      "small_lt_1pct": {
+        "method": "percentile sequence-cluster bootstrap; fixed checkpoint; not between-seed uncertainty",
+        "replicates": 200,
+        "seed": 42,
+        "clusters": 5378,
+        "confidence_level": 0.95,
+        "intervals": {
+          "map50": {
+            "lower": 0.5073766603438399,
+            "upper": 0.6665413575658733,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.24524446138743514,
+            "upper": 0.337734231202439,
+            "defined_replicates": 200
+          }
+        }
+      },
+      "medium_1_to_5pct": {
+        "method": "percentile sequence-cluster bootstrap; fixed checkpoint; not between-seed uncertainty",
+        "replicates": 200,
+        "seed": 42,
+        "clusters": 5378,
+        "confidence_level": 0.95,
+        "intervals": {
+          "map50": {
+            "lower": 0.7274957910693662,
+            "upper": 0.8283361302807265,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.4516030806399864,
+            "upper": 0.5232167036770122,
+            "defined_replicates": 200
+          }
+        }
+      },
+      "large_gt_5pct": {
+        "method": "percentile sequence-cluster bootstrap; fixed checkpoint; not between-seed uncertainty",
+        "replicates": 200,
+        "seed": 42,
+        "clusters": 5378,
+        "confidence_level": 0.95,
+        "intervals": {
+          "map50": {
+            "lower": 0.735007210405528,
+            "upper": 0.7887578767621457,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.5311679671705593,
+            "upper": 0.5720437344738567,
+            "defined_replicates": 200
+          }
+        }
+      }
+    },
+    "trans_test": {
+      "small_lt_1pct": {
+        "method": "percentile sequence-cluster bootstrap; fixed checkpoint; not between-seed uncertainty",
+        "replicates": 200,
+        "seed": 42,
+        "clusters": 7438,
+        "confidence_level": 0.95,
+        "intervals": {
+          "map50": {
+            "lower": 0.2904035775610812,
+            "upper": 0.3719593567928111,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.14295846278377516,
+            "upper": 0.19419049822447532,
+            "defined_replicates": 200
+          }
+        }
+      },
+      "medium_1_to_5pct": {
+        "method": "percentile sequence-cluster bootstrap; fixed checkpoint; not between-seed uncertainty",
+        "replicates": 200,
+        "seed": 42,
+        "clusters": 7438,
+        "confidence_level": 0.95,
+        "intervals": {
+          "map50": {
+            "lower": 0.5097291891604745,
+            "upper": 0.5546104230572882,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.30846260442302137,
+            "upper": 0.3439562488801834,
+            "defined_replicates": 200
+          }
+        }
+      },
+      "large_gt_5pct": {
+        "method": "percentile sequence-cluster bootstrap; fixed checkpoint; not between-seed uncertainty",
+        "replicates": 200,
+        "seed": 42,
+        "clusters": 7438,
+        "confidence_level": 0.95,
+        "intervals": {
+          "map50": {
+            "lower": 0.36916915739837064,
+            "upper": 0.4872451712585234,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.25718200294166993,
+            "upper": 0.359741145132837,
+            "defined_replicates": 200
+          }
+        }
+      }
+    }
+  },
+  "occlusion": {},
+  "limitations": "Conditional on sampled cameras and one training seed; sequence resampling does not measure new-region uncertainty.",
+  "occlusion_status": "manual_review_pending"
+}

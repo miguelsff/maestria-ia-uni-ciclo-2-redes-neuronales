@@ -1,0 +1,10 @@
+{
+  "notebook": "entregable/03_wildlife.ipynb",
+  "sha256": "6ad07b91935cd3fa7ebe21629bd56e1ea5f717772ad4295997838c988f40ea26",
+  "executed_code_cells": 16,
+  "errors": 0,
+  "python": "3.12.3",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "execution": "Kernel limpio; contenedor sin red ni GPU; solo consulta de resultados guardados.",
+  "training_or_inference": false
+}

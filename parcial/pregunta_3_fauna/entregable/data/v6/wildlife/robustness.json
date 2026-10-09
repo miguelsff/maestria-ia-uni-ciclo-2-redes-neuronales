@@ -1,0 +1,1131 @@
+{
+  "size": {
+    "small_lt_1pct": {
+      "map50": 0.3215961487136827,
+      "map50_95": 0.161861539837518,
+      "eligible_objects": 1922,
+      "max_detections": 300,
+      "per_species": [
+        {
+          "species": "opossum",
+          "support": 413,
+          "map50": 0.8324403334756981,
+          "map50_95": 0.36917724221397497
+        },
+        {
+          "species": "raccoon",
+          "support": 122,
+          "map50": 0.5510653545070228,
+          "map50_95": 0.2326791390821661
+        },
+        {
+          "species": "squirrel",
+          "support": 189,
+          "map50": 0.28677125033080253,
+          "map50_95": 0.13091772928569795
+        },
+        {
+          "species": "bobcat",
+          "support": 102,
+          "map50": 0.14371178742043678,
+          "map50_95": 0.0814306077903902
+        },
+        {
+          "species": "skunk",
+          "support": 21,
+          "map50": 0.5841502672534459,
+          "map50_95": 0.36504742474893903
+        },
+        {
+          "species": "dog",
+          "support": 43,
+          "map50": 0.23791527178992167,
+          "map50_95": 0.13049970333876204
+        },
+        {
+          "species": "coyote",
+          "support": 25,
+          "map50": 0.3825702872758134,
+          "map50_95": 0.18818045301135256
+        },
+        {
+          "species": "rabbit",
+          "support": 551,
+          "map50": 0.7407631734548822,
+          "map50_95": 0.3882990040269443
+        },
+        {
+          "species": "bird",
+          "support": 111,
+          "map50": 0.05393337899428004,
+          "map50_95": 0.029839566819289214
+        },
+        {
+          "species": "cat",
+          "support": 326,
+          "map50": 0.04126299232388424,
+          "map50_95": 0.02282880231369603
+        },
+        {
+          "species": "badger",
+          "support": 5,
+          "map50": 0.0,
+          "map50_95": 0.0
+        },
+        {
+          "species": "deer",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "fox",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "rodent",
+          "support": 14,
+          "map50": 0.00456968773800457,
+          "map50_95": 0.003438805419003439
+        }
+      ]
+    },
+    "medium_1_to_5pct": {
+      "map50": 0.5272453969980325,
+      "map50_95": 0.32204403731122533,
+      "eligible_objects": 12169,
+      "max_detections": 300,
+      "per_species": [
+        {
+          "species": "opossum",
+          "support": 4069,
+          "map50": 0.9136414765116205,
+          "map50_95": 0.4794633911282445
+        },
+        {
+          "species": "raccoon",
+          "support": 3246,
+          "map50": 0.9068141415462766,
+          "map50_95": 0.5831748767271727
+        },
+        {
+          "species": "squirrel",
+          "support": 394,
+          "map50": 0.4803753007405062,
+          "map50_95": 0.27503184898573924
+        },
+        {
+          "species": "bobcat",
+          "support": 1598,
+          "map50": 0.6846205772604127,
+          "map50_95": 0.448762040351805
+        },
+        {
+          "species": "skunk",
+          "support": 224,
+          "map50": 0.8319189601204328,
+          "map50_95": 0.5367615216077672
+        },
+        {
+          "species": "dog",
+          "support": 442,
+          "map50": 0.6079295985334685,
+          "map50_95": 0.3684987209752964
+        },
+        {
+          "species": "coyote",
+          "support": 1063,
+          "map50": 0.7914726610007591,
+          "map50_95": 0.555137378882534
+        },
+        {
+          "species": "rabbit",
+          "support": 170,
+          "map50": 0.5243047398048439,
+          "map50_95": 0.2297427030258287
+        },
+        {
+          "species": "bird",
+          "support": 44,
+          "map50": 0.08508481395855651,
+          "map50_95": 0.04824630148630997
+        },
+        {
+          "species": "cat",
+          "support": 897,
+          "map50": 0.3839766962726317,
+          "map50_95": 0.2474039634056554
+        },
+        {
+          "species": "badger",
+          "support": 10,
+          "map50": 0.11680579822688149,
+          "map50_95": 0.09230570115835111
+        },
+        {
+          "species": "deer",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "fox",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "rodent",
+          "support": 12,
+          "map50": 0.0,
+          "map50_95": 0.0
+        }
+      ]
+    },
+    "large_gt_5pct": {
+      "map50": 0.4024230762300426,
+      "map50_95": 0.28695639697595887,
+      "eligible_objects": 3529,
+      "max_detections": 300,
+      "per_species": [
+        {
+          "species": "opossum",
+          "support": 177,
+          "map50": 0.40992205136241605,
+          "map50_95": 0.22312285585408204
+        },
+        {
+          "species": "raccoon",
+          "support": 1401,
+          "map50": 0.43473409741529784,
+          "map50_95": 0.3172698931409459
+        },
+        {
+          "species": "squirrel",
+          "support": 194,
+          "map50": 0.41891243654874566,
+          "map50_95": 0.2378066735454238
+        },
+        {
+          "species": "bobcat",
+          "support": 274,
+          "map50": 0.5984805104186518,
+          "map50_95": 0.44004377953718854
+        },
+        {
+          "species": "skunk",
+          "support": 28,
+          "map50": 0.17394106432891618,
+          "map50_95": 0.1284139456520392
+        },
+        {
+          "species": "dog",
+          "support": 473,
+          "map50": 0.8770612962957596,
+          "map50_95": 0.6384363019436236
+        },
+        {
+          "species": "coyote",
+          "support": 813,
+          "map50": 0.6016415130532539,
+          "map50_95": 0.43985557143205894
+        },
+        {
+          "species": "rabbit",
+          "support": 1,
+          "map50": 0.5,
+          "map50_95": 0.45
+        },
+        {
+          "species": "bird",
+          "support": 24,
+          "map50": 0.19600291924161475,
+          "map50_95": 0.11749435427853774
+        },
+        {
+          "species": "cat",
+          "support": 143,
+          "map50": 0.2159579498658132,
+          "map50_95": 0.16407699135164805
+        },
+        {
+          "species": "badger",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "deer",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "fox",
+          "support": 1,
+          "map50": 0.0,
+          "map50_95": 0.0
+        },
+        {
+          "species": "rodent",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        }
+      ]
+    }
+  },
+  "occlusion": {
+    "low": {
+      "reviewed_objects": 0,
+      "meets_minimum": false,
+      "map50": null,
+      "map50_95": null,
+      "eligible_objects": 0,
+      "max_detections": 300,
+      "per_species": [
+        {
+          "species": "opossum",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "raccoon",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "squirrel",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "bobcat",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "skunk",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "dog",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "coyote",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "rabbit",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "bird",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "cat",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "badger",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "deer",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "fox",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "rodent",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        }
+      ]
+    },
+    "medium": {
+      "reviewed_objects": 0,
+      "meets_minimum": false,
+      "map50": null,
+      "map50_95": null,
+      "eligible_objects": 0,
+      "max_detections": 300,
+      "per_species": [
+        {
+          "species": "opossum",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "raccoon",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "squirrel",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "bobcat",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "skunk",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "dog",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "coyote",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "rabbit",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "bird",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "cat",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "badger",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "deer",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "fox",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "rodent",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        }
+      ]
+    },
+    "high": {
+      "reviewed_objects": 0,
+      "meets_minimum": false,
+      "map50": null,
+      "map50_95": null,
+      "eligible_objects": 0,
+      "max_detections": 300,
+      "per_species": [
+        {
+          "species": "opossum",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "raccoon",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "squirrel",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "bobcat",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "skunk",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "dog",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "coyote",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "rabbit",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "bird",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "cat",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "badger",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "deer",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "fox",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        },
+        {
+          "species": "rodent",
+          "support": 0,
+          "map50": null,
+          "map50_95": null
+        }
+      ]
+    }
+  },
+  "occlusion_status": "manual_review_pending",
+  "occlusion_coverage": {
+    "total_objects": 17620,
+    "reviewed_objects": 0,
+    "ambiguous_objects": 0,
+    "unreviewed_objects": 17620,
+    "require_full": true
+  },
+  "occlusion_method": "visual review of trans_test; other levels, ambiguous and unreviewed objects are ignored crowd regions; full object cohort",
+  "size_by_split": {
+    "cis_test": {
+      "small_lt_1pct": {
+        "map50": 0.5630957059639756,
+        "map50_95": 0.27916961817035757,
+        "eligible_objects": 1149,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 151,
+            "map50": 0.6854090713663021,
+            "map50_95": 0.3206955025802088
+          },
+          {
+            "species": "raccoon",
+            "support": 6,
+            "map50": 0.33274398868458266,
+            "map50_95": 0.16589138246741833
+          },
+          {
+            "species": "squirrel",
+            "support": 145,
+            "map50": 0.6750982037513231,
+            "map50_95": 0.34663096472300126
+          },
+          {
+            "species": "bobcat",
+            "support": 54,
+            "map50": 0.6925612093955641,
+            "map50_95": 0.3496313666839796
+          },
+          {
+            "species": "skunk",
+            "support": 4,
+            "map50": 0.8624862486248623,
+            "map50_95": 0.420503300330033
+          },
+          {
+            "species": "dog",
+            "support": 18,
+            "map50": 0.5242649264926493,
+            "map50_95": 0.31394949679247436
+          },
+          {
+            "species": "coyote",
+            "support": 13,
+            "map50": 0.2584885654988732,
+            "map50_95": 0.1626088416971725
+          },
+          {
+            "species": "rabbit",
+            "support": 334,
+            "map50": 0.8148979818530216,
+            "map50_95": 0.4430878856690407
+          },
+          {
+            "species": "bird",
+            "support": 305,
+            "map50": 0.5318802363977925,
+            "map50_95": 0.22117383066879467
+          },
+          {
+            "species": "cat",
+            "support": 23,
+            "map50": 0.36577022419007166,
+            "map50_95": 0.12869942836088757
+          },
+          {
+            "species": "badger",
+            "support": 4,
+            "map50": 0.2574257425742574,
+            "map50_95": 0.1287128712871287
+          },
+          {
+            "species": "deer",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "fox",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "rodent",
+            "support": 92,
+            "map50": 0.7561220727384074,
+            "map50_95": 0.3484505467841513
+          }
+        ]
+      },
+      "medium_1_to_5pct": {
+        "map50": 0.7516262633270588,
+        "map50_95": 0.46833776101094143,
+        "eligible_objects": 8925,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 3694,
+            "map50": 0.8939776052054131,
+            "map50_95": 0.5015430748080273
+          },
+          {
+            "species": "raccoon",
+            "support": 715,
+            "map50": 0.8672564704767026,
+            "map50_95": 0.5607247043956545
+          },
+          {
+            "species": "squirrel",
+            "support": 339,
+            "map50": 0.7768521185443605,
+            "map50_95": 0.41770321912834407
+          },
+          {
+            "species": "bobcat",
+            "support": 501,
+            "map50": 0.8496571629121578,
+            "map50_95": 0.5613896605977904
+          },
+          {
+            "species": "skunk",
+            "support": 108,
+            "map50": 0.9169160388567402,
+            "map50_95": 0.5695908383740674
+          },
+          {
+            "species": "dog",
+            "support": 318,
+            "map50": 0.4905787819516961,
+            "map50_95": 0.3094391987154009
+          },
+          {
+            "species": "coyote",
+            "support": 526,
+            "map50": 0.86935180757837,
+            "map50_95": 0.6147684613401144
+          },
+          {
+            "species": "rabbit",
+            "support": 1054,
+            "map50": 0.9135277533773396,
+            "map50_95": 0.5582800172585328
+          },
+          {
+            "species": "bird",
+            "support": 401,
+            "map50": 0.7607061271048324,
+            "map50_95": 0.4252331110114427
+          },
+          {
+            "species": "cat",
+            "support": 1203,
+            "map50": 0.8851573851436632,
+            "map50_95": 0.5855633230724235
+          },
+          {
+            "species": "badger",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "deer",
+            "support": 10,
+            "map50": 0.6212871287128713,
+            "map50_95": 0.4287213663451287
+          },
+          {
+            "species": "fox",
+            "support": 2,
+            "map50": 0.0,
+            "map50_95": 0.0
+          },
+          {
+            "species": "rodent",
+            "support": 54,
+            "map50": 0.9258730433876178,
+            "map50_95": 0.555433918095313
+          }
+        ]
+      },
+      "large_gt_5pct": {
+        "map50": 0.7583292621906439,
+        "map50_95": 0.5480013140174573,
+        "eligible_objects": 2387,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 163,
+            "map50": 0.8292733810186004,
+            "map50_95": 0.49073899000244364
+          },
+          {
+            "species": "raccoon",
+            "support": 259,
+            "map50": 0.9658981130233286,
+            "map50_95": 0.6750881739712111
+          },
+          {
+            "species": "squirrel",
+            "support": 26,
+            "map50": 0.09405940594059406,
+            "map50_95": 0.023903818953323903
+          },
+          {
+            "species": "bobcat",
+            "support": 217,
+            "map50": 0.9040831491325789,
+            "map50_95": 0.739708983496725
+          },
+          {
+            "species": "skunk",
+            "support": 49,
+            "map50": 0.9959675967596758,
+            "map50_95": 0.7369404886190956
+          },
+          {
+            "species": "dog",
+            "support": 387,
+            "map50": 0.8627118919891213,
+            "map50_95": 0.6381584967984326
+          },
+          {
+            "species": "coyote",
+            "support": 641,
+            "map50": 0.9245417485262643,
+            "map50_95": 0.7440901718991548
+          },
+          {
+            "species": "rabbit",
+            "support": 168,
+            "map50": 0.8608423044209329,
+            "map50_95": 0.6804392602479101
+          },
+          {
+            "species": "bird",
+            "support": 46,
+            "map50": 0.5093147605335737,
+            "map50_95": 0.33129229886729766
+          },
+          {
+            "species": "cat",
+            "support": 302,
+            "map50": 0.880613098123266,
+            "map50_95": 0.632661558340494
+          },
+          {
+            "species": "badger",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "deer",
+            "support": 129,
+            "map50": 0.5143164346291464,
+            "map50_95": 0.33499221299594123
+          },
+          {
+            "species": "fox",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "rodent",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          }
+        ]
+      }
+    },
+    "trans_test": {
+      "small_lt_1pct": {
+        "map50": 0.3215961487136827,
+        "map50_95": 0.161861539837518,
+        "eligible_objects": 1922,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 413,
+            "map50": 0.8324403334756981,
+            "map50_95": 0.36917724221397497
+          },
+          {
+            "species": "raccoon",
+            "support": 122,
+            "map50": 0.5510653545070228,
+            "map50_95": 0.2326791390821661
+          },
+          {
+            "species": "squirrel",
+            "support": 189,
+            "map50": 0.28677125033080253,
+            "map50_95": 0.13091772928569795
+          },
+          {
+            "species": "bobcat",
+            "support": 102,
+            "map50": 0.14371178742043678,
+            "map50_95": 0.0814306077903902
+          },
+          {
+            "species": "skunk",
+            "support": 21,
+            "map50": 0.5841502672534459,
+            "map50_95": 0.36504742474893903
+          },
+          {
+            "species": "dog",
+            "support": 43,
+            "map50": 0.23791527178992167,
+            "map50_95": 0.13049970333876204
+          },
+          {
+            "species": "coyote",
+            "support": 25,
+            "map50": 0.3825702872758134,
+            "map50_95": 0.18818045301135256
+          },
+          {
+            "species": "rabbit",
+            "support": 551,
+            "map50": 0.7407631734548822,
+            "map50_95": 0.3882990040269443
+          },
+          {
+            "species": "bird",
+            "support": 111,
+            "map50": 0.05393337899428004,
+            "map50_95": 0.029839566819289214
+          },
+          {
+            "species": "cat",
+            "support": 326,
+            "map50": 0.04126299232388424,
+            "map50_95": 0.02282880231369603
+          },
+          {
+            "species": "badger",
+            "support": 5,
+            "map50": 0.0,
+            "map50_95": 0.0
+          },
+          {
+            "species": "deer",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "fox",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "rodent",
+            "support": 14,
+            "map50": 0.00456968773800457,
+            "map50_95": 0.003438805419003439
+          }
+        ]
+      },
+      "medium_1_to_5pct": {
+        "map50": 0.5272453969980325,
+        "map50_95": 0.32204403731122533,
+        "eligible_objects": 12169,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 4069,
+            "map50": 0.9136414765116205,
+            "map50_95": 0.4794633911282445
+          },
+          {
+            "species": "raccoon",
+            "support": 3246,
+            "map50": 0.9068141415462766,
+            "map50_95": 0.5831748767271727
+          },
+          {
+            "species": "squirrel",
+            "support": 394,
+            "map50": 0.4803753007405062,
+            "map50_95": 0.27503184898573924
+          },
+          {
+            "species": "bobcat",
+            "support": 1598,
+            "map50": 0.6846205772604127,
+            "map50_95": 0.448762040351805
+          },
+          {
+            "species": "skunk",
+            "support": 224,
+            "map50": 0.8319189601204328,
+            "map50_95": 0.5367615216077672
+          },
+          {
+            "species": "dog",
+            "support": 442,
+            "map50": 0.6079295985334685,
+            "map50_95": 0.3684987209752964
+          },
+          {
+            "species": "coyote",
+            "support": 1063,
+            "map50": 0.7914726610007591,
+            "map50_95": 0.555137378882534
+          },
+          {
+            "species": "rabbit",
+            "support": 170,
+            "map50": 0.5243047398048439,
+            "map50_95": 0.2297427030258287
+          },
+          {
+            "species": "bird",
+            "support": 44,
+            "map50": 0.08508481395855651,
+            "map50_95": 0.04824630148630997
+          },
+          {
+            "species": "cat",
+            "support": 897,
+            "map50": 0.3839766962726317,
+            "map50_95": 0.2474039634056554
+          },
+          {
+            "species": "badger",
+            "support": 10,
+            "map50": 0.11680579822688149,
+            "map50_95": 0.09230570115835111
+          },
+          {
+            "species": "deer",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "fox",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "rodent",
+            "support": 12,
+            "map50": 0.0,
+            "map50_95": 0.0
+          }
+        ]
+      },
+      "large_gt_5pct": {
+        "map50": 0.4024230762300426,
+        "map50_95": 0.28695639697595887,
+        "eligible_objects": 3529,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 177,
+            "map50": 0.40992205136241605,
+            "map50_95": 0.22312285585408204
+          },
+          {
+            "species": "raccoon",
+            "support": 1401,
+            "map50": 0.43473409741529784,
+            "map50_95": 0.3172698931409459
+          },
+          {
+            "species": "squirrel",
+            "support": 194,
+            "map50": 0.41891243654874566,
+            "map50_95": 0.2378066735454238
+          },
+          {
+            "species": "bobcat",
+            "support": 274,
+            "map50": 0.5984805104186518,
+            "map50_95": 0.44004377953718854
+          },
+          {
+            "species": "skunk",
+            "support": 28,
+            "map50": 0.17394106432891618,
+            "map50_95": 0.1284139456520392
+          },
+          {
+            "species": "dog",
+            "support": 473,
+            "map50": 0.8770612962957596,
+            "map50_95": 0.6384363019436236
+          },
+          {
+            "species": "coyote",
+            "support": 813,
+            "map50": 0.6016415130532539,
+            "map50_95": 0.43985557143205894
+          },
+          {
+            "species": "rabbit",
+            "support": 1,
+            "map50": 0.5,
+            "map50_95": 0.45
+          },
+          {
+            "species": "bird",
+            "support": 24,
+            "map50": 0.19600291924161475,
+            "map50_95": 0.11749435427853774
+          },
+          {
+            "species": "cat",
+            "support": 143,
+            "map50": 0.2159579498658132,
+            "map50_95": 0.16407699135164805
+          },
+          {
+            "species": "badger",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "deer",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "fox",
+            "support": 1,
+            "map50": 0.0,
+            "map50_95": 0.0
+          },
+          {
+            "species": "rodent",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          }
+        ]
+      }
+    }
+  }
+}

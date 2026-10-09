@@ -1,0 +1,500 @@
+{
+  "completed_at_utc": "2026-10-09T01:23:13.976444+00:00",
+  "status": "evaluation_complete_with_documented_review_deviations",
+  "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+  "review_status": {
+    "status": "accepted_with_documented_exclusions_and_note_waiver",
+    "original_sample": 600,
+    "accepted": 582,
+    "excluded": 18,
+    "counts": {
+      "low": 340,
+      "ambiguous": 125,
+      "medium": 69,
+      "high": 48
+    },
+    "accepted_cases_without_notes": 398,
+    "minimum_support": 30,
+    "missing_support": {
+      "low": 0,
+      "medium": 0,
+      "high": 0
+    }
+  },
+  "review_acceptance": {
+    "schema_version": 1,
+    "recorded_at_utc": "2026-10-09T00:13:22.244441+00:00",
+    "user_instruction": "no tomar en cuenta los 18 casos sin nivel y el caso 121 tomar en cuenta lo que dice Miguel; me lo entregaron sin nota ya no puedo hacer nada",
+    "protocol_sha256": "8704d6e664b2f1cc2264ee5b663b5245c02be89523075ee6a63bc5a154714244",
+    "original_cases": 600,
+    "accepted_cases": 582,
+    "excluded_cases": 18,
+    "excluded_annotation_ids": [
+      "22453",
+      "14744",
+      "32020",
+      "40540",
+      "23951",
+      "40434",
+      "6892",
+      "15557",
+      "29334",
+      "3336",
+      "16386",
+      "32853",
+      "33160",
+      "33999",
+      "32799",
+      "37859",
+      "10229",
+      "6669"
+    ],
+    "excluded_case_numbers": [
+      253,
+      302,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      439
+    ],
+    "exclusion_reason": "No human occlusion level; user explicitly excluded these cases.",
+    "notes_required": false,
+    "human_notes_fabricated": false,
+    "resolved_case_121": {
+      "annotation_id": "23098",
+      "source_file": "occlusion_review_Miguel_2026-10-08T01-44-38-653Z.csv",
+      "level": "medium",
+      "visual_evidence": "",
+      "reviewer": "Miguel"
+    },
+    "source_files_sha256": {
+      "occlusion_review_Josue_2026-10-07T03-57-25-829Z.csv": "07262f52c56f9443572dcd832b1778b3d37aa0b156f373902294cbfc957adee4",
+      "occlusion_review_Miguel_2026-10-08T01-44-38-653Z.csv": "b17855fc1274d5d94d2b1dd443541f32bff30f1743c9c0e39fc1f031238e5111",
+      "occlusion_review_Omar_2026-10-06T23-56-13-695Z_3.csv": "6745cf01d73c59d512da11af4d5c3ffcbc132adcef78f406e81d9dba19678708",
+      "occlusion_review_Alexander_Paco_Cornejo_2026-10-08T23-53-07-939Z.csv": "fadd8cfdee8a3b80a995846b0a36013bd9e9d3cf4283790ab687b506804dd910",
+      "occlusion_review_Enzo_Neyra_2026-10-06T15-52-12-067Z.csv": "54a7c4fd32029528eee0580d493f0124f7182cc183619b70920fd008bec714e8"
+    },
+    "previous_canonical_sha256": "16e4c97c3459a968cc36c744b22efae4d422679d08dbcc3381694e91e77e2624",
+    "previous_canonical_backup": "E:\\Kaggle\\exam-output-wildlife-v6-occlusion-sample-600\\review_archive\\before_acceptance_2026-10-08.csv",
+    "teacher_approval_claimed": false,
+    "original_sampling_receipt_changed": false,
+    "population_proportion_ci_with_complete_600_assumptions_allowed": false,
+    "reviews_sha256": "799608b589c9de45289f36dd16f9f3429796feb75520cae5204888ae04ee0a0b",
+    "accepted_csv_sha256": "0d579cc5330b1a416c4e228da9f8ad7f7897423d61b218a949a500e35f2a32a7"
+  },
+  "descriptive_occlusion": {
+    "method": "Descriptive proportions among accepted cases; unchanged original design weights.",
+    "status": {
+      "status": "accepted_with_documented_exclusions_and_note_waiver",
+      "original_sample": 600,
+      "accepted": 582,
+      "excluded": 18,
+      "counts": {
+        "low": 340,
+        "ambiguous": 125,
+        "medium": 69,
+        "high": 48
+      },
+      "accepted_cases_without_notes": 398,
+      "minimum_support": 30,
+      "missing_support": {
+        "low": 0,
+        "medium": 0,
+        "high": 0
+      }
+    },
+    "levels": {
+      "low": {
+        "cases": 340,
+        "observed_case_proportion": 0.584192439862543,
+        "original_weight_ratio_among_accepted_cases": 0.5975392492989372
+      },
+      "medium": {
+        "cases": 69,
+        "observed_case_proportion": 0.11855670103092783,
+        "original_weight_ratio_among_accepted_cases": 0.13018929823552103
+      },
+      "high": {
+        "cases": 48,
+        "observed_case_proportion": 0.08247422680412371,
+        "original_weight_ratio_among_accepted_cases": 0.07549431824389402
+      },
+      "ambiguous": {
+        "cases": 125,
+        "observed_case_proportion": 0.21477663230240548,
+        "original_weight_ratio_among_accepted_cases": 0.19677713422164775
+      }
+    },
+    "original_design_weight_sum": 17620.0,
+    "accepted_original_design_weight_sum": 17201.328088578088,
+    "excluded_original_design_weight_sum": 418.67191142191143,
+    "excluded_design_weight_fraction": 0.0237611754495977,
+    "confidence_intervals_for_population_proportions": null,
+    "original_95pct_plus_minus_5pp_planning_guarantee_claimed": false,
+    "limitation": "The 18 excluded cases are human nonresponse, not a new random sample. Observed ratios are conditional on the 582 accepted cases. Original complete-sample proportion intervals are not reused and population representativeness is not asserted.",
+    "user_decision": "no tomar en cuenta los 18 casos sin nivel y el caso 121 tomar en cuenta lo que dice Miguel; me lo entregaron sin nota ya no puedo hacer nada"
+  },
+  "sample_detection": {
+    "low": {
+      "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+      "level": "low",
+      "metrics": {
+        "map50": 0.15819062118054675,
+        "map50_95": 0.08752327797568138,
+        "eligible_objects": 340,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 59,
+            "map50": 0.7329986325384872,
+            "map50_95": 0.3104287452013545
+          },
+          {
+            "species": "raccoon",
+            "support": 66,
+            "map50": 0.43550317813516737,
+            "map50_95": 0.24591049147621016
+          },
+          {
+            "species": "squirrel",
+            "support": 19,
+            "map50": 0.050919017841209495,
+            "map50_95": 0.03176150826877604
+          },
+          {
+            "species": "bobcat",
+            "support": 42,
+            "map50": 0.1972489901922969,
+            "map50_95": 0.14953832029855552
+          },
+          {
+            "species": "skunk",
+            "support": 15,
+            "map50": 0.04373679546484704,
+            "map50_95": 0.03360753531187617
+          },
+          {
+            "species": "dog",
+            "support": 27,
+            "map50": 0.27718886170145046,
+            "map50_95": 0.16331058137238458
+          },
+          {
+            "species": "coyote",
+            "support": 31,
+            "map50": 0.08077339047044405,
+            "map50_95": 0.05994284851052478
+          },
+          {
+            "species": "rabbit",
+            "support": 24,
+            "map50": 0.11400104990649083,
+            "map50_95": 0.06816687191990814
+          },
+          {
+            "species": "bird",
+            "support": 21,
+            "map50": 0.0756481576324815,
+            "map50_95": 0.03842966360671747
+          },
+          {
+            "species": "cat",
+            "support": 24,
+            "map50": 0.03188885897419695,
+            "map50_95": 0.025033056649469445
+          },
+          {
+            "species": "badger",
+            "support": 5,
+            "map50": 0.007348302397807347,
+            "map50_95": 0.004787019242464787
+          },
+          {
+            "species": "deer",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "fox",
+            "support": 1,
+            "map50": 0.0,
+            "map50_95": 0.0
+          },
+          {
+            "species": "rodent",
+            "support": 6,
+            "map50": 0.0092228400922284,
+            "map50_95": 0.006885971825616475
+          }
+        ]
+      },
+      "uncertainty": {
+        "method": "percentile sequence-cluster bootstrap; fixed checkpoint; not between-seed uncertainty",
+        "replicates": 200,
+        "seed": 42,
+        "clusters": 7438,
+        "confidence_level": 0.95,
+        "intervals": {
+          "map50": {
+            "lower": 0.14565428655662227,
+            "upper": 0.211744335363571,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.0808636471402086,
+            "upper": 0.1216599227165115,
+            "defined_replicates": 200
+          }
+        }
+      }
+    },
+    "medium": {
+      "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+      "level": "medium",
+      "metrics": {
+        "map50": 0.058165880795783755,
+        "map50_95": 0.02714170588666339,
+        "eligible_objects": 69,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 20,
+            "map50": 0.32457561548597647,
+            "map50_95": 0.12040633164811641
+          },
+          {
+            "species": "raccoon",
+            "support": 10,
+            "map50": 0.21326336606158708,
+            "map50_95": 0.12755339804357807
+          },
+          {
+            "species": "squirrel",
+            "support": 7,
+            "map50": 0.004334851507678928,
+            "map50_95": 0.0015240053312896508
+          },
+          {
+            "species": "bobcat",
+            "support": 3,
+            "map50": 0.007940849795285936,
+            "map50_95": 0.0055391318095567394
+          },
+          {
+            "species": "skunk",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "dog",
+            "support": 4,
+            "map50": 0.018620897622757197,
+            "map50_95": 0.007815494460474482
+          },
+          {
+            "species": "coyote",
+            "support": 9,
+            "map50": 0.0046085820814561205,
+            "map50_95": 0.003174637218532013
+          },
+          {
+            "species": "rabbit",
+            "support": 2,
+            "map50": 0.0032624476817162125,
+            "map50_95": 0.001943112804515231
+          },
+          {
+            "species": "bird",
+            "support": 3,
+            "map50": 0.003069044768554525,
+            "map50_95": 0.0022991023741798953
+          },
+          {
+            "species": "cat",
+            "support": 10,
+            "map50": 0.0019831529528250517,
+            "map50_95": 0.0011618451763914742
+          },
+          {
+            "species": "badger",
+            "support": 1,
+            "map50": 0.0,
+            "map50_95": 0.0
+          },
+          {
+            "species": "deer",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "fox",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "rodent",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          }
+        ]
+      },
+      "uncertainty": {
+        "method": "percentile sequence-cluster bootstrap; fixed checkpoint; not between-seed uncertainty",
+        "replicates": 200,
+        "seed": 42,
+        "clusters": 7438,
+        "confidence_level": 0.95,
+        "intervals": {
+          "map50": {
+            "lower": 0.03889813048601192,
+            "upper": 0.10349211723479335,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.018447584844161185,
+            "upper": 0.05233252640313138,
+            "defined_replicates": 200
+          }
+        }
+      }
+    },
+    "high": {
+      "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+      "level": "high",
+      "metrics": {
+        "map50": 0.05629620961357233,
+        "map50_95": 0.02437605943963364,
+        "eligible_objects": 48,
+        "max_detections": 300,
+        "per_species": [
+          {
+            "species": "opossum",
+            "support": 8,
+            "map50": 0.4354292572114355,
+            "map50_95": 0.1551401680474485
+          },
+          {
+            "species": "raccoon",
+            "support": 7,
+            "map50": 0.04297764626043913,
+            "map50_95": 0.025764702518397027
+          },
+          {
+            "species": "squirrel",
+            "support": 3,
+            "map50": 0.0021723388848660387,
+            "map50_95": 0.0003454495519671682
+          },
+          {
+            "species": "bobcat",
+            "support": 5,
+            "map50": 0.024125795026651926,
+            "map50_95": 0.01899364779487866
+          },
+          {
+            "species": "skunk",
+            "support": 5,
+            "map50": 0.0219720602197206,
+            "map50_95": 0.015424143349898025
+          },
+          {
+            "species": "dog",
+            "support": 3,
+            "map50": 0.08490523338048088,
+            "map50_95": 0.04749387435759702
+          },
+          {
+            "species": "coyote",
+            "support": 5,
+            "map50": 0.002474462955577147,
+            "map50_95": 0.0018739893934689345
+          },
+          {
+            "species": "rabbit",
+            "support": 3,
+            "map50": 0.00517897943640518,
+            "map50_95": 0.0030916937847630917
+          },
+          {
+            "species": "bird",
+            "support": 1,
+            "map50": 0.0,
+            "map50_95": 0.0
+          },
+          {
+            "species": "cat",
+            "support": 6,
+            "map50": 2.2532373719299644e-05,
+            "map50_95": 8.98503755157666e-06
+          },
+          {
+            "species": "badger",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "deer",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "fox",
+            "support": 0,
+            "map50": null,
+            "map50_95": null
+          },
+          {
+            "species": "rodent",
+            "support": 2,
+            "map50": 0.0,
+            "map50_95": 0.0
+          }
+        ]
+      },
+      "uncertainty": {
+        "method": "percentile sequence-cluster bootstrap; fixed checkpoint; not between-seed uncertainty",
+        "replicates": 200,
+        "seed": 42,
+        "clusters": 7438,
+        "confidence_level": 0.95,
+        "intervals": {
+          "map50": {
+            "lower": 0.03294393702216552,
+            "upper": 0.11638270646000795,
+            "defined_replicates": 200
+          },
+          "map50_95": {
+            "lower": 0.015975287167537103,
+            "upper": 0.05670022235119286,
+            "defined_replicates": 200
+          }
+        }
+      }
+    }
+  },
+  "checkpoint_sha256": "b2a47c3b0b22d927c5fa976e6fecf82465e22bc509fae1747fb8a20ff634c85f",
+  "trained_or_ran_inference": false,
+  "detection_scope": "Unweighted accepted-cohort AP using frozen COCO rules over all trans_test frames; unreviewed, excluded, ambiguous or other-level boxes are ignored crowd regions for each low/medium/high group.",
+  "limitations": "Detection intervals are conditional 95% sequence-bootstrap intervals with 200 replicates and the fixed checkpoint. They do not measure annotation uncertainty, variation across training seeds or future-camera performance. Original complete-600 proportion intervals are not reused after exclusions. Missing human notes remain missing; the case-121 disagreement is preserved in archived sources."
+}

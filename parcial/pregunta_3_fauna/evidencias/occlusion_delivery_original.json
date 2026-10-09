@@ -1,0 +1,38 @@
+{
+  "status": "complete_visual_reviewed_editorial_pending",
+  "created_at_utc": "2026-10-09T01:23:28.134984+00:00",
+  "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+  "results_sha256": "b5ede4e0f8d46aef5b579f64c3b7f7c476b4aeb93eafaeffaafcdd4e0da124f9",
+  "builder_sha256": "bfa8a1f8c513c23160ad6bb282f78c0d470e8c9e01abc4286a3f1c25f3285777",
+  "notebook_executed_code_cells": 4,
+  "notebook_errors": 0,
+  "editorial_reviewed": false,
+  "files_sha256": {
+    "04_occlusion_582.ipynb": "1d076a70c7a95ef7667a2356228d7d639a949d0c06c84a59774f4858286a142c",
+    "data\\integrity.json": "684f1836ffaadbe2ff175a83a8617e8737c606f6e034323c93a64e012e03572a",
+    "data\\occlusion_review_accepted_582.csv": "0d579cc5330b1a416c4e228da9f8ad7f7897423d61b218a949a500e35f2a32a7",
+    "data\\occlusion_review_sample_600.csv": "799608b589c9de45289f36dd16f9f3429796feb75520cae5204888ae04ee0a0b",
+    "data\\protocol.json": "8704d6e664b2f1cc2264ee5b663b5245c02be89523075ee6a63bc5a154714244",
+    "data\\results.json": "b5ede4e0f8d46aef5b579f64c3b7f7c476b4aeb93eafaeffaafcdd4e0da124f9",
+    "data\\review_acceptance.json": "ab65118c2a72ad844718202914f67cc40901cbb56b599ed16d9dc13f0b32f127",
+    "LEEME.txt": "e136be04037146b227b88b4fc5251ace74f31df5b82e1d887f0153b6a222906f",
+    "occlusion_582.pdf": "63054cbe0a9bcfdcf46cddcbed792054fca7826785890b5ab4686b30dd9367d3",
+    "occlusion_metrics_582.csv": "b67d872ff27548c95df9639e88259102433508b50c0f4fb33c3750228707447a"
+  },
+  "pdf_pages": 2,
+  "visual_review": {
+    "reviewed_at_utc": "2026-10-09T01:26:00.418478+00:00",
+    "kind": "agent_visual_inspection",
+    "pages_inspected": [
+      1,
+      2
+    ],
+    "render_dpi": 120,
+    "clipping_overlap_missing_glyphs_observed": false,
+    "human_editorial_approval": false,
+    "render_sha256": {
+      "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\tmp\\pdfs\\occlusion-582-20261008\\page-1.png": "2d28999750bf4efff035e393701612b1b8ba385ffdac00f98f60419ab4b3aaf5",
+      "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\tmp\\pdfs\\occlusion-582-20261008\\page-2.png": "e66846b893b7092123c528f6a933a0caaf16c7e1a0a274626acb52a8f8629064"
+    }
+  }
+}

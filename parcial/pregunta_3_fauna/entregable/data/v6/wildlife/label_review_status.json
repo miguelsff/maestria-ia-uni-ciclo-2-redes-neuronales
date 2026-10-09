@@ -1,0 +1,9 @@
+{
+  "status": "reviewed",
+  "images": 90,
+  "counts": {
+    "reviewed": 90
+  },
+  "missing_visual_evidence": 90,
+  "evidence_required": false
+}

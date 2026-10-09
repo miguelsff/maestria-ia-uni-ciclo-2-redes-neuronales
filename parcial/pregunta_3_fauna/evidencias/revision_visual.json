@@ -1,0 +1,47 @@
+{
+  "reviewed_at_utc": "2026-10-09T02:14:08.719583+00:00",
+  "type": "Inspección visual de las imágenes renderizadas; no aprobación humana",
+  "render_dpi": 110,
+  "main_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "annex_pages": [
+    1,
+    2
+  ],
+  "final_main_changed_pages_rechecked": [
+    2,
+    9,
+    10
+  ],
+  "remaining_main_pages_identical_render_hash": true,
+  "clipping_overlap_missing_glyphs_observed": false,
+  "render_sha256": {
+    "page-01.png": "a719fca523571801651dfb4ccdeb1c4a513e5c937d1a2be8916508e3644ccee3",
+    "page-02.png": "5a401cc3d8b4091e5d297d79813f10f0e0382a2eed12a37bdfe3a82b6d99c7f6",
+    "page-03.png": "4c63df519db5fe02ff7dc4740f2672da99895e737e4ded6a42e5dcb662097082",
+    "page-04.png": "e5929b6085539dba0e460d1a79472981f12db7a9c807abe35afef1db75b2f531",
+    "page-05.png": "e797a3fbdaa178ccf34aef465180c568bbebb63a5a332a3400f0bbc1c9631e62",
+    "page-06.png": "40e5579667fb6097e3fe49edad0685d250902f962fd18ff5e61f8987561aa3ea",
+    "page-07.png": "e6d6a0d9d06c6a3982a588ae46fabc5b5891db9ba66b2c280be2ab1e6a5e3808",
+    "page-08.png": "ac81480c27799c388eb3758da13048103471f4c31d097a599701ec38dbf1da50",
+    "page-09.png": "2c63e77df304ea90923b7521f7143b35f125c7ad9d703cf54823cd3b5260e2e0",
+    "page-10.png": "a7525ddef3eaca51cc849ee2640127e35b8539827e14a43f1e283b4e3c67c00c",
+    "annex-final-1.png": "72e598cd0341dfbb1195c175ec28d6075b789fb3ffa14829bb5af95aa282b56f",
+    "annex-final-2.png": "e16c51811895d633eb4b7302f84add4351e8ea6cdeb3a4e8deaabc206da1b88e"
+  },
+  "pdf_sha256": {
+    "anexo_occlusion_provisional.pdf": "39f42dba272264327200585267136867aa500478b7c3eedd9206428feef48cde",
+    "informe_fauna_provisional.pdf": "8ce4c2d889c40b0dbfe913f70062568c109cf7bf98600c1b93a8270c670a11a8"
+  },
+  "source": "Fuentes LaTeX editables; PDF provisional de referencia, no PDF final exportado de ODT."
+}

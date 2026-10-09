@@ -1,0 +1,3967 @@
+{
+  "camera_days": [
+    {
+      "camera_id": "7",
+      "date": "2011-05-07",
+      "photos": 1,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-05-08",
+      "photos": 9,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.7777777777777778,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-05-10",
+      "photos": 3,
+      "photos_with_fauna": 1,
+      "empty_photo_rate": 0.6666666666666667,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-05-20",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-05-25",
+      "photos": 2,
+      "photos_with_fauna": 1,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-03",
+      "photos": 3,
+      "photos_with_fauna": 1,
+      "empty_photo_rate": 0.6666666666666667,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-05",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-17",
+      "photos": 2,
+      "photos_with_fauna": 1,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-19",
+      "photos": 6,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-20",
+      "photos": 15,
+      "photos_with_fauna": 14,
+      "empty_photo_rate": 0.06666666666666665,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-22",
+      "photos": 12,
+      "photos_with_fauna": 12,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-23",
+      "photos": 9,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-25",
+      "photos": 15,
+      "photos_with_fauna": 12,
+      "empty_photo_rate": 0.19999999999999996,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-26",
+      "photos": 21,
+      "photos_with_fauna": 19,
+      "empty_photo_rate": 0.09523809523809523,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-27",
+      "photos": 15,
+      "photos_with_fauna": 10,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-28",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-29",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-30",
+      "photos": 12,
+      "photos_with_fauna": 8,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-02",
+      "photos": 18,
+      "photos_with_fauna": 14,
+      "empty_photo_rate": 0.2222222222222222,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-03",
+      "photos": 21,
+      "photos_with_fauna": 20,
+      "empty_photo_rate": 0.04761904761904767,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-09",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-10",
+      "photos": 12,
+      "photos_with_fauna": 11,
+      "empty_photo_rate": 0.08333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-11",
+      "photos": 9,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-12",
+      "photos": 12,
+      "photos_with_fauna": 12,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-13",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-14",
+      "photos": 6,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.6666666666666667,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-15",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-16",
+      "photos": 9,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-17",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-18",
+      "photos": 9,
+      "photos_with_fauna": 5,
+      "empty_photo_rate": 0.4444444444444444,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-20",
+      "photos": 3,
+      "photos_with_fauna": 1,
+      "empty_photo_rate": 0.6666666666666667,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-22",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-23",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-24",
+      "photos": 12,
+      "photos_with_fauna": 12,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-25",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-26",
+      "photos": 2,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-27",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-28",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-29",
+      "photos": 12,
+      "photos_with_fauna": 10,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-30",
+      "photos": 6,
+      "photos_with_fauna": 4,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-01",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-03",
+      "photos": 15,
+      "photos_with_fauna": 12,
+      "empty_photo_rate": 0.19999999999999996,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-05",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-06",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-09",
+      "photos": 9,
+      "photos_with_fauna": 8,
+      "empty_photo_rate": 0.11111111111111116,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-10",
+      "photos": 6,
+      "photos_with_fauna": 4,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-11",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-12",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-14",
+      "photos": 9,
+      "photos_with_fauna": 5,
+      "empty_photo_rate": 0.4444444444444444,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-15",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-17",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-18",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-19",
+      "photos": 12,
+      "photos_with_fauna": 11,
+      "empty_photo_rate": 0.08333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-21",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-22",
+      "photos": 15,
+      "photos_with_fauna": 15,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-23",
+      "photos": 8,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.25,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-25",
+      "photos": 6,
+      "photos_with_fauna": 5,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-26",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-28",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-29",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-30",
+      "photos": 9,
+      "photos_with_fauna": 8,
+      "empty_photo_rate": 0.11111111111111116,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-01",
+      "photos": 9,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-02",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-06",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-08",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-09",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-14",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-15",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-17",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-19",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-20",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-24",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-27",
+      "photos": 6,
+      "photos_with_fauna": 4,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-02",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-04",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-07",
+      "photos": 9,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-09",
+      "photos": 6,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-13",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-14",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-17",
+      "photos": 27,
+      "photos_with_fauna": 18,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-19",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-21",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-24",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-27",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-28",
+      "photos": 6,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-29",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-30",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-03",
+      "photos": 5,
+      "photos_with_fauna": 4,
+      "empty_photo_rate": 0.19999999999999996,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-05",
+      "photos": 9,
+      "photos_with_fauna": 5,
+      "empty_photo_rate": 0.4444444444444444,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-06",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-08",
+      "photos": 6,
+      "photos_with_fauna": 1,
+      "empty_photo_rate": 0.8333333333333334,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-09",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-10",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-11",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-13",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-18",
+      "photos": 6,
+      "photos_with_fauna": 4,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-19",
+      "photos": 9,
+      "photos_with_fauna": 4,
+      "empty_photo_rate": 0.5555555555555556,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-23",
+      "photos": 12,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.25,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-24",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-25",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-26",
+      "photos": 6,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-28",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-30",
+      "photos": 6,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-01",
+      "photos": 6,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-02",
+      "photos": 6,
+      "photos_with_fauna": 5,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-05",
+      "photos": 6,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-06",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-07",
+      "photos": 9,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-09",
+      "photos": 9,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-10",
+      "photos": 12,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-12",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-14",
+      "photos": 18,
+      "photos_with_fauna": 14,
+      "empty_photo_rate": 0.2222222222222222,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-16",
+      "photos": 5,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.6,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-19",
+      "photos": 6,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-20",
+      "photos": 9,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-22",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-25",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-30",
+      "photos": 54,
+      "photos_with_fauna": 41,
+      "empty_photo_rate": 0.2407407407407407,
+      "distinct_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-02",
+      "photos": 12,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-03",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-06",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-07",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-08",
+      "photos": 11,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-09",
+      "photos": 24,
+      "photos_with_fauna": 19,
+      "empty_photo_rate": 0.20833333333333337,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-10",
+      "photos": 1,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-18",
+      "photos": 4,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.25,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-19",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-22",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-23",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-24",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-25",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-27",
+      "photos": 15,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.4,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-28",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-30",
+      "photos": 15,
+      "photos_with_fauna": 13,
+      "empty_photo_rate": 0.1333333333333333,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-31",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-05",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-06",
+      "photos": 21,
+      "photos_with_fauna": 17,
+      "empty_photo_rate": 0.19047619047619047,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-07",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-08",
+      "photos": 15,
+      "photos_with_fauna": 11,
+      "empty_photo_rate": 0.2666666666666667,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-10",
+      "photos": 6,
+      "photos_with_fauna": 5,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-13",
+      "photos": 18,
+      "photos_with_fauna": 13,
+      "empty_photo_rate": 0.2777777777777778,
+      "distinct_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-14",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-28",
+      "photos": 4,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-29",
+      "photos": 15,
+      "photos_with_fauna": 15,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-01",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-02",
+      "photos": 12,
+      "photos_with_fauna": 10,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-04",
+      "photos": 9,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-05",
+      "photos": 18,
+      "photos_with_fauna": 15,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-07",
+      "photos": 6,
+      "photos_with_fauna": 5,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-08",
+      "photos": 6,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-09",
+      "photos": 9,
+      "photos_with_fauna": 7,
+      "empty_photo_rate": 0.2222222222222222,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-10",
+      "photos": 6,
+      "photos_with_fauna": 4,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-11",
+      "photos": 6,
+      "photos_with_fauna": 4,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-12",
+      "photos": 21,
+      "photos_with_fauna": 18,
+      "empty_photo_rate": 0.1428571428571429,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-13",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-14",
+      "photos": 12,
+      "photos_with_fauna": 12,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-15",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-16",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-17",
+      "photos": 9,
+      "photos_with_fauna": 5,
+      "empty_photo_rate": 0.4444444444444444,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-19",
+      "photos": 6,
+      "photos_with_fauna": 5,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-20",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-21",
+      "photos": 15,
+      "photos_with_fauna": 14,
+      "empty_photo_rate": 0.06666666666666665,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-22",
+      "photos": 21,
+      "photos_with_fauna": 17,
+      "empty_photo_rate": 0.19047619047619047,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-23",
+      "photos": 6,
+      "photos_with_fauna": 5,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-24",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-25",
+      "photos": 3,
+      "photos_with_fauna": 1,
+      "empty_photo_rate": 0.6666666666666667,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-26",
+      "photos": 9,
+      "photos_with_fauna": 7,
+      "empty_photo_rate": 0.2222222222222222,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-27",
+      "photos": 30,
+      "photos_with_fauna": 25,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-28",
+      "photos": 15,
+      "photos_with_fauna": 15,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-29",
+      "photos": 5,
+      "photos_with_fauna": 1,
+      "empty_photo_rate": 0.8,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-30",
+      "photos": 45,
+      "photos_with_fauna": 39,
+      "empty_photo_rate": 0.1333333333333333,
+      "distinct_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-01",
+      "photos": 3,
+      "photos_with_fauna": 0,
+      "empty_photo_rate": 1.0,
+      "distinct_species": 0
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-02",
+      "photos": 84,
+      "photos_with_fauna": 73,
+      "empty_photo_rate": 0.13095238095238093,
+      "distinct_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-04",
+      "photos": 21,
+      "photos_with_fauna": 20,
+      "empty_photo_rate": 0.04761904761904767,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-05",
+      "photos": 36,
+      "photos_with_fauna": 24,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-06",
+      "photos": 12,
+      "photos_with_fauna": 10,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-07",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-08",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-09",
+      "photos": 12,
+      "photos_with_fauna": 11,
+      "empty_photo_rate": 0.08333333333333337,
+      "distinct_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-11",
+      "photos": 15,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.4,
+      "distinct_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-12",
+      "photos": 9,
+      "photos_with_fauna": 7,
+      "empty_photo_rate": 0.2222222222222222,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-13",
+      "photos": 9,
+      "photos_with_fauna": 8,
+      "empty_photo_rate": 0.11111111111111116,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-14",
+      "photos": 36,
+      "photos_with_fauna": 24,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-15",
+      "photos": 18,
+      "photos_with_fauna": 16,
+      "empty_photo_rate": 0.11111111111111116,
+      "distinct_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-16",
+      "photos": 6,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-17",
+      "photos": 12,
+      "photos_with_fauna": 11,
+      "empty_photo_rate": 0.08333333333333337,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-18",
+      "photos": 27,
+      "photos_with_fauna": 22,
+      "empty_photo_rate": 0.18518518518518523,
+      "distinct_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-19",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-20",
+      "photos": 6,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.6666666666666667,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-21",
+      "photos": 3,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-22",
+      "photos": 6,
+      "photos_with_fauna": 4,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-23",
+      "photos": 6,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-24",
+      "photos": 6,
+      "photos_with_fauna": 4,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-25",
+      "photos": 8,
+      "photos_with_fauna": 8,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-27",
+      "photos": 12,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-29",
+      "photos": 12,
+      "photos_with_fauna": 10,
+      "empty_photo_rate": 0.16666666666666663,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-02",
+      "photos": 6,
+      "photos_with_fauna": 4,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-03",
+      "photos": 15,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.4,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-04",
+      "photos": 6,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-05",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-06",
+      "photos": 15,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.4,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-07",
+      "photos": 3,
+      "photos_with_fauna": 1,
+      "empty_photo_rate": 0.6666666666666667,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-08",
+      "photos": 9,
+      "photos_with_fauna": 3,
+      "empty_photo_rate": 0.6666666666666667,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-09",
+      "photos": 18,
+      "photos_with_fauna": 9,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-10",
+      "photos": 15,
+      "photos_with_fauna": 13,
+      "empty_photo_rate": 0.1333333333333333,
+      "distinct_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-11",
+      "photos": 9,
+      "photos_with_fauna": 7,
+      "empty_photo_rate": 0.2222222222222222,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-12",
+      "photos": 15,
+      "photos_with_fauna": 7,
+      "empty_photo_rate": 0.5333333333333333,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-13",
+      "photos": 15,
+      "photos_with_fauna": 15,
+      "empty_photo_rate": 0.0,
+      "distinct_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-14",
+      "photos": 9,
+      "photos_with_fauna": 6,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-16",
+      "photos": 3,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.33333333333333337,
+      "distinct_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-18",
+      "photos": 4,
+      "photos_with_fauna": 2,
+      "empty_photo_rate": 0.5,
+      "distinct_species": 1
+    }
+  ],
+  "species_days": [
+    {
+      "camera_id": "7",
+      "date": "2011-05-08",
+      "species": "opossum",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-05-10",
+      "species": "coyote",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-05-20",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-05-25",
+      "species": "coyote",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-03",
+      "species": "deer",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-03",
+      "species": "dog",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-05",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-17",
+      "species": "bird",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-19",
+      "species": "bird",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-19",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-20",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-20",
+      "species": "opossum",
+      "detections": 12,
+      "photos_with_species": 12
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-22",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-22",
+      "species": "raccoon",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-23",
+      "species": "opossum",
+      "detections": 9,
+      "photos_with_species": 9
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-25",
+      "species": "opossum",
+      "detections": 12,
+      "photos_with_species": 12
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-26",
+      "species": "bird",
+      "detections": 14,
+      "photos_with_species": 14
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-26",
+      "species": "opossum",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-26",
+      "species": "rabbit",
+      "detections": 12,
+      "photos_with_species": 12
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-27",
+      "species": "opossum",
+      "detections": 11,
+      "photos_with_species": 10
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-28",
+      "species": "dog",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-29",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-30",
+      "species": "dog",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-30",
+      "species": "rabbit",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-06-30",
+      "species": "squirrel",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-02",
+      "species": "bird",
+      "detections": 11,
+      "photos_with_species": 11
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-02",
+      "species": "rabbit",
+      "detections": 11,
+      "photos_with_species": 11
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-02",
+      "species": "squirrel",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-03",
+      "species": "coyote",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-03",
+      "species": "opossum",
+      "detections": 15,
+      "photos_with_species": 15
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-09",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-10",
+      "species": "opossum",
+      "detections": 11,
+      "photos_with_species": 11
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-11",
+      "species": "opossum",
+      "detections": 9,
+      "photos_with_species": 9
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-12",
+      "species": "bobcat",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-12",
+      "species": "opossum",
+      "detections": 9,
+      "photos_with_species": 9
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-13",
+      "species": "raccoon",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-14",
+      "species": "bird",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-14",
+      "species": "dog",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-14",
+      "species": "opossum",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-15",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-16",
+      "species": "bird",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-16",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-17",
+      "species": "rabbit",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-18",
+      "species": "opossum",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-20",
+      "species": "raccoon",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-22",
+      "species": "bird",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-24",
+      "species": "bird",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-24",
+      "species": "opossum",
+      "detections": 12,
+      "photos_with_species": 12
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-25",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-27",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-28",
+      "species": "raccoon",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-29",
+      "species": "opossum",
+      "detections": 10,
+      "photos_with_species": 10
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-07-30",
+      "species": "opossum",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-01",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-03",
+      "species": "coyote",
+      "detections": 9,
+      "photos_with_species": 9
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-03",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-05",
+      "species": "bird",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-05",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-06",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-06",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-09",
+      "species": "bird",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-09",
+      "species": "opossum",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-10",
+      "species": "bird",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-10",
+      "species": "opossum",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-11",
+      "species": "coyote",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-11",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-11",
+      "species": "raccoon",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-12",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-12",
+      "species": "raccoon",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-14",
+      "species": "coyote",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-15",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-17",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-18",
+      "species": "bird",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-19",
+      "species": "opossum",
+      "detections": 11,
+      "photos_with_species": 11
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-21",
+      "species": "bird",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-22",
+      "species": "bird",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-22",
+      "species": "coyote",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-22",
+      "species": "opossum",
+      "detections": 9,
+      "photos_with_species": 9
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-23",
+      "species": "bird",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-23",
+      "species": "raccoon",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-25",
+      "species": "bird",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-25",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-26",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-28",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-29",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-08-30",
+      "species": "opossum",
+      "detections": 8,
+      "photos_with_species": 8
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-01",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-02",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-06",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-17",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-24",
+      "species": "coyote",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-24",
+      "species": "dog",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-27",
+      "species": "opossum",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-09-27",
+      "species": "raccoon",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-02",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-04",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-07",
+      "species": "cat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-07",
+      "species": "coyote",
+      "detections": 8,
+      "photos_with_species": 8
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-09",
+      "species": "raccoon",
+      "detections": 5,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-13",
+      "species": "squirrel",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-14",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-17",
+      "species": "cat",
+      "detections": 6,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-17",
+      "species": "coyote",
+      "detections": 19,
+      "photos_with_species": 17
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-17",
+      "species": "dog",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-21",
+      "species": "skunk",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-24",
+      "species": "skunk",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-10-30",
+      "species": "coyote",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-03",
+      "species": "bird",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-03",
+      "species": "squirrel",
+      "detections": 6,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-05",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-05",
+      "species": "rabbit",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-06",
+      "species": "raccoon",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-08",
+      "species": "rabbit",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-09",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-10",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-11",
+      "species": "dog",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-11",
+      "species": "rabbit",
+      "detections": 3,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-13",
+      "species": "rabbit",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-18",
+      "species": "skunk",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-19",
+      "species": "coyote",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-23",
+      "species": "coyote",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-23",
+      "species": "opossum",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-23",
+      "species": "rabbit",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-25",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-26",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-26",
+      "species": "rabbit",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-11-28",
+      "species": "rabbit",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-01",
+      "species": "dog",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-01",
+      "species": "raccoon",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-02",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-02",
+      "species": "rabbit",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-05",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-06",
+      "species": "squirrel",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-07",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-07",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-09",
+      "species": "coyote",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-09",
+      "species": "rabbit",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-10",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-10",
+      "species": "rabbit",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-12",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-14",
+      "species": "bobcat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-14",
+      "species": "coyote",
+      "detections": 14,
+      "photos_with_species": 14
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-16",
+      "species": "raccoon",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-16",
+      "species": "squirrel",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-19",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-20",
+      "species": "bird",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-20",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-22",
+      "species": "raccoon",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-25",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-30",
+      "species": "bobcat",
+      "detections": 31,
+      "photos_with_species": 31
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-30",
+      "species": "cat",
+      "detections": 10,
+      "photos_with_species": 10
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-30",
+      "species": "coyote",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2011-12-30",
+      "species": "raccoon",
+      "detections": 7,
+      "photos_with_species": 7
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-02",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-02",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-03",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-06",
+      "species": "squirrel",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-07",
+      "species": "coyote",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-07",
+      "species": "squirrel",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-09",
+      "species": "cat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-09",
+      "species": "coyote",
+      "detections": 18,
+      "photos_with_species": 18
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-09",
+      "species": "rabbit",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-18",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-19",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-22",
+      "species": "bird",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-22",
+      "species": "coyote",
+      "detections": 5,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-22",
+      "species": "dog",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-23",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-24",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-25",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-27",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-27",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-28",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-30",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-30",
+      "species": "opossum",
+      "detections": 10,
+      "photos_with_species": 10
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-01-31",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-05",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-05",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-06",
+      "species": "coyote",
+      "detections": 16,
+      "photos_with_species": 16
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-06",
+      "species": "raccoon",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-07",
+      "species": "opossum",
+      "detections": 7,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-08",
+      "species": "cat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-08",
+      "species": "coyote",
+      "detections": 11,
+      "photos_with_species": 10
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-08",
+      "species": "rabbit",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-10",
+      "species": "opossum",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-13",
+      "species": "bobcat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-13",
+      "species": "cat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-13",
+      "species": "coyote",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-13",
+      "species": "opossum",
+      "detections": 7,
+      "photos_with_species": 7
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-13",
+      "species": "rabbit",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-13",
+      "species": "raccoon",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-28",
+      "species": "bird",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-28",
+      "species": "dog",
+      "detections": 2,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-29",
+      "species": "bobcat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-29",
+      "species": "cat",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-29",
+      "species": "coyote",
+      "detections": 7,
+      "photos_with_species": 7
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-02-29",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-01",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-02",
+      "species": "bird",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-02",
+      "species": "opossum",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-04",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-04",
+      "species": "rabbit",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-05",
+      "species": "opossum",
+      "detections": 15,
+      "photos_with_species": 15
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-07",
+      "species": "opossum",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-08",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-09",
+      "species": "coyote",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-09",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-10",
+      "species": "coyote",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-10",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-11",
+      "species": "coyote",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-11",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-12",
+      "species": "opossum",
+      "detections": 18,
+      "photos_with_species": 18
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-12",
+      "species": "raccoon",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-13",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-14",
+      "species": "opossum",
+      "detections": 12,
+      "photos_with_species": 12
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-15",
+      "species": "coyote",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-15",
+      "species": "raccoon",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-16",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-17",
+      "species": "opossum",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-17",
+      "species": "raccoon",
+      "detections": 4,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-19",
+      "species": "opossum",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-20",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-21",
+      "species": "opossum",
+      "detections": 14,
+      "photos_with_species": 14
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-22",
+      "species": "opossum",
+      "detections": 17,
+      "photos_with_species": 17
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-23",
+      "species": "opossum",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-24",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-25",
+      "species": "opossum",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-26",
+      "species": "opossum",
+      "detections": 7,
+      "photos_with_species": 7
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-27",
+      "species": "bobcat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-27",
+      "species": "cat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-27",
+      "species": "coyote",
+      "detections": 18,
+      "photos_with_species": 15
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-27",
+      "species": "opossum",
+      "detections": 9,
+      "photos_with_species": 9
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-27",
+      "species": "raccoon",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-28",
+      "species": "opossum",
+      "detections": 19,
+      "photos_with_species": 15
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-29",
+      "species": "opossum",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-30",
+      "species": "bobcat",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-30",
+      "species": "cat",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-30",
+      "species": "coyote",
+      "detections": 44,
+      "photos_with_species": 35
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-30",
+      "species": "dog",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-03-30",
+      "species": "raccoon",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-02",
+      "species": "bird",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-02",
+      "species": "bobcat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-02",
+      "species": "cat",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-02",
+      "species": "coyote",
+      "detections": 73,
+      "photos_with_species": 68
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-02",
+      "species": "dog",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-02",
+      "species": "rabbit",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-04",
+      "species": "coyote",
+      "detections": 20,
+      "photos_with_species": 20
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-05",
+      "species": "cat",
+      "detections": 3,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-05",
+      "species": "coyote",
+      "detections": 20,
+      "photos_with_species": 17
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-05",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-05",
+      "species": "rabbit",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-06",
+      "species": "bobcat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-06",
+      "species": "cat",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-06",
+      "species": "coyote",
+      "detections": 9,
+      "photos_with_species": 9
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-06",
+      "species": "raccoon",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-07",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-08",
+      "species": "bird",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-08",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-09",
+      "species": "bird",
+      "detections": 4,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-09",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-09",
+      "species": "dog",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-09",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-11",
+      "species": "bobcat",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-11",
+      "species": "cat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-11",
+      "species": "coyote",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-11",
+      "species": "raccoon",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-12",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-12",
+      "species": "opossum",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-13",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-13",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-14",
+      "species": "cat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-14",
+      "species": "coyote",
+      "detections": 22,
+      "photos_with_species": 22
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-14",
+      "species": "rabbit",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-15",
+      "species": "cat",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-15",
+      "species": "coyote",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-15",
+      "species": "opossum",
+      "detections": 9,
+      "photos_with_species": 9
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-15",
+      "species": "rabbit",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-16",
+      "species": "raccoon",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-17",
+      "species": "opossum",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-17",
+      "species": "raccoon",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-18",
+      "species": "cat",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-18",
+      "species": "coyote",
+      "detections": 14,
+      "photos_with_species": 12
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-18",
+      "species": "opossum",
+      "detections": 7,
+      "photos_with_species": 7
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-18",
+      "species": "raccoon",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-19",
+      "species": "raccoon",
+      "detections": 5,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-20",
+      "species": "opossum",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-21",
+      "species": "dog",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-21",
+      "species": "rabbit",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-22",
+      "species": "coyote",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-23",
+      "species": "coyote",
+      "detections": 4,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-24",
+      "species": "coyote",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-25",
+      "species": "bird",
+      "detections": 5,
+      "photos_with_species": 5
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-25",
+      "species": "dog",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-25",
+      "species": "squirrel",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-27",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-27",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-29",
+      "species": "opossum",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-04-29",
+      "species": "squirrel",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-02",
+      "species": "raccoon",
+      "detections": 4,
+      "photos_with_species": 4
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-03",
+      "species": "coyote",
+      "detections": 9,
+      "photos_with_species": 9
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-04",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-05",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-05",
+      "species": "dog",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-06",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-06",
+      "species": "raccoon",
+      "detections": 7,
+      "photos_with_species": 7
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-07",
+      "species": "coyote",
+      "detections": 1,
+      "photos_with_species": 1
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-08",
+      "species": "coyote",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-09",
+      "species": "coyote",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-09",
+      "species": "opossum",
+      "detections": 3,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-10",
+      "species": "bobcat",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-10",
+      "species": "cat",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-10",
+      "species": "opossum",
+      "detections": 10,
+      "photos_with_species": 10
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-11",
+      "species": "opossum",
+      "detections": 7,
+      "photos_with_species": 7
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-12",
+      "species": "opossum",
+      "detections": 7,
+      "photos_with_species": 7
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-13",
+      "species": "opossum",
+      "detections": 12,
+      "photos_with_species": 12
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-13",
+      "species": "squirrel",
+      "detections": 5,
+      "photos_with_species": 3
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-14",
+      "species": "opossum",
+      "detections": 6,
+      "photos_with_species": 6
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-16",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    },
+    {
+      "camera_id": "7",
+      "date": "2012-05-18",
+      "species": "coyote",
+      "detections": 2,
+      "photos_with_species": 2
+    }
+  ],
+  "confidence": 0.25,
+  "interpretation": "counts are detections and photographs, never unique individual animals",
+  "camera_id": "7",
+  "sequence_id": "6f06c47d-5567-11e8-b8ef-dca9047ef277",
+  "cohort": "all official trans_test frames of one predetermined camera; includes frames excluded from box evaluation",
+  "timezone": "capture timezone unspecified; no conversion",
+  "complete_sequence_frames": [
+    "597515c6-23d2-11e8-a6a3-ec086b02610b",
+    "5968c329-23d2-11e8-a6a3-ec086b02610b",
+    "59ef8e67-23d2-11e8-a6a3-ec086b02610b"
+  ],
+  "sequence_frames": [
+    {
+      "image_id": "597515c6-23d2-11e8-a6a3-ec086b02610b",
+      "camera_id": "7",
+      "sequence_id": "6f06c47d-5567-11e8-b8ef-dca9047ef277",
+      "timestamp": "2011-05-08 11:39:22",
+      "frame_number": 1,
+      "detections": 0,
+      "species": ""
+    },
+    {
+      "image_id": "5968c329-23d2-11e8-a6a3-ec086b02610b",
+      "camera_id": "7",
+      "sequence_id": "6f06c47d-5567-11e8-b8ef-dca9047ef277",
+      "timestamp": "2011-05-08 11:39:23",
+      "frame_number": 2,
+      "detections": 0,
+      "species": ""
+    },
+    {
+      "image_id": "59ef8e67-23d2-11e8-a6a3-ec086b02610b",
+      "camera_id": "7",
+      "sequence_id": "6f06c47d-5567-11e8-b8ef-dca9047ef277",
+      "timestamp": "2011-05-08 11:39:24",
+      "frame_number": 3,
+      "detections": 1,
+      "species": "opossum"
+    }
+  ]
+}
