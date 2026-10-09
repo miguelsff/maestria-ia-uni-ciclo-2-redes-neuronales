@@ -77,7 +77,7 @@ Las rutas de entrega se interpretan desde `parcial/`; los recibos científicos y
 | 3 | común | ODT editable y PDF exportado desde él | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |
 | 3 | común | Notebook final ejecutado sin errores | validation-final.json; entregable de la pregunta correspondiente | cumple | Ninguna adicional. | Ninguno técnico. |
 | transversal | común | Cifras y hashes consistentes entre originales y entregas | validation-final.json; manifiesto.json; publicación y recibos de pruebas | cumple | Ninguna adicional. | Ninguno técnico. |
-| transversal | común | Código publicado y accesible con credenciales del propietario | validation-final.json; manifiesto.json; publicación y recibos de pruebas | no verificado | Ninguna adicional. | Completar comprobación final. |
+| transversal | común | Código publicado y accesible con credenciales del propietario | validation-final.json; manifiesto.json; publicación y recibos de pruebas | cumple | Ninguna adicional. | Ninguno técnico. |
 | transversal | común | Entorno y comando completo documentados | validation-final.json; manifiesto.json; publicación y recibos de pruebas | cumple | Ninguna adicional. | Ninguno técnico. |
 | transversal | común | Pruebas de empaquetado y ejecución desde copia limpia | validation-final.json; manifiesto.json; publicación y recibos de pruebas | cumple | Ninguna adicional. | Ninguno técnico. |
 | transversal | común | Migración sin pérdida de contenido único y con manifiesto | validation-final.json; manifiesto.json; publicación y recibos de pruebas | cumple | Ninguna adicional. | Ninguno técnico. |

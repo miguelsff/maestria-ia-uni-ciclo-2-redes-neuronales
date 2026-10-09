@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "candidate_applied": "8f36d7bf6b70043ba3cd5d55933fb7360fc5ed58",
+  "primary_branch": "main",
+  "affected_tracked_files_identical_to_verified_clean_clone": 772,
+  "original_files_backed_up_and_recovery_verified": 1010,
+  "preserved_local_change_files": 64,
+  "meaningful_ignored_files_preserved": 22,
+  "private_relocations": [
+    {
+      "source": "parcial/data/train.csv",
+      "destination": "parcial/compartido/data/train.csv",
+      "sha256": "8ca2203c0e9d61c080c7a314c7cdb51c1b03a1d9eb4770819f7f34af53ef4e33",
+      "secret": false,
+      "versioned": false
+    },
+    {
+      "source": "parcial/data/train_series.csv",
+      "destination": "parcial/compartido/data/train_series.csv",
+      "sha256": "573c1d80772bf41211c91b149c95677385a1c22d63f485c347f1b46c0177aef3",
+      "secret": false,
+      "versioned": false
+    },
+    {
+      "source": "parcial/.env.wildlife",
+      "destination": "parcial/compartido/.env.wildlife",
+      "sha256": "d7ece25628b0039a474ba493ab5cd9bf26dbedc4c67f7785e92b0f3e96c58ecd",
+      "secret": true,
+      "versioned": false
+    },
+    {
+      "source": "parcial/.env.wildlife-v2",
+      "destination": "parcial/compartido/.env.wildlife-v2",
+      "sha256": "697a88389574dced1e72df2f662114cf8d33b0d8bf485ac3d158b0555b5cb32e",
+      "secret": true,
+      "versioned": false
+    },
+    {
+      "source": "parcial/.env.wildlife-v3",
+      "destination": "parcial/compartido/.env.wildlife-v3",
+      "sha256": "c06354741141d6c8a3a8853486099378e61b2db679ab579bec7566360bb321de",
+      "secret": true,
+      "versioned": false
+    },
+    {
+      "source": "parcial/.env.wildlife-v4",
+      "destination": "parcial/compartido/.env.wildlife-v4",
+      "sha256": "c2c5c9b1ced8fbdd218c793ca58c8469dda47891757b040ba1978a0abf0e4a23",
+      "secret": true,
+      "versioned": false
+    },
+    {
+      "source": "parcial/.env.wildlife-v5",
+      "destination": "parcial/compartido/.env.wildlife-v5",
+      "sha256": "990c74b10898c4c90c0caea5a65e764423ab2a513f21d7f88ca922d5786d1105",
+      "secret": true,
+      "versioned": false
+    },
+    {
+      "source": "parcial/.env.wildlife-v6",
+      "destination": "parcial/compartido/.env.wildlife-v6",
+      "sha256": "f911bb6966fd80593674722cdd924e3b620d48ac963428661b2a52d0a76a16b4",
+      "secret": true,
+      "versioned": false
+    }
+  ],
+  "large_original_datasets_and_checkpoints": "E:/Kaggle originals unchanged. Small private metadata and envs relocated under compartido, excluded from Git.",
+  "human_history": "Small original outputs archived; original ZIP preserved externally.",
+  "recoverable_backup": "E:/Kaggle/exam-closure-2026-10-08/checkout-before-final",
+  "recovery_to_archive": "E:/Kaggle/exam-closure-2026-10-08/original-checkout-recovery",
+  "cleanup_policy": "Automatic review blocked deletion; archive the verified recovery instead.",
+  "unrelated_files": "Untouched; Git status clean for unrelated files. Physical checkout newline differences outside task scope are not normalized.",
+  "science_training_inference_bootstrap": false,
+  "recovery_archive_verified_files": 1010,
+  "original_recovery_inside_workspace_removed_by_archival_move": true
+}

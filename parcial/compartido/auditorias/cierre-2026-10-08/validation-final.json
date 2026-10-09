@@ -1,5 +1,5 @@
 {
-  "technical_acceptance": "passed_before_publication",
+  "technical_acceptance": "complete_published_code_documents_verified",
   "review_date_peru": "2026-10-08",
   "verified_at_utc": "2026-10-09T03:59:17.873275+00:00",
   "questions": {
@@ -27,7 +27,7 @@
     }
   },
   "scientific_integrity": true,
-  "published": false,
+  "published": true,
   "commands": true,
   "clean_checkout": true,
   "migration": true,
@@ -46,5 +46,8 @@
     "parent_documents": "document-review-parent.json",
     "preservation": "local-preservation-check.json"
   },
-  "scope": "Saved predictions recalculated; no new scientific training/inference/bootstrap or fresh image build. External academic/submission evidence remains unresolved."
+  "scope": "Saved predictions recalculated; no new scientific training/inference/bootstrap or fresh image build. External academic/submission evidence remains unresolved.",
+  "publication": "publication.json",
+  "application": "application-final.json",
+  "parent_clean_acceptance": "parent-clean-acceptance.json"
 }

@@ -1,0 +1,11 @@
+{
+  "status": "published_verified",
+  "repository_url": "https://github.com/miguelsff/maestria-ia-uni-ciclo-2-redes-neuronales",
+  "branch": "main",
+  "published_code_and_document_commit": "8f36d7bf6b70043ba3cd5d55933fb7360fc5ed58",
+  "remote_main_verified_equal": "8f36d7bf6b70043ba3cd5d55933fb7360fc5ed58",
+  "owner_access": "ADMIN; private repository; authenticated push succeeded",
+  "teacher_access": "no verificado",
+  "verified_at_utc": "2026-10-09T04:08:08.585722+00:00",
+  "followup_metadata": "This receipt and final matrices will be committed and pushed next; they do not change tested code, ODT/PDF or notebooks."
+}

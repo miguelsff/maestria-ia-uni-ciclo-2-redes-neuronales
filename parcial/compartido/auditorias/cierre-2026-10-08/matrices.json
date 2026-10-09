@@ -1,6 +1,6 @@
 {
   "review_date_peru": "2026-10-08",
-  "updated_at_utc": "2026-10-09T03:59:17.926300+00:00",
+  "updated_at_utc": "2026-10-09T04:08:08.635027+00:00",
   "mandatory_deliverables": 18,
   "rows": [
     {
@@ -718,9 +718,9 @@
       "entregable": "común",
       "subrequisito": "Código publicado y accesible con credenciales del propietario",
       "evidencia": "validation-final.json; manifiesto.json; publicación y recibos de pruebas",
-      "estado": "no verificado",
+      "estado": "cumple",
       "limitacion": "Ninguna adicional.",
-      "pendiente": "Completar comprobación final.",
+      "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
     {

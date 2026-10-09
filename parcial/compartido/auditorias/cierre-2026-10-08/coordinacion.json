@@ -115,6 +115,8 @@
       "F passed"
     ]
   },
-  "stage": "F_passed_G_pending",
-  "effective_configuration_evidence": "Read-only local turn_context verified model and effort; service_tier default inherited; API exposes no individual speed parameter."
+  "stage": "G_complete",
+  "effective_configuration_evidence": "Read-only local turn_context verified model and effort; service_tier default inherited; API exposes no individual speed parameter.",
+  "technical_closure": "Verified and applied to primary main; published code/doc commit8f36d7b; final metadata followup pending push.",
+  "publication_receipt": "publication.json"
 }
