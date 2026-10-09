@@ -1,6 +1,6 @@
 {
   "review_date_peru": "2026-10-08",
-  "updated_at_utc": "2026-10-09T02:33:13.064231+00:00",
+  "updated_at_utc": "2026-10-09T02:56:26.357256+00:00",
   "mandatory_deliverables": 18,
   "rows": [
     {
@@ -87,7 +87,7 @@
       "pregunta": 1,
       "entregable": 3,
       "subrequisito": "AUC macro oficial sobre las doce etiquetas",
-      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; 464 predicciones expertas en ocho variantes; incluye Synovitis; AUC baseline 0.618907985",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; 464 predicciones expertas en ocho variantes; incluye Synovitis; CNN/BCE/ponderada=0.577642622 y ResNet/BCE/ponderada=0.618907985",
       "estado": "cumple",
       "limitacion": "Ninguna adicional.",
       "pendiente": "Ninguno técnico.",

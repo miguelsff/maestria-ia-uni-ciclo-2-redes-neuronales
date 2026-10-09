@@ -54,7 +54,7 @@ def scientific_rows():
         "compartido/auditorias/revision-2026-10-08/structure.json; " + MRI + "manifest.json: 434 entrenamiento, 108 validación débil, 58 expertos",
         "Separación comprobada por estudio; no existe identificador global fiable para demostrar separación por paciente.")
     add(1, 3, "AUC macro oficial sobre las doce etiquetas",
-        MR + "; 464 predicciones expertas en ocho variantes; incluye Synovitis; AUC baseline 0.618907985")
+        MR + "; 464 predicciones expertas en ocho variantes; incluye Synovitis; CNN/BCE/ponderada=0.577642622 y ResNet/BCE/ponderada=0.618907985")
     add(1, 3, "AUC por etiqueta",
         MR + "; metrics.json y predicciones guardadas cotejados para las doce etiquetas")
     add(1, 3, "Precisión, recall y F1",
