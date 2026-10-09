@@ -1,0 +1,263 @@
+{
+  "stage": "before_integration",
+  "files": 64,
+  "all_original_local_changes_unchanged": true,
+  "checks": [
+    {
+      "path": "parcial/WILDLIFE_STATUS.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/WILDLIFE_OCCLUSION_ACCEPTED.md",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/closure.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/exam-extracted.txt",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/flood-extracted.txt",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/flood-notebook-extracted.txt",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/flood-qualitative.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/flood-scientific.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/materials.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/mri-extracted.txt",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/mri-notebook-extracted.txt",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/mri-scientific.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/mri-source-provenance.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/occlusion-scientific.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/preservation-before.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/structure.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/tests-output.txt",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/wildlife-extracted.txt",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/wildlife-notebook-extracted.txt",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/audits/revision-2026-10-08/wildlife-scientific.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/scripts/accept_occlusion_review.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/scripts/build_occlusion_accepted_delivery.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/scripts/evaluate_occlusion_accepted.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/scripts/occlusion_accepted_review.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tests/test_occlusion_accepted.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/close_audit.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/inspect_materials.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-1.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-2.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-3.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-4.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-5.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-6.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-7.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-8.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/flood-9.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-1.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-2.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-3.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-4.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-5.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-6.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-7.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-8.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/mri-9.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-01.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-02.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-03.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-04.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-05.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-06.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-07.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-08.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-09.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/rendered/wildlife-10.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/verify_scientific.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/exam-review-2026-10-08/verify_structure.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/occlusion-accepted-delivery/notebook_template.ipynb",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/occlusion-import-2026-10-08/audit.json",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/occlusion-import-2026-10-08/audit.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/occlusion-import-2026-10-08/consolidate.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/occlusion-import-2026-10-08/record_status.py",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/pdfs/occlusion-582-20261008/page-1.png",
+      "matches_before": true
+    },
+    {
+      "path": "parcial/tmp/pdfs/occlusion-582-20261008/page-2.png",
+      "matches_before": true
+    }
+  ]
+}
