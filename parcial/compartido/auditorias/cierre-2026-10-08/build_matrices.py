@@ -31,7 +31,7 @@ OR = "occlusion-scientific.json; " + OCC + "accepted_evaluation/6b2983c33abccbc1
 
 def scientific_rows():
     add(1, 1, "Doce etiquetas coincidentes con el esquema original",
-        MR + "; " + MRI + "manifest.json; src/neural_exam/mri/labels.py: LABELS",
+        MR + "; " + MRI + "manifest.json; compartido/src/neural_exam/mri/labels.py: LABELS",
         "El examen presenta nombres provisionales; se cotejaron las doce columnas originales.")
     add(1, 1, "Extracción multilingüe, negación, incertidumbre y abstención",
         MR + "; 600 reportes reextraídos; lexicón de 13 idiomas en labels.py",
@@ -45,13 +45,13 @@ def scientific_rows():
     add(1, 2, "CNN propia entrenada desde cero",
         MR + "; " + MRI + "scratch_bce_weighted/history.csv, complete.json y best.pt: 48 épocas")
     add(1, 2, "Backbone ImageNet con ajuste y doce salidas independientes",
-        MR + "; src/neural_exam/mri/model.py; resnet50_bce_weighted: 12 épocas",
+        MR + "; compartido/src/neural_exam/mri/model.py; resnet50_bce_weighted: 12 épocas",
         "Los presupuestos y parada temprana difieren entre arquitecturas.")
     add(1, 2, "Configuración, historiales y checkpoints de ambas arquitecturas",
         MR + "; ocho variantes con execution.json, history.csv, complete.json y best.pt",
         "run.json histórico conserva running; los recibos de finalización y checkpoints demuestran cierre.")
     add(1, 2, "Separación de estudios y selección del modelo",
-        "structure.json; " + MRI + "manifest.json: 434 entrenamiento, 108 validación débil, 58 expertos",
+        "compartido/auditorias/revision-2026-10-08/structure.json; " + MRI + "manifest.json: 434 entrenamiento, 108 validación débil, 58 expertos",
         "Separación comprobada por estudio; no existe identificador global fiable para demostrar separación por paciente.")
     add(1, 3, "AUC macro oficial sobre las doce etiquetas",
         MR + "; 464 predicciones expertas en ocho variantes; incluye Synovitis; AUC baseline 0.618907985")
@@ -128,7 +128,7 @@ def scientific_rows():
     add(3, 1, "Resolución y estrategia de aumentos documentadas",
         WR + "; YOLOv8s, imgsz640, AdamW, batch16; args.yaml y configuración V6")
     add(3, 1, "Fotografías vacías tratadas explícitamente como fondo",
-        "structure.json; cohorte de1000 vacías verificadas en metadata/split oficial de entrenamiento",
+        "structure.json; cohorte de 1000 vacías verificadas en metadata/split oficial de entrenamiento",
         "Proceden de ocho cámaras de la colección completa, adicionales al benchmark; la distinción está declarada.")
     add(3, 2, "mAP@0.5 y mAP@0.5:0.95 recalculados",
         WR + "; cis_test=0.687751884/0.435752672; trans_test=0.423057069/0.262485537")
@@ -139,7 +139,7 @@ def scientific_rows():
         "informe_fauna.pdf: clases raras, fox/badger y 14 especies del benchmark frente a colección completa",
         "Los resultados del benchmark no cubren todas las categorías de la colección completa.")
     add(3, 3, "Particiones contrastadas con anotaciones oficiales",
-        "structure.json: cinco particiones ECCV y45305 cajas cotejadas; tres correcciones bird con revisión humana")
+        "structure.json: cinco particiones ECCV y 45 305 cajas cotejadas; tres correcciones bird con revisión humana")
     add(3, 3, "Separación de cámaras, secuencias e imágenes",
         "structure.json: imágenes disjuntas, secuencias train/holdouts disjuntas y cámaras nuevas ausentes de train")
     add(3, 3, "Brecha conocidos/nuevos cuantificada",
@@ -154,13 +154,13 @@ def scientific_rows():
         "398 casos sin nota, permitidos; caso121 conserva medium de Miguel; no se fabricaron explicaciones humanas.")
     add(3, 4, "Grupos de oclusión y soportes",
         OR + "; low340,medium69,high48,ambiguous125; últimos125 fuera de comparación de niveles",
-        "Submuestra independiente aceptada, sin garantía de representatividad completa tras18 exclusiones.")
+        "Submuestra independiente aceptada, sin garantía de representatividad completa tras 18 exclusiones.")
     add(3, 4, "Métricas, intervalos y diferencias de oclusión",
         OR + "; AP50:95 low0.087523278,medium0.027141706,high0.024376059;200 bootstrap por secuencia/nivel",
-        "Todos los18647 frames, incluidos vacíos; otras cajas se ignoran según protocolo. AP de submuestra no comparable directamente con mAP global V6.")
+        "Todos los 18647 frames, incluidos vacíos; otras cajas se ignoran según protocolo. AP de submuestra no comparable directamente con mAP global V6.")
     add(3, 4, "Resultados incorporados al informe y notebook finales",
         "pregunta_3_fauna/entregable/informe_fauna.pdf,03_wildlife.ipynb,anexo_occlusion.pdf y04_occlusion_582.ipynb",
-        "El anexo no reemplaza la discusión requerida dentro de las6–10 páginas.",
+        "El anexo no reemplaza la discusión requerida dentro de las 6–10 páginas.",
         "Verificación final del documento integrado.", state="no verificado")
     add(3, 5, "Cámara de demostración ausente del entrenamiento",
         WR + "; camera7 pertenece a cámaras trans y no al entrenamiento")
@@ -178,7 +178,7 @@ def scientific_rows():
 def common_rows(final):
     for q in (1, 2, 3):
         for name, flag in (
-            ("Informe NeurIPS de6–10 páginas", "report_format"),
+            ("Informe NeurIPS de 6–10 páginas", "report_format"),
             ("Cinco autores y al menos cinco referencias", "authors_references"),
             ("Motivación, antecedentes, metodología, experimentos, resultados y discusión", "report_content"),
             ("ODT editable y PDF exportado desde él", "odt_edit_export"),
@@ -209,7 +209,7 @@ def common_rows(final):
         ("Acceso del docente al repositorio privado", "El acceso del propietario no demuestra acceso del docente.", "Conservar constancia de acceso docente."),
         ("Aceptación de reglas Kaggle por los cinco integrantes", "No existe constancia individual completa.", "Conservar aceptación y condiciones aplicables al uso académico."),
         ("Envío por la plataforma del curso", "No existe recibo de envío.", "Conservar recibo al entregar."),
-        ("Presentación del30 de octubre de2026", "Fecha futura al cierre técnico del8 de octubre.", "Conservar constancia tras la presentación."),
+        ("Presentación del 30 de octubre de 2026", "Fecha futura al cierre técnico del 8 de octubre.", "Conservar constancia tras la presentación."),
     ):
         add("transversal", "común", name, "No hay constancia comprobada en los archivos revisados.",
             limitation, pending, state="no verificado")
@@ -217,6 +217,7 @@ def common_rows(final):
 
 def markdown(rows, title):
     lines = [f"# {title}", "", "Cada fila corresponde a una comprobación independiente. Los originales científicos permanecen inalterados.", "",
+             "Las rutas de entrega se interpretan desde `parcial/`; los recibos científicos y `validation-final.json`, desde `compartido/auditorias/cierre-2026-10-08/`. `structure.json` corresponde a `compartido/auditorias/revision-2026-10-08/structure.json`.", "",
              "| Pregunta | Entregable | Subrequisito | Evidencia concreta | Estado | Limitación | Pendiente |",
              "|---|---|---|---|---|---|---|"]
     keys = ("pregunta", "entregable", "subrequisito", "evidencia", "estado", "limitacion", "pendiente")
@@ -249,7 +250,7 @@ def main():
         (out / "matriz_revision.md").write_text(markdown(own, f"Revisión de la pregunta {q}"), encoding="utf-8")
         (out / "estado.json").write_text(json.dumps({"pregunta": q, "rows": own,
             "mandatory_deliverables": sum(1 for question, _ in mandatory if question == q)}, ensure_ascii=False, indent=2), encoding="utf-8")
-    (HERE / "matrices_completas.md").write_text(markdown(ROWS, "Matrices completas de los18 entregables"), encoding="utf-8")
+    (HERE / "matrices_completas.md").write_text(markdown(ROWS, "Matrices completas de los 18 entregables"), encoding="utf-8")
     print(json.dumps({"subrequirements": len(ROWS), "mandatory_deliverables": len(mandatory),
                       "states": {s: sum(r["estado"] == s for r in ROWS) for s in sorted(VALID_STATES)}}))
 

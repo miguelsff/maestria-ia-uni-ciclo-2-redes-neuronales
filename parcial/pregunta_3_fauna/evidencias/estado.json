@@ -25,7 +25,7 @@
       "pregunta": 3,
       "entregable": 1,
       "subrequisito": "Fotografías vacías tratadas explícitamente como fondo",
-      "evidencia": "structure.json; cohorte de1000 vacías verificadas en metadata/split oficial de entrenamiento",
+      "evidencia": "structure.json; cohorte de 1000 vacías verificadas en metadata/split oficial de entrenamiento",
       "estado": "cumple",
       "limitacion": "Proceden de ocho cámaras de la colección completa, adicionales al benchmark; la distinción está declarada.",
       "pendiente": "Ninguno técnico.",
@@ -65,7 +65,7 @@
       "pregunta": 3,
       "entregable": 3,
       "subrequisito": "Particiones contrastadas con anotaciones oficiales",
-      "evidencia": "structure.json: cinco particiones ECCV y45305 cajas cotejadas; tres correcciones bird con revisión humana",
+      "evidencia": "structure.json: cinco particiones ECCV y 45 305 cajas cotejadas; tres correcciones bird con revisión humana",
       "estado": "cumple",
       "limitacion": "Ninguna adicional.",
       "pendiente": "Ninguno técnico.",
@@ -127,7 +127,7 @@
       "subrequisito": "Grupos de oclusión y soportes",
       "evidencia": "occlusion-scientific.json; E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600/accepted_evaluation/6b2983c33abccbc1/results.json; low340,medium69,high48,ambiguous125; últimos125 fuera de comparación de niveles",
       "estado": "cumple",
-      "limitacion": "Submuestra independiente aceptada, sin garantía de representatividad completa tras18 exclusiones.",
+      "limitacion": "Submuestra independiente aceptada, sin garantía de representatividad completa tras 18 exclusiones.",
       "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
@@ -137,7 +137,7 @@
       "subrequisito": "Métricas, intervalos y diferencias de oclusión",
       "evidencia": "occlusion-scientific.json; E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600/accepted_evaluation/6b2983c33abccbc1/results.json; AP50:95 low0.087523278,medium0.027141706,high0.024376059;200 bootstrap por secuencia/nivel",
       "estado": "cumple",
-      "limitacion": "Todos los18647 frames, incluidos vacíos; otras cajas se ignoran según protocolo. AP de submuestra no comparable directamente con mAP global V6.",
+      "limitacion": "Todos los 18647 frames, incluidos vacíos; otras cajas se ignoran según protocolo. AP de submuestra no comparable directamente con mAP global V6.",
       "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
@@ -147,7 +147,7 @@
       "subrequisito": "Resultados incorporados al informe y notebook finales",
       "evidencia": "pregunta_3_fauna/entregable/informe_fauna.pdf,03_wildlife.ipynb,anexo_occlusion.pdf y04_occlusion_582.ipynb",
       "estado": "no verificado",
-      "limitacion": "El anexo no reemplaza la discusión requerida dentro de las6–10 páginas.",
+      "limitacion": "El anexo no reemplaza la discusión requerida dentro de las 6–10 páginas.",
       "pendiente": "Verificación final del documento integrado.",
       "obligatorio": true
     },
@@ -204,7 +204,7 @@
     {
       "pregunta": 3,
       "entregable": "común",
-      "subrequisito": "Informe NeurIPS de6–10 páginas",
+      "subrequisito": "Informe NeurIPS de 6–10 páginas",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
       "estado": "no verificado",
       "limitacion": "Ninguna adicional.",

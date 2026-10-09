@@ -1,13 +1,13 @@
 {
   "review_date_peru": "2026-10-08",
-  "updated_at_utc": "2026-10-09T02:05:40.676977+00:00",
+  "updated_at_utc": "2026-10-09T02:33:13.064231+00:00",
   "mandatory_deliverables": 18,
   "rows": [
     {
       "pregunta": 1,
       "entregable": 1,
       "subrequisito": "Doce etiquetas coincidentes con el esquema original",
-      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; E:/Kaggle/exam-output-mri/stratified-v2/mri/manifest.json; src/neural_exam/mri/labels.py: LABELS",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; E:/Kaggle/exam-output-mri/stratified-v2/mri/manifest.json; compartido/src/neural_exam/mri/labels.py: LABELS",
       "estado": "cumple",
       "limitacion": "El examen presenta nombres provisionales; se cotejaron las doce columnas originales.",
       "pendiente": "Ninguno técnico.",
@@ -57,7 +57,7 @@
       "pregunta": 1,
       "entregable": 2,
       "subrequisito": "Backbone ImageNet con ajuste y doce salidas independientes",
-      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; src/neural_exam/mri/model.py; resnet50_bce_weighted: 12 épocas",
+      "evidencia": "mri-scientific.json; pregunta_1_mri/entregable/informe_mri.pdf; compartido/src/neural_exam/mri/model.py; resnet50_bce_weighted: 12 épocas",
       "estado": "cumple",
       "limitacion": "Los presupuestos y parada temprana difieren entre arquitecturas.",
       "pendiente": "Ninguno técnico.",
@@ -77,7 +77,7 @@
       "pregunta": 1,
       "entregable": 2,
       "subrequisito": "Separación de estudios y selección del modelo",
-      "evidencia": "structure.json; E:/Kaggle/exam-output-mri/stratified-v2/mri/manifest.json: 434 entrenamiento, 108 validación débil, 58 expertos",
+      "evidencia": "compartido/auditorias/revision-2026-10-08/structure.json; E:/Kaggle/exam-output-mri/stratified-v2/mri/manifest.json: 434 entrenamiento, 108 validación débil, 58 expertos",
       "estado": "cumple",
       "limitacion": "Separación comprobada por estudio; no existe identificador global fiable para demostrar separación por paciente.",
       "pendiente": "Ninguno técnico.",
@@ -377,7 +377,7 @@
       "pregunta": 3,
       "entregable": 1,
       "subrequisito": "Fotografías vacías tratadas explícitamente como fondo",
-      "evidencia": "structure.json; cohorte de1000 vacías verificadas en metadata/split oficial de entrenamiento",
+      "evidencia": "structure.json; cohorte de 1000 vacías verificadas en metadata/split oficial de entrenamiento",
       "estado": "cumple",
       "limitacion": "Proceden de ocho cámaras de la colección completa, adicionales al benchmark; la distinción está declarada.",
       "pendiente": "Ninguno técnico.",
@@ -417,7 +417,7 @@
       "pregunta": 3,
       "entregable": 3,
       "subrequisito": "Particiones contrastadas con anotaciones oficiales",
-      "evidencia": "structure.json: cinco particiones ECCV y45305 cajas cotejadas; tres correcciones bird con revisión humana",
+      "evidencia": "structure.json: cinco particiones ECCV y 45 305 cajas cotejadas; tres correcciones bird con revisión humana",
       "estado": "cumple",
       "limitacion": "Ninguna adicional.",
       "pendiente": "Ninguno técnico.",
@@ -479,7 +479,7 @@
       "subrequisito": "Grupos de oclusión y soportes",
       "evidencia": "occlusion-scientific.json; E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600/accepted_evaluation/6b2983c33abccbc1/results.json; low340,medium69,high48,ambiguous125; últimos125 fuera de comparación de niveles",
       "estado": "cumple",
-      "limitacion": "Submuestra independiente aceptada, sin garantía de representatividad completa tras18 exclusiones.",
+      "limitacion": "Submuestra independiente aceptada, sin garantía de representatividad completa tras 18 exclusiones.",
       "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
@@ -489,7 +489,7 @@
       "subrequisito": "Métricas, intervalos y diferencias de oclusión",
       "evidencia": "occlusion-scientific.json; E:/Kaggle/exam-output-wildlife-v6-occlusion-sample-600/accepted_evaluation/6b2983c33abccbc1/results.json; AP50:95 low0.087523278,medium0.027141706,high0.024376059;200 bootstrap por secuencia/nivel",
       "estado": "cumple",
-      "limitacion": "Todos los18647 frames, incluidos vacíos; otras cajas se ignoran según protocolo. AP de submuestra no comparable directamente con mAP global V6.",
+      "limitacion": "Todos los 18647 frames, incluidos vacíos; otras cajas se ignoran según protocolo. AP de submuestra no comparable directamente con mAP global V6.",
       "pendiente": "Ninguno técnico.",
       "obligatorio": true
     },
@@ -499,7 +499,7 @@
       "subrequisito": "Resultados incorporados al informe y notebook finales",
       "evidencia": "pregunta_3_fauna/entregable/informe_fauna.pdf,03_wildlife.ipynb,anexo_occlusion.pdf y04_occlusion_582.ipynb",
       "estado": "no verificado",
-      "limitacion": "El anexo no reemplaza la discusión requerida dentro de las6–10 páginas.",
+      "limitacion": "El anexo no reemplaza la discusión requerida dentro de las 6–10 páginas.",
       "pendiente": "Verificación final del documento integrado.",
       "obligatorio": true
     },
@@ -556,7 +556,7 @@
     {
       "pregunta": 1,
       "entregable": "común",
-      "subrequisito": "Informe NeurIPS de6–10 páginas",
+      "subrequisito": "Informe NeurIPS de 6–10 páginas",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
       "estado": "no verificado",
       "limitacion": "Ninguna adicional.",
@@ -606,7 +606,7 @@
     {
       "pregunta": 2,
       "entregable": "común",
-      "subrequisito": "Informe NeurIPS de6–10 páginas",
+      "subrequisito": "Informe NeurIPS de 6–10 páginas",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
       "estado": "no verificado",
       "limitacion": "Ninguna adicional.",
@@ -656,7 +656,7 @@
     {
       "pregunta": 3,
       "entregable": "común",
-      "subrequisito": "Informe NeurIPS de6–10 páginas",
+      "subrequisito": "Informe NeurIPS de 6–10 páginas",
       "evidencia": "validation-final.json; entregable de la pregunta correspondiente",
       "estado": "no verificado",
       "limitacion": "Ninguna adicional.",
@@ -816,10 +816,10 @@
     {
       "pregunta": "transversal",
       "entregable": "común",
-      "subrequisito": "Presentación del30 de octubre de2026",
+      "subrequisito": "Presentación del 30 de octubre de 2026",
       "evidencia": "No hay constancia comprobada en los archivos revisados.",
       "estado": "no verificado",
-      "limitacion": "Fecha futura al cierre técnico del8 de octubre.",
+      "limitacion": "Fecha futura al cierre técnico del 8 de octubre.",
       "pendiente": "Conservar constancia tras la presentación.",
       "obligatorio": true
     }
