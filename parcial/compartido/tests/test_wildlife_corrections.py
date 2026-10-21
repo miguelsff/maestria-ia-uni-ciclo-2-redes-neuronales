@@ -248,7 +248,7 @@ def test_scientific_gate_respects_the_configured_note_policy(tmp_path, require_n
     project = Path(__file__).resolve().parents[1]
     config = tmp_path / "config.toml"
     config.write_text(
-        (project / "configs/wildlife_v4.toml")
+        (project / "configs/wildlife_v6.toml")
         .read_text()
         .replace("require_label_evidence = false", f"require_label_evidence = {str(require_notes).lower()}")
     )

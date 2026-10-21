@@ -142,6 +142,7 @@ def test_scientific_plan_preserves_runner_bytes_and_redirects_output(tmp_path, t
     assert environment["MRI_OUTPUT_DIR"] == str(output.resolve())
     assert environment["FLOOD_OUTPUT_DIR"] == str(output.resolve())
     assert environment["CCT_IMAGES_HOST_DIR"] == "explicit-dataset"
+    assert environment["CCT_BACKGROUND_HOST_DIR"] == "original-backgrounds"
     assert not output.exists()
     assert str(Path(plan["workspace"]) / f"scripts/run_{task}.ps1") in plan["commands"][0]
     assert plan["fresh_training_reproduction_verified"] is False

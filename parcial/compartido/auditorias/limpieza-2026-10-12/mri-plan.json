@@ -1,0 +1,17 @@
+{
+  "task": "mri",
+  "workspace": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\mri-sptkkqjw\\workspace",
+  "derived": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\mri-sptkkqjw\\derived",
+  "commands": [
+    [
+      "C:\\Users\\USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+      "-NoProfile",
+      "-File",
+      "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\mri-sptkkqjw\\workspace\\scripts\\run_mri.ps1"
+    ]
+  ],
+  "frozen_sources_verified": 44,
+  "scientific_runner_executed": false,
+  "fresh_training_reproduction_verified": false,
+  "status": "plan_only"
+}

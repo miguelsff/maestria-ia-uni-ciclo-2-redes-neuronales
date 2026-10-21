@@ -1,0 +1,42 @@
+ Container neural-exam-closure-verify-run-4db67f92b90c Creating 
+ Container neural-exam-closure-verify-run-4db67f92b90c Created 
+{
+  "status": "passed",
+  "frozen_sources_verified": 44,
+  "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+  "review_status": {
+    "status": "accepted_with_documented_exclusions_and_note_waiver",
+    "original_sample": 600,
+    "accepted": 582,
+    "excluded": 18,
+    "counts": {
+      "low": 340,
+      "ambiguous": 125,
+      "medium": 69,
+      "high": 48
+    },
+    "accepted_cases_without_notes": 398,
+    "minimum_support": 30,
+    "missing_support": {
+      "low": 0,
+      "medium": 0,
+      "high": 0
+    }
+  },
+  "results_sha256": "b5ede4e0f8d46aef5b579f64c3b7f7c476b4aeb93eafaeffaafcdd4e0da124f9",
+  "portable": {
+    "signature": "6b2983c33abccbc18e293cc3a10ca30a710669c2ba8055a76bb462b3348a13a9",
+    "executed_code_cells": 4,
+    "notebook_errors": 0
+  },
+  "replicates_per_level": {
+    "low": 200,
+    "medium": 200,
+    "high": 200
+  },
+  "runtime_versions_checked": true,
+  "bootstrap_recomputed": false,
+  "trained_or_ran_inference": false,
+  "full_fresh_scientific_reproduction": "not_verified"
+}
+{"receipt": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-0356cnv4\\derived\\command_receipt.json", "executed": true, "task": "closure"}

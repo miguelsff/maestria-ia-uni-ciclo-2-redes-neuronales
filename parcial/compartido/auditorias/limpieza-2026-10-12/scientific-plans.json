@@ -1,0 +1,23 @@
+[
+  {
+    "task": "mri",
+    "compose_config": "passed",
+    "output_created": false,
+    "frozen_sources": 44,
+    "private_job": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\mri-sptkkqjw"
+  },
+  {
+    "task": "flood",
+    "compose_config": "passed",
+    "output_created": false,
+    "frozen_sources": 44,
+    "private_job": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\flood-ycj8dl5k"
+  },
+  {
+    "task": "wildlife",
+    "compose_config": "passed",
+    "output_created": false,
+    "frozen_sources": 44,
+    "private_job": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\wildlife-xmfdeny6"
+  }
+]

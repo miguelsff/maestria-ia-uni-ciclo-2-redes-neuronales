@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "parent_import_hashes_identical": 11,
+  "gallery_html_bytes": 27180,
+  "occlusion_html_bytes": 7372105,
+  "served_images": [
+    {
+      "url": "http://127.0.0.1:8901/dataset/images/trans_test/d9ec08f48a6993e5d6cf2099.jpg",
+      "bytes": 91058,
+      "dimensions": [
+        1024,
+        747
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:8901/dataset/images/train/fb01860b03a57f6ffddaa2db.jpg",
+      "bytes": 170124,
+      "dimensions": [
+        2048,
+        1494
+      ],
+      "type": "added_background",
+      "pixels_unchanged": true
+    }
+  ],
+  "background_mount": {
+    "bytes": 170125,
+    "sha256": "83b778307a055c8a9dd4a8eacdc147ccb0c85e2a6d6c8f7f02977c3d9d6517a9"
+  },
+  "scientific_training_or_inference": false
+}

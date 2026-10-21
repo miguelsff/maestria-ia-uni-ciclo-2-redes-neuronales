@@ -1,0 +1,64 @@
+{
+  "task": "closure",
+  "workspace": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-jep2ap_8\\workspace",
+  "derived": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-jep2ap_8\\derived",
+  "commands": [
+    [
+      "docker",
+      "compose",
+      "-f",
+      "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-jep2ap_8\\workspace\\compose.closure.yaml",
+      "config",
+      "--quiet"
+    ],
+    [
+      "docker",
+      "compose",
+      "-f",
+      "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-jep2ap_8\\workspace\\compose.closure.yaml",
+      "run",
+      "--rm",
+      "verify"
+    ]
+  ],
+  "frozen_sources_verified": 44,
+  "scientific_runner_executed": false,
+  "fresh_training_reproduction_verified": false,
+  "commands_executed": [
+    {
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-jep2ap_8\\workspace\\compose.closure.yaml",
+        "config",
+        "--quiet"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-jep2ap_8\\workspace\\compose.closure.yaml",
+        "run",
+        "--rm",
+        "verify"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "docker",
+        "compose",
+        "-f",
+        "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\closure-jep2ap_8\\workspace\\compose.closure.yaml",
+        "run",
+        "--rm",
+        "tests"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

@@ -16,8 +16,8 @@ The 18 exclusions are human nonresponse. Descriptive proportions and retained de
 
 ## Delivery and verification
 
-The separate `build_occlusion_accepted_delivery.py` script waits for completed matching results through its input checks. Its `all` action prepares a portable evidence folder, executes the four notebook code cells in an isolated container, and generates a two-page PDF annex and numeric metrics CSV. A failed notebook prevents PDF publication. The annex is visually inspected after rendering; editorial approval remains pending.
+The separate `build_occlusion_accepted_delivery.py` script waits for completed matching results through its input checks. Its `all` action prepares a portable evidence folder, executes the four notebook code cells in an isolated container, and generates a two-page PDF annex and numeric metrics CSV. A failed notebook prevents PDF publication. The [current delivery](../entregable/LEEME.md) contains the completed notebook, metrics, and native ODT/PDF annex; final acceptance evidence is recorded in [the requirement matrix](../evidencias/matriz_revision.md).
 
-The delivery supplements the original V6 notebook and ten-page PDF without changing them. Integrating the annex into the final report still requires editorial review within the assignment's page limit. Questions 1 and 2 are outside this change.
+The delivery supplements the original V6 notebook and ten-page report without changing the frozen scientific originals. The final principal report and annex are preserved separately. Questions 1 and 2 are outside this workflow.
 
 The accepted workflow has separate files and a backed-up old canonical review. It can be reversed without changing scientific V6 artifacts. Do not replace current human reviews with a historical backup unless the user asks to undo the accepted decision.

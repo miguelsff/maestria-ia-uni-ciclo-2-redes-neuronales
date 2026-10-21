@@ -1,0 +1,20 @@
+{
+  "parent": "/parent",
+  "output": "/outputs",
+  "parent_file_sha256": {
+    "wildlife/manifest.json": "63420c9c67e64ba2ea7bae375ebd2934ef050bb48a4b67f85305b35f17eaecd3",
+    "wildlife/label_review.csv": "6575055088727b483c1f36197d9b83a294194043087571bff64c19149b8fc447",
+    "wildlife/label_review_sample.json": "7c5b7f0b326dd724937234d0e302f8c3dfc1b21c4a760c721ef2c51dbbf8d8b4",
+    "wildlife/occlusion_review.csv": "06ef8020834c8c3f86258c80f3a379cb9158ddd4c3b26114553fbe723196a888",
+    "cache/wildlife-integrity.json": "7c972bdae121ce4ca7d5e9272dd4783484c4a4050164304e8653e1c3bf20ae20",
+    "cache/weights/yolov8s.pt": "1f47a78bf100391c2a140b7ac73a1caae18c32779be7d310658112f7ac9aa78a",
+    "cache/weights/yolo26n.pt": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "report-assets/neurips_2026.sty": "c3fc2894e83d2517ca18b66741d6c595986d97957dc08ec08bb2125a7ec4555a",
+    "receipts/human-label-confirmation.json": "a9110244ded1e4e5fa4e149fb24efdfb8bfbd2c3f724d4cd7d0ddaf427d58fed",
+    "receipts/architecture-review.json": "eedb7642d820cf38f09bfa88e9f90483b5b2001740ab12c8c70bd4be881d519c",
+    "inputs/user-reference/ave.png": "063e0844f10f69582fa8aae89ec49c6a3a53e3e0a033e54850f1ed70f7b501d5"
+  },
+  "scientific_training_started": false,
+  "human_review_modified": false,
+  "backgrounds": "reuse the verified parent cohort as a read-only input"
+}

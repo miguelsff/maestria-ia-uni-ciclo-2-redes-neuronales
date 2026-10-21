@@ -1,0 +1,21 @@
+{
+  "task": "wildlife",
+  "workspace": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\wildlife-xmfdeny6\\workspace",
+  "derived": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\wildlife-xmfdeny6\\derived",
+  "commands": [
+    [
+      "C:\\Users\\USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+      "-NoProfile",
+      "-File",
+      "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\wildlife-xmfdeny6\\workspace\\scripts\\run_wildlife.ps1",
+      "-Variant",
+      "v6",
+      "-EnvironmentFile",
+      "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\wildlife-xmfdeny6\\workspace\\.env.wildlife-v6"
+    ]
+  ],
+  "frozen_sources_verified": 44,
+  "scientific_runner_executed": false,
+  "fresh_training_reproduction_verified": false,
+  "status": "plan_only"
+}

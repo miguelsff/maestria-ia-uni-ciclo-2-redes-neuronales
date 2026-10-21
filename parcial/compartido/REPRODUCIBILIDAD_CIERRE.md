@@ -2,6 +2,8 @@
 
 Los originales científicos permanecen en `E:/Kaggle`. Los adaptadores de esta etapa verifican sus hashes, conservan la firma de oclusión y reconstruyen las rutas internas históricas en una copia privada del worktree. No ejecutan entrenamiento, inferencia ni los 200 bootstraps científicos ya terminados.
 
+Después de la [limpieza del 12 de octubre de 2026](auditorias/limpieza-2026-10-12/README.md), los fondos compartidos de Fauna están en `E:/Kaggle/exam-input-wildlife/backgrounds` y su padre mínimo V5 en `E:/Kaggle/exam-input-wildlife/parent-v5`. Los resultados V6 y la muestra de oclusión aceptada conservan sus ubicaciones y bytes. Las capas Compose v2–v6 siguen siendo dependencias congeladas del runner V6. Las referencias históricas de esta guía y sus recibos se conservan como evidencia; la [guía vigente de Fauna](../pregunta_3_fauna/docs/WILDLIFE_V6_RUN.md) describe los insumos actuales.
+
 ## Ejecución mínima
 
 Desde la raíz del repositorio, con Python 3.12 y Docker Desktop:
@@ -101,6 +103,6 @@ Fauna V6:
 & 'C:/Users/USER/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' -X utf8 parcial/compartido/scripts/run_exam.py wildlife --scientific-output E:/Kaggle/reproduccion-wildlife-nueva --execute-science
 ```
 
-El launcher invoca respectivamente `scripts/run_mri.ps1`, `run_flood.ps1` y `run_wildlife.ps1 -Variant v6`, desde el runtime. Fauna toma el padre V5 indicado por su ejemplo de entorno y conserva las puertas científicas del runner original. No inventa revisiones ni cambia decisiones aceptadas. Los runners originales administran cachés/volúmenes Docker y pueden descargar insumos; esta ruta científica tiene efectos adicionales y no comparte la garantía de solo lectura del modo `closure`. Las salidas voluminosas de estos ejemplos permanecen en E:.
+El launcher invoca respectivamente `scripts/run_mri.ps1`, `run_flood.ps1` y `run_wildlife.ps1 -Variant v6`, desde el runtime. Fauna toma el padre mínimo V5 y reutiliza los fondos verificados indicados por su ejemplo de entorno; ambas rutas pueden sobreescribirse mediante `PARENT_OUTPUT_HOST_DIR` y `CCT_BACKGROUND_HOST_DIR`. Conserva las puertas científicas del runner original. No inventa revisiones ni cambia decisiones aceptadas. Los runners originales administran cachés/volúmenes Docker y pueden descargar insumos; esta ruta científica tiene efectos adicionales y no comparte la garantía de solo lectura del modo `closure`. Las salidas voluminosas de estos ejemplos permanecen en E:.
 
 Estos comandos científicos **no se ejecutaron en C1 ni C2/F**. Se verificaron únicamente los planes, sus recursos y la preservación de los runners. La reproducción desde entrenamiento sigue **no verificada**. Sin `--execute-science`, o añadiendo `--plan-only`, el launcher prepara y registra el plan sin ejecutar el runner. El directorio científico debe no existir: se rechaza una salida ya existente para impedir reutilizar los originales. El token local de Jupyter se genera en el entorno privado del runtime; no aparece en los recibos ni en Git. La salida editorial final ODT/PDF sigue siendo un proceso separado de los artefactos históricos de los runners.

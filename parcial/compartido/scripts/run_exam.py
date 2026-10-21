@@ -54,13 +54,12 @@ def prepare_run(exam: Path, parent: Path, occlusion: Path, task: str, image: str
         public = ".env.wildlife-v6.example" if task == "wildlife" else ".env.example"
         values = example_values(workspace / public)
         for key in ("KAGGLE_ROOT", "RSNA_HOST_DIR", "SEN1_HOST_DIR", "CCT_IMAGES_HOST_DIR",
-                    "CCT_ANNOTATIONS_HOST_DIR", "PARENT_OUTPUT_HOST_DIR"):
+                    "CCT_ANNOTATIONS_HOST_DIR", "CCT_BACKGROUND_HOST_DIR", "PARENT_OUTPUT_HOST_DIR"):
             if key in os.environ:
                 values[key] = os.environ[key]
         output = str(scientific_output.resolve())
         values.update(OUTPUT_HOST_DIR=output, OUTPUT_DIR=output, MRI_OUTPUT_DIR=output, FLOOD_OUTPUT_DIR=output,
-                      MRI_PYTHON=sys.executable, CCT_BACKGROUND_HOST_DIR=str(scientific_output.resolve() / "inputs/backgrounds"),
-                      JUPYTER_TOKEN=secrets.token_urlsafe(32))
+                      MRI_PYTHON=sys.executable, JUPYTER_TOKEN=secrets.token_urlsafe(32))
         environment.update(values)
         envfile = workspace / (".env.wildlife-v6" if task == "wildlife" else ".env")
         envfile.write_text("\n".join(f"{key}={value}" for key, value in sorted(values.items())) + "\n", encoding="utf-8")

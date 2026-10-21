@@ -1,9 +1,0 @@
-{
-  "status": "assets_generated",
-  "experiment_count": 6,
-  "missing_figures": [],
-  "qualitative_examples_reviewed": 3,
-  "editorial_review": "pending",
-  "source": "/outputs/flood",
-  "test_selected_baseline": false
-}

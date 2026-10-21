@@ -1,0 +1,17 @@
+{
+  "task": "flood",
+  "workspace": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\flood-ycj8dl5k\\workspace",
+  "derived": "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\flood-ycj8dl5k\\derived",
+  "commands": [
+    [
+      "C:\\Users\\USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+      "-NoProfile",
+      "-File",
+      "D:\\trabajos-miguel\\MAESTRIA-UNI-IA\\maestria-ia-uni-ciclo-2-redes-neuronales\\parcial\\.runtime\\flood-ycj8dl5k\\workspace\\scripts\\run_flood.ps1"
+    ]
+  ],
+  "frozen_sources_verified": 44,
+  "scientific_runner_executed": false,
+  "fresh_training_reproduction_verified": false,
+  "status": "plan_only"
+}

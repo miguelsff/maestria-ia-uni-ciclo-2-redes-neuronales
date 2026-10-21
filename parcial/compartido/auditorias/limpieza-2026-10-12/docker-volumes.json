@@ -1,0 +1,62 @@
+[
+  {
+    "name": "neural-exam-wildlife_wildlife_dataset",
+    "containers_before": [],
+    "size_before": "neural-exam-wildlife_wildlife_dataset                              0         8.315MB",
+    "removed": true
+  },
+  {
+    "name": "neural-exam-wildlife_wildlife_smoke_dataset",
+    "containers_before": [],
+    "size_before": "neural-exam-wildlife_wildlife_smoke_dataset                        0         33.82kB",
+    "removed": true
+  },
+  {
+    "name": "neural-exam-wildlife-v2_wildlife_dataset",
+    "containers_before": [],
+    "size_before": "neural-exam-wildlife-v2_wildlife_dataset                           0         8.456MB",
+    "removed": true
+  },
+  {
+    "name": "neural-exam-wildlife-v2_wildlife_smoke_dataset",
+    "containers_before": [],
+    "size_before": "neural-exam-wildlife-v2_wildlife_smoke_dataset                     0         41.3kB",
+    "removed": true
+  },
+  {
+    "name": "neural-exam-wildlife-v3_wildlife_dataset",
+    "containers_before": [],
+    "size_before": "neural-exam-wildlife-v3_wildlife_dataset                           0         8.456MB",
+    "removed": true
+  },
+  {
+    "name": "neural-exam-wildlife-v3_wildlife_smoke_dataset",
+    "containers_before": [],
+    "size_before": "neural-exam-wildlife-v3_wildlife_smoke_dataset                     0         0B",
+    "removed": true
+  },
+  {
+    "name": "neural-exam-wildlife-v4_wildlife_dataset",
+    "containers_before": [],
+    "size_before": "neural-exam-wildlife-v4_wildlife_dataset                           0         8.456MB",
+    "removed": true
+  },
+  {
+    "name": "neural-exam-wildlife-v4_wildlife_smoke_dataset",
+    "containers_before": [],
+    "size_before": "neural-exam-wildlife-v4_wildlife_smoke_dataset                     0         0B",
+    "removed": true
+  },
+  {
+    "name": "neural-exam-wildlife-v5_wildlife_dataset",
+    "containers_before": [],
+    "size_before": "neural-exam-wildlife-v5_wildlife_dataset                           0         8.456MB",
+    "removed": true
+  },
+  {
+    "name": "neural-exam-wildlife-v5_wildlife_smoke_dataset",
+    "containers_before": [],
+    "size_before": "neural-exam-wildlife-v5_wildlife_smoke_dataset                     0         0B",
+    "removed": true
+  }
+]
