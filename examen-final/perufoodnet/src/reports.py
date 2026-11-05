@@ -58,10 +58,11 @@ def create_reports(records: list[dict], destination: Path, output: Path, parent_
                      "modelo_uri": record["model_uri"]})
         shutil.copy2(output / "runs" / record["run_id"] / "history.csv", histories / f"{record['run_id']}.csv")
     frame = pd.DataFrame(rows)
-    frame.to_csv(destination / "corridas.csv", index=False)
+    regime_names = {"head": "capa final", "full": "red completa"}
+    frame.replace({"régimen": regime_names}).to_csv(destination / "corridas.csv", index=False)
     initial = frame[frame["semilla"] == 42].copy()
-    initial.sort_values(["modelo", "régimen", "fotos_por_clase", "tasa"]).to_csv(
-        destination / "comparacion_misma_tasa.csv", index=False)
+    initial.sort_values(["modelo", "régimen", "fotos_por_clase", "tasa"]).replace(
+        {"régimen": regime_names}).to_csv(destination / "comparacion_misma_tasa.csv", index=False)
     best_rates = (initial.sort_values(["f1_validación", "tasa"], ascending=[False, True])
                   .drop_duplicates(["modelo", "régimen", "fotos_por_clase"]))
     selected = frame.merge(best_rates[["modelo", "régimen", "fotos_por_clase", "tasa"]],
@@ -71,9 +72,9 @@ def create_reports(records: list[dict], destination: Path, output: Path, parent_
                     semillas=("semilla", "count")))
     if len(grouped) != 8 or not (grouped["semillas"] == 3).all() or len(frame) != 32:
         raise ValueError("Each of the eight chosen configurations must have three seeds")
-    grouped.to_csv(destination / "resumen_validacion.csv", index=False)
+    grouped.replace({"régimen": regime_names}).to_csv(destination / "resumen_validacion.csv", index=False)
     figure, axis = plt.subplots(figsize=(9, 5))
-    labels = [f"{r.modelo} · {r.régimen} · {r.fotos_por_clase}" for r in grouped.itertuples(index=False)]
+    labels = [f"{r.modelo} · {regime_names[r.régimen]} · {r.fotos_por_clase}" for r in grouped.itertuples(index=False)]
     axis.errorbar(grouped["media_f1"], range(len(grouped)), xerr=grouped["desviación_muestral"],
                   fmt="o", capsize=3, color="#285f91")
     axis.set_yticks(range(len(grouped)), labels)

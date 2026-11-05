@@ -70,7 +70,7 @@ La puntuación es softmax sin calibración; inferior a 0,50 se marca incierta. N
 
 Abra `http://localhost:4567/` y seleccione `PeruFoodNet-Grupo3-20261105-R03`. Cada corrida muestra configuración, métricas por época, entradas de entrenamiento y validación, checkpoint, historial, curvas y modelo nativo. El URI del modelo y el resultado de comparar su salida recuperada con la local se guardan en `model_uri.json`. Las salidas locales se guardan fuera del repositorio en la ruta `output` de la configuración. Consulte la [guía oficial de seguimiento](https://mlflow.org/docs/latest/ml/tracking/) y la [API de PyTorch](https://mlflow.org/docs/latest/api_reference/python_api/mlflow.pytorch.html).
 
-Las comprobaciones cortas usan una época, 40 fotos por clase, tasa 0,0001 y semilla 42. Para ejecutar cada combinación, cambie los argumentos del comando anterior. Un comando individual crea una campaña y su corrida hija; `--parent-id` permite agrupar varias bajo una campaña existente. La matriz queda pendiente de habilitación. Las evidencias de las pruebas R03 están en `E:/MIA203-Grupo3/reinicio-20261105-r03/verified_index.json`; las métricas de una época sirven para comprobar el flujo, no para seleccionar un ganador.
+Las comprobaciones cortas usan una época, 40 fotos por clase, tasa 0,0001 y semilla 42. Para ejecutar cada combinación, cambie los argumentos del comando anterior. Un comando individual crea una campaña y su corrida hija; `--parent-id` permite agrupar varias bajo una campaña existente. La matriz final y sus resultados de validación están documentados más abajo. Las evidencias de las pruebas R03 están en `E:/MIA203-Grupo3/reinicio-20261105-r03/verified_index.json`; las métricas de una época sirven para comprobar el flujo, no para seleccionar un ganador.
 
 El notebook acepta `PROJECT_OVERRIDE` para señalar el proyecto en Colab. Si los datos locales faltan, puede usar la URL oficial o un enlace público de Google Drive; estas descargas y Colab están preparados en código, pero no se probaron en esta etapa.
 
@@ -108,3 +108,11 @@ Las curvas usan tres paneles separados para pérdida, exactitud y F1 macro, con 
 ```
 
 Añada `--run-id ID` para actualizar el artefacto de esa corrida en MLflow; la etiqueta `curves_revision` identifica la revisión.
+
+## Resultados de validación
+
+La selección se calculó a partir de `results/matrix_index.json` y se conserva en `results/winner.json`. La configuración seleccionada es yolo26m, red completa, 40 fotos por clase y tasa 0.0001; obtuvo F1 macro medio 0.8903 y desviación muestral 0.0076 en tres semillas. Estas cifras se generaron desde el archivo de selección y corresponden a validación.
+
+La tabla `results/resumen_validacion.csv` contiene las ocho medias con sus tasas elegidas; `results/comparacion_misma_tasa.csv` permite comparar regímenes a igual tasa con semilla 42. `results/corridas.csv` y `results/histories/` conservan los identificadores y las curvas numéricas por época. `results/comparacion_validacion.png` muestra media y desviación. El checkpoint oficial de semilla 42 está en la ruta indicada por `winner.json`, fuera de Git; el URI del modelo nativo y el orden de clases también están en ese archivo.
+
+La campaña se detiene antes de evaluar el conjunto de prueba. Las métricas deben interpretarse considerando que fotografías de una misma ración podrían aparecer en conjuntos distintos.
