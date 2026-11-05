@@ -1,0 +1,41 @@
+class_name,class_index,train,test,val,subset_10,subset_40,total
+Aguadito,0,70,15,15,10,40,100
+Aji de Gallina,1,70,15,15,10,40,100
+Anticuchos,2,70,15,15,10,40,100
+Arroz Chaufa,3,70,15,15,10,40,100
+Arroz con Mariscos,4,70,15,15,10,40,100
+Arroz con Pollo,5,70,15,15,10,40,100
+Arroz Tapado,6,70,15,15,10,40,100
+Bisteck a lo Pobre,7,70,15,15,10,40,100
+Caldo de Gallina,8,70,15,15,10,40,100
+Carapulcra,9,70,15,15,10,40,100
+Cau Cau,10,70,15,15,10,40,100
+Causa Limeña,11,70,15,15,10,40,100
+Ceviche,12,70,15,15,10,40,100
+Chanfainita,13,70,15,15,10,40,100
+Chicharron de cerdo,14,70,15,15,10,40,100
+Chicharron de Mariscos,15,70,15,15,10,40,100
+Choclo con Queso,16,70,15,15,10,40,100
+Choritos a la Chalaca,17,70,15,15,10,40,100
+Escabeche,18,70,15,15,10,40,100
+Frejoles,19,70,15,15,10,40,100
+Humitas,20,70,15,15,10,40,100
+Lentejitas,21,70,15,15,10,40,100
+Locro,22,70,15,15,10,40,100
+Lomo Saltado,23,70,15,15,10,40,100
+Ocopa,24,70,15,15,10,40,100
+Olluquito,25,70,15,15,10,40,100
+Papa a la Huancaina,26,70,15,15,10,40,100
+Papa Rellena,27,70,15,15,10,40,100
+Patasca,28,70,15,15,10,40,100
+Picante de cuy,29,70,15,15,10,40,100
+Pollo a la Brasa,30,70,15,15,10,40,100
+Pollo al horno con puré,31,70,15,15,10,40,100
+Pulpo al Olivo,32,70,15,15,10,40,100
+Rocoto Relleno,33,70,15,15,10,40,100
+Sopa a la Minuta,34,70,15,15,10,40,100
+Tacu Tacu,35,70,15,15,10,40,100
+Tallarin Saltado,36,70,15,15,10,40,100
+Tallarines Rojos,37,70,15,15,10,40,100
+Tallarines Verdes,38,70,15,15,10,40,100
+Tamales,39,70,15,15,10,40,100

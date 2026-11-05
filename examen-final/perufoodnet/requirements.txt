@@ -1,0 +1,13 @@
+torch==2.11.0
+torchvision==0.26.0
+ultralytics==8.4.202
+mlflow==3.18.0
+pandas==3.1.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pillow==12.3.0
+jupyterlab==4.6.5
+gdown==5.2.0
+numpy==2.5.2
+cloudpickle==3.1.2
+ipykernel==7.4.0

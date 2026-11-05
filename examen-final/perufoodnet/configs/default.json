@@ -1,0 +1,14 @@
+{
+  "dataset": "E:/Dataset PeruFoodNet",
+  "output": "E:/MIA203-Grupo3/reinicio-20261105-r03/matriz-convergencia",
+  "pretrained": "E:/MIA203-archivo/Grupo3-20261105-014928/ejecucion/pretrained",
+  "tracking_uri": "http://localhost:4567/",
+  "experiment": "PeruFoodNet-Grupo3-20261105-R03",
+  "batch_size": 16,
+  "image_size": 224,
+  "epochs": 200,
+  "seed": 42,
+  "cache": true,
+  "patience": 10,
+  "weight_decay": 0.01
+}
