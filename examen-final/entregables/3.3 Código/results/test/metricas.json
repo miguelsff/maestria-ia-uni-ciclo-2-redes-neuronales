@@ -1,0 +1,19 @@
+{
+  "loss": 0.34238597912093005,
+  "accuracy": 0.905,
+  "f1_macro": 0.9043129347351127,
+  "images": 600,
+  "uncertain_count": 50,
+  "evaluation_seconds": 11.033633300001384,
+  "latency_model_ms": 2.872685999973328,
+  "device": "NVIDIA GeForce RTX 5090",
+  "evaluation_time_definition": "Checkpoint loading, data preparation and one complete inference pass; excludes plotting, logging and latency benchmark.",
+  "latency_definition": "Mean forward-only latency of 200 synthetic 224x224 batch-one inputs after 30 warmups on the stated device; excludes loading and preprocessing.",
+  "uncertainty_rule": "Maximum softmax below 0.50; all predictions are included in metrics.",
+  "split_policy": "sequential; correlated views may appear across splits",
+  "selection_commit": "61fe0460c2ff98cdebacc01cec79e9f5118dfbe4",
+  "training_source_commit": "5c213faf3913bc0ae793a6fd23d270babcd63245",
+  "winner_run_id": "d59207e9411549868004183bbf8ee4cd",
+  "model_uri": "models:/m-393ef6ee2c23452197cee6f388941bcf",
+  "mlflow_run_id": "8f50ccb1f784460d953fff8fc94ef3f0"
+}

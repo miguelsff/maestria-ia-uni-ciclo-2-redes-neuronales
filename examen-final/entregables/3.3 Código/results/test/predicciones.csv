@@ -1,0 +1,601 @@
+relative_path,image_number,true_class,true_index,predicted_index,predicted_class,score,cross_entropy,correct,uncertain
+Aguadito/71_Aguadito.jpg,71,Aguadito,0,0,Aguadito,0.9971523284912109,0.002851707860827446,True,False
+Aguadito/72_Aguadito.jpg,72,Aguadito,0,0,Aguadito,0.9993332028388977,0.0006669919239357114,True,False
+Aguadito/73_Aguadito.jpg,73,Aguadito,0,0,Aguadito,0.9979256391525269,0.002076494973152876,True,False
+Aguadito/74_Aguadito.jpg,74,Aguadito,0,0,Aguadito,0.994724690914154,0.005289250984787941,True,False
+Aguadito/75_Aguadito.jpg,75,Aguadito,0,0,Aguadito,0.9962265491485596,0.003780600382015109,True,False
+Aguadito/76_Aguadito.jpg,76,Aguadito,0,0,Aguadito,0.9863536357879639,0.013740358874201775,True,False
+Aguadito/77_Aguadito.jpg,77,Aguadito,0,0,Aguadito,0.9984745383262634,0.0015266203554347157,True,False
+Aguadito/78_Aguadito.jpg,78,Aguadito,0,0,Aguadito,0.9936448335647583,0.006375450175255537,True,False
+Aguadito/79_Aguadito.jpg,79,Aguadito,0,0,Aguadito,0.9943988919258118,0.005616834852844477,True,False
+Aguadito/80_Aguadito.jpg,80,Aguadito,0,0,Aguadito,0.9938259720802307,0.0061931367963552475,True,False
+Aguadito/81_Aguadito.jpg,81,Aguadito,0,0,Aguadito,0.9912893772125244,0.00874877255409956,True,False
+Aguadito/82_Aguadito.jpg,82,Aguadito,0,0,Aguadito,0.7553651332855225,0.28055399656295776,True,False
+Aguadito/83_Aguadito.jpg,83,Aguadito,0,0,Aguadito,0.9646086096763611,0.03603282570838928,True,False
+Aguadito/84_Aguadito.jpg,84,Aguadito,0,0,Aguadito,0.9985851049423218,0.001415918697603047,True,False
+Aguadito/85_Aguadito.jpg,85,Aguadito,0,0,Aguadito,0.37986600399017334,0.9679367542266846,True,True
+Aji de Gallina/71_Aji_de_Gallina.jpg,71,Aji de Gallina,1,1,Aji de Gallina,0.3703552782535553,0.9932924509048462,True,True
+Aji de Gallina/72_Aji_de_Gallina.jpg,72,Aji de Gallina,1,22,Locro,0.3052471876144409,2.360917568206787,False,True
+Aji de Gallina/73_Aji_de_Gallina.jpg,73,Aji de Gallina,1,31,Pollo al horno con puré,0.2630809545516968,1.8080954551696777,False,True
+Aji de Gallina/74_Aji_de_Gallina.jpg,74,Aji de Gallina,1,1,Aji de Gallina,0.7354735136032104,0.30724072456359863,True,False
+Aji de Gallina/75_Aji_de_Gallina.jpg,75,Aji de Gallina,1,1,Aji de Gallina,0.23523381352424622,1.4471752643585205,True,True
+Aji de Gallina/76_Aji_de_Gallina.jpg,76,Aji de Gallina,1,1,Aji de Gallina,0.926262378692627,0.07659775763750076,True,False
+Aji de Gallina/77_Aji_de_Gallina.jpg,77,Aji de Gallina,1,1,Aji de Gallina,0.8221431970596313,0.1958407163619995,True,False
+Aji de Gallina/78_Aji_de_Gallina.jpg,78,Aji de Gallina,1,1,Aji de Gallina,0.9215565919876099,0.08169109374284744,True,False
+Aji de Gallina/79_Aji_de_Gallina.jpg,79,Aji de Gallina,1,1,Aji de Gallina,0.5778063535690308,0.5485165119171143,True,False
+Aji de Gallina/80_Aji_de_Gallina.jpg,80,Aji de Gallina,1,1,Aji de Gallina,0.5263336300849915,0.6418200135231018,True,False
+Aji de Gallina/81_Aji_de_Gallina.jpg,81,Aji de Gallina,1,1,Aji de Gallina,0.7008510828018188,0.3554598391056061,True,False
+Aji de Gallina/82_Aji_de_Gallina.jpg,82,Aji de Gallina,1,1,Aji de Gallina,0.702851414680481,0.352609783411026,True,False
+Aji de Gallina/83_Aji_de_Gallina.jpg,83,Aji de Gallina,1,1,Aji de Gallina,0.8809607028961182,0.12674228847026825,True,False
+Aji de Gallina/84_Aji_de_Gallina.jpg,84,Aji de Gallina,1,1,Aji de Gallina,0.8263387680053711,0.19075043499469757,True,False
+Aji de Gallina/85_Aji_de_Gallina.jpg,85,Aji de Gallina,1,1,Aji de Gallina,0.7855108380317688,0.24142098426818848,True,False
+Anticuchos/71_Anticuchos.jpg,71,Anticuchos,2,2,Anticuchos,0.9715354442596436,0.02887754514813423,True,False
+Anticuchos/72_Anticuchos.jpg,72,Anticuchos,2,2,Anticuchos,0.8865096569061279,0.1204632893204689,True,False
+Anticuchos/73_Anticuchos.jpg,73,Anticuchos,2,2,Anticuchos,0.9661792516708374,0.03440588712692261,True,False
+Anticuchos/74_Anticuchos.jpg,74,Anticuchos,2,2,Anticuchos,0.7926468849182129,0.23237746953964233,True,False
+Anticuchos/75_Anticuchos.jpg,75,Anticuchos,2,35,Tacu Tacu,0.6060035824775696,1.1308356523513794,False,False
+Anticuchos/76_Anticuchos.jpg,76,Anticuchos,2,35,Tacu Tacu,0.578755795955658,1.0215178728103638,False,False
+Anticuchos/77_Anticuchos.jpg,77,Anticuchos,2,35,Tacu Tacu,0.9098907709121704,2.9923548698425293,False,False
+Anticuchos/78_Anticuchos.jpg,78,Anticuchos,2,2,Anticuchos,0.8784356713294983,0.12961262464523315,True,False
+Anticuchos/79_Anticuchos.jpg,79,Anticuchos,2,2,Anticuchos,0.6073029041290283,0.49872761964797974,True,False
+Anticuchos/80_Anticuchos.jpg,80,Anticuchos,2,2,Anticuchos,0.6544919610023499,0.4238959550857544,True,False
+Anticuchos/81_Anticuchos.jpg,81,Anticuchos,2,35,Tacu Tacu,0.832938551902771,2.045466899871826,False,False
+Anticuchos/82_Anticuchos.jpg,82,Anticuchos,2,2,Anticuchos,0.8342567086219788,0.1812141239643097,True,False
+Anticuchos/83_Anticuchos.jpg,83,Anticuchos,2,2,Anticuchos,0.7574594616889954,0.2777853012084961,True,False
+Anticuchos/84_Anticuchos.jpg,84,Anticuchos,2,2,Anticuchos,0.49828287959098816,0.6965873837471008,True,True
+Anticuchos/85_Anticuchos.jpg,85,Anticuchos,2,2,Anticuchos,0.9372991323471069,0.06475279480218887,True,False
+Arroz Chaufa/71_Arroz_Chaufa.jpg,71,Arroz Chaufa,3,3,Arroz Chaufa,0.9567777514457703,0.04418417811393738,True,False
+Arroz Chaufa/72_Arroz_Chaufa.jpg,72,Arroz Chaufa,3,3,Arroz Chaufa,0.9753863215446472,0.024921678006649017,True,False
+Arroz Chaufa/73_Arroz_Chaufa.jpg,73,Arroz Chaufa,3,3,Arroz Chaufa,0.9985139966011047,0.0014871024759486318,True,False
+Arroz Chaufa/74_Arroz_Chaufa.jpg,74,Arroz Chaufa,3,3,Arroz Chaufa,0.9962054491043091,0.003801739541813731,True,False
+Arroz Chaufa/75_Arroz_Chaufa.jpg,75,Arroz Chaufa,3,3,Arroz Chaufa,0.9882498979568481,0.011819686740636826,True,False
+Arroz Chaufa/76_Arroz_Chaufa.jpg,76,Arroz Chaufa,3,3,Arroz Chaufa,0.9975071549415588,0.002495985943824053,True,False
+Arroz Chaufa/77_Arroz_Chaufa.jpg,77,Arroz Chaufa,3,3,Arroz Chaufa,0.9971936345100403,0.002810340141877532,True,False
+Arroz Chaufa/78_Arroz_Chaufa.jpg,78,Arroz Chaufa,3,3,Arroz Chaufa,0.999016523361206,0.0009839460253715515,True,False
+Arroz Chaufa/79_Arroz_Chaufa.jpg,79,Arroz Chaufa,3,13,Chanfainita,0.41881465911865234,2.2172040939331055,False,True
+Arroz Chaufa/80_Arroz_Chaufa.jpg,80,Arroz Chaufa,3,3,Arroz Chaufa,0.9987467527389526,0.0012540103634819388,True,False
+Arroz Chaufa/81_Arroz_Chaufa.jpg,81,Arroz Chaufa,3,3,Arroz Chaufa,0.9467129111289978,0.05475941300392151,True,False
+Arroz Chaufa/82_Arroz_Chaufa.jpg,82,Arroz Chaufa,3,3,Arroz Chaufa,0.9991613626480103,0.0008390005677938461,True,False
+Arroz Chaufa/83_Arroz_Chaufa.jpg,83,Arroz Chaufa,3,3,Arroz Chaufa,0.9380602836608887,0.06394104659557343,True,False
+Arroz Chaufa/84_Arroz_Chaufa.jpg,84,Arroz Chaufa,3,3,Arroz Chaufa,0.9971104860305786,0.0028936679009348154,True,False
+Arroz Chaufa/85_Arroz_Chaufa.jpg,85,Arroz Chaufa,3,3,Arroz Chaufa,0.9952877759933472,0.0047233435325324535,True,False
+Arroz con Mariscos/71_Arroz_Mariscos.jpg,71,Arroz con Mariscos,4,4,Arroz con Mariscos,0.9682075381278992,0.03230883926153183,True,False
+Arroz con Mariscos/72_Arroz_Mariscos.jpg,72,Arroz con Mariscos,4,4,Arroz con Mariscos,0.9815794229507446,0.018592368811368942,True,False
+Arroz con Mariscos/73_Arroz_Mariscos.jpg,73,Arroz con Mariscos,4,4,Arroz con Mariscos,0.980204164981842,0.019994376227259636,True,False
+Arroz con Mariscos/74_Arroz_Mariscos.jpg,74,Arroz con Mariscos,4,4,Arroz con Mariscos,0.9289827346801758,0.07366514950990677,True,False
+Arroz con Mariscos/75_Arroz_Mariscos.jpg,75,Arroz con Mariscos,4,4,Arroz con Mariscos,0.7120514512062073,0.33960506319999695,True,False
+Arroz con Mariscos/76_Arroz_Mariscos.jpg,76,Arroz con Mariscos,4,4,Arroz con Mariscos,0.9183158874511719,0.08521385490894318,True,False
+Arroz con Mariscos/77_Arroz_Mariscos.jpg,77,Arroz con Mariscos,4,4,Arroz con Mariscos,0.5676774978637695,0.5662018656730652,True,False
+Arroz con Mariscos/78_Arroz_Mariscos.jpg,78,Arroz con Mariscos,4,4,Arroz con Mariscos,0.8259642124176025,0.19120386242866516,True,False
+Arroz con Mariscos/79_Arroz_Mariscos.jpg,79,Arroz con Mariscos,4,35,Tacu Tacu,0.6535322070121765,1.2652382850646973,False,False
+Arroz con Mariscos/80_Arroz_Mariscos.jpg,80,Arroz con Mariscos,4,4,Arroz con Mariscos,0.9983078241348267,0.0016936019528657198,True,False
+Arroz con Mariscos/81_Arroz_Mariscos.jpg,81,Arroz con Mariscos,4,4,Arroz con Mariscos,0.8290290832519531,0.1875000298023224,True,False
+Arroz con Mariscos/82_Arroz_Mariscos.jpg,82,Arroz con Mariscos,4,4,Arroz con Mariscos,0.9883027672767639,0.011766199953854084,True,False
+Arroz con Mariscos/83_Arroz_Mariscos.jpg,83,Arroz con Mariscos,4,4,Arroz con Mariscos,0.7496627569198608,0.28813180327415466,True,False
+Arroz con Mariscos/84_Arroz_Mariscos.jpg,84,Arroz con Mariscos,4,35,Tacu Tacu,0.7747946381568909,1.5555651187896729,False,False
+Arroz con Mariscos/85_Arroz_Mariscos.jpg,85,Arroz con Mariscos,4,4,Arroz con Mariscos,0.606173038482666,0.5005897879600525,True,False
+Arroz con Pollo/71_Arroz_con_Pollo.jpg,71,Arroz con Pollo,5,5,Arroz con Pollo,0.9985955357551575,0.0014054430648684502,True,False
+Arroz con Pollo/72_Arroz_con_Pollo.jpg,72,Arroz con Pollo,5,5,Arroz con Pollo,0.9924107789993286,0.007618183735758066,True,False
+Arroz con Pollo/73_Arroz_con_Pollo.jpg,73,Arroz con Pollo,5,5,Arroz con Pollo,0.9990777969360352,0.0009226117981597781,True,False
+Arroz con Pollo/74_Arroz_con_Pollo.jpg,74,Arroz con Pollo,5,5,Arroz con Pollo,0.999764621257782,0.00023541064001619816,True,False
+Arroz con Pollo/75_Arroz_con_Pollo.jpg,75,Arroz con Pollo,5,5,Arroz con Pollo,0.999735414981842,0.0002646096108946949,True,False
+Arroz con Pollo/76_Arroz_con_Pollo.jpg,76,Arroz con Pollo,5,5,Arroz con Pollo,0.9916783571243286,0.008356486447155476,True,False
+Arroz con Pollo/77_Arroz_con_Pollo.jpg,77,Arroz con Pollo,5,5,Arroz con Pollo,0.9801434874534607,0.020056305453181267,True,False
+Arroz con Pollo/78_Arroz_con_Pollo.jpg,78,Arroz con Pollo,5,5,Arroz con Pollo,0.9997411370277405,0.0002588890492916107,True,False
+Arroz con Pollo/79_Arroz_con_Pollo.jpg,79,Arroz con Pollo,5,5,Arroz con Pollo,0.9998406171798706,0.00015937011630740017,True,False
+Arroz con Pollo/80_Arroz_con_Pollo.jpg,80,Arroz con Pollo,5,5,Arroz con Pollo,0.9958055019378662,0.0042032948695123196,True,False
+Arroz con Pollo/81_Arroz_con_Pollo.jpg,81,Arroz con Pollo,5,5,Arroz con Pollo,0.989080011844635,0.010980065912008286,True,False
+Arroz con Pollo/82_Arroz_con_Pollo.jpg,82,Arroz con Pollo,5,5,Arroz con Pollo,0.9751765131950378,0.025136763229966164,True,False
+Arroz con Pollo/83_Arroz_con_Pollo.jpg,83,Arroz con Pollo,5,5,Arroz con Pollo,0.9971669316291809,0.0028370865620672703,True,False
+Arroz con Pollo/84_Arroz_con_Pollo.jpg,84,Arroz con Pollo,5,5,Arroz con Pollo,0.9873435497283936,0.012737230397760868,True,False
+Arroz con Pollo/85_Arroz_con_Pollo.jpg,85,Arroz con Pollo,5,5,Arroz con Pollo,0.9988371729850769,0.0011635207338258624,True,False
+Arroz Tapado/71_Arroz_Tapado.jpg,71,Arroz Tapado,6,6,Arroz Tapado,0.9922917485237122,0.007738137152045965,True,False
+Arroz Tapado/72_Arroz_Tapado.jpg,72,Arroz Tapado,6,6,Arroz Tapado,0.9945656061172485,0.005449203308671713,True,False
+Arroz Tapado/73_Arroz_Tapado.jpg,73,Arroz Tapado,6,6,Arroz Tapado,0.7133917212486267,0.33772456645965576,True,False
+Arroz Tapado/74_Arroz_Tapado.jpg,74,Arroz Tapado,6,6,Arroz Tapado,0.9874032735824585,0.012676729820668697,True,False
+Arroz Tapado/75_Arroz_Tapado.jpg,75,Arroz Tapado,6,1,Aji de Gallina,0.7292441725730896,5.253451347351074,False,False
+Arroz Tapado/76_Arroz_Tapado.jpg,76,Arroz Tapado,6,1,Aji de Gallina,0.4341808557510376,1.941812515258789,False,True
+Arroz Tapado/77_Arroz_Tapado.jpg,77,Arroz Tapado,6,1,Aji de Gallina,0.27937719225883484,1.8385684490203857,False,True
+Arroz Tapado/78_Arroz_Tapado.jpg,78,Arroz Tapado,6,6,Arroz Tapado,0.989617109298706,0.010437190532684326,True,False
+Arroz Tapado/79_Arroz_Tapado.jpg,79,Arroz Tapado,6,6,Arroz Tapado,0.9914593696594238,0.00857729185372591,True,False
+Arroz Tapado/80_Arroz_Tapado.jpg,80,Arroz Tapado,6,6,Arroz Tapado,0.9982376098632812,0.0017639329889789224,True,False
+Arroz Tapado/81_Arroz_Tapado.jpg,81,Arroz Tapado,6,6,Arroz Tapado,0.755616307258606,0.2802215814590454,True,False
+Arroz Tapado/82_Arroz_Tapado.jpg,82,Arroz Tapado,6,6,Arroz Tapado,0.8469525575637817,0.166110560297966,True,False
+Arroz Tapado/83_Arroz_Tapado.jpg,83,Arroz Tapado,6,6,Arroz Tapado,0.9958611130714417,0.0041474997997283936,True,False
+Arroz Tapado/84_Arroz_Tapado.jpg,84,Arroz Tapado,6,6,Arroz Tapado,0.8049477934837341,0.21697786450386047,True,False
+Arroz Tapado/85_Arroz_Tapado.jpg,85,Arroz Tapado,6,6,Arroz Tapado,0.8796882033348083,0.12818777561187744,True,False
+Bisteck a lo Pobre/71_Bisteck_A_Lo_Pobre.jpg,71,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9982680082321167,0.001733468729071319,True,False
+Bisteck a lo Pobre/72_Bisteck_A_Lo_Pobre.jpg,72,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9918134212493896,0.008220290765166283,True,False
+Bisteck a lo Pobre/73_Bisteck_A_Lo_Pobre.jpg,73,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9972959160804749,0.002707746112719178,True,False
+Bisteck a lo Pobre/74_Bisteck_A_Lo_Pobre.jpg,74,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9973779916763306,0.002625472843647003,True,False
+Bisteck a lo Pobre/75_Bisteck_A_Lo_Pobre.jpg,75,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9995539784431458,0.00044610086479224265,True,False
+Bisteck a lo Pobre/76_Bisteck_A_Lo_Pobre.jpg,76,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9964694976806641,0.0035367575474083424,True,False
+Bisteck a lo Pobre/77_Bisteck_A_Lo_Pobre.jpg,77,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9976111650466919,0.0023916945792734623,True,False
+Bisteck a lo Pobre/78_Bisteck_A_Lo_Pobre.jpg,78,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9879463315010071,0.012126884423196316,True,False
+Bisteck a lo Pobre/79_Bisteck_A_Lo_Pobre.jpg,79,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.998195230960846,0.0018064148025587201,True,False
+Bisteck a lo Pobre/80_Bisteck_A_Lo_Pobre.jpg,80,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9900240302085876,0.010026093572378159,True,False
+Bisteck a lo Pobre/81_Bisteck_A_Lo_Pobre.jpg,81,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9966637492179871,0.0033418068196624517,True,False
+Bisteck a lo Pobre/82_Bisteck_A_Lo_Pobre.jpg,82,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9924342632293701,0.007594522554427385,True,False
+Bisteck a lo Pobre/83_Bisteck_A_Lo_Pobre.jpg,83,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.992702841758728,0.007323917001485825,True,False
+Bisteck a lo Pobre/84_Bisteck_A_Lo_Pobre.jpg,84,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.999113142490387,0.0008872386533766985,True,False
+Bisteck a lo Pobre/85_Bisteck_A_Lo_Pobre.jpg,85,Bisteck a lo Pobre,7,7,Bisteck a lo Pobre,0.9906958341598511,0.009347720071673393,True,False
+Caldo de Gallina/71_Caldo_de_Gallina.jpg,71,Caldo de Gallina,8,8,Caldo de Gallina,0.9444178938865662,0.05718649923801422,True,False
+Caldo de Gallina/72_Caldo_de_Gallina.jpg,72,Caldo de Gallina,8,8,Caldo de Gallina,0.8561984896659851,0.155253067612648,True,False
+Caldo de Gallina/73_Caldo_de_Gallina.jpg,73,Caldo de Gallina,8,8,Caldo de Gallina,0.8343538045883179,0.18109776079654694,True,False
+Caldo de Gallina/74_Caldo_de_Gallina.jpg,74,Caldo de Gallina,8,8,Caldo de Gallina,0.8010544180870056,0.22182641923427582,True,False
+Caldo de Gallina/75_Caldo_de_Gallina.jpg,75,Caldo de Gallina,8,8,Caldo de Gallina,0.9866372346878052,0.013452828861773014,True,False
+Caldo de Gallina/76_Caldo_de_Gallina.jpg,76,Caldo de Gallina,8,8,Caldo de Gallina,0.9988019466400146,0.0011987651232630014,True,False
+Caldo de Gallina/77_Caldo_de_Gallina.jpg,77,Caldo de Gallina,8,8,Caldo de Gallina,0.9902108907699585,0.009837361052632332,True,False
+Caldo de Gallina/78_Caldo_de_Gallina.jpg,78,Caldo de Gallina,8,8,Caldo de Gallina,0.9814226627349854,0.0187520794570446,True,False
+Caldo de Gallina/79_Caldo_de_Gallina.jpg,79,Caldo de Gallina,8,8,Caldo de Gallina,0.9983662962913513,0.0016350485384464264,True,False
+Caldo de Gallina/80_Caldo_de_Gallina.jpg,80,Caldo de Gallina,8,8,Caldo de Gallina,0.9938027858734131,0.006216475740075111,True,False
+Caldo de Gallina/81_Caldo_de_Gallina.jpg,81,Caldo de Gallina,8,8,Caldo de Gallina,0.988863468170166,0.01119899656623602,True,False
+Caldo de Gallina/82_Caldo_de_Gallina.jpg,82,Caldo de Gallina,8,8,Caldo de Gallina,0.6963419318199158,0.36191442608833313,True,False
+Caldo de Gallina/83_Caldo_de_Gallina.jpg,83,Caldo de Gallina,8,8,Caldo de Gallina,0.8231865763664246,0.19457238912582397,True,False
+Caldo de Gallina/84_Caldo_de_Gallina.jpg,84,Caldo de Gallina,8,8,Caldo de Gallina,0.8036102652549744,0.21864086389541626,True,False
+Caldo de Gallina/85_Caldo_de_Gallina.jpg,85,Caldo de Gallina,8,8,Caldo de Gallina,0.516553521156311,0.6605764031410217,True,False
+Carapulcra/71_Carapulcra.jpg,71,Carapulcra,9,9,Carapulcra,0.9984472393989563,0.001553996349684894,True,False
+Carapulcra/72_Carapulcra.jpg,72,Carapulcra,9,9,Carapulcra,0.7308753728866577,0.3135123550891876,True,False
+Carapulcra/73_Carapulcra.jpg,73,Carapulcra,9,9,Carapulcra,0.9806469678878784,0.019542768597602844,True,False
+Carapulcra/74_Carapulcra.jpg,74,Carapulcra,9,9,Carapulcra,0.9613327383995056,0.039434656500816345,True,False
+Carapulcra/75_Carapulcra.jpg,75,Carapulcra,9,9,Carapulcra,0.9798849821090698,0.020320100709795952,True,False
+Carapulcra/76_Carapulcra.jpg,76,Carapulcra,9,9,Carapulcra,0.9906362891197205,0.009407831355929375,True,False
+Carapulcra/77_Carapulcra.jpg,77,Carapulcra,9,9,Carapulcra,0.9808202981948853,0.01936599612236023,True,False
+Carapulcra/78_Carapulcra.jpg,78,Carapulcra,9,9,Carapulcra,0.9864856004714966,0.013606540858745575,True,False
+Carapulcra/79_Carapulcra.jpg,79,Carapulcra,9,9,Carapulcra,0.9971975088119507,0.0028064174111932516,True,False
+Carapulcra/80_Carapulcra.jpg,80,Carapulcra,9,9,Carapulcra,0.9890797734260559,0.010980301536619663,True,False
+Carapulcra/81_Carapulcra.jpg,81,Carapulcra,9,9,Carapulcra,0.9899502992630005,0.010100561194121838,True,False
+Carapulcra/82_Carapulcra.jpg,82,Carapulcra,9,9,Carapulcra,0.9936849474906921,0.006335057318210602,True,False
+Carapulcra/83_Carapulcra.jpg,83,Carapulcra,9,9,Carapulcra,0.9900045990943909,0.010045683942735195,True,False
+Carapulcra/84_Carapulcra.jpg,84,Carapulcra,9,9,Carapulcra,0.9988647699356079,0.00113589596003294,True,False
+Carapulcra/85_Carapulcra.jpg,85,Carapulcra,9,9,Carapulcra,0.7925522327423096,0.23249688744544983,True,False
+Cau Cau/71_Cau_Cau.jpg,71,Cau Cau,10,10,Cau Cau,0.9965935349464417,0.0034122595097869635,True,False
+Cau Cau/72_Cau_Cau.jpg,72,Cau Cau,10,10,Cau Cau,0.9932827949523926,0.006739859934896231,True,False
+Cau Cau/73_Cau_Cau.jpg,73,Cau Cau,10,10,Cau Cau,0.9986270666122437,0.0013738964917138219,True,False
+Cau Cau/74_Cau_Cau.jpg,74,Cau Cau,10,10,Cau Cau,0.9989845156669617,0.0010159813100472093,True,False
+Cau Cau/75_Cau_Cau.jpg,75,Cau Cau,10,10,Cau Cau,0.9629315733909607,0.03777295723557472,True,False
+Cau Cau/76_Cau_Cau.jpg,76,Cau Cau,10,10,Cau Cau,0.9651918411254883,0.03542837128043175,True,False
+Cau Cau/77_Cau_Cau.jpg,77,Cau Cau,10,10,Cau Cau,0.9932471513748169,0.0067757368087768555,True,False
+Cau Cau/78_Cau_Cau.jpg,78,Cau Cau,10,10,Cau Cau,0.9748944640159607,0.025426067411899567,True,False
+Cau Cau/79_Cau_Cau.jpg,79,Cau Cau,10,10,Cau Cau,0.9946998357772827,0.005314270965754986,True,False
+Cau Cau/80_Cau_Cau.jpg,80,Cau Cau,10,10,Cau Cau,0.9958280920982361,0.004180620890110731,True,False
+Cau Cau/81_Cau_Cau.jpg,81,Cau Cau,10,10,Cau Cau,0.9992557168006897,0.0007445423980243504,True,False
+Cau Cau/82_Cau_Cau.jpg,82,Cau Cau,10,10,Cau Cau,0.9943875670433044,0.005628214683383703,True,False
+Cau Cau/83_Cau_Cau.jpg,83,Cau Cau,10,10,Cau Cau,0.975834846496582,0.024461936205625534,True,False
+Cau Cau/84_Cau_Cau.jpg,84,Cau Cau,10,10,Cau Cau,0.9831242561340332,0.017019761726260185,True,False
+Cau Cau/85_Cau_Cau.jpg,85,Cau Cau,10,10,Cau Cau,0.9791618585586548,0.021058309823274612,True,False
+Causa Limeña/71_Causa_Limeña.jpg,71,Causa Limeña,11,11,Causa Limeña,0.938319981098175,0.06366423517465591,True,False
+Causa Limeña/72_Causa_Limeña.jpg,72,Causa Limeña,11,11,Causa Limeña,0.9994680285453796,0.0005321278586052358,True,False
+Causa Limeña/73_Causa_Limeña.jpg,73,Causa Limeña,11,11,Causa Limeña,0.9305243492126465,0.07200705260038376,True,False
+Causa Limeña/74_Causa_Limeña.jpg,74,Causa Limeña,11,11,Causa Limeña,0.9997332692146301,0.00026675479602999985,True,False
+Causa Limeña/75_Causa_Limeña.jpg,75,Causa Limeña,11,11,Causa Limeña,0.9397931694984436,0.06209545210003853,True,False
+Causa Limeña/76_Causa_Limeña.jpg,76,Causa Limeña,11,11,Causa Limeña,0.9168719053268433,0.08678747713565826,True,False
+Causa Limeña/77_Causa_Limeña.jpg,77,Causa Limeña,11,11,Causa Limeña,0.9987384676933289,0.001262344536371529,True,False
+Causa Limeña/78_Causa_Limeña.jpg,78,Causa Limeña,11,11,Causa Limeña,0.9935266971588135,0.006494368892163038,True,False
+Causa Limeña/79_Causa_Limeña.jpg,79,Causa Limeña,11,11,Causa Limeña,0.9906166195869446,0.009427670389413834,True,False
+Causa Limeña/80_Causa_Limeña.jpg,80,Causa Limeña,11,11,Causa Limeña,0.9919400811195374,0.008092590607702732,True,False
+Causa Limeña/81_Causa_Limeña.jpg,81,Causa Limeña,11,11,Causa Limeña,0.9848920106887817,0.015223268419504166,True,False
+Causa Limeña/82_Causa_Limeña.jpg,82,Causa Limeña,11,11,Causa Limeña,0.9749038815498352,0.02541642263531685,True,False
+Causa Limeña/83_Causa_Limeña.jpg,83,Causa Limeña,11,11,Causa Limeña,0.9910067915916443,0.009033878333866596,True,False
+Causa Limeña/84_Causa_Limeña.jpg,84,Causa Limeña,11,11,Causa Limeña,0.9727599620819092,0.02761794812977314,True,False
+Causa Limeña/85_Causa_Limeña.jpg,85,Causa Limeña,11,11,Causa Limeña,0.99832683801651,0.001674560597166419,True,False
+Ceviche/71_Ceviche.jpg,71,Ceviche,12,12,Ceviche,0.7854015231132507,0.2415602207183838,True,False
+Ceviche/72_Ceviche.jpg,72,Ceviche,12,12,Ceviche,0.4900096356868744,0.7133302688598633,True,True
+Ceviche/73_Ceviche.jpg,73,Ceviche,12,12,Ceviche,0.7072057127952576,0.34643372893333435,True,False
+Ceviche/74_Ceviche.jpg,74,Ceviche,12,23,Lomo Saltado,0.6941893696784973,2.1152708530426025,False,False
+Ceviche/75_Ceviche.jpg,75,Ceviche,12,12,Ceviche,0.7631117105484009,0.2703508138656616,True,False
+Ceviche/76_Ceviche.jpg,76,Ceviche,12,17,Choritos a la Chalaca,0.44873130321502686,0.964982271194458,False,True
+Ceviche/77_Ceviche.jpg,77,Ceviche,12,35,Tacu Tacu,0.4948746860027313,3.3222527503967285,False,True
+Ceviche/78_Ceviche.jpg,78,Ceviche,12,12,Ceviche,0.5024027824401855,0.6883531808853149,True,False
+Ceviche/79_Ceviche.jpg,79,Ceviche,12,12,Ceviche,0.5822153687477112,0.5409148335456848,True,False
+Ceviche/80_Ceviche.jpg,80,Ceviche,12,17,Choritos a la Chalaca,0.45347052812576294,1.4538296461105347,False,True
+Ceviche/81_Ceviche.jpg,81,Ceviche,12,35,Tacu Tacu,0.39631664752960205,2.4394278526306152,False,True
+Ceviche/82_Ceviche.jpg,82,Ceviche,12,12,Ceviche,0.32772547006607056,1.1155790090560913,True,True
+Ceviche/83_Ceviche.jpg,83,Ceviche,12,12,Ceviche,0.7178688645362854,0.3314683437347412,True,False
+Ceviche/84_Ceviche.jpg,84,Ceviche,12,35,Tacu Tacu,0.5209755897521973,3.5222299098968506,False,False
+Ceviche/85_Ceviche.jpg,85,Ceviche,12,12,Ceviche,0.42476433515548706,0.8562207818031311,True,True
+Chanfainita/71_Chanfainita.jpg,71,Chanfainita,13,28,Patasca,0.8689758777618408,4.902434825897217,False,False
+Chanfainita/72_Chanfainita.jpg,72,Chanfainita,13,13,Chanfainita,0.37696483731269836,0.9756034016609192,True,True
+Chanfainita/73_Chanfainita.jpg,73,Chanfainita,13,10,Cau Cau,0.499860554933548,1.3116309642791748,False,True
+Chanfainita/74_Chanfainita.jpg,74,Chanfainita,13,10,Cau Cau,0.36035242676734924,2.4442625045776367,False,True
+Chanfainita/75_Chanfainita.jpg,75,Chanfainita,13,13,Chanfainita,0.6255413889884949,0.4691378176212311,True,False
+Chanfainita/76_Chanfainita.jpg,76,Chanfainita,13,10,Cau Cau,0.9073950052261353,5.115505218505859,False,False
+Chanfainita/77_Chanfainita.jpg,77,Chanfainita,13,13,Chanfainita,0.7306597232818604,0.3138073980808258,True,False
+Chanfainita/78_Chanfainita.jpg,78,Chanfainita,13,28,Patasca,0.9467334151268005,4.964004039764404,False,False
+Chanfainita/79_Chanfainita.jpg,79,Chanfainita,13,10,Cau Cau,0.44055649638175964,1.3157294988632202,False,True
+Chanfainita/80_Chanfainita.jpg,80,Chanfainita,13,10,Cau Cau,0.4790652096271515,1.0879344940185547,False,True
+Chanfainita/81_Chanfainita.jpg,81,Chanfainita,13,13,Chanfainita,0.9983134269714355,0.001688008545897901,True,False
+Chanfainita/82_Chanfainita.jpg,82,Chanfainita,13,13,Chanfainita,0.9909467697143555,0.009094481356441975,True,False
+Chanfainita/83_Chanfainita.jpg,83,Chanfainita,13,13,Chanfainita,0.9927343130111694,0.007292201276868582,True,False
+Chanfainita/84_Chanfainita.jpg,84,Chanfainita,13,13,Chanfainita,0.9977201819419861,0.00228239712305367,True,False
+Chanfainita/85_Chanfainita.jpg,85,Chanfainita,13,13,Chanfainita,0.9878746867179871,0.012199429795145988,True,False
+Chicharron de cerdo/71_Chicharron_Cerdo.jpg,71,Chicharron de cerdo,14,14,Chicharron de cerdo,0.9912812113761902,0.008757044561207294,True,False
+Chicharron de cerdo/72_Chicharron_Cerdo.jpg,72,Chicharron de cerdo,14,14,Chicharron de cerdo,0.9902689456939697,0.00977869238704443,True,False
+Chicharron de cerdo/73_Chicharron_Cerdo.jpg,73,Chicharron de cerdo,14,14,Chicharron de cerdo,0.9977476000785828,0.0022549221757799387,True,False
+Chicharron de cerdo/74_Chicharron_Cerdo.jpg,74,Chicharron de cerdo,14,14,Chicharron de cerdo,0.9830034971237183,0.017142577096819878,True,False
+Chicharron de cerdo/75_Chicharron_Cerdo.jpg,75,Chicharron de cerdo,14,14,Chicharron de cerdo,0.991199791431427,0.008839169517159462,True,False
+Chicharron de cerdo/76_Chicharron_Cerdo.jpg,76,Chicharron de cerdo,14,14,Chicharron de cerdo,0.9911671280860901,0.008872135542333126,True,False
+Chicharron de cerdo/77_Chicharron_Cerdo.jpg,77,Chicharron de cerdo,14,14,Chicharron de cerdo,0.8086138963699341,0.21243377029895782,True,False
+Chicharron de cerdo/78_Chicharron_Cerdo.jpg,78,Chicharron de cerdo,14,14,Chicharron de cerdo,0.990959644317627,0.009081486612558365,True,False
+Chicharron de cerdo/79_Chicharron_Cerdo.jpg,79,Chicharron de cerdo,14,14,Chicharron de cerdo,0.9961780309677124,0.0038292906247079372,True,False
+Chicharron de cerdo/80_Chicharron_Cerdo.jpg,80,Chicharron de cerdo,14,14,Chicharron de cerdo,0.9986886382102966,0.001312228967435658,True,False
+Chicharron de cerdo/81_Chicharron_Cerdo.jpg,81,Chicharron de cerdo,14,14,Chicharron de cerdo,0.9618446826934814,0.03890231251716614,True,False
+Chicharron de cerdo/82_Chicharron_Cerdo.jpg,82,Chicharron de cerdo,14,14,Chicharron de cerdo,0.99661785364151,0.0033879047259688377,True,False
+Chicharron de cerdo/83_Chicharron_Cerdo.jpg,83,Chicharron de cerdo,14,14,Chicharron de cerdo,0.6192800402641296,0.4791976809501648,True,False
+Chicharron de cerdo/84_Chicharron_Cerdo.jpg,84,Chicharron de cerdo,14,39,Tamales,0.4942900240421295,0.9145780205726624,False,True
+Chicharron de cerdo/85_Chicharron_Cerdo.jpg,85,Chicharron de cerdo,14,12,Ceviche,0.25780045986175537,2.5975522994995117,False,True
+Chicharron de Mariscos/71_Chicharron_Mariscos.jpg,71,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9987047910690308,0.0012960376916453242,True,False
+Chicharron de Mariscos/72_Chicharron_Mariscos.jpg,72,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.997732400894165,0.0022701462730765343,True,False
+Chicharron de Mariscos/73_Chicharron_Mariscos.jpg,73,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9955370426177979,0.004472965840250254,True,False
+Chicharron de Mariscos/74_Chicharron_Mariscos.jpg,74,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9905441999435425,0.009500766173005104,True,False
+Chicharron de Mariscos/75_Chicharron_Mariscos.jpg,75,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9988285899162292,0.0011720937909558415,True,False
+Chicharron de Mariscos/76_Chicharron_Mariscos.jpg,76,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9998399019241333,0.00016008525562938303,True,False
+Chicharron de Mariscos/77_Chicharron_Mariscos.jpg,77,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9985852241516113,0.0014157997211441398,True,False
+Chicharron de Mariscos/78_Chicharron_Mariscos.jpg,78,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9948175549507141,0.005195923615247011,True,False
+Chicharron de Mariscos/79_Chicharron_Mariscos.jpg,79,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.98158860206604,0.018583009019494057,True,False
+Chicharron de Mariscos/80_Chicharron_Mariscos.jpg,80,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9986955523490906,0.0013053239090368152,True,False
+Chicharron de Mariscos/81_Chicharron_Mariscos.jpg,81,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9992443323135376,0.0007559779332950711,True,False
+Chicharron de Mariscos/82_Chicharron_Mariscos.jpg,82,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.991182804107666,0.008856302127242088,True,False
+Chicharron de Mariscos/83_Chicharron_Mariscos.jpg,83,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9853551387786865,0.014753172174096107,True,False
+Chicharron de Mariscos/84_Chicharron_Mariscos.jpg,84,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9951436519622803,0.004868201911449432,True,False
+Chicharron de Mariscos/85_Chicharron_Mariscos.jpg,85,Chicharron de Mariscos,15,15,Chicharron de Mariscos,0.9937810301780701,0.0062383925542235374,True,False
+Choclo con Queso/71_Choclo_Queso.jpg,71,Choclo con Queso,16,16,Choclo con Queso,0.7953212857246399,0.22900915145874023,True,False
+Choclo con Queso/72_Choclo_Queso.jpg,72,Choclo con Queso,16,12,Ceviche,0.4761826992034912,1.4570631980895996,False,True
+Choclo con Queso/73_Choclo_Queso.jpg,73,Choclo con Queso,16,16,Choclo con Queso,0.8101724982261658,0.2105080783367157,True,False
+Choclo con Queso/74_Choclo_Queso.jpg,74,Choclo con Queso,16,16,Choclo con Queso,0.9319128394126892,0.07051596790552139,True,False
+Choclo con Queso/75_Choclo_Queso.jpg,75,Choclo con Queso,16,16,Choclo con Queso,0.9171329736709595,0.08650282025337219,True,False
+Choclo con Queso/76_Choclo_Queso.jpg,76,Choclo con Queso,16,16,Choclo con Queso,0.9777366518974304,0.022514911368489265,True,False
+Choclo con Queso/77_Choclo_Queso.jpg,77,Choclo con Queso,16,12,Ceviche,0.4382222890853882,3.8178858757019043,False,True
+Choclo con Queso/78_Choclo_Queso.jpg,78,Choclo con Queso,16,8,Caldo de Gallina,0.24931561946868896,2.4710259437561035,False,True
+Choclo con Queso/79_Choclo_Queso.jpg,79,Choclo con Queso,16,12,Ceviche,0.7107298970222473,4.080654144287109,False,False
+Choclo con Queso/80_Choclo_Queso.jpg,80,Choclo con Queso,16,16,Choclo con Queso,0.8942539095878601,0.11176550388336182,True,False
+Choclo con Queso/81_Choclo_Queso.jpg,81,Choclo con Queso,16,16,Choclo con Queso,0.369430810213089,0.9957917928695679,True,True
+Choclo con Queso/82_Choclo_Queso.jpg,82,Choclo con Queso,16,12,Ceviche,0.8031328916549683,5.8870530128479,False,False
+Choclo con Queso/83_Choclo_Queso.jpg,83,Choclo con Queso,16,12,Ceviche,0.4403146207332611,3.236048936843872,False,True
+Choclo con Queso/84_Choclo_Queso.jpg,84,Choclo con Queso,16,16,Choclo con Queso,0.6587997078895569,0.41733571887016296,True,False
+Choclo con Queso/85_Choclo_Queso.jpg,85,Choclo con Queso,16,20,Humitas,0.35252735018730164,4.414486408233643,False,True
+Choritos a la Chalaca/71_Choritos_Chalaca.jpg,71,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9956309795379639,0.004378613084554672,True,False
+Choritos a la Chalaca/72_Choritos_Chalaca.jpg,72,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9961062073707581,0.0039013714995235205,True,False
+Choritos a la Chalaca/73_Choritos_Chalaca.jpg,73,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9705538749694824,0.029888339340686798,True,False
+Choritos a la Chalaca/74_Choritos_Chalaca.jpg,74,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9975805282592773,0.0024223767686635256,True,False
+Choritos a la Chalaca/75_Choritos_Chalaca.jpg,75,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9880242943763733,0.012047973461449146,True,False
+Choritos a la Chalaca/76_Choritos_Chalaca.jpg,76,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9901256561279297,0.009923410601913929,True,False
+Choritos a la Chalaca/77_Choritos_Chalaca.jpg,77,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9933472871780396,0.006674970034509897,True,False
+Choritos a la Chalaca/78_Choritos_Chalaca.jpg,78,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9959553480148315,0.004052878823131323,True,False
+Choritos a la Chalaca/79_Choritos_Chalaca.jpg,79,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9967579245567322,0.003247347194701433,True,False
+Choritos a la Chalaca/80_Choritos_Chalaca.jpg,80,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9922353625297546,0.007794915232807398,True,False
+Choritos a la Chalaca/81_Choritos_Chalaca.jpg,81,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9852936863899231,0.01481554377824068,True,False
+Choritos a la Chalaca/82_Choritos_Chalaca.jpg,82,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9838522672653198,0.01627950184047222,True,False
+Choritos a la Chalaca/83_Choritos_Chalaca.jpg,83,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.99797123670578,0.0020308124367147684,True,False
+Choritos a la Chalaca/84_Choritos_Chalaca.jpg,84,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9860513210296631,0.014046849682927132,True,False
+Choritos a la Chalaca/85_Choritos_Chalaca.jpg,85,Choritos a la Chalaca,17,17,Choritos a la Chalaca,0.9932597279548645,0.006763067562133074,True,False
+Escabeche/71_Escabeche.jpg,71,Escabeche,18,18,Escabeche,0.49847158789634705,0.696208655834198,True,True
+Escabeche/72_Escabeche.jpg,72,Escabeche,18,18,Escabeche,0.6215298175811768,0.4755714535713196,True,False
+Escabeche/73_Escabeche.jpg,73,Escabeche,18,18,Escabeche,0.3503839373588562,1.0487257242202759,True,True
+Escabeche/74_Escabeche.jpg,74,Escabeche,18,18,Escabeche,0.9907234311103821,0.009319847449660301,True,False
+Escabeche/75_Escabeche.jpg,75,Escabeche,18,18,Escabeche,0.9449118375778198,0.0566636398434639,True,False
+Escabeche/76_Escabeche.jpg,76,Escabeche,18,18,Escabeche,0.36232447624206543,1.0152151584625244,True,True
+Escabeche/77_Escabeche.jpg,77,Escabeche,18,18,Escabeche,0.8055214881896973,0.21626541018486023,True,False
+Escabeche/78_Escabeche.jpg,78,Escabeche,18,18,Escabeche,0.9970831274986267,0.0029211253859102726,True,False
+Escabeche/79_Escabeche.jpg,79,Escabeche,18,18,Escabeche,0.9788520932197571,0.021374700590968132,True,False
+Escabeche/80_Escabeche.jpg,80,Escabeche,18,18,Escabeche,0.7084259986877441,0.34470969438552856,True,False
+Escabeche/81_Escabeche.jpg,81,Escabeche,18,18,Escabeche,0.7102482914924622,0.34214070439338684,True,False
+Escabeche/82_Escabeche.jpg,82,Escabeche,18,18,Escabeche,0.9952392578125,0.004772106651216745,True,False
+Escabeche/83_Escabeche.jpg,83,Escabeche,18,18,Escabeche,0.9900315999984741,0.010018422268331051,True,False
+Escabeche/84_Escabeche.jpg,84,Escabeche,18,25,Olluquito,0.6938768029212952,3.08022403717041,False,False
+Escabeche/85_Escabeche.jpg,85,Escabeche,18,23,Lomo Saltado,0.5766584873199463,1.1082607507705688,False,False
+Frejoles/71_Frejoles.jpg,71,Frejoles,19,19,Frejoles,0.9960029721260071,0.004005030728876591,True,False
+Frejoles/72_Frejoles.jpg,72,Frejoles,19,19,Frejoles,0.9780727028846741,0.022171247750520706,True,False
+Frejoles/73_Frejoles.jpg,73,Frejoles,19,19,Frejoles,0.9942756295204163,0.005740821827203035,True,False
+Frejoles/74_Frejoles.jpg,74,Frejoles,19,19,Frejoles,0.9968884587287903,0.0031163957901299,True,False
+Frejoles/75_Frejoles.jpg,75,Frejoles,19,19,Frejoles,0.9931265115737915,0.0068972124718129635,True,False
+Frejoles/76_Frejoles.jpg,76,Frejoles,19,19,Frejoles,0.9200374484062195,0.08334089815616608,True,False
+Frejoles/77_Frejoles.jpg,77,Frejoles,19,19,Frejoles,0.9899554252624512,0.010095368139445782,True,False
+Frejoles/78_Frejoles.jpg,78,Frejoles,19,19,Frejoles,0.9938997030258179,0.006118969526141882,True,False
+Frejoles/79_Frejoles.jpg,79,Frejoles,19,19,Frejoles,0.9968705773353577,0.0031343402806669474,True,False
+Frejoles/80_Frejoles.jpg,80,Frejoles,19,19,Frejoles,0.9814074039459229,0.018767639994621277,True,False
+Frejoles/81_Frejoles.jpg,81,Frejoles,19,19,Frejoles,0.9907660484313965,0.00927685759961605,True,False
+Frejoles/82_Frejoles.jpg,82,Frejoles,19,19,Frejoles,0.9921175837516785,0.007913664914667606,True,False
+Frejoles/83_Frejoles.jpg,83,Frejoles,19,19,Frejoles,0.9939430356025696,0.006075367331504822,True,False
+Frejoles/84_Frejoles.jpg,84,Frejoles,19,19,Frejoles,0.9958266615867615,0.004182045813649893,True,False
+Frejoles/85_Frejoles.jpg,85,Frejoles,19,19,Frejoles,0.9930610060691833,0.0069631533697247505,True,False
+Humitas/71_Humitas.jpg,71,Humitas,20,20,Humitas,0.9095352292060852,0.09482154250144958,True,False
+Humitas/72_Humitas.jpg,72,Humitas,20,20,Humitas,0.9882243871688843,0.011845486238598824,True,False
+Humitas/73_Humitas.jpg,73,Humitas,20,20,Humitas,0.9655832648277283,0.035022933036088943,True,False
+Humitas/74_Humitas.jpg,74,Humitas,20,20,Humitas,0.768700361251831,0.2630540430545807,True,False
+Humitas/75_Humitas.jpg,75,Humitas,20,39,Tamales,0.7217779159545898,1.3402996063232422,False,False
+Humitas/76_Humitas.jpg,76,Humitas,20,20,Humitas,0.4897717535495758,0.7138158082962036,True,True
+Humitas/77_Humitas.jpg,77,Humitas,20,20,Humitas,0.9940996170043945,0.0059178853407502174,True,False
+Humitas/78_Humitas.jpg,78,Humitas,20,20,Humitas,0.9692399501800537,0.031243067234754562,True,False
+Humitas/79_Humitas.jpg,79,Humitas,20,39,Tamales,0.6702223420143127,1.117737054824829,False,False
+Humitas/80_Humitas.jpg,80,Humitas,20,20,Humitas,0.8128021955490112,0.20726749300956726,True,False
+Humitas/81_Humitas.jpg,81,Humitas,20,20,Humitas,0.9402590990066528,0.06159980967640877,True,False
+Humitas/82_Humitas.jpg,82,Humitas,20,39,Tamales,0.5495009422302246,1.4182108640670776,False,False
+Humitas/83_Humitas.jpg,83,Humitas,20,39,Tamales,0.846554696559906,2.4222893714904785,False,False
+Humitas/84_Humitas.jpg,84,Humitas,20,20,Humitas,0.46271517872810364,0.7706435918807983,True,True
+Humitas/85_Humitas.jpg,85,Humitas,20,39,Tamales,0.48563772439956665,1.38731050491333,False,True
+Lentejitas/71_Lentejitas.jpg,71,Lentejitas,21,21,Lentejitas,0.9291956424713135,0.07343599200248718,True,False
+Lentejitas/72_Lentejitas.jpg,72,Lentejitas,21,21,Lentejitas,0.9599112868309021,0.040914420038461685,True,False
+Lentejitas/73_Lentejitas.jpg,73,Lentejitas,21,21,Lentejitas,0.97639000415802,0.023893160745501518,True,False
+Lentejitas/74_Lentejitas.jpg,74,Lentejitas,21,21,Lentejitas,0.8813940286636353,0.1262504756450653,True,False
+Lentejitas/75_Lentejitas.jpg,75,Lentejitas,21,21,Lentejitas,0.9845355153083801,0.01558528933674097,True,False
+Lentejitas/76_Lentejitas.jpg,76,Lentejitas,21,21,Lentejitas,0.7400640249252319,0.3010185658931732,True,False
+Lentejitas/77_Lentejitas.jpg,77,Lentejitas,21,21,Lentejitas,0.3791349232196808,0.9698631763458252,True,True
+Lentejitas/78_Lentejitas.jpg,78,Lentejitas,21,21,Lentejitas,0.5993798971176147,0.511859655380249,True,False
+Lentejitas/79_Lentejitas.jpg,79,Lentejitas,21,21,Lentejitas,0.9585276246070862,0.04235691949725151,True,False
+Lentejitas/80_Lentejitas.jpg,80,Lentejitas,21,21,Lentejitas,0.9817345142364502,0.01843438856303692,True,False
+Lentejitas/81_Lentejitas.jpg,81,Lentejitas,21,21,Lentejitas,0.9637026190757751,0.036972545087337494,True,False
+Lentejitas/82_Lentejitas.jpg,82,Lentejitas,21,21,Lentejitas,0.990915834903717,0.009125666692852974,True,False
+Lentejitas/83_Lentejitas.jpg,83,Lentejitas,21,21,Lentejitas,0.49553027749061584,0.7021268606185913,True,True
+Lentejitas/84_Lentejitas.jpg,84,Lentejitas,21,21,Lentejitas,0.9491514563560486,0.05218691751360893,True,False
+Lentejitas/85_Lentejitas.jpg,85,Lentejitas,21,21,Lentejitas,0.9909991025924683,0.009041675366461277,True,False
+Locro/71_Locro.jpg,71,Locro,22,4,Arroz con Mariscos,0.3096116781234741,1.4317933320999146,False,True
+Locro/72_Locro.jpg,72,Locro,22,22,Locro,0.9385640025138855,0.06340424716472626,True,False
+Locro/73_Locro.jpg,73,Locro,22,22,Locro,0.7087329030036926,0.3442765474319458,True,False
+Locro/74_Locro.jpg,74,Locro,22,37,Tallarines Rojos,0.30259907245635986,2.5683624744415283,False,True
+Locro/75_Locro.jpg,75,Locro,22,22,Locro,0.9603572487831116,0.04044995456933975,True,False
+Locro/76_Locro.jpg,76,Locro,22,22,Locro,0.8653250336647034,0.14465007185935974,True,False
+Locro/77_Locro.jpg,77,Locro,22,10,Cau Cau,0.5140171051025391,1.1131670475006104,False,False
+Locro/78_Locro.jpg,78,Locro,22,22,Locro,0.684648871421814,0.37884920835494995,True,False
+Locro/79_Locro.jpg,79,Locro,22,22,Locro,0.7600359916687012,0.27438944578170776,True,False
+Locro/80_Locro.jpg,80,Locro,22,22,Locro,0.9679635167121887,0.032560884952545166,True,False
+Locro/81_Locro.jpg,81,Locro,22,22,Locro,0.8563998937606812,0.1550178825855255,True,False
+Locro/82_Locro.jpg,82,Locro,22,22,Locro,0.8483524918556213,0.16445903480052948,True,False
+Locro/83_Locro.jpg,83,Locro,22,22,Locro,0.9444124698638916,0.05719224363565445,True,False
+Locro/84_Locro.jpg,84,Locro,22,22,Locro,0.7396371960639954,0.3015954792499542,True,False
+Locro/85_Locro.jpg,85,Locro,22,22,Locro,0.9576734304428101,0.04324847459793091,True,False
+Lomo Saltado/71_Lomo_Saltado.jpg,71,Lomo Saltado,23,31,Pollo al horno con puré,0.547227680683136,3.9820516109466553,False,False
+Lomo Saltado/72_Lomo_Saltado.jpg,72,Lomo Saltado,23,23,Lomo Saltado,0.8246233463287354,0.19282855093479156,True,False
+Lomo Saltado/73_Lomo_Saltado.jpg,73,Lomo Saltado,23,23,Lomo Saltado,0.6510072946548462,0.42923441529273987,True,False
+Lomo Saltado/74_Lomo_Saltado.jpg,74,Lomo Saltado,23,23,Lomo Saltado,0.8841974139213562,0.12307493388652802,True,False
+Lomo Saltado/75_Lomo_Saltado.jpg,75,Lomo Saltado,23,23,Lomo Saltado,0.3515467941761017,1.045412540435791,True,True
+Lomo Saltado/76_Lomo_Saltado.jpg,76,Lomo Saltado,23,23,Lomo Saltado,0.9991039633750916,0.0008964095613919199,True,False
+Lomo Saltado/77_Lomo_Saltado.jpg,77,Lomo Saltado,23,23,Lomo Saltado,0.9859237670898438,0.014176259748637676,True,False
+Lomo Saltado/78_Lomo_Saltado.jpg,78,Lomo Saltado,23,23,Lomo Saltado,0.9985535740852356,0.001447463990189135,True,False
+Lomo Saltado/79_Lomo_Saltado.jpg,79,Lomo Saltado,23,23,Lomo Saltado,0.9668985605239868,0.033661678433418274,True,False
+Lomo Saltado/80_Lomo_Saltado.jpg,80,Lomo Saltado,23,23,Lomo Saltado,0.9950096607208252,0.005002838093787432,True,False
+Lomo Saltado/81_Lomo_Saltado.jpg,81,Lomo Saltado,23,23,Lomo Saltado,0.9936503767967224,0.006369883194565773,True,False
+Lomo Saltado/82_Lomo_Saltado.jpg,82,Lomo Saltado,23,23,Lomo Saltado,0.5861522555351257,0.5341757535934448,True,False
+Lomo Saltado/83_Lomo_Saltado.jpg,83,Lomo Saltado,23,23,Lomo Saltado,0.973442792892456,0.026916246861219406,True,False
+Lomo Saltado/84_Lomo_Saltado.jpg,84,Lomo Saltado,23,23,Lomo Saltado,0.997936487197876,0.0020656692795455456,True,False
+Lomo Saltado/85_Lomo_Saltado.jpg,85,Lomo Saltado,23,23,Lomo Saltado,0.8068529963493347,0.21461375057697296,True,False
+Ocopa/71_Ocopa.jpg,71,Ocopa,24,24,Ocopa,0.9999372959136963,6.270212179515511e-05,True,False
+Ocopa/72_Ocopa.jpg,72,Ocopa,24,24,Ocopa,0.9999780654907227,2.1934269170742482e-05,True,False
+Ocopa/73_Ocopa.jpg,73,Ocopa,24,24,Ocopa,0.9999392032623291,6.0794889577664435e-05,True,False
+Ocopa/74_Ocopa.jpg,74,Ocopa,24,24,Ocopa,0.9999195337295532,8.046303264563903e-05,True,False
+Ocopa/75_Ocopa.jpg,75,Ocopa,24,24,Ocopa,0.9998769760131836,0.0001230164198204875,True,False
+Ocopa/76_Ocopa.jpg,76,Ocopa,24,24,Ocopa,0.9995546936988831,0.000445385929197073,True,False
+Ocopa/77_Ocopa.jpg,77,Ocopa,24,24,Ocopa,0.9998121857643127,0.00018785618885885924,True,False
+Ocopa/78_Ocopa.jpg,78,Ocopa,24,24,Ocopa,0.9993791580200195,0.0006210067658685148,True,False
+Ocopa/79_Ocopa.jpg,79,Ocopa,24,24,Ocopa,0.9999524354934692,4.756337511935271e-05,True,False
+Ocopa/80_Ocopa.jpg,80,Ocopa,24,24,Ocopa,0.9974945783615112,0.0025085906963795424,True,False
+Ocopa/81_Ocopa.jpg,81,Ocopa,24,24,Ocopa,0.9993255138397217,0.00067473528906703,True,False
+Ocopa/82_Ocopa.jpg,82,Ocopa,24,24,Ocopa,0.9982494711875916,0.0017520328983664513,True,False
+Ocopa/83_Ocopa.jpg,83,Ocopa,24,24,Ocopa,0.9992045760154724,0.000795762927737087,True,False
+Ocopa/84_Ocopa.jpg,84,Ocopa,24,24,Ocopa,0.9983677268028259,0.0016336203552782536,True,False
+Ocopa/85_Ocopa.jpg,85,Ocopa,24,24,Ocopa,0.9997546076774597,0.0002454218047205359,True,False
+Olluquito/71_Olluquito.jpg,71,Olluquito,25,25,Olluquito,0.7375019192695618,0.30448657274246216,True,False
+Olluquito/72_Olluquito.jpg,72,Olluquito,25,25,Olluquito,0.841130256652832,0.1730087548494339,True,False
+Olluquito/73_Olluquito.jpg,73,Olluquito,25,25,Olluquito,0.5153718590736389,0.6628665328025818,True,False
+Olluquito/74_Olluquito.jpg,74,Olluquito,25,25,Olluquito,0.9458650946617126,0.05565531924366951,True,False
+Olluquito/75_Olluquito.jpg,75,Olluquito,25,25,Olluquito,0.6604517102241516,0.4148312509059906,True,False
+Olluquito/76_Olluquito.jpg,76,Olluquito,25,25,Olluquito,0.5758164525032043,0.5519663095474243,True,False
+Olluquito/77_Olluquito.jpg,77,Olluquito,25,25,Olluquito,0.9652266502380371,0.03539235517382622,True,False
+Olluquito/78_Olluquito.jpg,78,Olluquito,25,25,Olluquito,0.91392582654953,0.09000586718320847,True,False
+Olluquito/79_Olluquito.jpg,79,Olluquito,25,25,Olluquito,0.6226727366447449,0.47373420000076294,True,False
+Olluquito/80_Olluquito.jpg,80,Olluquito,25,25,Olluquito,0.7282539010047913,0.3171055316925049,True,False
+Olluquito/81_Olluquito.jpg,81,Olluquito,25,25,Olluquito,0.4352840185165405,0.831756591796875,True,True
+Olluquito/82_Olluquito.jpg,82,Olluquito,25,25,Olluquito,0.974677562713623,0.02564859762787819,True,False
+Olluquito/83_Olluquito.jpg,83,Olluquito,25,25,Olluquito,0.9122111797332764,0.09188378602266312,True,False
+Olluquito/84_Olluquito.jpg,84,Olluquito,25,23,Lomo Saltado,0.3826875686645508,0.9764276742935181,False,True
+Olluquito/85_Olluquito.jpg,85,Olluquito,25,22,Locro,0.6371782422065735,2.3896827697753906,False,False
+Papa a la Huancaina/71_Papa_Huancaina.jpg,71,Papa a la Huancaina,26,11,Causa Limeña,0.6102441549301147,1.395204782485962,False,False
+Papa a la Huancaina/72_Papa_Huancaina.jpg,72,Papa a la Huancaina,26,26,Papa a la Huancaina,0.6776825189590454,0.3890763223171234,True,False
+Papa a la Huancaina/73_Papa_Huancaina.jpg,73,Papa a la Huancaina,26,26,Papa a la Huancaina,0.7091850638389587,0.3436388075351715,True,False
+Papa a la Huancaina/74_Papa_Huancaina.jpg,74,Papa a la Huancaina,26,26,Papa a la Huancaina,0.9923707246780396,0.00765852490440011,True,False
+Papa a la Huancaina/75_Papa_Huancaina.jpg,75,Papa a la Huancaina,26,26,Papa a la Huancaina,0.5949733257293701,0.5192387104034424,True,False
+Papa a la Huancaina/76_Papa_Huancaina.jpg,76,Papa a la Huancaina,26,26,Papa a la Huancaina,0.7871527075767517,0.23933297395706177,True,False
+Papa a la Huancaina/77_Papa_Huancaina.jpg,77,Papa a la Huancaina,26,26,Papa a la Huancaina,0.8233047723770142,0.19442881643772125,True,False
+Papa a la Huancaina/78_Papa_Huancaina.jpg,78,Papa a la Huancaina,26,26,Papa a la Huancaina,0.8905021548271179,0.11596973240375519,True,False
+Papa a la Huancaina/79_Papa_Huancaina.jpg,79,Papa a la Huancaina,26,26,Papa a la Huancaina,0.7601537108421326,0.2742345929145813,True,False
+Papa a la Huancaina/80_Papa_Huancaina.jpg,80,Papa a la Huancaina,26,26,Papa a la Huancaina,0.9904447197914124,0.009601248428225517,True,False
+Papa a la Huancaina/81_Papa_Huancaina.jpg,81,Papa a la Huancaina,26,26,Papa a la Huancaina,0.9771800637245178,0.023084355518221855,True,False
+Papa a la Huancaina/82_Papa_Huancaina.jpg,82,Papa a la Huancaina,26,26,Papa a la Huancaina,0.9791034460067749,0.021117953583598137,True,False
+Papa a la Huancaina/83_Papa_Huancaina.jpg,83,Papa a la Huancaina,26,26,Papa a la Huancaina,0.6783748269081116,0.38805532455444336,True,False
+Papa a la Huancaina/84_Papa_Huancaina.jpg,84,Papa a la Huancaina,26,26,Papa a la Huancaina,0.9864351749420166,0.01365769561380148,True,False
+Papa a la Huancaina/85_Papa_Huancaina.jpg,85,Papa a la Huancaina,26,26,Papa a la Huancaina,0.980073869228363,0.020127343013882637,True,False
+Papa Rellena/71_Papa_Rellena.jpg,71,Papa Rellena,27,27,Papa Rellena,0.9696104526519775,0.030860895290970802,True,False
+Papa Rellena/72_Papa_Rellena.jpg,72,Papa Rellena,27,27,Papa Rellena,0.9990758895874023,0.0009245174005627632,True,False
+Papa Rellena/73_Papa_Rellena.jpg,73,Papa Rellena,27,27,Papa Rellena,0.9984061121940613,0.001595177804119885,True,False
+Papa Rellena/74_Papa_Rellena.jpg,74,Papa Rellena,27,27,Papa Rellena,0.9634296298027039,0.03725580498576164,True,False
+Papa Rellena/75_Papa_Rellena.jpg,75,Papa Rellena,27,27,Papa Rellena,0.9998935461044312,0.00010644822759786621,True,False
+Papa Rellena/76_Papa_Rellena.jpg,76,Papa Rellena,27,27,Papa Rellena,0.9974773526191711,0.0025258325040340424,True,False
+Papa Rellena/77_Papa_Rellena.jpg,77,Papa Rellena,27,27,Papa Rellena,0.9998661279678345,0.00013386306818574667,True,False
+Papa Rellena/78_Papa_Rellena.jpg,78,Papa Rellena,27,27,Papa Rellena,0.9894558787345886,0.010600095614790916,True,False
+Papa Rellena/79_Papa_Rellena.jpg,79,Papa Rellena,27,27,Papa Rellena,0.9932195544242859,0.006803561467677355,True,False
+Papa Rellena/80_Papa_Rellena.jpg,80,Papa Rellena,27,27,Papa Rellena,0.9994046688079834,0.0005955114611424506,True,False
+Papa Rellena/81_Papa_Rellena.jpg,81,Papa Rellena,27,27,Papa Rellena,0.9983668923377991,0.001634453423321247,True,False
+Papa Rellena/82_Papa_Rellena.jpg,82,Papa Rellena,27,27,Papa Rellena,0.999957799911499,4.2199197196168825e-05,True,False
+Papa Rellena/83_Papa_Rellena.jpg,83,Papa Rellena,27,27,Papa Rellena,0.9999775886535645,2.2411095415009186e-05,True,False
+Papa Rellena/84_Papa_Rellena.jpg,84,Papa Rellena,27,27,Papa Rellena,0.9993656277656555,0.0006345880683511496,True,False
+Papa Rellena/85_Papa_Rellena.jpg,85,Papa Rellena,27,27,Papa Rellena,0.9996249675750732,0.00037508129025809467,True,False
+Patasca/71_Patasca.jpg,71,Patasca,28,28,Patasca,0.9750601053237915,0.025256145745515823,True,False
+Patasca/72_Patasca.jpg,72,Patasca,28,28,Patasca,0.9052004218101501,0.09959892183542252,True,False
+Patasca/73_Patasca.jpg,73,Patasca,28,28,Patasca,0.8088443279266357,0.2121487855911255,True,False
+Patasca/74_Patasca.jpg,74,Patasca,28,28,Patasca,0.8314979076385498,0.18452651798725128,True,False
+Patasca/75_Patasca.jpg,75,Patasca,28,28,Patasca,0.9550831317901611,0.04595687612891197,True,False
+Patasca/76_Patasca.jpg,76,Patasca,28,28,Patasca,0.9792652130126953,0.020952783524990082,True,False
+Patasca/77_Patasca.jpg,77,Patasca,28,28,Patasca,0.9937965869903564,0.006222754251211882,True,False
+Patasca/78_Patasca.jpg,78,Patasca,28,28,Patasca,0.9877675771713257,0.01230788417160511,True,False
+Patasca/79_Patasca.jpg,79,Patasca,28,28,Patasca,0.8344801068305969,0.18094636499881744,True,False
+Patasca/80_Patasca.jpg,80,Patasca,28,28,Patasca,0.9758668541908264,0.02442913129925728,True,False
+Patasca/81_Patasca.jpg,81,Patasca,28,28,Patasca,0.9983300566673279,0.001671347301453352,True,False
+Patasca/82_Patasca.jpg,82,Patasca,28,28,Patasca,0.9476602673530579,0.05375922471284866,True,False
+Patasca/83_Patasca.jpg,83,Patasca,28,28,Patasca,0.9927247166633606,0.007301905658096075,True,False
+Patasca/84_Patasca.jpg,84,Patasca,28,28,Patasca,0.5249270796775818,0.6444959044456482,True,False
+Patasca/85_Patasca.jpg,85,Patasca,28,28,Patasca,0.9945165514945984,0.005498523358255625,True,False
+Picante de cuy/71_Picante_Cuy.jpg,71,Picante de cuy,29,29,Picante de cuy,0.9764542579650879,0.02382739447057247,True,False
+Picante de cuy/72_Picante_Cuy.jpg,72,Picante de cuy,29,29,Picante de cuy,0.902281641960144,0.10282857716083527,True,False
+Picante de cuy/73_Picante_Cuy.jpg,73,Picante de cuy,29,29,Picante de cuy,0.9737709164619446,0.026579199358820915,True,False
+Picante de cuy/74_Picante_Cuy.jpg,74,Picante de cuy,29,29,Picante de cuy,0.9616640210151672,0.0390901118516922,True,False
+Picante de cuy/75_Picante_Cuy.jpg,75,Picante de cuy,29,29,Picante de cuy,0.9974706172943115,0.0025326102040708065,True,False
+Picante de cuy/76_Picante_Cuy.jpg,76,Picante de cuy,29,29,Picante de cuy,0.9238618016242981,0.07919277250766754,True,False
+Picante de cuy/77_Picante_Cuy.jpg,77,Picante de cuy,29,29,Picante de cuy,0.8641859292984009,0.14596731960773468,True,False
+Picante de cuy/78_Picante_Cuy.jpg,78,Picante de cuy,29,29,Picante de cuy,0.8929961919784546,0.11317296326160431,True,False
+Picante de cuy/79_Picante_Cuy.jpg,79,Picante de cuy,29,29,Picante de cuy,0.9904223680496216,0.009623799473047256,True,False
+Picante de cuy/80_Picante_Cuy.jpg,80,Picante de cuy,29,29,Picante de cuy,0.9915549159049988,0.008480961434543133,True,False
+Picante de cuy/81_Picante_Cuy.jpg,81,Picante de cuy,29,29,Picante de cuy,0.9340100884437561,0.06826803833246231,True,False
+Picante de cuy/82_Picante_Cuy.jpg,82,Picante de cuy,29,29,Picante de cuy,0.917629063129425,0.08596203476190567,True,False
+Picante de cuy/83_Picante_Cuy.jpg,83,Picante de cuy,29,29,Picante de cuy,0.9936151504516602,0.00640529952943325,True,False
+Picante de cuy/84_Picante_Cuy.jpg,84,Picante de cuy,29,29,Picante de cuy,0.9972156286239624,0.0027882291469722986,True,False
+Picante de cuy/85_Picante_Cuy.jpg,85,Picante de cuy,29,29,Picante de cuy,0.9730851650238037,0.027283689007163048,True,False
+Pollo a la Brasa/71_Pollo_A_La_Brasa.jpg,71,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9534248113632202,0.047694724053144455,True,False
+Pollo a la Brasa/72_Pollo_A_La_Brasa.jpg,72,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9991030693054199,0.0008973624208010733,True,False
+Pollo a la Brasa/73_Pollo_A_La_Brasa.jpg,73,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9994142055511475,0.0005859803641214967,True,False
+Pollo a la Brasa/74_Pollo_A_La_Brasa.jpg,74,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9865944385528564,0.013496228493750095,True,False
+Pollo a la Brasa/75_Pollo_A_La_Brasa.jpg,75,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9855830669403076,0.014521859586238861,True,False
+Pollo a la Brasa/76_Pollo_A_La_Brasa.jpg,76,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9792019724845886,0.02101733721792698,True,False
+Pollo a la Brasa/77_Pollo_A_La_Brasa.jpg,77,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9593517184257507,0.041497502475976944,True,False
+Pollo a la Brasa/78_Pollo_A_La_Brasa.jpg,78,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9087821245193481,0.09564989060163498,True,False
+Pollo a la Brasa/79_Pollo_A_La_Brasa.jpg,79,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9769150018692017,0.023355621844530106,True,False
+Pollo a la Brasa/80_Pollo_A_La_Brasa.jpg,80,Pollo a la Brasa,30,30,Pollo a la Brasa,0.8769858479499817,0.13126444816589355,True,False
+Pollo a la Brasa/81_Pollo_A_La_Brasa.jpg,81,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9811890125274658,0.018990136682987213,True,False
+Pollo a la Brasa/82_Pollo_A_La_Brasa.jpg,82,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9795382618904114,0.020673975348472595,True,False
+Pollo a la Brasa/83_Pollo_A_La_Brasa.jpg,83,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9675760865211487,0.03296120837330818,True,False
+Pollo a la Brasa/84_Pollo_A_La_Brasa.jpg,84,Pollo a la Brasa,30,30,Pollo a la Brasa,0.9897218346595764,0.01033136434853077,True,False
+Pollo a la Brasa/85_Pollo_A_La_Brasa.jpg,85,Pollo a la Brasa,30,30,Pollo a la Brasa,0.8481668829917908,0.16467785835266113,True,False
+Pollo al horno con puré/71_Pollo_Horno_Pure.jpg,71,Pollo al horno con puré,31,31,Pollo al horno con puré,0.998903751373291,0.0010968389688059688,True,False
+Pollo al horno con puré/72_Pollo_Horno_Pure.jpg,72,Pollo al horno con puré,31,31,Pollo al horno con puré,0.9833749532699585,0.016764823347330093,True,False
+Pollo al horno con puré/73_Pollo_Horno_Pure.jpg,73,Pollo al horno con puré,31,31,Pollo al horno con puré,0.977217972278595,0.02304556407034397,True,False
+Pollo al horno con puré/74_Pollo_Horno_Pure.jpg,74,Pollo al horno con puré,31,31,Pollo al horno con puré,0.9710980653762817,0.02932785265147686,True,False
+Pollo al horno con puré/75_Pollo_Horno_Pure.jpg,75,Pollo al horno con puré,31,31,Pollo al horno con puré,0.939119279384613,0.06281276047229767,True,False
+Pollo al horno con puré/76_Pollo_Horno_Pure.jpg,76,Pollo al horno con puré,31,31,Pollo al horno con puré,0.9945639371871948,0.005450862925499678,True,False
+Pollo al horno con puré/77_Pollo_Horno_Pure.jpg,77,Pollo al horno con puré,31,31,Pollo al horno con puré,0.9743938446044922,0.025939729064702988,True,False
+Pollo al horno con puré/78_Pollo_Horno_Pure.jpg,78,Pollo al horno con puré,31,31,Pollo al horno con puré,0.9067009091377258,0.09794266521930695,True,False
+Pollo al horno con puré/79_Pollo_Horno_Pure.jpg,79,Pollo al horno con puré,31,31,Pollo al horno con puré,0.7538145780563354,0.2826088070869446,True,False
+Pollo al horno con puré/80_Pollo_Horno_Pure.jpg,80,Pollo al horno con puré,31,31,Pollo al horno con puré,0.6826973557472229,0.381703644990921,True,False
+Pollo al horno con puré/81_Pollo_Horno_Pure.jpg,81,Pollo al horno con puré,31,31,Pollo al horno con puré,0.9818744659423828,0.018291834741830826,True,False
+Pollo al horno con puré/82_Pollo_Horno_Pure.jpg,82,Pollo al horno con puré,31,31,Pollo al horno con puré,0.9481756091117859,0.05321557819843292,True,False
+Pollo al horno con puré/83_Pollo_Horno_Pure.jpg,83,Pollo al horno con puré,31,31,Pollo al horno con puré,0.935520589351654,0.06665215641260147,True,False
+Pollo al horno con puré/84_Pollo_Horno_Pure.jpg,84,Pollo al horno con puré,31,31,Pollo al horno con puré,0.954245388507843,0.04683442413806915,True,False
+Pollo al horno con puré/85_Pollo_Horno_Pure.jpg,85,Pollo al horno con puré,31,31,Pollo al horno con puré,0.6737093329429626,0.3949565589427948,True,False
+Pulpo al Olivo/71_Pulpo_Olivo.jpg,71,Pulpo al Olivo,32,32,Pulpo al Olivo,0.6001623868942261,0.5105550289154053,True,False
+Pulpo al Olivo/72_Pulpo_Olivo.jpg,72,Pulpo al Olivo,32,32,Pulpo al Olivo,0.5144113302230835,0.6647321581840515,True,False
+Pulpo al Olivo/73_Pulpo_Olivo.jpg,73,Pulpo al Olivo,32,32,Pulpo al Olivo,0.6605637669563293,0.4146616458892822,True,False
+Pulpo al Olivo/74_Pulpo_Olivo.jpg,74,Pulpo al Olivo,32,32,Pulpo al Olivo,0.8837395906448364,0.12359286099672318,True,False
+Pulpo al Olivo/75_Pulpo_Olivo.jpg,75,Pulpo al Olivo,32,32,Pulpo al Olivo,0.5522831082344055,0.5936944484710693,True,False
+Pulpo al Olivo/76_Pulpo_Olivo.jpg,76,Pulpo al Olivo,32,32,Pulpo al Olivo,0.7644442319869995,0.2686062157154083,True,False
+Pulpo al Olivo/77_Pulpo_Olivo.jpg,77,Pulpo al Olivo,32,32,Pulpo al Olivo,0.8741808533668518,0.13446800410747528,True,False
+Pulpo al Olivo/78_Pulpo_Olivo.jpg,78,Pulpo al Olivo,32,32,Pulpo al Olivo,0.7765851020812988,0.2528490126132965,True,False
+Pulpo al Olivo/79_Pulpo_Olivo.jpg,79,Pulpo al Olivo,32,32,Pulpo al Olivo,0.7315079569816589,0.31264713406562805,True,False
+Pulpo al Olivo/80_Pulpo_Olivo.jpg,80,Pulpo al Olivo,32,32,Pulpo al Olivo,0.9543240070343018,0.04675206169486046,True,False
+Pulpo al Olivo/81_Pulpo_Olivo.jpg,81,Pulpo al Olivo,32,32,Pulpo al Olivo,0.8890223503112793,0.11763287335634232,True,False
+Pulpo al Olivo/82_Pulpo_Olivo.jpg,82,Pulpo al Olivo,32,32,Pulpo al Olivo,0.9062586426734924,0.0984305590391159,True,False
+Pulpo al Olivo/83_Pulpo_Olivo.jpg,83,Pulpo al Olivo,32,32,Pulpo al Olivo,0.849510669708252,0.16309475898742676,True,False
+Pulpo al Olivo/84_Pulpo_Olivo.jpg,84,Pulpo al Olivo,32,32,Pulpo al Olivo,0.8337609171867371,0.18180857598781586,True,False
+Pulpo al Olivo/85_Pulpo_Olivo.jpg,85,Pulpo al Olivo,32,32,Pulpo al Olivo,0.8541316390037537,0.15766994655132294,True,False
+Rocoto Relleno/71_Rocoto_Relleno.jpg,71,Rocoto Relleno,33,35,Tacu Tacu,0.8602193593978882,3.105739116668701,False,False
+Rocoto Relleno/72_Rocoto_Relleno.jpg,72,Rocoto Relleno,33,33,Rocoto Relleno,0.9726514220237732,0.027729496359825134,True,False
+Rocoto Relleno/73_Rocoto_Relleno.jpg,73,Rocoto Relleno,33,33,Rocoto Relleno,0.5482752323150635,0.6009778380393982,True,False
+Rocoto Relleno/74_Rocoto_Relleno.jpg,74,Rocoto Relleno,33,35,Tacu Tacu,0.9729678630828857,5.154695510864258,False,False
+Rocoto Relleno/75_Rocoto_Relleno.jpg,75,Rocoto Relleno,33,35,Tacu Tacu,0.9320494532585144,3.263209342956543,False,False
+Rocoto Relleno/76_Rocoto_Relleno.jpg,76,Rocoto Relleno,33,35,Tacu Tacu,0.7614546418190002,1.922591209411621,False,False
+Rocoto Relleno/77_Rocoto_Relleno.jpg,77,Rocoto Relleno,33,35,Tacu Tacu,0.8874043226242065,2.7874696254730225,False,False
+Rocoto Relleno/78_Rocoto_Relleno.jpg,78,Rocoto Relleno,33,33,Rocoto Relleno,0.9978379607200623,0.0021644041407853365,True,False
+Rocoto Relleno/79_Rocoto_Relleno.jpg,79,Rocoto Relleno,33,33,Rocoto Relleno,0.9529667496681213,0.04817526414990425,True,False
+Rocoto Relleno/80_Rocoto_Relleno.jpg,80,Rocoto Relleno,33,33,Rocoto Relleno,0.9834127426147461,0.01672637276351452,True,False
+Rocoto Relleno/81_Rocoto_Relleno.jpg,81,Rocoto Relleno,33,33,Rocoto Relleno,0.9871031641960144,0.012980722822248936,True,False
+Rocoto Relleno/82_Rocoto_Relleno.jpg,82,Rocoto Relleno,33,33,Rocoto Relleno,0.994364857673645,0.00565109308809042,True,False
+Rocoto Relleno/83_Rocoto_Relleno.jpg,83,Rocoto Relleno,33,33,Rocoto Relleno,0.9984617233276367,0.0015394752845168114,True,False
+Rocoto Relleno/84_Rocoto_Relleno.jpg,84,Rocoto Relleno,33,33,Rocoto Relleno,0.9985093474388123,0.0014917447697371244,True,False
+Rocoto Relleno/85_Rocoto_Relleno.jpg,85,Rocoto Relleno,33,33,Rocoto Relleno,0.9559847116470337,0.04501337185502052,True,False
+Sopa a la Minuta/71_Sopa_Minuta.jpg,71,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9959713816642761,0.004036732017993927,True,False
+Sopa a la Minuta/72_Sopa_Minuta.jpg,72,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9992631077766418,0.0007371568935923278,True,False
+Sopa a la Minuta/73_Sopa_Minuta.jpg,73,Sopa a la Minuta,34,34,Sopa a la Minuta,0.998988926410675,0.0010115751065313816,True,False
+Sopa a la Minuta/74_Sopa_Minuta.jpg,74,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9982516169548035,0.0017498909728601575,True,False
+Sopa a la Minuta/75_Sopa_Minuta.jpg,75,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9935814142227173,0.00643929373472929,True,False
+Sopa a la Minuta/76_Sopa_Minuta.jpg,76,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9971261620521545,0.002877977676689625,True,False
+Sopa a la Minuta/77_Sopa_Minuta.jpg,77,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9934873580932617,0.006533926352858543,True,False
+Sopa a la Minuta/78_Sopa_Minuta.jpg,78,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9966523051261902,0.003353331470862031,True,False
+Sopa a la Minuta/79_Sopa_Minuta.jpg,79,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9711601138114929,0.029263949021697044,True,False
+Sopa a la Minuta/80_Sopa_Minuta.jpg,80,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9983104467391968,0.001690983772277832,True,False
+Sopa a la Minuta/81_Sopa_Minuta.jpg,81,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9984101057052612,0.0015911312075331807,True,False
+Sopa a la Minuta/82_Sopa_Minuta.jpg,82,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9990795850753784,0.000920825288631022,True,False
+Sopa a la Minuta/83_Sopa_Minuta.jpg,83,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9923195242881775,0.007710102014243603,True,False
+Sopa a la Minuta/84_Sopa_Minuta.jpg,84,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9939125776290894,0.006106054875999689,True,False
+Sopa a la Minuta/85_Sopa_Minuta.jpg,85,Sopa a la Minuta,34,34,Sopa a la Minuta,0.9954409599304199,0.004569445736706257,True,False
+Tacu Tacu/71_Tacu_Tacu.jpg,71,Tacu Tacu,35,35,Tacu Tacu,0.2899721562862396,1.2379703521728516,True,True
+Tacu Tacu/72_Tacu_Tacu.jpg,72,Tacu Tacu,35,35,Tacu Tacu,0.34548044204711914,1.062819242477417,True,True
+Tacu Tacu/73_Tacu_Tacu.jpg,73,Tacu Tacu,35,35,Tacu Tacu,0.4975411295890808,0.6980770826339722,True,True
+Tacu Tacu/74_Tacu_Tacu.jpg,74,Tacu Tacu,35,35,Tacu Tacu,0.32847654819488525,1.1132898330688477,True,True
+Tacu Tacu/75_Tacu_Tacu.jpg,75,Tacu Tacu,35,35,Tacu Tacu,0.990664005279541,0.009379842318594456,True,False
+Tacu Tacu/76_Tacu_Tacu.jpg,76,Tacu Tacu,35,35,Tacu Tacu,0.9974666833877563,0.002536534098908305,True,False
+Tacu Tacu/77_Tacu_Tacu.jpg,77,Tacu Tacu,35,35,Tacu Tacu,0.9751359224319458,0.02517838031053543,True,False
+Tacu Tacu/78_Tacu_Tacu.jpg,78,Tacu Tacu,35,35,Tacu Tacu,0.9996137022972107,0.0003864018653985113,True,False
+Tacu Tacu/79_Tacu_Tacu.jpg,79,Tacu Tacu,35,35,Tacu Tacu,0.9987015724182129,0.0012992521515116096,True,False
+Tacu Tacu/80_Tacu_Tacu.jpg,80,Tacu Tacu,35,35,Tacu Tacu,0.9915197491645813,0.008516421541571617,True,False
+Tacu Tacu/81_Tacu_Tacu.jpg,81,Tacu Tacu,35,35,Tacu Tacu,0.9925515651702881,0.007476326543837786,True,False
+Tacu Tacu/82_Tacu_Tacu.jpg,82,Tacu Tacu,35,35,Tacu Tacu,0.9879282116889954,0.012145256623625755,True,False
+Tacu Tacu/83_Tacu_Tacu.jpg,83,Tacu Tacu,35,35,Tacu Tacu,0.9961891770362854,0.003818127792328596,True,False
+Tacu Tacu/84_Tacu_Tacu.jpg,84,Tacu Tacu,35,35,Tacu Tacu,0.9946744441986084,0.00533976498991251,True,False
+Tacu Tacu/85_Tacu_Tacu.jpg,85,Tacu Tacu,35,35,Tacu Tacu,0.9859399795532227,0.01415980514138937,True,False
+Tallarin Saltado/71_Tallarin_Saltado.jpg,71,Tallarin Saltado,36,36,Tallarin Saltado,0.9954719543457031,0.004538354929536581,True,False
+Tallarin Saltado/72_Tallarin_Saltado.jpg,72,Tallarin Saltado,36,36,Tallarin Saltado,0.9942224621772766,0.005794276017695665,True,False
+Tallarin Saltado/73_Tallarin_Saltado.jpg,73,Tallarin Saltado,36,36,Tallarin Saltado,0.9934273958206177,0.006594324950128794,True,False
+Tallarin Saltado/74_Tallarin_Saltado.jpg,74,Tallarin Saltado,36,36,Tallarin Saltado,0.997576892375946,0.0024260631762444973,True,False
+Tallarin Saltado/75_Tallarin_Saltado.jpg,75,Tallarin Saltado,36,36,Tallarin Saltado,0.9987338185310364,0.0012669878778979182,True,False
+Tallarin Saltado/76_Tallarin_Saltado.jpg,76,Tallarin Saltado,36,36,Tallarin Saltado,0.9981065988540649,0.0018951804377138615,True,False
+Tallarin Saltado/77_Tallarin_Saltado.jpg,77,Tallarin Saltado,36,36,Tallarin Saltado,0.9982299208641052,0.0017716678557917476,True,False
+Tallarin Saltado/78_Tallarin_Saltado.jpg,78,Tallarin Saltado,36,36,Tallarin Saltado,0.9985253214836121,0.0014757943572476506,True,False
+Tallarin Saltado/79_Tallarin_Saltado.jpg,79,Tallarin Saltado,36,36,Tallarin Saltado,0.6127035021781921,0.4898741841316223,True,False
+Tallarin Saltado/80_Tallarin_Saltado.jpg,80,Tallarin Saltado,36,36,Tallarin Saltado,0.9932661056518555,0.006756673566997051,True,False
+Tallarin Saltado/81_Tallarin_Saltado.jpg,81,Tallarin Saltado,36,36,Tallarin Saltado,0.9986299276351929,0.0013710394268855453,True,False
+Tallarin Saltado/82_Tallarin_Saltado.jpg,82,Tallarin Saltado,36,36,Tallarin Saltado,0.9996926784515381,0.0003073934931308031,True,False
+Tallarin Saltado/83_Tallarin_Saltado.jpg,83,Tallarin Saltado,36,36,Tallarin Saltado,0.9952276945114136,0.004783733282238245,True,False
+Tallarin Saltado/84_Tallarin_Saltado.jpg,84,Tallarin Saltado,36,36,Tallarin Saltado,0.9985324144363403,0.0014686522772535682,True,False
+Tallarin Saltado/85_Tallarin_Saltado.jpg,85,Tallarin Saltado,36,36,Tallarin Saltado,0.9990167617797852,0.0009837078396230936,True,False
+Tallarines Rojos/71_Tallarines_Rojos.jpg,71,Tallarines Rojos,37,37,Tallarines Rojos,0.9881516098976135,0.01191911194473505,True,False
+Tallarines Rojos/72_Tallarines_Rojos.jpg,72,Tallarines Rojos,37,37,Tallarines Rojos,0.9021320343017578,0.1029944196343422,True,False
+Tallarines Rojos/73_Tallarines_Rojos.jpg,73,Tallarines Rojos,37,37,Tallarines Rojos,0.9839560389518738,0.016174057498574257,True,False
+Tallarines Rojos/74_Tallarines_Rojos.jpg,74,Tallarines Rojos,37,37,Tallarines Rojos,0.9900549650192261,0.009994816966354847,True,False
+Tallarines Rojos/75_Tallarines_Rojos.jpg,75,Tallarines Rojos,37,37,Tallarines Rojos,0.994899332523346,0.0051137362606823444,True,False
+Tallarines Rojos/76_Tallarines_Rojos.jpg,76,Tallarines Rojos,37,37,Tallarines Rojos,0.9887160658836365,0.01134810596704483,True,False
+Tallarines Rojos/77_Tallarines_Rojos.jpg,77,Tallarines Rojos,37,37,Tallarines Rojos,0.9662781953811646,0.034303490072488785,True,False
+Tallarines Rojos/78_Tallarines_Rojos.jpg,78,Tallarines Rojos,37,37,Tallarines Rojos,0.9977102279663086,0.002292387653142214,True,False
+Tallarines Rojos/79_Tallarines_Rojos.jpg,79,Tallarines Rojos,37,37,Tallarines Rojos,0.9855506420135498,0.014554756693542004,True,False
+Tallarines Rojos/80_Tallarines_Rojos.jpg,80,Tallarines Rojos,37,37,Tallarines Rojos,0.9966925382614136,0.003312935121357441,True,False
+Tallarines Rojos/81_Tallarines_Rojos.jpg,81,Tallarines Rojos,37,37,Tallarines Rojos,0.9893006682395935,0.01075696013867855,True,False
+Tallarines Rojos/82_Tallarines_Rojos.jpg,82,Tallarines Rojos,37,37,Tallarines Rojos,0.9983007311820984,0.0017007424030452967,True,False
+Tallarines Rojos/83_Tallarines_Rojos.jpg,83,Tallarines Rojos,37,37,Tallarines Rojos,0.9969417452812195,0.0030629171524196863,True,False
+Tallarines Rojos/84_Tallarines_Rojos.jpg,84,Tallarines Rojos,37,37,Tallarines Rojos,0.9965997338294983,0.0034060818143188953,True,False
+Tallarines Rojos/85_Tallarines_Rojos.jpg,85,Tallarines Rojos,37,37,Tallarines Rojos,0.6306847333908081,0.46094921231269836,True,False
+Tallarines Verdes/71_Tallarines_Verdes.jpg,71,Tallarines Verdes,38,36,Tallarin Saltado,0.3453955054283142,3.085857391357422,False,True
+Tallarines Verdes/72_Tallarines_Verdes.jpg,72,Tallarines Verdes,38,38,Tallarines Verdes,0.9999146461486816,8.535020606359467e-05,True,False
+Tallarines Verdes/73_Tallarines_Verdes.jpg,73,Tallarines Verdes,38,38,Tallarines Verdes,0.9987744688987732,0.0012262690579518676,True,False
+Tallarines Verdes/74_Tallarines_Verdes.jpg,74,Tallarines Verdes,38,38,Tallarines Verdes,0.9995263814926147,0.0004737447015941143,True,False
+Tallarines Verdes/75_Tallarines_Verdes.jpg,75,Tallarines Verdes,38,38,Tallarines Verdes,0.9999732971191406,2.6702524337451905e-05,True,False
+Tallarines Verdes/76_Tallarines_Verdes.jpg,76,Tallarines Verdes,38,38,Tallarines Verdes,0.9994561076164246,0.0005440423847176135,True,False
+Tallarines Verdes/77_Tallarines_Verdes.jpg,77,Tallarines Verdes,38,38,Tallarines Verdes,0.9992382526397705,0.0007620529504492879,True,False
+Tallarines Verdes/78_Tallarines_Verdes.jpg,78,Tallarines Verdes,38,38,Tallarines Verdes,0.9997300505638123,0.0002699726028367877,True,False
+Tallarines Verdes/79_Tallarines_Verdes.jpg,79,Tallarines Verdes,38,38,Tallarines Verdes,0.997817873954773,0.0021845067385584116,True,False
+Tallarines Verdes/80_Tallarines_Verdes.jpg,80,Tallarines Verdes,38,38,Tallarines Verdes,0.9999094009399414,9.059495641849935e-05,True,False
+Tallarines Verdes/81_Tallarines_Verdes.jpg,81,Tallarines Verdes,38,38,Tallarines Verdes,0.9988768696784973,0.0011237503495067358,True,False
+Tallarines Verdes/82_Tallarines_Verdes.jpg,82,Tallarines Verdes,38,38,Tallarines Verdes,0.996959924697876,0.00304473377764225,True,False
+Tallarines Verdes/83_Tallarines_Verdes.jpg,83,Tallarines Verdes,38,21,Lentejitas,0.27654483914375305,3.8433642387390137,False,True
+Tallarines Verdes/84_Tallarines_Verdes.jpg,84,Tallarines Verdes,38,37,Tallarines Rojos,0.3844088912010193,1.833815574645996,False,True
+Tallarines Verdes/85_Tallarines_Verdes.jpg,85,Tallarines Verdes,38,7,Bisteck a lo Pobre,0.16303834319114685,2.548020839691162,False,True
+Tamales/71_Tamales.jpg,71,Tamales,39,39,Tamales,0.9995906949043274,0.0004094000905752182,True,False
+Tamales/72_Tamales.jpg,72,Tamales,39,39,Tamales,0.8348510265350342,0.1805019974708557,True,False
+Tamales/73_Tamales.jpg,73,Tamales,39,39,Tamales,0.9980258941650391,0.0019760860595852137,True,False
+Tamales/74_Tamales.jpg,74,Tamales,39,39,Tamales,0.965000331401825,0.03562682867050171,True,False
+Tamales/75_Tamales.jpg,75,Tamales,39,39,Tamales,0.9895209074020386,0.010534394532442093,True,False
+Tamales/76_Tamales.jpg,76,Tamales,39,39,Tamales,0.9972291588783264,0.002774677239358425,True,False
+Tamales/77_Tamales.jpg,77,Tamales,39,39,Tamales,0.999721348285675,0.0002786724944598973,True,False
+Tamales/78_Tamales.jpg,78,Tamales,39,39,Tamales,0.9874835014343262,0.012595508247613907,True,False
+Tamales/79_Tamales.jpg,79,Tamales,39,39,Tamales,0.9959426522254944,0.004065582528710365,True,False
+Tamales/80_Tamales.jpg,80,Tamales,39,39,Tamales,0.9977923631668091,0.0022100803907960653,True,False
+Tamales/81_Tamales.jpg,81,Tamales,39,39,Tamales,0.9621333479881287,0.038602203130722046,True,False
+Tamales/82_Tamales.jpg,82,Tamales,39,39,Tamales,0.9944847226142883,0.005530532915145159,True,False
+Tamales/83_Tamales.jpg,83,Tamales,39,39,Tamales,0.9981803894042969,0.001821288955397904,True,False
+Tamales/84_Tamales.jpg,84,Tamales,39,39,Tamales,0.999269425868988,0.0007308434578590095,True,False
+Tamales/85_Tamales.jpg,85,Tamales,39,39,Tamales,0.9794618487358093,0.02075197547674179,True,False

@@ -1,0 +1,104 @@
+{
+  "pair_rule": "Pares no ordenados; suma de ambas direcciones. Se incluyen empates hasta el segundo puesto.",
+  "top_pairs_including_ties": [
+    {
+      "clase_a": "Cau Cau",
+      "clase_b": "Chanfainita",
+      "a_predicha_b": 0,
+      "b_predicha_a": 5,
+      "total": 5
+    },
+    {
+      "clase_a": "Ceviche",
+      "clase_b": "Choclo con Queso",
+      "a_predicha_b": 0,
+      "b_predicha_a": 5,
+      "total": 5
+    },
+    {
+      "clase_a": "Humitas",
+      "clase_b": "Tamales",
+      "a_predicha_b": 5,
+      "b_predicha_a": 0,
+      "total": 5
+    },
+    {
+      "clase_a": "Rocoto Relleno",
+      "clase_b": "Tacu Tacu",
+      "a_predicha_b": 5,
+      "b_predicha_a": 0,
+      "total": 5
+    }
+  ],
+  "second_place_tied": true,
+  "example_rule": "Primer error en el orden del manifiesto con uniones documentales distintas.",
+  "example": {
+    "relative_path": "Aji de Gallina/72_Aji_de_Gallina.jpg",
+    "true_class": "Aji de Gallina",
+    "predicted_class": "Locro",
+    "score": 0.3052471876144409,
+    "uncertain": true,
+    "true_recipe": {
+      "paper_name": "Ají de Gallina",
+      "efsa_codes": [
+        "AI001",
+        "AI004",
+        "AI007",
+        "AI010"
+      ],
+      "usda_codes": [
+        "AI004",
+        "AI007",
+        "AI010"
+      ],
+      "union": [
+        {
+          "code": "AI001",
+          "name": "Apio"
+        },
+        {
+          "code": "AI004",
+          "name": "Huevos"
+        },
+        {
+          "code": "AI007",
+          "name": "Leche"
+        },
+        {
+          "code": "AI010",
+          "name": "Frutos de cáscara"
+        }
+      ]
+    },
+    "predicted_recipe": {
+      "paper_name": "Locro",
+      "efsa_codes": [
+        "AI004",
+        "AI007"
+      ],
+      "usda_codes": [
+        "AI004",
+        "AI007"
+      ],
+      "union": [
+        {
+          "code": "AI004",
+          "name": "Huevos"
+        },
+        {
+          "code": "AI007",
+          "name": "Leche"
+        }
+      ]
+    },
+    "only_true_codes": [
+      "AI001",
+      "AI010"
+    ],
+    "only_predicted_codes": [],
+    "source": "https://doi.org/10.1016/j.dib.2025.111604",
+    "photo_license": "CC BY 4.0",
+    "photo_source": "https://data.mendeley.com/datasets/hxhbbm497d/3",
+    "limitation": "La foto no detecta ingredientes; una lista vacía no garantiza ausencia."
+  }
+}

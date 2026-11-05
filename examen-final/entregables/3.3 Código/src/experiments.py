@@ -1,5 +1,6 @@
 """Run and resume the two-stage validation campaign."""
 import argparse
+import filecmp
 import itertools
 import json
 import subprocess
@@ -11,16 +12,18 @@ from mlflow.tracking import MlflowClient
 
 from tracking import setup
 from train import PROJECT, train, update_best, run_name
-from reports import create_reports
+from reports import create_reports, ensure_separate_from_official, validate_selection_records, validate_test_provenance
 
 FAMILIES = ("resnet18", "yolo26m")
 REGIMES = ("head", "full")
 BUDGETS = (10, 40)
 RATES = (0.0001, 0.0003)
-SCOPED = [f":(top)examen-final/perufoodnet/{path}" for path in (
+SELECTION_ARTIFACTS = ("corridas.csv", "comparacion_misma_tasa.csv", "resumen_validacion.csv",
+                       "comparacion_validacion.png", "matrix_index.json", "winner.json")
+SCOPED = (
     "src/train.py", "src/experiments.py", "src/datasets.py", "src/models.py", "src/evaluate.py",
     "src/tracking.py", "configs", "data/manifest.csv", "data/classes.json", "requirements.txt",
-)]
+)
 
 
 def source_compatible(source: str, current: str) -> bool:
@@ -53,13 +56,15 @@ def history_consistent(history: pd.DataFrame, config: dict, summary: dict, check
             and abs(checkpoint["best_f1"] - best) < 1e-10)
 
 
-def compatible(record: dict, config: dict, current: str, client: MlflowClient) -> bool:
+def compatible(record: dict, config: dict, current: str, client: MlflowClient,
+               parent_id: str | None = None) -> bool:
     """Verify configuration, remote completion, source and local evidence."""
     if record.get("status") != "FINISHED" or record.get("config") != config:
         return False
     try:
         run = client.get_run(record["run_id"])
-        if run.info.status != "FINISHED" or not source_compatible(run.data.params["commit"], current):
+        if (run.info.status != "FINISHED" or (parent_id is not None and run.data.tags.get("mlflow.parentRunId") != parent_id)
+                or not source_compatible(run.data.params["commit"], current)):
             return False
         root = Path(config["output"]) / "runs" / record["run_id"]
         if not all((root / name).is_file() for name in ("best.pt", "history.csv", "model_uri.json", "summary.json")):
@@ -107,6 +112,53 @@ def selected_initial(records: list[dict]) -> list[dict]:
     return chosen
 
 
+def campaign_selection_complete(results: Path, output: Path, records: list[dict], parent_id: str) -> bool:
+    """Check that a completed selection, index, histories and checkpoint belong together."""
+    if not results.exists():
+        return False
+    for name in SELECTION_ARTIFACTS:
+        if not (results / name).is_file():
+            raise RuntimeError(f"Campaign selection artifact is missing: {name}; preserve the results")
+    winner_path = results / "winner.json"
+    index_path = results / "matrix_index.json"
+    selection = json.loads(winner_path.read_text(encoding="utf-8-sig"))
+    index = json.loads(index_path.read_text(encoding="utf-8-sig"))
+    if selection.get("parent_run_id") != parent_id or index != records:
+        raise RuntimeError("Campaign selection parent or index does not match this campaign")
+    validate_selection_records(selection, index)
+    classes = json.loads((PROJECT / "data/classes.json").read_text(encoding="utf-8-sig"))
+    if selection.get("classes") != classes:
+        raise RuntimeError("Campaign selection class order does not match the project")
+    validate_test_provenance(results, selection)
+    winner_id = selection["winner"]["run_id_seed42"]
+    expected_source = (output / "runs" / winner_id / "best.pt").resolve()
+    official = (output / "perufoodnet_best.pt").resolve()
+    if (Path(selection["winner"]["checkpoint_source"]).resolve() != expected_source
+            or Path(selection["checkpoint"]).resolve() != official
+            or not expected_source.is_file() or not official.is_file()
+            or not filecmp.cmp(expected_source, official, shallow=False)):
+        raise RuntimeError("Campaign selection checkpoint does not match the selected run")
+    histories = results / "histories"
+    expected_names = {f"{record['run_id']}.csv" for record in records}
+    if not histories.is_dir() or {path.name for path in histories.iterdir()} != expected_names:
+        raise RuntimeError("Campaign histories do not match the selection index")
+    for record in records:
+        run_id = record["run_id"]
+        original = output / "runs" / run_id / "history.csv"
+        if not original.is_file() or not filecmp.cmp(original, histories / f"{run_id}.csv", shallow=False):
+            raise RuntimeError(f"Campaign history does not match run {run_id}")
+    return True
+
+
+def log_validation_artifacts(results: Path, records: list[dict]) -> None:
+    """Log only this campaign's explicit validation evidence."""
+    for name in SELECTION_ARTIFACTS:
+        mlflow.log_artifact(str(results / name), artifact_path="selection")
+    for record in records:
+        mlflow.log_artifact(str(results / "histories" / f"{record['run_id']}.csv"),
+                            artifact_path="selection/histories")
+
+
 def run_campaign(base: dict) -> None:
     """Run 16 initial configurations and 16 selected-rate repetitions."""
     if (base["epochs"] != 200 or base["patience"] != 10 or base["weight_decay"] != 0.01
@@ -116,13 +168,16 @@ def run_campaign(base: dict) -> None:
     if dirty.strip():
         raise RuntimeError("Commit all changes to code, configuration and data before running the campaign")
     current = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=PROJECT, text=True).strip()
+    output = Path(base["output"])
+    ensure_separate_from_official(output / "results")
     setup(base)
     client = MlflowClient()
-    output = Path(base["output"])
     output.mkdir(parents=True, exist_ok=True)
     index_path = output / "matrix_index.json"
     campaign_path = output / "matrix_campaign.json"
     records = json.loads(index_path.read_text(encoding="utf-8")) if index_path.exists() else []
+    results = output / "results"
+    parent_id = None
     if index_path.exists() and not campaign_path.exists():
         raise RuntimeError("Existing campaign index has no campaign metadata; preserve it and use a new directory")
     if campaign_path.exists():
@@ -130,23 +185,34 @@ def run_campaign(base: dict) -> None:
         if (campaign.get("base_config") != base or not campaign.get("source_commit")
                 or not source_compatible(campaign["source_commit"], current)):
             raise RuntimeError("Existing campaign has incompatible configuration or training source; use a new directory")
+        parent_id = campaign["parent_run_id"]
         for record in records:
             record_config = record.get("config", {})
             if any(record_config.get(key) != value for key, value in base.items() if key != "seed"):
                 raise RuntimeError("Existing campaign index contains an incompatible configuration")
-            if record.get("status") == "FINISHED" and not compatible(record, record_config, current, client):
+            if record.get("status") == "FINISHED" and not compatible(record, record_config, current, client, parent_id):
                 raise RuntimeError(f"Completed run {record.get('run_id')} is incompatible or incomplete; preserve it")
 
     def find(config: dict) -> dict | None:
-        return next((r for r in reversed(records) if compatible(r, config, current, client)), None)
+        return next((r for r in reversed(records) if compatible(r, config, current, client, parent_id)), None)
 
     initial = [configuration(base, f, r, b, lr, 42)
                for f, r, b, lr in itertools.product(FAMILIES, REGIMES, BUDGETS, RATES)]
-    # If already complete, do not create or reopen a parent merely to resume.
+    # A completed local selection must also be registered under its existing parent.
     initial_records = [find(c) for c in initial]
+    repeat_records = []
     if all(initial_records):
         repeat = [dict(r["config"], seed=seed) for r in selected_initial(initial_records) for seed in (43, 44)]
-        if all(find(c) for c in repeat) and (PROJECT / "results/winner.json").is_file():
+        repeat_records = [find(c) for c in repeat]
+    if not results.exists() and (output / "perufoodnet_best.pt").exists():
+        raise RuntimeError("Campaign checkpoint exists without selection evidence; preserve it before proceeding")
+    if results.exists():
+        if not all(initial_records) or len(repeat_records) != 16 or not all(repeat_records):
+            raise RuntimeError("Campaign results exist without 32 compatible runs; preserve them before proceeding")
+        if campaign_selection_complete(results, output, initial_records + repeat_records, parent_id):
+            with mlflow.start_run(run_id=parent_id):
+                log_validation_artifacts(results, initial_records + repeat_records)
+                mlflow.set_tag("selection_status", "selected_before_test")
             print("Campaign is already complete; no new run created.")
             return
     if campaign_path.exists():
@@ -187,8 +253,12 @@ def run_campaign(base: dict) -> None:
         chosen = selected_initial(initial_records)
         repeated = [ensure(dict(record["config"], seed=seed)) for record in chosen for seed in (43, 44)]
         valid = initial_records + repeated
-        create_reports(valid, PROJECT / "results", output, parent_id, current)
-        mlflow.log_artifacts(str(PROJECT / "results"), artifact_path="selection")
+        for record in valid:
+            if not compatible(record, record["config"], current, client, parent_id):
+                raise RuntimeError(f"Run {record['run_id']} does not match the current campaign")
+        create_reports(valid, results, output, parent_id, current)
+        campaign_selection_complete(results, output, valid, parent_id)
+        log_validation_artifacts(results, valid)
         mlflow.set_tag("selection_status", "selected_before_test")
         print("Selection saved; test split was not evaluated.", flush=True)
 
@@ -196,8 +266,12 @@ def run_campaign(base: dict) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=Path, default=PROJECT / "configs/default.json")
+    parser.add_argument("--output", type=Path, help="Dedicated directory for a new or resumed campaign")
     args = parser.parse_args()
-    run_campaign(json.loads(args.config.read_text(encoding="utf-8-sig")))
+    config = json.loads(args.config.read_text(encoding="utf-8-sig"))
+    if args.output is not None:
+        config["output"] = str(args.output.resolve())
+    run_campaign(config)
 
 
 if __name__ == "__main__":
