@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>¿Qué plato es? | PeruFoodNet</title>
+  <meta name="description" content="Toma o sube una foto de un plato peruano y el modelo YOLO26m-cls del Grupo 3 (MIA-203, UNI) propone cuál de los 40 platos es. Todo ocurre en tu dispositivo.">
+  <meta name="theme-color" content="#3A1D4B">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="barra">
+    <a class="marca" href="../" aria-label="Inicio del proyecto">
+      <span class="marca-plato" aria-hidden="true"></span>
+      <span>PeruFoodNet</span>
+    </a>
+    <a class="enlace-slides" href="../slides/">Ver la presentación</a>
+  </header>
+
+  <main class="mesa">
+    <section class="escena" aria-label="Foto analizada">
+      <div class="plato" id="plato" data-estado="vacio">
+        <canvas id="lienzo" width="720" height="720" aria-hidden="true"></canvas>
+        <label class="plato-invitacion" for="archivo">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34h32M12 34a12 12 0 0 1 24 0M24 18v-4M20 14h8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <span>Pon aquí tu plato</span>
+          <small>Arrastra una foto o usa los botones</small>
+        </label>
+        <div class="plato-cargando" aria-hidden="true"><span></span></div>
+      </div>
+
+      <div class="acciones">
+        <label class="boton primario" for="camara">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          Tomar foto
+        </label>
+        <label class="boton" for="archivo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0-4.5 4.5M12 4l4.5 4.5M4 15v5h16v-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Subir imagen
+        </label>
+        <input id="camara" type="file" accept="image/*" capture="environment" hidden>
+        <input id="archivo" type="file" accept="image/*" hidden>
+      </div>
+
+      <div class="ejemplos">
+        <p id="ejemplos-titulo">O prueba con una foto de PeruFoodNet</p>
+        <ul aria-labelledby="ejemplos-titulo">
+          <li><button type="button" data-ejemplo="ejemplos/aguadito.jpg" data-nombre="aguadito"><img src="ejemplos/aguadito.jpg" alt="" loading="lazy"><span>Aguadito</span></button></li>
+          <li><button type="button" data-ejemplo="ejemplos/aji_de_gallina.jpg" data-nombre="ají de gallina"><img src="ejemplos/aji_de_gallina.jpg" alt="" loading="lazy"><span>Ají de gallina</span></button></li>
+          <li><button type="button" data-ejemplo="ejemplos/lomo_saltado.jpg" data-nombre="lomo saltado"><img src="ejemplos/lomo_saltado.jpg" alt="" loading="lazy"><span>Lomo saltado</span></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" aria-live="polite">
+      <div class="estado-modelo" id="estado-modelo">
+        <p id="estado-texto">Preparando el modelo en tu dispositivo…</p>
+        <div class="progreso" role="progressbar" aria-label="Descarga del modelo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progreso"></span></div>
+      </div>
+
+      <div class="bienvenida" id="bienvenida">
+        <h1>¿Qué plato peruano es?</h1>
+        <p>El modelo reconoce 40 platos tradicionales, desde el aguadito hasta los tamales. Propone el más probable, te muestra en qué parte de la foto se fijó y te enseña los ingredientes alergénicos que registra su receta.</p>
+        <p class="privado">La foto no sale de tu dispositivo: la red neuronal corre aquí, en el navegador.</p>
+      </div>
+
+      <article class="resultado" id="resultado" hidden>
+        <p class="resultado-intro" id="resultado-intro">Es probable que sea</p>
+        <h2 class="resultado-plato" id="resultado-plato"></h2>
+        <div class="confianza">
+          <div class="confianza-barra"><span id="confianza-relleno"></span></div>
+          <p><strong id="confianza-valor"></strong> <span id="confianza-etiqueta"></span></p>
+        </div>
+        <p class="aviso-incierto" id="aviso-incierto" hidden>El modelo no está seguro. Revisa las otras opciones o prueba con una foto más cercana y con buena luz.</p>
+
+        <div class="interruptor">
+          <input type="checkbox" id="ver-mapa" role="switch">
+          <label for="ver-mapa">Ver dónde se fijó el modelo</label>
+        </div>
+
+        <h3>Otras opciones</h3>
+        <ol class="opciones" id="opciones"></ol>
+
+        <h3>Ingredientes alergénicos de su receta</h3>
+        <ul class="ingredientes" id="ingredientes"></ul>
+        <p class="nota" id="nota-ingredientes"></p>
+
+        <details class="como-leer">
+          <summary>Cómo leer este resultado</summary>
+          <ul>
+            <li>El modelo siempre elige uno de los 40 platos que conoce. Si la foto muestra otra comida, igual propondrá uno de ellos.</li>
+            <li>El porcentaje es la puntuación softmax del modelo, no una probabilidad calibrada de acierto. Por debajo de 50 % se marca como incierto, igual que en el artículo.</li>
+            <li>El mapa resalta las zonas que más aportaron a la decisión (mapa de activación de clase).</li>
+            <li>Los ingredientes vienen de la receta documentada en PeruFoodNet, no de la foto. Una receta puede variar: ante una alergia, pregunta siempre en el establecimiento.</li>
+          </ul>
+          <p class="tecnico" id="tecnico"></p>
+        </details>
+      </article>
+
+      <p class="error" id="error" role="alert" hidden></p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>YOLO26m-cls ajustado por el Grupo 3, MIA-203 Redes Neuronales y Aprendizaje Profundo, UNI. F1 macro 0,904 en 600 fotos de prueba.</p>
+    <p>Fotos de ejemplo y recetas: Arzola, Canchari y Escobedo, <a href="https://data.mendeley.com/datasets/hxhbbm497d/3">PeruFoodNet V3</a>, CC BY 4.0.</p>
+  </footer>
+
+  <script src="vendor/ort/ort.wasm.min.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

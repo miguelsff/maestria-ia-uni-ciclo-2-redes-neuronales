@@ -1,0 +1,180 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font: 400 1rem/1.55 var(--texto);
+  color: var(--tinta);
+  background: var(--papa);
+}
+img, canvas { display: block; max-width: 100%; }
+button, input, label { font: inherit; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--aji); outline-offset: 3px; }
+
+/* ---------- Barra superior ---------- */
+.barra {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: max(0.9rem, env(safe-area-inset-top)) clamp(1rem, 4vw, 2.5rem) 0.9rem;
+  background: var(--maiz); color: var(--sobre-maiz);
+}
+.marca { display: inline-flex; align-items: center; gap: 0.6rem; text-decoration: none;
+  font: 700 1.15rem/1 var(--display); letter-spacing: -0.01em; }
+.marca-plato { width: 26px; height: 26px; border-radius: 50%;
+  background: radial-gradient(circle, var(--aji) 0 38%, var(--maiz) 39% 52%, var(--papa) 53% 100%); }
+.enlace-slides { font-size: 0.92rem; color: var(--sobre-maiz-2); text-underline-offset: 4px; }
+.enlace-slides:hover { color: var(--aji); }
+
+/* ---------- Mesa: escena (morado) + panel (claro) ---------- */
+.mesa { display: grid; grid-template-columns: 1fr; }
+.escena {
+  background:
+    radial-gradient(120% 70% at 50% 0%, var(--maiz-2) 0%, transparent 70%),
+    var(--maiz);
+  color: var(--sobre-maiz);
+  padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 4vw, 2.5rem) 2rem;
+  display: grid; justify-items: center; gap: 1.5rem; align-content: start;
+}
+
+/* El plato: foto circular con borde de cerámica */
+.plato {
+  position: relative;
+  width: min(84vw, 440px); aspect-ratio: 1;
+  border-radius: var(--r-plato);
+  background: var(--papa);
+  padding: clamp(14px, 3.4vw, 22px);
+  box-shadow: var(--sombra-plato), inset 0 0 0 2px rgba(58, 29, 75, 0.06);
+}
+.plato::after { /* filo interior del plato */
+  content: ""; position: absolute; inset: clamp(10px, 2.6vw, 17px); border-radius: 50%;
+  box-shadow: inset 0 0 0 2px rgba(58, 29, 75, 0.08), inset 0 6px 14px rgba(36, 18, 47, 0.18);
+  pointer-events: none;
+}
+.plato canvas { width: 100%; height: 100%; border-radius: 50%; background: var(--papa-2); }
+.plato[data-estado="vacio"] canvas { opacity: 0; }
+.plato-invitacion {
+  position: absolute; inset: clamp(14px, 3.4vw, 22px); border-radius: 50%;
+  display: grid; place-content: center; justify-items: center; gap: 0.35rem; text-align: center;
+  border: 2.5px dashed var(--aji); color: var(--maiz); cursor: pointer; padding: 1.5rem;
+  background: repeating-radial-gradient(circle, transparent 0 18px, rgba(242, 178, 27, 0.07) 18px 19px);
+}
+.plato-invitacion svg { width: 56px; height: 56px; color: var(--maiz-3); }
+.plato-invitacion span { font: 700 clamp(1.25rem, 4.6vw, 1.6rem)/1.1 var(--display); letter-spacing: -0.01em; }
+.plato-invitacion small { color: var(--maiz-3); font-size: 0.9rem; }
+.plato:not([data-estado="vacio"]) .plato-invitacion { display: none; }
+.plato.sobre .plato-invitacion { background-color: var(--aji-suave); }
+
+.plato-cargando { position: absolute; inset: -10px; border-radius: 50%; pointer-events: none; opacity: 0; transition: opacity 0.2s; }
+.plato-cargando span { position: absolute; inset: 0; border-radius: 50%;
+  border: 4px solid transparent; border-top-color: var(--aji); border-right-color: var(--aji);
+  animation: girar 0.9s linear infinite; }
+.plato[data-estado="pensando"] .plato-cargando { opacity: 1; }
+@keyframes girar { to { transform: rotate(360deg); } }
+
+/* El momento: el plato aterriza en la mesa */
+.plato.aterriza { animation: aterrizar 0.7s cubic-bezier(0.2, 0.9, 0.25, 1.15); }
+@keyframes aterrizar {
+  0% { transform: translateY(-28px) scale(1.07) rotate(-9deg); box-shadow: 0 60px 70px -40px rgba(36, 18, 47, 0.3); }
+  70% { transform: translateY(2px) scale(0.995) rotate(0.6deg); }
+  100% { transform: none; box-shadow: var(--sombra-plato); }
+}
+
+/* Botones */
+.acciones { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
+.boton {
+  display: inline-flex; align-items: center; gap: 0.55rem; cursor: pointer; user-select: none;
+  min-height: 48px; padding: 0.7rem 1.35rem; border-radius: var(--r-control);
+  border: 2px solid var(--sobre-maiz-2); color: var(--sobre-maiz); font-weight: 600;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+.boton svg { width: 22px; height: 22px; }
+.boton:hover { border-color: var(--aji); color: var(--aji); }
+.boton.primario { background: var(--aji); border-color: var(--aji); color: var(--maiz); }
+.boton.primario:hover { background: #FFC83D; color: var(--maiz); }
+.acciones input:focus-visible + label, .boton:focus-within { outline: 3px solid var(--aji); outline-offset: 3px; }
+
+/* Ejemplos */
+.ejemplos { text-align: center; }
+.ejemplos p { margin: 0 0 0.7rem; font-size: 0.92rem; color: var(--sobre-maiz-2); }
+.ejemplos ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; justify-content: center; }
+.ejemplos button {
+  display: grid; justify-items: center; gap: 0.4rem; background: none; border: 0; padding: 0.2rem;
+  color: var(--sobre-maiz); cursor: pointer; font-size: 0.85rem; border-radius: 12px;
+}
+.ejemplos img { width: 64px; height: 64px; object-fit: cover; border-radius: 50%;
+  border: 3px solid var(--papa); box-shadow: 0 8px 18px -8px rgba(0, 0, 0, 0.6); transition: transform 0.2s; }
+.ejemplos button:hover img { transform: translateY(-3px) rotate(-6deg); }
+
+/* ---------- Panel ---------- */
+.panel { padding: clamp(1.75rem, 5vw, 3.25rem) clamp(1.25rem, 5vw, 3.5rem) 2.5rem; max-width: 40rem; width: 100%; justify-self: center; }
+.estado-modelo { margin-bottom: 1.5rem; }
+.estado-modelo p { margin: 0 0 0.5rem; font-size: 0.92rem; color: var(--maiz-3); }
+.estado-modelo[data-error="true"] p { color: var(--rocoto); font-weight: 600; }
+.progreso { height: 6px; border-radius: 3px; background: var(--papa-2); overflow: hidden; }
+.progreso span { display: block; height: 100%; width: 0; background: var(--aji); transition: width 0.2s; }
+
+h1, h2, h3 { font-family: var(--display); letter-spacing: -0.015em; color: var(--maiz); }
+.bienvenida h1 { font-size: clamp(2.1rem, 7vw, 3.1rem); line-height: 1.02; font-weight: 800; margin: 0 0 1rem; font-stretch: 92%; }
+.bienvenida p { margin: 0 0 1rem; max-width: 34rem; }
+.privado { display: flex; gap: 0.6rem; align-items: baseline; font-size: 0.92rem; color: var(--maiz-3); }
+.privado::before { content: ""; flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--huacatay); }
+
+.resultado-intro { margin: 0; font-size: 1rem; color: var(--maiz-3); }
+.resultado-plato {
+  margin: 0.1rem 0 1rem; font-size: clamp(2.4rem, 9vw, 3.6rem); line-height: 0.98; font-weight: 800; font-stretch: 88%;
+  animation: entrar 0.5s 0.15s both cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@keyframes entrar { from { opacity: 0; transform: translateY(10px); } }
+
+.confianza-barra { height: 12px; border-radius: 6px; background: var(--papa-2); overflow: hidden; }
+.confianza-barra span { --valor: 0; display: block; height: 100%; width: calc(var(--valor) * 100%);
+  background: var(--huacatay); border-radius: 6px; transition: width 0.8s 0.2s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.resultado[data-incierto="true"] .confianza-barra span { background: var(--rocoto); }
+.confianza p { margin: 0.45rem 0 0; }
+.confianza strong { font: 700 1.25rem/1 var(--display); font-variant-numeric: tabular-nums; }
+.aviso-incierto { margin: 1rem 0 0; padding: 0.85rem 1rem; border-radius: 12px; background: var(--rocoto-suave); color: #7A1E16; border-left: 4px solid var(--rocoto); }
+
+.interruptor { display: flex; align-items: center; gap: 0.75rem; margin: 1.5rem 0 0.25rem; }
+.interruptor input { appearance: none; width: 48px; height: 28px; border-radius: 14px; background: var(--papa-2);
+  position: relative; cursor: pointer; transition: background-color 0.2s; flex: none; margin: 0; border: 2px solid var(--maiz-3); }
+.interruptor input::after { content: ""; position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--maiz); transition: transform 0.2s; }
+.interruptor input:checked { background: var(--aji); border-color: var(--aji); }
+.interruptor input:checked::after { transform: translateX(20px); }
+.interruptor label { cursor: pointer; font-weight: 600; }
+
+.resultado h3 { font-size: 1.2rem; margin: 2rem 0 0.75rem; }
+.opciones { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+.opciones li { display: grid; grid-template-columns: minmax(8rem, 12rem) 1fr 4.2rem; align-items: center; gap: 0.75rem; }
+.opcion-nombre { font-weight: 600; }
+.opcion-barra { height: 8px; border-radius: 4px; background: var(--papa-2); overflow: hidden; }
+.opcion-barra span { --valor: 0; display: block; height: 100%; width: calc(var(--valor) * 100%); background: var(--maiz-3); border-radius: 4px; transition: width 0.8s 0.3s; }
+.opcion-valor { text-align: right; font-variant-numeric: tabular-nums; color: var(--maiz-3); font-size: 0.92rem; }
+
+.ingredientes { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.ingredientes li { padding: 0.4rem 0.9rem; border-radius: var(--r-control); background: var(--aji-suave); color: #5C3F00; font-weight: 600; font-size: 0.95rem; }
+.ingredientes:empty { display: none; }
+.nota { font-size: 0.9rem; color: var(--maiz-3); margin: 0.75rem 0 0; }
+
+.como-leer { margin-top: 2rem; border-top: 1px solid var(--papa-2); padding-top: 1rem; }
+.como-leer summary { cursor: pointer; font-weight: 600; color: var(--maiz); }
+.como-leer ul { padding-left: 1.2rem; font-size: 0.94rem; }
+.como-leer li { margin: 0.4rem 0; }
+.tecnico { font-size: 0.85rem; color: var(--maiz-3); }
+
+.error { margin-top: 1.5rem; padding: 0.85rem 1rem; border-radius: 12px; background: var(--rocoto-suave); color: #7A1E16; font-weight: 600; }
+
+/* ---------- Pie ---------- */
+.pie { padding: 1.5rem clamp(1rem, 4vw, 2.5rem) max(1.5rem, env(safe-area-inset-bottom)); background: var(--papa-2); font-size: 0.82rem; color: var(--maiz-3); }
+.pie p { margin: 0.2rem 0; max-width: 70ch; }
+
+/* ---------- Escritorio: mesa a la izquierda, lectura a la derecha ---------- */
+@media (min-width: 900px) {
+  .mesa { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); }
+  .escena { min-height: calc(100dvh - 64px); align-content: center; position: sticky; top: 0; }
+  .plato { width: min(40vw, 500px, calc(100dvh - 330px)); min-width: 300px; }
+  .escena { gap: 1.1rem; padding-top: 1.5rem; padding-bottom: 1.5rem; }
+  .panel { align-self: center; justify-self: start; }
+}

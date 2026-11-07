@@ -1,0 +1,552 @@
+{
+  "source": "https://doi.org/10.1016/j.dib.2025.111604",
+  "tables": "1 y 2",
+  "method": "Correspondencia por nombre normalizado: minúsculas y sin tildes. None indica que la columna no enumera ingredientes; no garantiza ausencia.",
+  "ingredients": {
+    "AI001": {
+      "original": "Celery",
+      "es": "Apio",
+      "efsa": true,
+      "usda": false
+    },
+    "AI002": {
+      "original": "Cereals containing gluten",
+      "es": "Cereales con gluten",
+      "efsa": true,
+      "usda": true
+    },
+    "AI003": {
+      "original": "Crustaceans",
+      "es": "Crustáceos",
+      "efsa": true,
+      "usda": true
+    },
+    "AI004": {
+      "original": "Eggs",
+      "es": "Huevos",
+      "efsa": true,
+      "usda": true
+    },
+    "AI005": {
+      "original": "Fish",
+      "es": "Pescado",
+      "efsa": true,
+      "usda": true
+    },
+    "AI006": {
+      "original": "Lupin",
+      "es": "Altramuz",
+      "efsa": true,
+      "usda": false
+    },
+    "AI007": {
+      "original": "Milk",
+      "es": "Leche",
+      "efsa": true,
+      "usda": true
+    },
+    "AI008": {
+      "original": "Molluscs",
+      "es": "Moluscos",
+      "efsa": true,
+      "usda": true
+    },
+    "AI009": {
+      "original": "Mustard",
+      "es": "Mostaza",
+      "efsa": true,
+      "usda": false
+    },
+    "AI010": {
+      "original": "Nuts",
+      "es": "Frutos de cáscara",
+      "efsa": true,
+      "usda": true
+    },
+    "AI011": {
+      "original": "Peanuts",
+      "es": "Maní",
+      "efsa": true,
+      "usda": true
+    },
+    "AI012": {
+      "original": "Sesame seeds",
+      "es": "Sésamo",
+      "efsa": true,
+      "usda": true
+    },
+    "AI013": {
+      "original": "Soybeans",
+      "es": "Soja",
+      "efsa": true,
+      "usda": true
+    },
+    "AI014": {
+      "original": "Sulphites",
+      "es": "Sulfitos",
+      "efsa": true,
+      "usda": false
+    }
+  },
+  "dishes": {
+    "Aguadito": {
+      "paper_name": "Aguadito",
+      "efsa": [
+        "AI001"
+      ],
+      "usda": null
+    },
+    "Aji de Gallina": {
+      "paper_name": "Ají de Gallina",
+      "efsa": [
+        "AI001",
+        "AI004",
+        "AI007",
+        "AI010"
+      ],
+      "usda": [
+        "AI004",
+        "AI007",
+        "AI010"
+      ]
+    },
+    "Anticuchos": {
+      "paper_name": "Anticuchos",
+      "efsa": [
+        "AI014"
+      ],
+      "usda": null
+    },
+    "Arroz Chaufa": {
+      "paper_name": "Arroz Chaufa",
+      "efsa": [
+        "AI003",
+        "AI004",
+        "AI005",
+        "AI008",
+        "AI012",
+        "AI013",
+        "AI014"
+      ],
+      "usda": [
+        "AI003",
+        "AI004",
+        "AI005",
+        "AI008",
+        "AI013"
+      ]
+    },
+    "Arroz con Mariscos": {
+      "paper_name": "Arroz con Mariscos",
+      "efsa": [
+        "AI003",
+        "AI005",
+        "AI007",
+        "AI008",
+        "AI014"
+      ],
+      "usda": [
+        "AI003",
+        "AI005",
+        "AI007",
+        "AI008"
+      ]
+    },
+    "Arroz con Pollo": {
+      "paper_name": "Arroz con Pollo",
+      "efsa": [
+        "AI014"
+      ],
+      "usda": null
+    },
+    "Arroz Tapado": {
+      "paper_name": "Arroz Tapado",
+      "efsa": [
+        "AI014"
+      ],
+      "usda": [
+        "AI004"
+      ]
+    },
+    "Bisteck a lo Pobre": {
+      "paper_name": "Bisteck a lo Pobre",
+      "efsa": [
+        "AI004",
+        "AI012",
+        "AI014"
+      ],
+      "usda": [
+        "AI004"
+      ]
+    },
+    "Caldo de Gallina": {
+      "paper_name": "Caldo de Gallina",
+      "efsa": [
+        "AI001",
+        "AI004"
+      ],
+      "usda": [
+        "AI004"
+      ]
+    },
+    "Carapulcra": {
+      "paper_name": "Carapulcra",
+      "efsa": [
+        "AI014",
+        "AI010",
+        "AI011"
+      ],
+      "usda": [
+        "AI004",
+        "AI010",
+        "AI011"
+      ]
+    },
+    "Cau Cau": {
+      "paper_name": "Cau Cau",
+      "efsa": [
+        "AI003",
+        "AI007",
+        "AI008"
+      ],
+      "usda": [
+        "AI003",
+        "AI007",
+        "AI008"
+      ]
+    },
+    "Causa Limeña": {
+      "paper_name": "Causa Limeña",
+      "efsa": [
+        "AI001",
+        "AI003",
+        "AI004",
+        "AI005",
+        "AI007",
+        "AI008"
+      ],
+      "usda": [
+        "AI003",
+        "AI004",
+        "AI005",
+        "AI007",
+        "AI008"
+      ]
+    },
+    "Ceviche": {
+      "paper_name": "Ceviche",
+      "efsa": [
+        "AI001",
+        "AI003",
+        "AI005",
+        "AI008"
+      ],
+      "usda": [
+        "AI003",
+        "AI005",
+        "AI008"
+      ]
+    },
+    "Chanfainita": {
+      "paper_name": "Chanfainita",
+      "efsa": [
+        "AI014"
+      ],
+      "usda": null
+    },
+    "Chicharron de cerdo": {
+      "paper_name": "Chicharrón de Cerdo",
+      "efsa": [
+        "AI001"
+      ],
+      "usda": null
+    },
+    "Chicharron de Mariscos": {
+      "paper_name": "Chicharrón de Mariscos",
+      "efsa": [
+        "AI003",
+        "AI004",
+        "AI005",
+        "AI007",
+        "AI008",
+        "AI009",
+        "AI014"
+      ],
+      "usda": [
+        "AI003",
+        "AI004",
+        "AI005",
+        "AI007",
+        "AI008"
+      ]
+    },
+    "Choclo con Queso": {
+      "paper_name": "Choclo con Queso",
+      "efsa": [
+        "AI007"
+      ],
+      "usda": [
+        "AI007"
+      ]
+    },
+    "Choritos a la Chalaca": {
+      "paper_name": "Choritos a la Chalaca",
+      "efsa": [
+        "AI001",
+        "AI008",
+        "AI014"
+      ],
+      "usda": [
+        "AI008"
+      ]
+    },
+    "Escabeche": {
+      "paper_name": "Escabeche",
+      "efsa": [
+        "AI004",
+        "AI005",
+        "AI007",
+        "AI014"
+      ],
+      "usda": [
+        "AI004",
+        "AI005",
+        "AI007"
+      ]
+    },
+    "Frejoles": {
+      "paper_name": "Frejoles",
+      "efsa": [
+        "AI014"
+      ],
+      "usda": null
+    },
+    "Humitas": {
+      "paper_name": "Humitas",
+      "efsa": [
+        "AI004",
+        "AI007"
+      ],
+      "usda": [
+        "AI004",
+        "AI007"
+      ]
+    },
+    "Lentejitas": {
+      "paper_name": "Lentejitas",
+      "efsa": [
+        "AI004",
+        "AI014"
+      ],
+      "usda": [
+        "AI004"
+      ]
+    },
+    "Locro": {
+      "paper_name": "Locro",
+      "efsa": [
+        "AI004",
+        "AI007"
+      ],
+      "usda": [
+        "AI004",
+        "AI007"
+      ]
+    },
+    "Lomo Saltado": {
+      "paper_name": "Lomo Saltado",
+      "efsa": [
+        "AI013",
+        "AI014"
+      ],
+      "usda": [
+        "AI013"
+      ]
+    },
+    "Ocopa": {
+      "paper_name": "Ocopa",
+      "efsa": [
+        "AI004",
+        "AI007",
+        "AI011"
+      ],
+      "usda": [
+        "AI004",
+        "AI007",
+        "AI011"
+      ]
+    },
+    "Olluquito": {
+      "paper_name": "Olluquito",
+      "efsa": null,
+      "usda": null
+    },
+    "Papa a la Huancaina": {
+      "paper_name": "Papa a la Huancaína",
+      "efsa": [
+        "AI004",
+        "AI007",
+        "AI010"
+      ],
+      "usda": [
+        "AI004",
+        "AI007",
+        "AI010"
+      ]
+    },
+    "Papa Rellena": {
+      "paper_name": "Papa Rellena",
+      "efsa": [
+        "AI002",
+        "AI004",
+        "AI010"
+      ],
+      "usda": [
+        "AI002",
+        "AI004",
+        "AI010"
+      ]
+    },
+    "Patasca": {
+      "paper_name": "Patasca",
+      "efsa": null,
+      "usda": null
+    },
+    "Picante de cuy": {
+      "paper_name": "Picante de Cuy",
+      "efsa": [
+        "AI011"
+      ],
+      "usda": [
+        "AI011"
+      ]
+    },
+    "Pollo a la Brasa": {
+      "paper_name": "Pollo a la Brasa",
+      "efsa": [
+        "AI009",
+        "AI013",
+        "AI014"
+      ],
+      "usda": [
+        "AI013"
+      ]
+    },
+    "Pollo al horno con puré": {
+      "paper_name": "Pollo al horno con puré",
+      "efsa": [
+        "AI004",
+        "AI007",
+        "AI009",
+        "AI010",
+        "AI013",
+        "AI014"
+      ],
+      "usda": [
+        "AI004",
+        "AI007",
+        "AI010",
+        "AI013"
+      ]
+    },
+    "Pulpo al Olivo": {
+      "paper_name": "Pulpo al Olivo",
+      "efsa": [
+        "AI001",
+        "AI004",
+        "AI007",
+        "AI008",
+        "AI009",
+        "AI013",
+        "AI014"
+      ],
+      "usda": [
+        "AI004",
+        "AI007",
+        "AI008",
+        "AI013"
+      ]
+    },
+    "Rocoto Relleno": {
+      "paper_name": "Rocoto Relleno",
+      "efsa": [
+        "AI004",
+        "AI007",
+        "AI010",
+        "AI011",
+        "AI014"
+      ],
+      "usda": [
+        "AI004",
+        "AI007",
+        "AI010",
+        "AI011"
+      ]
+    },
+    "Sopa a la Minuta": {
+      "paper_name": "Sopa a la Minuta",
+      "efsa": [
+        "AI004",
+        "AI007"
+      ],
+      "usda": [
+        "AI004",
+        "AI007"
+      ]
+    },
+    "Tacu Tacu": {
+      "paper_name": "Tacu Tacu",
+      "efsa": [
+        "AI004"
+      ],
+      "usda": [
+        "AI004"
+      ]
+    },
+    "Tallarin Saltado": {
+      "paper_name": "Tallarín Saltado",
+      "efsa": [
+        "AI010",
+        "AI013",
+        "AI014"
+      ],
+      "usda": [
+        "AI010",
+        "AI013"
+      ]
+    },
+    "Tallarines Rojos": {
+      "paper_name": "Tallarines Rojos",
+      "efsa": [
+        "AI001",
+        "AI005"
+      ],
+      "usda": [
+        "AI005"
+      ]
+    },
+    "Tallarines Verdes": {
+      "paper_name": "Tallarines Verdes",
+      "efsa": [
+        "AI007",
+        "AI010",
+        "AI014"
+      ],
+      "usda": [
+        "AI007",
+        "AI010"
+      ]
+    },
+    "Tamales": {
+      "paper_name": "Tamales",
+      "efsa": [
+        "AI004",
+        "AI011"
+      ],
+      "usda": [
+        "AI004",
+        "AI011"
+      ]
+    }
+  }
+}
